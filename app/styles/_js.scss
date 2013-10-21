@@ -1,0 +1,10 @@
+.js {
+    header nav {
+        @include transform(translate3d(0, 0, 0));
+        -webkit-backface-visibility: hidden;
+
+        &:not(.fast) {
+            @include transition(max-height 200ms);
+        }
+    }
+}
