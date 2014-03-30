@@ -17,6 +17,7 @@ p {
 }
 
 h1, h2, h3 {
+    @include antialiasing();
     font-family: $header-font, serif;
     font-weight: normal;
 }
@@ -84,6 +85,7 @@ header {
         }
 
         a {
+            @include antialiasing();
             height: 1.6em;
             padding: .5em 1em;
             display: block;
@@ -188,6 +190,7 @@ header {
 
             p, footer {
                 @include box-sizing(border-box);
+                @include antialiasing();
 
                 color: #727272;
                 padding: .5em;
@@ -292,7 +295,8 @@ header {
 
     dl {
         @include clearfix();
-        font-family: "Bevan", sans-serif;
+        @include antialiasing();
+        font-family: $header-font;
     }
 
     dt, dd {
@@ -378,6 +382,7 @@ header {
 
         > a {
             @include transition(background 0.2s);
+            @include antialiasing();
 
             display: inline-block;
             margin: {
@@ -410,6 +415,7 @@ header {
             @include clearfix();
 
             a {
+                @include antialiasing();
                 font-size: 1.5em;
                 font-family: $header-font;
                 color: #2e2934;
@@ -492,6 +498,7 @@ header {
         }
 
         p {
+            @include antialiasing();
             border-left: 1px solid #31b6bb;
             min-height: 3em;
             margin: 0;

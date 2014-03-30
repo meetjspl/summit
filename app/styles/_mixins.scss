@@ -9,3 +9,7 @@
         clear: both;
     }
 }
+
+@mixin antialiasing () {
+    -webkit-font-smoothing: antialiased;
+}
