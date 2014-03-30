@@ -13,3 +13,8 @@
 @mixin antialiasing () {
     -webkit-font-smoothing: antialiased;
 }
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

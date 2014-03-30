@@ -34,6 +34,16 @@ header {
         margin-left: 0.5em;
         text-align: left;
     }
+
+    dd {
+        @include calc(width, "100% - 250px");
+        padding: 10px 170px 0 20px;
+    }
+
+    a {
+        top: 0;
+        bottom: auto;
+    }
 }
 
 #speakers {
