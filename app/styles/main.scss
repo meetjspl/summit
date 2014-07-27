@@ -1,0 +1,593 @@
+@import 'normalize';
+@import 'compass';
+@import 'mixins';
+
+$header-font: 'Bevan';
+
+body {
+    font-size: 62.5%;
+    background-color: #302b36;
+    color: white;
+    font-family: $normalized_font_family, sans-serif;
+}
+
+p {
+    font-size: 1.8em;
+    line-height: 1.2666666667em;
+}
+
+h1, h2, h3 {
+    @include antialiasing();
+    font-family: $header-font, serif;
+    font-weight: normal;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.icon {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        background: url(../images/bgs/icons.png) no-repeat 0 0;
+        content: " ";
+        right: 0;
+        top: 50%;
+    }
+}
+
+header {
+    background-color: #2d2832;
+
+    .banner {
+        width: 243px;
+        float: left;
+        padding: .5em 2em 1em;
+    }
+
+    .show-menu {
+        float: right;
+        width: 32px;
+        height: 32px;
+        -webkit-appearance: none;
+        margin: 1em 2em 0 0;
+        border: none;
+        text-indent: -9999em;
+        background: url(../images/bgs/ico-show-nav.png) 50% 50% no-repeat transparent;
+        background-size: 30px 16px;
+
+        &:focus {
+            border: none;
+            outline: 0;
+        }
+    }
+
+    nav {
+        width: 100%;
+        clear: both;
+        position: relative;
+        overflow: hidden;
+
+        &.hidden {
+            max-height: 0 !important;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            @include antialiasing();
+            height: 1.6em;
+            padding: .5em 1em;
+            display: block;
+            font-size: 2em;
+            font-family: $header-font, serif;
+            color: #fff;
+
+
+            &:hover, &:active, &:focus {
+                text-decoration: none;
+                background-color: #24a2a7;
+            }
+        }
+
+        .icon {
+            &:after {
+                right: 1em;
+                width: 22px;
+                height: 22px;
+                margin-top: -11px;
+            }
+
+            &.facebook:after {
+                background-position: 0 0;
+            }
+
+            &.twitter:after {
+                background-position: -25px 0;
+            }
+
+            &:hover, &:active {
+                &.facebook {
+                    &:after {
+                        background-position: 0 -24px;
+                    }
+                }
+
+                &.twitter {
+                    &:after {
+                        background-position: -25px -24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottom {
+    padding: 1em;
+    font-size: 1.4em;
+}
+
+#event {
+    padding: 2em;
+
+    h1 {
+        line-height: 1.2162162162em;
+        margin-top: 0;
+
+        time {
+            color: #c2da56;
+        }
+    }
+
+    p {
+        a {
+            color: #fff;
+        }
+    }
+
+    .venue {
+        height: 240px;
+        overflow: hidden;
+        background: url(../images/bgs/poland.png) no-repeat 50% 100%;
+        background-size: contain;
+        position: relative;
+
+        & > h1 {
+            margin-top: 0.8em;
+            text: {
+                align: center;
+                transform: none;
+            }
+        }
+
+        & > div {
+            max-width: 350px;
+            margin: 0 auto;
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            width: 100%;
+        }
+
+        .place {
+            position: absolute;
+            top: 0;
+            right: 50%;
+            background-color: #fff;
+            margin-top: 9px;
+            width: 100%;
+
+            p, footer {
+                @include box-sizing(border-box);
+                @include antialiasing();
+
+                color: #727272;
+                padding: .5em;
+                font-size: 1.5em;
+                font-family: $header-font;
+                width: 100%;
+            }
+
+            footer {
+                @include clearfix();
+
+                background-color: #f0f0f0;
+
+                span {
+                    float: left;
+                }
+
+                a {
+                    float: right;
+                    color: inherit;
+                }
+            }
+
+            &:before, &:after {
+                display: block;
+                position: absolute;
+                top: -9px;
+                height: 9px;
+                content: " ";
+                background: {
+                    image: url(../images/bgs/trapezoidal.png);
+                    repeat: no-repeat;
+                    size: 9px 18px;
+                };
+            }
+
+            &:before {
+                left: 0;
+                width: 100%;
+                background: {
+                    color: #f1f1f1;
+                };
+            }
+
+            &:after {
+                @include transform(rotateY(180deg));
+
+                right: 0;
+                width: 9px;
+                background: {
+                    color: transparent;
+                    position: 100% 0;
+                };
+            }
+        }
+    }
+
+    .organizers {
+        @include clearfix();
+
+        background-color: #99b41e;
+
+        h2 {
+            color: #424e0a;
+            margin: .5em;
+            text-transform: uppercase;
+            font-size: 1.4em;
+        }
+
+        ul {
+            @include clearfix();
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            @include box-sizing(border-box);
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 140px;
+            max-height: 30px;
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            height: 60px;
+            width: 100%;
+            line-height: 60px;
+            text-align: center;
+        }
+    }
+}
+
+#agenda {
+    h1 {
+        text-align: center;
+    }
+
+    dl {
+        @include clearfix();
+        @include antialiasing();
+        font-family: $header-font;
+    }
+
+    dt, dd {
+        float: left;
+        margin: 10px 0;
+        border-top: 1px solid #4f4a56;
+    }
+
+    dt {
+        @include box-sizing(border-box);
+        position: relative;
+        clear: left;
+        width: 60px;
+        border-left: 1px solid #4f4a56;
+        background: #4f4a56;
+        color: #fff;
+        line-height: 60px;
+        font-size: 2.1em;
+        text-align: center;
+
+        &.highlight {
+            background: #c2da56;
+            color: #302b36;
+
+            + dd {
+                color: #c2da56;
+            }
+        }
+    }
+
+    dd {
+        @include calc(width, "100% - 100px");
+        position: relative;
+        padding: 10px 20px 20px;
+        font-size: 1.6em;
+    }
+
+    a {
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        display: inline-block;
+        padding: 8px 10px;
+        background: #c2da56;
+        color: #302b36;
+        font-family: sans-serif;
+        font-size: 0.9em;
+        text-decoration: none;
+    }
+}
+
+#speakers {
+    background: url(../images/bgs/speakers.png);
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 0 0 2em 0;
+    }
+
+    .call-for-papers {
+        text-align: center;
+
+        p {
+            margin-left: 1em;
+            margin-right: 1em;
+            text-align: left;
+        }
+
+        > a {
+            @include transition(background 0.2s);
+            @include antialiasing();
+
+            display: inline-block;
+            margin: {
+                top: 1em;
+                bottom: 3em;
+            }
+            padding: 0.8em 1.2em;
+            background: #2a898d;
+            color: #fff;
+            font: {
+                family: $header-font;
+                size: 2em;
+            }
+            text-decoration: none;
+
+            &:active {
+                background: #1e6266;
+            }
+        }
+    }
+
+    .speaker-info {
+        background-color: #24a2a7;
+        padding: 1em 0 0 0;
+
+        footer {
+            width: 95%;
+            margin-left: 5%;
+            border-top: 1px solid #31b6bb;
+            @include clearfix();
+
+            a {
+                @include antialiasing();
+                font-size: 1.5em;
+                font-family: $header-font;
+                color: #2e2934;
+                padding: .1em 1em;
+                display: inline-block;
+                border-right: 1px solid #31b6bb;
+                float: right;
+                padding-right: 25px;
+
+                &:hover, &:active, &:focus {
+                    text-decoration: none;
+                }
+
+                &:first-child {
+                    border-right: none;
+                }
+            }
+
+            .icon {
+                &:after {
+                    width: 12px;
+                    height: 12px;
+                    margin-top: -7px;
+                    right: 5px;
+                }
+
+                &.twitter {
+                    &:after {
+                        background-position: 0 -72px;
+                    }
+                }
+
+                &.www {
+                    &:after {
+                        content: ">";
+                        font-size: 0.8em;
+                        line-height: 1.1em;
+                        text-indent: .3em;
+                        background: #37a8ae;
+                        color: #219196;
+                    }
+                }
+            }
+        }
+    }
+
+    .speaker-name {
+        margin-bottom: 0.4em;
+    }
+
+    .speaker-avatar {
+        display: block;
+        width: 150px;
+        margin: 0.5em auto;
+    }
+
+    .speaker-description {
+        background-color: #29252f;
+        padding: 1.5em 2em;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .speaker-subject {
+        @include clearfix();
+        background-color: #176a6e;
+        padding: 1em 0 0 0;
+        margin-top: .5em;
+
+        h3 {
+            margin: 0;
+            color: #31b6bb;
+            font-size: 2em;
+            float: left;
+            width: 28%;
+            padding-left: 8%;
+            @include box-sizing(border-box);
+        }
+
+        p {
+            @include antialiasing();
+            border-left: 1px solid #31b6bb;
+            min-height: 3em;
+            margin: 0;
+            font-family: $header-font;
+            @include box-sizing(border-box);
+            padding: 0 1em .5em;
+            float: left;
+            width: 72%;
+        }
+    }
+}
+
+#agenda {
+    @include background-image(linear-gradient(left, #2d2933 50%, #302c36 50%));
+    background-size: 4px;
+}
+
+#about {
+    background: url(../images/bgs/about.png);
+
+    .what-is {
+        padding: 1em 2em;;
+    }
+
+    h1 {
+        color: #2e2934;
+        font-size: 2em;
+    }
+
+    p {
+        color: #2e2934;
+        line-height: 1.4;
+    }
+
+    a {
+        color: #24a2a7;
+    }
+
+    .organizers {
+        padding: 1em 2em;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-top: 0.5em;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        img {
+            width: 40px;
+            margin-right: 10px;
+            border: 1px solid #2e2934;
+            vertical-align: middle;
+        }
+
+        a {
+            display: inline-block;
+            color: #2e2934;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        small {
+            display: inline-block;
+            margin-left: 5px;
+            font-weight: normal;
+        }
+    }
+}
+
+#register {
+    background: url(../images/bgs/register.png);
+    padding: 1em 2em;
+
+    h1 {
+        color: #24a2a7;
+        font-size: 2em;
+    }
+
+    p {
+        color: #2e2934;
+    }
+}
+
+@import 'js';
