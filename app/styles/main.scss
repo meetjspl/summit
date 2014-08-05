@@ -576,7 +576,8 @@ header {
     }
 }
 
-#register {
+#register,
+#call {
     background: url(../images/bgs/register.png);
     padding: 1em 2em;
 
@@ -587,6 +588,10 @@ header {
 
     p {
         color: #2e2934;
+    }
+    
+    a {
+        color: #24a2a7;   
     }
 }
 
