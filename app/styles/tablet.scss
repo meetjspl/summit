@@ -1,0 +1,120 @@
+@import 'compass';
+@import 'mixins';
+
+p {
+    font-size: 1.5em;
+}
+
+header {
+    .show-menu {
+        margin-top: 3em;
+    }
+}
+
+#event {
+    p {
+        width: 50%;
+        float: left;
+        clear: left;
+    }
+
+    .organizers {
+        clear: both;
+
+        li {
+            float: left;
+            width: 33%;
+        }
+    }
+}
+
+
+#agenda {
+    h1 {
+        margin-left: 0.5em;
+        text-align: left;
+    }
+
+    dd {
+        @include calc(width, "100% - 250px");
+        padding: 10px 170px 0 20px;
+    }
+
+    a {
+        top: 0;
+        bottom: auto;
+    }
+}
+
+#speakers {
+    @include clearfix();
+
+    h1 {
+        margin-left: 0.5em;
+        text-align: left;
+    }
+
+    li {
+        @include clearfix();
+        position: relative;
+        padding-left: 160px;
+
+        > div {
+            float: left;
+            @include box-sizing(border-box);
+        }
+    }
+
+    .speaker-info {
+        width: 50%;
+
+        footer {
+            margin-top: 1em;
+        }
+    }
+
+    .speaker-description {
+        width: 50%;
+    }
+
+    .speaker-avatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        border: 5px solid #443d4c;
+    }
+
+    .speaker-subject {
+        margin-top: 0;
+        padding-top: 2em;
+
+        p {
+            min-height: 4em;
+        }
+    }
+}
+
+#about {
+    @include clearfix();
+
+    .what-is, .organizers {
+        @include box-sizing(border-box);
+        float: left;
+    }
+
+    .what-is {
+        width: 55%;
+        border-right: 1px solid #2e2934;
+    }
+
+    .organizers {
+        width: 45%;
+    }
+}
+
+body > footer {
+    font-size: 1.3em;
+    color: #9f9f9f;
+    padding: 1em 2em;
+}

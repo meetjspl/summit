@@ -1,0 +1,169 @@
+@import 'compass';
+@import 'mixins';
+
+.js {
+    header nav {
+        &, &.hidden {
+            max-height: 9999em !important;
+        }
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    @include clearfix();
+
+    background-color: transparent;
+
+    .banner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav {
+        background-color: #2d2832;
+        float: right;
+        max-width: 70%;
+        padding: 1em 0;
+        clear: none;
+
+        a {
+            padding: 0 .5em;
+            margin: .5em .4em;
+
+            &.icon {
+                padding: 0em 1em;
+                margin-left: 0;
+
+                &:hover, &:active {
+                    background-color: transparent;
+
+                    &.facebook {
+                        &:after {
+                            background-position: 0 -48px;
+                        }
+                    }
+
+                    &.twitter {
+                        &:after {
+                            background-position: -25px -48px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        float: right;
+    }
+
+    li {
+        float: left;
+
+        .icon {
+            text-indent: -99999em;
+
+            &:after {
+                right: 8px;
+            }
+        }
+    }
+
+    .show-menu {
+        display: none;
+    }
+}
+
+#agenda {
+    h1 {
+        margin-left: 0;
+    }
+}
+
+#speakers {
+    h1 {
+        margin-left: 0;
+    }
+
+    .speaker-subject {
+        clear: left;
+    }
+}
+
+#event {
+    position: relative;
+
+    h1 {
+        float: left;
+        width: 50%;
+    }
+
+    p {
+        width: 48%;
+    }
+
+    .venue {
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        max-width: 480px;
+        height: 370px;
+        background-size: contain;
+        pointer-events: none;
+
+        h1 {
+            float: none;
+            width: 94%;
+            margin-top: 1.7em;
+        }
+
+        .place {
+            top: 20px;
+            right: 56%;
+            pointer-events: auto;
+
+            &:before, &:after {
+                background-position: 0 100%;
+            }
+        }
+    }
+
+    .organizers {
+        width: 80%;
+
+        ul {
+            width: 82%;
+        }
+    }
+}
+
+#speakers {
+    h1 {
+        text-align: left;
+    }
+
+    .speaker-info {
+        width: 40%;
+
+        footer {
+            margin-top: 0;
+        }
+    }
+
+    .speaker-description {
+        width: 60%;
+    }
+
+    .speaker-subject p {
+        min-height: 4.1em;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+}
