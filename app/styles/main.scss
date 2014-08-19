@@ -597,4 +597,19 @@ header {
     }
 }
 
+.btn {
+    display: inline-block;
+    
+    padding: 10px 20px;
+    border-bottom: 3px solid #167579;
+  
+    background-color: #22989d;
+  
+    color: #fff;
+    font-family: Bevan,serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 @import 'js';
