@@ -212,6 +212,7 @@ module.exports = function (grunt) {
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
                         '<%= yeoman.dist %>/styles/{,*/}*.css',
                         '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
+                        '!<%= yeoman.dist %>/images/fb-logo.jpg',
                         '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
                     ]
                 }
