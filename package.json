@@ -24,6 +24,7 @@
     "grunt-open": "~0.2.0",
     "grunt-svgmin": "~0.2.0",
     "grunt-concurrent": "~0.3.0",
+    "grunt-ftp-deploy": "~0.1.1",
     "load-grunt-tasks": "~0.1.0",
     "connect-livereload": "~0.2.0",
     "time-grunt": "~0.1.1"

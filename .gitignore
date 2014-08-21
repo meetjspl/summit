@@ -1,6 +1,7 @@
 node_modules
 dist
 .idea
+.ftppass
 .tmp
 .sass-cache
 .DS_Store

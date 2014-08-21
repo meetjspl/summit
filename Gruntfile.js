@@ -18,6 +18,8 @@ module.exports = function (grunt) {
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
 
+    grunt.loadNpmTasks('grunt-ftp-deploy');
+
     // configurable paths
     var yeomanConfig = {
         app: 'app',
@@ -330,6 +332,18 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: 's4.zenbox.pl',
+                    port: 21,
+                    authKey: 'staging'
+                },
+                src: '<%= yeoman.dist %>',
+                dest: 'public_html',
+                exclusions: []
+            }
         }
     });
 
