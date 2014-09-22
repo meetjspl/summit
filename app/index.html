@@ -30,9 +30,7 @@
                     <ul>
                         <li><a href="#speakers">Speakers</a></li>
                         <li><a href="http://summit.meetjs.pl/2014/sponsorship-offer.pdf">Become a sponsor</a></li>
-<!--
                         <li><a href="#agenda">Agenda</a></li>
--->
                         <li><a href="#register">Register</a></li>
                         <li><a href="https://www.facebook.com/meetjspl" class="icon facebook">Facebook</a></li>
                         <li><a href="https://twitter.com/meetjs" class="icon twitter">Twitter</a></li>
@@ -45,7 +43,7 @@
                 <div class="container">
                     <h1>Meet the open web on <time>September 27, 2014</time></h1>
                     <p>
-                       Back in 2011, we organized the first Meet.js event in Poznań, Poland. Currently similar meetings are organized in eight cities in Poland. It&#39;s about time to summarize topics we&#39;ve talked about this year. Meet.js Summit is the hottest conference this autumn and it&#39;s completely free! Join us to share the awesomeness of the Open Web!
+                       Back in 2011, we organized the first Meet.js event in Poznań, Poland. Currently similar meetings are organized in eight cities in Poland. It&#39;s about time to summarize the topics we&#39;ve talked about this year. Meet.js Summit is the hottest conference this autumn and it&#39;s completely free! Join us to share the awesomeness of the Open Web!
                         <br />
                     </p>
                     <div class="venue">
@@ -74,12 +72,15 @@
                             <li><a href="http://www.7n.com/pl/" target="_blank"><img src="images/sponsors/7n-logo.png" alt="7n.com"></a></li>
                             <li><a href="http://spartez.com/" target="_blank"><img src="images/sponsors/spartez-logo.png" alt="spartez.com"></a></li>
                             <li><a href="http://stxnext.com/" target="_blank"><img src="images/sponsors/stx-logo.png" alt="stxnext.com"></a></li>
+                            <li><a href="http://www.fibaro.com/pl" target="_blank"><img src="images/sponsors/fibaro-logo.png" alt="fibaro.com/pl"></a></li>
                             <li><a href="http://functionite.com/" target="_blank"><img src="images/sponsors/functionite-logo.png" alt="functionite.com"></a></li>
                         </ul>
                         <h2>Partners</h2>
                         <ul>
                             <li><a href="http://www.swps.pl/" target="_blank"><img src="images/sponsors/swps-logo.png" alt="swps.pl"></a></li>
                             <li><a href="https://github.com/" target="_blank"><img src="images/sponsors/github-logo.png" alt="github.com"></a></li>
+                            <li class="dronfilm"><a href="http://www.dronfilm.com/" target="_blank"><img src="images/sponsors/dronfilm.png" alt="dronfilm.com"></a></li>
+                            <li><a href="http://wp.pl/" target="_blank"><img src="images/sponsors/wp-logo.png" alt="wp.pl"></a></li>
                             <li><a href="http://ferrante.pl/" target="_blank"><img src="images/sponsors/ferrante-logo.png" alt="ferrante.pl"></a></li>
                             <li><a href="http://akai.org.pl/" target="_blank"><img src="images/sponsors/akai-logo.png" alt="akai.org.pl"></a></li>
                         </ul>
@@ -90,17 +91,380 @@
            <section id="agenda">
                 <div class="container">
                     <h1>Agenda</h1>
-                    <dl>
-                        <dt class="highlight">09<sup>00</sup></dt>
-                        <dd>Registration starts!</dd>
-                        <dt class="highlight">18<sup>00</sup></dt>
-                        <dd>Wrap up</dd>
-                        <dt class="highlight">20<sup>00</sup></dt>
-                        <dd>
-                            Egnyte Party!
-                            <a href="http://www.zakreconabila.pl">Zakręcona Bila</a>
-                        </dd>
-                    </dl>
+                    
+                    <ul class="agenda">
+                      <li class="agenda__item">
+                        <div class="track-1">
+                          <span>1</span> track
+                        </div>
+                        <div class="track-2">
+                          track <span>2</span>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item agenda-break">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Registration starts!</p>
+                        </div>
+                        <time class="agenda__time">08<sup>45</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Do not forget to bring your ticket! Only registered attendees are allowed to enter the venue!</p>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Welcome talk</p>
+                        </div>
+                        <time class="agenda__time">10<sup>00</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject"></p>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                            <p class="agenda__subject">The Story Behind Touch Delay, or How Small Things Can Be A Huge Pain In The Browser</p>
+                            <label for="subject-ip" class="subject__info-toggler">Description</label>
+                            <input type="checkbox" id="subject-ip" name="subject">
+                            <div class="subject__info">
+                              <div class="subject__info-content">
+                                <ul>
+                                  <li>Types of interactions with browser (click, touch, pointer, etc.)</li>
+                                  <li>What is interaction delay?</li>
+                                  <li>Where did it come from?</li>
+                                  <li>How does it work for different browsers?</li>
+                                  <li>How to deal with it?</li>
+                                  <li>Possible solutions</li>
+                                  <li>Conclusion: what's wrong with us?</li>
+                                </ul>
+                                <label for="subject-ip">Close</label>
+                              </div>
+                            </div>
+                            <a href="#speakers-ip" class="agenda-prelegent">Ilya Pukhalski</a>
+                        </div>
+                        <time class="agenda__time">10<sup>10</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Playing around with the Gamepad API</p>
+                          <label for="subject-am" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-am" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              The Gamepad API gives you the ability to deliver console-like experience for the desktop users. You can create JavaScript applications and HTML5 games that can be controlled using the gamepad - how cool is that? Every device with a browser can be turned into a game console and with the Gamepad API support we can build HTML5 games like never before. It's easy to implement, do not require any plugins to run in the browser and is simple as just plugging in your device and playing the game right away. Now is the best time to learn how to use it in your next HTML5 project!
+                              <label for="subject-am">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-am" class="agenda-prelegent">Andrzej Mazur</a>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Mobile HTML5 Game Development: design for performance.</p>
+                          <label for="subject-lw" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-lw" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              My talk will guide the listeners through my yearly trip as a HTML5 mobile game developer. I will focus on the performance side of it: optimising the canvas to fit multi-resolutions devices, asset management, physics engines in javascript, mobile wrappers (cocoonJS and Ejecta), a little about the alternatives: CoronaSDK and SpriteKit with Swift, and finally I'll answer the question: "Can we make a living as HTML5 game developers?"
+                              <label for="subject-lw">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-lw" class="agenda-prelegent">Łukasz Wójciak</a>
+                        </div>
+                        <time class="agenda__time">10<sup>40</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Effective SVG icons management system</p>
+                          <label for="subject-kk" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-kk" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Aim of the talk is to show how to manage icons in your web app. I'll introduce you to the concept, walk through configuration and highlight some ways of going even better.
+                              <label for="subject-kk">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-kk" class="agenda-prelegent">Kamil Koterba</a>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Get Practical with Web Components</p>
+                          <label for="subject-mw" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-mw" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              This presentation shows web developers how to build next-generation web apps using various Web Components (native and Polymer framework).
+  Web Components (HTML Templates, Shadow DOM, Custom Elements and HTML Imports) are the highlight of current web standards development, with Google and Mozilla pioneering the implementation of the specification draft. 
+  While numerous presentations all over the world have introduced Web Components to web developers, not many have demonstrated the practical aspects. 
+  This presentation will use existing tools to show web developers how they can make next-generation web apps using custom HTML elements from a wide spectrum of vendors – from giants such as Google to open-source enthusiasts on GitHub.
+                             <label for="subject-mw">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-mw" class="agenda-prelegent">Marcin Warpechowski</a>
+                        </div>
+                        <time class="agenda__time">11<sup>10</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Breaking the Web</p>
+                          <label for="subject-ji" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-ji" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Why do we hate popups, Intro animations and flash pre-loaders but still can't really let go of them? Johannes Ippen speaks about trends in UI design: why do we keep making the same mistakes over and over and what chairs and javascript frameworks have in common.
+                              <label for="subject-ji">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-ji" class="agenda-prelegent">Johannes Ippen</a>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item agenda-break">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Coffee break</p>
+                        </div>
+                        <time class="agenda__time">11<sup>40</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Coffee break</p>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Let It Flow - Introduction to Functional Reactive Programming</p>
+                          <label for="subject-as" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-as" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              When JavaScript Scripts evolved into JavaScript Applications, "Callback Hell" and "Spaghetti Code" went into the common dictionary of front end programmers. Asynchronous programming is incredibly complicated and hard to maintain, even to experienced developers. I would like to take you to the functional world of events, streams and signals and propose an alternative approach. During the presentation, I will gently present what the Reactive Programming is and how you can introduce it into your daily workflow.
+                              <label for="subject-as">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-as" class="agenda-prelegent">Artur Skowroński</a>
+                        </div>
+                        <time class="agenda__time">12<sup>00</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Be inspired - my story of becoming an indie game developer</p>
+                          <label for="subject-kj" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-kj" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              It's part a history of me becoming a game developer from scratch and part talk about good advices and my experience of learning from failure.
+                              <label for="subject-kj">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-kj" class="agenda-prelegent">Krzysztof Jankowski</a>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Douchebag Programmers - Our Image?</p>
+                          <label for="subject-mj" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-mj" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Are we really team players and good developers? - Very subjective and almost serious talk about how uncooperative sometimes we are, and how we're seen among other developers, clients, and people not related to software development.
+                              <label for="subject-mj">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-mj" class="agenda-prelegent">Michał Janiszewski</a>
+                        </div>
+                        <time class="agenda__time">12<sup>30</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Let’s talk about front-end performance</p>
+                          <label for="subject-jd" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-jd" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Today's developers have excellent tools for measuring and understanding DOM performance. In this talk I'll describe how to use the tools, the basic principles of browsers rendering and how we used this knowledge to improve the responsiveness of our single page app.
+                              <label for="subject-jd">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-jd" class="agenda-prelegent">Jan Dudek</a>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">OOP is dead</p>
+                          <label for="subject-ds" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-ds" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Let’s overthrow the tyranny of the Object Oriented programming! There are better ways to plan, structure and write your code. The walkthrough through the alternative JavaScript programming paradigms and revealing architecture patterns.
+                              <label for="subject-ds">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-ds" class="agenda-prelegent">Damian Sosnowski</a>
+                        </div>
+                        <time class="agenda__time">13<sup>00</sup></time>
+                        <div class="topic__wrapper"></div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Working with single-threaded event loop</p>
+                          <label for="subject-mwi" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-mwi" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Introduction to the concept of event loop and how it is handled in a browser and Node.js. This talk get into details about different JavaScript functions with an impact on async functions order of execution.
+                              <label for="subject-mwi">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-mwi" class="agenda-prelegent">Maciej Winnicki</a>
+                        </div>
+                        <time class="agenda__time">13<sup>30</sup></time>
+                        <div class="topic__wrapper"></div>
+                      </li>
+                      
+                      <li class="agenda__item agenda-break">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Lunch break</p>
+                        </div>
+                        <time class="agenda__time">14<sup>00</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Lunch break</p>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">WebRTC - so much more than just video conferencing</p>
+                          <label for="subject-sn" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-sn" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              WebRTC allows us to create peer-to-peer connections between browsers. Most people think of it only as an API that enables plugin-free video calls, but it's actually much more powerful and versatile.
+                              <br><br>In this talk I'll show you a few interesting WebRTC projects and how easy it is to create your own apps using this API.
+                              <label for="subject-sn">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-sn" class="agenda-prelegent">Szymon Nowak</a>
+                        </div>
+                        <time class="agenda__time">15<sup>30</sup></time>
+                        <div class="topic__wrapper"></div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Clientside localization in Firefox OS</p>
+                          <label for="subject-sm" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-sm" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Firefox OS required a fast and lean localization method that could scale up to 70 languages, cater to the needs of hundreds of developers worldwide all speaking different languages and support a wide spectrum of devices with challenging hardware specs. In this case-study I'll show how we were able to create a localization framework which embraces new web technologies like web components and mutation observers, how we came up with new developer tools to make localization work easier and what exciting challenges lie ahead of us.
+                              <label for="subject-sm">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-sm" class="agenda-prelegent">Staś Małolepszy</a>
+                        </div>
+                        <time class="agenda__time">16<sup>00</sup></time>
+                        <div class="topic__wrapper"></div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Ampersand.js – Minimalistic approach to not so minimalistic problems</p>
+                          <label for="subject-ko" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-ko" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              When frontend developer plays around with some new framework or tool and creates a new useful web app or highly entertaining game it usually lands in his code repo at least or at his blog post at most. To often we put our private code on a shelf, because it's either not clean enough, not well tested or maybe because we are to afraid to give our apps to the users. This presentation aims in showing how an idea inspired by my nephew's school assignment evolved into one web application, then into the second and third one and how I monetized them. I'm gonna show how I embedded AdMob advertising and AdSense into web applications that were published for Android, FireFox OS and Chrome OS. I will show what techniques and ideas I used to keep my income at a reasonably high level. I will give a few tips on how to constantly attract new users and keep the old ones and how to look forward into new mobile markets. All those web applications are described in details here: <a href="http://scislo.eu/applications">http://scislo.eu/applications</a>
+                              <label for="subject-ko">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-ko" class="agenda-prelegent">Kamil Ogórek</a>
+                        </div>
+                        <time class="agenda__time">16<sup>30</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Boilerplate-B-Gone - do it yourself syntactic sugar with sweet.js</p>
+                          <label for="subject-ap" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-ap" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              Have you ever written the same snippet of code over and over again, just because the framework or the library that you use demanded it?
+                              <br><br>
+                              JavaScript can be a pretty verbose language at times. Some libraries like React.js counter this by extending JavaScript syntax, but most others do not. Sweet.js is a library created by Mozilla, which allows you to extend JavaScript on your own.
+                              <br><br>
+                              In this talk you will learn how to write JavaScript macros and see some useful real-world examples of where they can be applied.
+                              <label for="subject-ap">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-ap" class="agenda-prelegent">Adam Pohorecki</a>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item agenda-break">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Coffee break</p>
+                        </div>
+                        <time class="agenda__time">17<sup>00</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Coffee break</p>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                            <p class="agenda__subject">Extreme pixel manipulation</p>
+                            <label for="subject-mb" class="subject__info-toggler">Description</label>
+                            <input type="checkbox" id="subject-mb" name="subject">
+                            <div class="subject__info">
+                              <p class="subject__info-content">
+                                Pixels. Pixels. Pixels everywhere! They are like magic stardust used by us, modern wizards, to cast our computer spells. We use them to fight dragons, save princesses or refill our developer's HPs. Take a seat, fasten your seat belts and prepare for a journey into the world of pixel alchemy! 
+  (And keep your fingers crossed - I hope we will have enough pixel-mana to go through it unscathed).
+                                <label for="subject-mb">Close</label>
+                              </p>
+                            </div>
+                            <a href="#speakers-mb" class="agenda-prelegent">Michał Budzyński</a>
+                        </div>
+                        <time class="agenda__time">17<sup>20</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Gulp, as a better Grunt? Automate your frontend development workflow fully!</p>
+                          <label for="subject-jt" class="subject__info-toggler">Description</label>
+                          <input type="checkbox" id="subject-jt" name="subject">
+                          <div class="subject__info">
+                            <p class="subject__info-content">
+                              An overview of CSS/SASS writing techniques. Let's see what are today's latest techniques of writing scalable CSS.
+                              <br><br>
+                              I'll explain terms like OOCSS, BEM, AM and show how do they look like in the real code. Split your code into components. Use variables, extends and mixins as much as you can. Keep the code clean, simple and not-repeating. DRY and KISS is a must also in your .css code, as recently it gets larger and larger. "naming things" is especially difficult in CSS, as you can do it in 1000 different ways. Let's see, how we should do it in "the proper way". Also - how can we use SASS (and how we shouldn't), to make it look even better.
+                              <label for="subject-jt">Close</label>
+                            </p>
+                          </div>
+                          <a href="#speakers-jt" class="agenda-prelegent">Jacek Tomaszewski</a>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Open mic</p>
+                        </div>
+                        <time class="agenda__time">17<sup>55</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Everyone's invited!</p>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item agenda-break">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Wrap up</p>
+                        </div>
+                        <time class="agenda__time">18<sup>50</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Wrap up</p>
+                        </div>
+                      </li>
+                      
+                      <li class="agenda__item agenda-break">
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject">Egnyte Party</p>
+                        </div>
+                        <time class="agenda__time">20<sup>00</sup></time>
+                        <div class="topic__wrapper">
+                          <p class="agenda__subject"><a href="http://www.zakreconabila.pl/">Zakręcona bila</a><br><a href="https://www.google.pl/maps/place/Zakr%C4%99cona+Bila.+Klub+bilardowy/@52.405101,16.924755,15z/data=!4m2!3m1!1s0x0:0xd00403774a2dd589?sa=X&ei=-OwZVJiuJea_ygPo84HwDg&ved=0CI8BEPwSMAo">See on map!</a></p>
+                        </div>
+                      </li>
+                    </ul>
                 </div>
             </section>
 
@@ -206,7 +570,7 @@
                             </div>
                             <img alt="" src="images/speakers/michal-janiszewski.jpg" class="speaker-avatar">
                             <div class="speaker-description">
-                                <p>Front-end (and occasionally Python) developer at STX Next. Especially interested at JS applications architecture and performance.</p>
+                                <p>Front-end (and occasionally Python) developer at STX Next. Especially interested in JS applications architecture and performance.</p>
                             </div>
                         </li>
                         <li id="speakers-ji">
@@ -361,7 +725,7 @@
                                 <p>Aspiring software craftsman and TDD enthusiast. Founder of SCKRK. Early adopter of AngularJS (some say, way too early). Big fan of the Clojure programming language. Senior Web Developer at GunpowderLabs.</p>
                             </div>
                         </li>
-                        <li id="speakers-mw">
+                        <li id="speakers-mwi">
                             <div class="speaker-info">
                                 <h2 class="speaker-name">Maciej Winnicki</h2>
                                 <footer>
@@ -409,7 +773,7 @@ I do games in JavaScript for more than 2 years.</p>
                             </div>
                             <img alt="" src="images/speakers/damian-sosnowski.jpg" class="speaker-avatar">
                             <div class="speaker-description">
-                                <p>JavaScript technical lead in Rule Financial. Working mostly on the complex, data heavy, business applications. Passionate about promoting and teaching other people about the beauty and possibilities of the open, web technologies.</p>
+                                <p>JavaScript technical lead in Rule Financial. Working mostly on the complex, data heavy business applications. Passionate about promoting and teaching other people about the beauty and possibilities of the open, web technologies.</p>
                             </div>
                         </li>
                     </ul>
