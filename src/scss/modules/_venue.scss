@@ -1,0 +1,82 @@
+.venue {  
+  padding: 40px 20px 60px;
+  background: $lightgrey_color;
+  @media #{$medium} {
+    padding: 80px 20px 135px;
+  }
+  &__content {
+    @media #{$small} {
+      margin: 0 auto;
+      max-width: 700px;
+      display: flex;
+      flex-wrap: wrap;      
+    }
+    @media #{$medium} {      
+      width: 590px;      
+    }
+  }
+  &__heading {
+    margin: 0 0 40px;
+    color: $purple_color;
+    @extend %main-heading;
+    @media #{$small} {
+      width: 100%;
+    }
+    @media #{$medium} {      
+      margin: 0 0 60px;
+    }
+  }
+  &__picture {
+    width: 234px;
+    padding-left: 15px;
+    margin-bottom: 80px;
+    position: relative;
+    @media #{$small} {
+      margin-right: 60px;
+    }
+    @media #{$medium} {
+      width: 50%;
+      margin: 20px 0 0 0;
+      padding: 4px 44px 0 15px;
+      position: relative;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: calc(100% + 14px);
+      height: 10px;      
+      background: $white_color;
+      position: absolute;
+      bottom: -50px;
+      left: 0px;
+      @media #{$medium} {      
+        width: calc(100% - 30px);      
+        bottom: -55px;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    max-width: 234px;
+  }
+  &__info {
+    @media #{$medium} {
+      width: 50%;
+    }
+  }
+  &__place {    
+    margin: 20px 0 0 0 ;
+    color: $purple-color;
+    @extend %secondary-heading;    
+  }
+  &__address {
+    @extend %main-text;
+    margin: 12px 0;
+  }
+  &__link {
+    @extend %main-link;
+    &:first-child {
+      margin-right: 45px;
+    }
+  }
+}

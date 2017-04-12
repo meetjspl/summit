@@ -1,0 +1,215 @@
+.sponsor-offer {
+  padding: 40px 20px 60px;
+  @media #{$medium} {
+    padding: 120px 20px 60px;
+    overflow: hidden;
+  }
+  &__content {    
+    @media #{$small} {
+      margin: 0 auto;
+      max-width: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media #{$medium} {
+      max-width: 1140px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
+  }
+  &__main-info {
+      width: 100%;
+  }
+  &__heading {    
+    margin-top: 0;
+    color: $purple_color;
+    margin-bottom: 40px;
+    @extend %main-heading;
+    @media #{$medium} {
+      white-space: nowrap;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  &__text {
+    @extend %main-text;
+    @media #{$medium} {
+      width: calc(100% / 7 * 6);
+      margin-bottom: 32px;
+    }
+  }
+  &__highlight {
+    @extend %highlight-text;
+    color: $white_color;
+    padding: 4px 2px;
+    @media #{$medium} {
+      padding: 6px 2px;
+    }
+  }
+  &__link {
+    @extend %main-link;
+  }
+  &__main-info {
+    @media #{$medium} {
+      order: 2;
+      width: 62%;
+      position: relative;      
+    }
+  }
+  &__gallery {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media #{$small} {
+      width: auto;
+      flex-direction: row;
+    }
+    @media #{$medium} {
+      display: block;
+    }
+    &:nth-child(2) {
+      margin-top: 30px;
+      position: relative;
+      &:after {
+        $height: 80px;
+        content: "";
+        display: block;
+        width: 5px;
+        height: $height;    
+        background: $lightgrey_color;
+        position: absolute;
+        left: 0;
+        top: calc(50% - #{0.5 * $height});
+        @media #{$small} {
+          left: -26px;
+        }
+        @media #{$medium} {
+          content: none;
+        }
+      }
+      &::before {
+        $height: 80px;
+        content: "";
+        display: block;
+        width: 5px;
+        height: 80px;    
+        background: $purple_color;
+        position: absolute;
+        right: 0;
+        top: calc(50% - #{0.5 * $height});
+        @media #{$small} {
+          content: none;
+        }
+        @media #{$medium} {
+          content: none;
+        } 
+      }
+      @media #{$small} {
+        margin-top: 0;
+      }
+      @media #{$medium} {
+        width: calc(100% / 12 * 3);
+      }
+      .sponsor-offer__picture:first-child {
+        @media #{$medium} {  
+          &::after {
+            $height: 80px;
+            content: "";
+            display: block;
+            width: 5px;
+            height: $height;    
+            background: $lightgrey_color;
+            position: absolute;
+            right: -15px;
+            bottom: calc(#{-0.5 * $height});            
+          }
+        }
+      }
+      .sponsor-offer__picture:nth-child(2) {
+        @media #{$medium} {    
+          &::after {
+            $height: 80px;
+            content: "";
+            display: block;
+            width: 5px;
+            height: $height;    
+            background: $lightgrey_color;
+            position: absolute;
+            left: -15px;
+            top: calc(#{-0.5 * $height});            
+          }
+        }
+      }
+    }
+    &:last-child {
+      position: relative;
+      &:after {
+        @media #{$small} {
+          $height: 80px;
+          content: "";
+          display: block;
+          width: 5px;
+          height: $height;    
+          background: $purple_color;
+          position: absolute;
+          right: -26px;
+          top: calc(50% - #{0.5 * $height})
+        }
+        @media #{$medium} {
+          content: none;
+        }
+      }
+      @media #{$medium} {        
+        width: calc(100% / 12 * 2);
+        padding-top: 280px;
+        order: 3;        
+      }
+      .sponsor-offer__picture {
+        @media #{$medium} {
+          width: 120%;
+          margin: 0;
+          margin-left: -30px;
+          &::after {
+            $height: 80px;
+            content: "";
+            display: block;
+            width: 5px;
+            height: $height;    
+            background: $purple_color;
+            position: absolute;
+            right: -15px;
+            top: calc(#{-0.5 * $height});            
+          }
+        }
+      }
+    }
+  }
+  &__picture {    
+    max-width: 195px;
+    margin-bottom: 12px;
+    @media #{$small} {
+      margin: 10px;
+    }
+    @media #{$medium} {
+      margin: 0;
+      width: 80%;
+      margin-bottom: 0;
+      position: relative;
+    }
+    &:nth-child(2) {
+      @media #{$medium} {
+        margin-left: 15px;
+        margin-top: 120px;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    max-width: 195px;
+  }
+}
+

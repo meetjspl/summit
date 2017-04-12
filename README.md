@@ -1,2 +1,1 @@
-meet.js Summit
-===
+Meet.js Summit

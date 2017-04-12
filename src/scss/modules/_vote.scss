@@ -1,0 +1,242 @@
+.vote {
+  min-height: 100vh;
+  position: relative;  
+  background: url(../images/summit-mobile.jpg) no-repeat center center / cover;
+  @media #{$small} {
+    background-image: url(../images/summit-desktop.jpg);
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;        
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    background: $bg-gradient;
+   }
+   @media #{$medium} {
+    overflow-x: hidden;
+      &::before {
+      content: '';
+      display: block;  
+      width: 40px;
+      height: 10px;
+      position: absolute;      
+      top: 0;      
+      right: 4px;
+      z-index: $index-low;
+      background: $green_color;
+    } 
+  }
+  &__outer-content {
+    $footer-height: 80px;
+    position: relative;  
+    min-height: calc(100vh - #{$footer-height});
+    height: 100%;    
+    padding-bottom: #{$footer-height};
+    @media #{$medium} {
+      &::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 60px;      
+        position: absolute;
+        bottom: 170px;        
+        left: 0;
+        background: $green_color;
+      }
+      &::after{
+        content: '';
+        display: block;
+        width: 5px;
+        height: 60px;        
+        position: absolute;
+        top: 130px;        
+        right: 0;
+        z-index: $index-low;
+        background: $blue_color;
+      }
+    }
+  }
+  &__content {
+    max-width: 1180px;      
+    margin: 0 auto;
+    position: relative;
+    z-index: $index-low;
+    @media #{$medium} {      
+      padding: 90px 20px 0;    
+      &::before {
+        content: '';
+        display: block;      
+        width: 125px;
+        height: 10px;
+        position: absolute;
+        top: 75px;      
+        left: -10px;
+        background: $green_color;
+      }
+      &::after{
+        content: '';
+        display: block;     
+        width: 125px;
+        height: 10px;
+        position: absolute;     
+        top: 75px;      
+        left: -10px;
+        background: $green_color;
+      }
+    }  
+  }
+  &__main-content {
+    padding: 120px 20px 0;
+    @media #{$small} {
+      padding-top: 160px;
+    }
+    @media #{$medium} {
+      max-height: 380px;
+      padding: 0;
+      display: flex;
+    }
+  }
+  &__info {
+    @media #{$small} {
+      max-width: 580px;
+      margin: 0 auto
+    }
+    @media #{$medium} {
+      max-width: none;
+      width: calc(100% * (7/12);
+      order: 2;
+      padding-top: 30px;
+    }
+  }
+  &__heading {
+    margin: 0 0 16px 0;
+    color: $white_color;
+    letter-spacing: 2px;    
+    @extend %main-heading;
+    @media #{$medium} {
+      position: relative;    
+      letter-spacing: 2.2px;
+    }
+  }
+  &__edition {
+    padding: 8px 12px;    
+    position: relative;
+    left: -12px;
+    top: -20px;
+    z-index: $index-negative;
+    @extend %mono-heading;
+    @extend %highlight-text;
+    @media #{$medium} {
+      $width: 80px;
+      width: #{$width};
+      position: absolute;
+      padding: 8px 20px;
+      right: 0;
+      left: calc(100% - #{$width}); 
+      top: -10px;
+      display: flex;      
+      justify-content: center;
+    }
+  }
+  &__text {
+    margin-top: 0;
+    margin-bottom: 40px;
+    @extend %main-text;
+    @media #{$medium} {
+      margin-bottom: 40px;
+    }
+  }
+  &__award {
+    text-align: center;    
+    @media #{$medium} {
+      width: calc(100% * (5/12);
+      display: flex;
+    }
+  }
+  &__symbol {
+    margin: 20px 0 80px;
+    padding: 0;
+    font-size: 20rem;     
+    position: relative;
+    color: $white_color;    
+    @extend %font-bold;
+    &--green {
+      color: $green_color;
+    }
+    @media #{$medium} {
+      font-size: 30rem;
+      height: 390px;
+    }
+    @media #{$medium} {
+      width: 100%;
+      position: relative;
+      top: -60px;
+      left: -20px;      
+    }
+    &::before {
+      $width: 220px;
+      content: '';
+      display: block;
+      width: #{$width};
+      height: 20px;
+      position: absolute;
+      background: $darkblue_color;
+      bottom: 20px;
+      left: calc(50% - #{$width} / 2);
+      @media #{$medium} {
+        $width: 270px;
+        width: #{$width};
+        height: 25px;
+        left: calc(50% - #{$width} / 2);
+        bottom: 36px;
+      }
+    }
+    &::after {
+      $width: 270px;
+      content: '';
+      display: block;
+      width: #{$width};
+      height: 25px;
+      position: absolute;
+      background: $blue_color;
+      bottom: -5px;
+      left: calc(50% - #{$width} / 2);
+      border-bottom: 5px solid $darkblue_color;
+      @media #{$medium} {
+        $width: 325px;
+        width: #{$width};
+        height: 30px;
+        left: calc(50% - #{$width} / 2);
+        bottom: 10px;
+      }
+    }
+  }
+}
+
+.vote__button {
+  background: $blue_color;
+  padding: 10px 15px;
+  position: relative;
+  @extend %main-link;
+  @extend %main-link--white;  
+  &::after {
+    $padding: 3px;
+    content: "";
+    display: block;      
+    width: calc(100% - 2 * #{$padding});
+    height: #{$padding};
+    position: absolute;
+    bottom: -#{$padding};
+    left: #{$padding};
+    background: $darkblue_color;
+  }
+  &:hover, &:active {
+    background: $darkblue_color;
+    &::after {
+      background: darken($darkblue_color, 10%);
+    }
+  }
+}

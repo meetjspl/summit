@@ -1,0 +1,122 @@
+.about {
+  padding: 40px 20px 20px;
+  background: $purple_color;
+  @media #{$medium} {
+    padding: 80px 20px 0;
+  }
+  &__content {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  &__main-info {
+    @media #{$small} {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    @media #{$medium} {
+      width: 590px;      
+    }
+  }
+  &__heading {    
+    color: $white_color;
+    margin-top: 0;
+    margin-bottom: 50px;
+    @extend %main-heading;
+    @media #{$medium} {
+      margin-bottom: 35px;
+    }
+  }
+  &__text {
+    @extend %main-text;
+  }
+  &__link {
+    @extend %main-link;
+  }
+}
+
+.gallery {  
+  @media #{$small} {
+    max-width: 700px;
+    margin: 70px auto 0;
+
+  }  
+  @media #{$medium} {
+    max-width: none;
+  }
+  &__list {    
+  padding: 0;    
+  list-style: none;
+    @media #{$small} {      
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media #{$medium} {
+      width: 810px;
+      min-height: 380px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+  &__item {
+    margin-bottom: 40px;
+    @media #{$small} {
+      width: calc(100% / 3);
+    }
+    @media #{$medium} {
+      width: calc(100% / 6);
+      margin-bottom: 0;
+    }
+  }
+  &__heading {    
+    color: $white_color;
+    @extend %secondary-heading;
+  }
+  &__info {
+    position: relative;
+    @media #{$medium} {
+      display: none;
+      width: 220px;
+            
+    }
+    &::before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 80px;
+      background: $green_color;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      @media #{$medium} {
+        top: -40px;
+      }
+    }
+    &--active {
+      display: block;
+    }
+  }
+  &__image {
+    width: 120px;    
+    margin-bottom: 20px;    
+    @media #{$medium} {
+      margin-bottom: 40px;
+      filter: grayscale(100%);
+    }
+    &--active {
+      @media #{$medium} {
+        filter: none;
+      }
+    }
+  }
+  &__link {
+    @extend %main-link;
+    &:nth-child(2) {
+      margin-right: 25px;
+    }
+  }
+  &__desc {
+    @extend %main-text;
+  }
+}

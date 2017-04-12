@@ -1,0 +1,25 @@
+.registration {
+  padding: 40px 20px 70px;
+  background: $lightgrey_color;
+  @media #{$medium} {
+    padding: 80px 20px 50px;
+  }
+  &__content {
+    max-width: 700px;
+    margin: 0 auto;
+    @media #{$medium} {
+      width: calc(100% / 12 * 10);
+      max-width: 1005px;
+    }
+  }
+  &__heading {    
+    color: $purple_color;
+    margin-top: 0;
+    margin-bottom: 30px;
+    @extend %main-heading;
+    @media #{$medium} {      
+      width: 590px;
+      margin: 0 auto 60px;
+    }
+  }
+}

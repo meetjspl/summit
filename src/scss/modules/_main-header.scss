@@ -1,0 +1,274 @@
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  z-index: $index-top;
+  @media #{$small} {
+    height: 78px;
+    background: none;
+  } 
+  @media #{$medium} {    
+    padding-top: 45px;
+    position: absolute;
+    height: 122px;
+  }
+  &--sticky {
+    background: $purple_color;
+    @media #{$medium} {
+      position: fixed;    
+      top: -30px;
+    }
+  }
+  &--nav-open {
+    background: $purple_color;
+    @media #{$small} {
+      background: none;
+    }
+  }
+  &--side {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    @media #{$medium} {
+      $padding: 20px;
+      position: relative;
+      padding-left: calc(100% * (5/12) - #{$padding});
+      &::before {
+        content: '';
+        display: block;      
+        width: 60px;
+        height: 10px;
+        position: absolute;     
+        top: -90px;      
+        left: 240px;
+        z-index: $index-low;
+        background: $blue_color;
+     }
+     &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 115px;
+        position: absolute;     
+        top: -80px;      
+        left: -110px;
+        background: $blue_color;
+      } 
+    }
+  }
+  &__content {
+    max-width: 1180px;    
+    margin: 0 auto;
+    @media #{$small} {
+      display: flex;    
+      padding-bottom: 10px;
+    }
+  }
+  &__nav {
+    display: none;
+    background: $purple_color;
+    @media #{$small} {
+      width: 100%;
+      min-height: auto;
+      display: block;      
+      padding-right: 20px;
+      position: relative;
+      background: none;
+    }
+    &--nav-open {
+      display: block;
+      min-height: 100vh;
+    }
+  }
+}
+
+.main-logo {
+  width: 116px;  
+  margin: 0 0 10px 20px;  
+  @media #{$small} {
+    margin: 10px 30px 0 20px;    
+  }
+  @media #{$medium} {
+    width: 195px;
+    margin: 0 0 0 20px;    
+  }
+  &__image {
+    width: 116px;
+    height: 40px;
+    display: block;
+    @media #{$medium} {
+      width: 195px;
+      height: auto;
+    }
+  }
+}
+
+.main-nav {
+  position: relative;  
+  @media #{$small} {
+    width: calc(100% - 68px);
+    &--side {
+      @media #{$medium} {
+        width: calc(100% - 40px);
+      }
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 14px 0;    
+    position: relative;
+    text-align: center;
+    @media #{$small} {
+      display: flex;
+      margin-left: 10px;
+    }
+    @media #{$medium} {
+      margin-left: 80px;
+    }
+    &--side {
+      @media #{$small} {    
+        justify-content: flex-end;
+      }
+      @media #{$small} {
+        margin-left: 0;
+      }
+    }
+  }
+  &__item {
+    padding: 6px 0;
+    list-style: none;
+    @media #{$small} {
+      margin-right: 16px;
+    }
+    @media #{$medium} {
+      margin-right: 26px;
+    }
+    &--side {
+      @media #{$medium} {
+        margin-right: 16px;
+      }
+    }
+  }
+  &__link {
+    @extend %main-link;
+  }
+}
+
+.social-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  @media #{$small} {
+    position: absolute;
+    right: 20px;
+    width: 60px;
+    top: 32px;
+    transform: translateY(-50%);
+  }
+  &--side {
+    @media #{$medium} {
+      right: 0px;
+    }  
+  }
+  &__list {    
+    margin: 0;
+    padding: 12px 0;       
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+    @media #{$small} {
+      width: 68px;
+    }
+  }
+  &__item {
+    margin: 0 9px;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: $blue_color;
+    &:hover, &:active {
+      fill: $darkblue_color;
+    }  
+  }
+}
+
+.button-menu {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;  
+  border: none;
+  background: none;
+  @media #{$small} {
+    display: none;
+  }
+  &__icon {    
+    position: absolute;
+    fill: $blue_color;    
+  }
+  &__menu-icon {    
+    width: 25px;
+    height: 25px;
+    display: block;    
+    top: 8px;
+    left: 7px;
+    &--nav-open {
+      display: none;
+    }
+  }
+  &__close-icon {    
+    width: 20px;
+    height: 20px;
+    display: block;
+    top: 10px;
+    left: 10px;
+    &--nav-open {
+      display: none;
+    }
+  }
+}
+
+.register-button {
+  margin-top: 22px;
+  padding: 8px 12px;
+  position: relative;
+  display: inline-block;  
+  background: $blue_color;   
+  @media #{$small} {
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+  }
+  @media #{$medium} {
+    padding: 12px 15px;
+    top: 8px;
+  }
+  &::before {
+    content: "";    
+    width: calc(100% - 4px);
+    height: 3px;
+    display: block;
+    background: $darkblue_color;
+    position: absolute;
+    bottom: -3px;
+    left: 2px;
+  }
+  &:hover, &:active {
+    color: $white_color;
+    background: $darkblue_color;
+    &::before {
+      background: darken($darkblue_color, 10%);
+    }
+  }
+  &__link {
+    @extend %main-link;
+    @extend %main-link--white; 
+  }
+}

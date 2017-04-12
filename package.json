@@ -1,0 +1,33 @@
+{
+  "name": "summit_page",
+  "version": "1.0.0",
+  "private": "true",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.1.18",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.9.8",
+    "browserify": "^12.0.1",
+    "del": "^1.2.1",
+    "es6-promise": "~3.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-babel": "~5.3.0",
+    "gulp-cache": "^0.3.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-eslint": "~1.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1",
+    "gulp-useref": "^1.3.0",
+    "gulp-util": "^3.0.6",
+    "run-sequence": "^1.1.4",
+    "uglifyify": "^3.0.1",
+    "underscore": "^1.8.3",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -1,0 +1,57 @@
+%main-heading {
+  @extend %font-bold;
+  font-size: 3.2rem;
+  @media #{$medium} {
+    font-size: 6rem;
+  }
+}
+
+%secondary-heading {
+  @extend %font-bold;
+  font-size: 1.6rem;
+  @media #{$medium} {
+    font-size: 1.8rem;
+  }
+}
+
+%mono-heading {
+  @extend %font-mono;
+  font-size: 1.4rem;  
+  text-transform: lowercase;     
+  @media #{$medium} {
+    font-size: 1.8rem;
+  }
+}
+
+%main-text {
+  @extend %font-regular;
+  color: $grey_color;
+  font-size: 1.4rem;    
+  line-height: 1.6;
+  @media #{$medium} {
+    font-size: 1.6rem;    
+  }
+}
+
+%main-link {
+  @extend %font-bold;
+  font-size: 1.4rem;
+  color: $blue-color;
+  text-decoration: none;  
+  @media #{$medium} {
+    font-size: 1.6rem;
+  }
+  &:hover, &:active {
+    color: $darkblue_color;
+  }
+  &--white {
+    color: $white_color;
+    &:hover, &:active {
+      color: $white_color;
+    }
+  }  
+}
+
+%highlight-text {
+  background: $green_color;
+}
