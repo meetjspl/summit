@@ -7,17 +7,19 @@
   &__content {
     max-width: 700px;
     margin: 0 auto;
+    @extend %main-text;
+    font-size: 2em;
     @media #{$medium} {
       width: calc(100% / 12 * 10);
       max-width: 1005px;
     }
   }
-  &__heading {    
+  &__heading {
     color: $purple_color;
     margin-top: 0;
     margin-bottom: 30px;
     @extend %main-heading;
-    @media #{$medium} {      
+    @media #{$medium} {
       width: 590px;
       margin: 0 auto 60px;
     }

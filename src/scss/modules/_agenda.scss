@@ -1,6 +1,6 @@
 .agenda {
-  padding: 40px 20px;  
-  overflow: hidden; 
+  padding: 40px 20px;
+  overflow: hidden;
   @media #{$medium} {
     padding-top: 80px;
     padding-bottom: 100px;
@@ -10,7 +10,7 @@
       max-width: 700px;
       margin: 0 auto;
     }
-    @media #{$medium} {  
+    @media #{$medium} {
       max-width: 1140px;
     }
   }
@@ -22,7 +22,7 @@
       margin-bottom: 80px;
     }
   }
-  &__heading {    
+  &__heading {
     color: $purple_color;
     margin-top: 0;
     margin-bottom: 16px;
@@ -40,16 +40,9 @@
     }
   }
   &__track {
-    @media #{$medium} {
-      width: calc(100% / 10 * 4);
-    }
-    &:first-child {
-      @media #{$medium} {
-        margin-right: 100px;
-      }
-    }
+    width: calc(100% / 12 * 8);
   }
-  &__track-title {    
+  &__track-title {
     color: $white_color;
     margin: 0;
     padding: 10px 10px 12px 15px;
@@ -60,7 +53,7 @@
       margin-bottom: 0;
     }
   }
-  &__hour {    
+  &__hour {
     font-size: 1.6rem;
     color: $purple_color;
     background: $lightgrey_color;
@@ -70,7 +63,7 @@
       font-size: 1.8rem;
     }
   }
-  &__title {    
+  &__title {
     color: $purple_color;
     margin-top: 0;
     margin-bottom: 0;
@@ -81,13 +74,13 @@
       }
     }
   }
-  &__link {    
+  &__link {
     display: block;
     @extend %main-link;
     &:first-child {
       margin-bottom: 14px;
       @media #{$medium} {
-      margin-bottom: 25px;
+        margin-bottom: 25px;
       }
     }
     &:last-child {
@@ -102,7 +95,7 @@
     }
   }
   &__items {
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
     @media #{$medium} {
       margin-bottom: 0;
       display: table-row;
@@ -127,7 +120,7 @@
     }
     @media #{$medium} {
       display: table-cell;
-      position: relative;    
+      position: relative;
     }
   }
   &__time {
@@ -136,7 +129,7 @@
     @media #{$medium} {
       margin-top: 0;
       margin-bottom: 0;
-      min-width: 182px;      
+      min-width: 182px;
     }
   }
   &__speech {
@@ -149,14 +142,14 @@
       &::after {
         content: "";
         display: block;
-        height: 1px;    
-        background: $lightgrey_color;        
+        height: 1px;
+        background: $lightgrey_color;
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 500%;        
+        width: 500%;
       }
-    }    
+    }
   }
   &__single {
     @media #{$medium} {
@@ -167,20 +160,20 @@
       &::after {
         content: "";
         display: block;
-        height: 1px;    
-        background: $lightgrey_color;        
+        height: 1px;
+        background: $lightgrey_color;
         position: absolute;
         bottom: 0;
         left: 182px;
-        width: 400%;        
-      }    
+        width: 400%;
+      }
     }
   }
   &__main-item {
     padding-bottom: 30px;
     padding-top: 35px;
   }
-  &__desc {    
+  &__desc {
     margin-top: 15px;
     margin-bottom: 0;
     @extend %main-text;

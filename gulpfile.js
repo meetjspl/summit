@@ -16,7 +16,7 @@ gulp.task('html', function() {
   .pipe(gulp.dest(config.tmp))
 });
 
-gulp.task('sass', function() {  
+gulp.task('sass', function() {
   return gulp
   .src(config.sass)
   .pipe($.plumber({errorHandler: function(err) {console.log(err); this.emit('end')}}))
@@ -25,13 +25,13 @@ gulp.task('sass', function() {
   .pipe(gulp.dest(config.tmp_css));
 });
 
-gulp.task('js', function() {  
+gulp.task('js', function() {
   var bundler = browserify({
     entries: config.js[0],
     extensions: ['.js'],
     debug: false,
     fullPaths: false
-  });  
+  });
   var bundle = bundler.transform(babelify, {
     extensions: ['.js'],
     presets: ["es2015"]
@@ -41,7 +41,7 @@ gulp.task('js', function() {
     .pipe(gulp.dest(config.tmp_js));
 });
 
-gulp.task('eslint', function() {  
+gulp.task('eslint', function() {
   return gulp.src(config.js)
     .pipe($.eslint())
     .pipe($.eslint.format())
@@ -61,19 +61,19 @@ gulp.task('browserSync', function() {
   })
 });
 
-gulp.task('default', ['eslint', 'sass', 'html', 'js', 'browserSync'], function() {
+gulp.task('default', ['sass', 'html', 'js', 'browserSync'], function() {
   gulp.watch([config.sass[1]], ['sass', reload]);
-  gulp.watch([config.html], ['html', reload]); 
-  gulp.watch([config.js[1]], ['js', reload]); 
+  gulp.watch([config.html], ['html', reload]);
+  gulp.watch([config.js[1]], ['js', reload]);
 });
 
-gulp.task('images', function(){  
+gulp.task('images', function(){
   return gulp.src(config.images)
   .pipe($.imagemin())
   .pipe(gulp.dest(config.build_images))
 });
 
-gulp.task('fonts', function() {  
+gulp.task('fonts', function() {
   return gulp.src(config.fonts)
   .pipe(gulp.dest(config.build_fonts))
 });
@@ -81,7 +81,7 @@ gulp.task('fonts', function() {
 gulp.task('build', ['html', 'sass', 'js', 'fonts', 'images'], function() {
   var assets = $.useref.assets();
   return gulp.src(config.tmp_html)
-  .pipe(assets)  
+  .pipe(assets)
   .pipe(gulpIf('*.css', $.cssnano()))
   .pipe(gulpIf('*.js', $.uglify()))
   .pipe(assets.restore())
