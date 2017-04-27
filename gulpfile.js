@@ -45,13 +45,17 @@ gulp.task('js', function() {
 
 gulp.task('eslint', function() {
   return gulp.src(config.js)
-    .pipe($.eslint())
+    .pipe($.eslint({
+      envs: ['es6'],
+      ecmaFeatures: { modules: true }
+    }))
     .pipe($.eslint.format())
     .pipe($.eslint.failAfterError())
 });
 
 gulp.task('browserSync', function() {
   browserSync({
+    open: false,
     server: {
       baseDir: './tmp',
       routes: {
@@ -63,7 +67,7 @@ gulp.task('browserSync', function() {
   })
 });
 
-gulp.task('default', ['sass', 'html', 'js', 'browserSync'], function() {
+gulp.task('default', ['eslint', 'sass', 'html', 'js', 'browserSync'], function() {
   gulp.watch([config.sass[1]], ['sass', reload]);
   gulp.watch([config.html], ['html', reload]);
   gulp.watch([config.js[1]], ['js', reload]);
