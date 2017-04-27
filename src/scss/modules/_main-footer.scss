@@ -5,20 +5,20 @@
     max-width: 1140px;
     margin: 0 auto;
     padding-top: 30px;
-    height: 80px;  
+    height: 80px;
     background: none;
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;  
-    @media #{$medium} {    
+    right: 0;
+    @include mediaquery('gt-medium') {
       &::before {
         content: '';
-        display: block;      
+        display: block;
         width: 110px;
         height: 10px;
         position: absolute;
-        top: 0;      
+        top: 0;
         right: -10px;
         background: $blue_color;
       }
@@ -27,8 +27,8 @@
         display: block;
         width: 10px;
         height: 120px;
-        position: absolute;      
-        bottom: 0;      
+        position: absolute;
+        bottom: 0;
         right: -50px;
         background: $green_color;
       }
@@ -37,11 +37,11 @@
   &__content {
     padding: 20px;
     position: relative;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       max-width: 700px;
       margin: 0 auto;
     }
-    @media #{$medium} {      
+    @include mediaquery('gt-medium') {
       max-width: 1040px;
       width: calc(100% / 12 * 8);
       margin: 0 auto;
@@ -57,24 +57,24 @@
       background: $lightpurple_color;
     }
   }
-  &__badge {    
+  &__badge {
     color: $white_color;
     display: inline-block;
     padding: 8px 25px;
     @extend %mono-heading;
     @extend %highlight-text;
   }
-  &__copy {    
+  &__copy {
     margin-top: 0;
     @extend %main-text;
     &--side {
-      padding-left: 20px;  
-      @media #{$small} {
+      padding-left: 20px;
+      @include mediaquery('gt-small') {
         max-width: 580px;
         margin: 0 auto;
         padding: 0;
-      }  
-      @media #{$medium} {
+      }
+      @include mediaquery('gt-medium') {
         max-width: none;
         padding-left: calc(100% / 12 * 5);
       }

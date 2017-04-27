@@ -1,28 +1,28 @@
-.venue {  
+.venue {
   padding: 40px 20px 60px;
   background: $lightgrey_color;
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     padding: 80px 20px 135px;
   }
   &__content {
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       margin: 0 auto;
       max-width: 700px;
       display: flex;
-      flex-wrap: wrap;      
+      flex-wrap: wrap;
     }
-    @media #{$medium} {      
-      width: 590px;      
+    @include mediaquery('gt-medium') {
+      width: 590px;
     }
   }
   &__heading {
     margin: 0 0 40px;
     color: $purple_color;
     @extend %main-heading;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       width: 100%;
     }
-    @media #{$medium} {      
+    @include mediaquery('gt-medium') {
       margin: 0 0 60px;
     }
   }
@@ -31,10 +31,10 @@
     padding-left: 15px;
     margin-bottom: 80px;
     position: relative;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       margin-right: 60px;
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: 50%;
       margin: 20px 0 0 0;
       padding: 4px 44px 0 15px;
@@ -44,13 +44,13 @@
       content: "";
       display: block;
       width: calc(100% + 14px);
-      height: 10px;      
+      height: 10px;
       background: $white_color;
       position: absolute;
       bottom: -50px;
       left: 0px;
-      @media #{$medium} {      
-        width: calc(100% - 30px);      
+      @include mediaquery('gt-medium') {
+        width: calc(100% - 30px);
         bottom: -55px;
       }
     }
@@ -60,14 +60,14 @@
     max-width: 234px;
   }
   &__info {
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: 50%;
     }
   }
-  &__place {    
+  &__place {
     margin: 20px 0 0 0 ;
     color: $purple-color;
-    @extend %secondary-heading;    
+    @extend %secondary-heading;
   }
   &__address {
     @extend %main-text;

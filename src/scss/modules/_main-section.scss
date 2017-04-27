@@ -1,5 +1,5 @@
 .main-section {
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     height: 100vh;
     min-height: 640px;
     max-height: 740px;
@@ -8,40 +8,40 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-  }  
+  }
   &__outer-content {
     width: 100%;
     padding-top: 120px;
     background: url(../images/summit-mobile.jpg) no-repeat top center;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       background: url(../images/summit-desktop.jpg) no-repeat center bottom / cover;
       padding-top: 140px;
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       padding: 205px 0px 0px;
-      height: 100%;   
+      height: 100%;
     }
     &::after {
       content: "";
       display: block;
-      position: absolute;        
+      position: absolute;
       top: 0;
       right: 0;
       bottom: 80px;
       left: 0;
       background: $bg-gradient;
-     }   
+     }
   }
   &__content {
     max-width: 1180px;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       height: 100%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content:  flex-end;
       position: relative;
-    }    
+    }
   }
   &__info {
     max-width: 700px;
@@ -49,62 +49,62 @@
     position: relative;
     z-index: $index-low;
     padding: 0 20px;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       padding: 0;
     }
-    @media #{$medium} {      
+    @include mediaquery('gt-medium') {
       position: absolute;
       top: calc(50% - 95px);
       left: calc(100% / 12 * 3);
       width: 100%;
-      transform: translateY(-50%);      
+      transform: translateY(-50%);
     }
   }
-  &__heading {    
+  &__heading {
     color: $white_color;
     margin: 0;
-    line-height: 1;  
+    line-height: 1;
     position: relative;
     @extend %main-heading;
-    @media #{$small} {    
+    @include mediaquery('gt-small') {
       margin-top: 0px;
     }
   }
-  &__date {    
+  &__date {
     margin-top: 6px;
     color: $white_color;
     @extend %mono-heading;
   }
-  &__text {    
+  &__text {
     margin-top: 60px;
     @extend %main-text;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       max-width: 650px;
     }
   }
-  &__highlight {    
+  &__highlight {
     font-size: 1.2rem;
     padding: 6px 8px;
     @extend %highlight-text;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       padding: 7px 20px;
       font-size: 1.4rem;
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       font-size: 1.8rem;
     }
   }
   &__badge {
     display: flex;
-    padding: 10px 0 20px;    
+    padding: 10px 0 20px;
     justify-content: center;
     position: relative;
     z-index: $index-low;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       margin-bottom: 30px;
     }
-    @media #{$medium} {      
-      position: absolute;      
+    @include mediaquery('gt-medium') {
+      position: absolute;
       bottom: 160px;
       left: -260px;
       top: 180px;
@@ -121,7 +121,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media #{$small} {
+  @include mediaquery('gt-small') {
     width: 100%;
     height: auto;
     display: flex;
@@ -129,10 +129,10 @@
     align-items: flex-start;
     max-width: 1140px;
     justify-content: space-between;
-    margin: 0 auto;   
+    margin: 0 auto;
     z-index: $index-low;
   }
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     transform: translateY(50%);
     padding: 0 40px;
     justify-content: flex-start;
@@ -144,8 +144,8 @@
     width: 100%;
     align-content: center;
     margin-bottom: 20px;
-    max-width: 330px;    
-    @media #{$small} {
+    max-width: 330px;
+    @include mediaquery('gt-small') {
       max-width: none;
       align-items: flex-start;
       margin-right: 20px;
@@ -153,18 +153,18 @@
         margin-right: 0px;
       }
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-top: 30px;
-      margin-bottom: 25px;      
+      margin-bottom: 25px;
     }
-    &--global, &--scope {      
-      @media #{$small} {
+    &--global, &--scope {
+      @include mediaquery('gt-small') {
         width: calc(100% / 12 * 3);
         flex-grow: 1;
       }
     }
     &--modular {
-      @media #{$small} {
+      @include mediaquery('gt-small') {
         width: calc(100% / 12 * 6);
         flex-grow: 2;
       }
@@ -185,12 +185,12 @@
   &__link {
     display: block;
     cursor: pointer;
-  } 
-  &__heading {    
+  }
+  &__heading {
     color: $purple_color;
     margin-top: 0;
     @extend %mono-heading;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       margin-left: 4px;
     }
   }
@@ -209,11 +209,11 @@
 .badge {
   width: 188px;
   height: 98px;
-  position: relative;  
+  position: relative;
   display: flex;
   align-items: center;
   background: $green_color;
-  &__text {    
+  &__text {
     color: $white_color;
     font-size: 1.8rem;
     line-height: 1;
@@ -230,15 +230,15 @@
     height: 0;
     border-style: solid;
     border-width: 12px 25px 0px 0;
-    border-color: transparent $darkgreen_color transparent transparent; 
+    border-color: transparent $darkgreen_color transparent transparent;
     position: absolute;
     top: -12px;
   }
   &::after {
-    content: "";    
+    content: "";
     height: 100%;
     width: 24px;
-    display: block;    
+    display: block;
     position: absolute;
     right: 0;
     top: 5px;

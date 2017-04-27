@@ -1,7 +1,7 @@
 {
   "name": "summit_page",
-  "version": "1.0.0",
-  "private": "true",
+  "version": "2017.0.0",
+  "private": true,
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.1.18",
     "babel-polyfill": "^6.5.0",
@@ -29,5 +29,9 @@
     "uglifyify": "^3.0.1",
     "underscore": "^1.8.3",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "normalize-scss": "^6.0.0",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll"
   }
 }

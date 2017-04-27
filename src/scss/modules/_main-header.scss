@@ -4,25 +4,25 @@
   top: 0;
   padding-top: 10px;
   z-index: $index-top;
-  @media #{$small} {
+  @include mediaquery('gt-small') {
     height: 78px;
     background: none;
-  } 
-  @media #{$medium} {    
+  }
+  @include mediaquery('gt-medium') {
     padding-top: 45px;
     position: absolute;
     height: 122px;
   }
   &--sticky {
     background: $purple_color;
-    @media #{$medium} {
-      position: fixed;    
+    @include mediaquery('gt-medium') {
+      position: fixed;
       top: -30px;
     }
   }
   &--nav-open {
     background: $purple_color;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       background: none;
     }
   }
@@ -31,17 +31,17 @@
     position: fixed;
     top: 0;
     padding-top: 10px;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       $padding: 20px;
       position: relative;
       padding-left: calc(100% * (5/12) - #{$padding});
       &::before {
         content: '';
-        display: block;      
+        display: block;
         width: 60px;
         height: 10px;
-        position: absolute;     
-        top: -90px;      
+        position: absolute;
+        top: -90px;
         left: 240px;
         z-index: $index-low;
         background: $blue_color;
@@ -51,28 +51,28 @@
         display: block;
         width: 10px;
         height: 115px;
-        position: absolute;     
-        top: -80px;      
+        position: absolute;
+        top: -80px;
         left: -110px;
         background: $blue_color;
-      } 
+      }
     }
   }
   &__content {
-    max-width: 1180px;    
+    max-width: 1180px;
     margin: 0 auto;
-    @media #{$small} {
-      display: flex;    
+    @include mediaquery('gt-small') {
+      display: flex;
       padding-bottom: 10px;
     }
   }
   &__nav {
     display: none;
     background: $purple_color;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       width: 100%;
       min-height: auto;
-      display: block;      
+      display: block;
       padding-right: 20px;
       position: relative;
       background: none;
@@ -85,20 +85,20 @@
 }
 
 .main-logo {
-  width: 116px;  
-  margin: 0 0 10px 20px;  
-  @media #{$small} {
-    margin: 10px 30px 0 20px;    
+  width: 116px;
+  margin: 0 0 10px 20px;
+  @include mediaquery('gt-small') {
+    margin: 10px 30px 0 20px;
   }
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     width: 195px;
-    margin: 0 0 0 20px;    
+    margin: 0 0 0 20px;
   }
   &__image {
     width: 116px;
     height: 40px;
     display: block;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: 195px;
       height: auto;
     }
@@ -106,32 +106,32 @@
 }
 
 .main-nav {
-  position: relative;  
-  @media #{$small} {
+  position: relative;
+  @include mediaquery('gt-small') {
     width: calc(100% - 68px);
     &--side {
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         width: calc(100% - 40px);
       }
     }
   }
   &__list {
     margin: 0;
-    padding: 14px 0;    
+    padding: 14px 0;
     position: relative;
     text-align: center;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       display: flex;
       margin-left: 10px;
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-left: 80px;
     }
     &--side {
-      @media #{$small} {    
+      @include mediaquery('gt-small') {
         justify-content: flex-end;
       }
-      @media #{$small} {
+      @include mediaquery('gt-small') {
         margin-left: 0;
       }
     }
@@ -139,14 +139,14 @@
   &__item {
     padding: 6px 0;
     list-style: none;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       margin-right: 16px;
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-right: 26px;
     }
     &--side {
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         margin-right: 16px;
       }
     }
@@ -159,8 +159,8 @@
 .social-nav {
   width: 100%;
   display: flex;
-  justify-content: center;  
-  @media #{$small} {
+  justify-content: center;
+  @include mediaquery('gt-small') {
     position: absolute;
     right: 20px;
     width: 60px;
@@ -168,17 +168,17 @@
     transform: translateY(-50%);
   }
   &--side {
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       right: 0px;
-    }  
+    }
   }
-  &__list {    
+  &__list {
     margin: 0;
-    padding: 12px 0;       
+    padding: 12px 0;
     display: flex;
     justify-content: center;
-    list-style: none; 
-    @media #{$small} {
+    list-style: none;
+    @include mediaquery('gt-small') {
       width: 68px;
     }
   }
@@ -194,7 +194,7 @@
     fill: $blue_color;
     &:hover, &:active {
       fill: $darkblue_color;
-    }  
+    }
   }
 }
 
@@ -203,27 +203,27 @@
   height: 40px;
   position: absolute;
   top: 10px;
-  right: 10px;  
+  right: 10px;
   border: none;
   background: none;
-  @media #{$small} {
+  @include mediaquery('gt-small') {
     display: none;
   }
-  &__icon {    
+  &__icon {
     position: absolute;
-    fill: $blue_color;    
+    fill: $blue_color;
   }
-  &__menu-icon {    
+  &__menu-icon {
     width: 25px;
     height: 25px;
-    display: block;    
+    display: block;
     top: 8px;
     left: 7px;
     &--nav-open {
       display: none;
     }
   }
-  &__close-icon {    
+  &__close-icon {
     width: 20px;
     height: 20px;
     display: block;
@@ -239,19 +239,19 @@
   margin-top: 22px;
   padding: 8px 12px;
   position: relative;
-  display: inline-block;  
-  background: $blue_color;   
-  @media #{$small} {
+  display: inline-block;
+  background: $blue_color;
+  @include mediaquery('gt-small') {
     position: absolute;
     right: 0;
     margin-top: 0;
   }
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     padding: 12px 15px;
     top: 8px;
   }
   &::before {
-    content: "";    
+    content: "";
     width: calc(100% - 4px);
     height: 3px;
     display: block;
@@ -269,6 +269,6 @@
   }
   &__link {
     @extend %main-link;
-    @extend %main-link--white; 
+    @extend %main-link--white;
   }
 }

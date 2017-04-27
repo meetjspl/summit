@@ -1,7 +1,7 @@
 %main-heading {
   @extend %font-bold;
   font-size: 3.2rem;
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     font-size: 6rem;
   }
 }
@@ -9,16 +9,16 @@
 %secondary-heading {
   @extend %font-bold;
   font-size: 1.6rem;
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     font-size: 1.8rem;
   }
 }
 
 %mono-heading {
   @extend %font-mono;
-  font-size: 1.4rem;  
-  text-transform: lowercase;     
-  @media #{$medium} {
+  font-size: 1.4rem;
+  text-transform: lowercase;
+  @include mediaquery('gt-medium') {
     font-size: 1.8rem;
   }
 }
@@ -26,10 +26,10 @@
 %main-text {
   @extend %font-regular;
   color: $grey_color;
-  font-size: 1.4rem;    
+  font-size: 1.4rem;
   line-height: 1.6;
-  @media #{$medium} {
-    font-size: 1.6rem;    
+  @include mediaquery('gt-medium') {
+    font-size: 1.6rem;
   }
 }
 
@@ -37,8 +37,8 @@
   @extend %font-bold;
   font-size: 1.4rem;
   color: $blue-color;
-  text-decoration: none;  
-  @media #{$medium} {
+  text-decoration: none;
+  @include mediaquery('gt-medium') {
     font-size: 1.6rem;
   }
   &:hover, &:active {
@@ -49,7 +49,7 @@
     &:hover, &:active {
       color: $white_color;
     }
-  }  
+  }
 }
 
 %highlight-text {

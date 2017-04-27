@@ -1,5 +1,4 @@
-export default (function () {
-
+export function initHamburgerMenu() {
   const menuButton = document.querySelector('.button-menu');
   const mobileNav = document.querySelector('.main-header__nav');
   const menuIcon = document.querySelector('.button-menu__menu-icon');
@@ -20,5 +19,4 @@ export default (function () {
       }
     }
   }, false);
-
-});
+}

@@ -20,7 +20,9 @@ gulp.task('sass', function() {
   return gulp
   .src(config.sass)
   .pipe($.plumber({errorHandler: function(err) {console.log(err); this.emit('end')}}))
-  .pipe($.sass())
+  .pipe($.sass({
+    includePaths: ['src/scss', 'node_modules']
+  }))
   .pipe($.autoprefixer({browsers: ['last 2 version', '> 5%']}))
   .pipe(gulp.dest(config.tmp_css));
 });

@@ -1,7 +1,7 @@
 .about {
   padding: 40px 20px 20px;
   background: $purple_color;
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     padding: 80px 20px 0;
   }
   &__content {
@@ -9,20 +9,20 @@
     margin: 0 auto;
   }
   &__main-info {
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       max-width: 700px;
       margin: 0 auto;
     }
-    @media #{$medium} {
-      width: 590px;      
+    @include mediaquery('gt-medium') {
+      width: 590px;
     }
   }
-  &__heading {    
+  &__heading {
     color: $white_color;
     margin-top: 0;
     margin-bottom: 50px;
     @extend %main-heading;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-bottom: 35px;
     }
   }
@@ -34,23 +34,23 @@
   }
 }
 
-.gallery {  
-  @media #{$small} {
+.gallery {
+  @include mediaquery('gt-small') {
     max-width: 700px;
     margin: 70px auto 0;
 
-  }  
-  @media #{$medium} {
+  }
+  @include mediaquery('gt-medium') {
     max-width: none;
   }
-  &__list {    
-  padding: 0;    
+  &__list {
+  padding: 0;
   list-style: none;
-    @media #{$small} {      
+    @include mediaquery('gt-small') {
       display: flex;
       flex-wrap: wrap;
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: 810px;
       min-height: 380px;
       margin: 0 auto;
@@ -61,24 +61,24 @@
   }
   &__item {
     margin-bottom: 40px;
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       width: calc(100% / 3);
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: calc(100% / 6);
       margin-bottom: 0;
     }
   }
-  &__heading {    
+  &__heading {
     color: $white_color;
     @extend %secondary-heading;
   }
   &__info {
     position: relative;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       display: none;
       width: 220px;
-            
+
     }
     &::before {
       content: "";
@@ -89,7 +89,7 @@
       position: absolute;
       top: -20px;
       left: 0;
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         top: -40px;
       }
     }
@@ -98,14 +98,14 @@
     }
   }
   &__image {
-    width: 120px;    
-    margin-bottom: 20px;    
-    @media #{$medium} {
+    width: 120px;
+    margin-bottom: 20px;
+    @include mediaquery('gt-medium') {
       margin-bottom: 40px;
       filter: grayscale(100%);
     }
     &--active {
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         filter: none;
       }
     }

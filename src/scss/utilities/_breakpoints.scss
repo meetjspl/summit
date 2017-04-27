@@ -1,4 +1,16 @@
 // breakpoints
 
-$small: '(min-width: 48em)';
-$medium: '(min-width: 62em)';
+@mixin mediaquery($query) {
+  $breakpoints: (
+    'gt-small': '(min-width: 48em)',
+    'gt-medium': '(min-width: 62em)',
+  );
+
+  @if map-has-key($breakpoints, $query) {
+    @media screen and #{map-get($breakpoints, $query)} {
+      @content;
+    }
+  } @else {
+    @error "ERROR: No breakpoint specified for query '#{$query}'";
+  }
+}

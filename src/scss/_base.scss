@@ -1,2 +1,4 @@
-@import '../../vendors/css/normalize/normalize';
+@import 'normalize-scss/sass/normalize';
+@include normalize();
+
 @import 'base/base';

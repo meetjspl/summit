@@ -2,18 +2,18 @@
   padding: 40px 20px 50px;
   &__content {
     max-width: 700px;
-    margin: 0 auto;        
-    @media #{$medium} {      
+    margin: 0 auto;
+    @include mediaquery('gt-medium') {
       width: 590px;
-      padding: 70px 0 100px;      
+      padding: 70px 0 100px;
       margin: 0 auto;
     }
   }
-  &__heading {    
+  &__heading {
     color: $purple_color;
     margin: 0 0 30px;
     @extend %main-heading;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-bottom: 50px;
       white-space: nowrap;
     }

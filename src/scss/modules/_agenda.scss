@@ -1,22 +1,22 @@
 .agenda {
   padding: 40px 20px;
   overflow: hidden;
-  @media #{$medium} {
+  @include mediaquery('gt-medium') {
     padding-top: 80px;
     padding-bottom: 100px;
   }
   &__content {
-    @media #{$small} {
+    @include mediaquery('gt-small') {
       max-width: 700px;
       margin: 0 auto;
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       max-width: 1140px;
     }
   }
   &__text {
     margin-bottom: 50px;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: 590px;
       margin: 0 auto;
       margin-bottom: 80px;
@@ -32,7 +32,7 @@
     @extend %main-text;
   }
   &__tracks {
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: calc(100% / 12 * 10);
       display: flex;
       margin-left: 182px;
@@ -49,7 +49,7 @@
     margin-bottom: 20px;
     @extend %mono-heading;
     @extend %highlight-text;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-bottom: 0;
     }
   }
@@ -59,7 +59,7 @@
     background: $lightgrey_color;
     padding: 8px 15px;
     @extend %font-mono;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       font-size: 1.8rem;
     }
   }
@@ -69,7 +69,7 @@
     margin-bottom: 0;
     @extend %secondary-heading;
     &--speech {
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         min-height: 80px;
       }
     }
@@ -79,7 +79,7 @@
     @extend %main-link;
     &:first-child {
       margin-bottom: 14px;
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         margin-bottom: 25px;
       }
     }
@@ -90,13 +90,13 @@
   &__links {
     margin-top: 20px;
     margin-bottom: 30px;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin: 0;
     }
   }
   &__items {
     margin-bottom: 30px;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-bottom: 0;
       display: table-row;
     }
@@ -106,7 +106,7 @@
       content: ' (Track 1)';
       color: $grey_color;
       font-size: 1.4rem;
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         content: '';
       }
     }
@@ -114,11 +114,11 @@
       content: ' (Track 2)';
       color: $grey_color;
       font-size: 1.4rem;
-      @media #{$medium} {
+      @include mediaquery('gt-medium') {
         content: '';
       }
     }
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       display: table-cell;
       position: relative;
     }
@@ -126,14 +126,14 @@
   &__time {
     margin-top: 40px;
     margin-bottom: 30px;
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       margin-top: 0;
       margin-bottom: 0;
       min-width: 182px;
     }
   }
   &__speech {
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       width: 50%;
       padding-right: calc(100% / 12 * 1);
       padding-bottom: 30px;
@@ -152,7 +152,7 @@
     }
   }
   &__single {
-    @media #{$medium} {
+    @include mediaquery('gt-medium') {
       display: flex;
       padding-top: 35px;
       padding-bottom: 30px;
