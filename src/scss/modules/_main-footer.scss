@@ -46,6 +46,9 @@
       width: calc(100% / 12 * 8);
       margin: 0 auto;
     }
+    a {
+      @extend %main-link;
+    }
     &::after {
       content: "";
       display: block;
