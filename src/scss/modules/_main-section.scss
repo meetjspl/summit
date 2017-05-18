@@ -30,7 +30,27 @@
       bottom: 80px;
       left: 0;
       background: $bg-gradient;
+      pointer-events: none;
      }
+  }
+  &__image {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    @include mediaquery('gt-small') {
+      width: 200px;
+      right: calc(100% / 12 * 2);
+    }
+
+    @include mediaquery('gt-medium') {
+      left: -20px;
+      top: calc(50% - 100px);
+      width: 240px;
+      transform: translateY(-50%);
+    }
   }
   &__content {
     max-width: 1180px;
