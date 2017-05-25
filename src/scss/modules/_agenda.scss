@@ -1,6 +1,7 @@
 .agenda {
   padding: 40px 20px;
   overflow: hidden;
+  background-color: white;
   @include mediaquery('gt-medium') {
     padding-top: 80px;
     padding-bottom: 100px;
