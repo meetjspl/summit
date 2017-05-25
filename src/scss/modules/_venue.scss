@@ -5,6 +5,7 @@
     padding: 80px 20px 135px;
   }
   &__content {
+    position: relative;
     @include mediaquery('gt-small') {
       margin: 0 auto;
       max-width: 700px;
@@ -13,6 +14,24 @@
     }
     @include mediaquery('gt-medium') {
       width: 590px;
+    }
+  }
+  &__building-image {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+
+    @include mediaquery('gt-small') {
+      width: 200px;
+      right: calc(-100% / 12 * 1);
+    }
+
+    @include mediaquery('gt-medium') {
+      left: -280px;
+      width: 240px;
     }
   }
   &__heading {
