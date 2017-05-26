@@ -4,7 +4,7 @@ node_js:
 install:
 - npm install
 script:
-- gulp build
+- npm run build
 env:
   global:
   - secure: DCZ58v53dK4YvB3z7AQ78NPMf8bMEI/zhEx7Q0pz2s/UHFEruVI5nQ+FJAaIbz+1+dCYAKBWXgOAxoT9LYiQziGr8NzPo0oE9snCm6Kljf7GWiFcbQPjuFIdngFmbiHSEkUaWUCOJokdpxx/sKEX3L834NuR7+v8+yqblIZC5L0=
