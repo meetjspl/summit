@@ -10,4 +10,5 @@ env:
   - secure: DCZ58v53dK4YvB3z7AQ78NPMf8bMEI/zhEx7Q0pz2s/UHFEruVI5nQ+FJAaIbz+1+dCYAKBWXgOAxoT9LYiQziGr8NzPo0oE9snCm6Kljf7GWiFcbQPjuFIdngFmbiHSEkUaWUCOJokdpxx/sKEX3L834NuR7+v8+yqblIZC5L0=
   - secure: TfSN9oUMF7ma2Z4CAA/gndzm+TwHxr8zpq5f0nhf5QdkW8XTCsJ7N6bZimUBWu4/uT+B0T+FMTO8+dXt0GlWUoWVKcoLaPD+pJN33e91jjVjJMsh+jG+fMEPzy0S0XpMJ6dU8KWeGwhDj1o5LwblDi8/PTpFxhb8OtN6f2iPd80=
 
-after_success: gulp deploy --user $FTP_USER --password $FTP_PASSWORD
+after_success:
+- 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then gulp deploy --user $FTP_USER --password $FTP_PASSWORD; fi'
