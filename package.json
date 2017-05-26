@@ -26,11 +26,12 @@
     "minimist": "^1.2.0",
     "run-sequence": "^1.1.4",
     "uglifyify": "^3.0.4",
-    "underscore": "^1.8.3",
     "vinyl-ftp": "^0.6.0",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "classlist-polyfill": "^1.2.0",
+    "core-js": "^2.4.1",
     "normalize-scss": "^6.0.0",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
   },
