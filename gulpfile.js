@@ -9,7 +9,10 @@ var gulp = require('gulp'),
   source = require('vinyl-source-stream'),
   babelify = require('babelify'),
   reload = browserSync.reload,
-  browserify = require('browserify');
+  browserify = require('browserify'),
+  filter = require('gulp-filter'),
+  rev = require('gulp-rev'),
+  revReplace = require('gulp-rev-replace');
 
 var ftp = require('vinyl-ftp');
 var gutil = require('gulp-util');
@@ -108,12 +111,17 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('build', ['html', 'sass', 'js', 'fonts', 'images'], function () {
-  var assets = $.useref.assets();
+  var assets = $.useref.assets(),
+      indexHtmlFilter = filter(['**/*', '!**/index.html'], { restore: true });
   return gulp.src(config.tmp_html)
     .pipe(assets)
     .pipe(gulpIf('*.css', $.cssnano()))
     .pipe(gulpIf('*.js', $.uglify()))
     .pipe(assets.restore())
     .pipe($.useref())
+    .pipe(indexHtmlFilter)
+    .pipe(rev())
+    .pipe(indexHtmlFilter.restore)
+    .pipe(revReplace())
     .pipe(gulp.dest(config.build))
 });
