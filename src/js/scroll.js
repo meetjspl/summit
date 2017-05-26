@@ -1,4 +1,3 @@
-import {debounce} from 'underscore';
 import * as smoothScroll from 'smooth-scroll';
 
 export function initScroll() {
@@ -14,10 +13,10 @@ export function initScroll() {
     scrollOffset = 40;
   }
 
-  debounce(smoothScroll.init({
+  smoothScroll.init({
     offset: scrollOffset,
     before: closeNav
-  }));
+  });
 
   function closeNav() {
     if (!nav.classList.contains('main-header__nav--nav-open')) {
