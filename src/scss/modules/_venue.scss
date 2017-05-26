@@ -26,7 +26,7 @@
 
     @include mediaquery('gt-small') {
       width: 200px;
-      right: calc(-100% / 12 * 1);
+      right: calc(-100% / 12 * 0.5);
     }
 
     @include mediaquery('gt-medium') {
