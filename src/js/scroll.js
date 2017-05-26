@@ -16,7 +16,7 @@ export function initScroll() {
 
   debounce(smoothScroll.init({
     offset: scrollOffset,
-    callback: closeNav
+    before: closeNav
   }));
 
   function closeNav() {
