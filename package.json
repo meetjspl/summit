@@ -35,5 +35,9 @@
   "dependencies": {
     "normalize-scss": "^6.0.0",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
   }
 }
