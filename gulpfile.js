@@ -77,10 +77,7 @@ gulp.task('js', function () {
 
 gulp.task('eslint', function () {
   return gulp.src(config.js)
-    .pipe($.eslint({
-      envs: ['es6'],
-      ecmaFeatures: {modules: true}
-    }))
+    .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.eslint.failAfterError())
 });
