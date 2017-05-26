@@ -20,7 +20,24 @@
       top: -30px;
     }
   }
-  &--nav-open {
+  // Hack for mobile menu without js.
+  #menu-check:checked ~ & {
+    .button-menu {
+      &__menu-icon {
+        display: none;
+      }
+
+      &__close-icon {
+        display: block;
+      }
+    }
+    .main-header__nav {
+      display: block;
+      min-height: 100vh;
+    }
+  }
+  // Hack for mobile menu without js.
+  #menu-check:checked ~ &, &--nav-open {
     background: $purple_color;
     @include mediaquery('gt-small') {
       background: none;
