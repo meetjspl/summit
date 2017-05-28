@@ -1,15 +1,18 @@
 export function initGallery() {
   const galleryImages = Array.from(document.querySelectorAll('.gallery__image'));
+  let activeImage = galleryImages.find(image => image.classList.contains('gallery__image--active'));
 
   galleryImages.forEach(image => {
     image.addEventListener('mouseover', e => {
-      activateGalleryImage(e.target);
-
-      galleryImages
-        .filter(image => image !== e.target)
-        .forEach(image => deactivateGalleryImage(image));
+      toggleGalleryImage(activeImage, e.target)
+      activeImage = e.target;
     });
   });
+}
+
+function toggleGalleryImage(previous, next) {
+  deactivateGalleryImage(previous);
+  activateGalleryImage(next);
 }
 
 function activateGalleryImage(image) {
