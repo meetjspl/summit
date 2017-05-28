@@ -3,9 +3,9 @@ export function initGallery() {
   let activeImage = galleryImages.find(image => image.classList.contains('gallery__image--active'));
 
   galleryImages.forEach(image => {
-    image.addEventListener('mouseover', e => {
-      toggleGalleryImage(activeImage, e.target)
-      activeImage = e.target;
+    image.addEventListener('mouseover', ({target: nextImage}) => {
+      toggleGalleryImage(activeImage, nextImage)
+      activeImage = nextImage;
     });
   });
 }
