@@ -3,7 +3,7 @@ function stickToTop() {
   const scroll = window.scrollY;
   const isScrolled = scroll >= 30 ? true : false;
 
-  nav.classList.add('main-header--sticky', isScrolled);
+  nav.classList.toggle('main-header--sticky', isScrolled);
 }
 
 export function initStickyNav() {
