@@ -1,12 +1,13 @@
-export function initStickyNav() {
+function stickToTop() {
   const nav = document.querySelector('.main-header');
+  const scroll = window.scrollY;
+  const isScrolled = scroll >= 30 ? true : false;
 
-  window.addEventListener('scroll', () => {
-    const scroll = window.scrollY;
-    if (scroll >= 30) {
-      nav.classList.add('main-header--sticky');
-    } else {
-      nav.classList.remove('main-header--sticky');
-    }
-  });
+  nav.classList.add('main-header--sticky', isScrolled);
+}
+
+export function initStickyNav() {
+  stickToTop();
+
+  window.addEventListener('scroll', stickToTop);
 }
