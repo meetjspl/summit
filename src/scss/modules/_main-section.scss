@@ -13,6 +13,12 @@
     width: 100%;
     padding-top: 120px;
     background: url(../images/summit-mobile.jpg) no-repeat top center;
+    margin-top: 60px;
+
+    // Hack for mobile header background without js.
+    .with-js & {
+      margin-top: 0;
+    }
     @include mediaquery('gt-small') {
       background: url(../images/summit-desktop.jpg) no-repeat center bottom / cover;
       padding-top: 140px;
@@ -39,6 +45,12 @@
     right: 0;
     top: 0;
     z-index: 1;
+    margin-top: 60px;
+
+    // Hack for mobile header background without js.
+    .with-js & {
+      margin-top: 0;
+    }
 
     @include mediaquery('gt-small') {
       width: 200px;
