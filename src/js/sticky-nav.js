@@ -1,7 +1,6 @@
 function stickToTop() {
   const nav = document.querySelector('.main-header');
-  const scroll = window.scrollY;
-  const isScrolled = scroll >= 30 ? true : false;
+  const isScrolled = window.scrollY >= 30;
 
   nav.classList.toggle('main-header--sticky', isScrolled);
 }
