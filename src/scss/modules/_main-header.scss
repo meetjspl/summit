@@ -13,6 +13,13 @@
     &--sticky, &.menu-open {
       background: $purple_color;
     }
+    &.menu-open {
+      height: 100vh;
+
+      @include mediaquery('gt-small') {
+        height: auto;
+      }
+    }
   }
 
   @include mediaquery('gt-small') {
@@ -81,6 +88,15 @@
       .button-menu__close-icon {
         display: initial;
       }
+      @at-root .has-js .main-header:not(.menu-open) {
+        .button-menu__menu-icon {
+          display: initial;
+        }
+
+        .button-menu__close-icon {
+          display: none;
+        }
+      }
     }
 
     &[aria-expanded="false"] {
@@ -107,6 +123,10 @@
     .button-menu[aria-expanded="true"] + & {
       display: block;
       margin-bottom: -100px;
+
+      .has-js .main-header:not(.menu-open) & {
+        display: none;
+      }
 
       .button-menu__menu-icon {
         display: none;
@@ -265,38 +285,42 @@
 
 .register-button {
   margin-top: 22px;
-  padding: 8px 12px;
   position: relative;
-  display: inline-block;
-  background: $blue_color;
+  padding: 0;
   @include mediaquery('gt-small') {
     position: absolute;
     right: 0;
     margin-top: 0;
   }
   @include mediaquery('gt-medium') {
-    padding: 12px 15px;
     top: 8px;
-  }
-  &::before {
-    content: "";
-    width: calc(100% - 4px);
-    height: 3px;
-    display: block;
-    background: $darkblue_color;
-    position: absolute;
-    bottom: -3px;
-    left: 2px;
-  }
-  &:hover, &:active {
-    color: $white_color;
-    background: $darkblue_color;
-    &::before {
-      background: darken($darkblue_color, 10%);
-    }
   }
   &__link {
     @extend %main-link;
     @extend %main-link--white;
+    display: inline-block;
+    background: $blue_color;
+    padding: 8px 12px;
+    position: relative;
+    @include mediaquery('gt-medium') {
+      padding: 12px 15px;
+    }
+    &::before {
+      content: "";
+      width: calc(100% - 4px);
+      height: 3px;
+      display: block;
+      background: $darkblue_color;
+      position: absolute;
+      bottom: -3px;
+      left: 2px;
+    }
+    &:hover, &:active {
+      color: $white_color;
+      background: $darkblue_color;
+      &::before {
+        background: darken($darkblue_color, 10%);
+      }
+    }
   }
 }

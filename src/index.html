@@ -49,7 +49,7 @@
                                                                        alt="meet.js summit logo"></a>
     </div>
     <button class="button-menu js-button-menu" title="Open/close menu" aria-label="navigation menu" role="button"
-            aria-controls="navigation" aria-expanded="true">
+            aria-controls="navigation" aria-expanded="true" type="button" id="open-menu-button" aria-haspopup="true">
       <svg class="button-menu__icon button-menu__menu-icon">
         <use xlink:href="#icon-menu"></use>
       </svg>
@@ -404,9 +404,9 @@
       <div class="gallery">
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img class="gallery__image gallery__image--active" src="images/michal.jpg"
+            <img class="gallery__image" src="images/michal.jpg"
                  alt="Michał Miszczyszyn">
-            <div class="gallery__info gallery__info--active" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Michał Miszczyszyn</h3>
               <a class="gallery__link" href="http://twitter.com/mmiszy"
                  title="Follow on Twitter">@mmiszy</a>
@@ -417,7 +417,7 @@
           <li class="gallery__item">
             <img class="gallery__image" src="images/arek.jpg"
                  alt="Arkadiusz Putko">
-            <div class="gallery__info" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Arkadiusz Putko</h3>
               <a class="gallery__link" href="https://twitter.com/arkadiuszputko"
                  title="Follow on Twitter">@arkadiuszputko</a>
@@ -427,7 +427,7 @@
           <li class="gallery__item">
             <img class="gallery__image" src="images/wojtek.jpg"
                  alt="Wojciech Urbański">
-            <div class="gallery__info" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Wojciech Urbański</h3>
               <a class="gallery__link" href="https://twitter.com/wojtiku"
                  title="Follow on Twitter">@wojtiku</a>
@@ -438,7 +438,7 @@
           <li class="gallery__item">
             <img class="gallery__image" src="images/lukasz.jpg"
                  alt="Łukasz Nowacki">
-            <div class="gallery__info" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Łukasz Nowacki</h3>
               <p class="gallery__desc">organiser - meet.js Gdańsk</p>
             </div>
@@ -509,6 +509,7 @@
         "url": "http://summit.meetjs.pl/2017/",
         "sameAs": "https://www.facebook.com/events/1735076753175645/"
       }
+
 
 
 
