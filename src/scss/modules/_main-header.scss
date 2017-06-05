@@ -1,30 +1,28 @@
 .main-header {
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   padding-top: 10px;
   z-index: $index-top;
+  background: $purple_color;
+
+  .has-js & {
+    position: fixed;
+    background: transparent;
+
+    &--sticky, &.menu-open {
+      background: $purple_color;
+    }
+  }
+
   @include mediaquery('gt-small') {
     height: 78px;
-    background: none;
   }
   @include mediaquery('gt-medium') {
     padding-top: 45px;
-    position: absolute;
     height: 122px;
-  }
-  &--sticky {
-    background: $purple_color;
-    @include mediaquery('gt-medium') {
-      position: fixed;
-      top: -30px;
-    }
-  }
-  &--nav-open {
-    background: $purple_color;
-    @include mediaquery('gt-small') {
-      background: none;
-    }
+    position: fixed;
+    top: -30px;
   }
   &--side {
     width: 100%;
@@ -34,7 +32,7 @@
     @include mediaquery('gt-medium') {
       $padding: 20px;
       position: relative;
-      padding-left: calc(100% * (5/12) - #{$padding});
+      padding-left: calc(100% * (5 / 12) - #{$padding});
       &::before {
         content: '';
         display: block;
@@ -45,8 +43,8 @@
         left: 240px;
         z-index: $index-low;
         background: $blue_color;
-     }
-     &::after {
+      }
+      &::after {
         content: '';
         display: block;
         width: 10px;
@@ -66,20 +64,56 @@
       padding-bottom: 10px;
     }
   }
+  .button-menu {
+    display: none;
+
+    .has-js & {
+      display: block;
+      @include mediaquery('gt-small') {
+        display: none;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      .button-menu__menu-icon {
+        display: none;
+      }
+      .button-menu__close-icon {
+        display: initial;
+      }
+    }
+
+    &[aria-expanded="false"] {
+      .button-menu__menu-icon {
+        display: initial;
+      }
+      .button-menu__close-icon {
+        display: none;
+      }
+    }
+  }
   &__nav {
     display: none;
     background: $purple_color;
     @include mediaquery('gt-small') {
       width: 100%;
-      min-height: auto;
+      min-height: initial;
       display: block;
       padding-right: 20px;
       position: relative;
       background: none;
     }
-    &--nav-open {
+
+    .button-menu[aria-expanded="true"] + & {
       display: block;
-      min-height: 100vh;
+      margin-bottom: -100px;
+
+      .button-menu__menu-icon {
+        display: none;
+      }
+      .button-menu__close-icon {
+        display: initial;
+      }
     }
   }
 }
@@ -219,9 +253,6 @@
     display: block;
     top: 8px;
     left: 7px;
-    &--nav-open {
-      display: none;
-    }
   }
   &__close-icon {
     width: 20px;
@@ -229,9 +260,6 @@
     display: block;
     top: 10px;
     left: 10px;
-    &--nav-open {
-      display: none;
-    }
   }
 }
 

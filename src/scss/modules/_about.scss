@@ -38,7 +38,6 @@
   @include mediaquery('gt-small') {
     max-width: 700px;
     margin: 70px auto 0;
-
   }
   @include mediaquery('gt-medium') {
     max-width: none;

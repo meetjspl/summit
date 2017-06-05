@@ -4,7 +4,7 @@ export function initGallery() {
 
   galleryImages.forEach(image => {
     image.addEventListener('mouseover', ({target: nextImage}) => {
-      toggleGalleryImage(activeImage, nextImage)
+      toggleGalleryImage(activeImage, nextImage);
       activeImage = nextImage;
     });
   });

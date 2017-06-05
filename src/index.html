@@ -23,6 +23,7 @@
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
+<script>document.body.classList.add('has-js');</script>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
   <symbol id="icon-facebook" viewBox="0 0 1024 1024">
     <path
@@ -47,6 +48,15 @@
                                                                        src="images/summit-logo.png"
                                                                        alt="meet.js summit logo"></a>
     </div>
+    <button class="button-menu js-button-menu" title="Open/close menu" aria-label="navigation menu" role="button"
+            aria-controls="navigation" aria-expanded="true">
+      <svg class="button-menu__icon button-menu__menu-icon">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+      <svg class="button-menu__icon button-menu__close-icon">
+        <use xlink:href="#icon-cross"></use>
+      </svg>
+    </button>
     <div class="main-header__nav">
       <nav id="navigation" class="main-nav" role="navigation">
         <ul class="main-nav__list">
@@ -84,15 +94,6 @@
         </ul>
       </nav>
     </div>
-    <button class="button-menu" title="Open/close menu" aria-label="navigation menu" role="button"
-            aria-controls="navigation" aria-expanded="">
-      <svg class="button-menu__icon button-menu__menu-icon">
-        <use xlink:href="#icon-menu"></use>
-      </svg>
-      <svg class="button-menu__icon button-menu__close-icon button-menu__close-icon--nav-open">
-        <use xlink:href="#icon-cross"></use>
-      </svg>
-    </button>
   </div>
 </header>
 <main>
@@ -508,6 +509,8 @@
         "url": "http://summit.meetjs.pl/2017/",
         "sameAs": "https://www.facebook.com/events/1735076753175645/"
       }
+
+
 
 
 </script>

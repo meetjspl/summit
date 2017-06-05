@@ -13,6 +13,7 @@
     width: 100%;
     padding-top: 120px;
     background: url(../images/summit-mobile.jpg) no-repeat top center;
+    position: relative;
     @include mediaquery('gt-small') {
       background: url(../images/summit-desktop.jpg) no-repeat center bottom / cover;
       padding-top: 140px;
@@ -38,11 +39,17 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 101;
+    pointer-events: none;
+
+    .has-js & {
+      z-index: 1;
+    }
 
     @include mediaquery('gt-small') {
       width: 200px;
       right: calc(100% / 12 * 2);
+      z-index: 1;
     }
 
     @include mediaquery('gt-medium') {
