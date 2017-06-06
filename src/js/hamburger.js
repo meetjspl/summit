@@ -12,6 +12,15 @@ export function initHamburgerMenu() {
     menuContainer.classList.add('menu-open');
   }
 
+  function onMenuClick(e) {
+    const internalLinkSelector = 'a[href^="#"]';
+    if (!e.target.matches(internalLinkSelector)) {
+      return;
+    }
+
+    closeMenu();
+  }
+
   menuButton.addEventListener('click', function () {
     if (menuButton.getAttribute('aria-expanded') === 'true') {
       closeMenu();
@@ -19,6 +28,8 @@ export function initHamburgerMenu() {
       openMenu();
     }
   }, false);
+
+  menuContainer.addEventListener('click', onMenuClick);
 
   closeMenu();
 }

@@ -30,7 +30,6 @@
     "gulp-util": "^3.0.8",
     "minimist": "^1.2.0",
     "uglifyify": "^3.0.4",
-    "underscore": "^1.8.3",
     "vinyl-ftp": "^0.6.0",
     "vinyl-source-stream": "^1.1.0"
   },
