@@ -21,11 +21,12 @@ section:target {
   padding-top: 10px;
   z-index: $index-top;
   background: $purple_color;
-  height: 60px;
+  min-height: 60px;
 
   .has-js & {
     position: fixed;
     background: transparent;
+    height: 60px;
 
     &--sticky, &.menu-open {
       background: $purple_color;
