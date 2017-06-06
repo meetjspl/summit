@@ -1,30 +1,51 @@
+section:target {
+  border-top: 60px solid transparent;
+  margin-top: -60px;
+  position: relative;
+  z-index: -1;
+
+  @include mediaquery('gt-small') {
+    border-top: 78px solid transparent;
+    margin-top: -78px;
+  }
+  @include mediaquery('gt-medium') {
+    border-top: 92px solid transparent;
+    margin-top: -92px;
+  }
+}
+
 .main-header {
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   padding-top: 10px;
   z-index: $index-top;
+  background: $purple_color;
+  height: 60px;
+
+  .has-js & {
+    position: fixed;
+    background: transparent;
+
+    &--sticky, &.menu-open {
+      background: $purple_color;
+    }
+    &.menu-open {
+      height: 100vh;
+
+      @include mediaquery('gt-small') {
+        height: auto;
+      }
+    }
+  }
+
   @include mediaquery('gt-small') {
     height: 78px;
-    background: none;
   }
   @include mediaquery('gt-medium') {
-    padding-top: 45px;
-    position: absolute;
-    height: 122px;
-  }
-  &--sticky {
-    background: $purple_color;
-    @include mediaquery('gt-medium') {
-      position: fixed;
-      top: -30px;
-    }
-  }
-  &--nav-open {
-    background: $purple_color;
-    @include mediaquery('gt-small') {
-      background: none;
-    }
+    padding-top: 15px;
+    height: 92px;
+    position: fixed;
   }
   &--side {
     width: 100%;
@@ -34,7 +55,7 @@
     @include mediaquery('gt-medium') {
       $padding: 20px;
       position: relative;
-      padding-left: calc(100% * (5/12) - #{$padding});
+      padding-left: calc(100% * (5 / 12) - #{$padding});
       &::before {
         content: '';
         display: block;
@@ -45,8 +66,8 @@
         left: 240px;
         z-index: $index-low;
         background: $blue_color;
-     }
-     &::after {
+      }
+      &::after {
         content: '';
         display: block;
         width: 10px;
@@ -66,20 +87,69 @@
       padding-bottom: 10px;
     }
   }
+  .button-menu {
+    display: none;
+
+    .has-js & {
+      display: block;
+      @include mediaquery('gt-small') {
+        display: none;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      .button-menu__menu-icon {
+        display: none;
+      }
+      .button-menu__close-icon {
+        display: initial;
+      }
+      @at-root .has-js .main-header:not(.menu-open) {
+        .button-menu__menu-icon {
+          display: initial;
+        }
+
+        .button-menu__close-icon {
+          display: none;
+        }
+      }
+    }
+
+    &[aria-expanded="false"] {
+      .button-menu__menu-icon {
+        display: initial;
+      }
+      .button-menu__close-icon {
+        display: none;
+      }
+    }
+  }
   &__nav {
     display: none;
     background: $purple_color;
     @include mediaquery('gt-small') {
       width: 100%;
-      min-height: auto;
+      min-height: initial;
       display: block;
       padding-right: 20px;
       position: relative;
       background: none;
     }
-    &--nav-open {
+
+    .button-menu[aria-expanded="true"] + & {
       display: block;
-      min-height: 100vh;
+      margin-bottom: -100px;
+
+      .has-js .main-header:not(.menu-open) & {
+        display: none;
+      }
+
+      .button-menu__menu-icon {
+        display: none;
+      }
+      .button-menu__close-icon {
+        display: initial;
+      }
     }
   }
 }
@@ -219,9 +289,6 @@
     display: block;
     top: 8px;
     left: 7px;
-    &--nav-open {
-      display: none;
-    }
   }
   &__close-icon {
     width: 20px;
@@ -229,46 +296,47 @@
     display: block;
     top: 10px;
     left: 10px;
-    &--nav-open {
-      display: none;
-    }
   }
 }
 
 .register-button {
   margin-top: 22px;
-  padding: 8px 12px;
   position: relative;
-  display: inline-block;
-  background: $blue_color;
+  padding: 0;
   @include mediaquery('gt-small') {
     position: absolute;
     right: 0;
     margin-top: 0;
   }
   @include mediaquery('gt-medium') {
-    padding: 12px 15px;
     top: 8px;
-  }
-  &::before {
-    content: "";
-    width: calc(100% - 4px);
-    height: 3px;
-    display: block;
-    background: $darkblue_color;
-    position: absolute;
-    bottom: -3px;
-    left: 2px;
-  }
-  &:hover, &:active {
-    color: $white_color;
-    background: $darkblue_color;
-    &::before {
-      background: darken($darkblue_color, 10%);
-    }
   }
   &__link {
     @extend %main-link;
     @extend %main-link--white;
+    display: inline-block;
+    background: $blue_color;
+    padding: 8px 12px;
+    position: relative;
+    @include mediaquery('gt-medium') {
+      padding: 12px 15px;
+    }
+    &::before {
+      content: "";
+      width: calc(100% - 4px);
+      height: 3px;
+      display: block;
+      background: $darkblue_color;
+      position: absolute;
+      bottom: -3px;
+      left: 2px;
+    }
+    &:hover, &:active {
+      color: $white_color;
+      background: $darkblue_color;
+      &::before {
+        background: darken($darkblue_color, 10%);
+      }
+    }
   }
 }

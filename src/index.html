@@ -16,11 +16,14 @@
   <meta property="og:site_name" content="meet.js Summit"/>
   <meta http-equiv="Cache-Control" content="no-cache"/>
 
+
   <!--build:css css/main.min.css-->
   <link rel="stylesheet" href="css/main.css">
   <!--endbuild-->
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
+<script>document.body.classList.add('has-js');</script>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
   <symbol id="icon-facebook" viewBox="0 0 1024 1024">
     <path
@@ -45,6 +48,15 @@
                                                                        src="images/summit-logo.png"
                                                                        alt="meet.js summit logo"></a>
     </div>
+    <button class="button-menu js-button-menu" title="Open/close menu" aria-label="navigation menu" role="button"
+            aria-controls="navigation" aria-expanded="true" type="button" id="open-menu-button" aria-haspopup="true">
+      <svg class="button-menu__icon button-menu__menu-icon">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+      <svg class="button-menu__icon button-menu__close-icon">
+        <use xlink:href="#icon-cross"></use>
+      </svg>
+    </button>
     <div class="main-header__nav">
       <nav id="navigation" class="main-nav" role="navigation">
         <ul class="main-nav__list">
@@ -82,15 +94,6 @@
         </ul>
       </nav>
     </div>
-    <button class="button-menu" title="Open/close menu" aria-label="navigation menu" role="button"
-            aria-controls="navigation" aria-expanded="">
-      <svg class="button-menu__icon button-menu__menu-icon">
-        <use xlink:href="#icon-menu"></use>
-      </svg>
-      <svg class="button-menu__icon button-menu__close-icon button-menu__close-icon--nav-open">
-        <use xlink:href="#icon-cross"></use>
-      </svg>
-    </button>
   </div>
 </header>
 <main>
@@ -111,13 +114,13 @@
         <section class="sponsors">
           <div class="sponsors__group sponsors__group--global">
             <h2 class="sponsors__heading">global sponsor:</h2>
-            <a href="sponsors_en.pdf" class="sponsors__link"><img
+            <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1"><img
               class="sponsors__image sponsors__image--big" src="images/global-your-logo.jpg"
               alt="global sponsor logo"></a>
           </div>
           <div class="sponsors__group sponsors__group--global">
             <h2 class="sponsors__heading">party sponsor:</h2>
-            <a href="sponsors_en.pdf" class="sponsors__link"><img
+            <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1"><img
               class="sponsors__image sponsors__image--big" src="images/global-your-logo.jpg"
               alt="global sponsor logo"></a>
           </div>
@@ -125,37 +128,37 @@
             <h2 class="sponsors__heading">modular sponsors:</h2>
             <ul class="sponsors__list">
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
@@ -166,25 +169,25 @@
             <h2 class="sponsors__heading">scope sponsors:</h2>
             <ul class="sponsors__list">
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="sponsors_en.pdf" class="sponsors__link">
+                <a href="sponsors_en.pdf" class="sponsors__link" aria-hidden tabindex="-1">
                   <img class="sponsors__image" src="images/modular-your-logo.jpg"
                        alt="modular sponsor logo">
                 </a>
@@ -356,7 +359,7 @@
         Conference organiser should the holding of the Conference be hindered or prevented by unexpected
         political or economic events, natural disaster, the non-appearance of speakers, or other reasons that
         might necessitate a program change.</p>
-      <p class="code__text">organisers may cancel the event at any time and tickets will be refunded in full
+      <p class="code__text">Organisers may cancel the event at any time and tickets will be refunded in full
         without any additional fees.</p>
       <p class="code__text">All presentations and associated materials are the speakers’ intellectual property.
         Recording for commercial purposes requires permission from both the organiser and the speaker.</p>
@@ -388,7 +391,7 @@
         <h2 class="about__heading">#about-us</h2>
         <p class="about__text">meet.js is the name for JavaScript meetups in Poland, organised for programmers
           who are interested in JavaScript, HTML and CSS. Our events have been organised for over 6 years now in 11
-          major business hubs in the country (Gdansk, Warsaw, Cracow, Poznan, Wroclaw, Lodz, Katowice,
+          major business hubs in the country (Gdańsk, Warsaw, Cracow, Poznań, Wrocław, Łódź, Katowice,
           Szczecin, Lublin, Białystok and Bydgoszcz). They are free of charge. An average number of attendees
           fluctuates between 100 and 200 guests per meetup, which makes meet.js one of the largest technical
           community in Europe. This is a perfect place for fostering your professional network as well as
@@ -401,9 +404,9 @@
       <div class="gallery">
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img class="gallery__image gallery__image--active" src="images/michal.jpg"
+            <img class="gallery__image" src="images/michal.jpg"
                  alt="Michał Miszczyszyn">
-            <div class="gallery__info gallery__info--active" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Michał Miszczyszyn</h3>
               <a class="gallery__link" href="http://twitter.com/mmiszy"
                  title="Follow on Twitter">@mmiszy</a>
@@ -414,7 +417,7 @@
           <li class="gallery__item">
             <img class="gallery__image" src="images/arek.jpg"
                  alt="Arkadiusz Putko">
-            <div class="gallery__info" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Arkadiusz Putko</h3>
               <a class="gallery__link" href="https://twitter.com/arkadiuszputko"
                  title="Follow on Twitter">@arkadiuszputko</a>
@@ -424,7 +427,7 @@
           <li class="gallery__item">
             <img class="gallery__image" src="images/wojtek.jpg"
                  alt="Wojciech Urbański">
-            <div class="gallery__info" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Wojciech Urbański</h3>
               <a class="gallery__link" href="https://twitter.com/wojtiku"
                  title="Follow on Twitter">@wojtiku</a>
@@ -435,7 +438,7 @@
           <li class="gallery__item">
             <img class="gallery__image" src="images/lukasz.jpg"
                  alt="Łukasz Nowacki">
-            <div class="gallery__info" aria-expanded="true">
+            <div class="gallery__info">
               <h3 class="gallery__heading">Łukasz Nowacki</h3>
               <p class="gallery__desc">organiser - meet.js Gdańsk</p>
             </div>
@@ -506,6 +509,9 @@
         "url": "http://summit.meetjs.pl/2017/",
         "sameAs": "https://www.facebook.com/events/1735076753175645/"
       }
+
+
+
 
 
 </script>
