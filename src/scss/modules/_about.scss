@@ -39,7 +39,8 @@
     filter: none;
   }
   .gallery__info {
-    visibility: visible;
+    opacity: 1;
+    z-index: 1;
   }
 }
 
@@ -92,7 +93,7 @@
   &__info {
     position: relative;
     @include mediaquery('gt-medium') {
-      visibility: hidden;
+      opacity: 0;
       width: 220px;
     }
     &::before {
