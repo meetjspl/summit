@@ -10,7 +10,6 @@
   .has-js & {
     position: fixed;
     background: transparent;
-    height: 60px;
 
     &--sticky, &.menu-open {
       background: $purple_color;
