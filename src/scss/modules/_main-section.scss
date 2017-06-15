@@ -186,12 +186,12 @@
     }
     &--scope {
       .sponsors__image {
-        max-width: 92px;
+        max-width: 70px;
       }
-      @include mediaquery('gt-small') {
-        .sponsors__item {
-          max-width: calc(50% - 8px);
-        }
+    }
+    &--scope, &--modular {
+      .sponsors__item {
+        height: 50px;
       }
     }
     &--global, &--scope {
