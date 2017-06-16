@@ -214,12 +214,9 @@
     width: 100%;
     max-width: 100px;
     box-sizing: border-box;
-    padding: 5px;
-    background: $white_color;
 
     &--big {
       max-width: 180px;
-      margin-top: 4px;
     }
 
     &--placeholder {
@@ -230,6 +227,12 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    padding: 5px;
+    background: $white_color;
+
+    &--placeholder {
+      padding: 0;
+    }
   }
   &__heading {
     color: $purple_color;
@@ -252,7 +255,7 @@
     background: $white_color;
     display: flex;
 
-    &--placeholder {
+    &--placeholder .sponsors__link {
       background-color: $placeholder_gray;
     }
   }
