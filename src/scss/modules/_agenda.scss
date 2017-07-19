@@ -76,16 +76,17 @@
     }
   }
   &__link {
-    display: block;
     @extend %main-link;
+    display: block;
+
+    &--inline {
+      display: inline;
+    }
     &:first-child {
       margin-bottom: 14px;
       @include mediaquery('gt-medium') {
         margin-bottom: 25px;
       }
-    }
-    &:last-child {
-      @extend %font-regular;
     }
   }
   &__links {
