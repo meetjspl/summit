@@ -178,6 +178,13 @@
     }
     @include mediaquery('gt-medium') {
       width: calc(100% / 10 * 6);
+      padding-top: 42px;
+    }
+  }
+  &__data {
+    @include mediaquery('gt-medium') {
+      width: calc(100% / 10 * 3);
+      padding-right: 20px;
     }
   }
 }
