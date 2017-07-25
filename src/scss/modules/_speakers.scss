@@ -173,6 +173,9 @@
   &__desc {
     margin-top: 0;
     @extend %main-text;
+    a {
+      @extend %main-link;
+    }
     @include mediaquery('gt-small') {
       margin-bottom: 0;
     }
