@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "normalize-scss": "^6.0.0",
-    "smooth-scroll": "github:cferdinandi/smooth-scroll"
+    "smooth-scroll": "github:cferdinandi/smooth-scroll#8a210c669ef3361d59ac150f521c14f9a624a78e"
   },
   "scripts": {
     "start": "gulp",
