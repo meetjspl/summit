@@ -77,6 +77,7 @@
   }
   &__link {
     @extend %main-link;
+    font-weight: 400;
     display: block;
 
     &--inline {
@@ -106,14 +107,6 @@
   &__item {
     &:nth-child(2) .agenda__title:after {
       content: ' (Track 1)';
-      color: $grey_color;
-      font-size: 1.4rem;
-      @include mediaquery('gt-medium') {
-        content: '';
-      }
-    }
-    &:nth-child(3) .agenda__title:after {
-      content: ' (Track 2)';
       color: $grey_color;
       font-size: 1.4rem;
       @include mediaquery('gt-medium') {
@@ -179,5 +172,32 @@
     margin-top: 15px;
     margin-bottom: 0;
     @extend %main-text;
+  }
+  &__description {
+    &-button {
+      @extend %main-link;
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 0;
+      margin: 1.5em 0 1em 0;
+      padding: 0;
+      cursor: pointer;
+
+      @include mediaquery('gt-small') {
+        margin: 4em 0 1em 0;
+      }
+    }
+
+    &-text {
+      @extend %main-text;
+
+      &[aria-expanded="true"] {
+        display: block;
+      }
+
+      .has-js &[aria-expanded="false"] {
+        display: none;
+      }
+    }
   }
 }
