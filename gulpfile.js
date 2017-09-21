@@ -61,7 +61,16 @@ gulp.task('js', function () {
   });
   var bundle = bundler.transform(babelify, {
     extensions: ['.js'],
-    presets: ["es2015"]
+    presets: [
+      [
+        'env',
+        {
+          targets: {
+            browsers: ['last 2 versions']
+          }
+        }
+      ]
+    ]
   });
   return bundler.bundle()
     .pipe(source('script.js'))
@@ -70,10 +79,7 @@ gulp.task('js', function () {
 
 gulp.task('eslint', function () {
   return gulp.src(config.js)
-    .pipe($.eslint({
-      envs: ['es6'],
-      ecmaFeatures: {modules: true}
-    }))
+    .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.eslint.failAfterError())
 });

@@ -5,7 +5,7 @@ export function initScroll() {
   // https://github.com/cferdinandi/smooth-scroll
   const header = document.querySelector('.main-header');
 
-  let scrollOffset = header.scrollHeight;
+  const scrollOffset = header.scrollHeight;
 
   smoothScroll.init({
     offset: scrollOffset,
