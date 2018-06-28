@@ -6,7 +6,7 @@
     background-image: url(../images/summit-desktop.jpg);
   }
   &::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -14,10 +14,10 @@
     bottom: 80px;
     left: 0;
     background: $bg-gradient;
-   }
-   @include mediaquery('gt-medium') {
+  }
+  @include mediaquery('gt-medium') {
     overflow-x: hidden;
-      &::before {
+    &::before {
       content: '';
       display: block;
       width: 40px;
@@ -46,7 +46,7 @@
         left: 0;
         background: $green_color;
       }
-      &::after{
+      &::after {
         content: '';
         display: block;
         width: 5px;
@@ -76,7 +76,7 @@
         left: -10px;
         background: $green_color;
       }
-      &::after{
+      &::after {
         content: '';
         display: block;
         width: 125px;
@@ -102,11 +102,11 @@
   &__info {
     @include mediaquery('gt-small') {
       max-width: 580px;
-      margin: 0 auto
+      margin: 0 auto;
     }
     @include mediaquery('gt-medium') {
       max-width: none;
-      width: calc(100% * (7/12);
+      width: calc(100% * (7 / 12));
       order: 2;
       padding-top: 30px;
     }
@@ -152,7 +152,7 @@
   &__award {
     text-align: center;
     @include mediaquery('gt-medium') {
-      width: calc(100% * (5/12);
+      width: calc(100% * (5 / 12));
       display: flex;
     }
   }
@@ -224,7 +224,7 @@
   @extend %main-link--white;
   &::after {
     $padding: 3px;
-    content: "";
+    content: '';
     display: block;
     width: calc(100% - 2 * #{$padding});
     height: #{$padding};
@@ -233,7 +233,8 @@
     left: #{$padding};
     background: $darkblue_color;
   }
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background: $darkblue_color;
     &::after {
       background: darken($darkblue_color, 10%);

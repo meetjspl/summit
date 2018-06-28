@@ -15,6 +15,6 @@ export function initScroll() {
         target.classList.remove('target');
       }
       toggle.classList.add('target');
-    }
+    },
   });
 }

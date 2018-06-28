@@ -21,13 +21,17 @@ export function initHamburgerMenu() {
     closeMenu();
   }
 
-  menuButton.addEventListener('click', function () {
-    if (menuButton.getAttribute('aria-expanded') === 'true') {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  }, false);
+  menuButton.addEventListener(
+    'click',
+    function() {
+      if (menuButton.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    },
+    false
+  );
 
   menuContainer.addEventListener('click', onMenuClick);
 
