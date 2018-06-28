@@ -39,11 +39,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.prod.js",
-    "prettier:scss:list": "prettier --config .prettierrc --parser scss -l src/**/*.scss || true",
-    "prettier:js:list": "prettier --config .prettierrc --parser babylon -l src/**/*.js || true",
-    "prettier:scss:write": "prettier --config .prettierrc --parser scss --write src/**/*.scss",
-    "prettier:js:write": "prettier --config .prettierrc --parser babylon --write src/**/*.js",
-    "prettier:write": "npm run prettier:scss:write && npm run prettier:js:write"
+    "deploy": "npm run build && gh-pages --dist dist"
   },
   "husky": {
     "hooks": {
