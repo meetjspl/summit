@@ -1,13 +1,13 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
-  devtool: "eval-cheap-module-source-map",
-  entry: "./src/js/script.js",
+  mode: 'development',
+  devtool: 'eval-cheap-module-source-map',
+  entry: './src/js/script.js',
   devServer: {
     port: 8085,
-    contentBase: path.join(__dirname, "dist")
+    contentBase: path.join(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -15,59 +15,59 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
+            presets: ['@babel/preset-env'],
+          },
+        },
       },
       {
         test: /\.scss$/,
         use: [
           {
-            loader: "style-loader",
+            loader: 'style-loader',
             options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: "css-loader",
-            options: {
-              sourceMap: true
-            }
-          },
-          {
-            loader: "sass-loader",
-            options: {
-              outputStyle: "expanded",
               sourceMap: true,
-              sourceMapContents: true
-            }
-          }
-        ]
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'expanded',
+              sourceMap: true,
+              sourceMapContents: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
             options: {
-              name: "[path][name].[ext]?hash=[hash:20]",
-              limit: 8192
-            }
-          }
-        ]
+              name: '[path][name].[ext]?hash=[hash:20]',
+              limit: 8192,
+            },
+          },
+        ],
       },
       {
         test: /\.html$/,
-        loader: "html-loader"
-      }
-    ]
+        loader: 'html-loader',
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      inject: true
-    })
-  ]
+      template: './src/index.html',
+      inject: true,
+    }),
+  ],
 };
