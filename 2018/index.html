@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>meet.js Summit 2017 Gdańsk</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta property="og:image" content="http://summit.meetjs.pl/2017/images/fb-og-2017.png"/>
+  <meta property="description"
+        content="meet.js Summit is a conference that gathers 450 professional front-end developers interested in JavaScript development (covering topics like MVC, Node.js, reactive programming, frameworks like Angular or React etc.)"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="meet.js Summit 2017"/>
+  <meta property="og:description" content="September 18, 2017, Gdańsk, Poland"/>
+  <meta property="og:url" content="http://summit.meetjs.pl/2017/"/>
+  <meta property="og:site_name" content="meet.js Summit"/>
+  <meta http-equiv="Cache-Control" content="no-cache"/>
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="{{projectName}}"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="{{projectName}}"><link rel="icon" type="image/png" sizes="32x32" href="icons-4c8934f80fca14ce19bade6ee3a95668/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-4c8934f80fca14ce19bade6ee3a95668/favicon-16x16.png"><link rel="shortcut icon" href="icons-4c8934f80fca14ce19bade6ee3a95668/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-4c8934f80fca14ce19bade6ee3a95668/apple-touch-startup-image-1536x2008.png"><link href="main.css" rel="stylesheet"></head>
+<body>
+<script>document.body.classList.add('has-js');</script>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+  <symbol id="icon-facebook" viewBox="0 0 1024 1024">
+    <path
+      d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"></path>
+  </symbol>
+  <symbol id="icon-twitter" viewBox="0 0 1024 1024">
+    <path
+      d="M1024 226.4c-37.6 16.8-78.2 28-120.6 33 43.4-26 76.6-67.2 92.4-116.2-40.6 24-85.6 41.6-133.4 51-38.4-40.8-93-66.2-153.4-66.2-116 0-210 94-210 210 0 16.4 1.8 32.4 5.4 47.8-174.6-8.8-329.4-92.4-433-219.6-18 31-28.4 67.2-28.4 105.6 0 72.8 37 137.2 93.4 174.8-34.4-1-66.8-10.6-95.2-26.2 0 0.8 0 1.8 0 2.6 0 101.8 72.4 186.8 168.6 206-17.6 4.8-36.2 7.4-55.4 7.4-13.6 0-26.6-1.4-39.6-3.8 26.8 83.4 104.4 144.2 196.2 146-72 56.4-162.4 90-261 90-17 0-33.6-1-50.2-3 93.2 59.8 203.6 94.4 322.2 94.4 386.4 0 597.8-320.2 597.8-597.8 0-9.2-0.2-18.2-0.6-27.2 41-29.4 76.6-66.4 104.8-108.6z"></path>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 1024 1024">
+    <path d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"></path>
+  </symbol>
+  <symbol id="icon-cross" viewBox="0 0 1024 1024">
+    <path
+      d="M1014.662 822.66c-0.004-0.004-0.008-0.008-0.012-0.010l-310.644-310.65 310.644-310.65c0.004-0.004 0.008-0.006 0.012-0.010 3.344-3.346 5.762-7.254 7.312-11.416 4.246-11.376 1.824-24.682-7.324-33.83l-146.746-146.746c-9.148-9.146-22.45-11.566-33.828-7.32-4.16 1.55-8.070 3.968-11.418 7.31 0 0.004-0.004 0.006-0.008 0.010l-310.648 310.652-310.648-310.65c-0.004-0.004-0.006-0.006-0.010-0.010-3.346-3.342-7.254-5.76-11.414-7.31-11.38-4.248-24.682-1.826-33.83 7.32l-146.748 146.748c-9.148 9.148-11.568 22.452-7.322 33.828 1.552 4.16 3.97 8.072 7.312 11.416 0.004 0.002 0.006 0.006 0.010 0.010l310.65 310.648-310.65 310.652c-0.002 0.004-0.006 0.006-0.008 0.010-3.342 3.346-5.76 7.254-7.314 11.414-4.248 11.376-1.826 24.682 7.322 33.83l146.748 146.746c9.15 9.148 22.452 11.568 33.83 7.322 4.16-1.552 8.070-3.97 11.416-7.312 0.002-0.004 0.006-0.006 0.010-0.010l310.648-310.65 310.648 310.65c0.004 0.002 0.008 0.006 0.012 0.008 3.348 3.344 7.254 5.762 11.414 7.314 11.378 4.246 24.684 1.826 33.828-7.322l146.746-146.748c9.148-9.148 11.57-22.454 7.324-33.83-1.552-4.16-3.97-8.068-7.314-11.414z"></path>
+  </symbol>
+</svg>
+<header class="main-header">
+  <div class="main-header__content">
+    <div class="main-logo">
+      <a class="main-logo__link" href="#main_section" data-scroll><img class="main-logo__image"
+                                                                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYwAAACICAMAAADDASzaAAABtlBMVEUAAAD///+921n///+921n///8kn6u921n///8kn6v///////+921n///////+921n///+921m921m921m921n///8kn6u921nP5Yn///8kn6v///8kn6u921m921m921n///////+921kkn6v///////////+921kkn6v///+921n///8kn6u921n///+921n///+921m921n///+921m921kkn6skn6u921m921m921m921n///8kn6skn6v///+921n///+921m921kkn6v///8kn6v///+921n///+921n///////+921m921n///+921m921m921n///////8kn6u921n///////+921kkoKwkn6v///+921n///////8kn6v///////+921m921n///8kn6u921kinqskn6skn6v///8kn6v///////////8kn6u921m921n///////////+921n///////8kn6v///+921kkn6skn6skn6v///////////+921n///////8kn6skn6v///8kn6v///8kn6sOn62921lQmaBoqK7///+921kkn6tBA/A2AAAAj3RSTlMAwSU5NM6u+n5HS4w5VAwen/TBKRlwN1kEcg0H59s9CO7qoX4n+tOt1OHhYCeaWLuCbebX0cuyaSIV8LOroG8RiWxC18C6ejMtGZOGZ1/GQzCDUi71gw3m26ZPH+3rx7OqkHVnTB4VDwfz7ahcP/DKynpzNyEVCpqWdlFFP/iTeygkt4lH37iji07j+RO+cgyxdFoAAA8pSURBVHja7Nv/SxphHMDxj9wMmyjCSCxjzG2KooggrP1gEyETWeAPKraSTEHpi5WQUmt9G7W19stn9x+vWls+93nu7vEqz233+nGcGb3v7nnueW5gMW5q9g1jCSymacmsV2AxzdS0zJgBiygrxr/MijFCrBj387nRmOjjkKwY5nEgq27FME8DWQ4rhnkmrRijw4oxQqwYI8SKMUKsGCOExHjIhcJ5sJgWY+14ljEOlvvFsIiyYvzLrBgj5O+PkfaDPjf8DUyO0VoD4wqJPXvIHojYk6nEeRp4mi7n9TGhSii0sn8iGWjSax7EXVfiT/MDf9qdl+Kua/FiDwREkZWBoWiN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"
+                                                                       alt="meet.js summit logo"></a>
+    </div>
+    <button class="button-menu js-button-menu"
+            title="Open/close menu"
+            aria-label="Navigation menu"
+            role="button"
+            aria-controls="navigation"
+            aria-expanded="true"
+            type="button"
+            id="open-menu-button"
+            aria-haspopup="true">
+      <svg class="button-menu__icon button-menu__menu-icon">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+      <svg class="button-menu__icon button-menu__close-icon">
+        <use xlink:href="#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="main-header__nav">
+      <nav id="navigation" class="main-nav" role="navigation">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link"
+               href="#speakers"
+               data-scroll
+               title="Meet conference speakers"
+               aria-label="Meet conference speakers">#speakers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link"
+               href="#agenda"
+               data-scroll
+               title="Look at conference agenda"
+               aria-label="Look at conference agenda">#agenda</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link"
+               href="#venue"
+               data-scroll
+               title="Find us in Gdańsk"
+               aria-label="Find us in Gdańsk">#venue</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link"
+               href="#sponsor_offer"
+               data-scroll
+               title="Become a conference sponsor"
+               aria-label="Become a conference sponsor">#sponsors</a>
+          </li>
+          <li class="main-nav__item register-button">
+            <a class="register-button__link"
+               href="#register"
+               data-scroll
+               title="Register for conference"
+               aria-label="Register for conference">#register</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="social-nav">
+        <ul class="social-nav__list">
+          <li class="social-nav__item">
+            <a class="social-nav__link" href="https://www.facebook.com/meetjspl/"
+               title="Find us on Facebook">
+              <svg class="social-nav__icon">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-nav__item">
+            <a class="social-nav__link" href="https://twitter.com/meetjs"
+               title="Follow us on Twitter">
+              <svg class="social-nav__icon">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+  <section id="main_section" class="main-section">
+    <div class="main-section__outer-content">
+      <div class="main-section__content">
+        <img class="main-section__image" src="gdansk-zuraw.9565aab53e9774753e34.svg" alt="">
+        <div class="main-section__info">
+          <h1 class="main-section__heading">javascript conference</h1>
+          <p class="main-section__date"><span class="main-section__highlight"><time datetime="2017-09-18">September 18, 2017</time> // Gdańsk, Poland</span>
+          </p>
+          <p class="main-section__text">meet.js Summit is a conference that gathers 450 professional front-end
+            developers interested in JavaScript development (covering topics like MVC, Node.js, reactive
+            programming, frameworks like Angular or React etc.) This&nbsp;year we are meeting for the 5th
+            time.
+          </p>
+        </div>
+        <section class="sponsors">
+          <h2 class="visually-hidden">Sponsors</h2>
+          <div class="sponsors__group sponsors__group--global">
+            <h2 class="sponsors__heading">global sponsor:</h2>
+            <a href="http://www.schibsted.pl" rel="nofollow" class="sponsors__link">
+              <img class="sponsors__image sponsors__image--big" src="schibsted.06a9db581305dbecdb5a.png"
+                   alt="Schibsted logo">
+            </a>
+          </div>
+          <div class="sponsors__group sponsors__group--global">
+            <h2 class="sponsors__heading">party sponsor:</h2>
+            <a href="http://www.jitsolutions.pl/en/" class="sponsors__link">
+              <img class="sponsors__image sponsors__image--big" src="jit-solutions.42363626b784cbdc16b1.png"
+                   alt="JIT Solutions logo">
+            </a>
+          </div>
+          <div class="sponsors__group sponsors__group--modular">
+            <h2 class="sponsors__heading">modular sponsors:</h2>
+            <ul class="sponsors__list">
+              <li class="sponsors__item">
+                <a href="https://www.dreamlab.pl" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="dreamlab.cfbb06f025cc5cb337cc.png"
+                       alt="Dreamlab logo">
+                </a>
+              </li>
+              <li class="sponsors__item">
+                <a href="http://speednet.pl" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAAAiCAYAAAAu2wBPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTJENERBOUIxQzEzMTFFNkE5MkZCRjE2OEQ3MjExNzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTJENERBOUMxQzEzMTFFNkE5MkZCRjE2OEQ3MjExNzkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFMkQ0REE5OTFDMTMxMUU2QTkyRkJGMTY4RDcyMTE3OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFMkQ0REE5QTFDMTMxMUU2QTkyRkJGMTY4RDcyMTE3OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmgHc/UAAAY6SURBVHja7F3tcds8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"
+                       alt="Speednet logo">
+                </a>
+              </li>
+              <li class="sponsors__item">
+                <a href="http://www.tivix.com" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="tivix.6e2296b0ba7ea3541061.png"
+                       alt="Tivix logo">
+                </a>
+              </li>
+              <li class="sponsors__item">
+                <a href="https://spartez.com" class="sponsors__link">
+                  <img class="sponsors__image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzAiIGhlaWdodD0iMzEiPjxnIHN0cm9rZT0iIzJiMmEyOSIgc3Ryb2tlLXdpZHRoPSIuMDc2Ij48cGF0aCBkPSJNMTE4LjcxOCA3LjYzN2g4LjU3NnYxLjI0OGwtNi42ODYgMTMuNjQzaDcuMjN2MS41MDRoLTkuMzd2LTEuMjdsNi43NzctMTMuNjJoLTYuNTI3VjcuNjM3em0tNC40OCAwVjkuMTRoLTYuNzc2djUuNzI4aDQuODczdjEuNTA0aC00Ljg3M3Y2LjE1OGg2LjkzNXYxLjUwNGgtOC43MVY3LjY0aDguNTV6bS0xMi45NjQgMFY5LjE0aC00LjY0NnYxNC44OTNoLTEuNzc2VjkuMTQzaC00LjU1NlY3LjYzOGgxMC45Nzh6TTc4LjMwNiAyNC4wMzJWNy42MzdoNC4yNzdjLjMzNy4wMDIuNjUyLjAyNy45NDQuMDczLjI5NS4wNDYuNTY3LjExNS44MTQuMjA1LjI0OC4wOTIuNDc0LjE5Ny42OC4zMTYuMjA0LjEyLjM5LjI1NS41NTQuNDA0LjE2NS4xNS4zMTQuMzA1LjQ0Ni40Ny4xMy4xNi4yNDguMzMuMzQ3LjUwNi4xLjE3OC4xODguMzU3LjI2NC41MzUuMDc2LjE3NS4xMzguMzUuMTg3LjUyMi4wNS4xNzUuMDkzLjM0LjEyNi41LjAzNC4xNi4wNi4zMS4wNzYuNDU1LjAxNi4xNDIuMDMuMjcuMDM2LjM4Mi4wMDguMTEzLjAxLjIxMi4wMS4yOTUuMDAzLjI4LS4wMTcuNTYtLjA1OC44My0uMDQyLjI3NC0uMTA3LjU0My0uMTk1LjgwOC0uMDg1LjI2NC0uMjA0LjUyMy0uMzU0Ljc3N3MtLjMzMy41MDItLjU0Ni43NDZjLS4yMTIuMjQ0LS40NjYuNDgtLjc2LjcxLS4yODcuMjIzLS42MTMuNDQtLjk3Ni42NWw0LjQxMiA3LjIxaC0yLjE1M2wtMy45NjYtNi44Yy0uMTk0LjAwNy0uMzkuMDEtLjU5LjAxNi0uMi4wMDQtLjQwNi4wMDctLjYxLjAwOGwtLjYxMi4wMDgtLjU3NC4wMTN2Ni43NTVoLTEuNzc2em0xLjc3Ni0xNC44OXY2LjYxaDEuNTdjLjM4NiAwIC43NDItLjAzNCAxLjA3LS4xLjMyNS0uMDY0LjYyNC0uMTYuODk0LS4yOS4yNy0uMTMuNTA4LS4yOTMuNzE0LS40OS4yMDYtLjE5Ni4zOC0uNDI1LjUyNC0uNjg4LjE0My0uMjYuMjUtLjU1Ni4zMjMtLjg4NS4wNzItLjMzLjEwOC0uNjk2LjExLTEuMDkzLjAwNC0uMzYtLjAyMi0uNjg1LS4wNzgtLjk3Ny0uMDU3LS4yOTItLjE0LS41NS0uMjU2LS43NzYtLjExLS4yMjctLjI2LS40MjItLjQ0NS0uNTg3LS4xODYtLjE2Ni0uNDEtLjMwMi0uNjctLjQwOC0uMjYtLjExLS41Ny0uMTktLjkyNi0uMjQzLS4zNTMtLjA1My0uNzUtLjA4LTEuMTkzLS4wNzdoLTEuNjR6bS0xMS40ODQtMi45NWw1LjgzMiAxNy44NGgtMS45MTZjLTEuMjg0LTQuMjU1LTIuNTc2LTguNS0zLjkxNS0xMi43NC0xLjMyNyA0LjIzOC0yLjYxNCA4LjQ5LTMuODk1IDEyLjc0SDYyLjc5bDUuODA4LTE3Ljg0em0tMTcuNDIyIDE3Ljg0VjcuNjM3aDMuOTZjLjQ5NSAwIC45NTQuMDUgMS4zNzcuMTQ2LjQyMy4wOTcuODEuMjQzIDEuMTYuNDM3LjM1LjE5Mi42Ni40My45My43MTUuMjY4LjI4NC40OTYuNjEzLjY4Ljk4Ni4xODUuMzc1LjMyNC43OS40MTcgMS4yNDcuMDkzLjQ1Ni4xNC45NTUuMTQyIDEuNDk1IDAgLjQzMy0uMDM3LjgzNS0uMTA0IDEuMjA3LS4wNjguMzczLS4xNy43MTctLjMwMyAxLjAzLS4xMzMuMzEzLS4yOTUuNi0uNDg1Ljg1Ni0uMTkuMjU4LS40MS40ODctLjY1NS42ODgtLjI0NC4yLS41MS4zNzMtLjguNTIyLS4yOS4xNS0uNjA1LjI3Mi0uOTQuMzctLjMzNC4wOTQtLjY4Ni4xNjUtMS4wNTUuMjEyLS4zNy4wNDgtLjc1Ni4wNzItMS4xNTguMDcyaC0xLjM5djYuNDE0aC0xLjc3NnptMS43NzYtMTQuODl2Ni45NzJoMS44NDNjLjMyNyAwIC42MzMtLjAzMy45MTgtLjA5Ny4yODctLjA2NC41NTMtLjE2LjgtLjI4OC4yNDItLjEzLjQ2LS4yOS42NS0uNDguMTktLjE5My4zNTItLjQxNi40OS0uNjcuMTM1LS4yNTMuMjM4LS41MzguMzA3LS44NTQuMDctLjMxNy4xMDUtLjY2NC4xMDctMS4wNDMgMC0uNDIyLS4wMzItLjgwNS0uMDk1LTEuMTQ3LS4wNjQtLjM0Mi0uMTU4LS42NDMtLjI4My0uOTAzLS4xMjUtLjI2LS4yNzYtLjQ4Ni0uNDU1LS42NzYtLjE3OC0uMTktLjM4NC0uMzQzLS42MTgtLjQ2Mi0uMjM1LS4xMi0uNDk1LS4yMS0uNzgtLjI2OC0uMjg0LS4wNi0uNTk0LS4wOS0uOTMtLjA4N0g1Mi45NXptLTcuNjA3LS4zMTRjLjIzLjE4LjQ1LjM2Ny42NjMuNTY3bC0xLjA2OCAxLjI4Yy0uMTM1LS4xMi0uMjctLjI0LS40MS0uMzU4LS4xMjgtLjExLS4yNi0uMjItLjM5Mi0uMzI3LS4xMzMtLjEwNy0uMjctLjIxLS40MS0uMzA3LS4xNC0uMDk4LS4yOC0uMTktLjQyNC0uMjgtLjE0Ny0uMDg3LS4yOTUtLjE2Ni0uNDQ2LS4yMzYtLjE1LS4wNy0uMzA1LS4xMy0uNDY1LS4xODMtLjE1NS0uMDUyLS4zMTUtLjA5LS40OC0uMTE3LS4xNjYtLjAyNy0uMzM4LS4wNDItLjUxMy0uMDQzLS4yNC4wMDItLjQ3LjAyOC0uNjg4LjA4LS4yMTguMDUtLjQyNS4xMjctLjYyLjIzLS4xOTUuMS0uMzcuMjIzLS41MjUuMzY1LS4xNTUuMTQtLjI5LjMwMy0uNDA1LjQ4Ny0uMTE1LjE4Mi0uMjAyLjM4Mi0uMjYuNTk3LS4wNi4yMTUtLjA5LjQ0Ny0uMDkzLjY5NC0uMDA0LjEwNSAwIC4yMTMuMDEuMzIuMDEuMTAyLjAyNi4yMDYuMDUuMzEuMDIuMTAzLjA1My4yMS4xLjMxOC4wNS4xMS4xMS4yMjIuMTg3LjMzNy4wNzUuMTE0LjE3LjIzNS4yOS4zNi4xMTQuMTI0LjI1LjI1NC40MS4zODcuMTU3LjEzNi4zNDUuMjguNTYuNDMuMjE0LjE1LjQ2LjMwNy43My40NzRsMS4yOTIuNzkzYy4zNy4yMjUuNzEyLjQ0IDEuMDIzLjY0NS4zMTIuMjA2LjU5LjQuODM3LjU4aC4wMDJjLjI0NS4xODMuNDY3LjM2Mi42NjQuNTM4LjE5Ni4xNzYuMzY2LjM0OC41MS41MTguMTQzLjE3LjI2NS4zNDIuMzY3LjUyLjEwNC4xOC4xODYuMzY2LjI0Ny41NTUuMDYyLjE5LjEwNy4zOS4xMzYuNjAzLjAzLjIxMi4wNDIuNDM3LjA0LjY3NS0uMDAyLjM3LS4wMy43MTgtLjA5IDEuMDQ3LS4wNTcuMzI4LS4xNDQuNjQtLjI2LjkzLS4xMTYuMjktLjI1OC41Ni0uNDIzLjgwNi0uMTY1LjI0Ni0uMzU1LjQ3LS41Ny42NzRoLjAwMmMtLjIxNi4yMDMtLjQ1LjM4My0uNzA3LjUzOC0uMjU1LjE1NS0uNTMuMjg1LS44MjUuMzkyLS4yOTcuMTA0LS42MS4xODQtLjkzNy4yMzgtLjMyOC4wNTQtLjY3My4wOC0xLjAzMy4wOC0uMzUzIDAtLjY5Mi0uMDI4LTEuMDE2LS4wODItLjMyNC0uMDU0LS42MzQtLjEzNS0uOTMtLjI0NC0uMjk4LS4xMS0uNTgzLS4yNC0uODU2LS4zOTMtLjI3Mi0uMTUzLS41MzUtLjMzLS43ODYtLjUyOC0uMjQ4LS4yLS40ODgtLjQxOC0uNzE4LS42NTQtLjI0NS0uMjUzLS40Ny0uNTE4LS42ODYtLjc5N2wxLjM3Ni0xLjA5M2MuMTQuMjI1LjI4Ni40MzUuNDUzLjY0LjE1NS4xOS4zMjUuMzcyLjUwNi41NC4xODIuMTcuMzc0LjMyLjU3Ni40NTQuMjAyLjEzNC40MTQuMjUuNjM3LjM1LjIyLjA5OC40NTMuMTczLjY5My4yMjQuMjQuMDUuNDkuMDc3Ljc1LjA3OC4yMSAwIC40MTUtLjAxOC42MTMtLjA1Ni4xOTctLjAzOC4zOS0uMDk0LjU3My0uMTcuMTg0LS4wNy4zNi0uMTYuNTItLjI2Mi4xNjMtLjEwMy4zMTUtLjIyMi40NTctLjM1Ni4xNC0uMTMyLjI2NC0uMjc2LjM3NS0uNDMzLjExLS4xNTguMjA1LS4zMjcuMjg1LS41MDguMDgtLjE4LjE0LS4zNy4xOC0uNTcuMDQtLjE5OC4wNi0uNDA3LjA2Mi0uNjIzIDAtLjEyOCAwLS4yNS0uMDA2LS4zNjMtLjAwNS0uMTItLjAxMy0uMjMtLjAyNS0uMzM2LS4wMTQtLjEwMi0uMDM2LS4yMDMtLjA2Ni0uMy0uMDMtLjA5Ny0uMDY4LS4xOS0uMTE2LS4yODMtLjA1LS4wOTQtLjExLS4xOS0uMTg3LS4yODYtLjA3NS0uMDk4LS4xNjYtLjE5OC0uMjctLjMtLjEwNS0uMTAzLS4yMy0uMjEyLS4zNzUtLjMyNy0uMTQ1LS4xMTUtLjMxLS4yMzctLjQ5Ny0uMzY0LS4xOTQtLjEzNi0uNDE0LS4yODItLjY2LS40NC0uMjI2LS4xNDMtLjQ3Ni0uMjk2LS43NS0uNDZsLTEuNDc0LS44ODNjLS4yMDMtLjEyLS40LS4yNDItLjU5Mi0uMzY3LS4xOTMtLjEyNi0uMzgtLjI1Ni0uNTYtLjM5LS4xODItLjEzNi0uMzU0LS4yNzctLjUxNS0uNDI2LS4xNjMtLjE0OC0uMzE0LS4zMDQtLjQ1NS0uNDY4LS4xNC0uMTY1LS4yNjctLjM0LS4zNzctLjUyLS4xMS0uMTg1LS4yMDYtLjM4LS4yODYtLjU4My0uMDgzLS4yMDUtLjE0NS0uNDIzLS4xODYtLjY1My0uMDQtLjIzLS4wNjItLjQ3Mi0uMDY0LS43MjguMDAyLS4zMjQuMDMyLS42My4wOS0uOTE3LjA1Ny0uMjg4LjE0My0uNTYuMjU3LS44MS4xMTMtLjI1LjI0OC0uNDg1LjQwNi0uNjk4LjE1OC0uMjE0LjM0LS40MDguNTQtLjU4LjIwMy0uMTc2LjQyMi0uMzMuNjU3LS40NjMuMjM1LS4xMzMuNDg2LS4yNDUuNzU0LS4zMzYuMjY4LS4wOS41NDYtLjE1Ny44MzYtLjIwMy4yODgtLjA0My41ODctLjA2Ni44OTUtLjA2Ni4yODcuMDAyLjU3LjAyNi44NDguMDcyLjI3Ni4wNDYuNTQ3LjExNS44MTIuMjA2LjI2OC4wOTIuNTMyLjIuNzkuMzI0LjI1LjEyMi40OTIuMjYuNzMuNDEyLjI0LjE1NS40NzMuMzIuNjk3LjQ5NHpNMjcuMDUyIDI3LjgzNWMtNS4yNzMgMC03Ljc4Ni0xLjQyNy05LjU3OC00LjA3My0uMTEyLS4xNjUtLjMyLS4xNDctLjQ4LS4wNDQtMS43MjcgMS4xMTItMy40MDcgMS44Ni02LjY0OCAxLjk1Mi4wNjItLjA3LS4wNDUtLjIzNi4wMi0uMzA1LjYyNS0uMTQgMS42MzYtLjY1IDEuMjUtMS43NDRsLS44OTUtMi4zNTZjLS4xMzYtLjM2My0uOTMtMS4zMy0xLjA1Ny0xLjY2Ni0uNjgtMS43ODgtLjc1My0zLjM4Ny0uMTctNC44NzhsLjA0Mi0uMDY4QzIuNjQgMTMuNjU3IDEuNDkgMjEuODcgNS4zIDI3LjYxN2wtLjQ4LjQ3NkMtMS45NTUgMTkuMjA2IDEuODQzIDguNjQgNy45IDQuMiAxNS4xMzItMS4xIDI0LjkwNi4xMyAzMC4xMTMgNS45OXYuNDY1Yy0yLjQxNS4yOTgtNC41NDIgMS4zNS02LjEgMi45MzYtNi4zMy0yLjkzLTExLjU4LjIxLTEzLjcwMiAzLjcxbC4yMS4yNGM0LjEwNy00LjU1NCAxMi41NTQtNS4wMjMgMTQuNDQgMS4xNjRsMi40MjYgNy45NTItLjIyNC0uMDQtLjk1LS4xODItMS40LTQuMjVjLS4wNTItLjE3My0uNTEtLjI1LS42NDYtLjEzMy0xLjEzLjg5LTEuODE0IDEuNTgzLTMuNTc0IDIuMTE3bC0uMDI0LjMxNGMxLjM3LjU5NiAyLjU0Mi43IDQuMTQ1LjcxM2wyLjM0IDYuODQzeiIvPjwvZz48L3N2Zz4="
+                       alt="Spartez logo">
+                </a>
+              </li>
+              <li class="sponsors__item">
+                <a href="https://www.pgs-soft.com/" class="sponsors__link">
+                  <img class="sponsors__image" src="pgs.857b3228b5c9e0b7f156.png"
+                       alt="PGS Software logo">
+                </a>
+              </li>
+
+              <li class="sponsors__item">
+                <a href="http://apptension.com" class="sponsors__link">
+                  <img class="sponsors__image" src="apptension.f5b1698f40bfada944b2.png"
+                       alt="Apptension logo">
+                </a>
+              </li>
+
+              <li class="sponsors__item">
+                <a href="https://evojam.com" class="sponsors__link">
+                  <img class="sponsors__image" src="evojam.cb02abc2c42a8e1fdce9.png"
+                       alt="Evojam logo">
+                </a>
+              </li>
+
+
+              <li class="sponsors__item">
+                <a href="http://www.lppsa.com/" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACBCAIAAAAKbWJtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjVEMjA4OTI0OTNCRkRCMTE5MTRBODU5MEQzMTUwOEM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQwRDQ4QTcwOTAyMTExRTdCNjA2REJDODNBNjc3RkVDIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQwRDQ4QTZGOTAyMTExRTdCNjA2REJDODNBNjc3RkVDIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIElsbHVzdHJhdG9yIENTNS4xIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDdBMjZFQzJDRjIwNjgxMTgwODNFQUU1OTczQjRBOEIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDdBMjZFQzJDRjIwNjgx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"
+                       alt="LPP logo">
+                </a>
+              </li>
+
+
+              <li class="sponsors__item sponsors__item--placeholder" aria-hidden="true">
+                <a href="sponsors_en.pdf" class="sponsors__link" tabindex="-1">
+                  <img class="sponsors__image sponsors__image--placeholder" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wgARCAAtAEYDAREAAhEBAxEB/8QAHAABAAIDAAMAAAAAAAAAAAAAAAMEAgUGAQcJ/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAA+mAAAABGcwXiwQEpCSG5BxhCYHSGjNGbo7YA5g0RTJT2QZgAiPBXJC0AAAAAD//EADAQAAICAQMCBAQFBQEAAAAAAAECAwQFERIhAAYHExQxFSJBUSAjMGGhEDdxc4HC/9oACAEBAAE/AP0bckkdWVoYxLMqEojNsDsBwpOh01P106qeLFS5Fj2WMIbEck1wSybPhyJw5fg8h/lA416reJOFtUrFhbukdYoJA0Tq6b22odpG4gsQAQNOsn3ti8L6/wBVaEQxoiNkmNiIhK22M6gHXU/b2+vWY76r0uzjmaqNcrl40QHdFv3SiMnka8E6+3P89S9+Ymvmjj3uoLW8REbDtDnkIX02hj9idepfErCQ5b0LXR6k2Fq6CFyplJACBgCCdTzzx9eqXf8Ah72Y9DFdR7LOY1GxwjsPdQ5G1iNPYH+t/wAKvXS90lWrV/jjwSQOoLFCgBO8EAaFwSQDyD1m/DvL93C9ZvT4+tdeqlastfe8Q2zLNucsAeWQDQDga+/V3w7zWcgz73pMV5+XNLYkRfy0WGTcwOq6nUe37/brvvt+buftaelXaJJZJIXBkJC6JKrnkAn2U6cdW/DvITSXaKT0hiL+RGRkkO71KHeHKAabeWXhteB9Onw+X+NU8JBTd8fRzS3xZeu6HYJWkOrkbDpqdCrEnjgdYrw7ydWDF4yWegcTiLi24pU3+pl2szKhBG0ctyQefweMf9r81/o/9ddz94Z3sOfIxTXIso3w31sRNdY/TsJkjOgBGqgPu+Y6/L79DvjuBoxBDbf865Uiis2Iq5dPNcqVKRMwKkAEHg+/P167n74zmJz16hFalaTFQQsr+VXVLjMupeQu6lVJ+X8scfx1WdpKyM6eW7KCya67CRyNf2/Dbow5KrJBYhinhkGjxyIGVx9iDqD0+NrzTmZ4IXmMZh3sgLbCdSuumu0kcjqt2zjacHlQ4+jFGsqzBEgRVDg6hgANNwPsffq7g6OUnjms06liaDmN5Yldo/8ABIJH/P1f/8QAFBEBAAAAAAAAAAAAAAAAAAAAUP/aAAgBAgEBPwBb/8QAFBEBAAAAAAAAAAAAAAAAAAAAUP/aAAgBAwEBPwBb/9k="
+                       alt="modular sponsor logo">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sponsors__group sponsors__group--scope">
+            <h2 class="sponsors__heading">scope sponsors:</h2>
+            <ul class="sponsors__list">
+              <li class="sponsors__item">
+                <a href="http://smart4aviation.aero" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="smart4aviation.69c013cd710b0ac67dee.png"
+                       alt="Smart4aviation logo">
+                </a>
+              </li>
+              <li class="sponsors__item">
+                <a href="http://www.arforce.pl" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="arforce.07322b06240d3e138c1c.png"
+                       alt="ARforce logo">
+                </a>
+              </li>
+              <li class="sponsors__item">
+                <a href="https://www.mozilla.org/" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMTAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzYwIDEwMi44IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNjAgMTAyLjg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KPGc+Cgk8cmVjdCB5PSItMC4yIiB3aWR0aD0iMzYwIiBoZWlnaHQ9IjEwMi45Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzQzLjgsNzMuN2MtMC43LDAuMi0xLjMsMC4zLTEuOSwwLjNjLTIuMSwwLTMuMS0wLjktMy4xLTMuNVY1MWMwLTEwLjMtOC4yLTE1LjMtMTcuOS0xNS4zCgkJYy03LjQsMC0xMS40LDAuOS0xOS4zLDQuMUwzMDAsNTAuMmwxMC4zLDEuMWwxLjUtNS4xYzIuMS0xLjEsNC4yLTEuMyw2LjktMS4zYzcuMywwLDcuNCw1LjUsNy40LDEwLjF2MS41CgkJYy0yLjMtMC4zLTQuOS0wLjQtNy40LTAuNGMtMTAuMywwLTIxLDIuNi0yMSwxMy43YzAsOS40LDcuNCwxMi45LDEzLjksMTIuOWM3LjMsMCwxMS45LTQuNCwxNC41LTljMC42LDUuNSwzLjksOSw5LjksOQoJCWMyLjgsMCw1LjctMC44LDguMS0yLjFMMzQzLjgsNzMuN3ogTTMxNi4yLDczLjRjLTMuOSwwLTUuMy0yLjMtNS4zLTUuMmMwLTQuOSw0LTYuMiw4LjYtNi4yYzIuMSwwLDQuNCwwLjMsNi41LDAuNgoJCUMzMjUuNyw3MC4xLDMyMC44LDczLjQsMzE2LjIsNzMuNHogTTI5OC45LDEyLjlsLTE5LjUsNjguN2gtMTIuN2wxOS41LTY4LjdIMjk4Ljl6IE0yNzIuNywxMi45bC0xOS41LDY4LjdoLTEyLjdMMjYwLDEyLjlIMjcyLjd6CgkJIE0yMTguNywzNi42aDEzLjV2MTYuMmgtMTMuNVYzNi42eiBNMjE4LjcsNjUuNWgxMy41djE2LjJoLTEzLjVWNjUuNXogTTE5OSw2NC45bDEwLjIsMWwtMi44LDE1LjhoLTM5LjNsLTEuMy02LjhsMjQuOC0yOC41aC0xNC4xCgkJbC0yLDdsLTkuMy0xbDEuNi0xNS44aDM5LjVsMSw2LjhsLTI1LDI4LjVoMTQuNkwxOTksNjQuOXogTTEzNC41LDM1LjdjLTE2LjIsMC0yNC4yLDEwLjktMjQuMiwyNC4xYzAsMTQuNCw5LjYsMjIuOSwyMy41LDIyLjkKCQljMTQuNCwwLDI0LjgtOS4xLDI0LjgtMjMuNUMxNTguNiw0Ni42LDE1MC43LDM1LjcsMTM0LjUsMzUuN3ogTTEzNC4yLDcyLjdjLTcsMC0xMC42LTYtMTAuNi0xMy44YzAtOC41LDQuMS0xMy40LDEwLjctMTMuNAoJCWM2LjEsMCwxMSw0LjEsMTEsMTMuMkMxNDUuMyw2Ny40LDE0MC45LDcyLjcsMTM0LjIsNzIuN3ogTTk4LjcsNzEuOGg2djkuOEg4NS45VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjgKCQljLTYuMiwwLTguNyw0LjQtOC43LDEwLjd2MTUuN2g2djkuOEg1Ni42VjU2LjNjMC03LjgtMi42LTEwLjgtNy43LTEwLjhjLTYuMiwwLTguNyw0LjQtOC43LDEwLjd2MTUuN2g4LjZ2OS44SDIxLjR2LTkuOGg2VjQ2LjRoLTYKCQl2LTkuOGgxOC45djYuOGMyLjctNC44LDcuNC03LjcsMTMuNy03LjdjNi41LDAsMTIuNSwzLjEsMTQuNyw5LjdjMi41LTYsNy42LTkuNywxNC43LTkuN2M4LjEsMCwxNS41LDQuOSwxNS41LDE1LjZWNzEuOHoiLz4KPC9nPgo8L3N2Zz4K"
+                       width="210" alt="Mozilla logo">
+                </a>
+              </li>
+
+              <li class="sponsors__item">
+                <a href="https://fandom.com/" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="fandom.312f33581845d947a3b7.png"
+                       alt="Fandom logo">
+                </a>
+              </li>
+
+              <li class="sponsors__item">
+                <a href="https://www.ciklum.com/" rel="nofollow" class="sponsors__link">
+                  <img class="sponsors__image" src="ciklum.7326b68b665494fec162.png"
+                       alt="Ciklum logo">
+                </a>
+              </li>
+
+              <li class="sponsors__item sponsors__item--placeholder" aria-hidden="true">
+                <a href="sponsors_en.pdf" class="sponsors__link" tabindex="-1">
+                  <img class="sponsors__image sponsors__image--placeholder" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wgARCAAtAEYDAREAAhEBAxEB/8QAHAABAAIDAAMAAAAAAAAAAAAAAAMEAgUGAQcJ/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAA+mAAAABGcwXiwQEpCSG5BxhCYHSGjNGbo7YA5g0RTJT2QZgAiPBXJC0AAAAAD//EADAQAAICAQMCBAQFBQEAAAAAAAECAwQFERIhAAYHExQxFSJBUSAjMGGhEDdxc4HC/9oACAEBAAE/AP0bckkdWVoYxLMqEojNsDsBwpOh01P106qeLFS5Fj2WMIbEck1wSybPhyJw5fg8h/lA416reJOFtUrFhbukdYoJA0Tq6b22odpG4gsQAQNOsn3ti8L6/wBVaEQxoiNkmNiIhK22M6gHXU/b2+vWY76r0uzjmaqNcrl40QHdFv3SiMnka8E6+3P89S9+Ymvmjj3uoLW8REbDtDnkIX02hj9idepfErCQ5b0LXR6k2Fq6CFyplJACBgCCdTzzx9eqXf8Ah72Y9DFdR7LOY1GxwjsPdQ5G1iNPYH+t/wAKvXS90lWrV/jjwSQOoLFCgBO8EAaFwSQDyD1m/DvL93C9ZvT4+tdeqlastfe8Q2zLNucsAeWQDQDga+/V3w7zWcgz73pMV5+XNLYkRfy0WGTcwOq6nUe37/brvvt+buftaelXaJJZJIXBkJC6JKrnkAn2U6cdW/DvITSXaKT0hiL+RGRkkO71KHeHKAabeWXhteB9Onw+X+NU8JBTd8fRzS3xZeu6HYJWkOrkbDpqdCrEnjgdYrw7ydWDF4yWegcTiLi24pU3+pl2szKhBG0ctyQefweMf9r81/o/9ddz94Z3sOfIxTXIso3w31sRNdY/TsJkjOgBGqgPu+Y6/L79DvjuBoxBDbf865Uiis2Iq5dPNcqVKRMwKkAEHg+/P167n74zmJz16hFalaTFQQsr+VXVLjMupeQu6lVJ+X8scfx1WdpKyM6eW7KCya67CRyNf2/Dbow5KrJBYhinhkGjxyIGVx9iDqD0+NrzTmZ4IXmMZh3sgLbCdSuumu0kcjqt2zjacHlQ4+jFGsqzBEgRVDg6hgANNwPsffq7g6OUnjms06liaDmN5Yldo/8ABIJH/P1f/8QAFBEBAAAAAAAAAAAAAAAAAAAAUP/aAAgBAgEBPwBb/8QAFBEBAAAAAAAAAAAAAAAAAAAAUP/aAAgBAwEBPwBb/9k="
+                       alt="scope sponsor logo">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+  <section id="agenda" class="agenda">
+    <div class="agenda__content">
+      <div class="agenda__text">
+        <h2 class="agenda__heading"><span aria-hidden="true">#</span>agenda</h2>
+        <p class="agenda__lead">
+          <time datetime="2017-09-18">September 18, 2017</time>
+          // Gdańsk, Poland
+        </p>
+      </div>
+      <div class="agenda__tracks">
+        <div class="agenda__track">
+          <h3 class="agenda__track-title">main auditorium</h3>
+        </div>
+      </div>
+
+      <div class="agenda__single">
+        <article class="agenda__details">
+          <h4 class="agenda__title">Note: The Agenda is subject to change!</h4>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T08:00CET">08:00</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">Registration starts</h4>
+          <p class="agenda__desc">Do not forget to bring your ticket! Only registered attendees are allowed to
+            enter the venue.</p>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T09:15CET">09:15</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">Coffee break</h4>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T09:30CET">09:30</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">Welcome!</h4>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T09:45CET">09:45</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Load it faster! - improving React apps loading time and performance
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              React is fast and that is awesome, but as web developers we should continuously strive towards better and better performance. We deserve a smart, fast web since only a small minority of users has brand new smartphones and a 4G connection. In this talk we're going to talk about why performance & load time matters and how we can improve those two factors in React-based web applications.
+            </p>
+            <a class="agenda__link" href="#speaker-lakomy" data-scroll="" title="Read more about Tomasz Łakomy">Tomasz Łakomy</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T10:15CET">10:15</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            The Pixel Pipeline
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              A closer look at what's happening behind the scenes in your browser and how to use this knowledge to chase 60 FPS. You'll understand why certain CSS properties are better for animations and what are the most common performance bottlenecks in rendering pipeline.
+            </p>
+            <a class="agenda__link" href="#speaker-ziemkowski" data-scroll="" title="Read more about Patryk Ziemkowski">Patryk Ziemkowski</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T10:45CET">10:45</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Fun and games with A-Frame - building Virtual Reality experiences for the Web
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              With WebVR we are finally ready to create first-class Virtual Reality experiences using Open Web technologies. WebGL being able to render 3D graphics gives us infinite possibilities when building for the browser. These APIs allows VR content to be published and consumed on the Web almost instantaneously from any capable device.
+              A-Frame brings the ease of use while following game development coding principles. Use simple HTML markup to create Virtual Reality experiences for all available platforms, and see how easy, fun, and fast it is.
+            </p>
+            <a class="agenda__link" href="#speaker-mazur" data-scroll="" title="Read more about Andrzej Mazur">Andrzej Mazur</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T11:15CET">11:15</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">Coffee Break 2</h4>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T11:30CET">11:30</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title" style="color: rgb(0, 80, 145);">
+            Schibsted presentation
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              Schibsted Tech Polska jest częścią skandynawskiej grupy mediowej Schibsted Media Group, właściciela najważniejszych szwedzkich i norweskich gazet, a także liczących się portali internetowych, takich jak m.in. porównywarki cen. Gdański oddział firmy liczy 50 programistów, tworzących aplikacje mobilne, webowe oraz narzędzia do zarządzania treścią. Sprawdź zalety skandynawskiej kultury pracy na <a class="agenda__link" style="display: inline;" href="http://www.schibsted.pl">www.schibsted.pl</a>
+            </p>
+            <!-- <a class="agenda__link" href="#speaker-" data-scroll="" title="Read more about "></a> -->
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T11:40CET">11:40</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Handling Side Effects in Redux With Redux-Saga
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              Have you ever struggled with making dependencies between reducers? Have you ever stepped into problem with mulitple async operations done at the same time doing huge mess in your state? Let me be your guide into redux sagas with tips, how and when you can use them in your application to solve all side effects problems at once.
+            </p>
+            <a class="agenda__link" href="#speaker-jastrzebska" data-scroll="" title="Read more about Kasia Jastrzębska">Kasia Jastrzębska</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T12:10CET">12:10</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Frontend Apps &amp; Machine Learning models
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              During this session, I will show how to use TensorFlow for solving Linear Regression problems and build Convolutional Neural Networks. We will train algorithms and use predictions of Machine Learning models in Frontend Application using REST API.
+            </p>
+            <a class="agenda__link" href="#speaker-omiotek" data-scroll="" title="Read more about Patryk Omiotek">Patryk Omiotek</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T12:40CET">12:40</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            How to become a hipster with React Recompose
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              Recompose is an utility library advertised as Lodash for React. It provides a wide range of useful Higher Order Components to reduce the boilerplate. What does it bring to React? Will it make your code modular and reusable? Is it necessary to drink a latte from an avocado before using it? Be prepared to learn all that and much more during this talk, so buckle up and find out how to compose your components like a pro.
+            </p>
+            <a class="agenda__link" href="#speaker-krol" data-scroll="" title="Read more about Bartosz Król">Bartosz Król</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T13:10CET">13:10</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">Lunch &amp; Coffee</h4>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T14:40CET">14:40</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Looking for the Holy Grail of Mobile Web Performance
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              There’s a long-standing myth in the mobile world that only native apps are able to provide a decent performance for the mobile user. With the emergence of Progressive Web Apps that suppose to mimic all the native goodness, the push for performance in the mobile web is now stronger than ever before.
+              Is the Web Platform ready to keep up with these expectations? This talk is a wide overview of the many practices and strategies we can employ to satisfy our mobile users’ needs - from the HTTP-level tweaks via load and render time optimization to smooth scrolling and animations tricks.
+            </p>
+            <a class="agenda__link" href="#speaker-bar" data-scroll="" title="Read more about Adam Bar">Adam Bar</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T15:10CET">15:10</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            GraphQL and Apollo - how to make your api great again?
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              Drowning in a pile of buzzwords, have you ever come across word “GraphQL”? Whether it’s a total unknown for you or you are unsure if you should give it a try or not, it’s a perfect talk for you. I would like to share my hands-on experience of using GraphQL and introduce you to its basic concepts. After this talk, you will know what GraphQL is and when it’s useful. You will be able to tell queries, mutations and subscriptions apart. Additionally, I would like to show how easily you can start with it, using Apollo.
+              Hopefully, my talk will give you knowledge and motivation to give it a shot.
+            </p>
+            <a class="agenda__link" href="#speaker-konopka" data-scroll="" title="Read more about Anna Konopka">Anna Konopka</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T15:40CET">15:40</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Multi stage build for webpack applications
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              You will learn how to setup your project for Docker Builder Patter. I will talk how to build your application and publish in on production as small as possible without any dev dependencies or even serverless. I will show how to automate building and deploy the application using CircleCI and publish the results to our public Docker hub. On to of that, we will run the output image on AWS ECS live on production.
+            </p>
+            <a class="agenda__link" href="#speaker-ronewicz" data-scroll="" title="Read more about Kamil Ronewicz">Kamil Ronewicz</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T16:10CET">16:10</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">Coffe Break 3</h4>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T16:25CET">16:25</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Demystifying Vue.js
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              There’s a lot of misconceptions around Vue when it comes to things like templates vs JSX, two-way data bindings, watchers, mutations. It might be very surprising to know that some problems that Fiber solves for React don’t even exist in Vue in the first place. Not just performance-wise.
+            </p>
+            <a class="agenda__link" href="#speaker-dulisz" data-scroll="" title="Read more about Damian Dulisz">Damian Dulisz</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T16:55CET">16:55</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            Node.js Diagnostics 101
+          </h4>
+          <div class="agenda__about">
+            <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
+            <p class="agenda__description-text">
+              So you built a Node.js web application and got it to run. What's next?
+
+              This talk introduces you to diagnosing execution, performance and memory usage of your app. You'll learn about new and old tools for diagnosing memory consumption and leaks, CPU profiling and more. Skills you don't use every day, but when you do, you prevent a disaster from happening.
+
+              The overview of tools starts at basic tools anyone can use and reaches the newest additions to Node.js 8.0.
+            </p>
+            <a class="agenda__link" href="#speaker-tenerowicz" data-scroll="" title="Read more about Zbyszek Tenerowicz">Zbyszek Tenerowicz</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T17:25CET">17:25</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">Good bye!</h4>
+        </article>
+      </div>
+
+      <div class="agenda__single">
+        <div class="agenda__time">
+          <time class="agenda__hour" datetime="2017-09-18T20:00CET">20:00</time>
+        </div>
+        <article class="agenda__details">
+          <h4 class="agenda__title">
+            After Party fueled by <a class="agenda__link agenda__link--inline" href="http://www.jitsolutions.pl/en/" style="color: rgb(240, 100, 30); font-weight: bolder;">JIT
+            Solutions</a>!
+          </h4>
+          <div class="agenda__about" style="margin-top: 10px;">
+            <a class="agenda__link" href="https://www.facebook.com/events/1916075945381780/">Join our Facebook event here!</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="speakers" class="speakers">
+    <div class="speakers__content">
+      <div class="speakers__info">
+        <header class="speakers__header">
+          <h2 class="speakers__heading"><span aria-hidden="true">#</span>speakers</h2>
+        </header>
+      </div>
+      <div class="speakers__main-info">
+
+        <article id="speaker-bar" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-bar.0f18535399bc0458c17d.jpg"
+                 alt="Photo of speaker: Adam Bar">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Adam Bar</h3>
+            </div>
+            <p class="speaker-box__desc">
+              I started my developer career 10 years ago with simple PHP websites. Later on I touched on .NET, Ruby,
+              Java and Objective-C, but I have always come back to the Web that I value for its openness and
+              accessibility for everyone. And even though I admire simple structures, simple rules and order, which are
+              often hard to find on the Web, these are Web technologies that are my programming passion. On a daily
+              basis I work on versatile web apps in Bright Inventions and take care of my website that aims to review
+              device integration capabilities of the web - <a href="https://whatwebcando.today/">whatwebcando.today</a>
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-dulisz" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-dulisz.9b6d53860f6edc42a067.jpg"
+                 alt="Photo of speaker: Damian Dulisz">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Damian Dulisz</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Vue.js evangelist. Coffee-driven Senior Front-end Developer at Monterail. Organiser of VueConf – the first
+              international Vue conference. Also, the co-organiser of Meet.js Wrocław. Open-source contributor, author
+              of vue-multiselect and vuelidate. Curator of the Vue.js Newsletter. Hobbyist photographer. Occasional
+              writer who likes to know how things work underneath.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-jastrzebska" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-jastrzebska.75094aa90e5c7afba2a9.jpg"
+                 alt="Photo of speaker: Kasia Jastrzębska">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Kasia Jastrzębska</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Frontend Developer with over 6 years of experience. During my work I went through various JS frameworks -
+              from backbone to react. Always eager to know more, do better and evolve!
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-konopka" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-konopka.5692ade10369fc3ebe7c.jpg"
+                 alt="Photo of speaker: Anna Konopka">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Anna Konopka</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Frontend developer, currently exploring the mobile world. React and Vue advocate. In love with JavaScript.
+              Author of <a href="http://kernelgonnapanic.pl">kernelgonnapanic.pl</a> blog.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-krol" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-krol.bd30fa0fa7b3e22c3511.jpg"
+                 alt="Photo of speaker: Bartosz Król">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Bartosz Król</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Software Engineer at X-Team. Huge GraphQL and reactive programming enthusiast. Loves learning new
+              programming languages - aside from JavaScript works with Go and Elixir on everyday basics. Devoted LARP
+              and RPG player.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-lakomy" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-lakomy.66db00c8a360c98e0ccd.jpg"
+                 alt="Photo of speaker: Tomasz Łakomy">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Tomasz Łakomy</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Tomasz is a Software Engineer at Egnyte Poland. Coorganiser of React Poznań Meetup, open source
+              contributor who enjoys sharing his knowledge with other developers. His interests include VR, React, app
+              performance and making cheesiest jokes known to mankind.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-mazur" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-mazur.39cc29929f4d6d0f7902.png"
+                 alt="Photo of speaker: Andrzej Mazur">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Andrzej Mazur</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Andrzej Mazur is an HTML5 Game Developer and Mozilla Tech Speaker, Enclave Games indie studio founder,
+              js13kGames competition creator and Gamedev.js Weekly newsletter publisher. He started Gamedev.js meetups
+              in Poland, is passionate about new, Open Web technologies, and excited about WebVR with A-Frame. He likes
+              eating sushi and playing Neuroshima Hex.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-omiotek" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-omiotek.a42adc57864d05331afa.jpg"
+                 alt="Photo of speaker: Patryk Omiotek">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Patryk Omiotek</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Patryk is a programmer interested in areas such as Artificial Intelligence, Machine Learning, and Internet
+              of Things. He currently works as Senior Software Engineer at intive and IT trainer at infoShare Academy.
+              He is also a founder of the "Hop Lublin" and "Lublin IT" communities.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-ronewicz" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-ronewicz.6ce11de3af2a397dbea4.png"
+                 alt="Photo of speaker: Kamil Ronewicz">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Kamil Ronewicz</h3>
+            </div>
+            <p class="speaker-box__desc">
+              I am full stack developer. Enthusiastic about clean code, focused on the quality of given solutions.
+              Evangelist of Docker. Love the Domain Driven Design approach. Love to build highly testable apps. I was
+              PHP developer for a long time now switching to the node.js and JS universe.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-tenerowicz" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-tenerowicz.4780c0348e88a307bf6a.jpg"
+                 alt="Photo of speaker: Zbyszek Tenerowicz">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Zbyszek Tenerowicz</h3>
+            </div>
+            <p class="speaker-box__desc">
+              Full-stack developer and technology researcher. Running a growing number of Node.js powered applications
+              in production at Egnyte Inc. Open-source enthusiast. Teaches web technology to designers and peer
+              developers. One of the oldest members of Meet.js Poland community - both as a speaker and organizer of
+              local meet-ups. Recently joined Node.js Diagnostics WG.
+            </p>
+          </div>
+        </article>
+
+        <article id="speaker-ziemkowski" class="speaker-box">
+          <div class="speaker-box__photo">
+            <img class="speaker-box__image" src="speaker-ziemkowski.36435b716cc64eb8be46.jpg"
+                 alt="Photo of speaker: Patryk Ziemkowski">
+          </div>
+          <div class="speaker-box__info">
+            <div class="speaker-box__data">
+              <h3 class="speaker-box__heading">Patryk Ziemkowski</h3>
+            </div>
+            <p class="speaker-box__desc">
+              I'm not much of a writer, but here're a couple of quick facts about me:
+              <br>– I'm 27 years old,
+              <br>– I'm a graduate of Poznań University of Technology,
+              <br>– I have 5 years of experience in Frontend Development,
+              <br>– I'm a Head of Frontend Development at Apptension for almost 2 years,
+              <br>– I have been a lecturer at couple of meetups, including local meet.js in Poznań
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="venue" class="venue">
+    <div class="venue__content">
+      <img class="venue__building-image" src="gdansk-ecs.47a6b2fea8fc85aaf152.svg" alt="">
+      <h2 class="venue__heading"><span aria-hidden="true">#</span>venue</h2>
+      <div class="venue__picture">
+        <img class="venue__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAABRCAMAAADhPjOxAAACMVBMVEUAAAAFAgICAAACAAACAAACAAACAAAKBgQCAAACAAACAAACAAACAAAJBQQCAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAAACAABXOitXOitXOitXOitXOitXOitXOitXOitXOitXOitXOitXOitXOitXOitXOiv///9Vl9ECAABXPC5VkslXQztVhrJVjL5Vj8P1+fxWXGhXRT9WbIVWaH9WV15XQTdWYnNVgKlXSUVVirpWdJJXPzVWWWNWfaRWep5VgqxXPjJVlc5XTEpWcY5Wb4pXTk9WZnpWYG9XR0L19PRVlMxXUFJWZHdWUVRViLZWVFtXSkhVhK5WXmxWeZtWVFhWd5hWfKFWdZT29/hWaoFhRTj9/f1Vjb+ry+hXTExVibi20+zX0M19Zlvw7+5VkMagxeVqo9bLwr37+/u3qqTm4uF1q9pWdpaTgXiaiICPfHFsU0dlTEDh3NldnNN1oMfBuLSwopygkIeAbmZlWVddQTK7satpgZzq6OafssWssbpmjLCrqKmllo9ufI7t8/m3zuObn6ZxiaKrnZaNjJBobHWIdGnb1tKrv9LSysavucVgdo50eIF1XVHg5evT4OvN2ORpnMlflcapx+GQu+HEzdeevNe1xdWbqbl3k7BhYWhwZWR9r9zCxsuRrMTTeaaoAAAAPHRSTlMAELHxcECQCtEgT8AwBV/tgaFs4ds2HLolR3dbKxf2y8VkVub5hjt8nJiLaKulx3/4k1nttGlJNx3eoyqzw5XaAAAZc0lEQVR42s1cB3sbRRA9uck2sRX3FtuJk5AEQu+w7HVOp1PvXahakksMxoEQCL333nvvvf46ZvdOuZMty6YF3sdJd+uVPubt7NuZnVUYjCWswx/HVhTKEnK5MF/nsQkxClc6LGkC+ZSKGuBULzLgqnDICqGsNDq50Z/BJcy5AsYybo1kBGVPY7wuSGaP06FVDPCixeUAj6OoAXcq4wuWEEVIQE6wVsgiivRJX6NTFP0ZXM2cK+BWKFOro5r0AMa8UqrJJgvrhDPRheteeCBmBrNrSgW5tbwCdnNk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" alt="European Solidarity Centre logo">
+      </div>
+      <div class="venue__info">
+        <p class="venue__place">European Solidarity Centre</p>
+        <p class="venue__address">Pl. Solidarności 1, Gdańsk</p>
+        <div class="venue__links">
+          <a class="venue__link"
+             href="https://www.google.pl/maps/place/Europejskie+Centrum+Solidarno%C5%9Bci/@54.3614331,18.6471153,17z/data=!4m8!1m2!3m1!2sEuropejskie+Centrum+Solidarno%C5%9Bci!3m4!1s0x0:0xe2010c5f4e6145ad!8m2!3d54.3614299!4d18.6493041"
+             title="Find European Solidarity Centre on Google Maps"
+             aria-label="Find European Solidarity Centre on Google Maps">#google-maps</a>
+          <a class="venue__link" href="http://www.ecs.gda.pl"
+             title="Read more about European Solidarity Centre"
+             aria-label="Read more about European Solidarity Centre">#www</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sponsor_offer" class="sponsor-offer">
+    <div class="sponsor-offer__content">
+      <div class="sponsor-offer__main-info">
+        <h2 class="sponsor-offer__heading"><span aria-hidden="true">#</span>become-a-sponsor</h2>
+        <p class="sponsor-offer__text">Once a year as a meet.js community we organise a big conference called
+          meet.js Summit attended by <span class="sponsor-offer__highlight">450 professionals</span>. We
+          gather together in one city to discuss topics that have been trending for last 12 months. Tickets
+          for our event <span class="sponsor-offer__highlight">get sold in 5 minutes</span>.</p>
+        <p class="sponsor-offer__text">meet.js Summit 2017 is the fifth instalment of the conference. At
+          Summit you will meet <span class="sponsor-offer__highlight">experienced front-end developers</span>
+          and people fascinated by modern web technologies who constantly pursue to learn new things. They may
+          be the ideal target of your <span class="sponsor-offer__highlight">recruitment</span> process or a
+          dream customer of your product. There are many case studies proving that attendees change their jobs
+          after the conference and get motivated to take on new challenges in their careers.</p>
+        <p class="sponsor-offer__text">Download our
+          <a class="sponsor-offer__link" href="sponsors_en.pdf"
+             title="Download PDF with Sponsorship Packages offer in English"
+             aria-label="Download PDF with Sponsorship Packages offer in English">Sponsorship Packages (PDF)</a> to find
+          out more and contact us directly to discuss sponsorship
+          opportunities.</br>There's a Polish version of the offer:
+          <a class="sponsor-offer__link"
+             href="sponsors_pl.pdf"
+             lang="pl"
+             title="Download PDF with Sponsorship Packages offer in Polish"
+             aria-label="Download PDF with Sponsorship Packages offer in Polish">Oferta sponsorska (PDF)</a>
+        </p>
+      </div>
+      <div class="sponsor-offer__gallery">
+        <div class="sponsor-offer__picture">
+          <img class="sponsor-offer__image" src="conference1.6427bba2aafbd5c49482.jpg" alt="">
+        </div>
+        <div class="sponsor-offer__picture">
+          <img class="sponsor-offer__image" src="conference2.bbefd04c9647c984fb00.jpg" alt="">
+        </div>
+      </div>
+      <div class="sponsor-offer__gallery">
+        <div class="sponsor-offer__picture">
+          <img class="sponsor-offer__image" src="conference3.1a8ca0b5589bbc9cf9c7.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="register" class="registration">
+    <div class="registration__content">
+      <h2 class="registration__heading"><span aria-hidden="true">#</span>registration</h2>
+      <div class="registration_content">
+        <!-- <iframe src="https://meetjs-summit.evenea.pl?out=1&source=event_iframe" width="100%" scrolling="no"
+                style="border: 0;"></iframe> -->
+        <!-- <script type="text/javascript" src="https://cdn.evenea.pl/js/iframe/new/iframeResizer2.js" async></script> -->
+      </div>
+    </div>
+  </section>
+  <section class="code">
+    <div class="code__content" id="terms">
+      <h2 class="code__heading"><span aria-hidden="true">#</span>terms-and-conditions</h2>
+      <p class="code__text">Payment can be made only via the online registration form provided by evenea.pl.
+        Tickets are <u>non-refundable</u>.</p>
+      <p class="code__text">The participant acknowledges that he/she may not engage in damage claims against the
+        Conference organiser should the holding of the Conference be hindered or prevented by unexpected
+        political or economic events, natural disaster, the non-appearance of speakers, or other reasons that
+        might necessitate a program change.</p>
+      <p class="code__text">Organisers may cancel the event at any time and tickets will be refunded in full
+        without any additional fees.</p>
+      <p class="code__text">All presentations and associated materials are the speakers’ intellectual property.
+        Recording for commercial purposes requires permission from both the organiser and the speaker.</p>
+      <p class="code__text">The organiser reserves the right to ask any attendee to move their equipment or leave
+        a session if it causes disruption.</p>
+      <p class="code__text">By attending the conference, attendees have agreed to allow the organiser to use
+        images, audio, and video recorded content on the site for educational and promotional purposes.</p>
+    </div>
+    <div class="code__content" id="code">
+      <h2 class="code__heading"><span aria-hidden="true">#</span>code-of-conduct</h2>
+      <p class="code__text">All forms of harassment, misconduct, or disruptive behaviour will not be tolerated.
+        Harassment includes any form of physical or verbal forms of misconduct, including but not limited to:
+        offensive comments or actions related to gender, gender identity, sexual orientation, disability,
+        physical appearance, body size, ethnicity, race, or religion. Misconduct such as intimidation, stalking,
+        harassing photography or recording, sustained disruption of talks or other events, inappropriate
+        physical contact, and unwelcome sexual attention are grounds for instant removal.</p>
+      <p class="code__text">If you are being harassed, notice that someone else is being harassed, or have any
+        other concerns, please contact a member of the conference staff, that can be identified by meet.js
+        T-shirts, or reach organisers at <a href="mailto:summit2017@meetjs.pl"
+                                            class="code__link"
+                                            title="Contact with meet.js crew via email"
+                                            aria-label="Contact with meet JS crew via email">summit2017@meetjs.pl</a> or
+        <a class="code__link" href="http://twitter.com/meetjs" title="meet JS on Twitter"
+           aria-label="meet JS on Twitter">@meetjs</a> on Twitter.</p>
+      <p class="code__text">Any participants violating this code of conduct may be removed from the conference
+        without a refund at the discretion of the conference organisers or venue security.</p>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="about_content">
+      <div class="about__main-info">
+        <h2 class="about__heading"><span aria-hidden="true">#</span>about-us</h2>
+        <p class="about__text">meet.js is the name for JavaScript meetups in Poland, organised for programmers
+          who are interested in JavaScript, HTML and CSS. Our events have been organised for over 6 years now in 11
+          major business hubs in the country (Gdańsk, Warsaw, Cracow, Poznań, Wrocław, Łódź, Katowice,
+          Szczecin, Lublin, Białystok and Bydgoszcz). They are free of charge. An average number of attendees
+          fluctuates between 100 and 200 guests per meetup, which makes meet.js one of the largest technical
+          community in Europe. This is a perfect place for fostering your professional network as well as
+          recruiting new candidates.</p>
+        <p class="about__text">Want to support people who share front-end passion? Let's talk! Contact us at <a
+          class="about__link"
+          href="mailto:summit2017@meetjs.pl"
+          title="Contact with meet.js crew via email"
+          aria-label="Contact with meet JS crew via email">summit2017@meetjs.pl</a>.
+        </p>
+      </div>
+      <div class="gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img class="gallery__image" src="michal.d42384dbea257ca3c09e.jpg"
+                 alt="Michał Miszczyszyn">
+            <div class="gallery__info">
+              <h3 class="gallery__heading">Michał Miszczyszyn</h3>
+              <a class="gallery__link" href="http://twitter.com/mmiszy"
+                 title="Follow @mmiszy on Twitter"
+                 aria-label="Follow mmiszy on Twitter">@mmiszy</a>
+              <a class="gallery__link" href="https://typeofweb.com"
+                 title="Find out more about Michał Miszczyszyn"
+                 aria-label="Find out more about Michał Miszczyszyn">#www</a>
+              <p class="gallery__desc">organiser - meet.js Gdańsk</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="arek.bf98b42f45c59447ea5d.jpg"
+                 alt="Arkadiusz Putko">
+            <div class="gallery__info">
+              <h3 class="gallery__heading">Arkadiusz Putko</h3>
+              <a class="gallery__link" href="https://twitter.com/arkadiuszputko"
+                 title="Follow @arkadiuszputko on Twitter"
+                 aria-label="Follow arkadiuszputko on Twitter">@arkadiuszputko</a>
+              <p class="gallery__desc">organiser - meet.js Gdańsk</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="wojtek.54159c4562a783ae3721.jpg"
+                 alt="Wojciech Urbański">
+            <div class="gallery__info">
+              <h3 class="gallery__heading">Wojciech Urbański</h3>
+              <a class="gallery__link" href="https://twitter.com/wojtiku"
+                 title="Follow @wojtiku on Twitter"
+                 aria-label="Follow wojtiku on Twitter">@wojtiku</a>
+              <a class="gallery__link" href="http://lepszastrona.com"
+                 title="Find out more about Wojciech Urbański"
+                 aria-label="Find out more about Wojciech Urbański">#www</a>
+              <p class="gallery__desc">organiser - meet.js Gdańsk</p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img class="gallery__image" src="lukasz.26d7dc9cae470d3ac635.jpg"
+                 alt="Łukasz Nowacki">
+            <div class="gallery__info">
+              <h3 class="gallery__heading">Łukasz Nowacki</h3>
+              <a class="gallery__link" href="https://twitter.com/LukNowac"
+                 title="Follow @LukNowac on Twitter"
+                 aria-label="Follow LukNowac on Twitter">@LukNowac</a>
+              <p class="gallery__desc">organiser - meet.js Gdańsk</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="main-footer">
+  <div class="main-footer__content">
+    <p class="main-footer__badge">see you!</p>
+    <p class="main-footer__copy">meet.js &copy; 2011-2017</p>
+    <p class="main-footer__copy">
+      <strong>Previous editions:</strong>
+      <a href="http://summit.meetjs.pl/2012/">2012</a>
+      <a href="http://summit.meetjs.pl/2013/">2013</a>
+      <a href="http://summit.meetjs.pl/2014/">2014</a>
+      <a href="http://summit.meetjs.pl/2016/">2016</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-98203728-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Event",
+        "name": "meet.js Summit 2017 Gdańsk",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gdańsk",
+            "postalCode": "80-863",
+            "streetAddress": "Pl. Solidarności 1",
+            "addressCountry": "PL"
+          },
+          "name": "European Solidarity Centre",
+          "url": "http://www.ecs.gda.pl/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "availability": "http://schema.org/InStock",
+          "price": "36.90",
+          "priceCurrency": "PLN"
+        },
+        "startDate": "2017-09-18T08:15+02:00",
+        "image": "http://summit.meetjs.pl/2017/images/meetjs-schema.png",
+        "description": "meet.js Summit is a conference that gathers 450 professional front-end developers interested in JavaScript development (covering topics like MVC, Node.js, reactive programming, frameworks like Angular or React etc.)",
+        "endDate": "2017-09-18T18:00+02:00",
+        "url": "http://summit.meetjs.pl/2017/",
+        "sameAs": "https://www.facebook.com/events/1735076753175645/"
+      }
+</script>
+
+<script type="text/javascript" src="main.f186275251871d00ef1f.js"></script></body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>test 360</title><script src="aframe.min.js"></script></head>
+<body>
+  <a-scene>
+    <a-videosphere src="video.mp4" class="video-360"></a-videosphere>
+  </a-scene>
+  <script>
+    window.setTimeout(function () {
+      document.querySelector('.video-360').setAttribute('autoplay', true);
+    }, 10000);
+  </script>
+</body>
+</html>
