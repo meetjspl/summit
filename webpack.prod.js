@@ -8,6 +8,8 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const YEAR = '2018';
+
 const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
@@ -15,7 +17,7 @@ module.exports = {
   entry: './src/js/script.js',
   output: {
     filename: '[name].[hash:20].js',
-    path: buildPath,
+    path: path.join(buildPath, YEAR),
   },
   module: {
     rules: [
@@ -136,6 +138,10 @@ module.exports = {
         quality: '95-100',
       },
     }),
-    new CopyWebpackPlugin([{ from: 'src/robots.txt', to: '.' }]),
+    new CopyWebpackPlugin([
+      { from: 'redirect.html', to: '../index.html' },
+      { from: 'src/robots.txt', to: '..' },
+      { from: 'legacy-pages/', to: '..' },
+    ]),
   ],
 };
