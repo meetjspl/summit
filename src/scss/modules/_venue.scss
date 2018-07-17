@@ -55,8 +55,8 @@
     }
     @include mediaquery('gt-medium') {
       width: 50%;
-      margin: 20px 0 0 0;
-      padding: 4px 44px 0 15px;
+      margin: 13px 0 0 0;
+      padding: 0 44px 0 15px;
       position: relative;
     }
     &::after {
@@ -77,6 +77,8 @@
   &__image {
     width: 100%;
     max-width: 234px;
+    padding: 10px;
+    background: white;
   }
   &__info {
     @include mediaquery('gt-medium') {

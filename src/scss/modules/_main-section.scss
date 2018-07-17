@@ -10,8 +10,8 @@
     position: relative;
 
     // delete when more sponsors are added
-    min-height: 600px;
-    max-height: 600px;
+    min-height: 620px;
+    max-height: 620px;
     padding-bottom: 0px;
   }
   &__outer-content {
@@ -183,7 +183,7 @@
     z-index: $index-low;
   }
   @include mediaquery('gt-medium') {
-    transform: translateY(50%);
+    transform: translateY(calc(50% - 20px));
     padding: 0 30px;
     justify-content: flex-start;
   }
@@ -217,7 +217,7 @@
     &--global {
       .sponsors__link {
         @include mediaquery('gt-small') {
-          height: 55px;
+          height: 60px;
         }
         max-width: 200px;
       }
@@ -246,7 +246,7 @@
     &--big {
       max-width: 200px;
       @include mediaquery('gt-small') {
-        max-height: 45px;
+        max-height: 60px;
       }
     }
 
