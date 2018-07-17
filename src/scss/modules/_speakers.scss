@@ -95,8 +95,7 @@
   padding-top: 20px;
   padding-bottom: 30px;
   position: relative;
-  &:target,
-  &.target {
+  &:target {
     background-color: rgba(0, 0, 0, 0.2);
   }
   @include mediaquery('gt-small') {

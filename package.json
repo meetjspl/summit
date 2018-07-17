@@ -33,8 +33,7 @@
     "webpack-dev-server": "3.1.4"
   },
   "dependencies": {
-    "normalize-scss": "7.0.1",
-    "smooth-scroll": "github:cferdinandi/smooth-scroll#8a210c669ef3361d59ac150f521c14f9a624a78e"
+    "normalize-scss": "7.0.1"
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",

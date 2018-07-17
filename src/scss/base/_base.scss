@@ -1,6 +1,5 @@
 // apply a natural box layout model to all elements,
 // but allowing components to change
-
 html {
   box-sizing: border-box;
 }
@@ -12,9 +11,9 @@ html {
 }
 
 // base styles
-
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {

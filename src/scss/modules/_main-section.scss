@@ -8,6 +8,11 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
+
+    // delete when more sponsors are added
+    min-height: 600px;
+    max-height: 600px;
+    padding-bottom: 0px;
   }
   &__outer-content {
     width: 100%;
@@ -108,6 +113,10 @@
     @include mediaquery('gt-medium') {
       max-width: 650px;
     }
+
+    & + .main-section__text {
+      margin-top: 20px;
+    }
   }
   &__highlight {
     font-size: 1.2rem;
@@ -148,6 +157,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 200px;
   @include mediaquery('gt-small') {
     width: 100%;
     height: auto;
