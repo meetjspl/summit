@@ -19,6 +19,10 @@
       white-space: nowrap;
     }
   }
+  &__subheading {
+    color: $grey_color;
+    @extend %secondary-heading;
+  }
   &__text {
     @extend %main-text;
     margin-top: 0;
