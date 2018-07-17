@@ -81,7 +81,8 @@
       width: calc(100% / 6);
       margin-bottom: 0;
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         @include active-item();
       }
     }
@@ -97,7 +98,7 @@
       width: 220px;
     }
     &::before {
-      content: "";
+      content: '';
       display: block;
       height: 5px;
       width: 80px;

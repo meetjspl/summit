@@ -72,7 +72,7 @@
     @extend %font-bold;
     &::after {
       $padding: 3px;
-      content: "";
+      content: '';
       display: block;
       width: calc(100% - 2 * #{$padding});
       height: #{$padding};
@@ -81,7 +81,8 @@
       left: #{$padding};
       background: $darkblue_color;
     }
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background: $darkblue_color;
       &::after {
         background: darken($darkblue_color, 10%);
@@ -94,7 +95,8 @@
   padding-top: 20px;
   padding-bottom: 30px;
   position: relative;
-  &:target, &.target {
+  &:target,
+  &.target {
     background-color: rgba(0, 0, 0, 0.2);
   }
   @include mediaquery('gt-small') {
@@ -105,7 +107,7 @@
     align-items: flex-start;
   }
   &::after {
-    content: "";
+    content: '';
     display: block;
     height: 1px;
     background: $lightpurple_color;
@@ -128,7 +130,7 @@
       padding-left: 40px;
     }
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 5px;
       height: 80px;

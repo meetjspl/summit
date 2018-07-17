@@ -50,7 +50,7 @@
       @extend %main-link;
     }
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: calc(100% - 12px);
       height: 2px;

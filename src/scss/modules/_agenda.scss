@@ -135,7 +135,7 @@
       padding-top: 35px;
       position: relative;
       &::after {
-        content: "";
+        content: '';
         display: block;
         height: 1px;
         background: $lightgrey_color;
@@ -153,7 +153,7 @@
       padding-bottom: 30px;
       position: relative;
       &::after {
-        content: "";
+        content: '';
         display: block;
         height: 1px;
         background: $lightgrey_color;
@@ -191,11 +191,11 @@
     &-text {
       @extend %main-text;
 
-      &[aria-expanded="true"] {
+      &[aria-expanded='true'] {
         display: block;
       }
 
-      .has-js &[aria-expanded="false"] {
+      .has-js &[aria-expanded='false'] {
         display: none;
       }
     }

@@ -60,7 +60,7 @@
       position: relative;
     }
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: calc(100% + 14px);
       height: 10px;
@@ -84,7 +84,7 @@
     }
   }
   &__place {
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
     color: $purple-color;
     @extend %secondary-heading;
   }

@@ -23,7 +23,7 @@
       height: 100%;
     }
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       top: 0;
@@ -189,7 +189,8 @@
         max-width: 70px;
       }
     }
-    &--scope, &--modular {
+    &--scope,
+    &--modular {
       .sponsors__item {
         height: 50px;
       }
@@ -207,7 +208,8 @@
         flex-grow: 1;
       }
     }
-    &--modular, &--scope {
+    &--modular,
+    &--scope {
       @include mediaquery('gt-small') {
         width: calc(100% / 12 * 3.5);
         flex-grow: 2;
@@ -291,7 +293,7 @@
     }
   }
   &::before {
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     border-style: solid;
@@ -301,7 +303,7 @@
     top: -12px;
   }
   &::after {
-    content: "";
+    content: '';
     height: 100%;
     width: 24px;
     display: block;
