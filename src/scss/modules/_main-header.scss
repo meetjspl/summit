@@ -11,7 +11,8 @@
     position: fixed;
     background: transparent;
 
-    &--sticky, &.menu-open {
+    &--sticky,
+    &.menu-open {
       background: $purple_color;
     }
     &.menu-open {
@@ -81,7 +82,7 @@
       }
     }
 
-    &[aria-expanded="true"] {
+    &[aria-expanded='true'] {
       .button-menu__menu-icon {
         display: none;
       }
@@ -99,7 +100,7 @@
       }
     }
 
-    &[aria-expanded="false"] {
+    &[aria-expanded='false'] {
       .button-menu__menu-icon {
         display: initial;
       }
@@ -120,7 +121,7 @@
       background: none;
     }
 
-    .button-menu[aria-expanded="true"] + & {
+    .button-menu[aria-expanded='true'] + & {
       display: block;
       margin-bottom: -100px;
 
@@ -246,7 +247,8 @@
     width: 16px;
     height: 16px;
     fill: $blue_color;
-    &:hover, &:active {
+    &:hover,
+    &:active {
       fill: $darkblue_color;
     }
   }
@@ -306,7 +308,7 @@
       padding: 12px 15px;
     }
     &::before {
-      content: "";
+      content: '';
       width: calc(100% - 4px);
       height: 3px;
       display: block;
@@ -315,7 +317,8 @@
       bottom: -3px;
       left: 2px;
     }
-    &:hover, &:active {
+    &:hover,
+    &:active {
       color: $white_color;
       background: $darkblue_color;
       &::before {

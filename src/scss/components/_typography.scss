@@ -41,12 +41,14 @@
   @include mediaquery('gt-medium') {
     font-size: 1.6rem;
   }
-  &:hover, &:active {
+  &:hover,
+  &:active {
     color: $darkblue_color;
   }
   &--white {
     color: $white_color;
-    &:hover, &:active {
+    &:hover,
+    &:active {
       color: $white_color;
     }
   }

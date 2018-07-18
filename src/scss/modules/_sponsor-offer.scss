@@ -21,7 +21,7 @@
     }
   }
   &__main-info {
-      width: 100%;
+    width: 100%;
   }
   &__heading {
     margin-top: 0;
@@ -77,7 +77,7 @@
       position: relative;
       &:after {
         $height: 80px;
-        content: "";
+        content: '';
         display: block;
         width: 5px;
         height: $height;
@@ -94,7 +94,7 @@
       }
       &::before {
         $height: 80px;
-        content: "";
+        content: '';
         display: block;
         width: 5px;
         height: 80px;
@@ -119,7 +119,7 @@
         @include mediaquery('gt-medium') {
           &::after {
             $height: 80px;
-            content: "";
+            content: '';
             display: block;
             width: 5px;
             height: $height;
@@ -134,7 +134,7 @@
         @include mediaquery('gt-medium') {
           &::after {
             $height: 80px;
-            content: "";
+            content: '';
             display: block;
             width: 5px;
             height: $height;
@@ -151,14 +151,14 @@
       &:after {
         @include mediaquery('gt-small') {
           $height: 80px;
-          content: "";
+          content: '';
           display: block;
           width: 5px;
           height: $height;
           background: $purple_color;
           position: absolute;
           right: -26px;
-          top: calc(50% - #{0.5 * $height})
+          top: calc(50% - #{0.5 * $height});
         }
         @include mediaquery('gt-medium') {
           content: none;
@@ -176,7 +176,7 @@
           margin-left: -30px;
           &::after {
             $height: 80px;
-            content: "";
+            content: '';
             display: block;
             width: 5px;
             height: $height;
@@ -213,4 +213,3 @@
     max-width: 195px;
   }
 }
-

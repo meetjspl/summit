@@ -37,6 +37,7 @@
 @mixin active-item() {
   .gallery__image {
     filter: none;
+    opacity: 1;
   }
   .gallery__info {
     opacity: 1;
@@ -81,7 +82,8 @@
       width: calc(100% / 6);
       margin-bottom: 0;
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         @include active-item();
       }
     }
@@ -97,7 +99,7 @@
       width: 220px;
     }
     &::before {
-      content: "";
+      content: '';
       display: block;
       height: 5px;
       width: 80px;
@@ -115,7 +117,9 @@
     margin-bottom: 20px;
     @include mediaquery('gt-medium') {
       margin-bottom: 40px;
-      filter: grayscale(100%);
+      filter: grayscale(60%);
+      opacity: 0.9;
+      transition: opacity 0.1s, filter 0.1s;
     }
   }
   &__link {

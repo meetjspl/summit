@@ -55,12 +55,12 @@
     }
     @include mediaquery('gt-medium') {
       width: 50%;
-      margin: 20px 0 0 0;
-      padding: 4px 44px 0 15px;
+      margin: 13px 0 0 0;
+      padding: 0 44px 0 15px;
       position: relative;
     }
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: calc(100% + 14px);
       height: 10px;
@@ -77,6 +77,8 @@
   &__image {
     width: 100%;
     max-width: 234px;
+    padding: 10px;
+    background: white;
   }
   &__info {
     @include mediaquery('gt-medium') {
@@ -84,7 +86,7 @@
     }
   }
   &__place {
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
     color: $purple-color;
     @extend %secondary-heading;
   }
