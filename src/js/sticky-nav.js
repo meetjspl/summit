@@ -8,5 +8,5 @@ function stickToTop() {
 export function initStickyNav() {
   stickToTop();
 
-  window.addEventListener('scroll', stickToTop);
+  window.addEventListener('scroll', stickToTop, { passive: true });
 }

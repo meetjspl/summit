@@ -7,6 +7,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const gitRevisionPlugin = new GitRevisionPlugin();
+
+const version = {
+  VERSION: gitRevisionPlugin.version(),
+  COMMITHASH: gitRevisionPlugin.commithash(),
+  BRANCH: gitRevisionPlugin.branch(),
+};
 
 const YEAR = '2018';
 
@@ -80,11 +88,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './src/index.html.ejs',
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
+      version: JSON.stringify(version),
     }),
-    new CleanWebpackPlugin(buildPath),
+    new CleanWebpackPlugin([`${buildPath}/${YEAR}/*.*`, `${buildPath}/${YEAR}/images`]),
     new FaviconsWebpackPlugin({
       // Your source logo
       logo: './src/images/favicon.png',
@@ -102,12 +111,12 @@ module.exports = {
 
       // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
       icons: {
-        android: true,
-        appleIcon: true,
-        appleStartup: true,
+        android: false,
+        appleIcon: false,
+        appleStartup: false,
         coast: false,
         favicons: true,
-        firefox: true,
+        firefox: false,
         opengraph: false,
         twitter: false,
         yandex: false,
@@ -144,5 +153,6 @@ module.exports = {
       { from: 'src/images/facebook', to: 'images/facebook/' },
       { from: 'legacy-pages/', to: '..' },
     ]),
+    // new GitRevisionPlugin(),
   ],
 };
