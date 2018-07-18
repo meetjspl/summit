@@ -66,8 +66,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: 'html-loader!./src/index.html.ejs',
       inject: true,
+      version: '',
     }),
   ],
 };
