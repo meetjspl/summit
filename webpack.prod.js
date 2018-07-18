@@ -141,6 +141,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'redirect.html', to: '../index.html' },
       { from: 'src/robots.txt', to: '..' },
+      { from: 'src/images/facebook', to: 'images/facebook/' },
       { from: 'legacy-pages/', to: '..' },
     ]),
   ],
