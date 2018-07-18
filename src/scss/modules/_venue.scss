@@ -1,6 +1,6 @@
 .venue {
   padding: 40px 20px 60px;
-  background: $lightgrey_color;
+  background-color: $lightgrey_color;
   @include mediaquery('gt-medium') {
     padding: 80px 20px 135px;
   }
@@ -64,7 +64,7 @@
       display: block;
       width: calc(100% + 14px);
       height: 10px;
-      background: $white_color;
+      background-color: $white_color;
       position: absolute;
       bottom: -50px;
       left: 0px;

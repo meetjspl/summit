@@ -1,6 +1,6 @@
 .registration {
   padding: 40px 20px 70px;
-  background: $lightgrey_color;
+  background-color: $lightgrey_color;
   @include mediaquery('gt-medium') {
     padding: 80px 20px 50px;
   }

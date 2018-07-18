@@ -1,6 +1,6 @@
 .about {
   padding: 40px 20px 20px;
-  background: $purple_color;
+  background-color: $purple_color;
   @include mediaquery('gt-medium') {
     padding: 80px 20px 0;
   }
@@ -103,7 +103,7 @@
       display: block;
       height: 5px;
       width: 80px;
-      background: $green_color;
+      background-color: $green_color;
       position: absolute;
       top: -20px;
       left: 0;
