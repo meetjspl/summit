@@ -1,5 +1,5 @@
 // sticky nav + anchor hack
-main > section {
+main > section:not(:first-child) {
   position: relative;
   border-top: 59px solid transparent;
   margin-top: -59px;
@@ -15,10 +15,10 @@ main > section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    position: relative; // delete when more sponsors are added
-    min-height: 620px;
-    max-height: 620px;
-    padding-bottom: 0px;
+    position: relative;
+    min-height: 660px;
+    max-height: 660px;
+    padding-bottom: 0px; // delete when more sponsors are added
   }
   &__outer-content {
     width: 100%;
@@ -30,7 +30,7 @@ main > section {
       padding-top: 140px;
     }
     @include mediaquery('gt-medium') {
-      padding: 205px 0px 0px;
+      padding: 165px 0px 0px;
       height: 100%;
     }
     &::after {
@@ -41,7 +41,7 @@ main > section {
       right: 0;
       bottom: 80px;
       left: 0;
-      background-color: $bg-gradient;
+      background: $bg-gradient;
       pointer-events: none;
     }
   }
@@ -86,6 +86,7 @@ main > section {
     padding: 0 20px 20px 20px;
     @include mediaquery('gt-small') {
       padding: 0;
+      margin-bottom: 50px;
     }
     @include mediaquery('gt-medium') {
       position: absolute;

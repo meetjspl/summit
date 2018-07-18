@@ -13,7 +13,7 @@
     right: 0;
     bottom: 80px;
     left: 0;
-    background-color: $bg-gradient;
+    background: $bg-gradient;
   }
   @include mediaquery('gt-medium') {
     overflow-x: hidden;
