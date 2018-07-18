@@ -37,6 +37,7 @@
 @mixin active-item() {
   .gallery__image {
     filter: none;
+    opacity: 1;
   }
   .gallery__info {
     opacity: 1;
@@ -116,7 +117,9 @@
     margin-bottom: 20px;
     @include mediaquery('gt-medium') {
       margin-bottom: 40px;
-      filter: grayscale(100%);
+      filter: grayscale(60%);
+      opacity: 0.9;
+      transition: opacity 0.1s, filter 0.1s;
     }
   }
   &__link {
