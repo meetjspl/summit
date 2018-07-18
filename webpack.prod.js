@@ -88,7 +88,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html.ejs',
+      template: 'html-loader!./src/index.html.ejs',
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
       version: JSON.stringify(version),
@@ -149,6 +149,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: 'redirect.html', to: '../index.html' },
+      { from: 'CNAME', to: '../' },
       { from: 'src/robots.txt', to: '..' },
       { from: 'src/images/facebook', to: 'images/facebook/' },
       { from: 'legacy-pages/', to: '..' },
