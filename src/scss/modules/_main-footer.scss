@@ -1,5 +1,5 @@
 .main-footer {
-  background: $purple_color;
+  background-color: $purple_color;
   &--side {
     width: 100%;
     max-width: 1140px;
@@ -20,7 +20,7 @@
         position: absolute;
         top: 0;
         right: -10px;
-        background: $blue_color;
+        background-color: $blue_color;
       }
       &::after {
         content: '';
@@ -30,7 +30,7 @@
         position: absolute;
         bottom: 0;
         right: -50px;
-        background: $green_color;
+        background-color: $green_color;
       }
     }
   }
@@ -57,7 +57,7 @@
       position: absolute;
       top: 0;
       left: 6px;
-      background: $lightpurple_color;
+      background-color: $lightpurple_color;
     }
   }
   &__badge {

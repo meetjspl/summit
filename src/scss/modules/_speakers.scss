@@ -1,6 +1,6 @@
 .speakers {
   padding: 40px 20px 60px;
-  background: $purple_color;
+  background-color: $purple_color;
   @include mediaquery('gt-medium') {
     padding-top: 80px;
     padding-bottom: 95px;
@@ -67,7 +67,7 @@
     position: relative;
     color: $white_color;
     font-size: 1.6rem;
-    background: $blue_color;
+    background-color: $blue_color;
     text-decoration: none;
     @extend %font-bold;
     &::after {
@@ -79,11 +79,11 @@
       position: absolute;
       bottom: -#{$padding};
       left: #{$padding};
-      background: $darkblue_color;
+      background-color: $darkblue_color;
     }
     &:hover,
     &:active {
-      background: $darkblue_color;
+      background-color: $darkblue_color;
       &::after {
         background: darken($darkblue_color, 10%);
       }
@@ -109,7 +109,7 @@
     content: '';
     display: block;
     height: 1px;
-    background: $lightpurple_color;
+    background-color: $lightpurple_color;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -136,7 +136,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: $green_color;
+      background-color: $green_color;
     }
   }
   &__image {

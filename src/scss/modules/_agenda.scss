@@ -57,7 +57,7 @@
   &__hour {
     font-size: 1.6rem;
     color: $purple_color;
-    background: $lightgrey_color;
+    background-color: $lightgrey_color;
     padding: 8px 15px;
     @extend %font-mono;
     @include mediaquery('gt-medium') {
@@ -138,7 +138,7 @@
         content: '';
         display: block;
         height: 1px;
-        background: $lightgrey_color;
+        background-color: $lightgrey_color;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -156,7 +156,7 @@
         content: '';
         display: block;
         height: 1px;
-        background: $lightgrey_color;
+        background-color: $lightgrey_color;
         position: absolute;
         bottom: 0;
         left: 182px;

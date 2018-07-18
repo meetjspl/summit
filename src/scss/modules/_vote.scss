@@ -26,7 +26,7 @@
       top: 0;
       right: 4px;
       z-index: $index-low;
-      background: $green_color;
+      background-color: $green_color;
     }
   }
   &__outer-content {
@@ -44,7 +44,7 @@
         position: absolute;
         bottom: 170px;
         left: 0;
-        background: $green_color;
+        background-color: $green_color;
       }
       &::after {
         content: '';
@@ -55,7 +55,7 @@
         top: 130px;
         right: 0;
         z-index: $index-low;
-        background: $blue_color;
+        background-color: $blue_color;
       }
     }
   }
@@ -74,7 +74,7 @@
         position: absolute;
         top: 75px;
         left: -10px;
-        background: $green_color;
+        background-color: $green_color;
       }
       &::after {
         content: '';
@@ -84,7 +84,7 @@
         position: absolute;
         top: 75px;
         left: -10px;
-        background: $green_color;
+        background-color: $green_color;
       }
     }
   }
@@ -183,7 +183,7 @@
       width: #{$width};
       height: 20px;
       position: absolute;
-      background: $darkblue_color;
+      background-color: $darkblue_color;
       bottom: 20px;
       left: calc(50% - #{$width} / 2);
       @include mediaquery('gt-medium') {
@@ -201,7 +201,7 @@
       width: #{$width};
       height: 25px;
       position: absolute;
-      background: $blue_color;
+      background-color: $blue_color;
       bottom: -5px;
       left: calc(50% - #{$width} / 2);
       border-bottom: 5px solid $darkblue_color;
@@ -217,7 +217,7 @@
 }
 
 .vote__button {
-  background: $blue_color;
+  background-color: $blue_color;
   padding: 10px 15px;
   position: relative;
   @extend %main-link;
@@ -231,11 +231,11 @@
     position: absolute;
     bottom: -#{$padding};
     left: #{$padding};
-    background: $darkblue_color;
+    background-color: $darkblue_color;
   }
   &:hover,
   &:active {
-    background: $darkblue_color;
+    background-color: $darkblue_color;
     &::after {
       background: darken($darkblue_color, 10%);
     }
