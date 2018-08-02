@@ -72,13 +72,13 @@
   }
   &__item {
     margin-bottom: 40px;
-    margin-right: 15px;
+    margin-right: 45px;
     @include mediaquery('gt-small') {
       width: calc(100% / 3);
       margin-right: 0;
     }
     @include mediaquery('gt-medium') {
-      width: calc(100% / 6);
+      width: calc(100% / 4);
       margin-bottom: 0;
       &:hover,
       &.active {
