@@ -7,3 +7,7 @@ initStickyNav();
 initAgenda();
 
 import '../scss/main.scss';
+
+if (VERSION) {
+  window.VERSION = VERSION;
+}

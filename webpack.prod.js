@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -88,10 +89,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'html-loader!./src/index.html.ejs',
+      template: './src/index.html',
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
-      version: JSON.stringify(version),
     }),
     new CleanWebpackPlugin([`${buildPath}/${YEAR}/*.*`, `${buildPath}/${YEAR}/images`]),
     new FaviconsWebpackPlugin({
@@ -155,5 +155,8 @@ module.exports = {
       { from: 'legacy-pages/', to: '..' },
     ]),
     // new GitRevisionPlugin(),
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(version),
+    }),
   ],
 };

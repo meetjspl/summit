@@ -1,5 +1,14 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const gitRevisionPlugin = new GitRevisionPlugin();
+
+const version = {
+  VERSION: gitRevisionPlugin.version(),
+  COMMITHASH: gitRevisionPlugin.commithash(),
+  BRANCH: gitRevisionPlugin.branch(),
+};
 
 module.exports = {
   mode: 'development',
@@ -66,9 +75,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'html-loader!./src/index.html.ejs',
+      template: './src/index.html',
       inject: true,
-      version: '',
+    }),
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(version),
     }),
   ],
 };
