@@ -151,6 +151,7 @@ module.exports = {
       { from: 'redirect.html', to: '../index.html' },
       { from: 'CNAME', to: '../' },
       { from: 'src/robots.txt', to: '..' },
+      { from: 'src/Summit-2018-sponsorship-offer.pdf', to: '.' },
       { from: 'src/images/facebook', to: 'images/facebook/' },
       { from: 'legacy-pages/', to: '..' },
     ]),
