@@ -1,4 +1,4 @@
-.registration {
+.tickets {
   padding: 40px 20px 70px;
   background-color: $lightgrey_color;
   @include mediaquery('gt-medium') {
@@ -23,5 +23,8 @@
       width: 590px;
       margin: 0 auto 60px;
     }
+  }
+  &__link {
+    @extend %main-link;
   }
 }
