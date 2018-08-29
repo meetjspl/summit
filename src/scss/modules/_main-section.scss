@@ -16,8 +16,6 @@ main > section:not(:first-child) {
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    min-height: 660px;
-    max-height: 660px;
     padding-bottom: 0px; // delete when more sponsors are added
   }
   &__outer-content {
