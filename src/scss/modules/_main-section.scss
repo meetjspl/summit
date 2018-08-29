@@ -112,7 +112,7 @@ main > section:not(:first-child) {
     @extend %mono-heading;
   }
   &__text {
-    margin-top: 60px;
+    margin-top: 20px;
     @extend %main-text;
     @include mediaquery('gt-medium') {
       max-width: 650px;
