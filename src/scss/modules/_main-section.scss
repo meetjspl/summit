@@ -216,6 +216,7 @@ main > section:not(:first-child) {
     }
     &--global {
       .sponsors__link {
+        background-color: transparent;
         @include mediaquery('gt-small') {
           height: 60px;
         }
