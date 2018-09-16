@@ -215,6 +215,10 @@ main > section:not(:first-child) {
       }
     }
     &--global {
+      .sponsors__item,
+      .sponsors__link {
+        width: 100%;
+      }
       .sponsors__link {
         background-color: transparent;
         @include mediaquery('gt-small') {
