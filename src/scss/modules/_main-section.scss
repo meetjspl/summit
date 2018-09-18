@@ -235,6 +235,7 @@ main > section:not(:first-child) {
       @include mediaquery('gt-small') {
         margin-top: 0;
         margin-left: calc(100% / 12 * 8.5);
+        margin-bottom: 10px;
 
         .sponsors__heading {
           margin-bottom: 0;
