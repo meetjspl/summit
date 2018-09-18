@@ -9,28 +9,27 @@ main > section:not(:first-child) {
 .main-section {
   @include mediaquery('gt-medium') {
     height: 100vh;
-    min-height: 640px;
-    max-height: 740px;
     padding-bottom: 83px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    min-height: 660px;
-    max-height: 660px;
+    min-height: 760px;
+    max-height: 760px;
     padding-bottom: 0px; // delete when more sponsors are added
   }
   &__outer-content {
     width: 100%;
-    padding-top: 120px;
+    padding-top: 80px;
     background: url(../images/summit-mobile.jpg) no-repeat top center;
     position: relative;
     @include mediaquery('gt-small') {
       background: url(../images/summit-desktop.jpg) no-repeat center bottom / cover;
-      padding-top: 140px;
+      padding-top: 100px;
     }
     @include mediaquery('gt-medium') {
-      padding: 165px 0px 0px;
+      padding-top: 140px;
+      padding: 95px 0px 0px;
       height: 100%;
     }
     &::after {
@@ -90,7 +89,7 @@ main > section:not(:first-child) {
     }
     @include mediaquery('gt-medium') {
       position: absolute;
-      top: calc(50% - 95px);
+      top: calc(50% - 115px);
       left: calc(100% / 12 * 3);
       width: 100%;
       transform: translateY(-50%);
@@ -183,7 +182,7 @@ main > section:not(:first-child) {
     z-index: $index-low;
   }
   @include mediaquery('gt-medium') {
-    transform: translateY(calc(50% - 20px));
+    transform: translateY(calc(50% - 40px));
     padding: 0 30px;
     justify-content: flex-start;
   }
@@ -205,7 +204,7 @@ main > section:not(:first-child) {
     }
     &--scope {
       .sponsors__image {
-        max-width: 70px;
+        max-width: 80px;
       }
     }
     &--scope,
@@ -214,7 +213,8 @@ main > section:not(:first-child) {
         height: 50px;
       }
     }
-    &--global {
+    &--global,
+    &--partners {
       .sponsors__item,
       .sponsors__link {
         width: 100%;
@@ -227,18 +227,33 @@ main > section:not(:first-child) {
         max-width: 200px;
       }
       @include mediaquery('gt-small') {
-        width: calc(100% / 12 * 2.5);
-        flex-grow: 1;
+        width: calc(100% / 12 * 2.5 - 20px);
+        margin-right: 20px;
+      }
+    }
+    &--partners {
+      @include mediaquery('gt-small') {
+        margin-top: 0;
+        margin-left: calc(100% / 12 * 8.5);
+
+        .sponsors__heading {
+          margin-bottom: 0;
+        }
+        .sponsors__item {
+          margin-top: 0;
+        }
+        .sponsors__link {
+          padding-top: 0;
+        }
       }
     }
     &--modular,
     &--scope {
       @include mediaquery('gt-small') {
         width: calc(100% / 12 * 3.5);
-        flex-grow: 2;
       }
       .sponsors__item .sponsors__image {
-        width: 70px;
+        width: 80px;
       }
     }
   }

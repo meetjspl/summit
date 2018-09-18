@@ -2,7 +2,7 @@
   padding: 40px 20px 60px;
   background-color: white;
   @include mediaquery('gt-medium') {
-    padding: 120px 20px 60px;
+    padding: 150px 20px 60px;
     overflow: hidden;
   }
   &__content {
