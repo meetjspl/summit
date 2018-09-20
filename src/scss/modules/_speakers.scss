@@ -1,5 +1,5 @@
 .speakers {
-  padding: 40px 20px 60px;
+  padding: 40px 0 60px;
   background-color: $purple_color;
   @include mediaquery('gt-medium') {
     padding-top: 80px;
@@ -92,18 +92,22 @@
 }
 
 .speaker-box {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding: 20px 20px 30px 20px;
   position: relative;
+  position: relative;
+  border-top: 60px solid transparent;
+  margin-top: -60px;
+  background-clip: padding-box;
   &:target {
     background-color: rgba(0, 0, 0, 0.2);
   }
   @include mediaquery('gt-small') {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 35px 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    border-top: 90px solid transparent;
+    margin-top: -90px;
   }
   &::after {
     content: '';

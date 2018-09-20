@@ -3,7 +3,7 @@
   background-color: white;
   overflow: hidden;
   @include mediaquery('gt-medium') {
-    padding-top: 80px;
+    padding-top: 150px;
     padding-bottom: 100px;
   }
   &__content {
