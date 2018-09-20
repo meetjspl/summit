@@ -6,24 +6,20 @@
   z-index: $index-top;
   background-color: $purple_color;
   min-height: 60px;
-
   .has-js & {
     position: fixed;
     background: transparent;
-
     &--sticky,
     &.menu-open {
       background-color: $purple_color;
     }
     &.menu-open {
       height: 100vh;
-
       @include mediaquery('gt-small') {
         height: auto;
       }
     }
   }
-
   @include mediaquery('gt-small') {
     height: 78px;
   }
@@ -74,14 +70,12 @@
   }
   .button-menu {
     display: none;
-
     .has-js & {
       display: block;
       @include mediaquery('gt-small') {
         display: none;
       }
     }
-
     &[aria-expanded='true'] {
       .button-menu__menu-icon {
         display: none;
@@ -93,13 +87,11 @@
         .button-menu__menu-icon {
           display: initial;
         }
-
         .button-menu__close-icon {
           display: none;
         }
       }
     }
-
     &[aria-expanded='false'] {
       .button-menu__menu-icon {
         display: initial;
@@ -120,15 +112,12 @@
       position: relative;
       background: none;
     }
-
     .button-menu[aria-expanded='true'] + & {
       display: block;
       margin-bottom: -100px;
-
       .has-js .main-header:not(.menu-open) & {
         display: none;
       }
-
       .button-menu__menu-icon {
         display: none;
       }
@@ -180,6 +169,9 @@
       margin-left: 10px;
     }
     @include mediaquery('gt-medium') {
+      margin-left: 15px;
+    }
+    @include mediaquery('fit-menu') {
       margin-left: 80px;
     }
     &--side {
@@ -208,6 +200,12 @@
   }
   &__link {
     @extend %main-link;
+    @include mediaquery('gt-medium') {
+      font-size: 1.5rem !important;
+    }
+    @include mediaquery('fit-menu') {
+      font-size: 1.6rem;
+    }
   }
 }
 

@@ -89,7 +89,7 @@ main > section:not(:first-child) {
     }
     @include mediaquery('gt-medium') {
       position: absolute;
-      top: calc(50% - 115px);
+      top: calc(50% - 130px);
       left: calc(100% / 12 * 3);
       width: 100%;
       transform: translateY(-50%);
@@ -236,7 +236,6 @@ main > section:not(:first-child) {
         margin-top: 0;
         margin-left: calc(100% / 12 * 8.5);
         margin-bottom: 10px;
-
         .sponsors__heading {
           margin-bottom: 0;
         }
