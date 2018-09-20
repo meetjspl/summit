@@ -74,12 +74,14 @@
         min-height: 80px;
       }
     }
+    & + .agenda__link {
+      margin: 1.5em 0;
+    }
   }
   &__link {
     @extend %main-link;
     font-weight: 400;
     display: block;
-
     &--inline {
       display: inline;
     }
@@ -179,22 +181,15 @@
       -webkit-appearance: none;
       background-color: transparent;
       border: 0;
-      margin: 1.5em 0 1em 0;
       padding: 0;
       cursor: pointer;
-
-      @include mediaquery('gt-small') {
-        margin: 4em 0 1em 0;
-      }
+      margin: 1em 0 1em 0;
     }
-
     &-text {
       @extend %main-text;
-
       &[aria-expanded='true'] {
         display: block;
       }
-
       .has-js &[aria-expanded='false'] {
         display: none;
       }
