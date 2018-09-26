@@ -438,41 +438,14 @@
                 description</button>
               <div class="agenda__description-text">
                 <p class="agenda__description-text">
-                  In the talk I will mainly focus on the solution which we used in my company to integrate a few
-                  machine learning models on the client side with AMD JavaScript modules in the production environment.
-                  In the presentation I would like to:
+                  I will mainly focus on the solution which we used in FANDOM to integrate a few machine learning
+                  models on the client side with AMD JavaScript modules in the production environment. I would like to
+                  present our approached for exporting already trained models (Scikit-Learn) to JavaScript (using
+                  sklearn-porter). During the talk, I will point out the consequences and limitations of using this
+                  solution. Moreover I would like to shortly discuss another approach we had, which was the separate
+                  service for exposing machine learning models and explain why we decided not to use already existing
+                  services such as TensorFlow Serving.
                 </p>
-                <ol class="agenda__description-text">
-                  <li>Describe the first machine learning model which we decided to use in the production. It was about
-                    getting the prediction whether the ad slot is going to be loaded on the page.
-                  </li>
-                  <li>Present how we moved this model from Jupyter Notebook (where it was created) to the JavaScript
-                    module that is executed on frontend of our web application. To do that we used sklearn-porter which
-                    is
-                    a python library responsible for exporting already trained models (Scikit-Learn) to different
-                    programming languages. In specific, I would like to concentrate on technical aspects of exporting
-                    models to the production environment so they can use real time data from the fronted side of the
-                    web
-                    page.
-                  </li>
-                  <li>Describe the problematic machine learning model which appeared in the meantime and forced us to
-                    use
-                    another sliution. This model was about predicting if the user will visit another page and it was
-                    using
-                    Decision Tree algorithm. The specificity of this algorithm is the fact that the input contains many
-                    variables. In our case the input was pretty heavy and it had over than 250kB. We knew that this
-                    sliution was not scalable for running more models at the same time so we had to look for another
-                    sliution.
-                  </li>
-                  <li>Point out the consequences and limitations of using mentioned approach with the more advanced
-                    models
-                    such as Decision Trees or Neural Networks.
-                  </li>
-                  <li>Mention another approach that is the separate service (written in Python) that exposes machine
-                    learning models and which is callable through the REST API. I would like to describe how it works
-                    and why we have decided not to use already existing solutions such as TensorFlow Serving.
-                  </li>
-                </ol>
               </div>
             </div>
           </article>
