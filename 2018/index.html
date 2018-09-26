@@ -17,7 +17,7 @@
   <meta property="og:site_name" content="meet.js Summit" />
   <meta http-equiv="Cache-Control" content="no-cache" />
 
-<link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.cf223c10cc62d9b4fa9b.css" rel="stylesheet"></head>
+<link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.1bf12f9a6fb6fc5a1006.css" rel="stylesheet"></head>
 
 <body>
   <script>document.body.classList.add('has-js');</script>
@@ -438,41 +438,14 @@
                 description</button>
               <div class="agenda__description-text">
                 <p class="agenda__description-text">
-                  In the talk I will mainly focus on the solution which we used in my company to integrate a few
-                  machine learning models on the client side with AMD JavaScript modules in the production environment.
-                  In the presentation I would like to:
+                  I will mainly focus on the solution which we used in FANDOM to integrate a few machine learning
+                  models on the client side with AMD JavaScript modules in the production environment. I would like to
+                  present our approached for exporting already trained models (Scikit-Learn) to JavaScript (using
+                  sklearn-porter). During the talk, I will point out the consequences and limitations of using this
+                  solution. Moreover I would like to shortly discuss another approach we had, which was the separate
+                  service for exposing machine learning models and explain why we decided not to use already existing
+                  services such as TensorFlow Serving.
                 </p>
-                <ol class="agenda__description-text">
-                  <li>Describe the first machine learning model which we decided to use in the production. It was about
-                    getting the prediction whether the ad slot is going to be loaded on the page.
-                  </li>
-                  <li>Present how we moved this model from Jupyter Notebook (where it was created) to the JavaScript
-                    module that is executed on frontend of our web application. To do that we used sklearn-porter which
-                    is
-                    a python library responsible for exporting already trained models (Scikit-Learn) to different
-                    programming languages. In specific, I would like to concentrate on technical aspects of exporting
-                    models to the production environment so they can use real time data from the fronted side of the
-                    web
-                    page.
-                  </li>
-                  <li>Describe the problematic machine learning model which appeared in the meantime and forced us to
-                    use
-                    another sliution. This model was about predicting if the user will visit another page and it was
-                    using
-                    Decision Tree algorithm. The specificity of this algorithm is the fact that the input contains many
-                    variables. In our case the input was pretty heavy and it had over than 250kB. We knew that this
-                    sliution was not scalable for running more models at the same time so we had to look for another
-                    sliution.
-                  </li>
-                  <li>Point out the consequences and limitations of using mentioned approach with the more advanced
-                    models
-                    such as Decision Trees or Neural Networks.
-                  </li>
-                  <li>Mention another approach that is the separate service (written in Python) that exposes machine
-                    learning models and which is callable through the REST API. I would like to describe how it works
-                    and why we have decided not to use already existing solutions such as TensorFlow Serving.
-                  </li>
-                </ol>
               </div>
             </div>
           </article>
@@ -583,7 +556,7 @@
           </div>
           <article class="agenda__details">
             <h4 class="agenda__title">
-              Machine Learning for Front-end Developers
+              How the Browser Sees Your Face
             </h4>
             <a class="agenda__link" href="#speaker-ciastek" data-scroll="" title="Read more about Mirosław Ciastek">Mirosław
               Ciastek</a>
@@ -592,20 +565,19 @@
                 description</button>
               <div class="agenda__description-text">
                 <p class="agenda__description-text">
-                  Machine Learning - one of the most hyped technologies in recent years. Probably, you may have seen it
-                  in smartphones, TVs and even in your fridge.
+                  Snapchat's Filters and Apple's Animoji are one of the most famous examples of computer vision in
+                  popular applications. Based on complex algorithms, computer vision can be intimidating at the first
+                  time. Luckily for us, Web Developers, processing images and face detection are much easier to work
+                  with than before.
                 </p>
                 <p class="agenda__description-text">
-                  Up to now, this technology was a domain of Data Scientists and Python Developers. Working with ML
-                  required at least a Ph.D. in Computer Science. Luckily for us, Web Developers, Machine Learning is
-                  now
-                  available in our browsers. Thanks to Tensorflow.js, every developer familiar with JavaScript, can
-                  train
-                  his neural network. Now you can make your browser smart!
+                  Mainly a domain of native apps, face detection is now available in our browsers. Thanks to modern web
+                  APIs and libraries, we are now able to process the image in real time on the front-end side. With
+                  face detection, you can go even a one step further and make the browser to recognize your face!
                 </p>
                 <p class="agenda__description-text">
-                  This talk will give you a brief overview of Machine Learning core concepts. I will go through the
-                  process of creating, training and using the ML model with Tensorflow.js.
+                  This talk will give you a brief overview of face detection concepts. I will show you some popular
+                  methods of detecting the face using the web camera and how to use them in your applications.
                 </p>
               </div>
             </div>
@@ -815,7 +787,7 @@
                 I'm an experienced developer with various programming skills, including both front-end and back-end. I
                 see browsers as a complex environment with unlimited possibilities. Thus, I like to play with the
                 latest APIs to see what browsers have to offer. Recently I experimented with WebVR, and as a result, I
-                co-organised WebVR meetup in Warsaw. Now, help with microConf meetup series, as a speaker and
+                co-organised WebVR meetup in Warsaw. Now, I help with microConf meetup series, as a speaker and
                 organiser.
               </p>
             </div>
@@ -1288,6 +1260,6 @@
         "sameAs": "https://www.facebook.com/events/292278298176552/"
       }
 </script>
-<script type="text/javascript" src="main.cf223c10cc62d9b4fa9b.js"></script></body>
+<script type="text/javascript" src="main.1bf12f9a6fb6fc5a1006.js"></script></body>
 
 </html>
