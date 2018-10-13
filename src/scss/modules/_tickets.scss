@@ -10,8 +10,7 @@
     @extend %main-text;
     font-size: 2em;
     @include mediaquery('gt-medium') {
-      width: calc(100% / 12 * 10);
-      max-width: 1005px;
+      width: 590px;
     }
   }
   &__heading {
