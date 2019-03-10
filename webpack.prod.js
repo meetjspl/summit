@@ -93,7 +93,7 @@ module.exports = {
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
     }),
-    new CleanWebpackPlugin([`${buildPath}/${YEAR}/*.*`, `${buildPath}/${YEAR}/images`]),
+    new CleanWebpackPlugin(),
     new FaviconsWebpackPlugin({
       // Your source logo
       logo: './src/images/favicon.png',
