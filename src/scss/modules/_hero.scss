@@ -6,7 +6,7 @@ main > section:not(:first-child) {
   background-clip: padding-box;
 }
 
-.main-section {
+.hero {
   @include mediaquery('gt-medium') {
     height: 100vh;
     padding-bottom: 83px;
@@ -116,7 +116,7 @@ main > section:not(:first-child) {
     @include mediaquery('gt-medium') {
       max-width: 650px;
     }
-    & + .main-section__text {
+    & + .hero__text {
       margin-top: 20px;
     }
   }

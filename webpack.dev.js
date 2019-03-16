@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
+
 const gitRevisionPlugin = new GitRevisionPlugin();
 
 const version = {
@@ -78,6 +79,7 @@ module.exports = {
       template: './src/index.html',
       inject: true,
     }),
+
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(version),
     }),

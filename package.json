@@ -35,9 +35,10 @@
     "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js",
     "build": "NODE_ENV=production webpack --progress --config webpack.prod.js",
-    "deploy": "yarn run build && gh-pages --dist dist"
+    "deploy": "yarn run build && gh-pages --dist dist",
+    "develop": "webpack-dev-server --config webpack.dev.js",
+    "start": "yarn run develop"
   },
   "husky": {
     "hooks": {
