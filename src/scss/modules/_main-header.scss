@@ -151,6 +151,7 @@
 
 .main-nav {
   position: relative;
+  text-align: center;
   @include mediaquery('gt-small') {
     width: calc(100% - 68px);
     &--side {
@@ -163,7 +164,6 @@
     margin: 0;
     padding: 14px 0;
     position: relative;
-    text-align: center;
     @include mediaquery('gt-small') {
       display: flex;
       margin-left: 10px;
@@ -199,7 +199,7 @@
     }
   }
   &__link {
-    @extend %main-link;
+    @extend %secondary-link;
     @include mediaquery('gt-medium') {
       font-size: 1.5rem !important;
     }
@@ -284,13 +284,14 @@
 }
 
 .register-button {
-  margin-top: 22px;
+  margin: 22px 0 8px;
   position: relative;
   padding: 0;
   @include mediaquery('gt-small') {
     position: absolute;
-    right: 0;
-    margin-top: 0;
+    top: 14px;
+    right: 16px;
+    margin: 0;
   }
   @include mediaquery('gt-medium') {
     top: 8px;

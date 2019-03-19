@@ -31,6 +31,9 @@
   @include mediaquery('gt-medium') {
     font-size: 1.6rem;
   }
+  &--white {
+    color: $white_color;
+  }
 }
 
 %main-link {
@@ -54,6 +57,20 @@
   }
 }
 
+%secondary-link {
+  @extend %font-bold;
+  font-size: 1.4rem;
+  color: $green_color;
+  text-decoration: none;
+  @include mediaquery('gt-medium') {
+    font-size: 1.6rem;
+  }
+  &:hover,
+  &:active {
+    color: $darkgreen_color;
+  }
+}
+
 %highlight-text {
-  background-color: $green_color;
+  background-color: $blue_color;
 }
