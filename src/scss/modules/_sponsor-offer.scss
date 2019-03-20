@@ -1,27 +1,17 @@
 .sponsor-offer {
-  padding: 40px 20px 60px;
+  padding-top: 40px;
   background-color: white;
   @include mediaquery('gt-medium') {
-    padding: 60px 20px;
-    overflow: hidden;
+    padding-top: 60px;
   }
   &__content {
     @include mediaquery('gt-small') {
-      margin: 0 auto;
-      max-width: 700px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    @include mediaquery('gt-medium') {
-      max-width: 1140px;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
     }
   }
   &__main-info {
-    width: 100%;
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   &__heading {
     margin-top: 0;
@@ -37,7 +27,6 @@
   &__text {
     @extend %main-text;
     @include mediaquery('gt-medium') {
-      width: calc(100% / 7 * 6);
       margin-bottom: 32px;
     }
   }
@@ -61,155 +50,22 @@
   }
   &__gallery {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    @include mediaquery('gt-small') {
-      width: auto;
-      flex-direction: row;
-    }
+    align-items: stretch;
+    margin-top: 40px;
     @include mediaquery('gt-medium') {
-      display: block;
-    }
-    &:nth-child(2) {
-      margin-top: 30px;
-      position: relative;
-      &:after {
-        $height: 80px;
-        content: '';
-        display: block;
-        width: 5px;
-        height: $height;
-        background-color: $lightgrey_color;
-        position: absolute;
-        left: 0;
-        top: calc(50% - #{0.5 * $height});
-        @include mediaquery('gt-small') {
-          left: -26px;
-        }
-        @include mediaquery('gt-medium') {
-          content: none;
-        }
-      }
-      &::before {
-        $height: 80px;
-        content: '';
-        display: block;
-        width: 5px;
-        height: 80px;
-        background-color: $purple_color;
-        position: absolute;
-        right: 0;
-        top: calc(50% - #{0.5 * $height});
-        @include mediaquery('gt-small') {
-          content: none;
-        }
-        @include mediaquery('gt-medium') {
-          content: none;
-        }
-      }
-      @include mediaquery('gt-small') {
-        margin-top: 0;
-      }
-      @include mediaquery('gt-medium') {
-        width: calc(100% / 12 * 3);
-      }
-      .sponsor-offer__picture:first-child {
-        @include mediaquery('gt-medium') {
-          &::after {
-            $height: 80px;
-            content: '';
-            display: block;
-            width: 5px;
-            height: $height;
-            background-color: $lightgrey_color;
-            position: absolute;
-            right: -15px;
-            bottom: calc(#{-0.5 * $height});
-          }
-        }
-      }
-      .sponsor-offer__picture:nth-child(2) {
-        @include mediaquery('gt-medium') {
-          &::after {
-            $height: 80px;
-            content: '';
-            display: block;
-            width: 5px;
-            height: $height;
-            background-color: $lightgrey_color;
-            position: absolute;
-            left: -15px;
-            top: calc(#{-0.5 * $height});
-          }
-        }
-      }
-    }
-    &:last-child {
-      position: relative;
-      &:after {
-        @include mediaquery('gt-small') {
-          $height: 80px;
-          content: '';
-          display: block;
-          width: 5px;
-          height: $height;
-          background-color: $purple_color;
-          position: absolute;
-          right: -26px;
-          top: calc(50% - #{0.5 * $height});
-        }
-        @include mediaquery('gt-medium') {
-          content: none;
-        }
-      }
-      @include mediaquery('gt-medium') {
-        width: calc(100% / 12 * 2);
-        padding-top: 280px;
-        order: 3;
-      }
-      .sponsor-offer__picture {
-        @include mediaquery('gt-medium') {
-          width: 120%;
-          margin: 0;
-          margin-left: -30px;
-          &::after {
-            $height: 80px;
-            content: '';
-            display: block;
-            width: 5px;
-            height: $height;
-            background-color: $purple_color;
-            position: absolute;
-            right: -15px;
-            top: calc(#{-0.5 * $height});
-          }
-        }
-      }
+      margin-top: 70px;
     }
   }
   &__picture {
-    max-width: 195px;
-    margin-bottom: 12px;
-    @include mediaquery('gt-small') {
-      margin: 10px;
-    }
-    @include mediaquery('gt-medium') {
-      margin: 0;
-      width: 80%;
-      margin-bottom: 0;
-      position: relative;
-    }
-    &:nth-child(2) {
-      @include mediaquery('gt-medium') {
-        margin-left: 15px;
-        margin-top: 210px;
-      }
-    }
+    flex-basis: 50%;
   }
   &__image {
+    display: block;
     width: 100%;
-    max-width: 195px;
+    max-height: 320px;
+    object-fit: cover;
   }
 }
