@@ -1,82 +1,64 @@
 .venue {
-  padding: 40px 20px 60px;
-  background-color: $lightgrey_color;
+  position: relative;
+  padding: 80px 20px;
+  background: $lightgrey_color url(../images/venue/venue-bg-mobile.jpg) center / cover;
   @include mediaquery('gt-medium') {
-    padding: 80px 20px 135px;
-  }
-  &__content {
-    position: relative;
-    @include mediaquery('gt-small') {
-      margin: 0 auto;
-      max-width: 700px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    @include mediaquery('gt-medium') {
-      width: 590px;
-    }
-  }
-  &__building-image {
-    width: 150px;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    top: calc(50% + 10px);
-    transform: translateY(-50%);
-    @include mediaquery('gt-small') {
-      width: 200px;
-      right: calc(-100% / 12 * 0.5);
-    }
-    @include mediaquery('gt-medium') {
-      left: -280px;
-      width: 240px;
-    }
+    padding: 135px 20px;
+    background-image: url(../images/venue/venue-bg-desktop.jpg);
   }
   &__heading {
-    margin: 0 0 40px;
-    color: $purple_color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px 64px 16px 32px;
+    margin: 0;
+    transform: translateY(-50%) rotate(-2deg);
+    color: $white_color;
+    background-color: $blue_color;
     @extend %main-heading;
     @include mediaquery('gt-small') {
-      width: 100%;
+      left: 10%;
     }
     @include mediaquery('gt-medium') {
-      margin: 0 0 60px;
+      left: 15%;
+      padding-left: 80px;
     }
   }
-  &__picture {
-    width: 234px;
-    padding-left: 15px;
-    margin-bottom: 80px;
-    position: relative;
+  &__content {
     @include mediaquery('gt-small') {
-      margin-right: 60px;
-    }
-    @include mediaquery('gt-medium') {
-      width: 50%;
-      margin: 13px 0 0 0;
-      padding: 0 44px 0 15px;
-      position: relative;
+      margin: 0 auto;
+      max-width: 632px;
     }
   }
   &__image {
     width: 100%;
-    max-width: 234px;
-    padding: 10px;
-    background: white;
+    padding: 40px 40px 0 40px;
+    background-color: rgba($green_color, 0.88);
+    @include mediaquery('gt-small') {
+      padding: 0 60px 40px 60px;
+      background-color: transparent;
+    }
+  }
+  &__logo {
+    width: 100%;
+    max-width: 550px;
   }
   &__info {
-    @include mediaquery('gt-medium') {
-      width: 50%;
+    padding: 40px;
+    background-color: rgba($green_color, 0.88);
+    @include mediaquery('gt-small') {
+      padding: 40px 60px;
     }
   }
   &__place {
-    margin: 20px 0 0 0;
-    color: $purple-color;
     @extend %secondary-heading;
+    color: $blue-color;
+    margin: 0;
   }
   &__address {
     @extend %main-text;
     margin: 12px 0;
+    font-weight: bold;
   }
   &__link {
     @extend %main-link;
