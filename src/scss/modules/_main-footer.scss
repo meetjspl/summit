@@ -66,6 +66,8 @@
     padding: 8px 25px;
     @extend %mono-heading;
     @extend %highlight-text;
+
+    text-transform: none !important; // TODO: Fix it properly
   }
   &__copy {
     margin-top: 0;
