@@ -23,6 +23,14 @@
       margin: 0 auto 60px;
     }
   }
+  &__text {
+    @extend %main-text;
+    @include mediaquery('gt-medium') {
+      margin-bottom: 32px;
+    }
+
+    text-align: justify;
+  }
   &__link {
     @extend %main-link;
   }
