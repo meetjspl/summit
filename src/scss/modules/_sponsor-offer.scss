@@ -29,6 +29,8 @@
     @include mediaquery('gt-medium') {
       margin-bottom: 32px;
     }
+
+    text-align: justify;
   }
   &__highlight {
     @extend %highlight-text;
