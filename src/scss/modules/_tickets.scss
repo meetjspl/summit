@@ -1,6 +1,6 @@
 .tickets {
   padding: 40px 20px 70px;
-  background-color: $lightgrey_color;
+  background-color: $white_color;
   @include mediaquery('gt-medium') {
     padding: 80px 20px 50px;
   }
