@@ -27,7 +27,7 @@
   &__content {
     @include mediaquery('gt-small') {
       margin: 0 auto;
-      max-width: 632px;
+      max-width: 636px;
     }
   }
   &__image {

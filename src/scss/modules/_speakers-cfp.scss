@@ -2,16 +2,13 @@
   padding: 40px 20px 70px;
   background-color: white;
   @include mediaquery('gt-medium') {
-    padding: 80px 20px 50px;
+    padding: 80px 20px;
   }
   &__content {
-    max-width: 700px;
+    max-width: 636px;
     margin: 0 auto;
     @extend %main-text;
     font-size: 2em;
-    @include mediaquery('gt-medium') {
-      width: 590px;
-    }
   }
   &__heading {
     color: $purple_color;
@@ -19,7 +16,6 @@
     margin-bottom: 30px;
     @extend %main-heading;
     @include mediaquery('gt-medium') {
-      width: 590px;
       margin: 0 auto 60px;
     }
   }

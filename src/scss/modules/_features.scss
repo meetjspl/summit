@@ -2,29 +2,25 @@
   padding: 40px 20px 120px;
   background-color: #464646;
   &__content {
-    max-width: 700px;
+    max-width: 636px;
     margin: 0 auto;
     @include mediaquery('gt-medium') {
-      width: 590px;
       padding: 70px 0;
-      margin: 0 auto;
     }
   }
   &__heading {
-    color: $white_color;
-    margin: 0 0 30px;
     @extend %main-heading;
-    @include mediaquery('gt-medium') {
-      margin-bottom: 50px;
-    }
+    color: $white_color;
+    margin: 0 0 50px;
   }
   &__items {
     display: grid;
     grid-template-columns: 108px auto;
     grid-gap: 24px;
-    max-width: 1080px;
+    max-width: 636px;
     margin: 0 auto;
     @include mediaquery('gt-medium') {
+      max-width: 1080px;
       grid-template-columns: repeat(3, 108px 1fr);
     }
   }
