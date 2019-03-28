@@ -1,10 +1,11 @@
 .vote {
   min-height: 100vh;
   position: relative;
-  background: url(../images/summit-mobile.jpg) no-repeat center center / cover;
+
   @include mediaquery('gt-small') {
     background-image: url(../images/summit-desktop.jpg);
   }
+
   &::after {
     content: '';
     display: block;
@@ -15,8 +16,10 @@
     left: 0;
     background: $bg-gradient;
   }
+
   @include mediaquery('gt-medium') {
     overflow-x: hidden;
+
     &::before {
       content: '';
       display: block;
@@ -29,12 +32,15 @@
       background-color: $green_color;
     }
   }
+
   &__outer-content {
     $footer-height: 80px;
+
     position: relative;
     min-height: calc(100vh - #{$footer-height});
     height: 100%;
     padding-bottom: #{$footer-height};
+
     @include mediaquery('gt-medium') {
       &::before {
         content: '';
@@ -46,6 +52,7 @@
         left: 0;
         background-color: $green_color;
       }
+
       &::after {
         content: '';
         display: block;
@@ -59,13 +66,16 @@
       }
     }
   }
+
   &__content {
     max-width: 1180px;
     margin: 0 auto;
     position: relative;
     z-index: $index-low;
+
     @include mediaquery('gt-medium') {
       padding: 90px 20px 0;
+
       &::before {
         content: '';
         display: block;
@@ -76,6 +86,7 @@
         left: -10px;
         background-color: $green_color;
       }
+
       &::after {
         content: '';
         display: block;
@@ -88,22 +99,27 @@
       }
     }
   }
+
   &__main-content {
     padding: 120px 20px 0;
+
     @include mediaquery('gt-small') {
       padding-top: 160px;
     }
+
     @include mediaquery('gt-medium') {
       max-height: 380px;
       padding: 0;
       display: flex;
     }
   }
+
   &__info {
     @include mediaquery('gt-small') {
       max-width: 580px;
       margin: 0 auto;
     }
+
     @include mediaquery('gt-medium') {
       max-width: none;
       width: calc(100% * (7 / 12));
@@ -111,26 +127,33 @@
       padding-top: 30px;
     }
   }
+
   &__heading {
     margin: 0 0 16px 0;
     color: $white_color;
     letter-spacing: 2px;
+
     @extend %main-heading;
+
     @include mediaquery('gt-medium') {
       position: relative;
       letter-spacing: 2.2px;
     }
   }
+
   &__edition {
     padding: 8px 12px;
     position: relative;
     left: -12px;
     top: -20px;
     z-index: $index-negative;
+
     @extend %mono-heading;
     @extend %highlight-text;
+
     @include mediaquery('gt-medium') {
       $width: 80px;
+
       width: #{$width};
       position: absolute;
       padding: 8px 20px;
@@ -141,43 +164,55 @@
       justify-content: center;
     }
   }
+
   &__text {
     margin-top: 0;
     margin-bottom: 40px;
+
     @extend %main-text;
+
     @include mediaquery('gt-medium') {
       margin-bottom: 40px;
     }
   }
+
   &__award {
     text-align: center;
+
     @include mediaquery('gt-medium') {
       width: calc(100% * (5 / 12));
       display: flex;
     }
   }
+
   &__symbol {
     margin: 20px 0 80px;
     padding: 0;
     font-size: 20rem;
     position: relative;
     color: $white_color;
+
     @extend %font-bold;
+
     &--green {
       color: $green_color;
     }
+
     @include mediaquery('gt-medium') {
       font-size: 30rem;
       height: 390px;
     }
+
     @include mediaquery('gt-medium') {
       width: 100%;
       position: relative;
       top: -60px;
       left: -20px;
     }
+
     &::before {
       $width: 220px;
+
       content: '';
       display: block;
       width: #{$width};
@@ -186,16 +221,20 @@
       background-color: $darkblue_color;
       bottom: 20px;
       left: calc(50% - #{$width} / 2);
+
       @include mediaquery('gt-medium') {
         $width: 270px;
+
         width: #{$width};
         height: 25px;
         left: calc(50% - #{$width} / 2);
         bottom: 36px;
       }
     }
+
     &::after {
       $width: 270px;
+
       content: '';
       display: block;
       width: #{$width};
@@ -205,8 +244,10 @@
       bottom: -5px;
       left: calc(50% - #{$width} / 2);
       border-bottom: 5px solid $darkblue_color;
+
       @include mediaquery('gt-medium') {
         $width: 325px;
+
         width: #{$width};
         height: 30px;
         left: calc(50% - #{$width} / 2);
@@ -220,10 +261,13 @@
   background-color: $blue_color;
   padding: 10px 15px;
   position: relative;
+
   @extend %main-link;
   @extend %main-link--white;
+
   &::after {
     $padding: 3px;
+
     content: '';
     display: block;
     width: calc(100% - 2 * #{$padding});
@@ -233,9 +277,11 @@
     left: #{$padding};
     background-color: $darkblue_color;
   }
+
   &:hover,
   &:active {
     background-color: $darkblue_color;
+
     &::after {
       background: darken($darkblue_color, 10%);
     }
