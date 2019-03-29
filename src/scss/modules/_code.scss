@@ -1,30 +1,28 @@
 .code {
-  padding: 40px 20px 50px;
+  padding: 40px 20px;
   background-color: white;
 
   @include mediaquery('gt-medium') {
+    padding: 80px 20px;
     background-image: url(../images/code/left-bg.png), url(../images/code/right-bg.png);
     background-position: top left, top right;
     background-repeat: repeat-y;
   }
 
   &__content {
-    max-width: 646px;
+    max-width: 636px;
     margin: 0 auto;
-
-    @include mediaquery('gt-medium') {
-      padding: 70px 0 100px;
-    }
   }
 
   &__heading {
-    color: $purple_color;
-    margin: 0 0 30px;
-
     @extend %main-heading;
 
+    color: $purple_color;
+    margin-top: 0;
+    margin-bottom: 30px;
+
     @include mediaquery('gt-medium') {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
       white-space: nowrap;
     }
   }

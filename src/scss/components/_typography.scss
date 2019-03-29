@@ -1,6 +1,8 @@
 %main-heading {
   @extend %font-bold;
+
   font-size: 3.2rem;
+
   @include mediaquery('gt-medium') {
     font-size: 4.8rem;
   }
@@ -8,7 +10,9 @@
 
 %secondary-heading {
   @extend %font-bold;
+
   font-size: 1.6rem;
+
   @include mediaquery('gt-medium') {
     font-size: 1.8rem;
   }
@@ -16,8 +20,9 @@
 
 %mono-heading {
   @extend %font-mono;
+
   font-size: 1.4rem;
-  text-transform: lowercase;
+
   @include mediaquery('gt-medium') {
     font-size: 1.8rem;
   }
@@ -25,12 +30,15 @@
 
 %main-text {
   @extend %font-regular;
+
   color: $mediumgrey_color;
   font-size: 1.4rem;
   line-height: 1.6;
+
   @include mediaquery('gt-medium') {
     font-size: 1.6rem;
   }
+
   &--white {
     color: $white_color;
   }
@@ -38,18 +46,23 @@
 
 %main-link {
   @extend %font-bold;
+
   font-size: 1.4rem;
   color: $blue-color;
   text-decoration: none;
+
   @include mediaquery('gt-medium') {
     font-size: 1.6rem;
   }
+
   &:hover,
   &:active {
     color: $darkblue_color;
   }
+
   &--white {
     color: $white_color;
+
     &:hover,
     &:active {
       color: $white_color;
@@ -59,12 +72,15 @@
 
 %secondary-link {
   @extend %font-bold;
+
   font-size: 1.4rem;
   color: $green_color;
   text-decoration: none;
+
   @include mediaquery('gt-medium') {
     font-size: 1.6rem;
   }
+
   &:hover,
   &:active {
     color: $darkgreen_color;

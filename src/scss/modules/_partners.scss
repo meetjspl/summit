@@ -1,25 +1,33 @@
 .partners {
-  padding: 40px 20px 50px;
+  padding: 40px 20px;
   background-color: white;
+
+  @include mediaquery('gt-medium') {
+    padding: 80px 20px;
+  }
+
   &__content {
     max-width: 636px;
     margin: 0 auto;
-    @include mediaquery('gt-medium') {
-      padding: 60px 0 100px;
-    }
   }
+
   &__heading {
-    color: $purple_color;
-    margin: 0 0 30px;
     @extend %main-heading;
+
+    color: $purple_color;
+    margin-top: 0;
+    margin-bottom: 30px;
+
     @include mediaquery('gt-medium') {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
   }
+
   &__list {
     list-style: none;
     padding: 0;
     text-align: center;
+
     & > li {
       margin-bottom: 40px;
     }

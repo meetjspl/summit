@@ -1,33 +1,38 @@
 .tickets {
-  padding: 40px 20px 70px;
-  background-color: $white_color;
+  padding: 40px 20px;
+  background-color: #e1e1e1;
+
   @include mediaquery('gt-medium') {
-    padding: 80px 20px 50px;
+    padding: 80px 20px;
   }
+
   &__content {
     max-width: 636px;
     margin: 0 auto;
-    @extend %main-text;
-    font-size: 2em;
   }
+
   &__heading {
+    @extend %main-heading;
+
     color: $purple_color;
     margin-top: 0;
     margin-bottom: 30px;
-    @extend %main-heading;
+
     @include mediaquery('gt-medium') {
-      max-width: 636px;
-      margin: 0 auto 60px;
+      margin-bottom: 60px;
     }
   }
+
   &__text {
     @extend %main-text;
+
     @include mediaquery('gt-medium') {
       margin-bottom: 32px;
     }
 
     text-align: justify;
   }
+
   &__link {
     @extend %main-link;
   }

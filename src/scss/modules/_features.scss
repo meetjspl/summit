@@ -1,40 +1,55 @@
 .features {
-  padding: 40px 20px 120px;
+  padding: 40px 20px 56px;
   background-color: #464646;
+
+  @include mediaquery('gt-medium') {
+    padding: 80px 20px;
+  }
+
   &__content {
     max-width: 636px;
     margin: 0 auto;
-    @include mediaquery('gt-medium') {
-      padding: 70px 0;
-    }
   }
+
   &__heading {
     @extend %main-heading;
+
     color: $white_color;
-    margin: 0 0 50px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include mediaquery('gt-medium') {
+      margin-bottom: 60px;
+    }
   }
+
   &__items {
     display: grid;
     grid-template-columns: 108px auto;
     grid-gap: 24px;
     max-width: 636px;
     margin: 0 auto;
+
     @include mediaquery('gt-medium') {
       max-width: 1080px;
       grid-template-columns: repeat(3, 108px 1fr);
     }
   }
+
   &__item-image {
     text-align: center;
     padding-top: 4px;
   }
+
   &__item-content {
     @extend %font-regular;
+
     > h3 {
       font-size: 24px;
       color: $white-color;
       margin: 0 0 8px 0;
     }
+
     > p {
       font-size: 14px;
       line-height: 1.4;

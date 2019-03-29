@@ -21,11 +21,11 @@
   }
 
   &__heading {
+    @extend %main-heading;
+
     color: $white_color;
     max-width: 636px;
     margin: 0 auto;
-
-    @extend %main-heading;
   }
 
   &__text {
