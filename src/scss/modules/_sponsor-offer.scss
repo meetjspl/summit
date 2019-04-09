@@ -1,9 +1,9 @@
 .sponsor-offer {
-  padding-top: 40px;
+  padding: 40px 20px;
   background-color: white;
 
   @include mediaquery('gt-medium') {
-    padding-top: 80px;
+    padding: 80px 0;
   }
 
   &__main-info {
@@ -56,29 +56,5 @@
       width: 62%;
       position: relative;
     }
-  }
-
-  &__gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: stretch;
-    margin-top: 40px;
-
-    @include mediaquery('gt-medium') {
-      margin-top: 80px;
-    }
-  }
-
-  &__picture {
-    flex-basis: 50%;
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    max-height: 320px;
-    object-fit: cover;
   }
 }

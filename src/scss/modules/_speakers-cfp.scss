@@ -1,9 +1,9 @@
 .speakers-cfp {
-  padding: 40px 20px 80px;
+  padding: 40px 20px;
   background-color: white;
 
   @include mediaquery('gt-medium') {
-    padding: 80px 20px 120px;
+    padding: 80px 20px;
   }
 
   &__content {
@@ -39,5 +39,39 @@
 
   &__link {
     @extend %main-link;
+  }
+
+  &__button {
+    display: inline-block;
+    position: relative;
+    background-color: $blue_color;
+    @extend %main-link;
+    @extend %main-link--white;
+    padding: 8px 16px;
+
+    @include mediaquery('gt-medium') {
+      padding: 12px 24px;
+    }
+
+    &::before {
+      content: '';
+      width: calc(100% - 4px);
+      height: 3px;
+      display: block;
+      background-color: $darkblue_color;
+      position: absolute;
+      bottom: -3px;
+      left: 2px;
+    }
+
+    &:hover,
+    &:active {
+      color: $white_color;
+      background-color: $darkblue_color;
+
+      &::before {
+        background: darken($darkblue_color, 10%);
+      }
+    }
   }
 }

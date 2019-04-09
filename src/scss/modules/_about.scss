@@ -7,32 +7,16 @@
   }
 
   &__content {
-    max-width: 1000px;
+    max-width: 636px;
     margin: 0 auto;
-    padding: 28px 0;
-    border-width: 9px 0;
-    border-style: solid;
-    border-color: $green_color;
-
-    @include mediaquery('gt-small') {
-      padding: 38px 0;
-      border-width: 9px;
-    }
   }
 
   &__heading {
     @extend %main-heading;
-
     color: $white_color;
-    max-width: 636px;
-    margin: 0 auto;
   }
 
   &__text {
-    max-width: 636px;
-    margin-left: auto;
-    margin-right: auto;
-
     @extend %main-text;
     @extend %main-text--white;
   }
