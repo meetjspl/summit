@@ -1,6 +1,6 @@
 .tickets {
   padding: 40px 20px;
-  background-color: #e1e1e1;
+  background-color: #ffffff;
 
   @include mediaquery('gt-medium') {
     padding: 80px 20px;
@@ -14,7 +14,6 @@
   &__heading {
     @extend %main-heading;
 
-    color: $purple_color;
     margin-top: 0;
     margin-bottom: 30px;
 

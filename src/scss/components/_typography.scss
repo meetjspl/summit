@@ -6,6 +6,10 @@
   @include mediaquery('gt-medium') {
     font-size: 4.8rem;
   }
+
+  &--white {
+    color: $white_color;
+  }
 }
 
 %secondary-heading {
