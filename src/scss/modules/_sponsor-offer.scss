@@ -1,17 +1,12 @@
 .sponsor-offer {
-  padding: 40px 20px;
+  padding: 40px 20px 80px;
   background-color: white;
 
   @include mediaquery('gt-medium') {
-    padding: 80px 0;
+    padding: 80px 0 120px;
   }
 
-  &__center {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__main-info {
+  &__content {
     max-width: 676px;
     margin: 0 auto;
     padding: 0 20px;
@@ -27,6 +22,17 @@
     @include mediaquery('gt-medium') {
       white-space: nowrap;
       margin-bottom: 60px;
+    }
+  }
+
+  &__subheading {
+    @extend %secondary-heading;
+
+    color: $purple_color;
+    margin-top: 40px;
+
+    & span {
+      border-bottom: 2px solid $lightpurple_color;
     }
   }
 
@@ -55,45 +61,47 @@
     @extend %main-link;
   }
 
-  &__main-info {
-    @include mediaquery('gt-medium') {
-      order: 2;
-      width: 62%;
-      position: relative;
+  &__list {
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--small {
+      @media (min-width: 480px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (min-width: 640px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
   }
 
-  &__button {
-    display: inline-block;
-    position: relative;
-    background-color: $blue_color;
-    @extend %main-link;
-    @extend %main-link--white;
-    padding: 8px 16px;
+  &__list-item {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba($lightpurple_color, 0.15);
+    border-radius: 2px;
 
-    @include mediaquery('gt-medium') {
-      padding: 12px 24px;
+    & > a {
+      width: 100%;
+      padding: 20px;
     }
 
-    &::before {
-      content: '';
-      width: calc(100% - 4px);
-      height: 3px;
+    & img {
       display: block;
-      background-color: $darkblue_color;
-      position: absolute;
-      bottom: -3px;
-      left: 2px;
-    }
-
-    &:hover,
-    &:active {
-      color: $white_color;
-      background-color: $darkblue_color;
-
-      &::before {
-        background: darken($darkblue_color, 10%);
-      }
+      width: 100%;
+      height: auto;
     }
   }
 }
