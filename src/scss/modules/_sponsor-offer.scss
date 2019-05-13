@@ -31,9 +31,11 @@
     color: $purple_color;
     margin-top: 40px;
 
-    // & span {
-    //   border-bottom: 2px solid $lightpurple_color;
-    // }
+    & span {
+      border-bottom: 2px solid $lightpurple_color;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
   }
 
   &__text {
