@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="600" height="400"></rect>
+        <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="600" height="400"></rect>
+        <text id="Your-logo-here" font-family="Montserrat-SemiBoldItalic, Montserrat" font-size="72" font-style="italic" font-weight="500" fill="#9B9B9B">
+            <tspan x="35.28" y="226">Your logo here</tspan>
+        </text>
+    </g>
+</svg>
