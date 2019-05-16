@@ -34,7 +34,11 @@
       margin-bottom: 32px;
     }
 
-    text-align: justify;
+    text-align: left;
+
+    @media (min-width: 480px) {
+      text-align: justify;
+    }
   }
 
   &__link {
