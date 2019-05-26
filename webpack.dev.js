@@ -80,6 +80,11 @@ module.exports = {
       inject: true,
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/regulamin.html',
+      inject: true,
+    }),
+
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(version),
     }),

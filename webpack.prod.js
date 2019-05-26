@@ -93,6 +93,11 @@ module.exports = {
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/regulamin.html',
+      // Inject the js bundle at the end of the body of the given template
+      inject: 'body',
+    }),
     new CleanWebpackPlugin(),
     new FaviconsWebpackPlugin({
       // Your source logo
