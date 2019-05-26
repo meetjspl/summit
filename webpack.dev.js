@@ -77,12 +77,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      inject: true,
     }),
 
     new HtmlWebpackPlugin({
+      filename: 'regulamin.html',
       template: './src/regulamin.html',
-      inject: true,
     }),
 
     new webpack.DefinePlugin({

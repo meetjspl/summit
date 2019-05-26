@@ -94,6 +94,7 @@ module.exports = {
       inject: 'body',
     }),
     new HtmlWebpackPlugin({
+      filename: 'regulamin.html',
       template: './src/regulamin.html',
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
