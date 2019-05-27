@@ -158,7 +158,7 @@ module.exports = {
       { from: 'CNAME', to: '../' },
       { from: 'src/robots.txt', to: '..' },
       { from: 'src/meetjs_summit_2019_sponsor_packages.pdf', to: '.' },
-      { from: 'src/ticket.html', to: '.' },
+      { from: 'src/tickets.html', to: '.' },
       { from: 'src/images/facebook', to: 'images/facebook/' },
       { from: 'legacy-pages/', to: '..' },
     ]),
