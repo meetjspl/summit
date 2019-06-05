@@ -39,6 +39,19 @@
     @media (min-width: 480px) {
       text-align: justify;
     }
+
+    &--sold-out {
+      text-decoration: line-through;
+
+      strong::after {
+        display: inline-block;
+        font-weight: 600;
+        color: $red_color;
+        text-decoration: none;
+        padding-left: 0.3rem;
+        content: 'Sold out';
+      }
+    }
   }
 
   &__link {
