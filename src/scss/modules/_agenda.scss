@@ -1,198 +1,91 @@
 .agenda {
   padding: 40px 20px;
-  background-color: white;
-  overflow: hidden;
+  background-color: $purple_color;
+
   @include mediaquery('gt-medium') {
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding: 80px 20px;
   }
+
   &__content {
-    @include mediaquery('gt-small') {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    @include mediaquery('gt-medium') {
-      max-width: 1140px;
-    }
+    max-width: 636px;
+    margin: 0 auto;
   }
-  &__text {
-    margin-bottom: 50px;
-    @include mediaquery('gt-medium') {
-      width: 590px;
-      margin: 0 auto;
-      margin-bottom: 80px;
-    }
-  }
+
   &__heading {
-    color: $purple_color;
-    margin-top: 0;
-    margin-bottom: 16px;
     @extend %main-heading;
-  }
-  &__lead {
-    @extend %main-text;
-  }
-  &__tracks {
-    @include mediaquery('gt-medium') {
-      width: calc(100% / 12 * 10);
-      display: flex;
-      margin-left: 182px;
-      margin-bottom: 35px;
-    }
-  }
-  &__track {
-    width: calc(100% / 12 * 8);
-  }
-  &__track-title {
-    color: $white_color;
-    margin: 0;
-    padding: 10px 10px 12px 15px;
-    margin-bottom: 20px;
-    @extend %mono-heading;
-    @extend %highlight-text;
-    @include mediaquery('gt-medium') {
-      margin-bottom: 0;
-    }
-  }
-  &__hour {
-    font-size: 1.6rem;
-    color: $purple_color;
-    background-color: $lightgrey_color;
-    padding: 8px 15px;
-    @extend %font-mono;
-    @include mediaquery('gt-medium') {
-      font-size: 1.8rem;
-    }
-  }
-  &__title {
-    color: $purple_color;
+    color: white;
     margin-top: 0;
-    margin-bottom: 0;
-    @extend %secondary-heading;
-    &--speech {
-      @include mediaquery('gt-medium') {
-        min-height: 80px;
-      }
-    }
-    & + .agenda__link {
-      margin: 1.5em 0;
-    }
-  }
-  &__link {
-    @extend %main-link;
-    font-weight: 400;
-    display: block;
-    &--inline {
-      display: inline;
-    }
-    &:first-child {
-      margin-bottom: 14px;
-      @include mediaquery('gt-medium') {
-        margin-bottom: 25px;
-      }
-    }
-  }
-  &__links {
-    margin-top: 20px;
     margin-bottom: 30px;
+
     @include mediaquery('gt-medium') {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    position: relative;
+    list-style: none;
+    padding-left: 32px;
+
+    & > * {
+      @extend %main-text;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+    }
+
+    &::before {
+      z-index: 2;
+      top: 4px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background-color: $blue_color;
+      border-radius: 50%;
+    }
+
+    &:not(:last-of-type) {
+      padding-bottom: 16px;
+
+      &::after {
+        z-index: 1;
+        top: 18px;
+        bottom: -6px;
+        left: 5px;
+        width: 4px;
+        background-color: $lightpurple_color;
+      }
+    }
+
+    &:nth-child(2n-1) {
+      &::before {
+        background-color: $green_color;
+      }
+    }
+
+    & > time {
+      color: $green_color;
+      font-weight: bold;
+    }
+
+    & > h3 {
+      color: $blue_color;
+      font-weight: normal;
       margin: 0;
     }
-  }
-  &__items {
-    margin-bottom: 30px;
-    @include mediaquery('gt-medium') {
-      margin-bottom: 0;
-      display: table-row;
-    }
-  }
-  &__item {
-    &:nth-child(2) .agenda__title:after {
-      content: ' (Track 1)';
-      color: $grey_color;
-      font-size: 1.4rem;
-      @include mediaquery('gt-medium') {
-        content: '';
-      }
-    }
-    @include mediaquery('gt-medium') {
-      display: table-cell;
-      position: relative;
-    }
-  }
-  &__time {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    @include mediaquery('gt-medium') {
-      margin-top: 0;
-      margin-bottom: 0;
-      min-width: 182px;
-    }
-  }
-  &__speech {
-    @include mediaquery('gt-medium') {
-      width: 50%;
-      padding-right: calc(100% / 12 * 1);
-      padding-bottom: 30px;
-      padding-top: 35px;
-      position: relative;
-      &::after {
-        content: '';
-        display: block;
-        height: 1px;
-        background-color: $lightgrey_color;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 500%;
-      }
-    }
-  }
-  &__single {
-    @include mediaquery('gt-medium') {
-      display: flex;
-      padding-top: 35px;
-      padding-bottom: 30px;
-      position: relative;
-      &::after {
-        content: '';
-        display: block;
-        height: 1px;
-        background-color: $lightgrey_color;
-        position: absolute;
-        bottom: 0;
-        left: 182px;
-        width: 100%;
-      }
-    }
-  }
-  &__main-item {
-    padding-bottom: 30px;
-    padding-top: 35px;
-  }
-  &__desc {
-    margin-top: 15px;
-    margin-bottom: 0;
-    @extend %main-text;
-  }
-  &__description {
-    &-button {
-      @extend %main-link;
-      -webkit-appearance: none;
-      background-color: transparent;
-      border: 0;
-      padding: 0;
-      cursor: pointer;
-      margin: 1em 0 1em 0;
-    }
-    &-text {
-      @extend %main-text;
-      &[aria-expanded='true'] {
-        display: block;
-      }
-      .has-js &[aria-expanded='false'] {
-        display: none;
-      }
+
+    & > p {
+      color: white;
+      font-style: italic;
+      margin: 0;
     }
   }
 }
