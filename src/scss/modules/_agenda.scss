@@ -40,6 +40,7 @@
     &::after {
       position: absolute;
       content: '';
+      background-color: currentColor;
     }
 
     &::before {
@@ -48,7 +49,7 @@
       left: 0;
       width: 14px;
       height: 14px;
-      background-color: $blue_color;
+      color: $blue_color;
       border-radius: 50%;
     }
 
@@ -58,7 +59,7 @@
       &::after {
         z-index: 1;
         top: 18px;
-        bottom: -6px;
+        bottom: -4px;
         left: 5px;
         width: 4px;
         background-color: $lightpurple_color;
@@ -67,8 +68,13 @@
 
     &:nth-child(2n-1) {
       &::before {
-        background-color: $green_color;
+        color: $green_color;
       }
+    }
+
+    &--special::before {
+      border: 1px solid currentColor;
+      background-color: transparent;
     }
 
     & > time {
