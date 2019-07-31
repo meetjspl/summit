@@ -1,209 +1,123 @@
 .speakers {
-  padding: 40px 20px;
-  background-color: white;
+  padding: 40px 20px 80px;
+  background-color: $purple_color;
 
   @include mediaquery('gt-medium') {
-    padding: 80px 20px;
+    padding: 80px 20px 120px;
+  }
+
+  &__heading {
+    max-width: 636px;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 40px;
+    @extend %main-heading;
   }
 
   &__content {
-    max-width: 636px;
+    max-width: 780px;
     margin: 0 auto;
-
-    @extend %main-text;
-
-    font-size: 2em;
-  }
-  &__info {
-    @include mediaquery('gt-medium') {
-      display: flex;
-    }
-  }
-  &__main-info {
-    margin-top: 40px;
-    @include mediaquery('gt-medium') {
-      margin-top: 0;
-    }
-  }
-  &__header {
-    margin-bottom: 40px;
-    @include mediaquery('gt-medium') {
-      margin-bottom: 50px;
-      order: 2;
-      width: calc(100% / 12 * 6);
-    }
-  }
-  &__heading {
-    margin-top: 0;
-    color: $purple_color;
-    margin-bottom: 16px;
-    @extend %main-heading;
-  }
-  &__lead {
-    margin-bottom: 0;
     @extend %main-text;
   }
-  &__text {
-    @extend %main-text;
 
-    @include mediaquery('gt-medium') {
-      margin-bottom: 32px;
-    }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-    text-align: left;
-
-    @media (min-width: 480px) {
-      text-align: justify;
-    }
-  }
-  &__buttons {
-    @include mediaquery('gt-small') {
-      display: flex;
-    }
-    @include mediaquery('gt-medium') {
-      display: block;
-      width: calc(100% / 12 * 3);
-      margin-top: 22px;
-    }
-  }
-  &__button {
-    width: 190px;
-    display: block;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    padding: 14px;
-    position: relative;
-    color: $white_color;
-    font-size: 1.6rem;
-    background-color: $blue_color;
-    text-decoration: none;
-    @extend %font-bold;
-    &::after {
-      $padding: 3px;
-      content: '';
-      display: block;
-      width: calc(100% - 2 * #{$padding});
-      height: #{$padding};
-      position: absolute;
-      bottom: -#{$padding};
-      left: #{$padding};
-      background-color: $darkblue_color;
-    }
-    &:hover,
-    &:active {
-      background-color: $darkblue_color;
-      &::after {
-        background: darken($darkblue_color, 10%);
-      }
+    & > li:not(:first-child) {
+      padding-top: 32px;
+      margin-top: 32px;
+      border-top: 1px solid $lightpurple_color;
     }
   }
 }
 
 .speaker-box {
-  padding: 20px 20px 30px 20px;
-  position: relative;
-  position: relative;
-  border-top: 60px solid transparent;
-  margin-top: -60px;
-  background-clip: padding-box;
-  &:target {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
   @include mediaquery('gt-small') {
-    padding: 35px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    border-top: 90px solid transparent;
-    margin-top: -90px;
-  }
-  &::after {
-    content: '';
-    display: block;
-    height: 1px;
-    background-color: $lightpurple_color;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    @include mediaquery('gt-small') {
-      width: 200%;
-      right: 50%;
-    }
-  }
-  &__photo {
     position: relative;
-    padding-left: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 140px;
+    box-shadow: rgba($purple_color, 0.5) 0 2px 4px;
+    margin: 0 0 -22px 16px;
+
     @include mediaquery('gt-small') {
-      width: 165px;
-      margin-right: 50px;
-    }
-    @include mediaquery('gt-medium') {
-      padding-left: 40px;
-    }
-    &::before {
-      content: '';
-      display: block;
-      width: 5px;
-      height: 80px;
       position: absolute;
       top: 0;
       left: 0;
+      margin: 0;
+      max-width: 180px;
+    }
+  }
+
+  &__info {
+    overflow: hidden;
+    color: white;
+    background-color: $lightpurple_color;
+    padding: 0 16px;
+    border-radius: 5px 5px 0 0;
+
+    @include mediaquery('gt-small') {
+      padding: 0 16px 0 156px;
+    }
+  }
+
+  &__header {
+    background-color: $blue_color;
+    margin: 0 -16px;
+    padding: 32px 16px 8px 16px;
+
+    @include mediaquery('gt-small') {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+    }
+
+    & h3,
+    & h4 {
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    & h4 {
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+
+    & a {
+      display: inline-block;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &--alt {
       background-color: $green_color;
     }
   }
-  &__image {
-    width: 120px;
-    height: 120px;
-  }
-  &__info {
-    @include mediaquery('gt-small') {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-left: 30px;
-      width: calc(100% - 165px);
-    }
-  }
-  &__heading {
-    margin-bottom: 20px;
-    color: $white-color;
-    @extend %secondary-heading;
-    @include mediaquery('gt-small') {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-  &__links {
-    margin-bottom: 20px;
-    @include mediaquery('gt-medium') {
-      width: calc(100% / 10 * 3);
-      padding-right: 30px;
-    }
-  }
-  &__link {
-    @extend %main-link;
-    &:first-child {
-      margin-right: 20px;
-    }
-  }
+
   &__desc {
-    margin-top: 0;
-    @extend %main-text;
-    a {
-      @extend %main-link;
-    }
+    font-size: 14px;
+    margin: 16px 0;
+    text-align: justify;
+
     @include mediaquery('gt-small') {
-      margin-bottom: 0;
-    }
-    @include mediaquery('gt-medium') {
-      width: calc(100% / 10 * 6);
-      padding-top: 42px;
-    }
-  }
-  &__data {
-    @include mediaquery('gt-medium') {
-      width: calc(100% / 10 * 3);
-      padding-right: 20px;
+      text-align: left;
     }
   }
 }
