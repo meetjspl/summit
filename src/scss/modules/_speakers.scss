@@ -84,9 +84,15 @@
       padding: 12px 16px;
     }
 
-    & h3 {
+    & h3,
+    & h4 {
       margin: 0;
       line-height: 1.1;
+    }
+
+    & h4 {
+      font-weight: 100;
+      text-transform: uppercase;
     }
 
     & a {
@@ -99,10 +105,19 @@
         color: white;
       }
     }
+
+    &--alt {
+      background-color: $green_color;
+    }
   }
 
   &__desc {
     font-size: 14px;
     margin: 16px 0;
+    text-align: justify;
+
+    @include mediaquery('gt-small') {
+      text-align: left;
+    }
   }
 }
