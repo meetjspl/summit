@@ -1,6 +1,6 @@
 .features {
   padding: 40px 20px 56px;
-  background-color: #2b1c33;
+  background-color: $purple_color;
 
   @include mediaquery('gt-medium') {
     padding: 80px 20px;
