@@ -1,15 +1,35 @@
 .agenda {
+  @extend %base-section;
   position: relative;
-  padding: 40px 20px;
   background-color: $purple_color;
-
-  @include mediaquery('gt-medium') {
-    padding: 80px 20px;
-  }
 
   &__content {
     max-width: 636px;
     margin: 0 auto;
+  }
+
+  &__day {
+    position: relative;
+
+    padding: 20px 0;
+
+    &:not(:last-of-type) {
+      &:after {
+        content: '';
+        display: block;
+        width: calc(100% - 12px);
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 6px;
+        background-color: $lightpurple_color;
+      }
+    }
+
+    &__heading {
+      @extend %secondary-heading;
+      color: $white_color;
+    }
   }
 
   &__heading {
@@ -19,6 +39,38 @@
   &__text {
     @extend %main-text;
     @extend %main-text--white;
+  }
+
+  &__workshop {
+    &__heading {
+      @extend %tertiary-heading;
+      color: $blue_color;
+
+      & > time {
+        font-weight: bold;
+      }
+
+      & > h4 {
+        display: inline;
+        color: $green_color;
+        margin: 0;
+        padding: 0 0 0 5px;
+        font-weight: normal;
+      }
+
+      & > h5 {
+        @extend %main-text--mini;
+        color: $grey_color;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+      }
+    }
+
+    &__text {
+      @extend %main-text;
+      @extend %main-text--white;
+      @extend %main-text--small;
+    }
   }
 
   &__list {
@@ -78,20 +130,30 @@
     }
 
     & > time {
-      color: $green_color;
+      color: $blue_color;
       font-weight: bold;
+      padding: 0 5px 0 0;
     }
 
     & > h3 {
-      color: $blue_color;
-      font-weight: normal;
+      display: inline;
+      color: $green_color;
       margin: 0;
+      font-weight: normal;
+    }
+
+    & > h4 {
+      @extend %main-text--mini;
+      color: $grey_color;
+      font-weight: normal;
+      margin: 0 0 10px 0;
     }
 
     & > p {
+      @extend %main-text--small;
       color: $white_color;
-      font-style: italic;
       margin: 0;
+      padding: 0 0 0 5px;
     }
   }
 }

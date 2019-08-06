@@ -1,9 +1,9 @@
 .speakers {
-  padding: 20px 20px 80px;
+  padding: 0px 20px 80px;
   background-color: $purple_color;
 
   @include mediaquery('gt-medium') {
-    padding: 20px 20px 120px;
+    padding: 0px 20px 120px;
   }
 
   &__heading {
@@ -28,7 +28,7 @@
     & > li:not(:first-child) {
       padding-top: 32px;
       margin-top: 32px;
-      border-top: 1px solid $lightpurple_color;
+      // border-top: 1px solid $lightpurple_color;
     }
   }
 }
