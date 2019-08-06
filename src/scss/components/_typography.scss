@@ -12,6 +12,26 @@
   }
 }
 
+%main-heading--special {
+  @extend %main-heading;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 64px 16px 32px;
+  margin: 0;
+  transform: translateY(-33.333%) rotate(-2deg);
+  color: $white_color;
+  background-color: $blue_color;
+
+  @include mediaquery('gt-small') {
+    left: 10%;
+  }
+  @include mediaquery('gt-medium') {
+    left: 15%;
+    padding-left: 80px;
+  }
+}
+
 %secondary-heading {
   @extend %font-bold;
 
@@ -19,6 +39,16 @@
 
   @include mediaquery('gt-medium') {
     font-size: 1.8rem;
+  }
+}
+
+%tertiary-heading {
+  @extend %font-bold;
+
+  font-size: 1.4rem;
+
+  @include mediaquery('gt-medium') {
+    font-size: 1.6rem;
   }
 }
 
@@ -36,15 +66,35 @@
   @extend %font-regular;
 
   color: $mediumgrey_color;
+
   font-size: 1.4rem;
   line-height: 1.6;
 
   @include mediaquery('gt-medium') {
     font-size: 1.6rem;
+    margin-bottom: 32px;
   }
 
   &--white {
     color: $white_color;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+    @include mediaquery('gt-medium') {
+      font-size: 1.4rem;
+    }
+  }
+
+  &--mini {
+    font-size: 1.1rem;
+    line-height: 1.3;
+
+    @include mediaquery('gt-medium') {
+      font-size: 1.3rem;
+    }
   }
 }
 

@@ -139,6 +139,15 @@
               <li class="main-nav__item">
                 <a
                   class="main-nav__link"
+                  href="#schedule"
+                  title="Conference schedule"
+                  aria-label="Conference schedule"
+                  >#schedule</a
+                >
+              </li>
+              <li class="main-nav__item">
+                <a
+                  class="main-nav__link"
                   href="#speakers"
                   title="Meet conference speakers"
                   aria-label="Meet conference speakers"
@@ -514,12 +523,130 @@
         </div>
       </section>
 
+      <section id="schedule" class="agenda">
+        <div class="agenda__content">
+          <h2 class="agenda__heading"><span aria-hidden="true">#</span>schedule</h2>
+          <p class="agenda__text">
+            This will be the rough schedule for September, we'll get this more and more detailed
+            with time.
+          </p>
+          <!-- <div class="agenda__day">
+            <h3 class="agenda__day__heading">Sunday, 29th September, 2019</h3>
+            <div class="agenda__workshop">
+              <div class="agenda__workshop__heading">
+                <time datetime="08:00">08:00</time> - <time datetime="18:00">18:00</time>
+                <h4>
+                  Workshop title
+                </h4>
+                <h5>Location</h5>
+              </div>
+              <p class="agenda__workshop__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt temporibus
+                incidunt sunt enim corrupti magni dolorum quod inventore illo iste. Consectetur
+                consequatur ullam odit velit facilis ipsam libero sed cum.
+              </p>
+            </div>
+          </div> -->
+          <div class="agenda__day">
+            <h3 class="agenda__day__heading">Monday, 30th September, 2019</h3>
+            <ul class="agenda__list">
+              <li class="agenda__list-item">
+                <time datetime="08:00">08:00</time>
+                <h3>Breakfast & Conference Registration</h3>
+                <h4>Main hall</h4>
+                <p>
+                  We'll be set up next to the entrance so that you can check-in for the conference.
+                  Have your ticket ready and follow our staff instructions, so everything goes
+                  smoothly. After you pick your badge, enjoy some fine refreshments and appetizers.
+                  Meet old friends, make new friends, visit our sponsor booths or make yourself
+                  familiar with the venue.
+                </p>
+                <p>
+                  Remember to use the entrance to the International Congress Centre from Sławik and
+                  Antall Square, next to the Spodek Arena.
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="09:00">09:00</time>
+                <h3>Event opening</h3>
+                <h4>Auditorium</h4>
+                <p>
+                  Kick off the conference with us as we go over the conference schedule, our Code of
+                  Conduct, formally introduce our staff, and our MCs!
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="09:30">09:30</time>
+                <h3>Session I</h3>
+                <h4>Auditorium</h4>
+              </li>
+              <!-- <li class="agenda__list-item agenda__list-item--special">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit.
+                </h3>
+                <h4>John Doe</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab accusantium
+                  exercitationem at odio blanditiis. Natus praesentium, explicabo magnam fugit
+                  aperiam nobis ipsam eveniet est sit laudantium consequatur, blanditiis qui
+                  architecto.
+                </p>
+              </li> -->
+              <li class="agenda__list-item">
+                <time datetime="11:00">11:00</time>
+                <h3>Coffee break</h3>
+                <h4>Main hall</h4>
+                <p>
+                  Meet old friends, make new friends, visit sponsor booths, enjoy some fine
+                  refreshments and snacks, or rest a bit in our chillout zone!
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="11:30">11:30</time>
+                <h3>Session II</h3>
+                <h4>Auditorium</h4>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="13:00">13:00</time>
+                <h3>Lunch break</h3>
+                <h4>Dining space (follow the signs)</h4>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="14:30">14:30</time>
+                <h3>Session III</h3>
+                <h4>Auditorium</h4>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="16:00">16:00</time>
+                <h3>Coffee break</h3>
+                <h4>Main hall</h4>
+                <p>
+                  Meet old friends, make new friends, visit sponsor booths, enjoy some fine
+                  refreshments and snacks, or rest a bit in our chillout zone!
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="16:30">16:30</time>
+                <h3>Session IV</h3>
+                <h4>Auditorium</h4>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="18:00">18:00</time>
+                <h3>Event closing</h3>
+                <h4>Auditorium</h4>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="speakers" id="speakers">
         <h2 class="speakers__heading"><span aria-hidden="true">#</span>speakers</h2>
         <div class="speakers__content">
           <ul class="speakers__list">
             <li>
-              <article class="speaker-box">
+              <article id="speaker-marta-wisniewska" class="speaker-box">
                 <img
                   class="speaker-box__image"
                   src="images/speakers/2019/speaker-mwisniewska.jpg"

@@ -1,6 +1,6 @@
 .terms {
   padding: 120px 20px 80px;
-  background-color: white;
+  background-color: $white_color;
 
   @include mediaquery('gt-small') {
     padding: 180px 0 120px;

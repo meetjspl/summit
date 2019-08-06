@@ -1,10 +1,7 @@
 .tickets {
-  padding: 40px 20px;
+  @extend %base-section;
+  position: relative;
   background-color: #ffffff;
-
-  @include mediaquery('gt-medium') {
-    padding: 80px 20px;
-  }
 
   &__center {
     display: flex;
@@ -17,14 +14,7 @@
   }
 
   &__heading {
-    @extend %main-heading;
-
-    margin-top: 0;
-    margin-bottom: 30px;
-
-    @include mediaquery('gt-medium') {
-      margin-bottom: 60px;
-    }
+    @extend %main-heading--special;
   }
 
   &__text {

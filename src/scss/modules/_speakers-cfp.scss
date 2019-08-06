@@ -1,10 +1,6 @@
 .speakers-cfp {
-  padding: 40px 20px;
-  background-color: white;
-
-  @include mediaquery('gt-medium') {
-    padding: 80px 20px;
-  }
+  @extend %base-section;
+  background-color: $white_color;
 
   &__center {
     display: flex;
