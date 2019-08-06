@@ -1,10 +1,6 @@
 .features {
-  padding: 40px 20px 56px;
+  @extend %base-section;
   background-color: $purple_color;
-
-  @include mediaquery('gt-medium') {
-    padding: 80px 20px;
-  }
 
   &__content {
     max-width: 636px;

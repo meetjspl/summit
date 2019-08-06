@@ -1,10 +1,7 @@
 .sponsor-offer {
-  padding: 40px 20px 80px;
-  background-color: white;
-
-  @include mediaquery('gt-medium') {
-    padding: 80px 0 120px;
-  }
+  @extend %base-section;
+  position: relative;
+  background-color: $white_color;
 
   &__content {
     max-width: 676px;
@@ -13,16 +10,7 @@
   }
 
   &__heading {
-    @extend %main-heading;
-
-    color: $purple_color;
-    margin-top: 0;
-    margin-bottom: 40px;
-
-    @include mediaquery('gt-medium') {
-      white-space: nowrap;
-      margin-bottom: 60px;
-    }
+    @extend %main-heading--special;
   }
 
   &__subheading {
@@ -114,7 +102,7 @@
 
   &__list-item {
     display: flex;
-    background-color: white;
+    background-color: $white_color;
     box-shadow: 0 0 10px 0 rgba($lightpurple_color, 0.15);
     border-radius: 2px;
 

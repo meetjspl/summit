@@ -1,4 +1,5 @@
 .agenda {
+  position: relative;
   padding: 40px 20px;
   background-color: $purple_color;
 
@@ -12,17 +13,16 @@
   }
 
   &__heading {
-    @extend %main-heading;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 30px;
+    @extend %main-heading--special;
+  }
 
-    @include mediaquery('gt-medium') {
-      margin-bottom: 60px;
-    }
+  &__text {
+    @extend %main-text;
+    @extend %main-text--white;
   }
 
   &__list {
+    position: relative;
     margin: 0;
     padding: 0;
   }
@@ -89,7 +89,7 @@
     }
 
     & > p {
-      color: white;
+      color: $white_color;
       font-style: italic;
       margin: 0;
     }
