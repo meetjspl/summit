@@ -122,6 +122,15 @@
       color: $white_color;
     }
   }
+
+  &--mini {
+    font-size: 1.1rem;
+    line-height: 1.3;
+
+    @include mediaquery('gt-medium') {
+      font-size: 1.3rem;
+    }
+  }
 }
 
 %secondary-link {
