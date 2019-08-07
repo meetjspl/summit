@@ -71,21 +71,28 @@
         margin: 0 0 10px 0;
 
         & a {
-          color: $blue_color;
-          text-decoration: none;
-
-          &:visited {
-            color: $blue_color;
-            text-decoration: none;
-          }
+          @extend %main-link;
+          @extend %main-link--mini;
         }
       }
+    }
+
+    &__link {
+      @extend %main-link;
     }
 
     &__text {
       @extend %main-text;
       @extend %main-text--white;
       @extend %main-text--small;
+
+      & a {
+        @extend %main-link--mini;
+      }
+    }
+
+    &__button {
+      @extend %fancy-button;
     }
 
     & > h6 {
