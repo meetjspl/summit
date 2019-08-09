@@ -64,12 +64,53 @@
         font-weight: normal;
         margin: 0 0 10px 0;
       }
+
+      & > h6 {
+        @extend %main-text--mini;
+        color: $white_color;
+        margin: 0 0 10px 0;
+
+        & a {
+          @extend %main-link;
+          @extend %main-link--mini;
+        }
+      }
+    }
+
+    &__link {
+      @extend %main-link;
     }
 
     &__text {
       @extend %main-text;
       @extend %main-text--white;
       @extend %main-text--small;
+
+      & a {
+        @extend %main-link--mini;
+      }
+    }
+
+    &__button {
+      @extend %fancy-button;
+
+      &--inactive {
+        @extend %fancy-button--inactive;
+      }
+    }
+
+    & > h6 {
+      @extend %main-text;
+      color: $white_color;
+      margin: 0;
+    }
+
+    & > ul {
+      @extend %main-text;
+      @extend %main-text--white;
+      @extend %main-text--small;
+
+      margin: 0;
     }
   }
 

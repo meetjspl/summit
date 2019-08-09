@@ -83,7 +83,6 @@ module.exports = {
       filename: 'regulamin.html',
       template: './src/regulamin.html',
     }),
-
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(version),
     }),
