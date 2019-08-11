@@ -38,14 +38,14 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       style="display: none"
     >
-      <symbol id="icon-facebook" viewBox="0 0 1024 1024">
+      <symbol id="icon-facebook" viewbox="0 0 1024 1024">
         <path
           d="M608 192h160v-192h-160c-123.514 0-224 100.486-224
           224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346
           14.654-32 32-32z"
         ></path>
       </symbol>
-      <symbol id="icon-twitter" viewBox="0 0 1024 1024">
+      <symbol id="icon-twitter" viewbox="0 0 1024 1024">
         <path
           d="M1024 226.4c-37.6 16.8-78.2 28-120.6 33 43.4-26 76.6-67.2
           92.4-116.2-40.6 24-85.6 41.6-133.4 51-38.4-40.8-93-66.2-153.4-66.2-116
@@ -59,13 +59,13 @@
           104.8-108.6z"
         ></path>
       </symbol>
-      <symbol id="icon-menu" viewBox="0 0 1024 1024">
+      <symbol id="icon-menu" viewbox="0 0 1024 1024">
         <path
           d="M64 192h896v192h-896zM64 448h896v192h-896zM64
           704h896v192h-896z"
         ></path>
       </symbol>
-      <symbol id="icon-cross" viewBox="0 0 1024 1024">
+      <symbol id="icon-cross" viewbox="0 0 1024 1024">
         <path
           d="M1014.662
           822.66c-0.004-0.004-0.008-0.008-0.012-0.010l-310.644-310.65
@@ -305,31 +305,39 @@
                   Workshop by <a href="https://zeit.co/" title="ZEIT" target="_blank">ZEIT</a>
                 </h6>
               </div>
-              <p class="agenda__workshop__text">
+
+              <div class="agenda__workshop__text">
                 During the workshop we will introduce the participants to Next.js by going through
                 the steps to build a website that handles contact form submissions and sends them to
                 you in a Slack channel. We will also explain how external services like Slack or
                 Pusher can be leveraged using Now and Next.js, and walk you through the process to
                 deploy these applications on the ZEIT platform Now.
-              </p>
-              <p class="agenda__workshop__text">
-                <!-- TODO: Rework into a proper list -->
-                <strong>Requirements:</strong> <br />
-                • Own computer<br />
-                • JavaScript knowledge<br />
-                • Git knowledge<br />
-                • Some basic shell experience<br />
-                • Visual Studio Code, WebStorm, Atom, Vim or other editor installed and
-                configured<br />
-                • Git installed and configured<br />
-                • Node.js LTS and NPM installed and configured<br />
-                • GitHub account<br />
-                • Now.sh account<br />
-              </p>
-              <p class="agenda__workshop__text">
+              </div>
+
+              <div class="agenda__workshop__text">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>Own computer</li>
+                  <li>JavaScript knowledge</li>
+                  <li>Git knowledge</li>
+                  <li>Some basic shell experience</li>
+                  <li>
+                    Visual Studio Code, WebStorm, Atom, Vim or other editor installed and configured
+                  </li>
+                  <li>Git installed and configured</li>
+                  <li>Node.js LTS and NPM installed and configured</li>
+                  <li>GitHub account</li>
+                  <li>Now.sh account</li>
+                </ul>
+              </div>
+
+              <div class="agenda__workshop__text">
                 <strong>Workshop will be in English.</strong>
-              </p>
+              </div>
             </div>
+
+            <h3 class="agenda__day__heading">Agenda</h3>
+
             <ul class="agenda__list">
               <li class="agenda__list-item">
                 <time datetime="08:00">08:00</time>
@@ -497,14 +505,19 @@
           </p>
           <p class="tickets__text">
             <!-- TODO: Make more fancy/pleasent -->
-            Only 20 available seats!<br />
-            Regular workshop ticket price: 650 PLN (150€)<br />
-            <!-- TODO: Price in bold and $color-blue -->
+            Only <strong>20</strong> available seats!<br />
+            Regular workshop ticket price: <strong class="tickets__price">650 PLN (150€)</strong>
+            <!-- TODO: Price in $color-blue -->
           </p>
           <div class="tickets__center">
-            <a href="https://meetjs-summit2019.konfeo.com/" class="tickets__button"
-              >Register now!</a
+            <button
+              type="button"
+              disabled
+              href="https://meetjs-summit2019.konfeo.com/"
+              class="tickets__button"
             >
+              Available soon!
+            </button>
           </div>
         </div>
       </section>
