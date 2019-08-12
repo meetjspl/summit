@@ -51,4 +51,8 @@
   &__button {
     @extend %fancy-button;
   }
+
+  &__price {
+    color: $blue_color;
+  }
 }

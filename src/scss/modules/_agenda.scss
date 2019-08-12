@@ -85,6 +85,7 @@
       @extend %main-text;
       @extend %main-text--white;
       @extend %main-text--small;
+      margin-bottom: 32px;
 
       & a {
         @extend %main-link--mini;
