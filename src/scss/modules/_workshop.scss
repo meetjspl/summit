@@ -1,0 +1,118 @@
+.workshop {
+  &__content {
+    max-width: 636px;
+    margin: 0 auto 40px;
+  }
+
+  &__heading {
+    @extend %font-bold;
+    font-size: 2.2rem;
+    @include mediaquery('gt-medium') {
+      font-size: 2.8rem;
+    }
+
+    color: $green-color;
+    margin: 0;
+
+    &--special {
+      @extend %main-text--mini;
+      color: $grey_color;
+      font-weight: normal;
+      margin: 0 0 10px 0;
+    }
+
+    &--small {
+      @extend %main-text--mini;
+      color: $white_color;
+      margin: 0 0 10px 0;
+
+      & a {
+        @extend %main-link;
+        @extend %main-link--mini;
+      }
+    }
+  }
+
+  &__text {
+    @extend %main-text;
+    @extend %main-text--white;
+
+    &--small {
+      @extend %main-text--small;
+    }
+  }
+
+  &__features {
+    @extend %base-section;
+    margin-top: 80px;
+    background-color: $purple_color;
+
+    &__content {
+      max-width: 636px;
+      margin: 0 auto;
+    }
+
+    &__items {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      grid-gap: 24px;
+      max-width: 636px;
+      margin: 0 auto;
+
+      @include mediaquery('gt-medium') {
+        max-width: 1080px;
+        grid-template-columns: repeat(2, 100px 1fr);
+      }
+    }
+
+    &__item-image {
+      display: flex;
+      text-align: center;
+      align-self: center;
+
+      background-color: $white_color;
+      box-shadow: 0 0 10px 0 rgba($lightpurple_color, 0.15);
+      border-radius: 3px;
+
+      height: 100px;
+
+      & > a {
+        width: 100%;
+        padding: 10px;
+      }
+
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__item-content {
+      @extend %font-regular;
+      align-self: center;
+
+      > h3 {
+        font-size: 24px;
+        color: $blue-color;
+        margin: 0 0 8px 0;
+
+        & a {
+          @extend %main-link;
+          font-size: 24px !important;
+        }
+      }
+
+      > p {
+        font-size: 12px;
+        line-height: 1.4;
+        color: $white-color;
+        margin: 0;
+
+        @include mediaquery('gt-medium') {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

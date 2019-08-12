@@ -49,36 +49,10 @@
   }
 
   &__button {
-    display: inline-block;
-    position: relative;
-    background-color: $blue_color;
-    @extend %main-link;
-    @extend %main-link--white;
-    padding: 8px 16px;
+    @extend %fancy-button;
+  }
 
-    @include mediaquery('gt-medium') {
-      padding: 12px 24px;
-    }
-
-    &::before {
-      content: '';
-      width: calc(100% - 4px);
-      height: 3px;
-      display: block;
-      background-color: $darkblue_color;
-      position: absolute;
-      bottom: -3px;
-      left: 2px;
-    }
-
-    &:hover,
-    &:active {
-      color: $white_color;
-      background-color: $darkblue_color;
-
-      &::before {
-        background: darken($darkblue_color, 10%);
-      }
-    }
+  &__price {
+    color: $blue_color;
   }
 }
