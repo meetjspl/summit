@@ -166,6 +166,7 @@ module.exports = {
       { from: 'src/tickets.html', to: '.' },
       { from: 'src/images/facebook', to: 'images/facebook/' },
       { from: 'legacy-pages/', to: '..' },
+      { from: 'src/mck-parkings.jpg', to: '.' },
     ]),
     // new GitRevisionPlugin(),
     new webpack.DefinePlugin({
