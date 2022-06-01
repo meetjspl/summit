@@ -17,7 +17,7 @@ const version = {
   BRANCH: gitRevisionPlugin.branch(),
 };
 
-const YEAR = '2019';
+const YEAR = '2022';
 
 const buildPath = path.resolve(__dirname, 'dist');
 
