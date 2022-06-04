@@ -21,13 +21,13 @@
     "imagemin-webpack-plugin": "^2.1.5",
     "lodash": "^4.17.15",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.9.2",
     "normalize-scss": "^7.0.1",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "postcss-loader": "3.0.0",
     "prettier": "^1.13.7",
     "pretty-quick": "^1.6.0",
-    "sass-loader": "^7.0.3",
+    "sass": "1.51.0",
+    "sass-loader": "10.1.1",
     "style-loader": "^0.23.1",
     "svg-url-loader": "^2.3.2",
     "url-loader": "^1.0.1",
@@ -48,5 +48,6 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "dependencies": {}
 }

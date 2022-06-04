@@ -49,9 +49,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              outputStyle: 'expanded',
               sourceMap: true,
-              sourceMapContents: true,
             },
           },
         ],
