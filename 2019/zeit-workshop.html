@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="website: http://ogp.me/ns/website#">
+    <meta charset="utf-8" />
+    <title>meet.js Summit 2019 workshop with ZEIT</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta
+      property="description"
+      content="meet.js Summit 2019 workshop with ZEIT. During the workshop we will introduce the participants to Next.js by going through the
+    steps to build a website that handles contact form submissions and sends them to you in
+    a Slack channel. We will also explain how external services like Slack or Pusher can be
+    leveraged using Now and Next.js, and walk you through the process to deploy these
+    applications on the ZEIT platform Now."
+    />
+    <meta
+      property="og:title"
+      content="A day-long exploration of Next.js, ZEIT Now, Slack and Pusher"
+    />
+    <meta
+      property="og:description"
+      content="A day-long exploration of Next.js, ZEIT Now, Slack and Pusher. During the workshop we will introduce the participants to Next.js by going through the
+      steps to build a website that handles contact form submissions and sends them to you in
+      a Slack channel. We will also explain how external services like Slack or Pusher can be
+      leveraged using Now and Next.js, and walk you through the process to deploy these
+      applications on the ZEIT platform Now."
+    />
+    <meta
+      property="og:image"
+      content="https://summit.meetjs.pl/2019/images/facebook/fb-og-wokrshop-annon.png"
+    />
+    <meta propert="og:updated_time" content="1566477551" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="459634817724237" />
+    <meta property="og:url" content="https://summit.meetjs.pl/2019/zeit-workshop" />
+    <meta property="og:site_name" content="meet.js Summit 2019 workshop with ZEIT" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.ba9b854df8bc466c5a8a.css" rel="stylesheet"></head>
+
+  <body>
+    <script>
+      document.body.classList.add('has-js');
+    </script>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      style="display: none"
+    >
+      <symbol id="icon-facebook" viewbox="0 0 1024 1024">
+        <path
+          d="M608 192h160v-192h-160c-123.514 0-224 100.486-224
+          224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346
+          14.654-32 32-32z"
+        ></path>
+      </symbol>
+      <symbol id="icon-twitter" viewbox="0 0 1024 1024">
+        <path
+          d="M1024 226.4c-37.6 16.8-78.2 28-120.6 33 43.4-26 76.6-67.2
+          92.4-116.2-40.6 24-85.6 41.6-133.4 51-38.4-40.8-93-66.2-153.4-66.2-116
+          0-210 94-210 210 0 16.4 1.8 32.4 5.4
+          47.8-174.6-8.8-329.4-92.4-433-219.6-18 31-28.4 67.2-28.4 105.6 0 72.8
+          37 137.2 93.4 174.8-34.4-1-66.8-10.6-95.2-26.2 0 0.8 0 1.8 0 2.6 0
+          101.8 72.4 186.8 168.6 206-17.6 4.8-36.2 7.4-55.4 7.4-13.6
+          0-26.6-1.4-39.6-3.8 26.8 83.4 104.4 144.2 196.2 146-72 56.4-162.4
+          90-261 90-17 0-33.6-1-50.2-3 93.2 59.8 203.6 94.4 322.2 94.4 386.4 0
+          597.8-320.2 597.8-597.8 0-9.2-0.2-18.2-0.6-27.2 41-29.4 76.6-66.4
+          104.8-108.6z"
+        ></path>
+      </symbol>
+      <symbol id="icon-menu" viewbox="0 0 1024 1024">
+        <path
+          d="M64 192h896v192h-896zM64 448h896v192h-896zM64
+          704h896v192h-896z"
+        ></path>
+      </symbol>
+      <symbol id="icon-cross" viewbox="0 0 1024 1024">
+        <path
+          d="M1014.662
+          822.66c-0.004-0.004-0.008-0.008-0.012-0.010l-310.644-310.65
+          310.644-310.65c0.004-0.004 0.008-0.006 0.012-0.010 3.344-3.346
+          5.762-7.254 7.312-11.416 4.246-11.376
+          1.824-24.682-7.324-33.83l-146.746-146.746c-9.148-9.146-22.45-11.566-33.828-7.32-4.16
+          1.55-8.070 3.968-11.418 7.31 0 0.004-0.004 0.006-0.008 0.010l-310.648
+          310.652-310.648-310.65c-0.004-0.004-0.006-0.006-0.010-0.010-3.346-3.342-7.254-5.76-11.414-7.31-11.38-4.248-24.682-1.826-33.83
+          7.32l-146.748 146.748c-9.148 9.148-11.568 22.452-7.322 33.828 1.552
+          4.16 3.97 8.072 7.312 11.416 0.004 0.002 0.006 0.006 0.010
+          0.010l310.65 310.648-310.65 310.652c-0.002 0.004-0.006 0.006-0.008
+          0.010-3.342 3.346-5.76 7.254-7.314 11.414-4.248 11.376-1.826 24.682
+          7.322 33.83l146.748 146.746c9.15 9.148 22.452 11.568 33.83 7.322
+          4.16-1.552 8.070-3.97 11.416-7.312 0.002-0.004 0.006-0.006
+          0.010-0.010l310.648-310.65 310.648 310.65c0.004 0.002 0.008 0.006
+          0.012 0.008 3.348 3.344 7.254 5.762 11.414 7.314 11.378 4.246 24.684
+          1.826 33.828-7.322l146.746-146.748c9.148-9.148 11.57-22.454
+          7.324-33.83-1.552-4.16-3.97-8.068-7.314-11.414z"
+        ></path>
+      </symbol>
+    </svg>
+
+    <header class="main-header">
+      <div class="main-header__content">
+        <div class="main-logo">
+          <a class="main-logo__link" href="/#hero" data-scroll>
+            <img class="main-logo__image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYwAAACICAMAAADDASzaAAABtlBMVEUAAAD///+921n///+921n///8kn6u921n///8kn6v///////+921n///////+921n///+921m921m921m921n///8kn6u921nP5Yn///8kn6v///8kn6u921m921m921n///////+921kkn6v///////////+921kkn6v///+921n///8kn6u921n///+921n///+921m921n///+921m921kkn6skn6u921m921m921m921n///8kn6skn6v///+921n///+921m921kkn6v///8kn6v///+921n///+921n///////+921m921n///+921m921m921n///////8kn6u921n///////+921kkoKwkn6v///+921n///////8kn6v///////+921m921n///8kn6u921kinqskn6skn6v///8kn6v///////////8kn6u921m921n///////////+921n///////8kn6v///+921kkn6skn6skn6v///////////+921n///////8kn6skn6v///8kn6v///8kn6sOn62921lQmaBoqK7///+921kkn6tBA/A2AAAAj3RSTlMAwSU5NM6u+n5HS4w5VAwen/TBKRlwN1kEcg0H59s9CO7qoX4n+tOt1OHhYCeaWLuCbebX0cuyaSIV8LOroG8RiWxC18C6ejMtGZOGZ1/GQzCDUi71gw3m26ZPH+3rx7OqkHVnTB4VDwfz7ahcP/DKynpzNyEVCpqWdlFFP/iTeygkt4lH37iji07j+RO+cgyxdFoAAA8pSURBVHja7Nv/SxphHMDxj9wMmyjCSCxjzG2KooggrP1gEyETWeAPKraSTEHpi5WQUmt9G7W19stn9x+vWls+93nu7vEqz233+nGcGb3v7nnueW5gMW5q9g1jCSymacmsV2AxzdS0zJgBiygrxr/MijFCrBj387nRmOjjkKwY5nEgq27FME8DWQ4rhnkmrRijw4oxQqwYI8SKMUKsGCOExHjIhcJ5sJgWY+14ljEOlvvFsIiyYvzLrBgj5O+PkfaDPjf8DUyO0VoD4wqJPXvIHojYk6nEeRp4mi7n9TGhSii0sn8iGWjSax7EXVfiT/MDf9qdl+Kua/FiDwREkZWBoWiN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" alt="meet.js summit logo" />
+          </a>
+        </div>
+
+        <button
+          class="button-menu js-button-menu"
+          title="Open/close menu"
+          aria-label="Navigation menu"
+          role="button"
+          aria-controls="navigation"
+          aria-expanded="true"
+          type="button"
+          id="open-menu-button"
+          aria-haspopup="true"
+        >
+          <svg class="button-menu__icon button-menu__menu-icon">
+            <use xlink:href="/#icon-menu"></use>
+          </svg>
+          <svg class="button-menu__icon button-menu__close-icon">
+            <use xlink:href="/#icon-cross"></use>
+          </svg>
+        </button>
+
+        <div class="main-header__nav">
+          <nav id="navigation" class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a
+                  class="main-nav__link"
+                  href="/"
+                  title="Find us in Katowice"
+                  aria-label="Find us in Katowice"
+                  >#conference</a
+                >
+              </li>
+              <li class="main-nav__item">
+                <a
+                  class="main-nav__link"
+                  href="/#code-of-conduct"
+                  title="Read the Code of Conduct"
+                  aria-label="Read the Code of Conduct"
+                  >#code-of-conduct</a
+                >
+              </li>
+            </ul>
+            <div class="tickets-button">
+              <a href="#tickets" class="tickets-button__link">#register</a>
+            </div>
+          </nav>
+
+          <nav class="social-nav">
+            <ul class="social-nav__list">
+              <li class="social-nav__item">
+                <a
+                  class="social-nav__link"
+                  href="https://www.facebook.com/events/333117567396689/?active_tab=discussion"
+                  title="Find us on
+                  Facebook"
+                >
+                  <svg class="social-nav__icon">
+                    <use xlink:href="/#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-nav__item">
+                <a
+                  class="social-nav__link"
+                  href="https://twitter.com/meetjs"
+                  title="Follow us on Twitter"
+                >
+                  <svg class="social-nav__icon">
+                    <use xlink:href="/#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="workshop__features" id="features">
+        <div class="workshop__content">
+          <h2 class="workshop__heading">Introduction to Next.js apps on ZEIT Now</h2>
+          <h3 class="workshop__heading workshop__heading--special">
+            A day-long exploration of Next.js, ZEIT Now, Slack and Pusher
+          </h3>
+          <h4 class="workshop__heading workshop__heading--small">
+            Workshop by <a href="https://zeit.co/" title="ZEIT" target="_blank">ZEIT</a>
+          </h4>
+          <p class="workshop__text">
+            During the workshop we will introduce the participants to Next.js by going through the
+            steps to build a website that handles contact form submissions and sends them to you in
+            a Slack channel. We will also explain how external services like Slack or Pusher can be
+            leveraged using Now and Next.js, and walk you through the process to deploy these
+            applications on the ZEIT platform Now.
+          </p>
+        </div>
+
+        <div class="workshop__features__items">
+          <div class="workshop__features__item-image">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ni4zICg4MTcxNikgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJuZXh0LWpzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4wMDAwMDAsIDI2LjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOC45MTQ1OTQ2LDEyLjcgTDMzLjk3MTM1MTQsMTIuNyBMMzMuOTcxMzUxNCwxMy44OTk0NTk1IEwyMC4yOTUxMzUxLDEzLjg5OTQ1OTUgTDIwLjI5NTEzNTEsMjIuOTI1OTQ1OSBMMzMuMTU1Njc1NywyMi45MjU5NDU5IEwzMy4xNTU2NzU3LDI0LjEyNTQwNTQgTDIwLjI5NTEzNTEsMjQuMTI1NDA1NCBMMjAuMjk1MTM1MSwzNC4wMzU2NzU3IEwzNC4xMjgxMDgxLDM0LjAzNTY3NTcgTDM0LjEyODEwODEsMzUuMjM1MTM1MSBMMTguOTE0NTk0NiwzNS4yMzUxMzUxIEwxOC45MTQ1OTQ2LDEyLjcgWiBNMzUuMzIsMTIuNyBMMzYuOTIsMTIuNyBMNDQuMDA5MTg5MiwyMi42MTAyNzAzIEw1MS4yNTUxMzUxLDEyLjcgTDYxLjExMDgxMDgsMC4xMTE4OTE4OTIgTDQ0LjkxODkxODksMjMuNjUxODkxOSBMNTMuMjYyNzAyNywzNS4yMzUxMzUxIEw1MS42LDM1LjIzNTEzNTEgTDQ0LjAwOTE4OTIsMjQuNjkzNTEzNSBMMzYuMzg3MDI3LDM1LjIzNTEzNTEgTDM0Ljc1NTY3NTcsMzUuMjM1MTM1MSBMNDMuMTYyMTYyMiwyMy42NTE4OTE5IEwzNS4zMjA1NDA1LDEyLjcgTDM1LjMyLDEyLjcgWiBNNTMuODU4OTE4OSwxMy44OTk0NTk1IEw1My44NTg5MTg5LDEyLjcgTDcxLjAxNjc1NjgsMTIuNyBMNzEuMDE2NzU2OCwxMy44OTk0NTk1IEw2My4xMTI0MzI0LDEzLjg5OTQ1OTUgTDYzLjExMjQzMjQsMzUuMjM0NTk0NiBMNjEuNzMxODkxOSwzNS4yMzQ1OTQ2IEw2MS43MzE4OTE5LDEzLjg5OTQ1OTUgTDUzLjg1OTQ1OTUsMTMuODk5NDU5NSBMNTMuODU4OTE4OSwxMy44OTk0NTk1IFogTTAuMDc4Mzc4Mzc4NCwxMi43IEwxLjgwMzc4Mzc4LDEyLjcgTDI1LjU5MzUxMzUsNDguMzc3Mjk3MyBMMTUuNzYyMTYyMiwzNS4yMzUxMzUxIEwxLjUyMTA4MTA4LDE0LjQwNDMyNDMgTDEuNDU4Mzc4MzgsMzUuMjM1MTM1MSBMMC4wNzgzNzgzNzg0LDM1LjIzNTEzNTEgTDAuMDc4Mzc4Mzc4NCwxMi43IFogTTcwLjg3ODM3ODQsMzMuNjczNTEzNSBDNzAuNTk1Njc1NywzMy42NzM1MTM1IDcwLjM4NDMyNDMsMzMuNDU0NTk0NiA3MC4zODQzMjQzLDMzLjE3MTg5MTkgQzcwLjM4NDMyNDMsMzIuODg4NjQ4NiA3MC41OTU2NzU3LDMyLjY2OTcyOTcgNzAuODc3ODM3OCwzMi42Njk3Mjk3IEM3MS4xNjMyNDMyLDMyLjY2OTcyOTcgNzEuMzcxMzUxNCwzMi44ODg2NDg2IDcxLjM3MTM1MTQsMzMuMTcxODkxOSBDNzEuMzcxMzUxNCwzMy40NTQ1OTQ2IDcxLjE2MzI0MzIsMzMuNjczNTEzNSA3MC44Nzc4Mzc4LDMzLjY3MzUxMzUgTDcwLjg3ODM3ODQsMzMuNjczNTEzNSBaIE03Mi4yMzQwNTQxLDMyLjM1Mjk3MyBMNzIuOTcyOTczLDMyLjM1Mjk3MyBDNzIuOTgzMjQzMiwzMi43NTQwNTQxIDczLjI3NTY3NTcsMzMuMDIzMjQzMiA3My43MDQ4NjQ5LDMzLjAyMzI0MzIgQzc0LjE4NDg2NDksMzMuMDIzMjQzMiA3NC40NTY3NTY4LDMyLjczNDA1NDEgNzQuNDU2NzU2OCwzMi4xOTEzNTE0IEw3NC40NTY3NTY4LDI4Ljc1NTY3NTcgTDc1LjIwODY0ODYsMjguNzU1Njc1NyBMNzUuMjA4NjQ4NiwzMi4xOTQ1OTQ2IEM3NS4yMDg2NDg2LDMzLjE3MTg5MTkgNzQuNjQ0ODY0OSwzMy43MzQ1OTQ2IDczLjcxMTM1MTQsMzMuNzM0NTk0NiBDNzIuODM1Njc1NywzMy43MzQ1OTQ2IDcyLjIzNDU5NDYsMzMuMTg4NjQ4NiA3Mi4yMzQ1OTQ2LDMyLjM1Mjk3MyBMNzIuMjM0MDU0MSwzMi4zNTI5NzMgWiBNNzYuMTkxODkxOSwzMi4zMDk3Mjk3IEw3Ni45MzcyOTczLDMyLjMwOTcyOTcgQzc3LjAwMTA4MTEsMzIuNzcwODEwOCA3Ny40NTA4MTA4LDMzLjA2Mzc4MzggNzguMDk4OTE4OSwzMy4wNjM3ODM4IEM3OC43MDI3MDI3LDMzLjA2Mzc4MzggNzkuMTQ1OTQ1OSwzMi43NTAyNzAzIDc5LjE0NTk0NTksMzIuMzE5NDU5NSBDNzkuMTQ1OTQ1OSwzMS45NDkxODkyIDc4Ljg2NDMyNDMsMzEuNzI2NDg2NSA3OC4yMjI3MDI3LDMxLjU3NTEzNTEgTDc3LjU5ODM3ODQsMzEuNDIzNzgzOCBDNzYuNzIyNzAyNywzMS4yMTgzNzg0IDc2LjMyMjcwMjcsMzAuNzkzNTEzNSA3Ni4zMjI3MDI3LDMwLjA3OTQ1OTUgQzc2LjMyMjcwMjcsMjkuMjEzNTEzNSA3Ny4wMjc1Njc2LDI4LjYzNzI5NzMgNzguMDg0ODY0OSwyOC42MzcyOTczIEM3OS4wNjg2NDg2LDI4LjYzNzI5NzMgNzkuNzg3NTY3NiwyOS4yMTM1MTM1IDc5LjgzMDgxMDgsMzAuMDMxODkxOSBMNzkuMDk4OTE4OSwzMC4wMzE4OTE5IEM3OS4wMjg2NDg2LDI5LjU4NDMyNDMgNzguNjM5NDU5NSwyOS4zMDQzMjQzIDc4LjA3NTEzNTEsMjkuMzA0MzI0MyBDNzcuNDgwNTQwNSwyOS4zMDQzMjQzIDc3LjA4NDg2NDksMjkuNTkwODEwOCA3Ny4wODQ4NjQ5LDMwLjAyODY0ODYgQzc3LjA4NDg2NDksMzAuMzc1Njc1NyA3Ny4zNCwzMC41NzQ1OTQ2IDc3Ljk3MTM1MTQsMzAuNzIyNzAyNyBMNzguNTA0ODY0OSwzMC44NTQwNTQxIEM3OS40OTgzNzg0LDMxLjA4NjQ4NjUgNzkuOTA4MTA4MSwzMS40OTA4MTA4IDc5LjkwODEwODEsMzIuMjIxNjIxNiBDNzkuOTA4MTA4MSwzMy4xNTEzNTE0IDc5LjE4OTE4OTIsMzMuNzM0NTk0NiA3OC4wNDE2MjE2LDMzLjczNDU5NDYgQzc2Ljk2NzU2NzYsMzMuNzM0NTk0NiA3Ni4yNDU0MDU0LDMzLjE3ODM3ODQgNzYuMTkxODkxOSwzMi4zMDkxODkyIEw3Ni4xOTE4OTE5LDMyLjMwOTcyOTcgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" alt="Next.js" />
+          </div>
+          <div class="workshop__features__item-content">
+            <h3><a href="https://nextjs.org/" title="Next.js" target="_blank">Next.js</a></h3>
+            <p>
+              An opinionated, feature-rich lightweight framework for static and server‑rendered
+              applications.<br />
+              “React Applications Made Simple”.
+            </p>
+          </div>
+
+          <div class="workshop__features__item-image">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ni4zICg4MTcxNikgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJub3ctYmxhY2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLjAwMDAwMCwgMTQuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTQwLDAuMjUwNzgzNjk5IEwwLjI1LDcyLjI4ODQwMTIgTDc5LjY4NzQ5OTYsNzIuMjg4NDAxMiBMNDAsMC4yNTA3ODM2OTkgWiBNMzYuNjI1LDE0Ljc5NjIzODMgTDY1LjU2MjUsNjguMTUwNDcwMyBMNy4yNSw2OC4xNTA0NzAzIEwzNi42MjUsMTQuNzk2MjM4MyBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="Now.sh" />
+          </div>
+          <div class="workshop__features__item-content">
+            <h3><a href="https://zeit.co/now" title="Now.sh" target="_blank">Now.sh</a></h3>
+            <p>
+              ZEIT Now is a cloud platform for static sites and serverless functions. It enables
+              developers to host websites and web services that deploy instantly, scale
+              automatically, and requires no supervision, all with no configuration.
+            </p>
+          </div>
+
+          <div class="workshop__features__item-image">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ni4zICg4MTcxNikgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTbGFja19NYXJrX01vbm9jaHJvbWVfQmxhY2siIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLjAwMDAwMCwgMTAuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgNDEuOTM1NDg0KSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTcuMDMyMjU4MSw4LjUxNjEyOTAzIEMxNy4wMzIyNTgxLDEzLjA5Njc3NDIgMTMuMjkwMzIyNiwxNi44Mzg3MDk3IDguNzA5Njc3NDIsMTYuODM4NzA5NyBDNC4xMjkwMzIyNiwxNi44Mzg3MDk3IDAuMzg3MDk2Nzc0LDEzLjA5Njc3NDIgMC4zODcwOTY3NzQsOC41MTYxMjkwMyBDMC4zODcwOTY3NzQsMy45MzU0ODM4NyA0LjEyOTAzMjI2LDAuMTkzNTQ4Mzg3IDguNzA5Njc3NDIsMC4xOTM1NDgzODcgTDE3LjAzMjI1ODEsMC4xOTM1NDgzODcgTDE3LjAzMjI1ODEsOC41MTYxMjkwMyBaIiBpZD0iUGF0aCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIxLjIyNTgwNjUsOC41MTYxMjkwMyBDMjEuMjI1ODA2NSwzLjkzNTQ4Mzg3IDI0Ljk2Nzc0MTksMC4xOTM1NDgzODcgMjkuNTQ4Mzg3MSwwLjE5MzU0ODM4NyBDMzQuMTI5MDMyMywwLjE5MzU0ODM4NyAzNy44NzA5Njc3LDMuOTM1NDgzODcgMzcuODcwOTY3Nyw4LjUxNjEyOTAzIEwzNy44NzA5Njc3LDI5LjM1NDgzODcgQzM3Ljg3MDk2NzcsMzMuOTM1NDgzOSAzNC4xMjkwMzIzLDM3LjY3NzQxOTQgMjkuNTQ4Mzg3MSwzNy42Nzc0MTk0IEMyNC45Njc3NDE5LDM3LjY3NzQxOTQgMjEuMjI1ODA2NSwzMy45MzU0ODM5IDIxLjIyNTgwNjUsMjkuMzU0ODM4NyBDMjEuMjI1ODA2NSwyOS4zNTQ4Mzg3IDIxLjIyNTgwNjUsOC41MTYxMjkwMyAyMS4yMjU4MDY1LDguNTE2MTI5MDMgWiIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTI5LjU0ODM4NzEsMTcuMDMyMjU4MSBDMjQuOTY3NzQxOSwxNy4wMzIyNTgxIDIxLjIyNTgwNjUsMTMuMjkwMzIyNiAyMS4yMjU4MDY1LDguNzA5Njc3NDIgQzIxLjIyNTgwNjUsNC4xMjkwMzIyNiAyNC45Njc3NDE5LDAuMzg3MDk2Nzc0IDI5LjU0ODM4NzEsMC4zODcwOTY3NzQgQzM0LjEyOTAzMjMsMC4zODcwOTY3NzQgMzcuODcwOTY3Nyw0LjEyOTAzMjI2IDM3Ljg3MDk2NzcsOC43MDk2Nzc0MiBMMzcuODcwOTY3NywxNy4wMzIyNTgxIEwyOS41NDgzODcxLDE3LjAzMjI1ODEgWiIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yOS41NDgzODcxLDIxLjIyNTgwNjUgQzM0LjEyOTAzMjMsMjEuMjI1ODA2NSAzNy44NzA5Njc3LDI0Ljk2Nzc0MTkgMzcuODcwOTY3NywyOS41NDgzODcxIEMzNy44NzA5Njc3LDM0LjEyOTAzMjMgMzQuMTI5MDMyMywzNy44NzA5Njc3IDI5LjU0ODM4NzEsMzcuODcwOTY3NyBMOC43MDk2Nzc0MiwzNy44NzA5Njc3IEM0LjEyOTAzMjI2LDM3Ljg3MDk2NzcgMC4zODcwOTY3NzQsMzQuMTI5MDMyMyAwLjM4NzA5Njc3NCwyOS41NDgzODcxIEMwLjM4NzA5Njc3NCwyNC45Njc3NDE5IDQuMTI5MDMyMjYsMjEuMjI1ODA2NSA4LjcwOTY3NzQyLDIxLjIyNTgwNjUgQzguNzA5Njc3NDIsMjEuMjI1ODA2NSAyOS41NDgzODcxLDIxLjIyNTgwNjUgMjkuNTQ4Mzg3MSwyMS4yMjU4MDY1IFoiIGlkPSJQYXRoIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MS45MzU0ODQsIDAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjEuMDMyMjU4MSwyOS41NDgzODcxIEMyMS4wMzIyNTgxLDI0Ljk2Nzc0MTkgMjQuNzc0MTkzNSwyMS4yMjU4MDY1IDI5LjM1NDgzODcsMjEuMjI1ODA2NSBDMzMuOTM1NDgzOSwyMS4yMjU4MDY1IDM3LjY3NzQxOTQsMjQuOTY3NzQxOSAzNy42Nzc0MTk0LDI5LjU0ODM4NzEgQzM3LjY3NzQxOTQsMzQuMTI5MDMyMyAzMy45MzU0ODM5LDM3Ljg3MDk2NzcgMjkuMzU0ODM4NywzNy44NzA5Njc3IEwyMS4wMzIyNTgxLDM3Ljg3MDk2NzcgTDIxLjAzMjI1ODEsMjkuNTQ4Mzg3MSBaIiBpZD0iUGF0aCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2LjgzODcwOTcsMjkuNTQ4Mzg3MSBDMTYuODM4NzA5NywzNC4xMjkwMzIzIDEzLjA5Njc3NDIsMzcuODcwOTY3NyA4LjUxNjEyOTAzLDM3Ljg3MDk2NzcgQzMuOTM1NDgzODcsMzcuODcwOTY3NyAwLjE5MzU0ODM4NywzNC4xMjkwMzIzIDAuMTkzNTQ4Mzg3LDI5LjU0ODM4NzEgTDAuMTkzNTQ4Mzg3LDguNzA5Njc3NDIgQzAuMTkzNTQ4Mzg3LDQuMTI5MDMyMjYgMy45MzU0ODM4NywwLjM4NzA5Njc3NCA4LjUxNjEyOTAzLDAuMzg3MDk2Nzc0IEMxMy4wOTY3NzQyLDAuMzg3MDk2Nzc0IDE2LjgzODcwOTcsNC4xMjkwMzIyNiAxNi44Mzg3MDk3LDguNzA5Njc3NDIgTDE2LjgzODcwOTcsMjkuNTQ4Mzg3MSBaIiBpZD0iUGF0aCI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDEuOTM1NDg0LCA0MS45MzU0ODQpIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik04LjUxNjEyOTAzLDIxLjAzMjI1ODEgQzEzLjA5Njc3NDIsMjEuMDMyMjU4MSAxNi44Mzg3MDk3LDI0Ljc3NDE5MzUgMTYuODM4NzA5NywyOS4zNTQ4Mzg3IEMxNi44Mzg3MDk3LDMzLjkzNTQ4MzkgMTMuMDk2Nzc0MiwzNy42Nzc0MTk0IDguNTE2MTI5MDMsMzcuNjc3NDE5NCBDMy45MzU0ODM4NywzNy42Nzc0MTk0IDAuMTkzNTQ4Mzg3LDMzLjkzNTQ4MzkgMC4xOTM1NDgzODcsMjkuMzU0ODM4NyBMMC4xOTM1NDgzODcsMjEuMDMyMjU4MSBMOC41MTYxMjkwMywyMS4wMzIyNTgxIFoiIGlkPSJQYXRoIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNOC41MTYxMjkwMywxNi44Mzg3MDk3IEMzLjkzNTQ4Mzg3LDE2LjgzODcwOTcgMC4xOTM1NDgzODcsMTMuMDk2Nzc0MiAwLjE5MzU0ODM4Nyw4LjUxNjEyOTAzIEMwLjE5MzU0ODM4NywzLjkzNTQ4Mzg3IDMuOTM1NDgzODcsMC4xOTM1NDgzODcgOC41MTYxMjkwMywwLjE5MzU0ODM4NyBMMjkuMzU0ODM4NywwLjE5MzU0ODM4NyBDMzMuOTM1NDgzOSwwLjE5MzU0ODM4NyAzNy42Nzc0MTk0LDMuOTM1NDgzODcgMzcuNjc3NDE5NCw4LjUxNjEyOTAzIEMzNy42Nzc0MTk0LDEzLjA5Njc3NDIgMzMuOTM1NDgzOSwxNi44Mzg3MDk3IDI5LjM1NDgzODcsMTYuODM4NzA5NyBMOC41MTYxMjkwMywxNi44Mzg3MDk3IFoiIGlkPSJQYXRoIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="Slack" />
+          </div>
+          <div class="workshop__features__item-content">
+            <h3><a href="https://api.slack.com/" title="Slack" target="_blank">Slack</a></h3>
+            <p>
+              Slack apps extend and expand the capabilities of your Slack workspace. Cultivate
+              conversation, customize functionality, or integrate ingenious services. Slack apps
+              enhance internal communication and automate all kinds of marvelous or mundane tasks.
+            </p>
+          </div>
+
+          <div class="workshop__features__item-image">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ni4zICg4MTcxNikgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJwdXNoZXJfZnVsbC1sb2dvXzJjb2xvdXJzX3doaXRlX3BhZGRpbmciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI0LjAwMDAwMCwgMTAuMDAwMDAwKSIgZmlsbD0iIzAwMDAwMCIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTI1LjgxMjg3NTksNzkuNTQ2MjYxNCBMMjUuODEyODc1OSw1OS42MjAyMjQ5IEMyNS44MTIzMTgzLDU5LjU3NzQ3MSAyNS44MzU0Njk5LDU5LjUzNzkyMDMgMjUuODczMDIyNCw1OS41MTc0NzQ2IEw1MS40ODAzOTc3LDQ0LjczMTQ1ODQgQzUxLjUxNzk1MDEsNDQuNzExMDEyNyA1MS41NDExMDE3LDQ0LjY3MTQ2MiA1MS41NDA1NTQsNDQuNjI4NzA4MSBMNTEuNTQwNTU0LDM4Ljk2MjQwNTkgQzUxLjU0MTA4MDcsMzguOTE5ODAxNCA1MS41MTg1NjY1LDM4Ljg4MDIyODUgNTEuNDgxNjY4OCwzOC44NTg5MjE0IEM1MS40NDQ3NzExLDM4LjgzNzYxNDIgNTEuMzk5MjQyOSwzOC44Mzc4OTUgNTEuMzYyNjEwOCwzOC44NTk2NTU2IEwyNS45ODU3OTcxLDUzLjUwNzgzNjIgQzI1Ljk0OTE2NSw1My41Mjk1OTY4IDI1LjkwMzYzNjcsNTMuNTI5ODc3NiAyNS44NjY3MzksNTMuNTA4NTcwNCBDMjUuODI5ODQxMyw1My40ODcyNjMzIDI1LjgwNzMyNzEsNTMuNDQ3NjkwNCAyNS44MDc4NjM3LDUzLjQwNTA4NTkgTDI1LjgwNzg2MzcsNDcuNzM2Mjc3NiBDMjUuODA3ODUyNiw0Ny42OTM2Njk5IDI1LjgzMDg1MjgsNDcuNjU0Mzc3OSAyNS44NjgwMTAyLDQ3LjYzMzUyNzMgTDUxLjQ3NTM4NTUsMzIuODQ3NTExMSBDNTEuNTEyOTM3OSwzMi44MjcwNjU0IDUxLjUzNjA4OTUsMzIuNzg3NTE0NyA1MS41MzU1MzIsMzIuNzQ0NzYwOCBMNTEuNTM1NTMyLDI3LjA3ODQ1ODYgQzUxLjUzNDU0OTYsMjcuMDM2NTAxNyA1MS41MTE3NzEyLDI2Ljk5ODA5MDEgNTEuNDc1NDI3NCwyNi45NzcxMDI3IEM1MS40MzkwODM1LDI2Ljk1NjExNTQgNTEuMzk0NDI4OSwyNi45NTU1ODcgNTEuMzU3NTk4NiwyNi45NzU3MDgzIEwyNS45ODU3OTcxLDQxLjYyMzg4ODkgQzI1Ljk0OTE2NSw0MS42NDU2NDk1IDI1LjkwMzYzNjcsNDEuNjQ1OTMwMyAyNS44NjY3MzksNDEuNjI0NjIzMSBDMjUuODI5ODQxMyw0MS42MDMzMTYgMjUuODA3MzI3MSw0MS41NjM3NDMxIDI1LjgwNzg2MzcsNDEuNTIxMTM4NiBMMjUuODA3ODYzNywzNS44NTQ4MzY0IEMyNS44MDc5ODk2LDM1LjgxMTYxMDMgMjUuODMwODMzMiwzNS43NzE2MzQgMjUuODY4MDEwMiwzNS43NDk1OCBMNTEuNDc1Mzg1NSwyMC45NjM1NjM3IEM1MS41MTI1NDI4LDIwLjk0MjcxMzIgNTEuNTM1NTQzLDIwLjkwMzQyMTIgNTEuNTM1NTMyLDIwLjg2MDgxMzUgTDUxLjUzNTUzMiwxNS4xMjY4NDY1IEM1MS41MzMxNjEsMTUuMDQyOTQzNSA1MS40ODg5NDM5LDE0Ljk2NTc5ODcgNTEuNDE3NzQ1MSwxNC45MjEzNDU5IEwyNS45MjU2NTA2LDAuMjA1NTAwNTY1IEMyNS44NTI5MDUsMC4xNjI4OTU0ODggMjUuNzYyODIyMywwLjE2Mjg5NTQ4OCAyNS42OTAwNzY3LDAuMjA1NTAwNTY1IEwyMC44NDA3NjQ2LDMuMDA3MzI1MzQgQzIwLjgwMzU4NjIsMy4wMjgxNjE3OSAyMC43ODA1NjM2LDMuMDY3NDU2NTEgMjAuNzgwNTYzNiwzLjExMDA3NTYzIEMyMC43ODA1NjM2LDMuMTUyNjk0NzQgMjAuODAzNTg2MiwzLjE5MTk4OTQ3IDIwLjg0MDc2NDYsMy4yMTI4MjU5MSBMNDYuMjEyNTY2MSwxNy44NTg1MDAzIEM0Ni4yNDg0MjMsMTcuODgwMzI5MyA0Ni4yNzAzMDY4LDE3LjkxOTI3MTggNDYuMjcwMzA2OCwxNy45NjEyNTA2IEM0Ni4yNzAzMDY4LDE4LjAwMzIyOTQgNDYuMjQ4NDIzLDE4LjA0MjE3MTkgNDYuMjEyNTY2MSwxOC4wNjQwMDA5IEw0MS4zNjMyNTQsMjAuODYzMzE5NiBDNDEuMjg4OTYwMiwyMC45MDM0MjIgNDEuMTk5NDY3OSwyMC45MDM0MjIgNDEuMTI1MTc0MSwyMC44NjMzMTk2IEwxNS42MzU1ODU3LDYuMTQ0OTY4MTIgQzE1LjU2MTI5MTksNi4xMDQ4NjU3IDE1LjQ3MTc5OTYsNi4xMDQ4NjU3IDE1LjM5NzUwNTgsNi4xNDQ5NjgxMiBMMTAuNTQ4MTkzNiw4Ljk0NDI4Njc5IEMxMC41MTI0MDgxLDguOTY2NzUyMTggMTAuNDkwNjg1Niw5LjAwNjAzNzM3IDEwLjQ5MDY4NTYsOS4wNDgyOTAxMyBDMTAuNDkwNjg1Niw5LjA5MDU0Mjg5IDEwLjUxMjQwODEsOS4xMjk4MjgwNyAxMC41NDgxOTM2LDkuMTUyMjkzNDYgTDM1LjkxOTk5NTEsMjMuODA3OTkyMyBDMzUuOTU3MDQ1MSwyMy44Mjk1MjU0IDM1Ljk3OTg0MjIsMjMuODY5MTQyNyAzNS45Nzk4NDIyLDIzLjkxMTk5NTYgQzM1Ljk3OTg0MjIsMjMuOTU0ODQ4NiAzNS45NTcwNDUxLDIzLjk5NDQ2NTggMzUuOTE5OTk1MSwyNC4wMTU5OTkgTDMxLjA3NTY5NTIsMjYuODE1MzE3NiBDMzEuMDAxNDAxNCwyNi44NTU0MjAxIDMwLjkxMTkwOTEsMjYuODU1NDIwMSAzMC44Mzc2MTUzLDI2LjgxNTMxNzYgTDUuMzQ1NTIwOCwxMi4wODY5NDE4IEM1LjI2Nzk4MTY2LDEyLjA0MjE3NDUgNS4xNzI0NDk0OSwxMi4wNDIxNzQ1IDUuMDk0OTEwMzUsMTIuMDg2OTQxOCBMMC4wNjc2NjQ4MTYyLDE0Ljk4OTAxMDcgTDAuMDY3NjY0ODE2Miw2NC44MzA0MTYxIEMwLjA2NzY2NDgxNjIsNjQuODczMDIzOCAwLjA5MDY1Mzk2OTcsNjQuOTEyMzE1OCAwLjEyNzgxMTMyNyw2NC45MzMxNjY0IEw1LjAzNDc2Mzg1LDY3Ljc2NzU3MDUgQzUuMDcxOTgzODQsNjcuNzg3ODg5OCA1LjExNzE1Mjg1LDY3Ljc4NzExMTIgNS4xNTM2NTA0LDY3Ljc2NTUyMTEgQzUuMTkwMTQ3OTUsNjcuNzQzOTMxIDUuMjEyNTgxODQsNjcuNzA0NzE5MiA1LjIxMjY5NzI2LDY3LjY2MjMxNDEgTDUuMjEyNjk3MjYsMTguMTY2NzUxMiBDNS4yMTIxNjA3NSwxOC4xMjQxNDY2IDUuMjM0Njc0ODksMTguMDg0NTczOCA1LjI3MTU3MjYyLDE4LjA2MzI2NjYgQzUuMzA4NDcwMzQsMTguMDQxOTU5NSA1LjM1Mzk5ODU3LDE4LjA0MjI0MDMgNS4zOTA2MzA2OCwxOC4wNjQwMDA5IEwxMC4zMDAwODkzLDIwLjg5NTg5ODkgQzEwLjMzNTIwOTksMjAuOTE4NDE3OCAxMC4zNTY4MTk1LDIwLjk1NjkzOTIgMTAuMzU3NzI5NywyMC45OTg2NDkyIEwxMC4zNTc3Mjk3LDcwLjc3MjM4OTcgQzEwLjM1NzcxODYsNzAuODE0OTk3NCAxMC4zODA3MTg5LDcwLjg1NDI4OTUgMTAuNDE3ODc2Miw3MC44NzUxNCBMMTUuMzI0ODI4Nyw3My43MDcwMzgxIEMxNS4zNjE4Mjc0LDczLjcyODQwMzMgMTUuNDA3MzgyNCw3My43Mjg1NDA2IDE1LjQ0NDUwOTMsNzMuNzA3Mzk4OSBDMTUuNDgxNjM2MSw3My42ODYyNTcyIDE1LjUwNDc2MzMsNzMuNjQ3MDA5MiAxNS41MDUyNjgyLDczLjYwNDI4NzggTDE1LjUwNTI2ODIsMjQuMTA4NzI0OCBDMTUuNTA0NzMxNywyNC4wNjYxMjAzIDE1LjUyNzI0NTksMjQuMDI2NTQ3NCAxNS41NjQxNDM2LDI0LjAwNTI0MDMgQzE1LjYwMTA0MTMsMjMuOTgzOTMzMSAxNS42NDY1Njk2LDIzLjk4NDIxMzkgMTUuNjgzMjAxNywyNC4wMDU5NzQ2IEwyMC41OTAxNTQyLDI2LjgzNzg3MjYgQzIwLjYyNzMxMTUsMjYuODU4NzIzMiAyMC42NTAzMTE3LDI2Ljg5ODAxNTIgMjAuNjUwMzAwNywyNi45NDA2MjI5IEwyMC42NTAzMDA3LDc2LjcxMTg1NzMgQzIwLjY1MDM3MTcsNzYuNzU0NDYwMSAyMC42NzIwODM3LDc2Ljc5NDEwODIgMjAuNzA3OTQxMSw3Ni44MTcxMTM3IEwyNS42MTczOTk3LDc5LjY0OTAxMTcgQzI1LjY1NDA0NzgsNzkuNjgxODkxMyAyNS43MDcyOCw3OS42ODg1MDcyIDI1Ljc1MDg2MTYsNzkuNjY1NTk4OSBDMjUuNzk0NDQzMiw3OS42NDI2OTA2IDI1LjgxOTE3OCw3OS41OTUwOTIxIDI1LjgxMjg3NTksNzkuNTQ2MjYxNCBaIiBpZD0iUGF0aCI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="Pusher" />
+          </div>
+          <div class="workshop__features__item-content">
+            <h3><a href="https://pusher.com/" title="Pusher" target="_blank">Pusher</a></h3>
+            <p>
+              Pusher is a set of hosted APIs that makes it super-easy to quickly add real-time,
+              secure, bi-directional functionality to web and mobile apps, or any other Internet
+              connected device.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsor_offer" class="sponsor-offer">
+        <div class="sponsor-offer__content">
+          <div class="sponsor-offer__main-info">
+            <h2 class="sponsor-offer__heading"><span aria-hidden="true">#</span>sponsors</h2>
+            <p class="sponsor-offer__text">
+              Workshop is organized in collaboration with ZEIT and sponsored by Slack and Pusher.
+            </p>
+          </div>
+
+          <ul class="sponsor-offer__list sponsor-offer__list--small">
+            <li class="sponsor-offer__list-item">
+              <a href="https://zeit.co/" title="ZEIT" target="_blank">
+                <img alt="ZEIT" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ni4zICg4MTcxNikgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjExNC43MjA3NzUlIiB5MT0iMTgxLjI4MzI0NSUiIHgyPSIzOS41Mzk5MzA2JSIgeTI9IjEwMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0ZGRkZGRiIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDAwMDAwIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9IkFydGJvYXJkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cmVjdCBmaWxsPSIjRkZGRkZGIiB4PSIwIiB5PSIwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCI+PC9yZWN0PgogICAgICAgIDxnIGlkPSJ6ZWl0LWJsYWNrLWZ1bGwtbG9nbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjEuMDAwMDAwLCAxNDUuMDAwMDAwKSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlRyaWFuZ2xlIiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTEpIiBwb2ludHM9IjYyLjA2NjU1MyAwIDEyNC4xMzMxMDYgMTEwLjExNjQ4OSAwIDExMC4xMTY0ODkiPjwvcG9seWdvbj4KICAgICAgICAgICAgPHBhdGggZD0iTTIwOC43ODI2MDksODIuNzgyNjA4NyBMMjU4LjU3MzkxMyw4Mi43ODI2MDg3IEwyNTguNTczOTEzLDc0LjEzOTEzMDQgTDIyMS4yLDc0LjEzOTEzMDQgTDI1Ny45NjUyMTcsMjEuNjY5NTY1MiBMMjU3Ljk2NTIxNywxNC4xMjE3MzkxIEwyMDkuMzkxMzA0LDE0LjEyMTczOTEgTDIwOS4zOTEzMDQsMjIuNzY1MjE3NCBMMjQ1LjU0NzgyNiwyMi43NjUyMTc0IEwyMDguNzgyNjA5LDc1LjIzNDc4MjYgTDIwOC43ODI2MDksODIuNzgyNjA4NyBaIE0zMTAuNjc4MjYxLDgyLjc4MjYwODcgTDM1NS4zNTY1MjIsODIuNzgyNjA4NyBMMzU1LjM1NjUyMiw3NC4xMzkxMzA0IEwzMjAuNzgyNjA5LDc0LjEzOTEzMDQgTDMyMC43ODI2MDksNTIuMTA0MzQ3OCBMMzUwLjg1MjE3NCw1Mi4xMDQzNDc4IEwzNTAuODUyMTc0LDQzLjQ2MDg2OTYgTDMyMC43ODI2MDksNDMuNDYwODY5NiBMMzIwLjc4MjYwOSwyMi43NjUyMTc0IEwzNTUuMzU2NTIyLDIyLjc2NTIxNzQgTDM1NS4zNTY1MjIsMTQuMTIxNzM5MSBMMzEwLjY3ODI2MSwxNC4xMjE3MzkxIEwzMTAuNjc4MjYxLDgyLjc4MjYwODcgWiBNNDA5LjE2NTIxNyw4Mi43ODI2MDg3IEw0NTIuNzQ3ODI2LDgyLjc4MjYwODcgTDQ1Mi43NDc4MjYsNzQuMTM5MTMwNCBMNDM2LjA2OTU2NSw3NC4xMzkxMzA0IEw0MzYuMDY5NTY1LDIyLjc2NTIxNzQgTDQ1Mi43NDc4MjYsMjIuNzY1MjE3NCBMNDUyLjc0NzgyNiwxNC4xMjE3MzkxIEw0MDkuMTY1MjE3LDE0LjEyMTczOTEgTDQwOS4xNjUyMTcsMjIuNzY1MjE3NCBMNDI1Ljk2NTIxNywyMi43NjUyMTc0IEw0MjUuOTY1MjE3LDc0LjEzOTEzMDQgTDQwOS4xNjUyMTcsNzQuMTM5MTMwNCBMNDA5LjE2NTIxNyw4Mi43ODI2MDg3IFogTTUyNC40NTIxNzQsODIuNzgyNjA4NyBMNTM0LjU1NjUyMiw4Mi43ODI2MDg3IEw1MzQuNTU2NTIyLDIyLjc2NTIxNzQgTDU1Ny45MzA0MzUsMjIuNzY1MjE3NCBMNTU3LjkzMDQzNSwxNC4xMjE3MzkxIEw1MDEuMzIxNzM5LDE0LjEyMTczOTEgTDUwMS4zMjE3MzksMjIuNzY1MjE3NCBMNTI0LjQ1MjE3NCwyMi43NjUyMTc0IEw1MjQuNDUyMTc0LDgyLjc4MjYwODcgWiIgaWQ9IlpFSVQiIGZpbGw9IiMzMzMzMzMiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" />
+              </a>
+            </li>
+            <li class="sponsor-offer__list-item">
+              <a href="https://pusher.com/" title="Pusher" target="_blank">
+                <img alt="Pusher" src="pusher.f52a007759cc74371144.svg" />
+              </a>
+            </li>
+            <li class="sponsor-offer__list-item">
+              <a href="https://slack.com" title="Slack" target="_blank">
+                <img alt="Slack" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ni4zICg4MTcxNikgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxyZWN0IGZpbGw9IiNGRkZGRkYiIHg9IjAiIHk9IjAiIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIj48L3JlY3Q+CiAgICAgICAgPGcgaWQ9IlNsYWNrX1JHQiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAuMDAwMDAwLCAxMjkuMDAwMDAwKSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNzguNzk1MTgxLCAyLjI0ODk5NikiIGZpbGw9IiMwMDAwMDAiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNTYyMjQ4OTk2LDEwOS42Mzg1NTQgTDcuNTM0MTM2NTUsOTMuNDQ1NzgzMSBDMTUuMDY4MjczMSw5OS4wNjgyNzMxIDI1LjA3NjMwNTIsMTAxLjk5MTk2OCAzNC45NzE4ODc2LDEwMS45OTE5NjggQzQyLjI4MTEyNDUsMTAxLjk5MTk2OCA0Ni44OTE1NjYzLDk5LjE4MDcyMjkgNDYuODkxNTY2Myw5NC45MDc2MzA1IEM0Ni43NzkxMTY1LDgyLjk4Nzk1MTggMy4xNDg1OTQzOCw5Mi4zMjEyODUxIDIuODExMjQ0OTgsNjIuNDA5NjM4NiBDMi42OTg3OTUxOCw0Ny4yMjg5MTU3IDE2LjE5Mjc3MTEsMzUuNTM0MTM2NSAzNS4zMDkyMzY5LDM1LjUzNDEzNjUgQzQ2LjY2NjY2NjcsMzUuNTM0MTM2NSA1OC4wMjQwOTY0LDM4LjM0NTM4MTUgNjYuMTIwNDgxOSw0NC43NTUwMjAxIEw1OS41OTgzOTM2LDYxLjI4NTE0MDYgQzUyLjE3NjcwNjgsNTYuNTYyMjQ5IDQyLjk1NTgyMzMsNTMuMTg4NzU1IDM0LjE4NDczOSw1My4xODg3NTUgQzI4LjIyNDg5OTYsNTMuMTg4NzU1IDI0LjI4OTE1NjYsNTYgMjQuMjg5MTU2Niw1OS41OTgzOTM2IEMyNC40MDE2MDY0LDcxLjI5MzE3MjcgNjguMzY5NDc3OSw2NC44ODM1MzQxIDY4LjgxOTI3NzEsOTMuNDQ1NzgzMSBDNjguODE5Mjc3MSwxMDguOTYzODU1IDU1LjY2MjY1MDYsMTE5Ljg3MTQ4NiAzNi43NzEwODQzLDExOS44NzE0ODYgQzIyLjkzOTc1OSwxMTkuODcxNDg2IDEwLjIzMjkzMTcsMTE2LjYxMDQ0MiAwLjU2MjI0ODk5NiwxMDkuNjM4NTU0IiBpZD0iUGF0aCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTI2OC4wODAzMjEsODcuNTk4MzkzNiBDMjY0LjU5NDM3OCw5My42NzA2ODI3IDI1OC4wNzIyODksOTcuODMxMzI1MyAyNTAuNTM4MTUzLDk3LjgzMTMyNTMgQzIzOS40MDU2MjIsOTcuODMxMzI1MyAyMzAuNDA5NjM5LDg4LjgzNTM0MTQgMjMwLjQwOTYzOSw3Ny43MDI4MTEyIEMyMzAuNDA5NjM5LDY2LjU3MDI4MTEgMjM5LjQwNTYyMiw1Ny41NzQyOTcyIDI1MC41MzgxNTMsNTcuNTc0Mjk3MiBDMjU4LjA3MjI4OSw1Ny41NzQyOTcyIDI2NC41OTQzNzgsNjEuNzM0OTM5OCAyNjguMDgwMzIxLDY3LjgwNzIyODkgTDI4Ny4zMDkyMzcsNTcuMTI0NDk4IEMyODAuMTEyNDUsNDQuMzA1MjIwOSAyNjYuMjgxMTI0LDM1LjUzNDEzNjUgMjUwLjUzODE1MywzNS41MzQxMzY1IEMyMjcuMjYxMDQ0LDM1LjUzNDEzNjUgMjA4LjM2OTQ3OCw1NC40MjU3MDI4IDIwOC4zNjk0NzgsNzcuNzAyODExMiBDMjA4LjM2OTQ3OCwxMDAuOTc5OTIgMjI3LjI2MTA0NCwxMTkuODcxNDg2IDI1MC41MzgxNTMsMTE5Ljg3MTQ4NiBDMjY2LjM5MzU3NCwxMTkuODcxNDg2IDI4MC4xMTI0NSwxMTEuMjEyODUxIDI4Ny4zMDkyMzcsOTguMjgxMTI0NSBMMjY4LjA4MDMyMSw4Ny41OTgzOTM2IFoiIGlkPSJQYXRoIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiB4PSI3OC40ODk5NTk4IiB5PSIwLjU2MjI0ODk5NiIgd2lkdGg9IjI0LjA2NDI1NyIgaGVpZ2h0PSIxMTcuNzM0OTQiPjwvcmVjdD4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBwb2ludHM9IjI5Ni43NTUwMiAwLjU2MjI0ODk5NiAyOTYuNzU1MDIgMTE4LjI5NzE4OSAzMjAuODE5Mjc3IDExOC4yOTcxODkgMzIwLjgxOTI3NyA4Mi45ODc5NTE4IDM0OS4zODE1MjYgMTE4LjI5NzE4OSAzODAuMTkyNzcxIDExOC4yOTcxODkgMzQzLjg3MTQ4NiA3Ni4zNTM0MTM3IDM3Ny40OTM5NzYgMzcuMjIwODgzNSAzNDguMDMyMTI5IDM3LjIyMDg4MzUgMzIwLjgxOTI3NyA2OS43MTg4NzU1IDMyMC44MTkyNzcgMC41NjIyNDg5OTYiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNzQuMDcyMjg5LDg3LjgyMzI5MzIgQzE3MC41ODYzNDUsOTMuNTU4MjMyOSAxNjMuMzg5NTU4LDk3LjgzMTMyNTMgMTU1LjI5MzE3Myw5Ny44MzEzMjUzIEMxNDQuMTYwNjQzLDk3LjgzMTMyNTMgMTM1LjE2NDY1OSw4OC44MzUzNDE0IDEzNS4xNjQ2NTksNzcuNzAyODExMiBDMTM1LjE2NDY1OSw2Ni41NzAyODExIDE0NC4xNjA2NDMsNTcuNTc0Mjk3MiAxNTUuMjkzMTczLDU3LjU3NDI5NzIgQzE2My4zODk1NTgsNTcuNTc0Mjk3MiAxNzAuNTg2MzQ1LDYyLjA3MjI4OTIgMTc0LjA3MjI4OSw2Ny45MTk2Nzg3IEwxNzQuMDcyMjg5LDg3LjgyMzI5MzIgWiBNMTc0LjA3MjI4OSwzNy4yMjA4ODM1IEwxNzQuMDcyMjg5LDQ2Ljc3OTExNjUgQzE3MC4xMzY1NDYsNDAuMTQ0NTc4MyAxNjAuMzUzNDE0LDM1LjUzNDEzNjUgMTUwLjEyMDQ4MiwzNS41MzQxMzY1IEMxMjguOTc5OTIsMzUuNTM0MTM2NSAxMTIuMzM3MzQ5LDU0LjIwMDgwMzIgMTEyLjMzNzM0OSw3Ny41OTAzNjE0IEMxMTIuMzM3MzQ5LDEwMC45Nzk5MiAxMjguOTc5OTIsMTE5Ljg3MTQ4NiAxNTAuMTIwNDgyLDExOS44NzE0ODYgQzE2MC4zNTM0MTQsMTE5Ljg3MTQ4NiAxNzAuMTM2NTQ2LDExNS4yNjEwNDQgMTc0LjA3MjI4OSwxMDguNjI2NTA2IEwxNzQuMDcyMjg5LDExOC4xODQ3MzkgTDE5OC4xMzY1NDYsMTE4LjE4NDczOSBMMTk4LjEzNjU0NiwzNy4yMjA4ODM1IEwxNzQuMDcyMjg5LDM3LjIyMDg4MzUgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwIj4KICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCA3NC4yMTY4NjcpIiBmaWxsPSIjRTAxRTVBIiBpZD0iUGF0aCI+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTMwLjU4NjM0NTQsMTUuNzQyOTcxOSBDMzAuNTg2MzQ1NCwyMy45NTE4MDcyIDIzLjk1MTgwNzIsMzAuNTg2MzQ1NCAxNS43NDI5NzE5LDMwLjU4NjM0NTQgQzcuNTM0MTM2NTUsMzAuNTg2MzQ1NCAwLjg5OTU5ODM5NCwyMy45NTE4MDcyIDAuODk5NTk4Mzk0LDE1Ljc0Mjk3MTkgQzAuODk5NTk4Mzk0LDcuNTM0MTM2NTUgNy41MzQxMzY1NSwwLjg5OTU5ODM5NCAxNS43NDI5NzE5LDAuODk5NTk4Mzk0IEwzMC41ODYzNDU0LDAuODk5NTk4Mzk0IEwzMC41ODYzNDU0LDE1Ljc0Mjk3MTkgWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zOC4wMDgwMzIxLDE1Ljc0Mjk3MTkgQzM4LjAwODAzMjEsNy41MzQxMzY1NSA0NC42NDI1NzAzLDAuODk5NTk4Mzk0IDUyLjg1MTQwNTYsMC44OTk1OTgzOTQgQzYxLjA2MDI0MSwwLjg5OTU5ODM5NCA2Ny42OTQ3NzkxLDcuNTM0MTM2NTUgNjcuNjk0Nzc5MSwxNS43NDI5NzE5IEw2Ny42OTQ3NzkxLDUyLjg1MTQwNTYgQzY3LjY5NDc3OTEsNjEuMDYwMjQxIDYxLjA2MDI0MSw2Ny42OTQ3NzkxIDUyLjg1MTQwNTYsNjcuNjk0Nzc5MSBDNDQuNjQyNTcwMyw2Ny42OTQ3NzkxIDM4LjAwODAzMjEsNjEuMDYwMjQxIDM4LjAwODAzMjEsNTIuODUxNDA1NiBMMzguMDA4MDMyMSwxNS43NDI5NzE5IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDxnIGZpbGw9IiMzNkM1RjAiIGlkPSJQYXRoIj4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNTIuODUxNDA1NiwzMC4zNjE0NDU4IEM0NC42NDI1NzAzLDMwLjM2MTQ0NTggMzguMDA4MDMyMSwyMy43MjY5MDc2IDM4LjAwODAzMjEsMTUuNTE4MDcyMyBDMzguMDA4MDMyMSw3LjMwOTIzNjk1IDQ0LjY0MjU3MDMsMC42NzQ2OTg3OTUgNTIuODUxNDA1NiwwLjY3NDY5ODc5NSBDNjEuMDYwMjQxLDAuNjc0Njk4Nzk1IDY3LjY5NDc3OTEsNy4zMDkyMzY5NSA2Ny42OTQ3NzkxLDE1LjUxODA3MjMgTDY3LjY5NDc3OTEsMzAuMzYxNDQ1OCBMNTIuODUxNDA1NiwzMC4zNjE0NDU4IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNTIuODUxNDA1NiwzNy44OTU1ODIzIEM2MS4wNjAyNDEsMzcuODk1NTgyMyA2Ny42OTQ3NzkxLDQ0LjUzMDEyMDUgNjcuNjk0Nzc5MSw1Mi43Mzg5NTU4IEM2Ny42OTQ3NzkxLDYwLjk0Nzc5MTIgNjEuMDYwMjQxLDY3LjU4MjMyOTMgNTIuODUxNDA1Niw2Ny41ODIzMjkzIEwxNS42MzA1MjIxLDY3LjU4MjMyOTMgQzcuNDIxNjg2NzUsNjcuNTgyMzI5MyAwLjc4NzE0ODU5NCw2MC45NDc3OTEyIDAuNzg3MTQ4NTk0LDUyLjczODk1NTggQzAuNzg3MTQ4NTk0LDQ0LjUzMDEyMDUgNy40MjE2ODY3NSwzNy44OTU1ODIzIDE1LjYzMDUyMjEsMzcuODk1NTgyMyBMNTIuODUxNDA1NiwzNy44OTU1ODIzIFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc1LjIxNjg2NywgMC4wMDAwMDApIiBmaWxsPSIjMkVCNjdEIiBpZD0iUGF0aCI+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTM3LjEyMDQ4MTksNTIuNzM4OTU1OCBDMzcuMTIwNDgxOSw0NC41MzAxMjA1IDQzLjc1NTAyMDEsMzcuODk1NTgyMyA1MS45NjM4NTU0LDM3Ljg5NTU4MjMgQzYwLjE3MjY5MDgsMzcuODk1NTgyMyA2Ni44MDcyMjg5LDQ0LjUzMDEyMDUgNjYuODA3MjI4OSw1Mi43Mzg5NTU4IEM2Ni44MDcyMjg5LDYwLjk0Nzc5MTIgNjAuMTcyNjkwOCw2Ny41ODIzMjkzIDUxLjk2Mzg1NTQsNjcuNTgyMzI5MyBMMzcuMTIwNDgxOSw2Ny41ODIzMjkzIEwzNy4xMjA0ODE5LDUyLjczODk1NTggWiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yOS42OTg3OTUyLDUyLjczODk1NTggQzI5LjY5ODc5NTIsNjAuOTQ3NzkxMiAyMy4wNjQyNTcsNjcuNTgyMzI5MyAxNC44NTU0MjE3LDY3LjU4MjMyOTMgQzYuNjQ2NTg2MzUsNjcuNTgyMzI5MyAwLjAxMjA0ODE5MjgsNjAuOTQ3NzkxMiAwLjAxMjA0ODE5MjgsNTIuNzM4OTU1OCBMMC4wMTIwNDgxOTI4LDE1LjUxODA3MjMgQzAuMDEyMDQ4MTkyOCw3LjMwOTIzNjk1IDYuNjQ2NTg2MzUsMC42NzQ2OTg3OTUgMTQuODU1NDIxNywwLjY3NDY5ODc5NSBDMjMuMDY0MjU3LDAuNjc0Njk4Nzk1IDI5LjY5ODc5NTIsNy4zMDkyMzY5NSAyOS42OTg3OTUyLDE1LjUxODA3MjMgTDI5LjY5ODc5NTIsNTIuNzM4OTU1OCBaIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3NS4yMTY4NjcsIDc0LjIxNjg2NykiIGZpbGw9IiNFQ0IyMkUiIGlkPSJQYXRoIj4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTQuODU1NDIxNywzOC4wMDgwMzIxIEMyMy4wNjQyNTcsMzguMDA4MDMyMSAyOS42OTg3OTUyLDQ0LjY0MjU3MDMgMjkuNjk4Nzk1Miw1Mi44NTE0MDU2IEMyOS42OTg3OTUyLDYxLjA2MDI0MSAyMy4wNjQyNTcsNjcuNjk0Nzc5MSAxNC44NTU0MjE3LDY3LjY5NDc3OTEgQzYuNjQ2NTg2MzUsNjcuNjk0Nzc5MSAwLjAxMjA0ODE5MjgsNjEuMDYwMjQxIDAuMDEyMDQ4MTkyOCw1Mi44NTE0MDU2IEwwLjAxMjA0ODE5MjgsMzguMDA4MDMyMSBMMTQuODU1NDIxNywzOC4wMDgwMzIxIFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTQuODU1NDIxNywzMC41ODYzNDU0IEM2LjY0NjU4NjM1LDMwLjU4NjM0NTQgMC4wMTIwNDgxOTI4LDIzLjk1MTgwNzIgMC4wMTIwNDgxOTI4LDE1Ljc0Mjk3MTkgQzAuMDEyMDQ4MTkyOCw3LjUzNDEzNjU1IDYuNjQ2NTg2MzUsMC44OTk1OTgzOTQgMTQuODU1NDIxNywwLjg5OTU5ODM5NCBMNTIuMDc2MzA1MiwwLjg5OTU5ODM5NCBDNjAuMjg1MTQwNiwwLjg5OTU5ODM5NCA2Ni45MTk2Nzg3LDcuNTM0MTM2NTUgNjYuOTE5Njc4NywxNS43NDI5NzE5IEM2Ni45MTk2Nzg3LDIzLjk1MTgwNzIgNjAuMjg1MTQwNiwzMC41ODYzNDU0IDUyLjA3NjMwNTIsMzAuNTg2MzQ1NCBMMTQuODU1NDIxNywzMC41ODYzNDU0IFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" />
+              </a>
+            </li>
+          </ul>
+
+          <h3 class="sponsor-offer__subheading"><span>Partners</span></h3>
+          <ul class="sponsor-offer__list sponsor-offer__list--tiny">
+            <li class="sponsor-offer__list-item">
+              <a href="https://gruba.it/" title="Gruba IT" target="_blank">
+                <img src="grubait.63d10b31e5f282f6365a.svg" atl="Gruba IT" />
+              </a>
+            </li>
+            <li class="sponsor-offer__list-item">
+              <a href="http://english.us.edu.pl/" title="University of Silesia" target="_blank">
+                <img
+                  src="university-of-silesia_logo_vertical_rgb.aabc4bce051d597f3aef.png"
+                  atl="University of Silesia"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="schedule" class="agenda">
+        <div class="agenda__content">
+          <h2 class="agenda__heading"><span aria-hidden="true">#</span>workshop</h2>
+          <div class="agenda__day">
+            <h3 class="agenda__day__heading">Sunday, 29th September, 2019</h3>
+            <div class="agenda__workshop">
+              <div class="agenda__workshop__heading">
+                <time datetime="08:00">08:00</time> - <time datetime="18:00">18:00</time>
+                <h4>
+                  Introduction to Next.js apps on ZEIT Now
+                </h4>
+                <h5>University of Silesia, Kazimierz Lepszy Hall, 12 Bankowa Street</h5>
+                <h6>
+                  Workshop by <a href="https://zeit.co/" title="ZEIT" target="_blank">ZEIT</a>
+                </h6>
+              </div>
+
+              <div class="agenda__workshop__text">
+                During the workshop we will introduce the participants to Next.js by going through
+                the steps to build a website that handles contact form submissions and sends them to
+                you in a Slack channel. We will also explain how external services like Slack or
+                Pusher can be leveraged using Now and Next.js, and walk you through the process to
+                deploy these applications on the ZEIT platform Now.
+              </div>
+
+              <div class="agenda__workshop__text">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>Own computer</li>
+                  <li>JavaScript knowledge</li>
+                  <li>Git knowledge</li>
+                  <li>Some basic shell experience</li>
+                  <li>
+                    Visual Studio Code, WebStorm, Atom, Vim or other editor installed and configured
+                  </li>
+                  <li>Git installed and configured</li>
+                  <li>Node.js LTS and NPM installed and configured</li>
+                  <li>GitHub account</li>
+                  <li>Now.sh account</li>
+                </ul>
+              </div>
+
+              <div class="agenda__workshop__text">
+                <strong>Workshop will be in English.</strong>
+              </div>
+            </div>
+
+            <h3 class="agenda__day__heading">Agenda</h3>
+
+            <ul class="agenda__list">
+              <li class="agenda__list-item">
+                <time datetime="08:00">08:00</time>
+                <h3>Breakfast & Workshop registration</h3>
+                <h4>University of Silesia, Kazimierz Lepszy Hall, 12 Bankowa Street</h4>
+                <p>
+                  Have your ticket ready and follow our staff instructions, so everything goes
+                  smoothly. After you pick your badge, enjoy some fine refreshments and appetizers.
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <h3>Part I</h3>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Introductions
+                </p>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Dive into brief React intro (if needed)
+                </p>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Introduce Next.js (walk through building first application)
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <h3>Coffee break</h3>
+              </li>
+              <li class="agenda__list-item">
+                <h3>Part II</h3>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Show Slack demo application we will be walking through
+                </p>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Walk through steps to build Slack demo application answering questions as needed
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <h3>Lunch break</h3>
+              </li>
+              <li class="agenda__list-item">
+                <h3>Part III</h3>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Dive into deploying the Slack demo application to Now
+                </p>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Show demo Pusher application built with Next.js
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <h3>Coffee break</h3>
+              </li>
+              <li class="agenda__list-item">
+                <h3>Part IV</h3>
+              </li>
+              <li class="agenda__list-item agenda__list-item--special">
+                <p>
+                  Explain how external services can be leveraged using Now and Next.js
+                </p>
+              </li>
+              <li class="agenda__list-item">
+                <time datetime="18:00">18:00</time>
+                <h3>Workshop closing</h3>
+                <p>
+                  Wrap up answering any questions.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="speakers" id="speakers">
+        <h2 class="speakers__heading"><span aria-hidden="true">#</span>mentors</h2>
+        <div class="speakers__content">
+          <ul class="speakers__list">
+            <li>
+              <article class="speaker-box">
+                <img
+                  class="speaker-box__image"
+                  src="speaker-jj-kasper.f67d42cb0f4946991927.jpg"
+                  alt="Photo of speaker: JJ Kasper"
+                />
+                <div class="speaker-box__info">
+                  <div class="speaker-box__header">
+                    <div>
+                      <h3>JJ Kasper</h3>
+                      <a
+                        href="https://twitter.com/_ijjk"
+                        target="_blank"
+                        title="Twitter profile - JJ Kasper"
+                        >@_ijjk</a
+                      >
+                    </div>
+                    <div>
+                      <a href="https://zeit.co/" target="_blank" title="ZEIT"
+                        ><strong>ZEIT</strong></a
+                      >
+                    </div>
+                  </div>
+
+                  <p class="speaker-box__desc">
+                    Software Engineer at ZEIT on Next.js core team. He's passionate about building
+                    great development and user experiences by leveraging open-source technology. He
+                    enjoy getting to learn about the latest developments in tech and finding ways to
+                    apply these developments throughout my work.
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="speaker-box">
+                <img
+                  class="speaker-box__image"
+                  src="speaker-sarup-banskota.686f9e32dffa4c14d4e0.png"
+                  alt="Photo of speaker: Sarup Banskota"
+                />
+                <div class="speaker-box__info">
+                  <div class="speaker-box__header">
+                    <div>
+                      <h3>Sarup Banskota</h3>
+                      <a
+                        href="https://twitter.com/sarupbanskota"
+                        target="_blank"
+                        title="Twitter profile - Sarup Banskota"
+                        >@sarupbanskota</a
+                      >
+                    </div>
+                    <div>
+                      <a href="https://zeit.co/" target="_blank" title="ZEIT"
+                        ><strong>ZEIT</strong></a
+                      >
+                    </div>
+                  </div>
+
+                  <p class="speaker-box__desc">
+                    ZEIT team. Obsessed about developer experience and open source tech.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="tickets" id="tickets">
+        <div class="tickets__content">
+          <h2 class="tickets__heading"><span aria-hidden="true">#</span>tickets</h2>
+          <p class="tickets__text"><strong style="font-size: 2rem;">IMPORTANT</strong></p>
+          <p class="tickets__text">
+            <strong style="font-size: 15px;"
+              >To attend the ZEIT workshop on September 29 you have to buy a separate "WORKSHOP
+              PASS" ticket.</strong
+            >
+            <span
+              >This ticket allows you to attend <strong>only</strong> the workshop. To attend the
+              conference you have to buy a separate ticket.</span
+            >
+          </p>
+          <p class="tickets__text">
+            On the other hand, the meet.js Summit 2019 conference ticket only allows you to attend
+            the conference on September 30 and not the workshop.
+          </p>
+          <p class="tickets__text">
+            Only <strong>20</strong> available seats!<br />
+            Regular workshop ticket price: <strong class="tickets__price">650 PLN (150€)</strong
+            ><br />
+            Combo ticket - workshop & conference pass price:
+            <strong class="tickets__price">750 PLN (170€)</strong><br />
+          </p>
+          <div class="tickets__center">
+            <a href="https://meetjs-summit2019.konfeo.com/" class="tickets__button"
+              >Register now!</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__content">
+        <p class="main-footer__badge">See you in Katowice!</p>
+        <p class="main-footer__copy">meet.js &copy; 2019</p>
+      </div>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98203728-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-98203728-2');
+    </script>
+  <script type="text/javascript" src="main.ba9b854df8bc466c5a8a.js"></script></body>
+</html>
