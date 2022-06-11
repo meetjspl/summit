@@ -1,110 +1,215 @@
 .sponsor-offer {
-  @extend %base-section;
-  position: relative;
-  background-color: $white_color;
-
+  padding: 40px 20px 60px;
+  background-color: #eceff1;
+  @include mediaquery('gt-medium') {
+    padding: 120px 20px 60px;
+    overflow: hidden;
+  }
   &__content {
-    max-width: 676px;
-    margin: 0 auto;
-    padding: 0 20px;
+    @include mediaquery('gt-small') {
+      margin: 0 auto;
+      max-width: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include mediaquery('gt-medium') {
+      max-width: 1140px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+    }
   }
-
+  &__main-info {
+    width: 100%;
+  }
   &__heading {
-    @extend %main-heading--special;
-  }
-
-  &__subheading {
-    @extend %secondary-heading;
-
+    margin-top: 0;
     color: $purple_color;
-    margin-top: 40px;
-
-    & span {
-      border-bottom: 2px solid $lightpurple_color;
-      text-transform: uppercase;
-      font-weight: 400;
-    }
-
-    &__logo-section {
-      & span {
-        border-bottom: none;
-        font-weight: 600;
-      }
+    margin-bottom: 40px;
+    @extend %main-heading;
+    @include mediaquery('gt-medium') {
+      white-space: nowrap;
+      margin-top: 20px;
+      margin-bottom: 30px;
     }
   }
-
   &__text {
     @extend %main-text;
+    @include mediaquery('gt-medium') {
+      width: calc(100% / 7 * 6);
+      margin-bottom: 32px;
+    }
   }
-
   &__highlight {
     @extend %highlight-text;
-
     color: $white_color;
     padding: 4px 2px;
-
     @include mediaquery('gt-medium') {
       padding: 6px 2px;
     }
   }
-
   &__link {
     @extend %main-link;
   }
-
-  &__list {
-    display: grid;
-    grid-gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    grid-template-columns: repeat(1, 1fr);
-
-    @media (min-width: 640px) {
-      grid-template-columns: repeat(2, 1fr);
+  &__main-info {
+    @include mediaquery('gt-medium') {
+      order: 2;
+      width: 62%;
+      position: relative;
     }
-
-    &--small {
-      grid-template-columns: repeat(2, 1fr);
-
-      @media (min-width: 480px) {
-        grid-template-columns: repeat(3, 1fr);
+  }
+  &__gallery {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include mediaquery('gt-small') {
+      width: auto;
+      flex-direction: row;
+    }
+    @include mediaquery('gt-medium') {
+      display: block;
+    }
+    &:nth-child(2) {
+      margin-top: 30px;
+      position: relative;
+      &:after {
+        $height: 80px;
+        content: '';
+        display: block;
+        width: 5px;
+        height: $height;
+        background: $lightgrey_color;
+        position: absolute;
+        left: 0;
+        top: calc(50% - #{0.5 * $height});
+        @include mediaquery('gt-small') {
+          left: -26px;
+        }
+        @include mediaquery('gt-medium') {
+          content: none;
+        }
       }
-
-      @media (min-width: 640px) {
-        grid-template-columns: repeat(3, 1fr);
+      &::before {
+        $height: 80px;
+        content: '';
+        display: block;
+        width: 5px;
+        height: 80px;
+        background: $purple_color;
+        position: absolute;
+        right: 0;
+        top: calc(50% - #{0.5 * $height});
+        @include mediaquery('gt-small') {
+          content: none;
+        }
+        @include mediaquery('gt-medium') {
+          content: none;
+        }
+      }
+      @include mediaquery('gt-small') {
+        margin-top: 0;
+      }
+      @include mediaquery('gt-medium') {
+        width: calc(100% / 12 * 3);
+      }
+      .sponsor-offer__picture:first-child {
+        @include mediaquery('gt-medium') {
+          &::after {
+            $height: 80px;
+            content: '';
+            display: block;
+            width: 5px;
+            height: $height;
+            background: $lightgrey_color;
+            position: absolute;
+            right: -15px;
+            bottom: calc(#{-0.5 * $height});
+          }
+        }
+      }
+      .sponsor-offer__picture:nth-child(2) {
+        @include mediaquery('gt-medium') {
+          &::after {
+            $height: 80px;
+            content: '';
+            display: block;
+            width: 5px;
+            height: $height;
+            background: $lightgrey_color;
+            position: absolute;
+            left: -15px;
+            top: calc(#{-0.5 * $height});
+          }
+        }
       }
     }
-
-    &--tiny {
-      grid-template-columns: repeat(3, 1fr);
-
-      @media (min-width: 480px) {
-        grid-template-columns: repeat(5, 1fr);
+    &:last-child {
+      position: relative;
+      &:after {
+        @include mediaquery('gt-small') {
+          $height: 80px;
+          content: '';
+          display: block;
+          width: 5px;
+          height: $height;
+          background: $purple_color;
+          position: absolute;
+          right: -26px;
+          top: calc(50% - #{0.5 * $height});
+        }
+        @include mediaquery('gt-medium') {
+          content: none;
+        }
       }
-
-      @media (min-width: 640px) {
-        grid-template-columns: repeat(5, 1fr);
+      @include mediaquery('gt-medium') {
+        width: calc(100% / 12 * 2);
+        padding-top: 280px;
+        order: 3;
+      }
+      .sponsor-offer__picture {
+        @include mediaquery('gt-medium') {
+          width: 120%;
+          margin: 0;
+          margin-left: -30px;
+          &::after {
+            $height: 80px;
+            content: '';
+            display: block;
+            width: 5px;
+            height: $height;
+            background: $purple_color;
+            position: absolute;
+            right: -15px;
+            top: calc(#{-0.5 * $height});
+          }
+        }
       }
     }
   }
-
-  &__list-item {
-    display: flex;
-    background-color: $white_color;
-    box-shadow: 0 0 10px 0 rgba($lightpurple_color, 0.15);
-    border-radius: 2px;
-
-    & > a {
-      width: 100%;
-      padding: 10px;
+  &__picture {
+    max-width: 195px;
+    margin-bottom: 12px;
+    @include mediaquery('gt-small') {
+      margin: 10px;
     }
-
-    & img {
-      display: block;
-      width: 100%;
-      height: auto;
+    @include mediaquery('gt-medium') {
+      margin: 0;
+      width: 80%;
+      margin-bottom: 0;
+      position: relative;
     }
+    &:nth-child(2) {
+      @include mediaquery('gt-medium') {
+        margin-left: 15px;
+        margin-top: 210px;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    max-width: 195px;
   }
 }
