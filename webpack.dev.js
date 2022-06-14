@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const gitRevisionPlugin = new GitRevisionPlugin();
 
@@ -86,6 +87,8 @@ module.exports = {
       filename: 'zeit-workshop.html',
       template: './src/zeit-workshop.html',
     }),
+
+    new CopyWebpackPlugin([{ from: 'src/pdf', to: 'pdf' }]),
 
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(version),

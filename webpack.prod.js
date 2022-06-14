@@ -162,6 +162,7 @@ module.exports = {
       { from: 'CNAME', to: '../' },
       { from: 'src/robots.txt', to: '..' },
       { from: 'src/tickets.html', to: '.' },
+      { from: 'src/pdf', to: 'pdf' },
       { from: 'src/images/facebook', to: 'images/facebook/' },
       { from: 'legacy-pages/', to: '..' },
       { from: 'src/mck-parkings.jpg', to: '.' },
