@@ -4,6 +4,7 @@
     // min-height: 100vh;
     padding: 25vmin 0;
     background: url(../images/hero-bg-desktop.png) no-repeat center bottom / cover;
+    background-position-y: 175px;
 
     @include mediaquery('gt-small') {
       padding: 192px 0;

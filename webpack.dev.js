@@ -82,11 +82,6 @@ module.exports = {
       template: './src/regulamin.html',
     }),
 
-    new HtmlWebpackPlugin({
-      filename: 'zeit-workshop.html',
-      template: './src/zeit-workshop.html',
-    }),
-
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(version),
     }),
