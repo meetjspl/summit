@@ -55,12 +55,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|svg|pdf)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
-              name: '[path][name].[ext]?hash=[hash:20]',
+              name: '[path][name].[ext]',
               limit: 8192,
             },
           },
