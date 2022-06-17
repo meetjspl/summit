@@ -20,4 +20,8 @@
   &__link {
     @extend %main-link;
   }
+
+  &__button {
+    @extend %fancy-button;
+  }
 }

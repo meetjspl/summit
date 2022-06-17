@@ -97,12 +97,7 @@ module.exports = {
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
     }),
-    new HtmlWebpackPlugin({
-      filename: 'zeit-workshop.html',
-      template: './src/zeit-workshop.html',
-      // Inject the js bundle at the end of the body of the given template
-      inject: 'body',
-    }),
+
     new CleanWebpackPlugin(),
     new FaviconsWebpackPlugin({
       // Your source logo

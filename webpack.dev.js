@@ -83,11 +83,6 @@ module.exports = {
       template: './src/regulamin.html',
     }),
 
-    new HtmlWebpackPlugin({
-      filename: 'zeit-workshop.html',
-      template: './src/zeit-workshop.html',
-    }),
-
     new CopyWebpackPlugin([{ from: 'src/pdf', to: 'pdf' }]),
 
     new webpack.DefinePlugin({

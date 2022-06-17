@@ -4,6 +4,7 @@
     // min-height: 100vh;
     padding: 25vmin 0;
     background: url(../images/hero-bg-desktop.png) no-repeat center bottom / cover;
+    background-position-y: 175px;
 
     @include mediaquery('gt-small') {
       padding: 192px 0;
@@ -40,7 +41,7 @@
     padding: 20px;
 
     @include mediaquery('gt-medium') {
-      max-width: 814px;
+      max-width: 850px;
     }
   }
 
@@ -77,7 +78,7 @@
     & > strong {
       display: block;
       color: $green_color;
-      line-height: 2em;
+      padding-bottom: 10px;
     }
   }
 
