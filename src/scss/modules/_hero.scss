@@ -33,7 +33,7 @@
   }
 
   &__info {
-    max-width: 636px;
+    max-width: 720px;
     margin: 0 auto;
     position: relative;
     z-index: $index-low;
@@ -67,6 +67,8 @@
     margin-top: 20px;
     font-size: 1.8rem;
     line-height: 1.4;
+    background-color: rgba(47, 22, 52, 0.5);
+    padding: 20px;
 
     @include mediaquery('gt-medium') {
       font-size: 2.2rem;
@@ -75,6 +77,7 @@
     & > strong {
       display: block;
       color: $green_color;
+      line-height: 2em;
     }
   }
 
