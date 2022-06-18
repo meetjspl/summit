@@ -4,6 +4,7 @@
     // min-height: 100vh;
     padding: 25vmin 0;
     background: url(../images/hero-bg-desktop.png) no-repeat center bottom / cover;
+    background-position-y: 175px;
 
     @include mediaquery('gt-small') {
       padding: 192px 0;
@@ -33,14 +34,14 @@
   }
 
   &__info {
-    max-width: 636px;
+    max-width: 720px;
     margin: 0 auto;
     position: relative;
     z-index: $index-low;
     padding: 20px;
 
     @include mediaquery('gt-medium') {
-      max-width: 814px;
+      max-width: 850px;
     }
   }
 
@@ -67,6 +68,8 @@
     margin-top: 20px;
     font-size: 1.8rem;
     line-height: 1.4;
+    background-color: rgba(47, 22, 52, 0.5);
+    padding: 20px;
 
     @include mediaquery('gt-medium') {
       font-size: 2.2rem;
@@ -75,6 +78,7 @@
     & > strong {
       display: block;
       color: $green_color;
+      padding-bottom: 10px;
     }
   }
 

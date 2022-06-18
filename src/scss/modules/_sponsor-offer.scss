@@ -1,9 +1,11 @@
 .sponsor-offer {
   padding: 40px 20px 60px;
   background-color: #eceff1;
+  position: relative;
+
   @include mediaquery('gt-medium') {
     padding: 120px 20px 60px;
-    overflow: hidden;
+    // overflow: hidden; don't
   }
   &__content {
     @include mediaquery('gt-small') {
@@ -27,7 +29,7 @@
     margin-top: 0;
     color: $purple_color;
     margin-bottom: 40px;
-    @extend %main-heading;
+    @extend %main-heading--special;
     @include mediaquery('gt-medium') {
       white-space: nowrap;
       margin-top: 20px;

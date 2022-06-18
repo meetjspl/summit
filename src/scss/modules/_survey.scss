@@ -1,6 +1,7 @@
 .survey {
   @extend %base-section;
   background-color: $white_color;
+  position: relative;
 
   @include mediaquery('gt-medium') {
     background-image: url(../images/code/left-bg.png), url(../images/code/right-bg.png);
@@ -9,12 +10,13 @@
   }
 
   &__content {
+    padding-top: 80px;
     max-width: 636px;
     margin: 0 auto;
   }
 
   &__heading {
-    @extend %main-heading;
+    @extend %main-heading--special;
 
     color: $purple_color;
     margin-top: 0;
