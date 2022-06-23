@@ -1,0 +1,137 @@
+.sponsor-list {
+  @extend %base-section;
+  position: relative;
+  background-color: $white_color;
+
+  &__content {
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  &__heading {
+    @extend %main-heading--special;
+  }
+
+  &__subheading {
+    @extend %secondary-heading;
+
+    color: $purple_color;
+    margin-top: 40px;
+
+    & span {
+      border-bottom: 2px solid $lightpurple_color;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    &__logo-section {
+      & span {
+        border-bottom: none;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__text {
+    @extend %main-text;
+  }
+
+  &__highlight {
+    @extend %highlight-text;
+
+    color: $white_color;
+    padding: 4px 2px;
+
+    @include mediaquery('gt-medium') {
+      padding: 6px 2px;
+    }
+  }
+
+  &__link {
+    @extend %main-link;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--main {
+      @media (min-width: 640px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    &--small {
+      grid-template-columns: repeat(2, 1fr);
+
+      @media (min-width: 480px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (min-width: 640px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &--tiny {
+      grid-template-columns: repeat(3, 1fr);
+
+      @media (min-width: 480px) {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      @media (min-width: 640px) {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    background-color: $white_color;
+    box-shadow: 0 0 10px 0 rgba($lightpurple_color, 0.15);
+    border-radius: 2px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+
+    & > a {
+      width: 100%;
+    }
+    & > span {
+      @extend %main-text;
+    }
+
+    &--offer-link {
+      @extend %secondary-heading;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      & > span {
+        color: $white_color;
+        background-color: $blue_color;
+        padding: 6px 2px;
+      }
+    }
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__small-offer-link {
+    font-size: 12px;
+  }
+}

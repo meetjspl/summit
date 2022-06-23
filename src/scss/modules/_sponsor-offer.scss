@@ -4,10 +4,12 @@
   position: relative;
 
   @include mediaquery('gt-medium') {
-    padding: 120px 20px 60px;
+    padding: 120px 20px 100px;
     // overflow: hidden; don't
   }
   &__content {
+    padding-top: 60px; //please stop removing this
+
     @include mediaquery('gt-small') {
       margin: 0 auto;
       max-width: 700px;
@@ -47,6 +49,7 @@
     @extend %highlight-text;
     color: $white_color;
     padding: 4px 2px;
+    white-space: nowrap;
     @include mediaquery('gt-medium') {
       padding: 6px 2px;
     }
