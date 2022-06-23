@@ -27,7 +27,7 @@
     <meta property="og:url" content="https://summit.meetjs.pl/2022/" />
     <meta property="og:site_name" content="meet.js Summit" />
     <meta http-equiv="Cache-Control" content="no-cache" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.c5cbce291f9a836ac8ca.css" rel="stylesheet"></head>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.ecaf4b989de34b15c13b.css" rel="stylesheet"></head>
 
   <body>
     <script>
@@ -117,8 +117,8 @@
 
         <div class="main-header__nav">
           <nav id="navigation" class="main-nav" role="navigation">
-            <!-- <ul class="main-nav__list">
-              <li class="main-nav__item">
+            <ul class="main-nav__list">
+              <!-- <li class="main-nav__item">
                 <a
                   class="main-nav__link"
                   href="#venue"
@@ -126,17 +126,17 @@
                   aria-label="Find us in Katowice"
                   >#venue</a
                 >
-              </li>
+              </li> -->
               <li class="main-nav__item">
                 <a
                   class="main-nav__link"
                   href="#sponsor_offer"
-                  title="Become a conference sponsor"
-                  aria-label="Become a conference sponsor"
+                  title="Become a sponsor"
+                  aria-label="Become a sponsor"
                   >#sponsors</a
                 >
               </li>
-              <li class="main-nav__item">
+              <!-- <li class="main-nav__item">
                 <a
                   class="main-nav__link"
                   href="#schedule"
@@ -162,9 +162,9 @@
                   aria-label="Read the Code of Conduct"
                   >#code-of-conduct</a
                 >
-              </li>
+              </li> -->
             </ul>
-            <div class="tickets-button">
+            <!-- <div class="tickets-button">
               <a href="#tickets" class="tickets-button__link">#tickets</a>
             </div> -->
           </nav>
@@ -395,29 +395,111 @@
             <p>Enjoy the best coffee, snacks and delicious lunch.</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section id="sponsor_offer" class="sponsor-offer">
-        <div class="sponsor-offer__content">
-          <div class="sponsor-offer__main-info">
-            <h2 class="sponsor-offer__heading"><span aria-hidden="true">#</span>sponsors</h2>
+      <section id="sponsor_list" class="sponsor-list">
+        <div class="sponsor-list__content">
+          <div class="sponsor-list__main-info">
+            <h2 class="sponsor-list__heading"><span aria-hidden="true">#</span>sponsors</h2>
           </div>
-          <p class="sponsor-offer__text">
-            Each year, our sponsors and partners help us keep tickets affordable, organize
+          <p class="sponsor-list__text">
+            Each year, our sponsors and partners help us give tickets to charity, organize
             a&nbsp;great event and welcome you in their stands.
           </p>
 
-          <h3 class="sponsor-offer__subheading"><span>Platinum sponsor</span></h3>
-          <ul class="sponsor-offer__list">
-            <li class="sponsor-offer__list-item">
-              <a href="https://tsh.io/" title="The Software House" target="_blank">
-                <img alt="The Software House" src="tsh.79d57c2d564dc7eeaa65.svg" />
+          <h3 class="sponsor-list__subheading"><span>Main sponsor</span></h3>
+          <ul class="sponsor-list__list sponsor-list__list--main">
+            <li class="sponsor-list__list-item">
+              <a href="https://itech.media/" title="iTech media" target="_blank">
+                <img alt="iTech media" src="itechmedia.4ce61ae4e075f8318bcf.svg" />
               </a>
             </li>
           </ul>
+
+          <h3 class="sponsor-list__subheading"><span>Gold sponsors</span></h3>
+          <ul class="sponsor-list__list">
+            <li class="sponsor-list__list-item">
+              <span>
+                Announcing soon
+              </span>
+            </li>
+            <li class="sponsor-list__list-item">
+              <span>
+                Announcing soon
+              </span>
+            </li>
+          </ul>
+
+          <h3 class="sponsor-list__subheading"><span>Silver sponsors</span></h3>
+          <ul class="sponsor-list__list sponsor-list__list--small">
+            <li class="sponsor-list__list-item">
+              <a href="https://www.stxnext.com/" title="STXNext" target="_blank">
+                <img alt="STXNext" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTEwMHB4IiBoZWlnaHQ9IjUzMXB4IiB2aWV3Qm94PSIwIDAgMTEwMCA1MzEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU4ICg4NDY2MykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+c3R4bmV4dF93ZWJfY29sb3I8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0ic3R4bmV4dF93ZWJfY29sb3IiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgIDxnIGlkPSJzdHhuZXh0X2xvZ29fd2ViIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjAuMDAwMDAwLCAxODguMDAwMDAwKSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTI0OS40MDUyNjIsMTU0LjU1ODQ2NCBMMjk2Ljk0NzE0OSw3Ni42NDkzNzcyIEwyNTIuMzY5NTY5LDIuNTQ2MjIzNjkgTDI5NS4wMTAzOTYsMi41NDYyMjM2OSBMMzM3LjY0NTg0NCw3Ni42MjI1NzQzIEwyOTIuMjM0Mzg1LDE1NC41MzE2NjIgTDI0OS40MDUyNjIsMTU0LjU1ODQ2NCBaIE0xNjYuMTM1Njc4LDE1NC41NTg0NjQgTDE2Ni4xMzU2NzgsMzUuODUwODMxNSBMMTI4LjYzODAwNCwzNS44NTA4MzE1IEwxMjguNjM4MDA0LDIuNTQwODYyOTEgTDI0MS4xMjAyNjcsMi41NDA4NjI5MSBMMjQxLjEyMDI2NywzNS44NDU0NzA4IEwyMDMuNjA2NDU0LDM1Ljg0NTQ3MDggTDIwMy42MDY0NTQsMTU0LjUzMTY2MiBMMTY2LjEzNTY3OCwxNTQuNTU4NDY0IFogTTAsMTM0LjQ3Mjc4IEwyMy45NjczMDc5LDExMC41NDg5OTYgQzMxLjg5MTg1MjksMTE4LjQ0NDk3IDQ1LjgzMTA4ODMsMTIxLjIxNjMzNCA1OC4wMjcyNDc2LDEyMS4yMTYzMzQgQzcyLjc3MzQ2MzcsMTIxLjIxNjMzNCA3OS44ODAyNjgxLDExNi4zMjIyMjQgNzkuODgwMjY4MSwxMDcuNTU3ODUzIEM4MC4wNzAzMzI3LDEwNC4zMDc5NSA3OS4wMTY4MjA4LDEwMS4xMDcwOSA3Ni45MzIxMDA3LDk4LjYwMDUwNjggQzc0LjExNjUyMjYsOTYuMTc3NDc4OSA3MC41NzU0ODY1LDk0Ljc1MDcxNjQgNjYuODYwOTg5Nyw5NC41NDI2MjkzIEw0OC40MTg4MDQzLDkxLjk3NDk2NDUgQzM3LjAwNDQ2NjMsOTAuOTkwNzk2IDI2LjIzOTM4MzIsODYuMjY0ODI2OCAxNy44MDczNjA3LDc4LjUzNjI2MzIgQzEwLjM2Mzg3OTIsNzAuMTUwMzI1NSA2LjU4MjQ5MjA4LDU5LjE1MzgxMDMgNy4zMDA0ODAxNSw0Ny45ODE1NzY5IEM3LjMwNTg1OTYsMjAuMjUxODYwMiAyOC4yOTgxMDEsMCA2My4wMDkwMDQ3LDAgQzg0Ljg1MTI2NTMsMCAxMDEuMzUxMzE3LDUuMTI0NjEwMTEgMTE0LjQyOTc3NSwxOC4xNDUxOTUgTDkwLjgyODI5NzYsNDEuNjUwODYwOCBDODEuMTkyOTU1MSwzMi4wNTU2MTc2IDY4LjU1MDI2NzQsMzIuNjk4ODc0IDYxLjkwMDc1MTMsMzIuNjk4ODc0IEM0OC44MzMwNTQsMzIuNjk4ODc0IDQzLjQ4MDA4NjYsNDAuMTcxMzcwNiA0My40ODAwODY2LDQ2Ljc5NjkxMyBDNDMuNTAyNTIxOSw0OS40NDkzMDMyIDQ0LjU4MDIzNDQsNTEuOTg0NDYwNSA0Ni40NzY2NzI5LDUzLjg0NTkzMjYgQzQ5LjM1ODE4ODYsNTYuNDk0OTAxMSA1My4wNjU2MzY4LDU4LjA3Njk5NzYgNTYuOTc4MTczLDU4LjMyNzI4NjMgTDc1LjQwOTU5ODYsNjAuOTAwMzEyOSBDODYuNTExOTgxNyw2MS43NTI3MDU2IDk3LjAzNzY4NDQsNjYuMTY4OTk4IDEwNS40MDc3MzcsNzMuNDg2Njk5MSBDMTEzLjU0NzQ3Nyw4MS4zODI2NzI5IDExNi43NjQ2MzcsOTIuNjk4NjI3NyAxMTYuNzY0NjM3LDEwNi43OTEzMDYgQzExNi43NjQ2MzcsMTM3LjY3Mjk4IDg5Ljk2MjEzOSwxNTQuNTM3MDIzIDU3Ljg1NTA5MTUsMTU0LjUzNzAyMyBDMzQuNDk1NzA4MiwxNTQuNTMxNjYyIDE1LjQxODY5OSwxNTAuMjU5MzY2IDAsMTM0LjQ3Mjc4IFogTTYwMC4zOTMxNzcsMTU0LjQ2NzMzNyBMNjM3LjgyNjI5Miw5MS45Mzc0NDEgTDYwMi43NjAzMTksMzIuNTY0ODYyMyBMNjE3Ljg3Nzc0NSwzMi41NjQ4NjIzIEw2NDUuMDM1MzE1LDgwLjY3NTA5MTEgTDY3Mi4xODIxMjUsMzIuNTY0ODYyMyBMNjg3LjMxMDMxMiwzMi41NjQ4NjIzIEw2NTIuMDM5OTAyLDkxLjkzMjA4MDIgTDY4OS44NDQyMjksMTU0LjQyNDQ1MyBMNjc0LjcxNjA0MiwxNTQuNDU2NjE1IEw2NDUuMDQ2MDc1LDEwMy4yNjk0NzcgTDYxNS4xNDQ3NzMsMTU0LjQ2MTk3NiBMNjAwLjM5MzE3NywxNTQuNDY3MzM3IFogTTczMS41MzI4MiwxNTQuNDY3MzM3IEw3MzEuNTMyODIsNDQuMTk3MDg0NSBMNjk2LjEzODY3Myw0NC4xOTcwODQ1IEw2OTYuMTM4NjczLDMyLjU1OTUwMTUgTDc4MC4wMDAwNDMsMzIuNTU5NTAxNSBMNzgwLjAwMDA0Myw0NC4xOTcwODQ1IEw3NDQuNTczNjE4LDQ0LjE5NzA4NDUgTDc0NC41NzM2MTgsMTU0LjQ1NjYxNSBMNzMxLjUzMjgyLDE1NC40NjczMzcgWiBNNTE1LjgxMDkwNSwzMi41NTk1MDE1IEw1OTEuNzMxNTkxLDMyLjU1OTUwMTUgTDU5MS43MzE1OTEsNDQuMjA3ODA2IEw1MjguNzg3MTQ1LDQ0LjIwNzgwNiBMNTI4Ljc4NzE0NSw4Ny4xODgwNjI5IEw1ODIuNDAyOTAxLDg3LjE4ODA2MjkgTDU4Mi40MDI5MDEsOTguNzkzNDgzMiBMNTI4Ljg0MDk0NCw5OC43OTM0ODMyIEw1MjguODQwOTQ0LDE0Mi44MDI5NTEgTDU5MS43ODUzOSwxNDIuODAyOTUxIEw1OTEuNzg1MzksMTU0LjQ1MTI1NiBMNTE1LjgwNTUyNiwxNTQuNDUxMjU2IEw1MTUuODEwOTA1LDMyLjU1OTUwMTUgWiBNNDg1LjIyMDk4MSwxNTQuNDU2NjE1IEw0MjAuMjc1MjI0LDU2LjY2NTU0MDQgTDQyMC4yNzUyMjQsMTU0LjQyNDQ1MyBMNDA3LjIxMjkwNiwxNTQuNDI0NDUzIEw0MDcuMjEyOTA2LDMyLjU1OTUwMTUgTDQxOS41ODY2MDEsMzIuNTU5NTAxNSBMNDg0LjU1OTI1NywxMjkuOTc1MzQ0IEw0ODQuNTU5MjU3LDMyLjU1OTUwMTUgTDQ5Ny42Mzc3MTQsMzIuNTU5NTAxNSBMNDk3LjYzNzcxNCwxNTQuNDU2NjE1IEw0ODUuMjIwOTgxLDE1NC40NTY2MTUgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjMDBCMkE5Ij48L3BhdGg+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZS1wYXRoIiBmaWxsPSIjQTJBQUFEIiBwb2ludHM9IjM0MS43NzIyMDIgMTU0LjM4MTU2OSAzMjcuMzM4MDE5IDEyNy40MjM3NiAzNDcuMjQzNTI3IDkzLjQxNjkzMTEgMzgyLjgwOTgyOSAxNTQuNDEzNzMyIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJTaGFwZS1wYXRoIiBmaWxsPSIjQTJBQUFEIiBwb2ludHM9IjMyNy4yNDY1NjEgMjQuMTcwMzY0MyAzMzguNTEyMDAzIDIuNDgxODk4MjUgMzgxLjExNTE3MSAyLjQ4MTg5ODI1IDM0Ny45MDUyNSA1OS42MzUyNDEyIj48L3BvbHlnb24+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" />
+              </a>
+            </li>
+            <li class="sponsor-list__list-item">
+              <a
+                href="#sponsor_offer"
+                class="sponsor-list__list-item--offer-link"
+                title="Become a sponsor"
+              >
+                <span>Become a sponsor</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- <h3 class="sponsor-list__subheading"><span>Supporters</span></h3>
+          <ul class="sponsor-list__list sponsor-list__list--tiny">
+            <li class="sponsor-list__list-item">
+              <a href="https://diginate.com/" title="Diginate" target="_blank">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1NC4xICg3NjQ5MCkgLSBodHRwczovL3NrZXRjaGFwcC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxyZWN0IGZpbGw9IiNGRkZGRkYiIHg9IjAiIHk9IjAiIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIj48L3JlY3Q+CiAgICAgICAgPGcgaWQ9ImRpZ2luYXRlX2xvZ28iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1LjAwMDAwMCwgMTIxLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgiIHBvaW50cz0iMzAuNDQxMDI1NiAxNDMuNzMzMzMzIDMwLjU4NDYxNTQgMTQzLjczMzMzMyI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTk0LjE5NDg3MTgsMTAyLjM3OTQ4NyBDOTYuMjA1MTI4MiwxMDEuNjYxNTM4IDk3Ljc4NDYxNTQsMTAwLjY1NjQxIDk5LjIyMDUxMjgsOTkuMzY0MTAyNiBDMTAwLjY1NjQxLDk4LjA3MTc5NDkgMTAxLjUxNzk0OSw5Ni40OTIzMDc3IDEwMi4yMzU4OTcsOTQuNjI1NjQxIEMxMDIuOTUzODQ2LDkyLjc1ODk3NDQgMTAzLjI0MTAyNiw5MC43NDg3MTc5IDEwMy4yNDEwMjYsODguNDUxMjgyMSBDMTAzLjI0MTAyNiw4My43MTI4MjA1IDEwMS44MDUxMjgsODAuMTIzMDc2OSA5OS4wNzY5MjMxLDc3LjY4MjA1MTMgQzk2LjM0ODcxNzksNzUuMDk3NDM1OSA5Mi40NzE3OTQ5LDczLjk0ODcxNzkgODcuMzAyNTY0MSw3My45NDg3MTc5IEw3My41MTc5NDg3LDczLjk0ODcxNzkgTDczLjUxNzk0ODcsMTAzLjUyODIwNSBMODcuMTU4OTc0NCwxMDMuNTI4MjA1IEM4OS44ODcxNzk1LDEwMy41MjgyMDUgOTIuMTg0NjE1NCwxMDMuMDk3NDM2IDk0LjE5NDg3MTgsMTAyLjM3OTQ4NyBaIiBpZD0iUGF0aCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEyNi4wNzE3OTUsMzcuNzY0MTAyNiBDMTI4LjY1NjQxLDM5LjA1NjQxMDMgMTMxLjA5NzQzNiw0MC4zNDg3MTc5IDEzMy4zOTQ4NzIsNDEuOTI4MjA1MSBDMTMzLjM5NDg3Miw0MS45MjgyMDUxIDEzMy4zOTQ4NzIsNDEuOTI4MjA1MSAxMzMuMzk0ODcyLDQxLjkyODIwNTEgQzEzMS4wOTc0MzYsNDAuNDkyMzA3NyAxMjguOTQzNTksMzkuMDU2NDEwMyAxMjYuMDcxNzk1LDM3Ljc2NDEwMjYgQzEyNi4wNzE3OTUsMzcuNzY0MTAyNiAxMjYuMDcxNzk1LDM3Ljc2NDEwMjYgMTI2LjA3MTc5NSwzNy43NjQxMDI2IFoiIGlkPSJQYXRoIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aCIgcG9pbnRzPSIxNy45NDg3MTc5IDE3LjgwNTEyODIgMTcuOTQ4NzE3OSAxNy44MDUxMjgyIDE3Ljk0ODcxNzkgMTMwLjUyMzA3NyAxNy45NDg3MTc5IDEzMC41MjMwNzciPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjE3Ljk0ODcxNzkiIHk9IjEzMS4zODQ2MTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEyLjM0ODcxNzkiPjwvcmVjdD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMzguNTY0MTAzLDQ2LjA5MjMwNzcgQzEzNi44NDEwMjYsNDQuNTEyODIwNSAxMzUuMTE3OTQ5LDQzLjIyMDUxMjggMTMzLjM5NDg3Miw0MS45MjgyMDUxIEMxMzMuMzk0ODcyLDQxLjkyODIwNTEgMTMzLjM5NDg3Miw0MS45MjgyMDUxIDEzMy4zOTQ4NzIsNDEuOTI4MjA1MSBDMTMzLjM5NDg3Miw0MS45MjgyMDUxIDEzMy4zOTQ4NzIsNDEuOTI4MjA1MSAxMzMuMzk0ODcyLDQxLjkyODIwNTEgQzEzMy4zOTQ4NzIsNDEuOTI4MjA1MSAxMzMuMzk0ODcyLDQxLjkyODIwNTEgMTMzLjM5NDg3Miw0MS45MjgyMDUxIEMxMzMuMzk0ODcyLDQxLjkyODIwNTEgMTMzLjM5NDg3Miw0MS45MjgyMDUxIDEzMy41Mzg0NjIsNDEuOTI4MjA1MSBDMTQwLjI4NzE3OSw1MS44MzU4OTc0IDE0My43MzMzMzMsNjQuMzI4MjA1MSAxNDMuNzMzMzMzLDc5LjY5MjMwNzcgQzE0My43MzMzMzMsODkuNDU2NDEwMyAxNDIuMjk3NDM2LDk4LjIxNTM4NDYgMTM5LjQyNTY0MSwxMDYuMTEyODIxIEMxMzYuNTUzODQ2LDExNC4wMTAyNTYgMTMyLjI0NjE1NCwxMjAuNzU4OTc0IDEyNi42NDYxNTQsMTI2LjIxNTM4NSBDMTIxLjA0NjE1NCwxMzEuNjcxNzk1IDExNC4wMTAyNTYsMTM1Ljk3OTQ4NyAxMDUuMzk0ODcyLDEzOC45OTQ4NzIgQzk2LjkyMzA3NjksMTQyLjAxMDI1NiA4Ny4wMTUzODQ2LDE0My41ODk3NDQgNzUuODE1Mzg0NiwxNDMuNDQ2MTU0IEwzMC43MjgyMDUxLDE0My4zMDI1NjQgTDMwLjU4NDYxNTQsMTQzLjMwMjU2NCBMMzAuNTg0NjE1NCwxNTUuNzk0ODcyIEw4OC4xNjQxMDI2LDE1NS43OTQ4NzIgQzk5LjM2NDEwMjYsMTU1Ljc5NDg3MiAxMDkuMjcxNzk1LDE1NC4yMTUzODUgMTE3Ljc0MzU5LDE1MS4yIEMxMjYuMzU4OTc0LDE0OC4xODQ2MTUgMTMzLjM5NDg3MiwxNDMuODc2OTIzIDEzOC45OTQ4NzIsMTM4LjQyMDUxMyBDMTQ0LjU5NDg3MiwxMzIuOTY0MTAzIDE0OC45MDI1NjQsMTI2LjIxNTM4NSAxNTEuNzc0MzU5LDExOC4zMTc5NDkgQzE1NC42NDYxNTQsMTEwLjQyMDUxMyAxNTYuMDgyMDUxLDEwMS41MTc5NDkgMTU2LjA4MjA1MSw5MS44OTc0MzU5IEMxNTYuMDgyMDUxLDcyLjIyNTY0MSAxNTAuMTk0ODcyLDU2Ljg2MTUzODUgMTM4LjU2NDEwMyw0Ni4wOTIzMDc3IFoiIGlkPSJQYXRoIiBmaWxsPSIjMUY5REQ5IiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik05Mi43NTg5NzQ0LDEyNi43ODk3NDQgQzEwMS4zNzQzNTksMTIzLjc3NDM1OSAxMDguMjY2NjY3LDExOS42MTAyNTYgMTE0LjAxMDI1NiwxMTQuMDEwMjU2IEMxMTkuNzUzODQ2LDEwOC40MTAyNTYgMTI0LjA2MTUzOCwxMDEuODA1MTI4IDEyNi43ODk3NDQsOTMuOTA3NjkyMyBDMTI5LjY2MTUzOCw4Ni4wMTAyNTY0IDEzMS4wOTc0MzYsNzcuMjUxMjgyMSAxMzEuMDk3NDM2LDY3LjQ4NzE3OTUgQzEzMS4wOTc0MzYsNTUuODU2NDEwMyAxMjkuMDg3MTc5LDQ1Ljk0ODcxNzkgMTI1LjM1Mzg0NiwzNy42MjA1MTI4IEMxMjUuMzUzODQ2LDM3LjYyMDUxMjggMTI1LjM1Mzg0NiwzNy42MjA1MTI4IDEyNS4zNTM4NDYsMzcuNDc2OTIzMSBDMTE1LjQ0NjE1NCwzMi43Mzg0NjE1IDEwMy4yNDEwMjYsMzAuNDQxMDI1NiA4OC44ODIwNTEzLDMwLjQ0MTAyNTYgTDMwLjU4NDYxNTQsMzAuNDQxMDI1NiBMMzAuNTg0NjE1NCwxMjguOTQzNTkgTDMwLjU4NDYxNTQsMTMxLjUyODIwNSBMNjMuMzIzMDc2OSwxMzEuNTI4MjA1IEM3NC4zNzk0ODcyLDEzMS4zODQ2MTUgODQuMTQzNTg5NywxMjkuODA1MTI4IDkyLjc1ODk3NDQsMTI2Ljc4OTc0NCBaIE03My41MTc5NDg3LDczLjgwNTEyODIgTDg3LjMwMjU2NDEsNzMuODA1MTI4MiBDOTIuMzI4MjA1MSw3My44MDUxMjgyIDk2LjM0ODcxNzksNzUuMDk3NDM1OSA5OS4wNzY5MjMxLDc3LjUzODQ2MTUgQzEwMS44MDUxMjgsODAuMTIzMDc2OSAxMDMuMjQxMDI2LDgzLjU2OTIzMDggMTAzLjI0MTAyNiw4OC4zMDc2OTIzIEMxMDMuMjQxMDI2LDkwLjYwNTEyODIgMTAyLjgxMDI1Niw5Mi42MTUzODQ2IDEwMi4yMzU4OTcsOTQuNDgyMDUxMyBDMTAxLjUxNzk0OSw5Ni4zNDg3MTc5IDEwMC41MTI4MjEsOTcuOTI4MjA1MSA5OS4yMjA1MTI4LDk5LjIyMDUxMjggQzk3Ljc4NDYxNTQsMTAwLjY1NjQxIDk2LjIwNTEyODIsMTAxLjUxNzk0OSA5NC4xOTQ4NzE4LDEwMi4yMzU4OTcgQzkyLjE4NDYxNTQsMTAyLjk1Mzg0NiA4OS44ODcxNzk1LDEwMy4zODQ2MTUgODcuMzAyNTY0MSwxMDMuMzg0NjE1IEw3My42NjE1Mzg1LDEwMy4zODQ2MTUgTDczLjY2MTUzODUsNzMuODA1MTI4MiBMNzMuNTE3OTQ4Nyw3My44MDUxMjgyIFoiIGlkPSJTaGFwZSIgZmlsbD0iIzNGM0IzQyIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTI2LjA3MTc5NSwzNy43NjQxMDI2IEMxMjUuNzg0NjE1LDM3LjYyMDUxMjggMTI1LjY0MTAyNiwzNy40NzY5MjMxIDEyNS4zNTM4NDYsMzcuNDc2OTIzMSBDMTI1LjY0MTAyNiwzNy42MjA1MTI4IDEyNS45MjgyMDUsMzcuNzY0MTAyNiAxMjYuMDcxNzk1LDM3Ljc2NDEwMjYgQzEyNi4wNzE3OTUsMzcuNzY0MTAyNiAxMjYuMDcxNzk1LDM3Ljc2NDEwMjYgMTI2LjA3MTc5NSwzNy43NjQxMDI2IFoiIGlkPSJQYXRoIiBmaWxsPSIjM0YzQjNDIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNy45NDg3MTc5LDEzMC41MjMwNzcgTDE3Ljk0ODcxNzksMTMwLjUyMzA3NyBMMTcuOTQ4NzE3OSwxNy44MDUxMjgyIEwxOC4wOTIzMDc3LDE3LjgwNTEyODIgTDc2LjI0NjE1MzgsMTcuODA1MTI4MiBMNzYuNTMzMzMzMywxNy44MDUxMjgyIEM5NC43NjkyMzA4LDE3LjgwNTEyODIgMTA5LjQxNTM4NSwyMS42ODIwNTEzIDEyMC42MTUzODUsMjkuMjkyMzA3NyBDMTE4LjYwNTEyOCwyNi40MjA1MTI4IDExNi4xNjQxMDMsMjMuNjkyMzA3NyAxMTMuNTc5NDg3LDIxLjI1MTI4MjEgQzEwMS45NDg3MTgsMTAuNjI1NjQxIDg1LjI5MjMwNzcsNS4zMTI4MjA1MSA2My43NTM4NDYyLDUuMzEyODIwNTEgTDUuNDU2NDEwMjYsNS4zMTI4MjA1MSBMNS40NTY0MTAyNiwxMzEuMzg0NjE1IEwxNy45NDg3MTc5LDE0My43MzMzMzMgTDE3Ljk0ODcxNzksMTMxLjM4NDYxNSBMMTcuOTQ4NzE3OSwxMzAuNTIzMDc3IFoiIGlkPSJQYXRoIiBmaWxsPSIjRkRFQzBBIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjRTQwODdFIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHBvaW50cz0iMTcuOTQ4NzE3OSAxNDMuNzMzMzMzIDE3Ljk0ODcxNzkgMTQzLjczMzMzMyAzMC40NDEwMjU2IDE1Ni4yMjU2NDEgMzAuNDQxMDI1NiAxNDMuNzMzMzMzIj48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTI1LjM1Mzg0NiwzNy40NzY5MjMxIEMxMjkuMjMwNzY5LDQ1LjgwNTEyODIgMTMxLjA5NzQzNiw1NS43MTI4MjA1IDEzMS4wOTc0MzYsNjcuMzQzNTg5NyBDMTMxLjA5NzQzNiw3Ny4xMDc2OTIzIDEyOS42NjE1MzgsODUuODY2NjY2NyAxMjYuNzg5NzQ0LDkzLjc2NDEwMjYgQzEyMy45MTc5NDksMTAxLjY2MTUzOCAxMTkuNzUzODQ2LDEwOC4yNjY2NjcgMTE0LjAxMDI1NiwxMTMuODY2NjY3IEMxMDguMjY2NjY3LDExOS40NjY2NjcgMTAxLjM3NDM1OSwxMjMuNzc0MzU5IDkyLjc1ODk3NDQsMTI2LjY0NjE1NCBDODQuMTQzNTg5NywxMjkuNjYxNTM4IDc0LjM3OTQ4NzIsMTMxLjI0MTAyNiA2My4xNzk0ODcyLDEzMS4yNDEwMjYgTDMwLjQ0MTAyNTYsMTMxLjI0MTAyNiBMMzAuNDQxMDI1NiwxMzEuMzg0NjE1IEwzMC40NDEwMjU2LDE0My43MzMzMzMgTDMwLjU4NDYxNTQsMTQzLjczMzMzMyBMNzUuNjcxNzk0OSwxNDMuODc2OTIzIEM4Ni44NzE3OTQ5LDE0NC4wMjA1MTMgOTYuNzc5NDg3MiwxNDIuNDQxMDI2IDEwNS4yNTEyODIsMTM5LjQyNTY0MSBDMTEzLjg2NjY2NywxMzYuNDEwMjU2IDEyMC45MDI1NjQsMTMyLjEwMjU2NCAxMjYuNTAyNTY0LDEyNi42NDYxNTQgQzEzMi4xMDI1NjQsMTIxLjE4OTc0NCAxMzYuNDEwMjU2LDExNC40NDEwMjYgMTM5LjI4MjA1MSwxMDYuNTQzNTkgQzE0Mi4xNTM4NDYsOTguNjQ2MTUzOCAxNDMuNTg5NzQ0LDg5Ljc0MzU4OTcgMTQzLjU4OTc0NCw4MC4xMjMwNzY5IEMxNDMuNTg5NzQ0LDY0Ljc1ODk3NDQgMTQwLjE0MzU5LDUyLjI2NjY2NjcgMTMzLjM5NDg3Miw0Mi4zNTg5NzQ0IEMxMzMuMzk0ODcyLDQyLjM1ODk3NDQgMTMzLjM5NDg3Miw0Mi4zNTg5NzQ0IDEzMy4yNTEyODIsNDIuMzU4OTc0NCBDMTMxLjA5NzQzNiw0MC43Nzk0ODcyIDEyOC42NTY0MSwzOS40ODcxNzk1IDEyNS45MjgyMDUsMzguMTk0ODcxOCBDMTI1LjkyODIwNSwzNy43NjQxMDI2IDEyNS42NDEwMjYsMzcuNjIwNTEyOCAxMjUuMzUzODQ2LDM3LjQ3NjkyMzEgWiIgaWQ9IlBhdGgiIGZpbGw9IiMzMDMwODQiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTc2LjI0NjE1MzgsMTcuODA1MTI4MiBMMTcuOTQ4NzE3OSwxNy44MDUxMjgyIEwxNy45NDg3MTc5LDE3Ljk0ODcxNzkgTDE3Ljk0ODcxNzksMTMwLjY2NjY2NyBMMTcuOTQ4NzE3OSwxMzEuNTI4MjA1IEwxNy45NDg3MTc5LDEzMS41MjgyMDUgTDE3Ljk0ODcxNzksMTQzLjg3NjkyMyBMMzAuNDQxMDI1NiwxNDMuODc2OTIzIEwzMC40NDEwMjU2LDE0My44NzY5MjMgTDMwLjQ0MTAyNTYsMTMxLjUyODIwNSBMMzAuNDQxMDI1NiwxMzEuMzg0NjE1IEwzMC40NDEwMjU2LDEyOC44IEwzMC40NDEwMjU2LDMwLjI5NzQzNTkgTDg4LjczODQ2MTUsMzAuMjk3NDM1OSBDMTAzLjA5NzQzNiwzMC4yOTc0MzU5IDExNS4zMDI1NjQsMzIuNzM4NDYxNSAxMjUuMjEwMjU2LDM3LjMzMzMzMzMgQzEyMy45MTc5NDksMzQuNjA1MTI4MiAxMjIuNDgyMDUxLDMyLjAyMDUxMjggMTIwLjkwMjU2NCwyOS41Nzk0ODcyIEMxMjAuOTAyNTY0LDI5LjU3OTQ4NzIgMTIwLjkwMjU2NCwyOS41Nzk0ODcyIDEyMS4wNDYxNTQsMjkuNTc5NDg3MiBDMTIxLjA0NjE1NCwyOS41Nzk0ODcyIDEyMS4wNDYxNTQsMjkuNDM1ODk3NCAxMjAuOTAyNTY0LDI5LjQzNTg5NzQgQzEyMC43NTg5NzQsMjkuMjkyMzA3NyAxMjAuNjE1Mzg1LDI5LjI5MjMwNzcgMTIwLjQ3MTc5NSwyOS4xNDg3MTc5IEMxMDkuMjcxNzk1LDIxLjUzODQ2MTUgOTQuNjI1NjQxLDE3LjY2MTUzODUgNzYuMzg5NzQzNiwxNy42NjE1Mzg1IEw3Ni4yNDYxNTM4LDE3LjY2MTUzODUgTDc2LjI0NjE1MzgsMTcuODA1MTI4MiBaIiBpZD0iUGF0aCIgZmlsbD0iI0UyMUUyNiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTI1LjM1Mzg0NiwzNy4zMzMzMzMzIEMxMjUuMzUzODQ2LDM3LjMzMzMzMzMgMTI1LjM1Mzg0NiwzNy40NzY5MjMxIDEyNS4zNTM4NDYsMzcuMzMzMzMzMyBDMTI1LjY0MTAyNiwzNy40NzY5MjMxIDEyNS45MjgyMDUsMzcuNjIwNTEyOCAxMjYuMjE1Mzg1LDM3Ljc2NDEwMjYgQzEyOC45NDM1OSwzOS4wNTY0MTAzIDEzMS4yNDEwMjYsNDAuNDkyMzA3NyAxMzMuMzk0ODcyLDQxLjkyODIwNTEgQzEzMy4zOTQ4NzIsNDEuOTI4MjA1MSAxMzMuMzk0ODcyLDQxLjkyODIwNTEgMTMzLjM5NDg3Miw0MS45MjgyMDUxIEMxMzMuMzk0ODcyLDQxLjkyODIwNTEgMTMzLjM5NDg3Miw0MS45MjgyMDUxIDEzMy4zOTQ4NzIsNDEuOTI4MjA1MSBDMTMxLjI0MTAyNiwzOC45MTI4MjA1IDEyOC44LDM2LjE4NDYxNTQgMTI2LjIxNTM4NSwzMy42IEMxMjQuNjM1ODk3LDMyLjE2NDEwMjYgMTIyLjkxMjgyMSwzMC44NzE3OTQ5IDEyMS4wNDYxNTQsMjkuNTc5NDg3MiBDMTIxLjA0NjE1NCwyOS41Nzk0ODcyIDEyMS4wNDYxNTQsMjkuNTc5NDg3MiAxMjAuOTAyNTY0LDI5LjU3OTQ4NzIgQzEyMi42MjU2NDEsMzIuMDIwNTEyOCAxMjQuMDYxNTM4LDM0LjYwNTEyODIgMTI1LjM1Mzg0NiwzNy4zMzMzMzMzIFoiIGlkPSJQYXRoIiBmaWxsPSIjRTQwODdFIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8dGV4dCBpZD0iZGlnaW5hdGUiIGZpbGw9IiMwMDAwMDAiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EiIGZvbnQtc2l6ZT0iMTA0Ljg0MDYxNSIgZm9udC13ZWlnaHQ9Im5vcm1hbCI+CiAgICAgICAgICAgICAgICA8dHNwYW4geD0iMTc3LjMwNzQ4NyIgeT0iMTA3LjY0MTY0MSI+ZGlnaW5hdGU8L3RzcGFuPgogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" atl="Diginate" />
+              </a>
+            </li>
+            
+          </ul> -->
+
+          <h3 class="sponsor-list__subheading"><span>Partners</span></h3>
+          <ul class="sponsor-list__list sponsor-list__list--small">
+            <li class="sponsor-list__list-item">
+              <a href="https://www.siepomaga.pl" title="Siepomaga" target="_blank">
+                <img src="siepomaga.84624fba9710a3d7b892.svg" alt="Siepomaga" />
+              </a>
+            </li>
+            <li class="sponsor-list__list-item">
+              <a
+                href="https://poznancongresscenter.pl"
+                title="Poznań Congress Center"
+                target="_blank"
+              >
+                <img src="pcc.8d09625370c9adde24a6.png" alt="Poznań Congress Center" />
+              </a>
+            </li>
+          </ul>
+
+          <!-- <h3 class="sponsor-list__subheading"><span>Community partner</span></h3>
+          <ul class="sponsor-list__list sponsor-list__list--tiny">
+            <li class="sponsor-list__list-item">
+              <a
+                href="https://roadshow.infoshare.pl/"
+                title="infoShare AI roadshow"
+                target="_blank"
+              >
+                <img alt="infoShare AI roadshow" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQgQ29weTwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJBcnRib2FyZC1Db3B5IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iY29kZXRlIj4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiB4PSIwIiB5PSIwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCI+PC9yZWN0PgogICAgICAgICAgICA8ZyBpZD0iaW5mb3NoYXJlX2xvZ29fcG9kc3Rhd293YSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjYuMDAwMDAwLCAxNTYuMDAwMDAwKSIgZmlsbD0iI0ZGNDA0MCI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMi41MjgsODQuNzMzIEwyMC4wNSw4NC43MzMgTDIwLjA1LDI4LjAzOSBMMi41MjgsMjguMDM5IEwyLjUyOCw4NC43MzMgWiBNMjIuMjI4LDEwLjYyIEMyMi4yMjgsMTYuNjcyIDE3LjU1NSwyMC43MTggMTEuMjg5LDIwLjcxOCBDNS4wMjMsMjAuNzE4IDAuMzUxLDE2LjY3MiAwLjM1MSwxMC42MiBDMC4zNTEsNC41NjYgNS4wMjMsMC41MTkgMTEuMjg5LDAuNTE5IEMxNy41NTUsMC41MTkgMjIuMjI4LDQuNTY2IDIyLjIyOCwxMC42MiBMMjIuMjI4LDEwLjYyIFoiIGlkPSJGaWxsLTEiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJGaWxsLTMiIHBvaW50cz0iNjcuODc3NiA4NC43MzM4IDY3Ljg3NzYgNDQuNzcyOCA0OS45NDA2IDQ0Ljc3MjggNDkuOTQwNiA4NC43MzM4IDMyLjQxNDYgODQuNzMzOCAzMi40MTQ2IDI4LjAzOTggODUuMzk5NiAyOC4wMzk4IDg1LjM5OTYgODQuNzMzOCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtNCIgcG9pbnRzPSIxMDMuMzQ4MyA0NC41MzE2IDkzLjYzNjMgNDQuNTMxNiA5My42MzYzIDI4LjAzOTYgMTAzLjM0ODMgMjguMDM5NiAxMDMuMzQ4MyA1LjM2MTYgMTM3Ljk5NzMgNS4zNjE2IDEzNy45OTczIDIxLjg1MzYgMTIwLjg3NDMgMjEuODUzNiAxMjAuODc0MyAyOC4wMzk2IDEzNy45OTczIDI4LjAzOTYgMTM3Ljk5NzMgNDQuNTMxNiAxMjAuODc0MyA0NC41MzE2IDEyMC44NzQzIDg0LjczMzYgMTAzLjM0ODMgODQuNzMzNiI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2MS44Njc4LDU2LjM4NjYgQzE2MS44Njc4LDY0LjMyMzYgMTY3LjEyMzgsNjkuMzc0NiAxNzMuODI0OCw2OS4zNzQ2IEMxODAuNjI3OCw2OS4zNzQ2IDE4NS43ODE4LDY0LjMyMzYgMTg1Ljc4MTgsNTYuMzg2NiBDMTg1Ljc4MTgsNDguNTUyNiAxODAuNjI3OCw0My4zOTc2IDE3My44MjQ4LDQzLjQxNzU0MiBDMTY3LjAyMTgsNDMuMzk3NiAxNjEuODY3OCw0OC41NTI2IDE2MS44Njc4LDU2LjM4NjYgTTIwMy41MTQ4LDU2LjM4NjYgQzIwMy41MTQ4LDczLjQ5NzYgMTkwLjQyMTgsODYuMDc0NiAxNzMuODI0OCw4Ni4wNzQ2IEMxNTcuMjMwOCw4Ni4wNzQ2IDE0NC4xMzc4LDczLjM5MzYgMTQ0LjEzNzgsNTYuMzg2NiBDMTQ0LjEzNzgsMzkuMjc1NiAxNTcuNDMzOCwyNi42OTk2IDE3My44MjQ4LDI2LjY5OTYgQzE5MC4yMTQ4LDI2LjY5OTYgMjAzLjUxNDgsMzkuMjc1NiAyMDMuNTE0OCw1Ni4zODY2IiBpZD0iRmlsbC01Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iRmlsbC02IiBwb2ludHM9IjM2NC42MDkgMjguMDM5NSAzNjQuNjA5IDg0LjczMzUgMzQ3LjA4MyA4NC43MzM1IDM0Ny4wODMgNDQuNzcyNSAzMjguNzM0IDQ0Ljc3MjUgMzI4LjczNCA4NC43MzM1IDMxMS4yMTMgODQuNzMzNSAzMTEuMjEzIDUuMzYxNSAzMjguNzM0IDUuMzYxNSAzMjguNzM0IDI4LjAzOTUiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zOTIuNjM0OSw1Ni4zODY2IEMzOTIuNjM0OSw2NC4zMjM2IDM5Ny44OTA5LDY5LjM3NDYgNDA0LjU5MTksNjkuMzc0NiBDNDExLjM5NDksNjkuMzc0NiA0MTYuNTQ4OSw2NC4zMjM2IDQxNi41NDg5LDU2LjM4NjYgQzQxNi41NDg5LDQ4LjU1MjYgNDExLjM5NDksNDMuMzk3NiA0MDQuNTkxOSw0My40MTc1NDIgQzM5Ny43ODg5LDQzLjM5NzYgMzkyLjYzNDksNDguNTUyNiAzOTIuNjM0OSw1Ni4zODY2IE00MTYuNTQ4OSwzNC40NDc2IEw0MTYuNTQ4OSwyOC4wMzk2IEw0MzQuMDczOSwyOC4wMzk2IEw0MzQuMDczOSw4NC43MzM2IEw0MTYuNTQ4OSw4NC43MzM2IEw0MTYuNTQ4OSw3OC42MTQ2IEM0MTIuOTA5OSw4My4wNjE2IDQwNy42Njk5LDg2LjA3NDYgNDAwLjQ2NzksODYuMDc0NiBDMzg2LjAzOTksODYuMDc0NiAzNzQuOTA1OSw3My45MTA2IDM3NC45MDU5LDU2LjM4NjYgQzM3NC45MDU5LDM4Ljc2MTYgMzg2LjI0MjksMjYuNjk5NiA0MDAuMzY1OSwyNi42OTk2IEM0MDcuNjExOSwyNi42OTk2IDQxMi44ODY5LDI5Ljg0MTYgNDE2LjU0ODksMzQuNDQ3NiIgaWQ9IkZpbGwtNyI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IkZpbGwtOCIgcG9pbnRzPSI0NjMuOTU2NyA0NC43NzI0IDQ2My45NTY3IDg0LjczMzQgNDQ2LjQzNDcgODQuNzMzNCA0NDYuNDM0NyAyOC4wMzk0IDQ4My4yMzM3IDI4LjAzOTQgNDgzLjIzMzcgNDQuNzcyNCI+PC9wb2x5Z29uPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTUwOC41MTM4LDQ4LjE4NTkgTDUyOS4zMTc4LDQ4LjE4NTkgQzUyNy44ODQ4LDQyLjkxNzkgNTIzLjE0OTgsNDEuMDI3OSA1MTguOTk3OCw0MS4wMjc5IEM1MTQuMDc4OCw0MS4wMjc5IDUxMC4zNzc4LDQzLjY2NzkgNTA4LjUxMzgsNDguMTg1OSBNNTE4LjY4ODgsMjYuNjk5OSBDNTMzLjIyMjgsMjYuNjk5OSA1NDUuODk5OCwzNi4yODY5IDU0Ny43ODc4LDUxLjc5MDkgQzU0OC4yMDY4LDU1LjIyODkgNTQ3Ljk1OTgsNTcuNzUxOSA1NDcuNjg1OCw1OS43NDY5IEw1MDcuMjQ0OCw1OS43NDY5IEM1MDcuODY3OCw2Ni45NzA5IDUxMi42MTA4LDcxLjIzMTkgNTE5LjMwNzgsNzEuMjMxOSBDNTI0LjI1MzgsNzEuMjMxOSA1MjguNjg3OCw2OC44NjA5IDUyOS43NTI4LDYzLjk0NDkgTDU0Ny43ODc4LDYzLjk0NjkgQzU0NS41OTQ4LDc4LjAzNDkgNTMzLjAxODgsODYuMDc0OSA1MTkuMjA1OCw4Ni4wNzQ5IEM1MDEuNzgxOCw4Ni4wNzQ5IDQ4OS40MTM4LDczLjE4NzkgNDg5LjQxMzgsNTYuNDIxOSBDNDg5LjQxMzgsMzkuNTg0OSA1MDEuODg3OCwyNi42OTk5IDUxOC42ODg4LDI2LjY5OTkiIGlkPSJGaWxsLTkiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJGaWxsLTEwIiBwb2ludHM9IjIzMS4zMzMyIDQxLjk1NSAyMzEuMzMzMiA0OC4zODQgMjk4Ljg1MjIgNDguMzg0IDI5OC44NTIyIDg0LjczNCAyMTMuODExMiA4NC43MzQgMjEzLjgxMTIgNzAuODE5IDI4MS4zMzAyIDcwLjgxOSAyODEuMzMwMiA2My4zMyAyMTMuODExMiA2My4zMyAyMTMuODExMiAyOC4wMzkgMjk4Ljg1MjIgMjguMDM5IDI5OC44NTIyIDQxLjk1NSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" />
+              </a>
+            </li>
+            <li class="sponsor-list__list-item">
+              <a
+                href="#sponsor_offer"
+                class="sponsor-list__list-item--offer-link"
+                title="Become a sponsor"
+              >
+                <span class="sponsor-list__small-offer-link">Become a sponsor</span>
+              </a>
+            </li>
+          </ul> -->
         </div>
       </section>
-
+      <!--
       <section class="gallery">
         <div class="gallery__picture">
           <img class="gallery__image" src="conference1.0e1eabbe5b33e9c00b7d.jpg" alt="" />
@@ -712,5 +794,5 @@
         "sameAs": "https://www.facebook.com/events/292278298176552/"
       }
     </script>
-  <script type="text/javascript" src="main.c5cbce291f9a836ac8ca.js"></script></body>
+  <script type="text/javascript" src="main.ecaf4b989de34b15c13b.js"></script></body>
 </html>
