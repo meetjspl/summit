@@ -8,6 +8,8 @@
     // overflow: hidden; don't
   }
   &__content {
+    padding-top: 60px; //please stop removing this
+
     @include mediaquery('gt-small') {
       margin: 0 auto;
       max-width: 700px;
