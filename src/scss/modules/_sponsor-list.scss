@@ -69,6 +69,9 @@
       @media (min-width: 640px) {
         grid-template-columns: repeat(1, 1fr);
       }
+      > li {
+        padding: 56px;
+      }
     }
     &--small {
       grid-template-columns: repeat(2, 1fr);
