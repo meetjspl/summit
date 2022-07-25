@@ -68,9 +68,10 @@
     &--main {
       @media (min-width: 640px) {
         grid-template-columns: repeat(1, 1fr);
-      }
-      > li {
-        padding: 56px;
+
+        > li {
+          padding: 56px;
+        }
       }
     }
     &--small {
@@ -82,6 +83,9 @@
 
       @media (min-width: 640px) {
         grid-template-columns: repeat(3, 1fr);
+      }
+      > li {
+        padding: 20px;
       }
     }
 
@@ -103,7 +107,7 @@
     background-color: $white_color;
     box-shadow: 0 0 10px 0 rgba($lightpurple_color, 0.15);
     border-radius: 2px;
-    padding: 20px;
+    padding: 30px;
     align-items: center;
     justify-content: center;
 
@@ -132,6 +136,7 @@
       display: block;
       width: 100%;
       height: auto;
+      max-height: 180px;
     }
   }
   &__small-offer-link {
