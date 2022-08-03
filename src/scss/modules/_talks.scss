@@ -1,0 +1,28 @@
+.talks {
+  @extend %base-section;
+  background-color: $purple_color;
+
+  &__content {
+    max-width: 636px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  &__heading {
+    @extend %main-heading;
+    color: $white_color;
+  }
+
+  &__text {
+    @extend %main-text;
+    @extend %main-text--white;
+  }
+
+  &__link {
+    @extend %main-link;
+  }
+
+  &__button {
+    @extend %fancy-button;
+  }
+}
