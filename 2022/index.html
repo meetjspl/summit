@@ -27,9 +27,53 @@
     <meta property="og:url" content="https://summit.meetjs.pl/2022/" />
     <meta property="og:site_name" content="meet.js Summit" />
     <meta http-equiv="Cache-Control" content="no-cache" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.7d2f5c8999032e9de2dd.css" rel="stylesheet"></head>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.9a5822450668178fba8d.css" rel="stylesheet"></head>
 
   <body>
+    <script type="text/javascript">
+      (function(window, document, dataLayerName, id) {
+        (window[dataLayerName] = window[dataLayerName] || []),
+          window[dataLayerName].push({ start: new Date().getTime(), event: 'stg.start' });
+        var scripts = document.getElementsByTagName('script')[0],
+          tags = document.createElement('script');
+        function stgCreateCookie(a, b, c) {
+          var d = '';
+          if (c) {
+            var e = new Date();
+            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), (d = '; expires=' + e.toUTCString());
+          }
+          document.cookie = a + '=' + b + d + '; path=/';
+        }
+        var isStgDebug =
+          (window.location.href.match('stg_debug') || document.cookie.match('stg_debug')) &&
+          !window.location.href.match('stg_disable_debug');
+        stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1);
+        var qP = [];
+        dataLayerName !== 'dataLayer' && qP.push('data_layer_name=' + dataLayerName),
+          isStgDebug && qP.push('stg_debug');
+        var qPString = qP.length > 0 ? '?' + qP.join('&') : '';
+        (tags.async = !0),
+          (tags.src = 'https://summit.containers.piwik.pro/' + id + '.js' + qPString),
+          scripts.parentNode.insertBefore(tags, scripts);
+        !(function(a, n, i) {
+          a[n] = a[n] || {};
+          for (var c = 0; c < i.length; c++)
+            !(function(i) {
+              (a[n][i] = a[n][i] || {}),
+                (a[n][i].api =
+                  a[n][i].api ||
+                  function() {
+                    var a = [].slice.call(arguments, 0);
+                    'string' == typeof a[0] &&
+                      window[dataLayerName].push({
+                        event: n + '.' + i + ':' + a[0],
+                        parameters: [].slice.call(arguments, 1),
+                      });
+                  });
+            })(i[c]);
+        })(window, 'ppms', ['tm', 'cm']);
+      })(window, document, 'dataLayer', '8d9beddd-46a0-4dcd-85a7-bb479cc8fb41');
+    </script>
     <script>
       document.body.classList.add('has-js');
     </script>
@@ -910,7 +954,7 @@
               <article class="speaker-box">
                 <img
                   class="speaker-box__image"
-                  src="xxxHTMLLINKxxx0.32085582257924130.2662937586998557xxx"
+                  src="xxxHTMLLINKxxx0.61609822688116720.8763380385744284xxx"
                   alt="Photo of speaker: Zbyszek Tenerowicz"
                 />
                 <div class="speaker-box__info">
@@ -1074,18 +1118,6 @@
       </div>
     </footer>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98203728-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-98203728-2');
-    </script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -1106,16 +1138,16 @@
         "offers": {
           "@type": "Offer",
           "availability": "http://schema.org/InStock",
-          "price": "64",
+          "price": "99",
           "priceCurrency": "PLN"
         },
         "startDate": "2022-09-16T08:15+02:00",
-        "image": "https://summit.meetjs.pl/2022/images/facebook/fb-og-2022-09-30.png",
+        "image": "https://summit.meetjs.pl/2022/images/facebook/cover_fb_offline_js.png",
         "description": "meet.js Summit is a conference that gathers 500 professional front-end developers interested in JavaScript development, covering topics like Front-end architectures, Node.js, reactive programming, frameworks like Vue, React or Angular",
         "endDate": "2022-09-16T18:00+02:00",
         "url": "https://summit.meetjs.pl/2022/",
         "sameAs": "https://www.facebook.com/events/983733082322043/"
       }
     </script>
-  <script type="text/javascript" src="main.7d2f5c8999032e9de2dd.js"></script></body>
+  <script type="text/javascript" src="main.9a5822450668178fba8d.js"></script></body>
 </html>
