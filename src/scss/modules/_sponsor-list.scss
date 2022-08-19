@@ -93,11 +93,14 @@
       grid-template-columns: repeat(3, 1fr);
 
       @media (min-width: 480px) {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
 
       @media (min-width: 640px) {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+      }
+      > li {
+        padding: 15px;
       }
     }
   }
