@@ -82,6 +82,10 @@ module.exports = {
       filename: 'regulamin.html',
       template: './src/regulamin.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'agenda.html',
+      template: './src/agenda.html',
+    }),
 
     new CopyWebpackPlugin([{ from: 'src/pdf', to: 'pdf' }]),
 

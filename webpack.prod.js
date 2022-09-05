@@ -97,6 +97,12 @@ module.exports = {
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'agenda.html',
+      template: './src/agenda.html',
+      // Inject the js bundle at the end of the body of the given template
+      inject: 'body',
+    }),
 
     new CleanWebpackPlugin(),
     new FaviconsWebpackPlugin({
