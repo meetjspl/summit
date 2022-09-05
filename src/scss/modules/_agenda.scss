@@ -168,6 +168,9 @@
       &::before {
         color: $green_color;
       }
+      & time {
+        color: $blue_color;
+      }
     }
 
     &--special::before {
@@ -176,7 +179,7 @@
     }
 
     & > time {
-      color: $blue_color;
+      color: $redish_color;
       font-weight: bold;
       padding: 0 5px 0 0;
     }
@@ -210,19 +213,28 @@
 }
 .agenda-talks-box {
   &__title {
-    grid-area: title;
-    // font-size: 20px !important;
     cursor: pointer;
     @extend %secondary-link;
+    &:hover {
+      color: $blue_color !important;
+    }
+    &:before {
+      padding-right: 5px;
+      // float:right;
+      content: '⤵';
+    }
   }
 
   .js-toggle-open &__info {
     display: grid;
   }
+  .js-toggle-open &__title:before {
+    content: '⤴';
+  }
   &__info {
     display: none;
 
-    grid-gap: 15px;
+    column-gap: 50px;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
@@ -256,8 +268,8 @@
     &:before {
       content: ' ';
       position: absolute;
-      top: -80px;
-      left: -15px;
+      top: -88px;
+      left: -25px;
       width: 55px;
       height: 88px;
       background: url('../images/asset-mic.png') no-repeat center;
