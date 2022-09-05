@@ -23,7 +23,10 @@ const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
   mode: 'production',
-  entry: './src/js/script.js',
+  entry: {
+    main: './src/js/main.js',
+    agenda: './src/js/main-agenda.js',
+  },
   output: {
     filename: '[name].[hash:20].js',
     path: path.join(buildPath, YEAR),
@@ -90,18 +93,21 @@ module.exports = {
       template: './src/index.html',
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
+      chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
       filename: 'regulamin.html',
       template: './src/regulamin.html',
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
+      chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
       filename: 'agenda.html',
       template: './src/agenda.html',
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
+      chunks: ['agenda'],
     }),
 
     new CleanWebpackPlugin(),
