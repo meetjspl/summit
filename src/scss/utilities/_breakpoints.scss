@@ -1,6 +1,7 @@
 // breakpoints
 @mixin mediaquery($query) {
   $breakpoints: (
+    'gt-tiny': '(min-width: 32em)',
     'gt-small': '(min-width: 48em)',
     'gt-medium': '(min-width: 62em)',
     'fit-menu': '(min-width: 68em)',
