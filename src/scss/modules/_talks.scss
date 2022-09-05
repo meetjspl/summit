@@ -18,6 +18,15 @@
     @extend %secondary-heading;
     color: $white_color;
     padding: 0 3em 3em 3em;
+
+    & img {
+      max-width: 45px;
+      height: 45px;
+
+      display: inline-block;
+      margin: 5px;
+      border-radius: 3px;
+    }
   }
   &__content {
     max-width: 780px;

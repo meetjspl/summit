@@ -4,7 +4,7 @@
   background-color: $purple_color;
 
   &__content {
-    max-width: 636px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -33,7 +33,11 @@
   }
 
   &__heading {
-    @extend %main-heading--special;
+    max-width: 636px;
+    margin: 3em auto;
+    color: $white_color;
+    margin-bottom: 20px;
+    @extend %main-heading;
   }
 
   &__text {
@@ -164,6 +168,9 @@
       &::before {
         color: $green_color;
       }
+      & time {
+        color: $blue_color;
+      }
     }
 
     &--special::before {
@@ -172,7 +179,7 @@
     }
 
     & > time {
-      color: $blue_color;
+      color: $redish_color;
       font-weight: bold;
       padding: 0 5px 0 0;
     }
@@ -196,6 +203,117 @@
       color: $white_color;
       margin: 0;
       padding: 0 0 10px 5px;
+    }
+  }
+}
+
+.agenda__toggle-all {
+  cursor: pointer;
+  @extend %fancy-button;
+}
+.js-toggle-open .agenda__toggle-all {
+  opacity: 0.5;
+}
+.agenda-talks-box {
+  &__title {
+    cursor: pointer;
+    @extend %secondary-link;
+    &:hover {
+      color: $blue_color !important;
+    }
+    &:before {
+      padding-right: 5px;
+      // float:right;
+      content: '⤵';
+    }
+  }
+
+  .js-toggle-open &__info {
+    display: grid;
+  }
+  .js-toggle-open &__title:before {
+    content: '⤴';
+  }
+  &__info {
+    display: none;
+
+    column-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'text'
+      'pic'
+      'spk';
+
+    @include mediaquery('gt-tiny') {
+      grid-template-columns: 1fr 150px;
+      grid-template-areas:
+        'text pic'
+        'text spk';
+    }
+
+    overflow: visible;
+    color: $white_color;
+  }
+  &__image {
+    grid-area: pic;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 140px;
+    box-shadow: rgba($purple_color, 0.5) 0 2px 4px;
+  }
+
+  &__header {
+    grid-area: spk;
+    position: relative;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: -88px;
+      left: -25px;
+      width: 55px;
+      height: 88px;
+      background: url('../images/asset-mic.png') no-repeat center;
+      background-size: contain;
+    }
+
+    & h3,
+    & h4 {
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    & h4 {
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+
+    & a {
+      display: inline-block;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+
+      &:hover {
+        color: $white_color;
+      }
+    }
+
+    &--alt {
+      background-color: $green_color;
+    }
+  }
+
+  &__desc {
+    grid-area: text;
+    font-size: 14px;
+    margin: 16px 0;
+    text-align: justify;
+
+    @include mediaquery('gt-small') {
+      text-align: left;
     }
   }
 }

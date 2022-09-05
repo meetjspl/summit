@@ -15,7 +15,10 @@ const version = {
 module.exports = {
   mode: 'development',
   devtool: 'eval-cheap-module-source-map',
-  entry: './src/js/script.js',
+  entry: {
+    main: './src/js/main.js',
+    agenda: './src/js/main-agenda.js',
+  },
   devServer: {
     port: 8085,
     contentBase: path.join(__dirname, 'dist'),
@@ -76,11 +79,18 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      chunks: ['main'],
     }),
 
     new HtmlWebpackPlugin({
       filename: 'regulamin.html',
       template: './src/regulamin.html',
+      chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'agenda.html',
+      template: './src/agenda.html',
+      chunks: ['agenda'],
     }),
 
     new CopyWebpackPlugin([{ from: 'src/pdf', to: 'pdf' }]),

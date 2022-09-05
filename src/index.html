@@ -135,7 +135,7 @@
     <header class="main-header">
       <div class="main-header__content">
         <div class="main-logo">
-          <a class="main-logo__link" href="#hero" data-scroll>
+          <a class="main-logo__link" href="/#hero" data-scroll>
             <img class="main-logo__image" src="images/summit-logo.png" alt="meet.js summit logo" />
           </a>
         </div>
@@ -174,25 +174,25 @@
               <li class="main-nav__item">
                 <a
                   class="main-nav__link"
-                  href="#sponsor_offer"
-                  title="Become a sponsor"
-                  aria-label="Become a sponsor"
+                  href="#sponsor_list"
+                  title="Sponsors"
+                  aria-label="Sponsors"
                   >#sponsors</a
                 >
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#talks" title="Talks" aria-label="Talks">#talks</a>
-              </li>
               <!-- <li class="main-nav__item">
+                <a class="main-nav__link" href="#talks" title="Talks" aria-label="Talks">#talks</a>
+              </li> -->
+              <li class="main-nav__item">
                 <a
                   class="main-nav__link"
-                  href="#schedule"
+                  href="/agenda.html"
                   title="Conference schedule"
                   aria-label="Conference schedule"
                   >#schedule</a
                 >
               </li>
-              <li class="main-nav__item">
+              <!-- <li class="main-nav__item">
                 <a
                   class="main-nav__link"
                   href="#speakers"
@@ -263,10 +263,17 @@
                   In-person conference of the widest JavaScript community in Poland.
                 </strong>
                 The meet.js Summit is a conference bringing together local JavaScript communities
-                from all across Poland. An event that gathers 500 web development professionals,
+                from all across Poland. An event that gathers web development professionals,
                 front-end and back-end software engineers interested in modern JavaScript ecosystem
                 and web technologies. This year marks a 10th anniversary of meet.js Summit.
               </p>
+              <a
+                class="fancy-button"
+                href="/agenda.html"
+                title="Conference schedule"
+                aria-label="Conference schedule"
+                >Detailed schedule available now!</a
+              >
             </div>
           </div>
         </div>
@@ -332,7 +339,7 @@
             Submit your proposal </a
           >.
         </div>
-      </section> -->
+      </section> 
 
       <section id="sponsor_offer" class="sponsor-offer">
         <div class="sponsor-offer__content">
@@ -382,7 +389,7 @@
           </div>
         </div>
       </section>
-      <!--
+    
       <section class="venue" id="venue">
         <h2 class="venue__heading"><span aria-hidden="true">#</span>venue</h2>
         <div class="venue__content">
@@ -395,7 +402,7 @@
           </div>
           <div class="venue__info">
             <p class="venue__place">International Conference Centre in Poznań</p>
-            <p class="venue__address">Plac Sławika i Antalla 1, 40-163 Poznań, Poland</p>
+            <p class="venue__address">Głogowska 14, Poznań, Poland</p>
             <div class="venue__links">
               <a
                 class="venue__link"
@@ -457,12 +464,81 @@
         </div>
       </section> -->
       <section class="talks" id="talks">
-        <h2 class="talks__heading"><span aria-hidden="true">#</span>talks preview</h2>
+        <h2 class="talks__heading"><span aria-hidden="true">#</span>schedule</h2>
         <div class="talks__content">
-          <p class="talks__intro">
-            We've completed the list of talks. Check them out!
-          </p>
-          <ul class="talks__list">
+          <div class="talks__intro">
+            <p>
+              We've completed the list of talks. Check them out!
+            </p>
+            <p>
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-cieslak.jpg"
+                alt="Photo of speaker: Krzysztof Cieslak"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-filip-rakowski.jpg"
+                alt="Photo of speaker: Filip Rakowski"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-jossef-harush-kadouri.png"
+                alt="Photo of speaker: Jossef Harush Kadouri"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-aleksandra-sikora.jpg"
+                alt="Photo of speaker: Aleksandra Sikora"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-danielafonso.png"
+                alt="Photo of speaker: Daniel Afonso"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-stefan-judis.jpg"
+                alt="Photo of speaker: Stefan Judis"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-maciej_walaszczyk.jpg"
+                alt="Photo of speaker: Maciej Walaszczyk"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-jakub-pusiak.jpg"
+                alt="Photo of speaker: Jakub Pusiak"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-konrad-hanus.png"
+                alt="Photo of speaker: Konrad Hanus"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-bartoszkrol.png"
+                alt="Photo of speaker: Bartosz Król"
+              />
+              <img
+                class="agenda-talks-box__image"
+                src="images/speakers/2022/speaker-przemyslaw-beigert.png"
+                alt="Photo of speaker: Przemysław Beigert"
+              />
+            </p>
+            <p>
+              <a
+                class="fancy-button"
+                href="/agenda.html"
+                title="Conference schedule"
+                aria-label="Conference schedule"
+                >Go to schedule page</a
+              >
+            </p>
+          </div>
+          <!--
+           <ul class="talks__list">
             <li>
               <article class="talks-box">
                 <img
@@ -832,7 +908,7 @@
               </article>
             </li>
           </ul>
-        </div>
+        --></div>
       </section>
 
       <section id="sponsor_list" class="sponsor-list">
