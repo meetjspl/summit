@@ -211,6 +211,9 @@
   cursor: pointer;
   @extend %fancy-button;
 }
+.js-toggle-open .agenda__toggle-all {
+  opacity: 0.5;
+}
 .agenda-talks-box {
   &__title {
     cursor: pointer;
