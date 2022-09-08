@@ -711,6 +711,12 @@
 
     <script>
       document.body.classList.add('has-js');
+
+      Array.from(document.querySelectorAll('.js-toggle')).map(toggle => {
+        toggle.addEventListener('click', e => {
+          e.target.parentNode.classList.toggle('js-toggle-open');
+        });
+      });
     </script>
     <script type="application/ld+json">
       {
