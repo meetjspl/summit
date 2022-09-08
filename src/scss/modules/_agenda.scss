@@ -28,16 +28,17 @@
 
     &__heading {
       @extend %secondary-heading;
+
       color: $white_color;
     }
   }
 
   &__heading {
     max-width: 636px;
-    margin: 3em auto;
+    margin: 2em auto;
     color: $white_color;
     margin-bottom: 20px;
-    @extend %main-heading;
+    @extend %main-heading--special;
   }
 
   &__text {
