@@ -147,7 +147,7 @@
       left: 0;
       width: 14px;
       height: 14px;
-      color: $blue_color;
+      color: $redish_color;
       border-radius: 50%;
     }
 
@@ -166,7 +166,7 @@
 
     &:nth-child(2n-1) {
       &::before {
-        color: $green_color;
+        color: $blue_color;
       }
       & time {
         color: $blue_color;
@@ -222,9 +222,12 @@
       color: $blue_color !important;
     }
     &:before {
-      padding-right: 5px;
-      // float:right;
-      content: '⤵';
+      transition: all 0.5s ease;
+      display: inline-block;
+      width: 20px;
+      height: 1em;
+      content: ' ';
+      background: url('../images/arr.svg') no-repeat center / 15px;
     }
   }
 
@@ -232,7 +235,7 @@
     display: grid;
   }
   .js-toggle-open &__title:before {
-    content: '⤴';
+    transform: rotate(180deg);
   }
   &__info {
     display: none;
@@ -309,7 +312,7 @@
   &__desc {
     grid-area: text;
     font-size: 14px;
-    margin: 16px 0;
+    margin: 16px 0 16px 25px;
     text-align: justify;
 
     @include mediaquery('gt-small') {
