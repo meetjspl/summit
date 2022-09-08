@@ -1,39 +1,41 @@
 .venue {
   position: relative;
-  padding: 80px 20px;
-  background: $lightgrey_color url(../images/venue/venue-bg-mobile.jpg) center / cover;
+  padding: 16vw 0 0 0;
+
+  background: $lightgrey_color url(../images/venue/pccmobile.jpg) no-repeat top / contain;
   @include mediaquery('gt-medium') {
-    padding: 135px 20px;
-    background-image: url(../images/venue/venue-bg-desktop.jpg);
+    background-image: url(../images/venue/pccmax.jpg);
   }
   &__heading {
     @extend %main-heading--special;
   }
   &__content {
     @include mediaquery('gt-small') {
-      margin: 0 auto;
+      margin: 20px auto 50px auto;
       max-width: 636px;
     }
   }
-  &__image {
-    width: 100%;
-    padding: 40px 40px 0 40px;
-    background-color: rgba($green_color, 0.88);
-    @include mediaquery('gt-small') {
-      padding: 0 60px 40px 60px;
-      background-color: transparent;
-    }
-  }
+
   &__logo {
     width: 100%;
     max-width: 550px;
   }
+  &__map img {
+    width: 200%;
+    position: relative;
+    left: -50%;
+    @include mediaquery('gt-medium') {
+      width: 100%;
+      left: 0;
+    }
+  }
   &__info {
     padding: 40px;
-    background-color: rgba($green_color, 0.88);
+    background-color: rgba(244, 255, 255, 0.88);
     @include mediaquery('gt-small') {
       padding: 40px 60px;
     }
+    @extend %main-text;
   }
   &__place {
     @extend %secondary-heading;
