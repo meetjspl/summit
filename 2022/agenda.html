@@ -27,7 +27,7 @@
     <meta property="og:url" content="https://summit.meetjs.pl/2022/" />
     <meta property="og:site_name" content="meet.js Summit" />
     <meta http-equiv="Cache-Control" content="no-cache" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="agenda.1839e00f399e557662e6.css" rel="stylesheet"></head>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="agenda.fe56b5e7da37b7ba3031.css" rel="stylesheet"></head>
 
   <body>
     <script type="text/javascript">
@@ -198,9 +198,6 @@
                 >
               </li> -->
             </ul>
-            <div class="tickets-button">
-              <a href="#tickets" class="tickets-button__link">#tickets</a>
-            </div>
           </nav>
 
           <nav class="social-nav">
@@ -711,6 +708,12 @@
 
     <script>
       document.body.classList.add('has-js');
+
+      Array.from(document.querySelectorAll('.js-toggle')).map(toggle => {
+        toggle.addEventListener('click', e => {
+          e.target.parentNode.classList.toggle('js-toggle-open');
+        });
+      });
     </script>
     <script type="application/ld+json">
       {
@@ -743,5 +746,5 @@
         "sameAs": "https://www.facebook.com/events/983733082322043/"
       }
     </script>
-  <script type="text/javascript" src="agenda.1839e00f399e557662e6.js"></script></body>
+  <script type="text/javascript" src="agenda.fe56b5e7da37b7ba3031.js"></script></body>
 </html>
