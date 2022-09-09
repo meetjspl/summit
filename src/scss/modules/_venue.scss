@@ -1,6 +1,10 @@
 .venue {
   position: relative;
-  padding: 16vw 0 0 0;
+
+  padding: 144px 0 0 0;
+  @include mediaquery('gt-small') {
+    padding: 16vw 0 0 0;
+  }
 
   background: $lightgrey_color url(../images/venue/pccmobile.jpg) no-repeat top / contain;
   @include mediaquery('gt-medium') {
@@ -23,7 +27,7 @@
   &__map {
     border-bottom: 5px solid $green_color;
     display: block;
-    overflow: visible;
+    overflow: hidden;
 
     & img {
       width: 200%;

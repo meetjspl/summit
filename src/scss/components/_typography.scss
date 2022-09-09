@@ -1,10 +1,10 @@
 %main-heading {
   @extend %font-bold;
 
-  font-size: 3.2rem;
+  font-size: 3rem;
 
   @include mediaquery('gt-medium') {
-    font-size: 4.8rem;
+    font-size: 4.4rem;
   }
 
   &--white {
@@ -16,8 +16,8 @@
   @extend %main-heading;
   position: absolute;
   top: 0;
-  left: 0;
-  padding: 16px 64px 16px 32px;
+  left: -5%;
+  padding: 16px 42px 16px 32px;
   margin: 0;
   transform: translateY(-33.333%) rotate(-2deg);
   color: $white_color;
@@ -29,6 +29,7 @@
   @include mediaquery('gt-medium') {
     left: 15%;
     padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
