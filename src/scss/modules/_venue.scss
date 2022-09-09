@@ -6,7 +6,7 @@
     padding: 16vw 0 0 0;
   }
 
-  background: $lightgrey_color url(../images/venue/pccmobile.jpg) no-repeat top / contain;
+  background: $green_color url(../images/venue/pccmobile.jpg) no-repeat top / contain;
   @include mediaquery('gt-medium') {
     background-image: url(../images/venue/pccmax.jpg);
   }
@@ -30,9 +30,9 @@
     overflow: hidden;
 
     & img {
-      width: 200%;
+      width: 180%;
       position: relative;
-      left: -50%;
+      left: -10%;
       @include mediaquery('gt-medium') {
         width: 100%;
         left: 0;
