@@ -130,106 +130,61 @@
       </symbol>
     </svg>
 
-    <header class="main-header">
-      <div class="main-header__content">
-        <div class="main-logo">
-          <a class="main-logo__link" href="/#hero" data-scroll>
-            <img class="main-logo__image" src="images/summit-logo.png" alt="meet.js summit logo" />
-          </a>
-        </div>
+    <style>
+      html,
+      body,
+      main,
+      #schedule {
+        width: 1080px;
+        height: 1900px;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      #schedule {
+        margin-top: 20px;
+      }
+      #schedule .agenda__heading {
+        left: 650px;
+        top: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      #schedule .agenda-talks-box {
+        clear: both;
+        overflow: visible;
+      }
+      #schedule .agenda-talks-box__title {
+        margin: 0;
+      }
+      #schedule .agenda-talks-box__info {
+        display: block;
+      }
+      #schedule .agenda-talks-box__header h3 {
+        font-weight: normal;
+        font-size: 0.9em;
+        padding-left: 30px;
+      }
+      #schedule .agenda-talks-box__header::before {
+        top: 5px;
+        left: 0px;
+        width: 22px;
+        height: 28px;
+      }
+      #schedule .agenda-talks-box__info img {
+        display: none;
+        width: 100px;
+      }
+      #schedule .agenda-talks-box__desc {
+        display: none;
+      }
 
-        <button
-          class="button-menu js-button-menu"
-          title="Open/close menu"
-          aria-label="Navigation menu"
-          role="button"
-          aria-controls="navigation"
-          aria-expanded="true"
-          type="button"
-          id="open-menu-button"
-          aria-haspopup="true"
-        >
-          <svg class="button-menu__icon button-menu__menu-icon">
-            <use xlink:href="#icon-menu"></use>
-          </svg>
-          <svg class="button-menu__icon button-menu__close-icon">
-            <use xlink:href="#icon-cross"></use>
-          </svg>
-        </button>
+      #schedule .agenda-talks-box__title.js-toggle:before {
+        display: none;
+        content: none;
+      }
 
-        <div class="main-header__nav">
-          <nav id="navigation" class="main-nav" role="navigation">
-            <ul class="main-nav__list">
-              <!-- <li class="main-nav__item">
-                <a
-                  class="main-nav__link"
-                  href="#venue"
-                  title="Find us in Katowice"
-                  aria-label="Find us in Katowice"
-                  >#venue</a
-                >
-              </li> -->
-
-              <!-- <li class="main-nav__item">
-                <a
-                  class="main-nav__link"
-                  href="#schedule"
-                  title="Conference schedule"
-                  aria-label="Conference schedule"
-                  >#schedule</a
-                >
-              </li>
-              <li class="main-nav__item">
-                <a
-                  class="main-nav__link"
-                  href="#speakers"
-                  title="Meet conference speakers"
-                  aria-label="Meet conference speakers"
-                  >#speakers</a
-                >
-              </li>
-              <li class="main-nav__item">
-                <a
-                  class="main-nav__link"
-                  href="#code-of-conduct"
-                  title="Read the Code of Conduct"
-                  aria-label="Read the Code of Conduct"
-                  >#code-of-conduct</a
-                >
-              </li> -->
-            </ul>
-          </nav>
-
-          <nav class="social-nav">
-            <ul class="social-nav__list">
-              <li class="social-nav__item">
-                <a
-                  class="social-nav__link"
-                  href="https://www.facebook.com/events/983733082322043/?active_tab=discussion"
-                  title="Find us on
-                  Facebook"
-                >
-                  <svg class="social-nav__icon">
-                    <use xlink:href="#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-nav__item">
-                <a
-                  class="social-nav__link"
-                  href="https://twitter.com/meetjs"
-                  title="Follow us on Twitter"
-                >
-                  <svg class="social-nav__icon">
-                    <use xlink:href="#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+      #schedule;
+    </style>
 
     <main>
       <section id="schedule" class="agenda">
@@ -237,45 +192,19 @@
           <h2 class="agenda__heading"><span aria-hidden="true">#</span>schedule</h2>
 
           <div class="agenda__day">
-            <h3 class="agenda__day__heading">Friday, September 16, 2022</h3>
-            <h3 class="agenda__day__heading">Targi Poznanskie, PCC building</h3>
-            <h4 class="agenda__toggle-all js-toggle">
-              Open all sessions details
-            </h4>
             <ul class="agenda__list">
               <li class="agenda__list-item">
                 <time datetime="08:45">08:45</time>
                 <h3>Conference Registration</h3>
-                <h4>Note separate queues for paid and free tickets</h4>
-                <p>
-                  We'll be set up next to the entrance so that you can check-in for the conference.
-                  Have your eventbrite ticket ready.
-                  <br />
-                  Once you get in, grab a coffee, meet old friends, make new friends, visit our
-                  sponsor booths or make yourself familiar with the venue.
-                </p>
               </li>
               <li class="agenda__list-item">
                 <time datetime="09:30">09:30</time>
                 <h3>Event opening</h3>
-                <h4>Auditorium</h4>
                 <p>Greetings, announcements and intros to our special attractions</p>
-              </li>
-              <li class="agenda__list-item">
-                <time datetime="09:30">10:00</time>
-                <h3>Hallway track</h3>
-                <h4>Open area</h4>
-                <p>
-                  Self-organizing discussion panels (all day)
-                </p>
-                <p>
-                  Learn ergonomy and homeoffice exercises from a physiotherapist (10:00-14:00)
-                </p>
               </li>
               <li class="agenda__list-item">
                 <time datetime="10:00">10:00</time>
                 <h3>Session 1</h3>
-                <h4>Auditorium</h4>
                 <article class="agenda-talks-box">
                   <h4 class="agenda-talks-box__title js-toggle">
                     Bringing the Power of AI into your Editor with GitHub Copilot
@@ -289,12 +218,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Krzysztof Cieslak</h3>
-                        <a
-                          href="https://twitter.com/k_cieslak"
-                          target="_blank"
-                          title="Twitter profile - Krzysztof Cieslak"
-                          >#k_cieslak</a
-                        >
                       </div>
                     </div>
 
@@ -319,12 +242,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Filip Rakowski</h3>
-                        <a
-                          href="https://twitter.com/filrakowski"
-                          target="_blank"
-                          title="Twitter profile - Filip Rakowski"
-                          >#filrakowski</a
-                        >
                       </div>
                     </div>
 
@@ -349,12 +266,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Jossef Harush Kadouri</h3>
-                        <a
-                          href="https://twitter.com/jossefharush"
-                          target="_blank"
-                          title="Twitter profile - Jossef Harush Kadouri"
-                          >#jossefharush</a
-                        >
                       </div>
                     </div>
 
@@ -370,14 +281,10 @@
               <li class="agenda__list-item">
                 <time datetime="11:30">11:30</time>
                 <h3>Coffee break</h3>
-                <h4>Open area</h4>
-                <p>Boost your caffeine level before the next session</p>
               </li>
               <li class="agenda__list-item">
                 <time datetime="11:50">11:50</time>
                 <h3>Session 2</h3>
-                <h4>Auditorium</h4>
-                <p>A little stretch with our physiotherapist</p>
                 <article class="agenda-talks-box">
                   <h4 class="agenda-talks-box__title js-toggle">
                     Building Fullstack Apps in Record Time with Blitz.js
@@ -391,21 +298,8 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Aleksandra Sikora</h3>
-                        <a
-                          href="https://twitter.com/aleksandrasays"
-                          target="_blank"
-                          title="Twitter profile - Aleksandra Sikora"
-                          >#aleksandrasays</a
-                        >
                       </div>
-                      <div>
-                        <a
-                          href="https://aleksandra.codes/"
-                          target="_blank"
-                          title="https://aleksandra.codes/"
-                          ><strong>aleksandra.codes</strong></a
-                        >
-                      </div>
+                      <div></div>
                     </div>
 
                     <p class="agenda-talks-box__desc">
@@ -425,12 +319,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Daniel Afonso</h3>
-                        <a
-                          href="https://twitter.com/danieljcafonso"
-                          target="_blank"
-                          title="Twitter profile - Daniel Afonso"
-                          >#danieljcafonso</a
-                        >
                       </div>
                     </div>
 
@@ -452,21 +340,8 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Stefan Judis</h3>
-                        <a
-                          href="https://twitter.com/stefanjudis"
-                          target="_blank"
-                          title="Twitter profile - Stefan Judis"
-                          >#stefanjudis</a
-                        >
                       </div>
-                      <div>
-                        <a
-                          href="https://www.stefanjudis.com"
-                          target="_blank"
-                          title="https://www.stefanjudis.com"
-                          ><strong>stefanjudis.com</strong></a
-                        >
-                      </div>
+                      <div></div>
                     </div>
 
                     <p class="agenda-talks-box__desc">
@@ -489,7 +364,6 @@
               <li class="agenda__list-item">
                 <time datetime="14:30">14:30</time>
                 <h3>Session 3</h3>
-                <h4>Auditorium</h4>
                 <article class="agenda-talks-box">
                   <h4 class="agenda-talks-box__title js-toggle">Lightning talks</h4>
                   <div class="agenda-talks-box__info">
@@ -512,21 +386,8 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Maciej Walaszczyk</h3>
-                        <a
-                          href="https://twitter.com/walaszczyk_m"
-                          target="_blank"
-                          title="Twitter profile - Maciej Walaszczyk"
-                          >#walaszczyk_m</a
-                        >
                       </div>
-                      <div>
-                        <a
-                          href="https://github.com/walaszczykm"
-                          target="_blank"
-                          title="https://github.com/walaszczykm"
-                          ><strong>github.com/walaszczykm</strong></a
-                        >
-                      </div>
+                      <div></div>
                     </div>
 
                     <p class="agenda-talks-box__desc">
@@ -550,12 +411,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Jakub Pusiak</h3>
-                        <a
-                          href="https://twitter.com/le_brande"
-                          target="_blank"
-                          title="Twitter profile - Jakub Pusiak"
-                          >#le_brande</a
-                        >
                       </div>
                     </div>
 
@@ -572,13 +427,10 @@
               <li class="agenda__list-item">
                 <time datetime="16:05">16:05</time>
                 <h3>Coffee break</h3>
-                <h4>Open area</h4>
-                <p>Take a sip & talk</p>
               </li>
               <li class="agenda__list-item">
                 <time datetime="16:30">16:30</time>
                 <h3>Session 4</h3>
-                <h4>Auditorium</h4>
                 <article class="agenda-talks-box">
                   <h4 class="agenda-talks-box__title js-toggle">
                     How to make an engine for a side scroller video game using HTML5 Cavnas and
@@ -593,12 +445,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Konrad Hanus</h3>
-                        <a
-                          href="https://twitter.com/KonradHanus"
-                          target="_blank"
-                          title="Twitter profile - Konrad Hanus"
-                          >#KonradHanus</a
-                        >
                       </div>
                     </div>
 
@@ -629,12 +475,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Bartosz Król</h3>
-                        <a
-                          href="https://twitter.com/bart_krol"
-                          target="_blank"
-                          title="Twitter profile - Bartosz Król"
-                          >#bart_krol</a
-                        >
                       </div>
                     </div>
 
@@ -659,12 +499,6 @@
                     <div class="agenda-talks-box__header">
                       <div>
                         <h3>Przemysław Beigert</h3>
-                        <a
-                          href="https://twitter.com/przemyslawjanp"
-                          target="_blank"
-                          title="Twitter profile - Przemysław Beigert"
-                          >#przemyslawjanp</a
-                        >
                       </div>
                     </div>
 
@@ -680,31 +514,12 @@
               <li class="agenda__list-item">
                 <time datetime="18:00">18:00</time>
                 <h3>Event closing</h3>
-                <h4>Auditorium</h4>
-                <p>A quick goodbye from the organizers</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
     </main>
-
-    <footer class="main-footer">
-      <div class="main-footer__content">
-        <p class="main-footer__badge">See you in Poznań!</p>
-        <p class="main-footer__copy">meet.js &copy; 2022</p>
-        <p class="main-footer__editions">
-          <strong>Previous editions:</strong>
-          <a href="https://summit.meetjs.pl/2012/">2012</a>,
-          <a href="https://summit.meetjs.pl/2013/">2013</a>,
-          <a href="https://summit.meetjs.pl/2014/">2014</a>,
-          <a href="https://summit.meetjs.pl/2016/">2016</a>,
-          <a href="https://summit.meetjs.pl/2017/">2017</a>,
-          <a href="https://summit.meetjs.pl/2018/">2018</a>
-          <a href="https://summit.meetjs.pl/2019/">2019</a>
-        </p>
-      </div>
-    </footer>
 
     <script>
       document.body.classList.add('has-js');
