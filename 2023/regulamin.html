@@ -2,7 +2,7 @@
 <html lang="en">
   <head prefix="website: http://ogp.me/ns/website#">
     <meta charset="utf-8" />
-    <title>meet.js Summit 2022 Katowice - Regulamin</title>
+    <title>meet.js Summit 2022 Poznan - Regulamin</title>
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
@@ -27,9 +27,53 @@
     <meta property="og:url" content="https://summit.meetjs.pl/2022/" />
     <meta property="og:site_name" content="meet.js Summit" />
     <meta http-equiv="Cache-Control" content="no-cache" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.c5cbce291f9a836ac8ca.css" rel="stylesheet"></head>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.a5a82461b3a03f8f1790.css" rel="stylesheet"></head>
 
   <body>
+    <script type="text/javascript">
+      (function(window, document, dataLayerName, id) {
+        (window[dataLayerName] = window[dataLayerName] || []),
+          window[dataLayerName].push({ start: new Date().getTime(), event: 'stg.start' });
+        var scripts = document.getElementsByTagName('script')[0],
+          tags = document.createElement('script');
+        function stgCreateCookie(a, b, c) {
+          var d = '';
+          if (c) {
+            var e = new Date();
+            e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), (d = '; expires=' + e.toUTCString());
+          }
+          document.cookie = a + '=' + b + d + '; path=/';
+        }
+        var isStgDebug =
+          (window.location.href.match('stg_debug') || document.cookie.match('stg_debug')) &&
+          !window.location.href.match('stg_disable_debug');
+        stgCreateCookie('stg_debug', isStgDebug ? 1 : '', isStgDebug ? 14 : -1);
+        var qP = [];
+        dataLayerName !== 'dataLayer' && qP.push('data_layer_name=' + dataLayerName),
+          isStgDebug && qP.push('stg_debug');
+        var qPString = qP.length > 0 ? '?' + qP.join('&') : '';
+        (tags.async = !0),
+          (tags.src = 'https://summit.containers.piwik.pro/' + id + '.js' + qPString),
+          scripts.parentNode.insertBefore(tags, scripts);
+        !(function(a, n, i) {
+          a[n] = a[n] || {};
+          for (var c = 0; c < i.length; c++)
+            !(function(i) {
+              (a[n][i] = a[n][i] || {}),
+                (a[n][i].api =
+                  a[n][i].api ||
+                  function() {
+                    var a = [].slice.call(arguments, 0);
+                    'string' == typeof a[0] &&
+                      window[dataLayerName].push({
+                        event: n + '.' + i + ':' + a[0],
+                        parameters: [].slice.call(arguments, 1),
+                      });
+                  });
+            })(i[c]);
+        })(window, 'ppms', ['tm', 'cm']);
+      })(window, document, 'dataLayer', '8d9beddd-46a0-4dcd-85a7-bb479cc8fb41');
+    </script>
     <script>
       document.body.classList.add('has-js');
     </script>
@@ -125,15 +169,6 @@
                   title="Become a conference speaker"
                   aria-label="Become a conference speaker"
                   >#call-for-papers</a
-                >
-              </li>
-              <li class="main-nav__item">
-                <a
-                  class="main-nav__link"
-                  href="/#venue"
-                  title="Find us in Katowice"
-                  aria-label="Find us in Katowice"
-                  >#venue</a
                 >
               </li>
               <li class="main-nav__item">
@@ -492,5 +527,5 @@
         </p>
       </div>
     </footer>
-  <script type="text/javascript" src="main.c5cbce291f9a836ac8ca.js"></script></body>
+  <script type="text/javascript" src="main.a5a82461b3a03f8f1790.js"></script></body>
 </html>
