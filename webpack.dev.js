@@ -22,6 +22,9 @@ module.exports = {
   devServer: {
     port: 8085,
     contentBase: path.join(__dirname, 'dist'),
+    historyApiFallback: {
+      rewrites: [{ from: /^\/workshop$/, to: '/workshop.html' }],
+    },
   },
   module: {
     rules: [
@@ -91,6 +94,11 @@ module.exports = {
       filename: 'agenda.html',
       template: './src/agenda.html',
       chunks: ['agenda'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'workshop.html',
+      template: './src/workshop.html',
+      // chunks: ['workshop'],
     }),
 
     new CopyWebpackPlugin([{ from: 'src/pdf', to: 'pdf' }]),

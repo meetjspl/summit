@@ -109,6 +109,13 @@ module.exports = {
       inject: 'body',
       chunks: ['agenda'],
     }),
+    new HtmlWebpackPlugin({
+      filename: 'workshop.html',
+      template: './src/workshop.html',
+      // Inject the js bundle at the end of the body of the given template
+      inject: 'body',
+      // chunks: ['workshop'],
+    }),
 
     new CleanWebpackPlugin(),
     new FaviconsWebpackPlugin({
