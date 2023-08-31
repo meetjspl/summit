@@ -48,5 +48,8 @@
   },
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "volta": {
+    "node": "16.20.2"
+  }
 }
