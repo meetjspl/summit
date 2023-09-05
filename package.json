@@ -1,6 +1,6 @@
 {
   "name": "summit_page",
-  "version": "2018.0.0",
+  "version": "2023.0.0",
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -51,5 +51,9 @@
   ],
   "volta": {
     "node": "16.20.2"
+  },
+  "engines": {
+    "node": "^16.20.2",
+    "yarn": "^1.0.0"
   }
 }
