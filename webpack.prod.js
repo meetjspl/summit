@@ -17,7 +17,7 @@ const version = {
   BRANCH: gitRevisionPlugin.branch(),
 };
 
-const YEAR = '2023';
+const YEAR = '2024';
 
 const buildPath = path.resolve(__dirname, 'dist');
 
@@ -101,20 +101,6 @@ module.exports = {
       // Inject the js bundle at the end of the body of the given template
       inject: 'body',
       chunks: ['main'],
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'agenda.html',
-      template: './src/agenda.html',
-      // Inject the js bundle at the end of the body of the given template
-      inject: 'body',
-      chunks: ['agenda'],
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'workshop.html',
-      template: './src/workshop.html',
-      // Inject the js bundle at the end of the body of the given template
-      inject: 'body',
-      // chunks: ['workshop'],
     }),
 
     new CleanWebpackPlugin(),
