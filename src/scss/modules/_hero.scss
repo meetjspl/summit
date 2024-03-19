@@ -23,6 +23,11 @@
     }
   }
 
+  &__link {
+    @extend %main-link;
+    @extend %main-link--mini;
+  }
+
   &__content {
     max-width: 1180px;
 

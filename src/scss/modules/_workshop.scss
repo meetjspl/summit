@@ -23,7 +23,7 @@
 
     &--small {
       @extend %main-text--mini;
-      color: $white_color;
+      color: $grey_color;
       margin: 0 0 10px 0;
 
       & a {
@@ -35,7 +35,6 @@
 
   &__text {
     @extend %main-text;
-    @extend %main-text--white;
 
     &--small {
       @extend %main-text--small;
@@ -45,7 +44,7 @@
   &__features {
     @extend %base-section;
     margin-top: 80px;
-    background-color: $purple_color;
+    background-color: $white_color;
 
     &__content {
       max-width: 636px;
