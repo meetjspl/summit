@@ -96,6 +96,13 @@ module.exports = {
       chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
+      filename: 'workshop.html',
+      template: './src/workshop.html',
+      // Inject the js bundle at the end of the body of the given template
+      inject: 'body',
+      // chunks: ['workshop'],
+    }),
+    new HtmlWebpackPlugin({
       filename: 'regulamin.html',
       template: './src/regulamin.html',
       // Inject the js bundle at the end of the body of the given template
