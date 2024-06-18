@@ -11,7 +11,7 @@
       property="description"
       content="meet.js Summit is a conference of the oldest JavaScript community in Poland, covering topics like Front-end architectures, Node.js, reactive programming, frameworks like Vue, React or Angular."
     />
-    <meta property="og:title" content="meet.js Summit 2024" />
+    <meta property="og:title" content="meet.js Summit 2023" />
     <meta
       property="og:description"
       content="meet.js Summit is a conference of the oldest JavaScript community in Poland, covering topics like Front-end architectures, Node.js, reactive programming, frameworks like Vue, React or Angular."
@@ -38,7 +38,7 @@
 
       gtag('config', 'G-GEPR5FL2KK');
     </script>
-  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.79ed5bc5b164f87e15a0.css" rel="stylesheet"></head>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons-254bca82dc70c0c258971568428e72d6/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-254bca82dc70c0c258971568428e72d6/favicon-16x16.png"><link rel="shortcut icon" href="icons-254bca82dc70c0c258971568428e72d6/favicon.ico"><link href="main.79ed5bc5b164f87e15a0.css" rel="stylesheet"><link href="agenda.79ed5bc5b164f87e15a0.css" rel="stylesheet"></head>
 
   <body>
     <script type="text/javascript">
@@ -171,11 +171,7 @@
         </button>
 
         <div class="main-header__nav">
-          <nav id="navigation" class="main-nav" role="navigation">
-            <div class="tickets-button">
-              <a href="./workshop.html" class="tickets-button__link">#summer workshop</a>
-            </div>
-          </nav>
+          <nav id="navigation" class="main-nav" role="navigation"></nav>
 
           <nav class="social-nav">
             <ul class="social-nav__list">
@@ -213,26 +209,18 @@
         <div class="hero__outer-content">
           <div class="hero__content">
             <div class="hero__info">
-              <h1 class="hero__heading">meet.js at WDI 2024</h1>
+              <h1 class="hero__heading">meet.js workshop</h1>
               <p class="hero__date">
                 <span class="hero__highlight">
-                  <time datetime="2024-04-06">April 6, 2024</time> // Warsaw, Poland
+                  <time datetime="2023-09-29">July 27, 2024</time> // Warsaw, Poland
                 </span>
               </p>
               <p class="hero__text">
-                <strong>
-                  This year we're joining
-                  <a href="https://warszawskiedniinformatyki.pl/" class="hero__link"
-                    >Warsaw IT Days</a
-                  >
-                  on their 15th anniversary.
-                </strong>
-                We're taking a break from our regular schedule of yearly conferences to join WDI on
-                their 15th anniversary.
-                <a href="https://warszawskiedniinformatyki.pl/" class="hero__link"
-                  >Register to attend WDI</a
-                >
-                and meet us there!
+                We're partnering with
+                <a href="https://kopd.pl/" class="hero__link">Komitet Ochrony Praw Dziecka</a> to
+                host a for-charity workshop this summer. The above is the expected date, but before
+                that happens, we need your help to choose the one workshop you'd like to attend and
+                donate money to get into.
               </p>
             </div>
           </div>
@@ -241,13 +229,155 @@
 
       <section class="ticket" id="tickets">
         <div class="ticket__content">
+          <h2 class="ticket__heading"><span aria-hidden="true">#</span>Join the group</h2>
+          <div class="ticket__text">
+            Register your participation in the form and choose which workshops you're interested in
+            attending. We'll form a group (or groups) based on the most popular choices and send you
+            a personal email confirmation.
+            <br />
+            <br />
+            Tell your friends, we have a minimum number of participants required to run the
+            workshop.
+          </div>
           <div class="ticket__center">
             <p class="ticket__text">
-              <a href="./workshop.html" class="ticket__link">
-                Join our summer workshop!
+              <a href="https://forms.gle/BHL67CjnjMASMi1X8" target="_blank" class="ticket__link">
+                Register now!
               </a>
+              <br />
+              See the workshop choice details below.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="agenda">
+        <div class="agenda__content">
+          <h2 class="agenda__heading"><span aria-hidden="true">#</span>workshops</h2>
+          <div class="agenda__day">
+            <h2 class="agenda__day__heading">Topic choices</h2>
+            <hr />
+            <div class="agenda__workshop">
+              <div class="agenda__workshop__heading">
+                <h2>JavaScript memory management and leaks</h2>
+                <h4>Hands-on workshop for any JavaScript developer level</h4>
+              </div>
+              <div class="agenda__workshop__text">
+                Learn how memory works and how to use tools to track down a memory leak. No matter
+                if you have a year or 10 years of experience with JavaScript, this is something
+                you'll be able to use right away and something you likely don't know yet.
+                <ul>
+                  <li>Part I - JavaScript memory management 101</li>
+                  <li>Deep dive into how memory and garbage collection works</li>
+                  <li>Part II - Hands-on exercises</li>
+                  <li>Trivial memory leaks - learning how to use devtools on simple examples</li>
+                  <li>What could leak? - unexpected references and magic string concatenation</li>
+                  <li>Programmatic access to memory info</li>
+                  <li>Instrumenting the Node.js application</li>
+                  <li>
+                    More realistic examples and how to really make the best out of the tools
+                    available
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="agenda__workshop">
+              <div class="agenda__workshop__heading">
+                <h2>promise/async masterclass</h2>
+                <h4>From zero to unbelievable.</h4>
+              </div>
+              <div class="agenda__workshop__text">
+                <ul>
+                  <li>Promise</li>
+                  <li>async/await</li>
+                  <li>composing async operations</li>
+                  <li>good error handling</li>
+                  <li>common pitfalls</li>
+                  <li>advanced asynchronous patterns</li>
+                </ul>
+                Workshop starts with creating a simple promise chain, but ends with async/await
+                concurrent errors quirks and a selection of advanced topics like generators with
+                trampolines or Node.js streams.
+                <br /><br />
+                Depending on the group this can get you from beginner to advanced or from advanced
+                to world-class async expert.
+              </div>
+            </div>
+
+            <div class="agenda__workshop">
+              <div class="agenda__workshop__heading">
+                <h2>Web Security and its rabbitholes</h2>
+                <h4>By software developer, for software developers.</h4>
+              </div>
+              <div class="agenda__workshop__text">
+                You probably know SameOrigin Policy exists and you've heard about XSS, but what you
+                really need to know is how to defend your app from actual threats without spending
+                all your time doing it.
+                <ol>
+                  <li>Intro to often overlooked details of SameOrigin policy</li>
+                  <li>XSS and more - where does malicious code in a web app come from?</li>
+                  <li>Content Security Policy and how to roll it out without regrets</li>
+                  <li>What's possible in Supply Chain Security in 2024</li>
+                </ol>
+              </div>
+            </div>
+            <hr />
+            <h2 class="agenda__day__heading">Requirements</h2>
+
+            <div class="agenda__workshop">
+              <div class="agenda__workshop__text">
+                <ul>
+                  <li>Basic knowledge of JavaScript for the browser and Node.js</li>
+                  <li>
+                    At least a month of experience working on web application products, as a
+                    front-end or back-end engineer.
+                  </li>
+                  <li>Chromium-based browser and Node.js LTS installed</li>
+                </ul>
+              </div>
+
+              <div class="agenda__workshop__text">
+                Workshop content is in English, but conversations will happen in English or Polish,
+                as needed.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="speakers" id="speakers">
+        <div class="speakers__content">
+          <ul class="speakers__list">
+            <li>
+              <article class="speaker-box">
+                <img
+                  class="speaker-box__image"
+                  src="zb.2586559390ef90016dd2.png"
+                  alt="Photo: Zbyszek Tenerowicz"
+                />
+                <div class="speaker-box__info">
+                  <div class="speaker-box__header">
+                    <div>
+                      <h3>Zbyszek Tenerowicz</h3>
+                      <a href="https://naugtur.pl" target="_blank" title="website">naugtur.pl</a>
+                    </div>
+                  </div>
+
+                  <p class="speaker-box__desc">
+                    Full-stack engineer and technology researcher. Security Lab team lead at
+                    MetaMask working on LavaMoat and Endo. Started using Node.js at v0.8 and never
+                    stopped. Enjoys innovating and teaching security, diagnostics and
+                    maintainability. One of the oldest members of meet.js Poland community - both as
+                    a speaker and organizer. Hacking JavaScript since his teenage years.
+                    <br />
+                    Wrote an app that leaked 4GB of memory in one browser tab in 2012 while it was
+                    still possible.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -289,5 +419,5 @@
 
       gtag('config', 'UA-98203728-2');
     </script>
-  <script type="text/javascript" src="main.79ed5bc5b164f87e15a0.js"></script></body>
+  <script type="text/javascript" src="main.79ed5bc5b164f87e15a0.js"></script><script type="text/javascript" src="agenda.79ed5bc5b164f87e15a0.js"></script></body>
 </html>
