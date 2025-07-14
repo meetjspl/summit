@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy": "bun run build && gh-pages --dist dist",
     "lint": "biome lint --write src",
     "format": "biome format --write src"
   },
@@ -19,6 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "@biomejs/biome": "2.1.1",
+    "gh-pages": "^6.3.0",
     "normalize-scss": "^8.0.0",
     "sass": "^1.89.2",
     "vite": "^7.0.4",
