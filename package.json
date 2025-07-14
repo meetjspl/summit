@@ -1,59 +1,20 @@
 {
-  "name": "summit_page",
-  "version": "2023.0.0",
+  "name": "summit-page",
   "private": true,
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "autoprefixer": "^9.0.0",
-    "babel-loader": "^8.0.0",
-    "clean-webpack-plugin": "^2.0.0",
-    "copy-webpack-plugin": "^5.0.0",
-    "css-loader": "^2.0.0",
-    "cssnano": "^4.1.10",
-    "favicons-webpack-plugin": "0.0.9",
-    "file-loader": "4.0.0",
-    "gh-pages": "^2.0.0",
-    "git-revision-webpack-plugin": "3.0.3",
-    "html-loader": "0.5.5",
-    "html-webpack-plugin": "3.2.0",
-    "husky": "^1.0.0",
-    "imagemin-webpack-plugin": "^2.1.5",
-    "lodash": "^4.17.15",
-    "mini-css-extract-plugin": "^0.5.0",
-    "normalize-scss": "^7.0.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.0",
-    "postcss-loader": "3.0.0",
-    "prettier": "^1.13.7",
-    "pretty-quick": "^1.6.0",
-    "sass": "^1.51.0",
-    "sass-loader": "10.1.1",
-    "style-loader": "^0.23.1",
-    "svg-url-loader": "^2.3.2",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "NODE_ENV=production webpack --progress --config webpack.prod.js",
-    "deploy": "yarn run build && gh-pages --dist dist",
-    "develop": "webpack-dev-server --config webpack.dev.js",
-    "start": "yarn run develop"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "biome lint --write src",
+    "format": "biome format --write src"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "packageManager": "bun@1.2.18",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meetjspl/summit.git"
   },
-  "browserslist": [
-    "defaults"
-  ],
-  "volta": {
-    "node": "16.20.2"
-  },
-  "engines": {
-    "node": "^16.20.2",
-    "yarn": "^1.0.0"
-  }
+  "author": "Michał Korczak (https://omikor.in)",
+  "license": "ISC"
 }
