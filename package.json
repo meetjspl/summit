@@ -16,5 +16,12 @@
     "url": "https://github.com/meetjspl/summit.git"
   },
   "author": "Michał Korczak (https://omikor.in)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "2.1.1",
+    "normalize-scss": "^8.0.0",
+    "sass": "^1.89.2",
+    "vite": "^7.0.4",
+    "vite-plugin-static-copy": "^3.1.1"
+  }
 }

@@ -1,0 +1,166 @@
+.hero {
+  &__outer-content {
+    position: relative;
+    // min-height: 100vh;
+    padding: 25vmin 0;
+    background: url('../../img/hero-bg-desktop.png') no-repeat center bottom / cover;
+    background-position-y: 175px;
+
+    @include mediaquery('gt-small') {
+      padding: 192px 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 80px;
+      left: 0;
+      background: $bg-gradient;
+      pointer-events: none;
+    }
+  }
+
+  &__content {
+    max-width: 1180px;
+
+    @include mediaquery('gt-medium') {
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+
+  &__info {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+    z-index: $index-low;
+    padding: 20px;
+
+    @include mediaquery('gt-medium') {
+      max-width: 850px;
+    }
+  }
+
+  &__heading {
+    @extend %main-heading;
+
+    color: $white_color;
+    margin: 0;
+    line-height: 1;
+    position: relative;
+  }
+
+  &__date {
+    margin-top: 6px;
+    color: $white_color;
+
+    @extend %mono-heading;
+  }
+
+  &__text {
+    @extend %font-regular;
+
+    color: $white-color;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    background-color: rgba(47, 22, 52, 0.5);
+    padding: 20px;
+
+    @include mediaquery('gt-medium') {
+      font-size: 1.6rem;
+    }
+
+    & > strong {
+      display: block;
+      color: $green_color;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__highlight {
+    font-size: 1.2rem;
+    padding: 6px 8px;
+
+    @extend %highlight-text;
+
+    @include mediaquery('gt-small') {
+      padding: 7px 20px;
+      font-size: 1.4rem;
+    }
+
+    @include mediaquery('gt-medium') {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__badge {
+    display: flex;
+    padding: 10px 0 20px;
+    justify-content: center;
+    position: relative;
+    z-index: $index-low;
+
+    @include mediaquery('gt-small') {
+      margin-bottom: 30px;
+    }
+
+    @include mediaquery('gt-medium') {
+      position: absolute;
+      bottom: 160px;
+      left: -260px;
+      top: 180px;
+      z-index: $index-low;
+    }
+  }
+}
+
+.badge {
+  width: 188px;
+  height: 98px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $green_color;
+
+  &__text {
+    color: $white_color;
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-left: 20px;
+
+    @extend %font-bold;
+
+    &--large {
+      font-size: 3.6rem;
+      display: block;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 25px 0 0;
+    border-color: transparent $darkgreen_color transparent transparent;
+    position: absolute;
+    top: -12px;
+  }
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 24px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transform: skewY(-20deg);
+    background-color: $darkgreen_color;
+  }
+}

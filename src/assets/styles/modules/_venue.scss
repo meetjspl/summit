@@ -1,0 +1,66 @@
+.venue {
+  position: relative;
+
+  padding: 144px 0 0 0;
+  @include mediaquery('gt-small') {
+    padding: 16vw 0 0 0;
+  }
+
+  background: $green_color url('../../img/venue/pccmobile.jpg') no-repeat top / contain;
+  @include mediaquery('gt-medium') {
+    background-image: url('../../img/venue/pccmax.jpg');
+  }
+  &__heading {
+    @extend %main-heading--special;
+  }
+  &__content {
+    @include mediaquery('gt-small') {
+      margin: 20px auto 50px auto;
+      max-width: 636px;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 550px;
+  }
+  &__map {
+    border-bottom: 5px solid $green_color;
+    display: block;
+    overflow: hidden;
+
+    & img {
+      width: 180%;
+      position: relative;
+      left: -10%;
+      @include mediaquery('gt-medium') {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+  &__info {
+    padding: 40px;
+    background-color: rgba(244, 255, 255, 0.88);
+    @include mediaquery('gt-small') {
+      padding: 40px 60px;
+    }
+    @extend %main-text;
+  }
+  &__place {
+    @extend %secondary-heading;
+    color: $blue-color;
+    margin: 0;
+  }
+  &__address {
+    @extend %main-text;
+    margin: 12px 0;
+    font-weight: bold;
+  }
+  &__link {
+    @extend %main-link;
+    &:first-child {
+      margin-right: 45px;
+    }
+  }
+}

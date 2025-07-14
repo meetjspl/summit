@@ -1,0 +1,37 @@
+.partners {
+  @extend %base-section;
+  background-color: $white_color;
+
+  &__content {
+    max-width: 636px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    @extend %main-heading;
+
+    color: $purple_color;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include mediaquery('gt-medium') {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    & > li {
+      margin-bottom: 40px;
+    }
+
+    @include mediaquery('gt-small') {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
