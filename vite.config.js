@@ -1,5 +1,6 @@
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
+import handlebars from 'vite-plugin-handlebars';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const YEAR = '20XX';
@@ -8,6 +9,9 @@ export default defineConfig({
   root: 'src',
   base: '',
   plugins: [
+    handlebars({
+      partialDirectory: resolve(__dirname, 'src/partials'),
+    }),
     viteStaticCopy({
       targets: [
         {

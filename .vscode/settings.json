@@ -1,5 +1,6 @@
 {
   "search.exclude": {
     "**/legacy-pages": true
-  }
+  },
+  "editor.indentSize": 2
 }

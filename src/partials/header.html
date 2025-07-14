@@ -1,0 +1,103 @@
+<header class="main-header">
+  <div class="main-header__content">
+    <div class="main-logo js-sp-0">
+      <a class="main-logo__link" href="#hero" data-scroll>
+        <img class="main-logo__image" src="./img/summit-logo.png" alt="meet.js summit logo" />
+      </a>
+    </div>
+
+    <button
+      class="button-menu js-button-menu"
+      title="Open/close menu"
+      aria-label="Navigation menu"
+      role="button"
+      aria-controls="navigation"
+      aria-expanded="true"
+      type="button"
+      id="open-menu-button"
+      aria-haspopup="true"
+    >
+      <svg class="button-menu__icon button-menu__menu-icon">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+      <svg class="button-menu__icon button-menu__close-icon">
+        <use xlink:href="#icon-cross"></use>
+      </svg>
+    </button>
+
+    <div class="main-header__nav">
+      <nav id="navigation" class="main-nav" role="navigation">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link"
+              href="#venue"
+              title="Find us in InsertCity"
+              aria-label="Find us in InsertCity"
+            >
+            #find us
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link"
+              href="#schedule"
+              title="Conference schedule"
+              aria-label="Conference schedule"
+            >
+              #schedule
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link"
+              href="#sponsor_list"
+              title="Sponsors"
+              aria-label="Sponsors"
+            >
+              #sponsors
+            </a>
+          </li>
+        </ul>
+
+        <div class="tickets-button">
+          <a href="#schedule" class="tickets-button__link">#workshop</a>
+          <a href="#tickets" class="tickets-button__link">#tickets</a>
+        </div>
+      </nav>
+
+      <nav class="social-nav">
+        <ul class="social-nav__list">
+          <li class="social-nav__item">
+            <a
+              class="social-nav__link"
+              href="https://www.facebook.com/events/955686545645580/"
+              title="Find us on
+              Facebook"
+            >
+            <!-- TODO: fix svg -->
+              <svg class="social-nav__icon">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-nav__item">
+            <a
+              class="social-nav__link"
+              href="https://twitter.com/meetjs"
+              title="Follow us on Twitter"
+            >
+            <!-- TODO: fix svg -->
+              <svg class="social-nav__icon">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
