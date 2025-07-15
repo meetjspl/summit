@@ -4,8 +4,6 @@ import handlebars from 'vite-plugin-handlebars';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import context from './src/assets/data';
 
-const YEAR = '20XX';
-
 export default defineConfig({
   root: 'src',
   base: '',
@@ -39,7 +37,7 @@ export default defineConfig({
   ],
 
   build: {
-    outDir: `../dist/${YEAR}`,
+    outDir: `../dist/${context.year || '20XX'}`,
     emptyOutDir: true,
     rollupOptions: {
       input: {
