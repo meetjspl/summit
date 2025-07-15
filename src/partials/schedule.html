@@ -2,12 +2,12 @@
   <div class="agenda__content">
     <h2 class="agenda__heading"><span aria-hidden="true">#</span>schedule</h2>
     <div class="agenda__day" id="workshop">
-      <h3 class="agenda__day__heading">Thursday, 28th September, 20XX</h3>
+      <h3 class="agenda__day__heading">{{ schedule.workshop.date }}</h3>
       <div class="agenda__workshop">
         <div class="agenda__workshop__heading">
-          <time datetime="09:00">09:00</time> - <time datetime="18:00">18:00</time>
-          <h4>Example workshop</h4>
-          <h5>Workshop place, Street, InsertCity</h5>
+          <time datetime="{{ schedule.workshop.start }}">{{ schedule.workshop.start }}</time> - <time datetime="{{ schedule.workshop.end }}">{{ schedule.workshop.end }}</time>
+          <h4>{{ schedule.workshop.title }}</h4>
+          <h5>{{ schedule.workshop.address }}</h5>
         </div>
         <p class="agenda__workshop__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
@@ -19,12 +19,12 @@
       </div>
     </div>
     <div class="agenda__day" id="conferance">
-      <h3 class="agenda__day__heading">Friday, 29th September, 20XX</h3>
+      <h3 class="agenda__day__heading">{{ schedule.talks.date }}</h3>
       <div class="agenda__workshop">
         <div class="agenda__workshop__heading">
-          <time datetime="09:00">09:00</time> - <time datetime="18:00">18:00</time>
-          <h4>Conference Summit meet.js</h4>
-          <h5>Conference place, Street, InsertCity</h5>
+          <time datetime="{{ schedule.talks.start }}">{{ schedule.talks.start }}</time> - <time datetime="{{ schedule.talks.end }}">{{ schedule.talks.end }}</time>
+          <h4>{{ schedule.talks.title }}</h4>
+          <h5>{{ schedule.talks.address }}</h5>
         </div>
         <div class="agenda__day">
           <h4 class="agenda__toggle-all js-toggle">

@@ -13,12 +13,12 @@
     </p>
     <p class="cfp__text">
       You can find guidelines and more information on the
-      <a class="cfp__link" href="#insert-cfp-link">
+      <a class="cfp__link" href="{{ cfp.url }}" target="_blank">
         call for papers form</a
-      >. The deadline for submitting your proposals is July 31st, 20XX.
+      >. The deadline for submitting your proposals is {{ cfp.deadline }}.
     </p>
 
-    <a class="cfp__button" href="#insert-cfp-link">
+    <a class="cfp__button" href="{{ cfp.url }}" target="_blank">
       Submit your proposal
     </a>
   </div>
