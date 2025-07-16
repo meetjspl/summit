@@ -20,5 +20,10 @@
     "fb-event": "https://www.facebook.com/events/#",
     "twitter": "https://twitter.com/meetjs",
     "email": "contact@meet.js.pl"
+  },
+  "utm": {
+    "source": "website",
+    "medium": "logo",
+    "campaign": "meetjs_summit_20XX"
   }
 }

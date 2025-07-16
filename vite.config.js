@@ -18,6 +18,14 @@ export default defineConfig({
         },
         hasItems: (array) => {
           return Array.isArray(array) && array.length > 0;
+        },
+        addUtm: (url, utmConfig) => {
+          if (!url || !utmConfig) return url;
+          
+          const separator = url.includes('?') ? '&' : '?';
+          const utmParams = `utm_source=${utmConfig.source}&utm_medium=${utmConfig.medium}&utm_campaign=${utmConfig.campaign}`;
+          
+          return `${url}${separator}${utmParams}`;
         }
       }
     }),

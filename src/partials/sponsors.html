@@ -15,7 +15,7 @@
         <ul class="sponsor-list__list {{ cssClass }}">
           {{#each sponsors}}
           <li class="sponsor-list__list-item">
-            <a href="{{ url }}" title="{{ name }}" target="_blank">
+            <a href="{{ addUtm url ../../utm }}" title="{{ name }}" target="_blank">
               <img alt="{{ name }}" src="{{ logo }}" />
             </a>
           </li>
@@ -31,7 +31,7 @@
       <ul class="sponsor-list__list sponsor-list__list--small">
         {{#each sponsors.partners}}
         <li class="sponsor-list__list-item">
-          <a href="{{ url }}" title="{{ name }}" target="_blank">
+          <a href="{{ addUtm url ../utm }}" title="{{ name }}" target="_blank">
             <img src="{{ logo }}" alt="{{ name }}" />
           </a>
         </li>
