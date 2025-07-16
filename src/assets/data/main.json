@@ -12,22 +12,6 @@
     "deadline": "July 31st, 2025",
     "url": "#"
   },
-  "schedule": {
-    "workshop": {
-      "date": "Thursday, 28th September 2025",
-      "start": "9:00",
-      "end": "18:00",
-      "title": "Example workshop",
-      "address": "PURO Hotel, Wrocław Old Town, Pawła Włodkowica 6, Wrocław"
-    },
-    "talks": {
-      "date": "Friday, 29th September 2025",
-      "start": "9:00",
-      "end": "18:00",
-      "title": "Conference Summit meet.js",
-      "address": "Cinema New Horizons, Wrocław Old Town, Kazimierza Wielkiego 19a, Wrocław"
-    }
-  },
   "tickets": {
     "url": "https://app.evenea.pl/event/meetjs-summit-2023/?out=1&source=event_iframe"
   },

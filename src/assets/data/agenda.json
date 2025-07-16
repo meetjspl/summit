@@ -1,6 +1,19 @@
 {
-  "schedule": {
-    "sessions": [
+  "workshop": {
+    "date": "Thursday, 28th September 2025",
+    "start": "9:00",
+    "end": "18:00",
+    "title": "Example workshop",
+    "address": "PURO Hotel, Wrocław Old Town, Pawła Włodkowica 6, Wrocław"
+  },
+  "talks": {
+    "date": "Friday, 29th September 2025",
+    "start": "9:00",
+    "end": "18:00",
+    "title": "Conference Summit meet.js",
+    "address": "Cinema New Horizons, Wrocław Old Town, Kazimierza Wielkiego 19a, Wrocław"
+  },
+  "sessions": [
       {
         "time": "08:00",
         "title": "Conference Registration",
@@ -83,5 +96,4 @@
         "type": "general"
       }
     ]
-  }
 }
