@@ -1,14 +1,7 @@
 <section class="gallery">
+  {{#each gallery}}
   <div class="gallery__picture">
-    <img class="gallery__image" src="./img/gallery/conference1.jpg" alt="" />
+    <img class="gallery__image" src="{{ src }}" alt="{{ alt }}" />
   </div>
-  <div class="gallery__picture">
-    <img class="gallery__image" src="./img/gallery/conference2.jpg" alt="" />
-  </div>
-  <div class="gallery__picture">
-    <img class="gallery__image" src="./img/gallery/conference3.jpg" alt="" />
-  </div>
-  <div class="gallery__picture">
-    <img class="gallery__image" src="./img/gallery/conference4.jpg" alt="" />
-  </div>
+  {{/each}}
 </section>

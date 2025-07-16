@@ -21,6 +21,56 @@
     "twitter": "https://twitter.com/meetjs",
     "email": "contact@meet.js.pl"
   },
+  "navigation": [
+    {
+      "href": "#venue",
+      "title": "Find us in Wrocław",
+      "label": "#find us"
+    },
+    {
+      "href": "#schedule", 
+      "title": "Conference schedule",
+      "label": "#schedule"
+    },
+    {
+      "href": "#sponsor_list",
+      "title": "Sponsors", 
+      "label": "#sponsors"
+    }
+  ],
+  "socialLinks": [
+    {
+      "key": "fb-event",
+      "title": "Find us on Facebook",
+      "icon": "icon-facebook"
+    },
+    {
+      "key": "twitter",
+      "title": "Follow us on Twitter", 
+      "icon": "icon-twitter"
+    }
+  ],
+  "previousEditions": [
+    "2012", "2013", "2014", "2016", "2017", "2018", "2019", "2022", "2023", "2024"
+  ],
+  "gallery": [
+    {
+      "src": "./img/gallery/conference1.jpg",
+      "alt": "Conference photo 1"
+    },
+    {
+      "src": "./img/gallery/conference2.jpg", 
+      "alt": "Conference photo 2"
+    },
+    {
+      "src": "./img/gallery/conference3.jpg",
+      "alt": "Conference photo 3"
+    },
+    {
+      "src": "./img/gallery/conference4.jpg",
+      "alt": "Conference photo 4"
+    }
+  ],
   "utm": {
     "source": "website",
     "medium": "logo",
