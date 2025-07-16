@@ -1,37 +1,32 @@
 <section id="schedule" class="agenda">
   <div class="agenda__content">
     <h2 class="agenda__heading"><span aria-hidden="true">#</span>schedule</h2>
-    <div class="agenda__day" id="workshop">
-      <h3 class="agenda__day__heading">{{ agenda.workshop.date }}</h3>
+
+    {{#each agenda.days}}
+    <div class="agenda__day" id="{{ id }}">
+      <h3 class="agenda__day__heading">{{ date }}</h3>
       <div class="agenda__workshop">
         <div class="agenda__workshop__heading">
-          <time datetime="{{ agenda.workshop.start }}">{{ agenda.workshop.start }}</time> - <time datetime="{{ agenda.workshop.end }}">{{ agenda.workshop.end }}</time>
-          <h4>{{ agenda.workshop.title }}</h4>
-          <h5>{{ agenda.workshop.address }}</h5>
+          <time datetime="{{ start }}">{{ start }}</time> - <time datetime="{{ end }}">{{ end }}</time>
+          <h4>{{ title }}</h4>
+          <h5>{{ address }}</h5>
         </div>
+
+        {{#if (eq type "workshop")}}
         <p class="agenda__workshop__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          {{ description }}
           <br />
           <a class="agenda__workshop__link" href="./workshop">Read more →</a>
         </p>
-      </div>
-    </div>
-    <div class="agenda__day" id="conferance">
-      <h3 class="agenda__day__heading">{{ agenda.talks.date }}</h3>
-      <div class="agenda__workshop">
-        <div class="agenda__workshop__heading">
-          <time datetime="{{ agenda.talks.start }}">{{ agenda.talks.start }}</time> - <time datetime="{{ agenda.talks.end }}">{{ agenda.talks.end }}</time>
-          <h4>{{ agenda.talks.title }}</h4>
-          <h5>{{ agenda.talks.address }}</h5>
-        </div>
+        {{/if}}
+
+        {{#if (eq type "conference")}}
         <div class="agenda__day">
           <h4 class="agenda__toggle-all js-toggle">
             Open all sessions details
           </h4>
           <ul class="agenda__list">
-            {{#each agenda.sessions}}
+            {{#each sessions}}
             <li class="agenda__list-item">
               <time datetime="{{ time }}">{{ time }}</time>
               <h3>{{ title }}</h3>
@@ -62,7 +57,7 @@
                 {{/if}}
                 
                 {{#each speakers}}
-                  {{#with (lookup ../../speakers this)}}
+                  {{#with (lookup ../../../speakers this)}}
                   <article class="agenda-talks-box">
                     <h4 class="agenda-talks-box__title js-toggle">
                       {{ talk.title }}
@@ -91,7 +86,9 @@
             {{/each}}
           </ul>
         </div>
+        {{/if}}
       </div>
     </div>
+    {{/each}}
   </div>
 </section>
