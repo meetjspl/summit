@@ -11,6 +11,12 @@ export default defineConfig({
     handlebars({
       context,
       partialDirectory: resolve(__dirname, 'src/partials'),
+      helpers: {
+        eq: (a, b) => a === b,
+        lookup: (obj, key) => {
+          return obj?.[key] || null;
+        }
+      }
     }),
     viteStaticCopy({
       targets: [
