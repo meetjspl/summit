@@ -15,6 +15,9 @@ export default defineConfig({
         eq: (a, b) => a === b,
         lookup: (obj, key) => {
           return obj?.[key] || null;
+        },
+        hasItems: (array) => {
+          return Array.isArray(array) && array.length > 0;
         }
       }
     }),

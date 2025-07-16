@@ -8,76 +8,37 @@
       a&nbsp;great event and welcome you in their stands.
     </p>
 
-    <div class="js-sp-1">
-      <h3 class="sponsor-list__subheading"><span>Main sponsor</span></h3>
-      <ul class="sponsor-list__list sponsor-list__list--main ">
-        <li class="sponsor-list__list-item">
-          <a href="#" title="Main sponsor name" target="_blank">
-            <img alt="Main sponsor logo" src="https://i.pravatar.cc/300" />
-          </a>
-        </li>
-      </ul>
-    </div>
+    {{#each sponsors.tiers}}
+      {{#if (hasItems sponsors)}}
+      <div class="{{ jsClass }}">
+        <h3 class="sponsor-list__subheading"><span>{{ title }}</span></h3>
+        <ul class="sponsor-list__list {{ cssClass }}">
+          {{#each sponsors}}
+          <li class="sponsor-list__list-item">
+            <a href="{{ url }}" title="{{ name }}" target="_blank">
+              <img alt="{{ name }}" src="{{ logo }}" />
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/if}}
+    {{/each}}
 
-    <div class="js-sp-2">
-      <h3 class="sponsor-list__subheading"><span>Gold sponsors</span></h3>
-      <ul class="sponsor-list__list sponsor-list__list--regular ">
-        <li class="sponsor-list__list-item">
-          <a
-            href="#"
-            title="Gold sponsor name"
-            target="_blank"
-          >
-            <img alt="Gold sponsor name" src="https://i.pravatar.cc/300" />
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="js-sp-3">
-      <h3 class="sponsor-list__subheading"><span>Silver sponsors</span></h3>
-      <ul class="sponsor-list__list sponsor-list__list--small ">
-        <li class="sponsor-list__list-item">
-          <a
-            href="#"
-            title="Silver sponsor name"
-            target="_blank"
-          >
-            <img alt="Silver sponsor name" src="https://i.pravatar.cc/300" />
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="js-sp-4">
-      <h3 class="sponsor-list__subheading"><span>Supporters</span></h3>
-      <ul class="sponsor-list__list sponsor-list__list--tiny">
-        <li class="sponsor-list__list-item">
-          <a
-            href="#"
-            title="Supporter name"
-            target="_blank"
-          >
-            <img alt="Supporter name " src="https://i.pravatar.cc/300" />
-          </a>
-        </li>
-      </ul>
-    </div>
-
+    {{#if (hasItems sponsors.partners)}}
     <div>
       <h3 class="sponsor-list__subheading"><span>Partners and communities</span></h3>
       <ul class="sponsor-list__list sponsor-list__list--small">
+        {{#each sponsors.partners}}
         <li class="sponsor-list__list-item">
-          <a
-            href="https://www.siepomaga.pl?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2023"
-            title="Siepomaga"
-            target="_blank"
-          >
-            <img src="./img/partners/siepomaga.svg" alt="Siepomaga" />
+          <a href="{{ url }}" title="{{ name }}" target="_blank">
+            <img src="{{ logo }}" alt="{{ name }}" />
           </a>
         </li>
+        {{/each}}
       </ul>
     </div>
+    {{/if}}
 
   </div>
 </section>
