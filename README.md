@@ -35,6 +35,7 @@ bun run deploy
 - Remove old JS
 - Replace SASS with CSS
 - Remove unused CSS
+- Setup Renovate to never repeat undermaintained project mistakes (is it even that difficult to update a template once a year? :/)
 
 ---
 
