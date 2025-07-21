@@ -16,7 +16,7 @@
           {{#each sponsors}}
           <li class="sponsor-list__list-item">
             <a href="{{ addUtm url ../../utm }}" title="{{ name }}" target="_blank">
-              <img alt="{{ name }}" src="{{ logo }}" />
+              <img alt="{{ name }}" src="{{ logo }}" loading="lazy" decoding="async" />
             </a>
           </li>
           {{/each}}
@@ -32,7 +32,7 @@
         {{#each sponsors.partners}}
         <li class="sponsor-list__list-item">
           <a href="{{ addUtm url ../utm }}" title="{{ name }}" target="_blank">
-            <img src="{{ logo }}" alt="{{ name }}" />
+            <img src="{{ logo }}" alt="{{ name }}" loading="lazy" decoding="async" />
           </a>
         </li>
         {{/each}}

@@ -1,7 +1,7 @@
 <section class="gallery">
   {{#each gallery}}
   <div class="gallery__picture">
-    <img class="gallery__image" src="{{ src }}" alt="{{ alt }}" />
+    <img class="gallery__image" src="{{ src }}" alt="{{ alt }}" loading="lazy" decoding="async" />
   </div>
   {{/each}}
 </section>
