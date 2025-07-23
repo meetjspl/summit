@@ -33,13 +33,13 @@
   }
   &__heading {
     margin-top: 0;
-    color: variables.$purple_color;
-    margin-bottom: 40px;
+    // color: variables.$purple_color;
+    // margin-bottom: 40px;
     @extend %main-heading--special;
     @include breakpoints.mediaquery('gt-medium') {
       white-space: nowrap;
-      margin-top: 20px;
-      margin-bottom: 30px;
+      // margin-top: 20px;
+      // margin-bottom: 30px;
     }
   }
   &__text {

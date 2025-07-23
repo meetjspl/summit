@@ -22,9 +22,9 @@
   &__heading {
     @extend %main-heading--special;
 
-    color: variables.$purple_color;
+    // color: variables.$purple_color;
     margin-top: 0;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
     @include breakpoints.mediaquery('gt-medium') {
       margin-bottom: 60px;
