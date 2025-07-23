@@ -12,12 +12,11 @@
   &__heading {
     @extend %font-bold;
     font-size: 2.2rem;
+    color: variables.$green-color;
+    margin: 0;
     @include breakpoints.mediaquery('gt-medium') {
       font-size: 2.8rem;
     }
-
-    color: variables.$green-color;
-    margin: 0;
 
     &--special {
       @extend %main-text--mini;

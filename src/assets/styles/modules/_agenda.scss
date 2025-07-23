@@ -253,15 +253,15 @@
       'pic'
       'spk';
 
+    overflow: visible;
+    color: variables.$white_color;
+
     @include breakpoints.mediaquery('gt-tiny') {
       grid-template-columns: 1fr 150px;
       grid-template-areas:
         'text pic'
         'text spk';
     }
-
-    overflow: visible;
-    color: variables.$white_color;
   }
   &__image {
     grid-area: pic;

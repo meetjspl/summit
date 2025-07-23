@@ -4,13 +4,13 @@
 
 .venue {
   position: relative;
+  background: variables.$green_color url('../../img/venue/pccmobile.jpg') no-repeat top / contain;
 
   padding: 144px 0 0 0;
   @include breakpoints.mediaquery('gt-small') {
     padding: 16vw 0 0 0;
   }
 
-  background: variables.$green_color url('../../img/venue/pccmobile.jpg') no-repeat top / contain;
   @include breakpoints.mediaquery('gt-medium') {
     background-image: url('../../img/venue/pccmax.jpg');
   }
