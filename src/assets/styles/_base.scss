@@ -1,8 +1,4 @@
 @use "sass:meta";
 @import '../../../node_modules/modern-normalize/modern-normalize.css';
-// @use '../../../node_modules/normalize-scss/sass/normalize';
-// @use "normalize-scss/sass/normalize/normalize-mixin";
-
-// @include normalize-mixin.normalize();
 
 @include meta.load-css('base/base');
