@@ -1,15 +1,19 @@
+@use '../components/typography';
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+
 .speakers {
   padding: 0px 20px 80px;
-  background-color: $purple_color;
+  background-color: variables.$purple_color;
 
-  @include mediaquery('gt-medium') {
+  @include breakpoints.mediaquery('gt-medium') {
     padding: 0px 20px 120px;
   }
 
   &__heading {
     max-width: 636px;
     margin: 0 auto;
-    color: $white_color;
+    color: variables.$white_color;
     margin-bottom: 40px;
     @extend %main-heading;
   }
@@ -34,7 +38,7 @@
 }
 
 .speaker-box {
-  @include mediaquery('gt-small') {
+  @include breakpoints.mediaquery('gt-small') {
     position: relative;
     padding-top: 40px;
     padding-left: 40px;
@@ -48,10 +52,10 @@
     border-radius: 5px;
     overflow: hidden;
     max-width: 140px;
-    box-shadow: rgba($purple_color, 0.5) 0 2px 4px;
+    box-shadow: rgba(variables.$purple_color, 0.5) 0 2px 4px;
     margin: 0 0 -22px 16px;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       position: absolute;
       top: 0;
       left: 0;
@@ -62,22 +66,22 @@
 
   &__info {
     overflow: hidden;
-    color: $white_color;
-    background-color: $lightpurple_color;
+    color: variables.$white_color;
+    background-color: variables.$lightpurple_color;
     padding: 0 16px;
     border-radius: 5px 5px 0 0;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       padding: 0 16px 0 156px;
     }
   }
 
   &__header {
-    background-color: $blue_color;
+    background-color: variables.$blue_color;
     margin: 0 -16px;
     padding: 32px 16px 8px 16px;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -102,12 +106,12 @@
       font-size: 15px;
 
       &:hover {
-        color: $white_color;
+        color: variables.$white_color;
       }
     }
 
     &--alt {
-      background-color: $green_color;
+      background-color: variables.$green_color;
     }
   }
 
@@ -116,7 +120,7 @@
     margin: 16px 0;
     text-align: justify;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       text-align: left;
     }
   }

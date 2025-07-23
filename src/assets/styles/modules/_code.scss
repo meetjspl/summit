@@ -1,8 +1,12 @@
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+@use '../components/common';
+
 .code {
   @extend %base-section;
-  background-color: $white_color;
+  background-color: variables.$white_color;
 
-  @include mediaquery('gt-medium') {
+  @include breakpoints.mediaquery('gt-medium') {
     background-image: url('../../img/left-bg.png'), url('../../img/right-bg.png');
     background-position: top left, top right;
     background-repeat: repeat-y;
@@ -16,18 +20,18 @@
   &__heading {
     @extend %main-heading;
 
-    color: $purple_color;
+    color: variables.$purple_color;
     margin-top: 0;
     margin-bottom: 30px;
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       margin-bottom: 60px;
       white-space: nowrap;
     }
   }
 
   &__subheading {
-    color: $grey_color;
+    color: variables.$grey_color;
 
     @extend %secondary-heading;
   }

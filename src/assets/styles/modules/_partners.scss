@@ -1,6 +1,10 @@
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+@use "../components/common";
+
 .partners {
   @extend %base-section;
-  background-color: $white_color;
+  background-color: variables.$white_color;
 
   &__content {
     max-width: 636px;
@@ -10,11 +14,11 @@
   &__heading {
     @extend %main-heading;
 
-    color: $purple_color;
+    color: variables.$purple_color;
     margin-top: 0;
     margin-bottom: 30px;
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       margin-bottom: 60px;
     }
   }
@@ -28,7 +32,7 @@
       margin-bottom: 40px;
     }
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       display: flex;
       justify-content: space-between;
       align-items: center;

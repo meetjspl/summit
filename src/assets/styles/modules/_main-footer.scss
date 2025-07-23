@@ -1,5 +1,9 @@
+@use '../components/typography';
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+
 .main-footer {
-  background-color: $purple_color;
+  background-color: variables.$purple_color;
 
   &--side {
     width: 100%;
@@ -13,7 +17,7 @@
     left: 0;
     right: 0;
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       &::before {
         content: '';
         display: block;
@@ -22,7 +26,7 @@
         position: absolute;
         top: 0;
         right: -10px;
-        background-color: $blue_color;
+        background-color: variables.$blue_color;
       }
 
       &::after {
@@ -33,7 +37,7 @@
         position: absolute;
         bottom: 0;
         right: -50px;
-        background-color: $green_color;
+        background-color: variables.$green_color;
       }
     }
   }
@@ -42,12 +46,12 @@
     padding: 20px;
     position: relative;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       max-width: 700px;
       margin: 0 auto;
     }
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       max-width: 1040px;
       width: calc(100% / 12 * 8);
       margin: 0 auto;
@@ -61,12 +65,12 @@
       position: absolute;
       top: 0;
       left: 6px;
-      background-color: $lightpurple_color;
+      background-color: variables.$lightpurple_color;
     }
   }
 
   &__badge {
-    color: $white_color;
+    color: variables.$white_color;
     display: inline-block;
     padding: 8px 25px;
 
@@ -84,13 +88,13 @@
     &--side {
       padding-left: 20px;
 
-      @include mediaquery('gt-small') {
+      @include breakpoints.mediaquery('gt-small') {
         max-width: 580px;
         margin: 0 auto;
         padding: 0;
       }
 
-      @include mediaquery('gt-medium') {
+      @include breakpoints.mediaquery('gt-medium') {
         max-width: none;
         padding-left: calc(100% / 12 * 5);
       }

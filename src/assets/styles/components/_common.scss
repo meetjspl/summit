@@ -1,7 +1,12 @@
+@use "sass:color";
+@use '../components/typography';
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+
 %base-section {
   padding: 40px 20px 60px;
 
-  @include mediaquery('gt-medium') {
+  @include breakpoints.mediaquery('gt-medium') {
     padding: 60px 20px 80px;
   }
 }
@@ -9,12 +14,12 @@
 %fancy-button {
   display: inline-block;
   position: relative;
-  background-color: $blue_color;
+  background-color: variables.$blue_color;
   @extend %main-link;
   @extend %main-link--white;
   padding: 8px 16px;
 
-  @include mediaquery('gt-medium') {
+  @include breakpoints.mediaquery('gt-medium') {
     padding: 12px 24px;
   }
 
@@ -23,7 +28,7 @@
     width: calc(100% - 4px);
     height: 3px;
     display: block;
-    background-color: $darkblue_color;
+    background-color: variables.$darkblue_color;
     position: absolute;
     bottom: -3px;
     left: 2px;
@@ -31,28 +36,28 @@
 
   &:hover,
   &:active {
-    color: $white_color;
-    background-color: $darkblue_color;
+    color: variables.$white_color;
+    background-color: variables.$darkblue_color;
 
     &::before {
-      background: darken($darkblue_color, 10%);
+      background: color.adjust(variables.$darkblue_color, $lightness: -10%);
     }
   }
 
   &--inactive {
     cursor: default;
 
-    color: $white_color;
-    background-color: $darkblue_color;
+    color: variables.$white_color;
+    background-color: variables.$darkblue_color;
 
     &::before {
-      background: darken($darkblue_color, 10%);
+      background: color.adjust(variables.$darkblue_color, $lightness: -10%);
     }
 
     &:hover,
     &:active {
-      color: $white_color;
-      background-color: $darkblue_color;
+      color: variables.$white_color;
+      background-color: variables.$darkblue_color;
     }
   }
 }

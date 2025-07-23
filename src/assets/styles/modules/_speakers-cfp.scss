@@ -1,6 +1,11 @@
+@use "sass:color";
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+@use '../components/common';
+
 .speakers-cfp {
   @extend %base-section;
-  background-color: $white_color;
+  background-color: variables.$white_color;
 
   &__center {
     display: flex;
@@ -19,11 +24,11 @@
   &__heading {
     @extend %main-heading;
 
-    color: $purple_color;
+    color: variables.$purple_color;
     margin-top: 0;
     margin-bottom: 30px;
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       margin-bottom: 60px;
     }
   }
@@ -31,7 +36,7 @@
   &__text {
     @extend %main-text;
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       margin-bottom: 32px;
     }
 
@@ -49,12 +54,12 @@
   &__button {
     display: inline-block;
     position: relative;
-    background-color: $blue_color;
+    background-color: variables.$blue_color;
     @extend %main-link;
     @extend %main-link--white;
     padding: 8px 16px;
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       padding: 12px 24px;
     }
 
@@ -63,7 +68,7 @@
       width: calc(100% - 4px);
       height: 3px;
       display: block;
-      background-color: $darkblue_color;
+      background-color: variables.$darkblue_color;
       position: absolute;
       bottom: -3px;
       left: 2px;
@@ -71,11 +76,11 @@
 
     &:hover,
     &:active {
-      color: $white_color;
-      background-color: $darkblue_color;
+      color: variables.$white_color;
+      background-color: variables.$darkblue_color;
 
       &::before {
-        background: darken($darkblue_color, 10%);
+        background: color.adjust(variables.$darkblue_color, $lightness: -10%);
       }
     }
   }

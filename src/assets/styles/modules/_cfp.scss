@@ -1,6 +1,9 @@
+@use "../utilities/variables";
+@use '../components/common';
+
 .cfp {
   @extend %base-section;
-  background-color: $purple_color;
+  background-color: variables.$purple_color;
 
   &__content {
     max-width: 636px;
@@ -10,7 +13,7 @@
 
   &__heading {
     @extend %main-heading;
-    color: $white_color;
+    color: variables.$white_color;
   }
 
   &__text {

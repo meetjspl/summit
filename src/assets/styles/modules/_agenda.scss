@@ -1,7 +1,11 @@
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+@use '../components/common';
+
 .agenda {
   @extend %base-section;
   position: relative;
-  background-color: $purple_color;
+  background-color: variables.$purple_color;
 
   &__content {
     max-width: 800px;
@@ -22,21 +26,21 @@
         position: absolute;
         bottom: 0;
         left: 6px;
-        background-color: $lightpurple_color;
+        background-color: variables.$lightpurple_color;
       }
     }
 
     &__heading {
       @extend %secondary-heading;
 
-      color: $white_color;
+      color: variables.$white_color;
     }
   }
 
   &__heading {
     max-width: 636px;
     margin: 2em auto;
-    color: $white_color;
+    color: variables.$white_color;
     margin-bottom: 20px;
     @extend %main-heading--special;
   }
@@ -49,7 +53,7 @@
   &__workshop {
     &__heading {
       @extend %tertiary-heading;
-      color: $blue_color;
+      color: variables.$blue_color;
 
       & > time {
         font-weight: bold;
@@ -57,7 +61,7 @@
 
       & > h4 {
         display: inline;
-        color: $green_color;
+        color: variables.$green_color;
         margin: 0;
         padding: 0 0 0 5px;
         font-weight: normal;
@@ -65,14 +69,14 @@
 
       & > h5 {
         @extend %main-text--mini;
-        color: $grey_color;
+        color: variables.$grey_color;
         font-weight: normal;
         margin: 0 0 10px 0;
       }
 
       & > h6 {
         @extend %main-text--mini;
-        color: $white_color;
+        color: variables.$white_color;
         margin: 0 0 10px 0;
 
         & a {
@@ -107,7 +111,7 @@
 
     & > h6 {
       @extend %main-text;
-      color: $white_color;
+      color: variables.$white_color;
       margin: 0;
     }
 
@@ -148,7 +152,7 @@
       left: 0;
       width: 14px;
       height: 14px;
-      color: $redish_color;
+      color: variables.$redish_color;
       border-radius: 50%;
     }
 
@@ -161,16 +165,16 @@
         bottom: -4px;
         left: 5px;
         width: 4px;
-        background-color: $lightpurple_color;
+        background-color: variables.$lightpurple_color;
       }
     }
 
     &:nth-child(2n-1) {
       &::before {
-        color: $blue_color;
+        color: variables.$blue_color;
       }
       & time {
-        color: $blue_color;
+        color: variables.$blue_color;
       }
     }
 
@@ -180,28 +184,28 @@
     }
 
     & > time {
-      color: $redish_color;
+      color: variables.$redish_color;
       font-weight: bold;
       padding: 0 5px 0 0;
     }
 
     & > h3 {
       display: inline;
-      color: $green_color;
+      color: variables.$green_color;
       margin: 0;
       font-weight: normal;
     }
 
     & > h4 {
       @extend %main-text--mini;
-      color: $grey_color;
+      color: variables.$grey_color;
       font-weight: normal;
       margin: 0 0 10px 0;
     }
 
     & > p {
       @extend %main-text--small;
-      color: $white_color;
+      color: variables.$white_color;
       margin: 0;
       padding: 0 0 10px 5px;
     }
@@ -220,7 +224,7 @@
     cursor: pointer;
     @extend %secondary-link;
     &:hover {
-      color: $blue_color !important;
+      color: variables.$blue_color !important;
     }
     &:before {
       transition: all 0.5s ease;
@@ -249,7 +253,7 @@
       'pic'
       'spk';
 
-    @include mediaquery('gt-tiny') {
+    @include breakpoints.mediaquery('gt-tiny') {
       grid-template-columns: 1fr 150px;
       grid-template-areas:
         'text pic'
@@ -257,7 +261,7 @@
     }
 
     overflow: visible;
-    color: $white_color;
+    color: variables.$white_color;
   }
   &__image {
     grid-area: pic;
@@ -265,7 +269,7 @@
     border-radius: 10px;
     overflow: hidden;
     width: 140px;
-    box-shadow: rgba($purple_color, 0.5) 0 2px 4px;
+    box-shadow: rgba(variables.$purple_color, 0.5) 0 2px 4px;
   }
 
   &__header {
@@ -301,12 +305,12 @@
       font-size: 14px;
 
       &:hover {
-        color: $white_color;
+        color: variables.$white_color;
       }
     }
 
     &--alt {
-      background-color: $green_color;
+      background-color: variables.$green_color;
     }
   }
 
@@ -316,7 +320,7 @@
     margin: 16px 0 16px 25px;
     text-align: justify;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       text-align: left;
     }
   }

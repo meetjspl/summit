@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 // apply a natural box layout model to all elements,
 // but allowing components to change
 html {
@@ -18,7 +20,7 @@ html {
 }
 
 body {
-  background-color: $purple_color;
+  background-color: variables.$purple_color;
 }
 
 .visually-hidden {

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // breakpoints
 @mixin mediaquery($query) {
   $breakpoints: (
@@ -6,8 +8,8 @@
     'gt-medium': '(min-width: 62em)',
     'fit-menu': '(min-width: 68em)',
   );
-  @if map-has-key($breakpoints, $query) {
-    @media screen and #{map-get($breakpoints, $query)} {
+  @if map.has-key($breakpoints, $query) {
+    @media screen and #{map.get($breakpoints, $query)} {
       @content;
     }
   } @else {

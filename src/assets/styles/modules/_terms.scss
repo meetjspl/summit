@@ -1,8 +1,12 @@
+@use '../components/typography';
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+
 .terms {
   padding: 120px 20px 80px;
-  background-color: $white_color;
+  background-color: variables.$white_color;
 
-  @include mediaquery('gt-small') {
+  @include breakpoints.mediaquery('gt-small') {
     padding: 180px 0 120px;
   }
 
@@ -18,11 +22,11 @@
   &__heading {
     @extend %main-heading;
 
-    color: $purple_color;
+    color: variables.$purple_color;
     margin-top: 0;
     margin-bottom: 40px;
 
-    @include mediaquery('gt-medium') {
+    @include breakpoints.mediaquery('gt-medium') {
       margin-bottom: 60px;
     }
   }
@@ -30,7 +34,7 @@
   &__subheading {
     @extend %secondary-heading;
 
-    color: $purple_color;
+    color: variables.$purple_color;
     margin-top: 40px;
   }
 
@@ -40,7 +44,7 @@
     margin: 0;
     padding-left: 15px;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       padding-left: 40px;
     }
 
@@ -53,7 +57,7 @@
     list-style-type: disc;
     padding-left: 15px;
 
-    @include mediaquery('gt-small') {
+    @include breakpoints.mediaquery('gt-small') {
       padding-left: 40px;
     }
 
@@ -69,7 +73,7 @@
     border-collapse: collapse;
 
     tr {
-      border-bottom: 1px solid $lightgrey_color;
+      border-bottom: 1px solid variables.$lightgrey_color;
     }
 
     th,
