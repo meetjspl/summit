@@ -29,12 +29,12 @@ bun run deploy
 ```
 
 ## Roadmap
-- Use Handlebars injection for repeating stuff (year, city, address, date, head etc)
-- Use Handlebars loops for speakers, sponsors and partners
-- Replace old JS accordions with `<details>`
+- ~~Use Handlebars injection for repeating stuff (year, city, address, date, head etc)~~
+- ~~Use Handlebars loops for speakers, sponsors and partners~~
+- ~~Replace old JS accordions with `<details>`~~
 - Remove old JS
 - Replace SASS with CSS
-- Remove unused CSS
+- Remove unused CSS (partially)
 - Setup Renovate to never repeat undermaintained project mistakes (is it even that difficult to update a template once a year? :/)
 
 ---
