@@ -214,15 +214,31 @@
 
 .agenda__toggle-all {
   cursor: pointer;
+  margin-top: 26px;
+  margin-bottom: 26px;
   @extend %fancy-button;
+  
+  &--active {
+    opacity: 0.7;
+    background-color: variables.$blue_color;
+  }
 }
-.js-toggle-open .agenda__toggle-all {
-  opacity: 0.5;
-}
+
 .agenda-talks-box {
   &__title {
     cursor: pointer;
     @extend %secondary-link;
+    
+    list-style: none;
+    &::marker {
+      display: none;
+      content: '';
+    }
+    &::-webkit-details-marker {
+      display: none;
+      content: '';
+    }
+
     &:hover {
       color: variables.$blue_color !important;
     }
@@ -236,12 +252,14 @@
     }
   }
 
-  .js-toggle-open &__info {
-    display: grid;
-  }
-  .js-toggle-open &__title:before {
+  &[open] &__title:before {
     transform: rotate(180deg);
   }
+  
+  &[open] &__info {
+    display: grid;
+  }
+  
   &__info {
     display: none;
 
