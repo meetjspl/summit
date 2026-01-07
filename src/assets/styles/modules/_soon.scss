@@ -1,0 +1,112 @@
+@use "sass:color";
+@use '../components/typography';
+@use "../utilities/breakpoints";
+@use "../utilities/variables";
+
+.soon {
+  &__hero {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: variables.$green_color;
+
+    .logo {
+      animation: fadeIn 1s ease-out;
+      width: 45rem;
+
+      @include breakpoints.mediaquery('gt-medium') {
+        width: auto;
+      }
+    }
+
+    .partner {
+      color: black;
+      padding: 2px 1rem;
+      font-weight: bold;
+      transform: translateY(-33.333%) rotate(-2deg);;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: x-large;
+
+      @include breakpoints.mediaquery('gt-medium') {
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+
+    .main-partner-logo {
+      height: 50px;
+    }
+
+    .tagline {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+      animation: fadeIn 1.2s ease-out;
+
+      //@include breakpoints.mediaquery('gt-medium') {
+      //  font-size: 2rem;
+      //}
+    }
+
+    .location {
+      font-size: 1.5rem;
+      color: variables.$blue_color;
+      margin-bottom: 3rem;
+      font-weight: 600;
+      animation: fadeIn 1.4s ease-out;
+
+      //@include breakpoints.mediaquery('gt-medium') {
+      //  font-size: 1.25rem;
+      //}
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1.25rem 3rem;
+      background: variables.$purple_color;
+      color: variables.$green_color;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(188, 211, 93, 0.3);
+      animation: fadeIn 1.6s ease-out;
+      width: 200px;
+
+      @include breakpoints.mediaquery('gt-medium') {
+        width: auto;
+      }
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(188, 211, 93, 0.5);
+      background: variables.$blue_color;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .tagline {
+
+  }
+
+  .location {
+
+  }
+
+  .cta-button {
+
+  }
+}
