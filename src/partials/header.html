@@ -26,28 +26,6 @@
     </button>
 
     <div class="main-header__nav">
-      <nav id="navigation" class="main-nav" role="navigation">
-        <ul class="main-nav__list">
-          {{#each navigation}}
-          <li class="main-nav__item">
-            <a
-              class="main-nav__link"
-              href="{{ href }}"
-              title="{{ title }}"
-              aria-label="{{ title }}"
-            >
-            {{ label }}
-            </a>
-          </li>
-          {{/each}}
-        </ul>
-
-        <div class="tickets-button">
-          <a href="#schedule" class="tickets-button__link">#workshop</a>
-          <a href="#tickets" class="tickets-button__link">#tickets</a>
-        </div>
-      </nav>
-
       <nav class="social-nav">
         <ul class="social-nav__list">
           {{#each socialLinks}}
