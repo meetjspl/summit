@@ -13,7 +13,7 @@
   min-height: 60px;
   .has-js & {
     position: fixed;
-    background: transparent;
+    background: variables.$purple_color;
     &--sticky,
     &.menu-open {
       background-color: variables.$purple_color;
@@ -249,7 +249,7 @@
   &__icon {
     width: 16px;
     height: 16px;
-    fill: variables.$blue_color;
+    fill: variables.$green_color;
     &:hover,
     &:active {
       fill: variables.$darkblue_color;
