@@ -3,7 +3,7 @@
 @use "../utilities/variables";
 
 .main-footer {
-  background-color: variables.$purple_color;
+  background-color: variables.$green_color;
 
   &--side {
     width: 100%;
@@ -57,16 +57,16 @@
       margin: 0 auto;
     }
 
-    &::after {
-      content: '';
-      display: block;
-      width: calc(100% - 12px);
-      height: 2px;
-      position: absolute;
-      top: 0;
-      left: 6px;
-      background-color: variables.$lightpurple_color;
-    }
+    //&::after {
+    //  content: '';
+    //  display: block;
+    //  width: calc(100% - 12px);
+    //  height: 2px;
+    //  position: absolute;
+    //  top: 0;
+    //  left: 6px;
+    //  //background-color: variables.$lightpurple_color;
+    //}
   }
 
   &__badge {
