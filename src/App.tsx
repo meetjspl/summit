@@ -1,4 +1,5 @@
 import { Charity } from '@/components/charity.tsx';
+import { InfoCards } from '@/components/info-cards.tsx';
 import { Partners } from '@/components/partners.tsx';
 import { Venue } from '@/components/venue.tsx';
 
@@ -67,6 +68,7 @@ export const App = () => {
 	return (
 		<>
 			<Hero />
+			<InfoCards />
 			<Partners partners={partners} />
 			<Venue />
 			<Tickets />
