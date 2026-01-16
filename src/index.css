@@ -1,1 +1,23 @@
 @import 'tailwindcss';
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  --color-black: #131418;
+  --color-gray: #424242;
+  --color-white-2: #E0E0E0;
+
+  --color-meetjs-purple: #2B1932;
+  --color-meetjs-green: #BCD35D;
+  --color-meetjs-blue: #219EAB;
+
+  --color-aidevs-green: #75F66D;
+  --color-aidevs-white: #F6F6FF;
+
+  --color-accent: #EE196E;
+}
+
+body {
+  font-family: var(--font-montserrat), sans-serif;
+  background-color: var(--color-black);
+}
