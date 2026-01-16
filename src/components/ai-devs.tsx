@@ -1,5 +1,12 @@
 import LogoAiDevs from '../assets/ai_devs_logo.svg?react';
 
+
+
+
+
+
+
+
 export const AIDevs = () => {
 	return (
 		<section className="relative z-20 -mt-45 flex">
