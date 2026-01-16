@@ -1,5 +1,6 @@
 interface TicketVariantProps {
 	title: string;
+	subtitle: string;
 	pack: string[];
 	price: number;
 	link: string;
@@ -8,37 +9,57 @@ interface TicketVariantProps {
 
 export const TicketVariant = ({
 	title,
+	subtitle,
 	pack,
 	price,
 	link,
 	highlight = false,
 }: TicketVariantProps) => {
-	const classes = highlight
-		? 'border-meetjs-green shadow-[0_30px_60px_0_rgba(132,153,41,0.1)]'
-		: 'border-gray';
-
 	return (
 		<div
-			className={`flex w-1/3 flex-col gap-4 rounded-md border bg-black p-8 ${classes}`}
+			className={`flex w-full flex-col rounded-2xl border-2 bg-black p-8 transition-all hover:scale-105 md:w-96 ${
+				highlight
+					? 'border-meetjs-green shadow-xl shadow-meetjs-green/20'
+					: 'border-white/20 hover:border-white/40'
+			}`}
 		>
-			<h3 className="text-2xl font-semibold">{title}</h3>
-			<p>with a {title} ticket, you receive:</p>
-			<ul>
-				{pack.map((text, i) => (
-					<li key={i}>{text}</li>
+			{/* Title */}
+			<h3 className="mb-2 text-3xl font-bold text-white">
+				{title}
+			</h3>
+
+			{/* Subtitle */}
+			<p className="mb-6 text-sm text-white/70">
+				{subtitle}
+			</p>
+
+			{/* Features with checkmarks */}
+			<ul className="mb-8 flex-1 space-y-3">
+				{pack.map((item, index) => (
+					<li key={index} className="flex items-start gap-3">
+						<span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded bg-meetjs-green text-xs font-bold text-black">
+							✓
+						</span>
+						<span className="text-sm text-white/90">{item}</span>
+					</li>
 				))}
 			</ul>
-			<div className="self-auto">
-				<h3 className="text-2xl font-semibold">
-					{price} PLN <span className="text-lg font-normal">netto</span>
-				</h3>
-				<a
-					href={link}
-					className="block w-full rounded-md bg-gray px-4 py-6 text-center"
-				>
-					Sign me up now!
-				</a>
+
+			{/* Price */}
+			<div className="mb-6 border-t border-white/10 pt-6">
+				<p className="text-left">
+					<span className="text-4xl font-bold text-white">{price} PLN</span>
+					<span className="ml-2 text-sm text-white/60">netto</span>
+				</p>
 			</div>
+
+			{/* CTA Button */}
+			<a
+				href={link}
+				className="block rounded-lg bg-gray py-4 text-center font-semibold text-white transition-all hover:bg-gray/80"
+			>
+				Sign me up now!
+			</a>
 		</div>
 	);
 };
