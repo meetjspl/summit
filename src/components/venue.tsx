@@ -3,10 +3,6 @@ import { Wrapper } from '@/components/wrapper.tsx';
 export const Venue = () => {
 	return (
 		<section id="venue" className="relative bg-black py-16">
-			{/* Dotted borders top and bottom */}
-			<div className="absolute top-0 left-0 right-0 h-px border-t-2 border-dashed border-meetjs-blue" />
-			<div className="absolute bottom-0 left-0 right-0 h-px border-b-2 border-dashed border-meetjs-blue" />
-			
 			<Wrapper>
 				<div className="flex flex-col items-start gap-12 text-white md:flex-row md:items-center">
 					{/* Left Side - Text Content */}
