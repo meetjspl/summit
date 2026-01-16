@@ -11,11 +11,11 @@ export const InfoCards = () => {
 					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconCommunity className="h-6.5 w-6.5" />
-							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
+							<h3 className="leading-[140%] font-bold text-aidevs-white">
 								dev_community
 							</h3>
 						</div>
-						<p className="leading-[140%] tracking-tight text-aidevs-white">
+						<p className="leading-[140%] text-aidevs-white">
 							meet.js is{' '}
 							<span className="text-meetjs-blue">
 								Poland's largest and longest-running JavaScript community
@@ -28,11 +28,11 @@ export const InfoCards = () => {
 					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconEcosystem className="h-6.5 w-6.5" />
-							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
+							<h3 className="leading-[140%] font-bold text-aidevs-white">
 								js.ecosystem
 							</h3>
 						</div>
-						<p className="leading-[140%] tracking-tight text-aidevs-white">
+						<p className="leading-[140%] text-aidevs-white">
 							It all began on a Valentine's Day eve in 2011, when a group of
 							JavaScript enthusiasts gathered in a Poznań pub. What started as a{' '}
 							<span className="text-meetjs-green">
@@ -45,11 +45,11 @@ export const InfoCards = () => {
 					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconAiDevs className="h-6.5 w-6.5" />
-							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
+							<h3 className="leading-[140%] font-bold text-aidevs-white">
 								AI_devs 4 Edition
 							</h3>
 						</div>
-						<p className="leading-[140%] tracking-tight text-aidevs-white">
+						<p className="leading-[140%] text-aidevs-white">
 							This years edition is much different! Not only it's the{' '}
 							<span className="text-aidevs-green">
 								15th Anniversary of meet.js community

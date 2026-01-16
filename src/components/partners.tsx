@@ -11,20 +11,18 @@ interface PartnersProps {
 }
 
 export const Partners = ({ partners }: PartnersProps) => {
-	// Filter out placeholder logos
 	const realPartners = partners.filter(p => p.name !== 'Your logo here');
-	
+
 	return (
 		<section className="bg-black py-16 text-white">
 			<Wrapper>
 				<div className="text-center">
-					<h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-meetjs-green">
+					<h2 className="mb-3 text-sm font-semibold text-meetjs-green uppercase">
 						15th Anniversary partners
 					</h2>
-					
-					{/* Partner Logos Grid */}
+
 					<div className="mt-12 flex flex-wrap items-center justify-center gap-8 md:gap-12">
-						{realPartners.map((partner) => (
+						{realPartners.map(partner => (
 							<a
 								key={partner.name}
 								href={partner.websiteUrl || '#'}
@@ -41,8 +39,7 @@ export const Partners = ({ partners }: PartnersProps) => {
 							</a>
 						))}
 					</div>
-					
-					{/* Placeholder row for additional partners */}
+
 					<div className="mt-12 flex flex-wrap items-center justify-center gap-8 opacity-30 md:gap-12">
 						{[...Array(6)].map((_, i) => (
 							<div
