@@ -7,8 +7,8 @@ export const InfoCards = () => {
 	return (
 		<section className="relative bg-black py-16">
 			<Wrapper>
-				<div className="flex flex-col items-center justify-center gap-6 md:flex-row">
-					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:h-48 md:w-76.75">
+				<div className="items-[normal] flex flex-col justify-center gap-6 md:flex-row">
+					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconCommunity className="h-6.5 w-6.5" />
 							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
@@ -25,7 +25,7 @@ export const InfoCards = () => {
 						</p>
 					</div>
 
-					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:h-48 md:w-76.75">
+					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconEcosystem className="h-6.5 w-6.5" />
 							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
@@ -42,7 +42,7 @@ export const InfoCards = () => {
 						</p>
 					</div>
 
-					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:h-48 md:w-76.75">
+					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconAiDevs className="h-6.5 w-6.5" />
 							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
