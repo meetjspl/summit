@@ -14,7 +14,7 @@ export const Charity = () => {
 					<div className="flex flex-col items-center gap-6 md:flex-row md:items-center">
 						<div className="shrink-0">
 							<img
-								src="/charity-badge-3d.png"
+								src="/src/assets/charity_symbol.png"
 								alt="Charity event badge"
 								className="h-34.75 w-34.75"
 								style={{ transform: 'scaleX(-1)' }}
