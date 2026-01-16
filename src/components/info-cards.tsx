@@ -11,7 +11,7 @@ export const InfoCards = () => {
 					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:h-48 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconCommunity className="h-6.5 w-6.5" />
-							<h3 className="text-base leading-[140%] font-bold tracking-tight text-aidevs-white">
+							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
 								dev_community
 							</h3>
 						</div>
@@ -28,7 +28,7 @@ export const InfoCards = () => {
 					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:h-48 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconEcosystem className="h-6.5 w-6.5" />
-							<h3 className="text-base leading-[140%] font-bold tracking-tight text-aidevs-white">
+							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
 								js.ecosystem
 							</h3>
 						</div>
@@ -45,7 +45,7 @@ export const InfoCards = () => {
 					<div className="flex w-full flex-col gap-3 rounded-[10px] border border-gray bg-black p-6 md:h-48 md:w-76.75">
 						<div className="flex items-center gap-2">
 							<IconAiDevs className="h-6.5 w-6.5" />
-							<h3 className="text-base leading-[140%] font-bold tracking-tight text-aidevs-white">
+							<h3 className="leading-[140%] font-bold tracking-tight text-aidevs-white">
 								AI_devs 4 Edition
 							</h3>
 						</div>
