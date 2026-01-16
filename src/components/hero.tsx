@@ -2,12 +2,13 @@ import { AIDevs } from '@/components/ai-devs.tsx';
 import { Anniversary } from '@/components/anniversary.tsx';
 import { HeroBottomSection } from '@/components/hero-bottom-section.tsx';
 import { MeetjsSummit } from '@/components/meetjs-summit.tsx';
+import { Monitor } from '@/components/monitor.tsx';
 import { Organizers } from '@/components/organizers.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
 export const Hero = () => {
 	return (
-		<header className='hero relative flex h-svh flex-col overflow-hidden bg-[url("./src/assets/SGH_ASCI.png")] bg-cover bg-center md:bg-contain'>
+		<header className='hero relative flex min-h-svh flex-col overflow-x-hidden bg-[url("./src/assets/SGH_ASCI.png")] bg-cover bg-center md:h-svh md:overflow-hidden md:bg-contain'>
 			<div className="absolute top-0 left-0 h-full w-full bg-black opacity-25" />
 			<Wrapper>
 				<Organizers />
@@ -15,7 +16,12 @@ export const Hero = () => {
 			</Wrapper>
 			<Anniversary />
 			<Wrapper>
-				<AIDevs />
+				<div className="relative">
+					<Monitor />
+					<AIDevs />
+				</div>
+			</Wrapper>
+			<Wrapper className="mt-4 md:mt-24">
 				<HeroBottomSection />
 			</Wrapper>
 		</header>
