@@ -17,7 +17,22 @@
   --color-accent: #EE196E;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-montserrat), sans-serif;
   background-color: var(--color-black);
+}
+
+/* Floating animation for charity badge */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
