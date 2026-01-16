@@ -1,6 +1,5 @@
 import { Wrapper } from '@/components/wrapper.tsx';
 
-
 export const Charity = () => {
 	return (
 		<section
