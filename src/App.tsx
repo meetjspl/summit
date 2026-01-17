@@ -28,21 +28,6 @@ const partners = [
 		websiteUrl: 'https://socket.dev',
 	},
 	{
-		name: 'Windsurf',
-		logoUrl: '/src/assets/partners/windsurf.png',
-		websiteUrl: '',
-	},
-	{
-		name: 'Your logo here',
-		logoUrl: '/src/assets/partners/logo.png',
-		websiteUrl: '',
-	},
-	{
-		name: 'Your logo here',
-		logoUrl: '/src/assets/partners/logo.png',
-		websiteUrl: '',
-	},
-	{
 		name: 'Your logo here',
 		logoUrl: '/src/assets/partners/logo.png',
 		websiteUrl: '',
