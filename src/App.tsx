@@ -1,6 +1,5 @@
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
-import { Footer } from '@/components/footer.tsx';
 import { Partners } from '@/components/partners.tsx';
 import { Venue } from '@/components/venue.tsx';
 
@@ -59,7 +58,6 @@ export const App = () => {
 			<Venue />
 			<Tickets />
 			<Charity />
-			<Footer />
 		</>
 	);
 };
