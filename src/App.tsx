@@ -21,7 +21,7 @@ const partners = [
 	{
 		name: 'BRAVE',
 		logoUrl: '/src/assets/partners/BRAVE.png',
-		websiteUrl: 'https://socket.dev',
+		websiteUrl: 'https://brave.courses',
 	},
 	{
 		name: 'Socket.dev',
