@@ -5,46 +5,51 @@ import { Venue } from '@/components/venue.tsx';
 
 import { Hero } from './components/hero.tsx';
 import { Tickets } from './components/tickets.tsx';
+import BRAVELogo from '/src/assets/partners/BRAVE.png';
+import SGHLogo from '/src/assets/partners/SGH.png';
+import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
+import yourLogo from '/src/assets/partners/logo.png';
+import SocketDevLogo from '/src/assets/partners/socket.png';
 
 const partners = [
 	{
 		name: 'SGH',
-		logoUrl: '/src/assets/partners/SGH.png',
+		logoUrl: SGHLogo,
 		websiteUrl: 'https://www.sgh.waw.pl',
 	},
 	{
 		name: 'AI Devs',
-		logoUrl: '/src/assets/partners/ai_devs.png',
+		logoUrl: AI_DevsLogo,
 		websiteUrl: 'https://aidevs.pl',
 	},
 	{
 		name: 'BRAVE',
-		logoUrl: '/src/assets/partners/BRAVE.png',
+		logoUrl: BRAVELogo,
 		websiteUrl: 'https://socket.dev',
 	},
 	{
 		name: 'Socket.dev',
-		logoUrl: '/src/assets/partners/socket.png',
+		logoUrl: SocketDevLogo,
 		websiteUrl: 'https://socket.dev',
 	},
 	{
 		name: 'Your logo here',
-		logoUrl: '/src/assets/partners/logo.png',
+		logoUrl: yourLogo,
 		websiteUrl: '',
 	},
 	{
 		name: 'Your logo here',
-		logoUrl: '/src/assets/partners/logo.png',
+		logoUrl: yourLogo,
 		websiteUrl: '',
 	},
 	{
 		name: 'Your logo here',
-		logoUrl: '/src/assets/partners/logo.png',
+		logoUrl: yourLogo,
 		websiteUrl: '',
 	},
 	{
 		name: 'Your logo here',
-		logoUrl: '/src/assets/partners/logo.png',
+		logoUrl: yourLogo,
 		websiteUrl: '',
 	},
 ];
