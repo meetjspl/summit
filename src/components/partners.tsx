@@ -14,7 +14,7 @@ export const Partners = ({ partners }: PartnersProps) => {
 	const realPartners = partners.filter(p => p.name !== 'Your logo here');
 
 	return (
-		<section className="bg-black py-16 text-white">
+		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
 				<div className="text-center">
 					<h2 className="mb-3 text-sm font-semibold text-meetjs-green uppercase">
