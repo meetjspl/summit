@@ -25,7 +25,7 @@ export const Hero = () => {
 					<AIDevs />
 				</div>
 			</Wrapper>
-			<Wrapper className="mt-4 md:mt-24">
+			<Wrapper className="mt-8 md:mt-24">
 				<HeroBottomSection />
 			</Wrapper>
 		</header>

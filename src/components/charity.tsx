@@ -6,7 +6,7 @@ import kopdLogo from '@/assets/kopd-logo.svg';
 export const Charity = () => {
 	return (
 		<section
-			className="relative bg-[#0F0F11] py-12"
+			className="relative bg-[#0F0F11] py-16"
 			style={{
 				background:
 					'radial-gradient(54.76% 158.62% at 26.49% 55.75%, rgba(44, 44, 44, 0.9) 0%, rgba(15, 15, 17, 0) 100%), #0F0F11',
