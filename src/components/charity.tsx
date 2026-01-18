@@ -1,5 +1,7 @@
 import charitySymbol from '@/assets/charity_symbol.png';
 import { Wrapper } from '@/components/wrapper.tsx';
+import hakersiLogo from '@/assets/hakersi-logo.png';
+import kopdLogo from '@/assets/kopd-logo.svg';
 
 export const Charity = () => {
 	return (
@@ -32,10 +34,31 @@ export const Charity = () => {
 						</div>
 					</div>
 
-					<div className="shrink-0">
-						<div className="flex h-34 w-56.75 items-center justify-center rounded bg-aidevs-white text-center text-base leading-5 font-medium text-gray">
-							CHARITY LOGO
-						</div>
+					<div className="flex shrink-0 flex-col items-center gap-4 sm:flex-row">
+						<a
+							href="https://kopd.pl"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex h-24 w-48 items-center justify-center rounded bg-gray-100 p-2"
+						>
+							<img
+								src={kopdLogo}
+								alt="KOPD Logo"
+								className="h-full w-full object-contain"
+							/>
+						</a>
+						<a
+							href="https://hakersi.pl"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="flex h-24 w-48 items-center justify-center rounded bg-gray-100 p-2"
+						>
+							<img
+								src={hakersiLogo}
+								alt="Hakersi Logo"
+								className="h-full w-full object-contain"
+							/>
+						</a>
 					</div>
 				</div>
 			</Wrapper>
