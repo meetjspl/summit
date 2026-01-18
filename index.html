@@ -2,37 +2,97 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8"/>
-  <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+  <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
+
   <!-- SEO Meta Tags -->
   <title>meet.js Summit 2026 - 15th Anniversary AI Devs Edition</title>
-  <meta name="description" content="Join us for meet.js Summit 2026, celebrating our 15th anniversary with the AI Devs Edition. A full day of learning, networking, and inspiration at the Warsaw School of Economics."/>
+  <meta
+    content="Join us for meet.js Summit 2026, celebrating our 15th anniversary with the AI Devs Edition. A full day of learning, networking, and inspiration at the Warsaw School of Economics."
+    name="description"
+  />
   <meta name="keywords" content="meet.js, JavaScript, AI, conference, Warsaw, tech event, AI Devs, programming"/>
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://summit.meetjs.pl/"/>
   <meta property="og:title" content="meet.js Summit 2026 - 15th Anniversary"/>
-  <meta property="og:description" content="Join us for meet.js Summit 2026, celebrating our 15th anniversary with the AI Devs Edition."/>
-  <meta property="og:image" content="https://summit.meetjs.pl/og-image.jpg"/>
-  
+  <meta
+    content="Join us for meet.js Summit 2026, celebrating our 15th anniversary with the AI Devs Edition."
+    property="og:description"
+  />
+  <meta content="https://summit.meetjs.pl/og-image.png" property="og:image"/>
+
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image"/>
   <meta property="twitter:url" content="https://summit.meetjs.pl/"/>
   <meta property="twitter:title" content="meet.js Summit 2026 - 15th Anniversary"/>
-  <meta property="twitter:description" content="Join us for meet.js Summit 2026, celebrating our 15th anniversary with the AI Devs Edition."/>
-  <meta property="twitter:image" content="https://summit.meetjs.pl/og-image.jpg"/>
-  
+  <meta
+    content="Join us for meet.js Summit 2026, celebrating our 15th anniversary with the AI Devs Edition."
+    property="twitter:description"
+  />
+  <meta content="https://summit.meetjs.pl/og-image.png" property="twitter:image"/>
+
   <!-- Theme Color -->
   <meta name="theme-color" content="#2B1932"/>
-  
+
+  <!--  Fonts Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   >
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "meet.js Summit 2026",
+      "description": "Join us for meet.js Summit 2026, celebrating our 15th anniversary with the AI Devs Edition. A full day of learning, networking, and inspiration at the Warsaw School of Economics.",
+      "startDate": "2026-03-04T09:00:00+02:00",
+      "endDate": "2026-03-04T18:00:00+02:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "SGH Warsaw School of Economics",
+        "url": "https://www.sgh.waw.pl/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "al. Niepodległości 162",
+          "addressLocality": "Warszawa",
+          "postalCode": "02-554",
+          "addressRegion": "Mazowieckie",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 52.2089,
+          "longitude": 21.0087
+        }
+      },
+      "offers": [
+        {
+          "@type": "Offer",
+          "url": "https://example.com/bilety",
+          "name": "Regular",
+          "price": "256",
+          "priceCurrency": "PLN",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "url": "https://example.com/bilety",
+          "name": "VIP",
+          "price": "512",
+          "priceCurrency": "PLN",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  </script>
+
 </head>
 <body>
 <div id="root"></div>
