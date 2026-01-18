@@ -46,7 +46,11 @@ export const Venue = () => {
 							</div>
 						</div>
 
-						<div className="flex items-start gap-3 text-sm text-aidevs-white">
+						<a
+							className="flex items-start gap-3 text-sm text-aidevs-white hover:underline"
+							target="_blank"
+							href="https://maps.app.goo.gl/anp6Mkxaz8ovxjhq9"
+						>
 							<svg
 								className="mt-1 h-6 w-6 shrink-0 text-meetjs-blue"
 								fill="none"
@@ -72,7 +76,7 @@ export const Venue = () => {
 									al. Niepodległości 162, 02-554 Warsaw
 								</p>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</Wrapper>
