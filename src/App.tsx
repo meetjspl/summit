@@ -25,7 +25,7 @@ const partners = [
 	{
 		name: 'BRAVE',
 		logoUrl: BRAVELogo,
-		websiteUrl: 'https://socket.dev',
+		websiteUrl: 'https://brave.courses',
 	},
 	{
 		name: 'Socket.dev',
