@@ -4,10 +4,12 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc -b && vite build",
+		"dev": "bun run watch-routes && vite",
+		"build": "generate-routes && tsc -b && vite build",
 		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"generate-routes": "tsr generate",
+		"watch-routes": "tsr watch"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.1.18",
@@ -17,6 +19,8 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.39.1",
+		"@tanstack/router-cli": "^1.151.5",
+		"@tanstack/router-plugin": "^1.151.5",
 		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
 		"@types/node": "^24.10.1",
 		"@types/react": "^19.2.5",
