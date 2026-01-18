@@ -1,7 +1,7 @@
 export const HeroBottomSection = () => {
 	return (
-		<div className="relative z-20 flex flex-col gap-2 pb-2 pt-2 text-white md:gap-4 md:pb-4">
-			<div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
+		<div className="relative z-20 flex flex-col items-center gap-2 pt-2 pb-2 text-center text-white md:items-start md:gap-4 md:pb-4 md:text-left">
+			<div className="flex flex-col items-center gap-3 md:flex-row md:items-center md:gap-8">
 				<a
 					href="#tickets"
 					className="inline-block w-fit rounded-lg bg-white px-8 py-4 text-base font-bold text-black transition-all hover:bg-meetjs-green"
