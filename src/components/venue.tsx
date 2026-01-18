@@ -1,3 +1,5 @@
+import venueLogo from '@/assets/SGH-logo.jpg';
+import venueImage from '@/assets/SGH.jpg';
 import { Wrapper } from '@/components/wrapper.tsx';
 
 export const Venue = () => {
@@ -33,16 +35,12 @@ export const Venue = () => {
 					<div className="w-full space-y-4 md:w-1/2">
 						<div className="relative overflow-hidden rounded-2xl">
 							<img
-								src="/src/assets/SGH.jpg"
+								src={venueImage}
 								alt="Warsaw School of Economics aerial view"
 								className="w-full object-cover"
 							/>
 							<div className="absolute right-4 bottom-4 rounded-lg bg-white p-4 shadow-xl">
-								<img
-									src="/src/assets/SGH-logo.jpg"
-									alt="SGH Logo"
-									className="h-16 w-auto"
-								/>
+								<img src={venueLogo} alt="SGH Logo" className="h-16 w-auto" />
 							</div>
 						</div>
 
