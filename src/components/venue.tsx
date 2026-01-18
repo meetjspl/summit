@@ -6,11 +6,11 @@ export const Venue = () => {
 			<Wrapper>
 				<div className="flex flex-col items-start gap-12 text-white md:flex-row md:items-center">
 					<div className="flex w-full flex-col gap-6 md:w-1/2">
-						<h2 className="text-4xl leading-[140%] font-semibold tracking-tight text-aidevs-white md:text-[40px]">
+						<h2 className="text-4xl leading-[140%] font-semibold text-aidevs-white md:text-[40px]">
 							Venue
 						</h2>
 
-						<div className="space-y-4 text-sm leading-[140%] tracking-tight text-aidevs-white md:text-base">
+						<div className="space-y-4 text-sm leading-[140%] text-aidevs-white md:text-base">
 							<p>
 								<span className="font-semibold">
 									The Warsaw School of Economics
@@ -37,7 +37,6 @@ export const Venue = () => {
 								alt="Warsaw School of Economics aerial view"
 								className="w-full object-cover"
 							/>
-
 							<div className="absolute right-4 bottom-4 rounded-lg bg-white p-4 shadow-xl">
 								<img
 									src="/src/assets/SGH-logo.jpg"

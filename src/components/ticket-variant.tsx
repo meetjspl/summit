@@ -23,17 +23,8 @@ export const TicketVariant = ({
 					: 'border-white/20 hover:border-white/40'
 			}`}
 		>
-			{/* Title */}
-			<h3 className="mb-2 text-3xl font-bold text-white">
-				{title}
-			</h3>
-
-			{/* Subtitle */}
-			<p className="mb-6 text-sm text-white/70">
-				{subtitle}
-			</p>
-
-			{/* Features with checkmarks */}
+			<h3 className="mb-2 text-3xl font-bold text-white">{title}</h3>
+			<p className="mb-6 text-sm text-white/70">{subtitle}</p>
 			<ul className="mb-8 flex-1 space-y-3">
 				{pack.map((item, index) => (
 					<li key={index} className="flex items-start gap-3">
@@ -45,7 +36,6 @@ export const TicketVariant = ({
 				))}
 			</ul>
 
-			{/* Price */}
 			<div className="mb-6 border-t border-white/10 pt-6">
 				<p className="text-left">
 					<span className="text-4xl font-bold text-white">{price} PLN</span>
@@ -53,7 +43,6 @@ export const TicketVariant = ({
 				</p>
 			</div>
 
-			{/* CTA Button */}
 			<a
 				href={link}
 				className="block rounded-lg bg-gray py-4 text-center font-semibold text-white transition-all hover:bg-gray/80"
