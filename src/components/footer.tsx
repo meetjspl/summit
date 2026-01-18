@@ -39,20 +39,14 @@ export const Footer = () => {
 										Venue
 									</a>
 								</li>
+
+
 								<li>
 									<a
-										href="#speakers"
+										href="#partners"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
-										Speakers
-									</a>
-								</li>
-								<li>
-									<a
-										href="#schedule"
-										className="text-white-2 transition-colors hover:text-meetjs-green"
-									>
-										Schedule
+										Partners
 									</a>
 								</li>
 								<li>
@@ -63,14 +57,7 @@ export const Footer = () => {
 										Tickets
 									</a>
 								</li>
-								<li>
-									<a
-										href="#faq"
-										className="text-white-2 transition-colors hover:text-meetjs-green"
-									>
-										FAQ
-									</a>
-								</li>
+
 							</ul>
 						</div>
 
@@ -80,15 +67,15 @@ export const Footer = () => {
 							<ul className="mb-6 space-y-2">
 								<li className="text-white-2">
 									<a
-										href="mailto:summit@meetjs.pl"
+										href="mailto:contact@meetjs.pl"
 										className="hover:text-meetjs-green"
 									>
-										summit@meetjs.pl
+										contact@meetjs.pl
 									</a>
 								</li>
 								<li className="text-white-2">
-									<a href="tel:+48123456789" className="hover:text-meetjs-green">
-										+48 123 456 789
+									<a href="tel:+48725999744" className="hover:text-meetjs-green">
+										+48 725 999 744
 									</a>
 								</li>
 							</ul>
@@ -171,7 +158,9 @@ export const Footer = () => {
 						</p>
 						<div className="flex gap-6 text-sm">
 							<a
-								href="#"
+								href="https://berlincodeofconduct.org/"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-green"
 							>
 								Code of Conduct
@@ -183,7 +172,9 @@ export const Footer = () => {
 								Privacy Policy
 							</a>
 							<a
-								href="#"
+								href="https://summit.meetjs.pl/2023/"
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-green"
 							>
 								Previous Events
