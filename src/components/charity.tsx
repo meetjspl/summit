@@ -1,10 +1,5 @@
+import charitySymbol from '@/assets/charity_symbol.png';
 import { Wrapper } from '@/components/wrapper.tsx';
-
-
-
-
-
-
 
 export const Charity = () => {
 	return (
@@ -20,7 +15,7 @@ export const Charity = () => {
 					<div className="flex flex-col items-center gap-6 md:flex-row md:items-center">
 						<div className="shrink-0">
 							<img
-								src="/src/assets/charity_symbol.png"
+								src={charitySymbol}
 								alt="Charity event badge"
 								className="h-34.75 w-34.75"
 								style={{ transform: 'scaleX(-1)' }}

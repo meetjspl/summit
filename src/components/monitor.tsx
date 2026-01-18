@@ -1,7 +1,16 @@
+import monitorImage from '/src/assets/monitor.png';
+
+
+
+
+
+
+
+
 export const Monitor = () => {
 	return (
 		<img
-			src="/src/assets/monitor.png"
+			src={monitorImage}
 			alt=""
 			className="relative z-30 w-full md:absolute md:-top-48 md:right-12 md:h-auto md:w-auto"
 		/>
