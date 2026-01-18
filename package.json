@@ -4,7 +4,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "bun run watch-routes && vite",
+		"dev": "vite",
 		"build": "generate-routes && tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.1.18",
+		"@tanstack/react-router": "^1.151.6",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
 		"tailwindcss": "^4.1.18"
