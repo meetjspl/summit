@@ -137,7 +137,7 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://discord.gg/meetjs"
+									href="https://discord.gg/DSbpDhFg"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
