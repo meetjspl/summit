@@ -11,6 +11,7 @@ import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import yourLogo from '/src/assets/partners/logo.png';
 import SocketDevLogo from '/src/assets/partners/socket.png';
+import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
 
 const partners = [
 	{
@@ -34,9 +35,9 @@ const partners = [
 		websiteUrl: 'https://socket.dev',
 	},
 	{
-		name: 'Your logo here',
-		logoUrl: yourLogo,
-		websiteUrl: '',
+		name: 'JetBrains',
+		logoUrl: JetBrainsLogo,
+		websiteUrl: 'https://www.jetbrains.com',
 	},
 	{
 		name: 'Your logo here',
