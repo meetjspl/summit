@@ -1,6 +1,7 @@
 import { Wrapper } from '@/components/wrapper.tsx';
-import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
+
 import LogoAiDevs from '../assets/ai_devs_logo.svg?react';
+import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -10,7 +11,6 @@ export const Footer = () => {
 			<div className="border-t border-white/10">
 				<Wrapper>
 					<div className="grid gap-12 py-16 md:grid-cols-4">
-						{/* Branding */}
 						<div className="md:col-span-2">
 							<div className="mb-4 flex items-center gap-4">
 								<Logomeetjs className="h-10 w-auto" />
@@ -18,19 +18,28 @@ export const Footer = () => {
 							</div>
 							<p className="mb-4 text-white-2">
 								Join us for the 15th anniversary celebration of meet.js,
-								featuring the AI Devs Edition. A full day of learning,
+								featuring the AI_Devs Edition. A full day of learning,
 								networking, and inspiration.
 							</p>
 							<div className="flex items-center gap-4">
-								<span className="text-sm text-white-2">In partnership with</span>
+								<span className="text-sm text-white-2">
+									In partnership with
+								</span>
 								<LogoAiDevs className="h-8 w-auto" />
 							</div>
 						</div>
 
-						{/* Quick Links */}
 						<div>
 							<h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
 							<ul className="space-y-2">
+								<li>
+									<a
+										href="#partners"
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										Sponsor
+									</a>
+								</li>
 								<li>
 									<a
 										href="#venue"
@@ -39,7 +48,6 @@ export const Footer = () => {
 										Venue
 									</a>
 								</li>
-
 
 								<li>
 									<a
@@ -57,11 +65,9 @@ export const Footer = () => {
 										Tickets
 									</a>
 								</li>
-
 							</ul>
 						</div>
 
-						{/* Contact & Social */}
 						<div>
 							<h3 className="mb-4 text-lg font-semibold">Connect</h3>
 							<ul className="mb-6 space-y-2">
@@ -74,13 +80,15 @@ export const Footer = () => {
 									</a>
 								</li>
 								<li className="text-white-2">
-									<a href="tel:+48725999744" className="hover:text-meetjs-green">
+									<a
+										href="tel:+48725999744"
+										className="hover:text-meetjs-green"
+									>
 										+48 725 999 744
 									</a>
 								</li>
 							</ul>
 
-							{/* Social Media */}
 							<div className="flex gap-4">
 								<a
 									href="https://twitter.com/meetjs"
@@ -149,7 +157,6 @@ export const Footer = () => {
 				</Wrapper>
 			</div>
 
-			{/* Bottom Bar */}
 			<div className="border-t border-white/10 bg-black/50">
 				<Wrapper>
 					<div className="flex flex-col items-center justify-between gap-4 py-6 md:flex-row">
@@ -165,12 +172,7 @@ export const Footer = () => {
 							>
 								Code of Conduct
 							</a>
-							<a
-								href="#"
-								className="text-white-2 transition-colors hover:text-meetjs-green"
-							>
-								Privacy Policy
-							</a>
+
 							<a
 								href="https://summit.meetjs.pl/2023/"
 								target="_blank"
