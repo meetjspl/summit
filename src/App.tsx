@@ -29,6 +29,11 @@ const partners = [
 		websiteUrl: 'https://brave.courses',
 	},
 	{
+		name: 'Plenti',
+		logoUrl: 'https://downloads.intercomcdn.com/i/o/304725/0a02f7f949cca8890bbca5d1/4ca595afa599e4a52051dbf5ac3c7194.png',
+		websiteUrl: 'https://plenti.app',
+	},
+	{
 		name: 'Socket.dev',
 		logoUrl: SocketDevLogo,
 		websiteUrl: 'https://socket.dev',
