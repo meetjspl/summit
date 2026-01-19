@@ -34,8 +34,7 @@ export const Route = createFileRoute('/thank-you')({
 			!search.ec_currency &&
 			!search.ec_product_id &&
 			!search.ec_product_uuid &&
-			!search.ec_price_id &&
-			!search.ec_promo_code
+			!search.ec_price_id
 		) {
 			throw redirect({ to: '/' });
 		}
