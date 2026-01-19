@@ -52,7 +52,7 @@ export const Partners = ({ partners }: PartnersProps) => {
 					</div>
 				</div>
 
-				<div className="mt-24 border-t border-white/10 pt-24 text-left">
+				<div className="mt-24 border-t border-white/10 pt-24 pb-24 text-left">
 					<div className="grid gap-12 md:grid-cols-2 md:items-center">
 						<div className="flex flex-col gap-6">
 							<h2 className="text-4xl font-semibold leading-[140%] tracking-tight text-meetjs-green md:text-[40px]">
