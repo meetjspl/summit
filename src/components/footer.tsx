@@ -45,6 +45,15 @@ export const Footer = () => {
 							<ul className="space-y-2">
 								<li>
 									<a
+										href="#partners"
+										onClick={(e) => scrollToSection(e, 'partners')}
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										Sponsor
+									</a>
+								</li>
+								<li>
+									<a
 										href="#venue"
 										onClick={(e) => scrollToSection(e, 'venue')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
