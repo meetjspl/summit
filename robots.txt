@@ -1,2 +1,2 @@
-User-agent: *
-Disallow: /thank-you
+User-agent: * 
+Disallow: 
