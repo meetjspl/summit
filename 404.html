@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // Mitigates 404s by redirecting to the index page with the path as a query param
+      
+      var path = window.location.pathname;
+      var search = window.location.search;
+      
+      // Check if this is the 2026 app
+      if (path.startsWith('/2026/') || path === '/2026') {
+        // Strip the base path '/2026'
+        var subPath = path.substring(5);
+        if (subPath.startsWith('/')) {
+             subPath = subPath.substring(1);
+        }
+        
+        // Only redirect if there is actually a sub-path to restore (e.g. 'thank-you')
+        if (subPath) {
+           // Append the subpath as 'redirect' param
+           // Preserve existing query params by appending them with '&' (handling the first '?' manually)
+           var redirectQuery = '?redirect=' + encodeURIComponent(subPath);
+           if (search) {
+               redirectQuery += '&' + search.substring(1);
+           }
+           
+           window.location.replace('/2026/' + redirectQuery);
+        } else {
+           // It is just the root /2026/ or /2026, so just ensure trailing slash
+           if (path === '/2026') {
+              window.location.replace('/2026/');
+           } else {
+              // already /2026/, but we are in 404.html, implying something went wrong or
+              // browser cache issues. Just reload to index.
+              window.location.replace('/2026/');
+           }
+        }
+      } else {
+        // Fallback for non-2026 paths
+        window.location.replace('/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Page not found. Redirecting...</p>
+  </body>
+</html>

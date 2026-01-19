@@ -34,6 +34,10 @@ export default defineConfig({
 					rename: 'index.html',
 				},
 				{
+					src: '404.html',
+					dest: '../',
+				},
+				{
 					src: 'CNAME',
 					dest: '../',
 				},
