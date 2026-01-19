@@ -116,10 +116,6 @@
     fbq('init', '173894732081995');
     fbq('track', 'PageView');
   </script>
-  <noscript><img
-    height="1" src="https://www.facebook.com/tr?id=173894732081995&ev=PageView&noscript=1" style="display:none"
-    width="1"
-  /></noscript>
   <!-- End Meta Pixel Code -->
 
   <!-- Google tag (gtag.js) -->
@@ -138,6 +134,12 @@
   <!-- End Google tag (gtag.js) -->
 </head>
 <body>
+<!-- Meta Pixel Code (noscript fallback) -->
+<noscript><img
+  height="1" src="https://www.facebook.com/tr?id=173894732081995&ev=PageView&noscript=1" style="display:none"
+  width="1"
+/></noscript>
+<!-- End Meta Pixel Code (noscript fallback) -->
 <div id="root"></div>
 <script type="module" src="/src/main.tsx"></script>
 </body>
