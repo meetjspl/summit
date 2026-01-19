@@ -84,7 +84,7 @@ export const Partners = ({ partners }: PartnersProps) => {
 							<h3 className="text-xl font-bold">Ready to join us?</h3>
 							<div className="flex flex-col gap-4 w-full max-w-sm">
 								<a
-									href="/Sponsor offer meet.js Summit 2026.pdf"
+									href="/2026/Sponsor offer meet.js Summit 2026.pdf"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="rounded bg-meetjs-green px-8 py-4 font-bold text-black transition-transform hover:scale-105 active:scale-95"
