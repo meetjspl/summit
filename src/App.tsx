@@ -18,7 +18,7 @@ const partners = [
 		websiteUrl: 'https://www.sgh.waw.pl',
 	},
 	{
-		name: 'AI Devs',
+		name: 'AI_Devs',
 		logoUrl: AI_DevsLogo,
 		websiteUrl: 'https://aidevs.pl',
 	},
