@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>meet.js summit</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta property="og:image" content="http://summit.meetjs.pl/2016/images/fb-og-2016.png"/>
-    <meta property="og:description" content="Meet.js Summit is a conference that gathers 350 professional front-end developers interested in JavaScript development (covering topics like MVC, node.js, reactive programming, frameworks like Angular.js or React.js etc.)."/>
-    <meta property="og:locale" content="en_US"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="meet.js Summit 2016"/>
-    <meta property="og:description" content="March 19, 2016, Warsaw, Poland"/>
-    <meta property="og:url" content="http://summit.meetjs.pl/2016/"/>
-    <meta property="og:site_name" content="meet.js Summit"/>
-    <meta http-equiv="Cache-Control" content="no-cache"/>
-    <link rel="stylesheet" href="css/main.min.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="http://summit.meetjs.pl/2016/images/fb-og-2016.png" property="og:image"/>
+    <meta content="Meet.js Summit is a conference that gathers 350 professional front-end developers interested in JavaScript development (covering topics like MVC, node.js, reactive programming, frameworks like Angular.js or React.js etc.)." property="og:description"/>
+    <meta content="en_US" property="og:locale"/>
+    <meta content="website" property="og:type"/>
+    <meta content="meet.js Summit 2016" property="og:title"/>
+    <meta content="March 19, 2016, Warsaw, Poland" property="og:description"/>
+    <meta content="http://summit.meetjs.pl/2016/" property="og:url"/>
+    <meta content="meet.js Summit" property="og:site_name"/>
+    <meta content="no-cache" http-equiv="Cache-Control"/>
+    <link href="css/main.min.css" rel="stylesheet">
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-facebook" viewBox="0 0 1024 1024">
         <path d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"></path>
       </symbol>
@@ -33,17 +33,17 @@
     <header class="main-header">
       <div class="main-header__content">
         <div class="main-logo">
-          <a class="main-logo__link" href="#main_section" data-scroll><img class="main-logo__image" src="images/summit-logo.png" alt="meet.js summit logo"></a>
+          <a class="main-logo__link" data-scroll href="#main_section"><img alt="meet.js summit logo" class="main-logo__image" src="images/summit-logo.png"></a>
         </div>
         <div class="main-header__nav">
-          <nav id="navigation" class="main-nav" role="navigation">
+          <nav class="main-nav" id="navigation" role="navigation">
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="#speakers" data-scroll title="Meet conference speakers" >#speakers</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#agenda" data-scroll title="Look at conference agenda" >#agenda</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#venue" data-scroll title="Find us in Warsaw" >#venue</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#sponsor_offer" data-scroll title="Become a conference sponsor">#sponsors</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="http://summit.meetjs.pl/2016/vote.html" data-scroll title="Vote for the best speaker at meet.js Summit">#curly-brackets</a></li>
-             <li class="main-nav__item register-button"><a class="register-button__link" href="#register" data-scroll title="Register for conference">#register</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" data-scroll href="#speakers" title="Meet conference speakers" >#speakers</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" data-scroll href="#agenda" title="Look at conference agenda" >#agenda</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" data-scroll href="#venue" title="Find us in Warsaw" >#venue</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" data-scroll href="#sponsor_offer" title="Become a conference sponsor">#sponsors</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" data-scroll href="http://summit.meetjs.pl/2016/vote.html" title="Vote for the best speaker at meet.js Summit">#curly-brackets</a></li>
+             <li class="main-nav__item register-button"><a class="register-button__link" data-scroll href="#register" title="Register for conference">#register</a></li>
             </ul>
           </nav>
           <nav class="social-nav">
@@ -61,14 +61,14 @@
             </ul>
           </nav>
         </div>
-        <button class="button-menu" title="Open/close menu" aria-label="navigation menu" role="button" aria-controls="navigation" aria-expanded="">
+        <button aria-controls="navigation" aria-expanded="" aria-label="navigation menu" class="button-menu" role="button" title="Open/close menu">
           <svg class="button-menu__icon button-menu__menu-icon"><use xlink:href="#icon-menu"></use></svg>
           <svg class="button-menu__icon button-menu__close-icon button-menu__close-icon--nav-open"><use xlink:href="#icon-cross"></use></svg>
         </button>
       </div>
     </header>
     <main>
-      <section id="main_section" class="main-section">
+      <section class="main-section" id="main_section">
         <div class="main-section__outer-content">
           <div class="main-section__content">
             <div class="main-section__info">
@@ -84,41 +84,41 @@
             <section class="sponsors">
               <div class="sponsors__group sponsors__group--global">
                 <h2 class="sponsors__heading">global sponsor:</h2>
-                <a href="http://www.gft.com/pl/pl/index.html" class="sponsors__link"><img class="sponsors__image sponsors__image--big" src="images/gft-logo.png" alt="GFT logo"></a>
+                <a class="sponsors__link" href="http://www.gft.com/pl/pl/index.html"><img alt="GFT logo" class="sponsors__image sponsors__image--big" src="images/gft-logo.png"></a>
               </div>
               <div class="sponsors__group sponsors__group--global">
                 <h2 class="sponsors__heading">party sponsor:</h2>
-                <a href="http://kmdpoland.pl/" class="sponsors__link"><img class="sponsors__image sponsors__image--big" src="images/kmd-logo.png" alt="KMD logo"></a>
+                <a class="sponsors__link" href="http://kmdpoland.pl/"><img alt="KMD logo" class="sponsors__image sponsors__image--big" src="images/kmd-logo.png"></a>
               </div>
               <div class="sponsors__group sponsors__group--modular">
                 <h2 class="sponsors__heading">modular sponsors:</h2>
                 <ul class="sponsors__list">
-                  <li class="sponsors__item"><a href="http://it.roche.pl/en/" class="sponsors__link"><img class="sponsors__image" src="images/roche-logo.png" alt="Roche logo"></a></li>
-                  <li class="sponsors__item"><a href="http://pretius.com/" class="sponsors__link"><img class="sponsors__image" src="images/pretius-logo.png" alt="Pretius logo"></a></li>
-                  <li class="sponsors__item"><a href="http://www.swingdev.io/" rel="nofollow" class="sponsors__link"><img class="sponsors__image" src="images/swing-logo.png" alt="Swingdev logo"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://it.roche.pl/en/"><img alt="Roche logo" class="sponsors__image" src="images/roche-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://pretius.com/"><img alt="Pretius logo" class="sponsors__image" src="images/pretius-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://www.swingdev.io/" rel="nofollow"><img alt="Swingdev logo" class="sponsors__image" src="images/swing-logo.png"></a></li>
 
-                  <li class="sponsors__item"><a href="http://www.codilime.com/" class="sponsors__link"><img class="sponsors__image" src="images/codilime-logo.png" alt="Codilime logo"></a></li>
-                  <li class="sponsors__item"><a href="http://www.j-labs.pl/" class="sponsors__link"><img class="sponsors__image" src="images/labs-logo.png" alt="J-Labs logo"></a></li>
-                  <li class="sponsors__item"><a href="http://www.mobica.com" class="sponsors__link"><img class="sponsors__image" src="images/mobica-logo.png" alt="Mobica logo"></a></li>
-                  <li class="sponsors__item"><a href="http://10clouds.com/" class="sponsors__link"><img class="sponsors__image" src="images/10clouds-logo.png" alt="10 clouds logo"></a></li>
-                  <li class="sponsors__item"><a href="http://greatcare.pl/" class="sponsors__link"><img class="sponsors__image" src="images/greatcare-logo.png" alt="Greatcare logo"></a></li>
-                  <li class="sponsors__item"><a href="https://www.accenture.com/pl-pl/" class="sponsors__link"><img class="sponsors__image" src="images/accenture-logo.png" alt="Accenture logo"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://www.codilime.com/"><img alt="Codilime logo" class="sponsors__image" src="images/codilime-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://www.j-labs.pl/"><img alt="J-Labs logo" class="sponsors__image" src="images/labs-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://www.mobica.com"><img alt="Mobica logo" class="sponsors__image" src="images/mobica-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://10clouds.com/"><img alt="10 clouds logo" class="sponsors__image" src="images/10clouds-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="http://greatcare.pl/"><img alt="Greatcare logo" class="sponsors__image" src="images/greatcare-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="https://www.accenture.com/pl-pl/"><img alt="Accenture logo" class="sponsors__image" src="images/accenture-logo.png"></a></li>
                 </ul>
               </div>
               <div class="sponsors__group sponsors__group--scope">
                 <h2 class="sponsors__heading">scope sponsors:</h2>
                 <ul class="sponsors__list">
-                  <li class="sponsors__item"><a href="https://www.mozilla.org/pl/" class="sponsors__link"><img class="sponsors__image" src="images/mozilla-logo.png" alt="modular sponsor logo"></a></li>
-                  <li class="sponsors__item"><a href="sponsors_en.pdf" class="sponsors__link"><img class="sponsors__image" src="images/modular-your-logo.jpg" alt="modular sponsor logo"></a></li>
-                  <li class="sponsors__item"><a href="sponsors_en.pdf" class="sponsors__link"><img class="sponsors__image" src="images/modular-your-logo.jpg" alt="modular sponsor logo"></a></li>
-                  <li class="sponsors__item"><a href="sponsors_en.pdf" class="sponsors__link"><img class="sponsors__image" src="images/modular-your-logo.jpg" alt="modular sponsor logo"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="https://www.mozilla.org/pl/"><img alt="modular sponsor logo" class="sponsors__image" src="images/mozilla-logo.png"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="sponsors_en.pdf"><img alt="modular sponsor logo" class="sponsors__image" src="images/modular-your-logo.jpg"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="sponsors_en.pdf"><img alt="modular sponsor logo" class="sponsors__image" src="images/modular-your-logo.jpg"></a></li>
+                  <li class="sponsors__item"><a class="sponsors__link" href="sponsors_en.pdf"><img alt="modular sponsor logo" class="sponsors__image" src="images/modular-your-logo.jpg"></a></li>
                 </ul>
               </div>
             </section>
           </div>
         </div>
       </section>
-      <section id="agenda" class="agenda">
+      <section class="agenda" id="agenda">
         <div class="agenda__content">
           <div class="agenda__text">
             <h2 class="agenda__heading">#agenda</h2>
@@ -166,16 +166,16 @@
               <h4 class="agenda__title agenda__title--speech">Simplicity</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">How principles impact my work, selection of tools and code that I write. This talk is a work-in-progress for me as well, but I believe it is way too easy for us to use new frameworks and tools only for the sake of using them. This talk won't answer all your questions but it may help you look at things in a different way.</p>
-                <a class="agenda__link" href="#speaker-kula" data-scroll title="Read more about Krzysztof Kula">Krzysztof Kula</a>
+                <p aria-expanded="false" class="agenda__description-text">How principles impact my work, selection of tools and code that I write. This talk is a work-in-progress for me as well, but I believe it is way too easy for us to use new frameworks and tools only for the sake of using them. This talk won't answer all your questions but it may help you look at things in a different way.</p>
+                <a class="agenda__link" data-scroll href="#speaker-kula" title="Read more about Krzysztof Kula">Krzysztof Kula</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">Web project with ClojureScript </h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Let's bite a little of clojure script in our web development. Introduction into functional programming by doing simple web application. Clojure is not that scary!</p>
-                <a class="agenda__link" href="#speaker-jastrzebska" data-scroll title="Read more about Katarzyna Jastrzebska">Katarzyna Jastrzebska</a>
+                <p aria-expanded="false" class="agenda__description-text">Let's bite a little of clojure script in our web development. Introduction into functional programming by doing simple web application. Clojure is not that scary!</p>
+                <a class="agenda__link" data-scroll href="#speaker-jastrzebska" title="Read more about Katarzyna Jastrzebska">Katarzyna Jastrzebska</a>
               </div>
             </article>
           </div>
@@ -187,16 +187,16 @@
               <h4 class="agenda__title agenda__title--speech">Control the chaos – working in a team</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Teamwork follows its own rules. It requires much more effort from the developer than individual work. It is crucial to understand others and make yourself understandable as miscommunication leads to frustration, decreased motivation, poor quality, delays and can even cost big amount of money. This presentation tries to explain the significance of efficient communication in IT projects using simple real life examples. It shares observations and experience gained while working on a project with large number of specialists, not only developers. Finally, it offers some solutions that can be helpful in dealing with communication chaos.</p>
-                <a class="agenda__link" href="#speaker-grzegorczuk" data-scroll title="Read more about Bartosz Grzegorczuk">Bartosz Grzegorczuk</a>
+                <p aria-expanded="false" class="agenda__description-text">Teamwork follows its own rules. It requires much more effort from the developer than individual work. It is crucial to understand others and make yourself understandable as miscommunication leads to frustration, decreased motivation, poor quality, delays and can even cost big amount of money. This presentation tries to explain the significance of efficient communication in IT projects using simple real life examples. It shares observations and experience gained while working on a project with large number of specialists, not only developers. Finally, it offers some solutions that can be helpful in dealing with communication chaos.</p>
+                <a class="agenda__link" data-scroll href="#speaker-grzegorczuk" title="Read more about Bartosz Grzegorczuk">Bartosz Grzegorczuk</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">Angular & JS lessons learned</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false"> Building applications' user interfaces is still a fancy thing to do, especially with such great tool as Angular is, but what about the devolopment, when you get stacked? This talk is about Angular and its adventures met in a real life, with hands-on product development for real business and users. I have a few tips, few tricks, and few lessons learned from projects which I was involved in.</p>
-                <a class="agenda__link" href="#speaker-koronowski" data-scroll title="Read more about Grzegorz Koronowski">Grzegorz Koronowski</a>
+                <p aria-expanded="false" class="agenda__description-text"> Building applications' user interfaces is still a fancy thing to do, especially with such great tool as Angular is, but what about the devolopment, when you get stacked? This talk is about Angular and its adventures met in a real life, with hands-on product development for real business and users. I have a few tips, few tricks, and few lessons learned from projects which I was involved in.</p>
+                <a class="agenda__link" data-scroll href="#speaker-koronowski" title="Read more about Grzegorz Koronowski">Grzegorz Koronowski</a>
               </div>
             </article>
           </div>
@@ -216,16 +216,16 @@
               <h4 class="agenda__title agenda__title--speech">Building Snake using streams</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" href="#" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">This talk is an introduction to streams. You will learn how stream-based programming can be used to implement web frontend of the classic game: Snake. Building dynamic applications using imperative approach tends to create lots of unmaintainable code. Stream-based programming tries to solve this problem by introducing fully declarative way of defining application logic. While using streams, you will focus on WHAT needs to be done, not HOW and WHEN. I will go through every piece of code that was used to build the game. That is about 100 lines of ES 2015 code contained within two React components.</p>
-                <a class="agenda__link" href="#speaker-plachta" data-scroll title="Read more about Michał Płachta">Michał Płachta</a>
+                <p aria-expanded="false" class="agenda__description-text">This talk is an introduction to streams. You will learn how stream-based programming can be used to implement web frontend of the classic game: Snake. Building dynamic applications using imperative approach tends to create lots of unmaintainable code. Stream-based programming tries to solve this problem by introducing fully declarative way of defining application logic. While using streams, you will focus on WHAT needs to be done, not HOW and WHEN. I will go through every piece of code that was used to build the game. That is about 100 lines of ES 2015 code contained within two React components.</p>
+                <a class="agenda__link" data-scroll href="#speaker-plachta" title="Read more about Michał Płachta">Michał Płachta</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">npm scripts as an automation tool</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Most of the web developers use grunt or gulp as a tool to automate their developement workflow or build process. Those tools add another layer of complexity and huge number of dependencies into our projects.  But there is an alternative and simpler approach that is gaining on popularity recently: CLI commands + npm run scripts.</p>
-                <a class="agenda__link" href="#speaker-fiszer" data-scroll title="Read more about Łukasz Fiszer">Łukasz Fiszer</a>
+                <p aria-expanded="false" class="agenda__description-text">Most of the web developers use grunt or gulp as a tool to automate their developement workflow or build process. Those tools add another layer of complexity and huge number of dependencies into our projects.  But there is an alternative and simpler approach that is gaining on popularity recently: CLI commands + npm run scripts.</p>
+                <a class="agenda__link" data-scroll href="#speaker-fiszer" title="Read more about Łukasz Fiszer">Łukasz Fiszer</a>
               </div>
             </article>
           </div>
@@ -237,16 +237,16 @@
               <h4 class="agenda__title agenda__title--speech">Awesomely descriptive JavaScript with monads</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Can unfamiliar pattern from world of statically typed functional languages improve JavaScript world? For sure YES! The elastic nature of JavaScript can handle great ideas from many alien worlds. With a little help of modern tools like ​monet.js​ and ​TypeScript​ we can achieve awesomely descriptive aesthetics of our code and drop some imperative bloat.</p>
-                <a class="agenda__link" href="#speaker-strojewski" data-scroll title="Read more about Jakub Strojewski">Jakub Strojewski</a>
+                <p aria-expanded="false" class="agenda__description-text">Can unfamiliar pattern from world of statically typed functional languages improve JavaScript world? For sure YES! The elastic nature of JavaScript can handle great ideas from many alien worlds. With a little help of modern tools like ​monet.js​ and ​TypeScript​ we can achieve awesomely descriptive aesthetics of our code and drop some imperative bloat.</p>
+                <a class="agenda__link" data-scroll href="#speaker-strojewski" title="Read more about Jakub Strojewski">Jakub Strojewski</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">Reliable Node.js applications for a reactive world</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Overview of an example Node.js application that demonstrates how to deal with network programming in a reliable manner. Touches on subjects of idempotence, concurrency control, reactive programming and application state, with elements of CQRS and Event Sourcing.</p>
-                <a class="agenda__link" href="#speaker-kawecki" data-scroll title="Read more about Robert Kawecki">Robert Kawecki</a>
+                <p aria-expanded="false" class="agenda__description-text">Overview of an example Node.js application that demonstrates how to deal with network programming in a reliable manner. Touches on subjects of idempotence, concurrency control, reactive programming and application state, with elements of CQRS and Event Sourcing.</p>
+                <a class="agenda__link" data-scroll href="#speaker-kawecki" title="Read more about Robert Kawecki">Robert Kawecki</a>
               </div>
             </article>
           </div>
@@ -258,16 +258,16 @@
               <h4 class="agenda__title agenda__title--speech">Desktop applications in JavaScript with Electron</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Can we create a desktop application in JavaScript? Can we make it look like a native one? How can Electron or NW.js help us in that matter? The presentation will try to answer those (and many other) questions during an in-depth analysis of Electron framework.</p>
-                <a class="agenda__link" href="#speaker-szymanski" data-scroll title="Read more about Rafał Szymański">Rafał Szymański</a>
+                <p aria-expanded="false" class="agenda__description-text">Can we create a desktop application in JavaScript? Can we make it look like a native one? How can Electron or NW.js help us in that matter? The presentation will try to answer those (and many other) questions during an in-depth analysis of Electron framework.</p>
+                <a class="agenda__link" data-scroll href="#speaker-szymanski" title="Read more about Rafał Szymański">Rafał Szymański</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">Style Guide Driven Development - Episode IV - New Hope for Front-end</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Talk will cover Style Guide Driven Development from FrontEnd Developer point of view. It will explain how to use it to create reusable modules and make from it great websites and applications. It will contain examples from AngularJS together with SCSS as styling tool.</p>
-                <a class="agenda__link" href="#speaker-korowicki" data-scroll title="Read more about Łukasz Korowicki">Łukasz Korowicki</a>
+                <p aria-expanded="false" class="agenda__description-text">Talk will cover Style Guide Driven Development from FrontEnd Developer point of view. It will explain how to use it to create reusable modules and make from it great websites and applications. It will contain examples from AngularJS together with SCSS as styling tool.</p>
+                <a class="agenda__link" data-scroll href="#speaker-korowicki" title="Read more about Łukasz Korowicki">Łukasz Korowicki</a>
               </div>
             </article>
           </div>
@@ -287,17 +287,17 @@
               <h4 class="agenda__title agenda__title--speech">CSS Grid Layout - the only grid framework you need to know</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description" >#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">CSS Grid Layout is the latest W3C spec for, well.. grid layouts. Finally, it will work on Web Platform level. No more fancy CSS grid frameworks, no more clear fixes, floats, tables and other mess - the CSS as it should be. You will see how to create almost any page layout with few lines of clear CSS, without div-soup, and without single byte of library or tool to download. You will learn how to code with ease, and get experience with tomorrow's tech.</p>
-                <a class="agenda__link" href="#speaker-wytrebowicz" data-scroll title="Read more about Tomek Wytrębowicz">Tomek Wytrębowicz</a>
+                <p aria-expanded="false" class="agenda__description-text">CSS Grid Layout is the latest W3C spec for, well.. grid layouts. Finally, it will work on Web Platform level. No more fancy CSS grid frameworks, no more clear fixes, floats, tables and other mess - the CSS as it should be. You will see how to create almost any page layout with few lines of clear CSS, without div-soup, and without single byte of library or tool to download. You will learn how to code with ease, and get experience with tomorrow's tech.</p>
+                <a class="agenda__link" data-scroll href="#speaker-wytrebowicz" title="Read more about Tomek Wytrębowicz">Tomek Wytrębowicz</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">Creating easy going code</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">We will talk about frontend/js patterns and methodologies for building readable, clean and scalable code. We will guide you through architectural approaches that simplify our life in projects we work in at Roche Global IT Solutions.</p>
-                <a class="agenda__link" href="#speaker-makowski" data-scroll title="Read more about this speaker">Adrian Makowski</a>
-                <a class="agenda__link" href="#speaker-chwilkowski" data-scroll title="Read more about Adam Chwiłkowski">Adam Chwiłkowski</a>
+                <p aria-expanded="false" class="agenda__description-text">We will talk about frontend/js patterns and methodologies for building readable, clean and scalable code. We will guide you through architectural approaches that simplify our life in projects we work in at Roche Global IT Solutions.</p>
+                <a class="agenda__link" data-scroll href="#speaker-makowski" title="Read more about this speaker">Adrian Makowski</a>
+                <a class="agenda__link" data-scroll href="#speaker-chwilkowski" title="Read more about Adam Chwiłkowski">Adam Chwiłkowski</a>
               </div>
             </article>
           </div>
@@ -309,16 +309,16 @@
               <h4 class="agenda__title agenda__title--speech">The future Of JavaScript is now. How to make the most of it?</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">New features in JS have been around for a while and we've all seen examples of the new syntax. Have you every wondered though what they are actually good for? In this talk I'll talk about practical uses for these new features and I'll showcase real-life examples of ES2015+ code. You'll learn about new patterns and walk away ready to write better code!</p>
-                <a class="agenda__link" href="#speaker-malolepszy" data-scroll title="Read more about Staś Małolepszy">Staś Małolepszy</a>
+                <p aria-expanded="false" class="agenda__description-text">New features in JS have been around for a while and we've all seen examples of the new syntax. Have you every wondered though what they are actually good for? In this talk I'll talk about practical uses for these new features and I'll showcase real-life examples of ES2015+ code. You'll learn about new patterns and walk away ready to write better code!</p>
+                <a class="agenda__link" data-scroll href="#speaker-malolepszy" title="Read more about Staś Małolepszy">Staś Małolepszy</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">React enlightenment - my 10 month journey with React.js</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">The talk is my story of getting hands on React, jumping on the Hype Train rushing with a great speed. The journey includes new React project onboarding, understanding what this all hype is about and finally finding this technology as a great step in building maintainable applications. I'm sharing my experiences and tips about what React is, how to use it properly and finally test it.</p>
-                <a class="agenda__link" href="#speaker-szott" data-scroll title="Read more about Artur Szott">Artur Szott</a>
+                <p aria-expanded="false" class="agenda__description-text">The talk is my story of getting hands on React, jumping on the Hype Train rushing with a great speed. The journey includes new React project onboarding, understanding what this all hype is about and finally finding this technology as a great step in building maintainable applications. I'm sharing my experiences and tips about what React is, how to use it properly and finally test it.</p>
+                <a class="agenda__link" data-scroll href="#speaker-szott" title="Read more about Artur Szott">Artur Szott</a>
               </div>
             </article>
           </div>
@@ -338,16 +338,16 @@
               <h4 class="agenda__title agenda__title--speech">Getting your Node.js app production ready</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Get hands-on knowledge of tools and patterns that make your Node.js app ready for production. Logging, monitoring, hunting performance issues and daily maintenance. No magic, no showing off fancy charts - just practical tips and tricks. Also, it's simpler than you think!</p>
-                <a class="agenda__link" href="#speaker-tenerowicz" data-scroll title="Read more about Zbyszek Tenerowicz">Zbyszek Tenerowicz</a>
+                <p aria-expanded="false" class="agenda__description-text">Get hands-on knowledge of tools and patterns that make your Node.js app ready for production. Logging, monitoring, hunting performance issues and daily maintenance. No magic, no showing off fancy charts - just practical tips and tricks. Also, it's simpler than you think!</p>
+                <a class="agenda__link" data-scroll href="#speaker-tenerowicz" title="Read more about Zbyszek Tenerowicz">Zbyszek Tenerowicz</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">Angular 2 Tips & Tricks</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Making use of brand new change detection system, immutability, reactive programming, shadow DOM and more. Talking about things that can help you avoid troubles.</p>
-                <a class="agenda__link" href="#speaker-kwiatek" data-scroll title="Read more about Wojciech Kwiatek">Wojciech Kwiatek</a>
+                <p aria-expanded="false" class="agenda__description-text">Making use of brand new change detection system, immutability, reactive programming, shadow DOM and more. Talking about things that can help you avoid troubles.</p>
+                <a class="agenda__link" data-scroll href="#speaker-kwiatek" title="Read more about Wojciech Kwiatek">Wojciech Kwiatek</a>
               </div>
             </article>
           </div>
@@ -359,16 +359,16 @@
               <h4 class="agenda__title agenda__title--speech">Reactive JavaScript</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">I'm going to show you the force, the reactive force of JavaScript! Why reactive programming matters and which tools can help you to become the master. Switching your thinking to reactive is not easy but rewarding!</p>
-                <a class="agenda__link" href="#speaker-zalecki" data-scroll title="Read more about Michał Załęcki">Michał Załęcki</a>
+                <p aria-expanded="false" class="agenda__description-text">I'm going to show you the force, the reactive force of JavaScript! Why reactive programming matters and which tools can help you to become the master. Switching your thinking to reactive is not easy but rewarding!</p>
+                <a class="agenda__link" data-scroll href="#speaker-zalecki" title="Read more about Michał Załęcki">Michał Załęcki</a>
               </div>
             </article>
             <article class="agenda__item agenda__speech">
               <h4 class="agenda__title agenda__title--speech">Star Wars: Lightsaber Escape - commercial implementation using Polymer 1.0</h4>
               <div class="agenda__about">
                 <button class="agenda__description-button" title="Open/close talk description">#read description</button>
-                <p class="agenda__description-text" aria-expanded="false">Based on my Tech Lead experience from the Google / Disney / ILM / 72andSunny "Star Wars: Lightsaber Escape" - a second-screen 3D WebGL experience where your phone becomes a lightsaber, released in December 2015 for the premiere of Star Wars: The Force Awakens, I'm going to share insights for how we used Polymer 1.0 as the underlying framework for the entire project. The talk will start with an introduction to Polymer but will soon expand into more advanced topics and case studies from our recent commercial implementation. I will talk about project architecture, design patterns, optimisation, performance and many more. The talk is open for questions and is thought-provoking.</p>
-                <a class="agenda__link" href="#speaker-zasada" data-scroll title="Read more about Maciej Zasada">Maciej Zasada</a>
+                <p aria-expanded="false" class="agenda__description-text">Based on my Tech Lead experience from the Google / Disney / ILM / 72andSunny "Star Wars: Lightsaber Escape" - a second-screen 3D WebGL experience where your phone becomes a lightsaber, released in December 2015 for the premiere of Star Wars: The Force Awakens, I'm going to share insights for how we used Polymer 1.0 as the underlying framework for the entire project. The talk will start with an introduction to Polymer but will soon expand into more advanced topics and case studies from our recent commercial implementation. I will talk about project architecture, design patterns, optimisation, performance and many more. The talk is open for questions and is thought-provoking.</p>
+                <a class="agenda__link" data-scroll href="#speaker-zasada" title="Read more about Maciej Zasada">Maciej Zasada</a>
               </div>
             </article>
           </div>
@@ -390,7 +390,7 @@
           </div>
         </div>
       </section>
-      <section id="speakers" class="speakers">
+      <section class="speakers" id="speakers">
         <div class="speakers__content">
           <div class="speakers__info">
             <header class="speakers__header">
@@ -398,9 +398,9 @@
             </header>
           </div>
           <div class="speakers__main-info">
-            <article id="speaker-chwilkowski" class="speaker-box">
+            <article class="speaker-box" id="speaker-chwilkowski">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-chwilkowski.jpg" alt="Photo of speaker: Adam Chwiłkowski">
+                <img alt="Photo of speaker: Adam Chwiłkowski" class="speaker-box__image" src="images/speaker-chwilkowski.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -409,9 +409,9 @@
                 <p class="speaker-box__desc">Frontend & JavaScript enthusiast with a passion for clean and reusable code. Currently working as a Senior IT Professional at Roche Global IT Solutions.</p>
               </div>
             </article>
-            <article id="speaker-fiszer" class="speaker-box">
+            <article class="speaker-box" id="speaker-fiszer">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-fiszer.jpg" alt="Photo of speaker: Łukasz Fiszer">
+                <img alt="Photo of speaker: Łukasz Fiszer" class="speaker-box__image" src="images/speaker-fiszer.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -420,9 +420,9 @@
                 <p class="speaker-box__desc">Senior JavaScript Developer at GFT. Interested in server-side JS and isomorphic applications. After hours - a social activist at Miasto Jest Nasze.</p>
               </div>
             </article>
-            <article id="speaker-grzegorczuk" class="speaker-box">
+            <article class="speaker-box" id="speaker-grzegorczuk">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-grzegorczuk.jpg" alt="Photo of speaker: Bartosz Grzegorczuk">
+                <img alt="Photo of speaker: Bartosz Grzegorczuk" class="speaker-box__image" src="images/speaker-grzegorczuk.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -435,9 +435,9 @@
                 <p class="speaker-box__desc">Lead frontend developer at 4Decision. Enthusiast of clean code and event-driven architecture. Attentive to details, likes to understand how things work. Feels inspired when working with people and exchanging experiences. Loves drinking CoffeeScript.</p>
               </div>
             </article>
-            <article id="speaker-jastrzebska" class="speaker-box">
+            <article class="speaker-box" id="speaker-jastrzebska">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-jastrzebska.jpg" alt="Photo of speaker: Katarzyna Jastrzębska">
+                <img alt="Photo of speaker: Katarzyna Jastrzębska" class="speaker-box__image" src="images/speaker-jastrzebska.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -449,9 +449,9 @@
                 <p class="speaker-box__desc">Frontend Developer and UI designer. ClojureScript and functional programming enthusiast.</p>
               </div>
             </article>
-            <article id="speaker-kawecki" class="speaker-box">
+            <article class="speaker-box" id="speaker-kawecki">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-kawecki.jpg" alt="Photo of speaker: Robert Kawecki">
+                <img alt="Photo of speaker: Robert Kawecki" class="speaker-box__image" src="images/speaker-kawecki.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -460,9 +460,9 @@
                 <p class="speaker-box__desc">Node.js developer fascinated with distributed enterprise systems and domain-driven design. Author of the event sourcing framework called esdf.</p>
               </div>
             </article>
-            <article id="speaker-koronowski" class="speaker-box">
+            <article class="speaker-box" id="speaker-koronowski">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-koronowski.jpg" alt="Photo of speaker: Grzegorz Koronowski">
+                <img alt="Photo of speaker: Grzegorz Koronowski" class="speaker-box__image" src="images/speaker-koronowski.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -471,9 +471,9 @@
                 <p class="speaker-box__desc">Former ExtJS's power user, currently taking care about Danish education platform ui&ux. Fan of approach "The easier, the better".</p>
               </div>
             </article>
-            <article id="speaker-korowicki" class="speaker-box">
+            <article class="speaker-box" id="speaker-korowicki">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-korowicki.jpg" alt="Photo of speaker: Łukasz Korwicki">
+                <img alt="Photo of speaker: Łukasz Korwicki" class="speaker-box__image" src="images/speaker-korowicki.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -485,9 +485,9 @@
                 <p class="speaker-box__desc">Junior Software Engineer at Samsung Electronics Poland, former WebDeveloper at Kerris Group.</p>
               </div>
             </article>
-            <article id="speaker-kula" class="speaker-box">
+            <article class="speaker-box" id="speaker-kula">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-kula.jpg" alt="Photo of speaker: Krzysztof Kula">
+                <img alt="Photo of speaker: Krzysztof Kula" class="speaker-box__image" src="images/speaker-kula.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -500,9 +500,9 @@
                 <p class="speaker-box__desc">Fan of Functional Programming, JavaScript and Node.js. Loves learning and reading books. Works for SmartRecruiters in Kraków.</p>
               </div>
             </article>
-            <article id="speaker-kwiatek" class="speaker-box">
+            <article class="speaker-box" id="speaker-kwiatek">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-kwiatek.jpg" alt="Photo of speaker: Wojciech Kwiatek">
+                <img alt="Photo of speaker: Wojciech Kwiatek" class="speaker-box__image" src="images/speaker-kwiatek.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -514,9 +514,9 @@
                 <p class="speaker-box__desc">JavaScript developer at LiveChat, coach at DevMeetings. Loves cutting-edge technologies. Is challenging himself in anything he does.</p>
               </div>
             </article>
-            <article id="speaker-makowski" class="speaker-box">
+            <article class="speaker-box" id="speaker-makowski">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-makowski.jpg" alt="Photo of speaker: Adrian Makowski">
+                <img alt="Photo of speaker: Adrian Makowski" class="speaker-box__image" src="images/speaker-makowski.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -528,9 +528,9 @@
                 <p class="speaker-box__desc">Front-end developer currently working as a Senior IT Professional at Roche Global IT Solutions.</p>
               </div>
             </article>
-            <article id="speaker-malolepszy" class="speaker-box">
+            <article class="speaker-box" id="speaker-malolepszy">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-malolepszy.jpg" alt="Photo of speaker: Staś Małolepszy">
+                <img alt="Photo of speaker: Staś Małolepszy" class="speaker-box__image" src="images/speaker-malolepszy.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -543,9 +543,9 @@
                 <p class="speaker-box__desc">Lion tamer at Mozilla by day. Avid learner of everything by night. Or the other way around. Because timezones.</p>
               </div>
             </article>
-            <article id="speaker-plachta" class="speaker-box">
+            <article class="speaker-box" id="speaker-plachta">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-plachta.jpg" alt="Photo of speaker: Michał Płachta">
+                <img alt="Photo of speaker: Michał Płachta" class="speaker-box__image" src="images/speaker-plachta.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -558,9 +558,9 @@
                 <p class="speaker-box__desc">Making things alive using computers. Polyglot software engineer specialised in developing distributed applications. Currently works as a team leader at Ocado Technology, where he builds actor-based software for automated warehouse.</p>
               </div>
             </article>
-            <article id="speaker-strojewski" class="speaker-box">
+            <article class="speaker-box" id="speaker-strojewski">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-strojewski.jpg" alt="Photo of speaker: Jakub Strojewski">
+                <img alt="Photo of speaker: Jakub Strojewski" class="speaker-box__image" src="images/speaker-strojewski.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -573,9 +573,9 @@
                 <p class="speaker-box__desc">Developer at Evojam. Addicted to bleeding edge technologies. Angular lover. Member of ReactJS community. TypeScript evangelist.</p>
               </div>
             </article>
-            <article id="speaker-szott" class="speaker-box">
+            <article class="speaker-box" id="speaker-szott">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-szott.jpg" alt="Photo of speaker: Artur Szott">
+                <img alt="Photo of speaker: Artur Szott" class="speaker-box__image" src="images/speaker-szott.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -587,9 +587,9 @@
                 <p class="speaker-box__desc">Front-end developer who've found a passion for building highly interactive products with the well crafted code.</p>
               </div>
             </article>
-            <article id="speaker-szymanski" class="speaker-box">
+            <article class="speaker-box" id="speaker-szymanski">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-szymanski.jpg" alt="Photo of speaker: Rafał Szymański">
+                <img alt="Photo of speaker: Rafał Szymański" class="speaker-box__image" src="images/speaker-szymanski.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -598,9 +598,9 @@
                 <p class="speaker-box__desc">I'm a Javascript Developer at Mobica who is currently working on an AngularJS based Automotive solution. Previously worked for Accenture and Sii.</p>
               </div>
             </article>
-            <article id="speaker-tenerowicz" class="speaker-box">
+            <article class="speaker-box" id="speaker-tenerowicz">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-tenerowicz.jpg" alt="Photo of speaker: Zbyszek Tenerowicz">
+                <img alt="Photo of speaker: Zbyszek Tenerowicz" class="speaker-box__image" src="images/speaker-tenerowicz.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -613,9 +613,9 @@
                 <p class="speaker-box__desc">Meet.js veteran - speaker and organizer. Developer and technology researcher. Currently running a growing number of Node.js powered applications in production at Egnyte Inc.</p>
               </div>
             </article>
-            <article id="speaker-wytrebowicz" class="speaker-box">
+            <article class="speaker-box" id="speaker-wytrebowicz">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-wytrebowicz.jpg" alt="Photo of speaker: Tomek Wytrębowicz">
+                <img alt="Photo of speaker: Tomek Wytrębowicz" class="speaker-box__image" src="images/speaker-wytrebowicz.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -628,9 +628,9 @@
                 <p class="speaker-box__desc">Developer from Warsaw, Poland, huge HTML + JS enthusiast & evangelist, active member of Web Components community. Works for Starcounter, on bleeding edge of web tech.</p>
               </div>
             </article>
-            <article id="speaker-zalecki" class="speaker-box">
+            <article class="speaker-box" id="speaker-zalecki">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-zalecki.jpg" alt="Photo of speaker: Michał Załęcki">
+                <img alt="Photo of speaker: Michał Załęcki" class="speaker-box__image" src="images/speaker-zalecki.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -643,9 +643,9 @@
                 <p class="speaker-box__desc">Full-Stack JavaScript Developer, Frontend Team Leader at woumedia. Chess player and a big fan of hackathons.</p>
               </div>
             </article>
-            <article id="speaker-zasada" class="speaker-box">
+            <article class="speaker-box" id="speaker-zasada">
               <div class="speaker-box__photo">
-                <img class="speaker-box__image" src="images/speaker-zasada.jpg" alt="Photo of speaker: Maciej Zasada">
+                <img alt="Photo of speaker: Maciej Zasada" class="speaker-box__image" src="images/speaker-zasada.jpg">
               </div>
               <div class="speaker-box__info">
                 <div class="speaker-box__data">
@@ -661,11 +661,11 @@
           </div>
         </div>
       </section>
-      <section id="venue" class="venue">
+      <section class="venue" id="venue">
         <div class="venue__content">
           <h2 class="venue__heading">#venue</h2>
           <div class="venue__picture">
-            <img class="venue__image" src="images/luna-logo.png" alt="Luna cinema logo">
+            <img alt="Luna cinema logo" class="venue__image" src="images/luna-logo.png">
           </div>
           <div class="venue__info">
             <p class="venue__place">Kino Luna</p>
@@ -677,7 +677,7 @@
           </div>
         </div>
       </section>
-      <section id="sponsor_offer" class="sponsor-offer">
+      <section class="sponsor-offer" id="sponsor_offer">
         <div class="sponsor-offer__content">
           <div class="sponsor-offer__main-info">
             <h2 class="sponsor-offer__heading">#become-a-sponsor</h2>
@@ -687,26 +687,26 @@
           </div>
           <div class="sponsor-offer__gallery">
             <div class="sponsor-offer__picture">
-              <img class="sponsor-offer__image" src="images/conference1.jpg" alt="">
+              <img alt="" class="sponsor-offer__image" src="images/conference1.jpg">
             </div>
             <div class="sponsor-offer__picture">
-              <img class="sponsor-offer__image" src="images/conference2.jpg" alt="">
+              <img alt="" class="sponsor-offer__image" src="images/conference2.jpg">
             </div>
           </div>
           <div class="sponsor-offer__gallery">
             <div class="sponsor-offer__picture">
-              <img class="sponsor-offer__image" src="images/conference3.jpg" alt="">
+              <img alt="" class="sponsor-offer__image" src="images/conference3.jpg">
             </div>
           </div>
         </div>
       </section>
-      <section id="register" class="registration">
+      <section class="registration" id="register">
         <div class="registration__content">
           <h2 class="registration__heading">#registration</h2>
-          <div><iframe src="https://evenea.pl/panel/moje-wydarzenia-formularz-rejestracji/iframe?ID=113875" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" width="100%" height="223" scrolling="auto"></iframe></div>
+          <div><iframe frameborder="0" height="223" hspace="0" marginheight="0" marginwidth="0" scrolling="auto" src="https://evenea.pl/panel/moje-wydarzenia-formularz-rejestracji/iframe?ID=113875" vspace="0" width="100%"></iframe></div>
         </div>
       </section>
-      <section id="code" class="code">
+      <section class="code" id="code">
         <div class="code__content">
           <h2 class="code__heading" id="terms">#terms-and-conditions</h2>
           <p class="code__text">Payment can be made only via the online registration form provided by evenea.pl. Tickets are <u>non-refundable</u>.</p>
@@ -719,11 +719,11 @@
         <div class="code__content">
           <h2 class="code__heading">#code-of-conduct</h2>
           <p class="code__text">All forms of harassment, misconduct, or disruptive behavior will not be tolerated. Harassment includes any form of physical or verbal forms of misconduct, including but not limited to: offensive comments or actions related to gender, gender identity, sexual orientation, disability, physical appearance, body size, ethnicity, race, or religion. Misconduct such as intimidation, stalking, harassful photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention are grounds for instant removal.</p>
-          <p class="code__text">If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the conference staff, that can be identified by meet.js T-shirts, while organizers can be reached at: <a href="mailto:contact@meetjs.pl" class="code__link">contact@meetjs.pl</a>, <a class="code__link" href="http://twitter.com/meetjs">@meetjs</a> on Twitter, or Damian Wielgosik (organizer) at +48 696 185 029.</p>
+          <p class="code__text">If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the conference staff, that can be identified by meet.js T-shirts, while organizers can be reached at: <a class="code__link" href="mailto:contact@meetjs.pl">contact@meetjs.pl</a>, <a class="code__link" href="http://twitter.com/meetjs">@meetjs</a> on Twitter, or Damian Wielgosik (organizer) at +48 696 185 029.</p>
           <p class="code__text">Any participants violating this code of conduct may be removed from the conference without refund at the discretion of the conference organizers or venue security.</p>
         </div>
       </section>
-      <section id="about" class="about">
+      <section class="about" id="about">
         <div class="about_content">
           <div class="about__main-info">
             <h2 class="about__heading">#about-us</h2>
@@ -733,8 +733,8 @@
           <div class="gallery">
             <ul class="gallery__list">
               <li class="gallery__item">
-                <img class="gallery__image gallery__image--active" src="images/damian.jpg" alt="Damian Wielgosik">
-                <div class="gallery__info gallery__info--active" aria-expanded="true">
+                <img alt="Damian Wielgosik" class="gallery__image gallery__image--active" src="images/damian.jpg">
+                <div aria-expanded="true" class="gallery__info gallery__info--active">
                   <h3 class="gallery__heading">Damian Wielgosik</h3>
                   <a class="gallery__link" href="http://twitter.com/varjs" title="Follow on Twitter">@varjs</a>
                   <a class="gallery__link" href="http://ferrante.pl" title="Find out more">#www</a>
@@ -742,15 +742,15 @@
                 </div>
               </li>
               <li class="gallery__item">
-                <img class="gallery__image" src="images/ada.png" alt="Adrianna Frelich">
-                <div class="gallery__info" aria-expanded="false">
+                <img alt="Adrianna Frelich" class="gallery__image" src="images/ada.png">
+                <div aria-expanded="false" class="gallery__info">
                   <h3 class="gallery__heading">Adrianna Frelich</h3>
                   <p class="gallery__desc">organizer - meet.js warsaw</p>
                 </div>
               </li>
               <li class="gallery__item">
-                <img class="gallery__image" src="images/functionite.jpg" alt="Damian Wielgosik">
-                <div class="gallery__info" aria-expanded="false">
+                <img alt="Damian Wielgosik" class="gallery__image" src="images/functionite.jpg">
+                <div aria-expanded="false" class="gallery__info">
                   <h3 class="gallery__heading">Functionite</h3>
                   <a class="gallery__link" href="http://twitter.com/functionite" title="Follow on Twitter">@functionite</a>
                   <a class="gallery__link" href="http://functionite.com" title="Find out more">#www</a>

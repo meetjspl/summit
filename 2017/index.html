@@ -3,26 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>meet.js Summit 2017 Gdańsk</title>
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta property="og:image" content="http://summit.meetjs.pl/2017/images/fb-og-2017.png"/>
-  <meta property="description"
-        content="meet.js Summit is a conference that gathers 450 professional front-end developers interested in JavaScript development (covering topics like MVC, Node.js, reactive programming, frameworks like Angular or React etc.)"/>
-  <meta property="og:locale" content="en_GB"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="meet.js Summit 2017"/>
-  <meta property="og:description" content="September 18, 2017, Gdańsk, Poland"/>
-  <meta property="og:url" content="http://summit.meetjs.pl/2017/"/>
-  <meta property="og:site_name" content="meet.js Summit"/>
-  <meta http-equiv="Cache-Control" content="no-cache"/>
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="http://summit.meetjs.pl/2017/images/fb-og-2017.png" property="og:image"/>
+  <meta content="meet.js Summit is a conference that gathers 450 professional front-end developers interested in JavaScript development (covering topics like MVC, Node.js, reactive programming, frameworks like Angular or React etc.)"
+        property="description"/>
+  <meta content="en_GB" property="og:locale"/>
+  <meta content="website" property="og:type"/>
+  <meta content="meet.js Summit 2017" property="og:title"/>
+  <meta content="September 18, 2017, Gdańsk, Poland" property="og:description"/>
+  <meta content="http://summit.meetjs.pl/2017/" property="og:url"/>
+  <meta content="meet.js Summit" property="og:site_name"/>
+  <meta content="no-cache" http-equiv="Cache-Control"/>
 
 
-  <link rel="stylesheet" href="css/main-1504c3cfc6.min.css">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link href="css/main-1504c3cfc6.min.css" rel="stylesheet">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/png"/>
 </head>
 <body>
 <script>document.body.classList.add('has-js');</script>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+<svg style="display: none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <symbol id="icon-facebook" viewBox="0 0 1024 1024">
     <path
       d="M608 192h160v-192h-160c-123.514 0-224 100.486-224 224v96h-128v192h128v512h192v-512h160l32-192h-192v-96c0-17.346 14.654-32 32-32z"></path>
@@ -42,19 +42,19 @@
 <header class="main-header">
   <div class="main-header__content">
     <div class="main-logo">
-      <a class="main-logo__link" href="#main_section" data-scroll><img class="main-logo__image"
-                                                                       src="images/summit-logo.png"
-                                                                       alt="meet.js summit logo"></a>
+      <a class="main-logo__link" data-scroll href="#main_section"><img alt="meet.js summit logo"
+                                                                       class="main-logo__image"
+                                                                       src="images/summit-logo.png"></a>
     </div>
-    <button class="button-menu js-button-menu"
-            title="Open/close menu"
-            aria-label="Navigation menu"
-            role="button"
-            aria-controls="navigation"
+    <button aria-controls="navigation"
             aria-expanded="true"
-            type="button"
+            aria-haspopup="true"
+            aria-label="Navigation menu"
+            class="button-menu js-button-menu"
             id="open-menu-button"
-            aria-haspopup="true">
+            role="button"
+            title="Open/close menu"
+            type="button">
       <svg class="button-menu__icon button-menu__menu-icon">
         <use xlink:href="#icon-menu"></use>
       </svg>
@@ -63,42 +63,42 @@
       </svg>
     </button>
     <div class="main-header__nav">
-      <nav id="navigation" class="main-nav" role="navigation">
+      <nav class="main-nav" id="navigation" role="navigation">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link"
+            <a aria-label="Meet conference speakers"
+               class="main-nav__link"
+               data-scroll
                href="#speakers"
-               data-scroll
-               title="Meet conference speakers"
-               aria-label="Meet conference speakers">#speakers</a>
+               title="Meet conference speakers">#speakers</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link"
+            <a aria-label="Look at conference agenda"
+               class="main-nav__link"
+               data-scroll
                href="#agenda"
-               data-scroll
-               title="Look at conference agenda"
-               aria-label="Look at conference agenda">#agenda</a>
+               title="Look at conference agenda">#agenda</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link"
+            <a aria-label="Find us in Gdańsk"
+               class="main-nav__link"
+               data-scroll
                href="#venue"
-               data-scroll
-               title="Find us in Gdańsk"
-               aria-label="Find us in Gdańsk">#venue</a>
+               title="Find us in Gdańsk">#venue</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link"
-               href="#sponsor_offer"
+            <a aria-label="Become a conference sponsor"
+               class="main-nav__link"
                data-scroll
-               title="Become a conference sponsor"
-               aria-label="Become a conference sponsor">#sponsors</a>
+               href="#sponsor_offer"
+               title="Become a conference sponsor">#sponsors</a>
           </li>
           <li class="main-nav__item register-button">
-            <a class="register-button__link"
-               href="#register"
+            <a aria-label="Register for conference"
+               class="register-button__link"
                data-scroll
-               title="Register for conference"
-               aria-label="Register for conference">#register</a>
+               href="#register"
+               title="Register for conference">#register</a>
           </li>
         </ul>
       </nav>
@@ -126,10 +126,10 @@
   </div>
 </header>
 <main>
-  <section id="main_section" class="main-section">
+  <section class="main-section" id="main_section">
     <div class="main-section__outer-content">
       <div class="main-section__content">
-        <img class="main-section__image" src="images/gdansk-zuraw.svg" alt="">
+        <img alt="" class="main-section__image" src="images/gdansk-zuraw.svg">
         <div class="main-section__info">
           <h1 class="main-section__heading">javascript conference</h1>
           <p class="main-section__date"><span class="main-section__highlight"><time datetime="2017-09-18">September 18, 2017</time> // Gdańsk, Poland</span>
@@ -144,79 +144,79 @@
           <h2 class="visually-hidden">Sponsors</h2>
           <div class="sponsors__group sponsors__group--global">
             <h2 class="sponsors__heading">global sponsor:</h2>
-            <a href="http://www.schibsted.pl" rel="nofollow" class="sponsors__link">
-              <img class="sponsors__image sponsors__image--big" src="images/sponsors/global/schibsted.png"
-                   alt="Schibsted logo">
+            <a class="sponsors__link" href="http://www.schibsted.pl" rel="nofollow">
+              <img alt="Schibsted logo" class="sponsors__image sponsors__image--big"
+                   src="images/sponsors/global/schibsted.png">
             </a>
           </div>
           <div class="sponsors__group sponsors__group--global">
             <h2 class="sponsors__heading">party sponsor:</h2>
-            <a href="http://www.jitsolutions.pl/en/" class="sponsors__link">
-              <img class="sponsors__image sponsors__image--big" src="images/sponsors/party/jit-solutions.png"
-                   alt="JIT Solutions logo">
+            <a class="sponsors__link" href="http://www.jitsolutions.pl/en/">
+              <img alt="JIT Solutions logo" class="sponsors__image sponsors__image--big"
+                   src="images/sponsors/party/jit-solutions.png">
             </a>
           </div>
           <div class="sponsors__group sponsors__group--modular">
             <h2 class="sponsors__heading">modular sponsors:</h2>
             <ul class="sponsors__list">
               <li class="sponsors__item">
-                <a href="https://www.dreamlab.pl" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/dreamlab.png"
-                       alt="Dreamlab logo">
+                <a class="sponsors__link" href="https://www.dreamlab.pl" rel="nofollow">
+                  <img alt="Dreamlab logo" class="sponsors__image"
+                       src="images/sponsors/modular/dreamlab.png">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="http://speednet.pl" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/speednet.png"
-                       alt="Speednet logo">
+                <a class="sponsors__link" href="http://speednet.pl" rel="nofollow">
+                  <img alt="Speednet logo" class="sponsors__image"
+                       src="images/sponsors/modular/speednet.png">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="http://www.tivix.com" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/tivix.png"
-                       alt="Tivix logo">
+                <a class="sponsors__link" href="http://www.tivix.com" rel="nofollow">
+                  <img alt="Tivix logo" class="sponsors__image"
+                       src="images/sponsors/modular/tivix.png">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="https://spartez.com" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/spartez.svg"
-                       alt="Spartez logo">
+                <a class="sponsors__link" href="https://spartez.com">
+                  <img alt="Spartez logo" class="sponsors__image"
+                       src="images/sponsors/modular/spartez.svg">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="https://www.pgs-soft.com/" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/pgs.png"
-                       alt="PGS Software logo">
+                <a class="sponsors__link" href="https://www.pgs-soft.com/">
+                  <img alt="PGS Software logo" class="sponsors__image"
+                       src="images/sponsors/modular/pgs.png">
                 </a>
               </li>
 
               <li class="sponsors__item">
-                <a href="http://apptension.com" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/apptension.png"
-                       alt="Apptension logo">
+                <a class="sponsors__link" href="http://apptension.com">
+                  <img alt="Apptension logo" class="sponsors__image"
+                       src="images/sponsors/modular/apptension.png">
                 </a>
               </li>
 
               <li class="sponsors__item">
-                <a href="https://evojam.com" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/evojam.png"
-                       alt="Evojam logo">
+                <a class="sponsors__link" href="https://evojam.com">
+                  <img alt="Evojam logo" class="sponsors__image"
+                       src="images/sponsors/modular/evojam.png">
                 </a>
               </li>
 
 
               <li class="sponsors__item">
-                <a href="http://www.lppsa.com/" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/modular/lpp.png"
-                       alt="LPP logo">
+                <a class="sponsors__link" href="http://www.lppsa.com/" rel="nofollow">
+                  <img alt="LPP logo" class="sponsors__image"
+                       src="images/sponsors/modular/lpp.png">
                 </a>
               </li>
 
 
-              <li class="sponsors__item sponsors__item--placeholder" aria-hidden="true">
-                <a href="sponsors_en.pdf" class="sponsors__link" tabindex="-1">
-                  <img class="sponsors__image sponsors__image--placeholder" src="images/modular-your-logo.jpg"
-                       alt="modular sponsor logo">
+              <li aria-hidden="true" class="sponsors__item sponsors__item--placeholder">
+                <a class="sponsors__link" href="sponsors_en.pdf" tabindex="-1">
+                  <img alt="modular sponsor logo" class="sponsors__image sponsors__image--placeholder"
+                       src="images/modular-your-logo.jpg">
                 </a>
               </li>
             </ul>
@@ -225,42 +225,42 @@
             <h2 class="sponsors__heading">scope sponsors:</h2>
             <ul class="sponsors__list">
               <li class="sponsors__item">
-                <a href="http://smart4aviation.aero" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/scope/smart4aviation.png"
-                       alt="Smart4aviation logo">
+                <a class="sponsors__link" href="http://smart4aviation.aero" rel="nofollow">
+                  <img alt="Smart4aviation logo" class="sponsors__image"
+                       src="images/sponsors/scope/smart4aviation.png">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="http://www.arforce.pl" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/scope/arforce.png"
-                       alt="ARforce logo">
+                <a class="sponsors__link" href="http://www.arforce.pl" rel="nofollow">
+                  <img alt="ARforce logo" class="sponsors__image"
+                       src="images/sponsors/scope/arforce.png">
                 </a>
               </li>
               <li class="sponsors__item">
-                <a href="https://www.mozilla.org/" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/scope/mozilla.svg"
-                       width="210" alt="Mozilla logo">
+                <a class="sponsors__link" href="https://www.mozilla.org/" rel="nofollow">
+                  <img alt="Mozilla logo" class="sponsors__image"
+                       src="images/sponsors/scope/mozilla.svg" width="210">
                 </a>
               </li>
 
               <li class="sponsors__item">
-                <a href="https://fandom.com/" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/scope/fandom.png"
-                       alt="Fandom logo">
+                <a class="sponsors__link" href="https://fandom.com/" rel="nofollow">
+                  <img alt="Fandom logo" class="sponsors__image"
+                       src="images/sponsors/scope/fandom.png">
                 </a>
               </li>
 
               <li class="sponsors__item">
-                <a href="https://www.ciklum.com/" rel="nofollow" class="sponsors__link">
-                  <img class="sponsors__image" src="images/sponsors/scope/ciklum.png"
-                       alt="Ciklum logo">
+                <a class="sponsors__link" href="https://www.ciklum.com/" rel="nofollow">
+                  <img alt="Ciklum logo" class="sponsors__image"
+                       src="images/sponsors/scope/ciklum.png">
                 </a>
               </li>
 
-              <li class="sponsors__item sponsors__item--placeholder" aria-hidden="true">
-                <a href="sponsors_en.pdf" class="sponsors__link" tabindex="-1">
-                  <img class="sponsors__image sponsors__image--placeholder" src="images/modular-your-logo.jpg"
-                       alt="scope sponsor logo">
+              <li aria-hidden="true" class="sponsors__item sponsors__item--placeholder">
+                <a class="sponsors__link" href="sponsors_en.pdf" tabindex="-1">
+                  <img alt="scope sponsor logo" class="sponsors__image sponsors__image--placeholder"
+                       src="images/modular-your-logo.jpg">
                 </a>
               </li>
             </ul>
@@ -269,7 +269,7 @@
       </div>
     </div>
   </section>
-  <section id="agenda" class="agenda">
+  <section class="agenda" id="agenda">
     <div class="agenda__content">
       <div class="agenda__text">
         <h2 class="agenda__heading"><span aria-hidden="true">#</span>agenda</h2>
@@ -332,7 +332,7 @@
             <p class="agenda__description-text">
               React is fast and that is awesome, but as web developers we should continuously strive towards better and better performance. We deserve a smart, fast web since only a small minority of users has brand new smartphones and a 4G connection. In this talk we're going to talk about why performance & load time matters and how we can improve those two factors in React-based web applications.
             </p>
-            <a class="agenda__link" href="#speaker-lakomy" data-scroll="" title="Read more about Tomasz Łakomy">Tomasz Łakomy</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-lakomy" title="Read more about Tomasz Łakomy">Tomasz Łakomy</a>
           </div>
         </article>
       </div>
@@ -350,7 +350,7 @@
             <p class="agenda__description-text">
               A closer look at what's happening behind the scenes in your browser and how to use this knowledge to chase 60 FPS. You'll understand why certain CSS properties are better for animations and what are the most common performance bottlenecks in rendering pipeline.
             </p>
-            <a class="agenda__link" href="#speaker-ziemkowski" data-scroll="" title="Read more about Patryk Ziemkowski">Patryk Ziemkowski</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-ziemkowski" title="Read more about Patryk Ziemkowski">Patryk Ziemkowski</a>
           </div>
         </article>
       </div>
@@ -369,7 +369,7 @@
               With WebVR we are finally ready to create first-class Virtual Reality experiences using Open Web technologies. WebGL being able to render 3D graphics gives us infinite possibilities when building for the browser. These APIs allows VR content to be published and consumed on the Web almost instantaneously from any capable device.
               A-Frame brings the ease of use while following game development coding principles. Use simple HTML markup to create Virtual Reality experiences for all available platforms, and see how easy, fun, and fast it is.
             </p>
-            <a class="agenda__link" href="#speaker-mazur" data-scroll="" title="Read more about Andrzej Mazur">Andrzej Mazur</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-mazur" title="Read more about Andrzej Mazur">Andrzej Mazur</a>
           </div>
         </article>
       </div>
@@ -394,7 +394,7 @@
           <div class="agenda__about">
             <button class="agenda__description-button js-agenda-button" title="Open/close talk description">#read description</button>
             <p class="agenda__description-text">
-              Schibsted Tech Polska jest częścią skandynawskiej grupy mediowej Schibsted Media Group, właściciela najważniejszych szwedzkich i norweskich gazet, a także liczących się portali internetowych, takich jak m.in. porównywarki cen. Gdański oddział firmy liczy 50 programistów, tworzących aplikacje mobilne, webowe oraz narzędzia do zarządzania treścią. Sprawdź zalety skandynawskiej kultury pracy na <a class="agenda__link" style="display: inline;" href="http://www.schibsted.pl">www.schibsted.pl</a>
+              Schibsted Tech Polska jest częścią skandynawskiej grupy mediowej Schibsted Media Group, właściciela najważniejszych szwedzkich i norweskich gazet, a także liczących się portali internetowych, takich jak m.in. porównywarki cen. Gdański oddział firmy liczy 50 programistów, tworzących aplikacje mobilne, webowe oraz narzędzia do zarządzania treścią. Sprawdź zalety skandynawskiej kultury pracy na <a class="agenda__link" href="http://www.schibsted.pl" style="display: inline;">www.schibsted.pl</a>
             </p>
             <!-- <a class="agenda__link" href="#speaker-" data-scroll="" title="Read more about "></a> -->
           </div>
@@ -414,7 +414,7 @@
             <p class="agenda__description-text">
               Have you ever struggled with making dependencies between reducers? Have you ever stepped into problem with mulitple async operations done at the same time doing huge mess in your state? Let me be your guide into redux sagas with tips, how and when you can use them in your application to solve all side effects problems at once.
             </p>
-            <a class="agenda__link" href="#speaker-jastrzebska" data-scroll="" title="Read more about Kasia Jastrzębska">Kasia Jastrzębska</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-jastrzebska" title="Read more about Kasia Jastrzębska">Kasia Jastrzębska</a>
           </div>
         </article>
       </div>
@@ -432,7 +432,7 @@
             <p class="agenda__description-text">
               During this session, I will show how to use TensorFlow for solving Linear Regression problems and build Convolutional Neural Networks. We will train algorithms and use predictions of Machine Learning models in Frontend Application using REST API.
             </p>
-            <a class="agenda__link" href="#speaker-omiotek" data-scroll="" title="Read more about Patryk Omiotek">Patryk Omiotek</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-omiotek" title="Read more about Patryk Omiotek">Patryk Omiotek</a>
           </div>
         </article>
       </div>
@@ -450,7 +450,7 @@
             <p class="agenda__description-text">
               Recompose is an utility library advertised as Lodash for React. It provides a wide range of useful Higher Order Components to reduce the boilerplate. What does it bring to React? Will it make your code modular and reusable? Is it necessary to drink a latte from an avocado before using it? Be prepared to learn all that and much more during this talk, so buckle up and find out how to compose your components like a pro.
             </p>
-            <a class="agenda__link" href="#speaker-krol" data-scroll="" title="Read more about Bartosz Król">Bartosz Król</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-krol" title="Read more about Bartosz Król">Bartosz Król</a>
           </div>
         </article>
       </div>
@@ -478,7 +478,7 @@
               There’s a long-standing myth in the mobile world that only native apps are able to provide a decent performance for the mobile user. With the emergence of Progressive Web Apps that suppose to mimic all the native goodness, the push for performance in the mobile web is now stronger than ever before.
               Is the Web Platform ready to keep up with these expectations? This talk is a wide overview of the many practices and strategies we can employ to satisfy our mobile users’ needs - from the HTTP-level tweaks via load and render time optimization to smooth scrolling and animations tricks.
             </p>
-            <a class="agenda__link" href="#speaker-bar" data-scroll="" title="Read more about Adam Bar">Adam Bar</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-bar" title="Read more about Adam Bar">Adam Bar</a>
           </div>
         </article>
       </div>
@@ -497,7 +497,7 @@
               Drowning in a pile of buzzwords, have you ever come across word “GraphQL”? Whether it’s a total unknown for you or you are unsure if you should give it a try or not, it’s a perfect talk for you. I would like to share my hands-on experience of using GraphQL and introduce you to its basic concepts. After this talk, you will know what GraphQL is and when it’s useful. You will be able to tell queries, mutations and subscriptions apart. Additionally, I would like to show how easily you can start with it, using Apollo.
               Hopefully, my talk will give you knowledge and motivation to give it a shot.
             </p>
-            <a class="agenda__link" href="#speaker-konopka" data-scroll="" title="Read more about Anna Konopka">Anna Konopka</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-konopka" title="Read more about Anna Konopka">Anna Konopka</a>
           </div>
         </article>
       </div>
@@ -515,7 +515,7 @@
             <p class="agenda__description-text">
               You will learn how to setup your project for Docker Builder Patter. I will talk how to build your application and publish in on production as small as possible without any dev dependencies or even serverless. I will show how to automate building and deploy the application using CircleCI and publish the results to our public Docker hub. On to of that, we will run the output image on AWS ECS live on production.
             </p>
-            <a class="agenda__link" href="#speaker-ronewicz" data-scroll="" title="Read more about Kamil Ronewicz">Kamil Ronewicz</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-ronewicz" title="Read more about Kamil Ronewicz">Kamil Ronewicz</a>
           </div>
         </article>
       </div>
@@ -542,7 +542,7 @@
             <p class="agenda__description-text">
               There’s a lot of misconceptions around Vue when it comes to things like templates vs JSX, two-way data bindings, watchers, mutations. It might be very surprising to know that some problems that Fiber solves for React don’t even exist in Vue in the first place. Not just performance-wise.
             </p>
-            <a class="agenda__link" href="#speaker-dulisz" data-scroll="" title="Read more about Damian Dulisz">Damian Dulisz</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-dulisz" title="Read more about Damian Dulisz">Damian Dulisz</a>
           </div>
         </article>
       </div>
@@ -564,7 +564,7 @@
 
               The overview of tools starts at basic tools anyone can use and reaches the newest additions to Node.js 8.0.
             </p>
-            <a class="agenda__link" href="#speaker-tenerowicz" data-scroll="" title="Read more about Zbyszek Tenerowicz">Zbyszek Tenerowicz</a>
+            <a class="agenda__link" data-scroll="" href="#speaker-tenerowicz" title="Read more about Zbyszek Tenerowicz">Zbyszek Tenerowicz</a>
           </div>
         </article>
       </div>
@@ -594,7 +594,7 @@
       </div>
     </div>
   </section>
-  <section id="speakers" class="speakers">
+  <section class="speakers" id="speakers">
     <div class="speakers__content">
       <div class="speakers__info">
         <header class="speakers__header">
@@ -603,10 +603,10 @@
       </div>
       <div class="speakers__main-info">
 
-        <article id="speaker-bar" class="speaker-box">
+        <article class="speaker-box" id="speaker-bar">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-bar.jpg"
-                 alt="Photo of speaker: Adam Bar">
+            <img alt="Photo of speaker: Adam Bar" class="speaker-box__image"
+                 src="images/speakers/speaker-bar.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -623,10 +623,10 @@
           </div>
         </article>
 
-        <article id="speaker-dulisz" class="speaker-box">
+        <article class="speaker-box" id="speaker-dulisz">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-dulisz.jpg"
-                 alt="Photo of speaker: Damian Dulisz">
+            <img alt="Photo of speaker: Damian Dulisz" class="speaker-box__image"
+                 src="images/speakers/speaker-dulisz.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -641,10 +641,10 @@
           </div>
         </article>
 
-        <article id="speaker-jastrzebska" class="speaker-box">
+        <article class="speaker-box" id="speaker-jastrzebska">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-jastrzebska.jpg"
-                 alt="Photo of speaker: Kasia Jastrzębska">
+            <img alt="Photo of speaker: Kasia Jastrzębska" class="speaker-box__image"
+                 src="images/speakers/speaker-jastrzebska.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -657,10 +657,10 @@
           </div>
         </article>
 
-        <article id="speaker-konopka" class="speaker-box">
+        <article class="speaker-box" id="speaker-konopka">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-konopka.jpg"
-                 alt="Photo of speaker: Anna Konopka">
+            <img alt="Photo of speaker: Anna Konopka" class="speaker-box__image"
+                 src="images/speakers/speaker-konopka.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -673,10 +673,10 @@
           </div>
         </article>
 
-        <article id="speaker-krol" class="speaker-box">
+        <article class="speaker-box" id="speaker-krol">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-krol.jpg"
-                 alt="Photo of speaker: Bartosz Król">
+            <img alt="Photo of speaker: Bartosz Król" class="speaker-box__image"
+                 src="images/speakers/speaker-krol.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -690,10 +690,10 @@
           </div>
         </article>
 
-        <article id="speaker-lakomy" class="speaker-box">
+        <article class="speaker-box" id="speaker-lakomy">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-lakomy.jpg"
-                 alt="Photo of speaker: Tomasz Łakomy">
+            <img alt="Photo of speaker: Tomasz Łakomy" class="speaker-box__image"
+                 src="images/speakers/speaker-lakomy.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -707,10 +707,10 @@
           </div>
         </article>
 
-        <article id="speaker-mazur" class="speaker-box">
+        <article class="speaker-box" id="speaker-mazur">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-mazur.png"
-                 alt="Photo of speaker: Andrzej Mazur">
+            <img alt="Photo of speaker: Andrzej Mazur" class="speaker-box__image"
+                 src="images/speakers/speaker-mazur.png">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -725,10 +725,10 @@
           </div>
         </article>
 
-        <article id="speaker-omiotek" class="speaker-box">
+        <article class="speaker-box" id="speaker-omiotek">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-omiotek.jpg"
-                 alt="Photo of speaker: Patryk Omiotek">
+            <img alt="Photo of speaker: Patryk Omiotek" class="speaker-box__image"
+                 src="images/speakers/speaker-omiotek.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -742,10 +742,10 @@
           </div>
         </article>
 
-        <article id="speaker-ronewicz" class="speaker-box">
+        <article class="speaker-box" id="speaker-ronewicz">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-ronewicz.png"
-                 alt="Photo of speaker: Kamil Ronewicz">
+            <img alt="Photo of speaker: Kamil Ronewicz" class="speaker-box__image"
+                 src="images/speakers/speaker-ronewicz.png">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -759,10 +759,10 @@
           </div>
         </article>
 
-        <article id="speaker-tenerowicz" class="speaker-box">
+        <article class="speaker-box" id="speaker-tenerowicz">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-tenerowicz.jpg"
-                 alt="Photo of speaker: Zbyszek Tenerowicz">
+            <img alt="Photo of speaker: Zbyszek Tenerowicz" class="speaker-box__image"
+                 src="images/speakers/speaker-tenerowicz.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -777,10 +777,10 @@
           </div>
         </article>
 
-        <article id="speaker-ziemkowski" class="speaker-box">
+        <article class="speaker-box" id="speaker-ziemkowski">
           <div class="speaker-box__photo">
-            <img class="speaker-box__image" src="images/speakers/speaker-ziemkowski.jpg"
-                 alt="Photo of speaker: Patryk Ziemkowski">
+            <img alt="Photo of speaker: Patryk Ziemkowski" class="speaker-box__image"
+                 src="images/speakers/speaker-ziemkowski.jpg">
           </div>
           <div class="speaker-box__info">
             <div class="speaker-box__data">
@@ -799,29 +799,29 @@
       </div>
     </div>
   </section>
-  <section id="venue" class="venue">
+  <section class="venue" id="venue">
     <div class="venue__content">
-      <img class="venue__building-image" src="images/gdansk-ecs.svg" alt="">
+      <img alt="" class="venue__building-image" src="images/gdansk-ecs.svg">
       <h2 class="venue__heading"><span aria-hidden="true">#</span>venue</h2>
       <div class="venue__picture">
-        <img class="venue__image" src="images/ecs-logo.png" alt="European Solidarity Centre logo">
+        <img alt="European Solidarity Centre logo" class="venue__image" src="images/ecs-logo.png">
       </div>
       <div class="venue__info">
         <p class="venue__place">European Solidarity Centre</p>
         <p class="venue__address">Pl. Solidarności 1, Gdańsk</p>
         <div class="venue__links">
-          <a class="venue__link"
+          <a aria-label="Find European Solidarity Centre on Google Maps"
+             class="venue__link"
              href="https://www.google.pl/maps/place/Europejskie+Centrum+Solidarno%C5%9Bci/@54.3614331,18.6471153,17z/data=!4m8!1m2!3m1!2sEuropejskie+Centrum+Solidarno%C5%9Bci!3m4!1s0x0:0xe2010c5f4e6145ad!8m2!3d54.3614299!4d18.6493041"
-             title="Find European Solidarity Centre on Google Maps"
-             aria-label="Find European Solidarity Centre on Google Maps">#google-maps</a>
-          <a class="venue__link" href="http://www.ecs.gda.pl"
-             title="Read more about European Solidarity Centre"
-             aria-label="Read more about European Solidarity Centre">#www</a>
+             title="Find European Solidarity Centre on Google Maps">#google-maps</a>
+          <a aria-label="Read more about European Solidarity Centre" class="venue__link"
+             href="http://www.ecs.gda.pl"
+             title="Read more about European Solidarity Centre">#www</a>
         </div>
       </div>
     </div>
   </section>
-  <section id="sponsor_offer" class="sponsor-offer">
+  <section class="sponsor-offer" id="sponsor_offer">
     <div class="sponsor-offer__content">
       <div class="sponsor-offer__main-info">
         <h2 class="sponsor-offer__heading"><span aria-hidden="true">#</span>become-a-sponsor</h2>
@@ -836,40 +836,40 @@
           dream customer of your product. There are many case studies proving that attendees change their jobs
           after the conference and get motivated to take on new challenges in their careers.</p>
         <p class="sponsor-offer__text">Download our
-          <a class="sponsor-offer__link" href="sponsors_en.pdf"
-             title="Download PDF with Sponsorship Packages offer in English"
-             aria-label="Download PDF with Sponsorship Packages offer in English">Sponsorship Packages (PDF)</a> to find
+          <a aria-label="Download PDF with Sponsorship Packages offer in English" class="sponsor-offer__link"
+             href="sponsors_en.pdf"
+             title="Download PDF with Sponsorship Packages offer in English">Sponsorship Packages (PDF)</a> to find
           out more and contact us directly to discuss sponsorship
           opportunities.</br>There's a Polish version of the offer:
-          <a class="sponsor-offer__link"
+          <a aria-label="Download PDF with Sponsorship Packages offer in Polish"
+             class="sponsor-offer__link"
              href="sponsors_pl.pdf"
              lang="pl"
-             title="Download PDF with Sponsorship Packages offer in Polish"
-             aria-label="Download PDF with Sponsorship Packages offer in Polish">Oferta sponsorska (PDF)</a>
+             title="Download PDF with Sponsorship Packages offer in Polish">Oferta sponsorska (PDF)</a>
         </p>
       </div>
       <div class="sponsor-offer__gallery">
         <div class="sponsor-offer__picture">
-          <img class="sponsor-offer__image" src="images/conference1.jpg" alt="">
+          <img alt="" class="sponsor-offer__image" src="images/conference1.jpg">
         </div>
         <div class="sponsor-offer__picture">
-          <img class="sponsor-offer__image" src="images/conference2.jpg" alt="">
+          <img alt="" class="sponsor-offer__image" src="images/conference2.jpg">
         </div>
       </div>
       <div class="sponsor-offer__gallery">
         <div class="sponsor-offer__picture">
-          <img class="sponsor-offer__image" src="images/conference3.jpg" alt="">
+          <img alt="" class="sponsor-offer__image" src="images/conference3.jpg">
         </div>
       </div>
     </div>
   </section>
-  <section id="register" class="registration">
+  <section class="registration" id="register">
     <div class="registration__content">
       <h2 class="registration__heading"><span aria-hidden="true">#</span>registration</h2>
       <div class="registration_content">
-        <iframe src="https://meetjs-summit.evenea.pl?out=1&source=event_iframe" width="100%" scrolling="no"
-                style="border: 0;"></iframe>
-        <script type="text/javascript" src="https://cdn.evenea.pl/js/iframe/new/iframeResizer2.js" async></script>
+        <iframe scrolling="no" src="https://meetjs-summit.evenea.pl?out=1&source=event_iframe" style="border: 0;"
+                width="100%"></iframe>
+        <script async src="https://cdn.evenea.pl/js/iframe/new/iframeResizer2.js" type="text/javascript"></script>
       </div>
     </div>
   </section>
@@ -901,17 +901,17 @@
         physical contact, and unwelcome sexual attention are grounds for instant removal.</p>
       <p class="code__text">If you are being harassed, notice that someone else is being harassed, or have any
         other concerns, please contact a member of the conference staff, that can be identified by meet.js
-        T-shirts, or reach organisers at <a href="mailto:summit2017@meetjs.pl"
+        T-shirts, or reach organisers at <a aria-label="Contact with meet JS crew via email"
                                             class="code__link"
-                                            title="Contact with meet.js crew via email"
-                                            aria-label="Contact with meet JS crew via email">summit2017@meetjs.pl</a> or
-        <a class="code__link" href="http://twitter.com/meetjs" title="meet JS on Twitter"
-           aria-label="meet JS on Twitter">@meetjs</a> on Twitter.</p>
+                                            href="mailto:summit2017@meetjs.pl"
+                                            title="Contact with meet.js crew via email">summit2017@meetjs.pl</a> or
+        <a aria-label="meet JS on Twitter" class="code__link" href="http://twitter.com/meetjs"
+           title="meet JS on Twitter">@meetjs</a> on Twitter.</p>
       <p class="code__text">Any participants violating this code of conduct may be removed from the conference
         without a refund at the discretion of the conference organisers or venue security.</p>
     </div>
   </section>
-  <section id="about" class="about">
+  <section class="about" id="about">
     <div class="about_content">
       <div class="about__main-info">
         <h2 class="about__heading"><span aria-hidden="true">#</span>about-us</h2>
@@ -923,61 +923,61 @@
           community in Europe. This is a perfect place for fostering your professional network as well as
           recruiting new candidates.</p>
         <p class="about__text">Want to support people who share front-end passion? Let's talk! Contact us at <a
+          aria-label="Contact with meet JS crew via email"
           class="about__link"
           href="mailto:summit2017@meetjs.pl"
-          title="Contact with meet.js crew via email"
-          aria-label="Contact with meet JS crew via email">summit2017@meetjs.pl</a>.
+          title="Contact with meet.js crew via email">summit2017@meetjs.pl</a>.
         </p>
       </div>
       <div class="gallery">
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img class="gallery__image" src="images/michal.jpg"
-                 alt="Michał Miszczyszyn">
+            <img alt="Michał Miszczyszyn" class="gallery__image"
+                 src="images/michal.jpg">
             <div class="gallery__info">
               <h3 class="gallery__heading">Michał Miszczyszyn</h3>
-              <a class="gallery__link" href="http://twitter.com/mmiszy"
-                 title="Follow @mmiszy on Twitter"
-                 aria-label="Follow mmiszy on Twitter">@mmiszy</a>
-              <a class="gallery__link" href="https://typeofweb.com"
-                 title="Find out more about Michał Miszczyszyn"
-                 aria-label="Find out more about Michał Miszczyszyn">#www</a>
+              <a aria-label="Follow mmiszy on Twitter" class="gallery__link"
+                 href="http://twitter.com/mmiszy"
+                 title="Follow @mmiszy on Twitter">@mmiszy</a>
+              <a aria-label="Find out more about Michał Miszczyszyn" class="gallery__link"
+                 href="https://typeofweb.com"
+                 title="Find out more about Michał Miszczyszyn">#www</a>
               <p class="gallery__desc">organiser - meet.js Gdańsk</p>
             </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="images/arek.jpg"
-                 alt="Arkadiusz Putko">
+            <img alt="Arkadiusz Putko" class="gallery__image"
+                 src="images/arek.jpg">
             <div class="gallery__info">
               <h3 class="gallery__heading">Arkadiusz Putko</h3>
-              <a class="gallery__link" href="https://twitter.com/arkadiuszputko"
-                 title="Follow @arkadiuszputko on Twitter"
-                 aria-label="Follow arkadiuszputko on Twitter">@arkadiuszputko</a>
+              <a aria-label="Follow arkadiuszputko on Twitter" class="gallery__link"
+                 href="https://twitter.com/arkadiuszputko"
+                 title="Follow @arkadiuszputko on Twitter">@arkadiuszputko</a>
               <p class="gallery__desc">organiser - meet.js Gdańsk</p>
             </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="images/wojtek.jpg"
-                 alt="Wojciech Urbański">
+            <img alt="Wojciech Urbański" class="gallery__image"
+                 src="images/wojtek.jpg">
             <div class="gallery__info">
               <h3 class="gallery__heading">Wojciech Urbański</h3>
-              <a class="gallery__link" href="https://twitter.com/wojtiku"
-                 title="Follow @wojtiku on Twitter"
-                 aria-label="Follow wojtiku on Twitter">@wojtiku</a>
-              <a class="gallery__link" href="http://lepszastrona.com"
-                 title="Find out more about Wojciech Urbański"
-                 aria-label="Find out more about Wojciech Urbański">#www</a>
+              <a aria-label="Follow wojtiku on Twitter" class="gallery__link"
+                 href="https://twitter.com/wojtiku"
+                 title="Follow @wojtiku on Twitter">@wojtiku</a>
+              <a aria-label="Find out more about Wojciech Urbański" class="gallery__link"
+                 href="http://lepszastrona.com"
+                 title="Find out more about Wojciech Urbański">#www</a>
               <p class="gallery__desc">organiser - meet.js Gdańsk</p>
             </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="images/lukasz.jpg"
-                 alt="Łukasz Nowacki">
+            <img alt="Łukasz Nowacki" class="gallery__image"
+                 src="images/lukasz.jpg">
             <div class="gallery__info">
               <h3 class="gallery__heading">Łukasz Nowacki</h3>
-              <a class="gallery__link" href="https://twitter.com/LukNowac"
-                 title="Follow @LukNowac on Twitter"
-                 aria-label="Follow LukNowac on Twitter">@LukNowac</a>
+              <a aria-label="Follow LukNowac on Twitter" class="gallery__link"
+                 href="https://twitter.com/LukNowac"
+                 title="Follow @LukNowac on Twitter">@LukNowac</a>
               <p class="gallery__desc">organiser - meet.js Gdańsk</p>
             </div>
           </li>
