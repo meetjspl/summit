@@ -7,7 +7,7 @@ import heroBg from '@/assets/SGH_ASCI.png';
 export const ThankYou = () => {
 	return (
 		<header
-			className="hero relative flex flex-col overflow-hidden bg-cover bg-center md:bg-contain"
+			className="hero relative flex min-h-screen flex-col overflow-hidden bg-cover bg-center md:bg-contain"
 			style={{ backgroundImage: `url(${heroBg})` }}
 		>
 			<Wrapper>

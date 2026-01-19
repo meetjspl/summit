@@ -15,7 +15,8 @@ export const Navigation = () => {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
-	const scrollToSection = (sectionId: string) => {
+	const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+		e.preventDefault();
 		const element = document.getElementById(sectionId);
 		if (element) {
 			element.scrollIntoView({ behavior: 'smooth' });
@@ -25,10 +26,7 @@ export const Navigation = () => {
 
 	const navItems = [
 		{ label: 'Venue', id: 'venue' },
-		{ label: 'Speakers', id: 'speakers' },
-		{ label: 'Schedule', id: 'schedule' },
 		{ label: 'Tickets', id: 'tickets' },
-		{ label: 'FAQ', id: 'faq' },
 		{ label: 'Contact', id: 'contact' },
 	];
 
@@ -56,13 +54,14 @@ export const Navigation = () => {
 				{/* Desktop Navigation */}
 				<div className={`hidden items-center gap-8 md:flex ${!isScrolled ? 'ml-auto' : ''}`}>
 					{navItems.map((item) => (
-						<button
+						<a
 							key={item.id}
-							onClick={() => scrollToSection(item.id)}
+							href={`#${item.id}`}
+							onClick={(e) => scrollToSection(e, item.id)}
 							className="text-sm font-medium text-white transition-colors hover:text-meetjs-green"
 						>
 							{item.label}
-						</button>
+						</a>
 					))}
 				</div>
 
@@ -96,13 +95,14 @@ export const Navigation = () => {
 				<div className="border-t border-white/10 bg-black/95 backdrop-blur-sm md:hidden">
 					<div className="flex flex-col gap-4 px-4 py-6">
 						{navItems.map((item) => (
-							<button
+							<a
 								key={item.id}
-								onClick={() => scrollToSection(item.id)}
+								href={`#${item.id}`}
+								onClick={(e) => scrollToSection(e, item.id)}
 								className="text-left text-lg font-medium text-white transition-colors hover:text-meetjs-green"
 							>
 								{item.label}
-							</button>
+							</a>
 						))}
 					</div>
 				</div>

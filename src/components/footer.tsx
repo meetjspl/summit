@@ -6,6 +6,15 @@ import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
+	const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+		e.preventDefault();
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+
+
 	return (
 		<footer id="contact" className="bg-black text-white">
 			<div className="border-t border-white/10">
@@ -37,6 +46,7 @@ export const Footer = () => {
 								<li>
 									<a
 										href="#venue"
+										onClick={(e) => scrollToSection(e, 'venue')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Venue
@@ -46,6 +56,7 @@ export const Footer = () => {
 								<li>
 									<a
 										href="#partners"
+										onClick={(e) => scrollToSection(e, 'partners')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Partners
@@ -54,6 +65,7 @@ export const Footer = () => {
 								<li>
 									<a
 										href="#tickets"
+										onClick={(e) => scrollToSection(e, 'tickets')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Tickets
@@ -169,12 +181,7 @@ export const Footer = () => {
 							>
 								Code of Conduct
 							</a>
-							<a
-								href="#"
-								className="text-white-2 transition-colors hover:text-meetjs-green"
-							>
-								Privacy Policy
-							</a>
+
 							<a
 								href="https://summit.meetjs.pl/2023/"
 								target="_blank"
