@@ -25,6 +25,7 @@ export const Navigation = () => {
 	};
 
 	const navItems = [
+		{ label: 'CFP', id: 'cfp' },
 		{ label: 'Sponsor', id: 'partners' },
 		{ label: 'Venue', id: 'venue' },
 		{ label: 'Tickets', id: 'tickets' },
