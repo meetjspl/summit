@@ -20,6 +20,7 @@ export const Navigation = () => {
 	const navItems = [
 		{ label: 'CFP', id: 'cfp' },
 		{ label: 'Sponsor', id: 'sponsors' },
+		{ label: 'Speakers', id: 'speakers' },
 		{ label: 'Venue', id: 'venue' },
 		{ label: 'Tickets', id: 'tickets' },
 		{ label: 'Contact', id: 'contact' },
