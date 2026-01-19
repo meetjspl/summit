@@ -1,4 +1,5 @@
 import AnniversaryLogo from '@/assets/Anniversary-logo.svg?react';
+import heroBg from '@/assets/SGH_ASCI.png';
 import { Organizers } from '@/components/organizers.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 import { Route } from '@/routes/thank-you.tsx';
@@ -7,7 +8,10 @@ export const ThankYou = () => {
 	const { ec_order_id } = Route.useSearch();
 
 	return (
-		<header className='hero relative flex flex-col overflow-hidden bg-[url("./src/assets/SGH_ASCI.png")] bg-cover bg-center md:bg-contain'>
+		<header
+			className="hero relative flex flex-col overflow-hidden bg-cover bg-center md:bg-contain"
+			style={{ backgroundImage: `url(${heroBg})` }}
+		>
 			<Wrapper>
 				<Organizers />
 				<div className="flex items-center justify-center">
