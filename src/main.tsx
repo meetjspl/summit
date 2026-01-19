@@ -7,7 +7,17 @@ import { RouterProvider, createRouter } from '@tanstack/react-router';
 
 import { routeTree } from './routeTree.gen';
 
-const router = createRouter({ routeTree });
+// Handle GitHub Pages SPA redirect
+const params = new URLSearchParams(window.location.search);
+const redirectPath = params.get('redirect');
+if (redirectPath) {
+	params.delete('redirect');
+	const search = params.toString();
+	const newPath = `/2026/${redirectPath}`;
+	window.history.replaceState(null, '', newPath + (search ? '?' + search : ''));
+}
+
+const router = createRouter({ routeTree, basepath: '/2026' });
 
 declare module '@tanstack/react-router' {
 	interface Register {

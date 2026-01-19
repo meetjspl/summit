@@ -8,7 +8,7 @@ export const Venue = () => {
 			<Wrapper>
 				<div className="flex flex-col items-start gap-12 text-white md:flex-row md:items-center">
 					<div className="flex w-full flex-col gap-6 md:w-1/2">
-						<h2 className="text-4xl leading-[140%] font-semibold text-aidevs-white md:text-[40px]">
+						<h2 className="text-4xl font-semibold leading-[140%] tracking-tight text-meetjs-green md:text-[40px]">
 							Venue
 						</h2>
 

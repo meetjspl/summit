@@ -1,9 +1,19 @@
 import { Wrapper } from '@/components/wrapper.tsx';
-import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
+
 import LogoAiDevs from '../assets/ai_devs_logo.svg?react';
+import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
+
+	const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+		e.preventDefault();
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
+
 
 	return (
 		<footer id="contact" className="bg-black text-white">
@@ -18,11 +28,13 @@ export const Footer = () => {
 							</div>
 							<p className="mb-4 text-white-2">
 								Join us for the 15th anniversary celebration of meet.js,
-								featuring the AI Devs Edition. A full day of learning,
+								featuring the AI_Devs Edition. A full day of learning,
 								networking, and inspiration.
 							</p>
 							<div className="flex items-center gap-4">
-								<span className="text-sm text-white-2">In partnership with</span>
+								<span className="text-sm text-white-2">
+									In partnership with
+								</span>
 								<LogoAiDevs className="h-8 w-auto" />
 							</div>
 						</div>
@@ -33,17 +45,27 @@ export const Footer = () => {
 							<ul className="space-y-2">
 								<li>
 									<a
+										href="#partners"
+										onClick={(e) => scrollToSection(e, 'partners')}
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										Sponsor
+									</a>
+								</li>
+								<li>
+									<a
 										href="#venue"
+										onClick={(e) => scrollToSection(e, 'venue')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Venue
 									</a>
 								</li>
 
-
 								<li>
 									<a
 										href="#partners"
+										onClick={(e) => scrollToSection(e, 'partners')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Partners
@@ -52,12 +74,12 @@ export const Footer = () => {
 								<li>
 									<a
 										href="#tickets"
+										onClick={(e) => scrollToSection(e, 'tickets')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Tickets
 									</a>
 								</li>
-
 							</ul>
 						</div>
 
@@ -74,7 +96,10 @@ export const Footer = () => {
 									</a>
 								</li>
 								<li className="text-white-2">
-									<a href="tel:+48725999744" className="hover:text-meetjs-green">
+									<a
+										href="tel:+48725999744"
+										className="hover:text-meetjs-green"
+									>
 										+48 725 999 744
 									</a>
 								</li>
@@ -165,12 +190,7 @@ export const Footer = () => {
 							>
 								Code of Conduct
 							</a>
-							<a
-								href="#"
-								className="text-white-2 transition-colors hover:text-meetjs-green"
-							>
-								Privacy Policy
-							</a>
+
 							<a
 								href="https://summit.meetjs.pl/2023/"
 								target="_blank"

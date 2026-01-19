@@ -1,15 +1,16 @@
 import AnniversaryLogo from '@/assets/Anniversary-logo.svg?react';
-import heroBg from '@/assets/SGH_ASCI.png';
 import { Organizers } from '@/components/organizers.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 import { Route } from '@/routes/thank-you.tsx';
+
+import heroBg from '@/assets/SGH_ASCI.png';
 
 export const ThankYou = () => {
 	const { ec_order_id } = Route.useSearch();
 
 	return (
 		<header
-			className="hero relative flex flex-col overflow-hidden bg-cover bg-center md:bg-contain"
+			className="hero relative flex min-h-screen flex-col overflow-hidden bg-cover bg-center md:bg-contain"
 			style={{ backgroundImage: `url(${heroBg})` }}
 		>
 			<Wrapper>
