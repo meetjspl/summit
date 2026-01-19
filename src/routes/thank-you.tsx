@@ -27,13 +27,12 @@ export const Route = createFileRoute('/thank-you')({
 	}),
 	beforeLoad: ({ search }) => {
 		if (
-			!search.ec_order_id &&
-			!search.ec_product &&
-			!search.ec_price &&
-			!search.ec_amount &&
-			!search.ec_currency &&
-			!search.ec_product_id &&
-			!search.ec_product_uuid &&
+			!search.ec_order_id ||
+			!search.ec_product ||
+			!search.ec_price ||
+			!search.ec_currency ||
+			!search.ec_product_id ||
+			!search.ec_product_uuid ||
 			!search.ec_price_id
 		) {
 			throw redirect({ to: '/' });
