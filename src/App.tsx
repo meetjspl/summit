@@ -10,6 +10,7 @@ import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import SocketDevLogo from '/src/assets/partners/socket.png';
+import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
 
 const partners = [
 	{
@@ -31,6 +32,11 @@ const partners = [
 		name: 'Socket.dev',
 		logoUrl: SocketDevLogo,
 		websiteUrl: 'https://socket.dev',
+	},
+	{
+		name: 'JetBrains',
+		logoUrl: JetBrainsLogo,
+		websiteUrl: 'https://www.jetbrains.com',
 	},
 	{
 		name: 'Crossweb',
