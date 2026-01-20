@@ -6,21 +6,11 @@ import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
-	const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-		e.preventDefault();
-		const element = document.getElementById(sectionId);
-		if (element) {
-			element.scrollIntoView({ behavior: 'smooth' });
-		}
-	};
-
-
 	return (
 		<footer id="contact" className="bg-black text-white">
 			<div className="border-t border-white/10">
 				<Wrapper>
 					<div className="grid gap-12 py-16 md:grid-cols-4">
-						{/* Branding */}
 						<div className="md:col-span-2">
 							<div className="mb-4 flex items-center gap-4">
 								<Logomeetjs className="h-10 w-auto" />
@@ -39,14 +29,12 @@ export const Footer = () => {
 							</div>
 						</div>
 
-						{/* Quick Links */}
 						<div>
 							<h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
 							<ul className="space-y-2">
 								<li>
 									<a
 										href="#partners"
-										onClick={(e) => scrollToSection(e, 'partners')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Sponsor
@@ -55,7 +43,6 @@ export const Footer = () => {
 								<li>
 									<a
 										href="#venue"
-										onClick={(e) => scrollToSection(e, 'venue')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Venue
@@ -65,7 +52,6 @@ export const Footer = () => {
 								<li>
 									<a
 										href="#partners"
-										onClick={(e) => scrollToSection(e, 'partners')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Partners
@@ -74,7 +60,6 @@ export const Footer = () => {
 								<li>
 									<a
 										href="#tickets"
-										onClick={(e) => scrollToSection(e, 'tickets')}
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Tickets
@@ -83,7 +68,6 @@ export const Footer = () => {
 							</ul>
 						</div>
 
-						{/* Contact & Social */}
 						<div>
 							<h3 className="mb-4 text-lg font-semibold">Connect</h3>
 							<ul className="mb-6 space-y-2">
@@ -105,7 +89,6 @@ export const Footer = () => {
 								</li>
 							</ul>
 
-							{/* Social Media */}
 							<div className="flex gap-4">
 								<a
 									href="https://twitter.com/meetjs"
@@ -154,7 +137,7 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://discord.gg/meetjs"
+									href="https://discord.gg/UycCSpRh6j"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -174,7 +157,6 @@ export const Footer = () => {
 				</Wrapper>
 			</div>
 
-			{/* Bottom Bar */}
 			<div className="border-t border-white/10 bg-black/50">
 				<Wrapper>
 					<div className="flex flex-col items-center justify-between gap-4 py-6 md:flex-row">
