@@ -9,9 +9,9 @@ import { Tickets } from './components/tickets.tsx';
 import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
-import yourLogo from '/src/assets/partners/logo.png';
 import SocketDevLogo from '/src/assets/partners/socket.png';
 import WindsurfLogo from '/src/assets/partners/windsurf.svg';
+import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
 
 const partners = [
 	{
@@ -38,21 +38,16 @@ const partners = [
 		name: 'Windsurf',
 		logoUrl: WindsurfLogo,
 		websiteUrl: 'https://windsurf.com',
+  },
+  {
+		name: 'JetBrains',
+		logoUrl: JetBrainsLogo,
+		websiteUrl: 'https://www.jetbrains.com',
 	},
 	{
-		name: 'Your logo here',
-		logoUrl: yourLogo,
-		websiteUrl: '',
-	},
-	{
-		name: 'Your logo here',
-		logoUrl: yourLogo,
-		websiteUrl: '',
-	},
-	{
-		name: 'Your logo here',
-		logoUrl: yourLogo,
-		websiteUrl: '',
+		name: 'Crossweb',
+		logoUrl: 'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
+		websiteUrl: 'https://crossweb.pl',
 	},
 ];
 
