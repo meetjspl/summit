@@ -16,7 +16,7 @@ export const Tickets = () => {
 						subtitle="With a Standard ticket, you receive:"
 						pack={['Welcome Pack', 'Access to the gastro area']}
 						price={256}
-						link="https://cart.easy.tools/checkout/brave/meet-js-summit?plan=price_1Sq8OSLfdutmLA8HuTjzDvMo"
+						link="https://cart.easy.tools/checkout/brave/meet-js-summit?plan=price_1Sq8OSLfdutmLA8HuTjzDvMo&lang=en"
 					/>
 					<TicketVariant
 						title="VIP"
@@ -29,7 +29,7 @@ export const Tickets = () => {
 						]}
 						price={512}
 						highlight={true}
-						link="https://cart.easy.tools/checkout/brave/meet-js-summit?plan=price_1Sq8OSLfdutmLA8HYBFn1jev"
+						link="https://cart.easy.tools/checkout/brave/meet-js-summit?plan=price_1Sq8OSLfdutmLA8HYBFn1jev&lang=en"
 					/>
 				</div>
 			</Wrapper>
