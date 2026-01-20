@@ -1,9 +1,10 @@
 import { Wrapper } from '@/components/wrapper.tsx';
 
-interface Partner {
+export interface Partner {
 	name: string;
 	logoUrl: string;
 	websiteUrl: string;
+	type?: 'gold' | 'silver' | 'bronze';
 }
 
 interface PartnersProps {

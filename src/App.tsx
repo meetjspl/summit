@@ -1,7 +1,7 @@
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
-import { Partners } from '@/components/partners.tsx';
+import { type Partner, Partners } from '@/components/partners.tsx';
 import { Venue } from '@/components/venue.tsx';
 
 import { Hero } from './components/hero.tsx';
@@ -9,10 +9,10 @@ import { Tickets } from './components/tickets.tsx';
 import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
-import SocketDevLogo from '/src/assets/partners/socket.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
+import SocketDevLogo from '/src/assets/partners/socket.png';
 
-const partners = [
+const partners: Partner[] = [
 	{
 		name: 'SGH',
 		logoUrl: SGHLogo,
@@ -40,8 +40,15 @@ const partners = [
 	},
 	{
 		name: 'Crossweb',
-		logoUrl: 'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
+		logoUrl:
+			'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
 		websiteUrl: 'https://crossweb.pl',
+	},
+	{
+		name: 'Typesense',
+		logoUrl: 'https://typesense.org/typesense-logo-dark.svg',
+		websiteUrl: 'https://typesense.org',
+		type: 'gold',
 	},
 ];
 
