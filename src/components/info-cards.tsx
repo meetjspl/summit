@@ -55,7 +55,7 @@ export const InfoCards = () => {
 								15th Anniversary of meet.js community
 							</span>{' '}
 							in Poland it is also a co-hosted event with BRAVE Education -
-							authors of AI_devs 4 Builders Edition program that{' '}
+							producers of AI_devs 4 Builders Edition program that{' '}
 							<span className="text-aidevs-green">
 								unlocks the full potential of all developers
 							</span>
