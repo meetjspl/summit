@@ -70,7 +70,7 @@ export const CFP = () => {
 								</div>
 								<h3 className="mb-2 text-lg font-semibold">Talk Duration</h3>
 								<p className="text-sm text-white/70">
-									30-45 minute sessions with Q&A
+									20 minute sessions with Q&A
 								</p>
 							</div>
 
