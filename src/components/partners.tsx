@@ -25,7 +25,11 @@ export const Partners = ({ partners }: PartnersProps) => {
 						{realPartners.map(partner => (
 							<a
 								key={partner.name}
-								href={partner.websiteUrl || '#'}
+								href={
+									partner.websiteUrl
+										? `${partner.websiteUrl}?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"`
+										: '#'
+								}
 								target={partner.websiteUrl ? '_blank' : undefined}
 								rel={partner.websiteUrl ? 'noopener noreferrer' : undefined}
 								className="group transition-opacity hover:opacity-80"
