@@ -32,6 +32,11 @@ const partners = [
 		logoUrl: SocketDevLogo,
 		websiteUrl: 'https://socket.dev',
 	},
+	{
+		name: 'Crossweb',
+		logoUrl: 'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
+		websiteUrl: 'https://crossweb.pl',
+	},
 ];
 
 export const App = () => {
