@@ -1,3 +1,4 @@
+import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
@@ -51,6 +52,11 @@ const partners: Partner[] = [
 		logoUrl: 'https://typesense.org/typesense-logo-dark.svg',
 		websiteUrl: 'https://typesense.org',
 		type: 'gold',
+	},
+	{
+		name: 'slido',
+		logoUrl: SlidoLogo,
+		websiteUrl: 'https://www.slido.com/',
 	},
 ];
 
