@@ -27,7 +27,7 @@ export const Partners = ({ partners }: PartnersProps) => {
 								key={partner.name}
 								href={
 									partner.websiteUrl
-										? `${partner.websiteUrl}?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"`
+										? `${partner.websiteUrl}?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026`
 										: '#'
 								}
 								target={partner.websiteUrl ? '_blank' : undefined}

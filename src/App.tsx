@@ -1,3 +1,4 @@
+import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
@@ -9,8 +10,8 @@ import { Tickets } from './components/tickets.tsx';
 import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
-import SocketDevLogo from '/src/assets/partners/socket.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
+import SocketDevLogo from '/src/assets/partners/socket.png';
 
 const partners = [
 	{
@@ -40,8 +41,14 @@ const partners = [
 	},
 	{
 		name: 'Crossweb',
-		logoUrl: 'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
+		logoUrl:
+			'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
 		websiteUrl: 'https://crossweb.pl',
+	},
+	{
+		name: 'slido',
+		logoUrl: SlidoLogo,
+		websiteUrl: 'https://www.slido.com/',
 	},
 ];
 
