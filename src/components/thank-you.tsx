@@ -1,4 +1,4 @@
-import AnniversaryLogo from '@/assets/anniversary-logo.svg?react';
+import AnniversaryLogo from '@/assets/Anniversary-logo.svg?react';
 import { Organizers } from '@/components/organizers.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 import { Route } from '@/routes/thank-you.tsx';
