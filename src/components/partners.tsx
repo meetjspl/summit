@@ -1,11 +1,7 @@
+import { PartnersLogos } from '@/components/partners-logos.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
-export interface Partner {
-	name: string;
-	logoUrl: string;
-	websiteUrl: string;
-	type?: 'gold' | 'silver' | 'bronze';
-}
+import type { Partner } from '@/types/partner.ts';
 
 interface PartnersProps {
 	partners: Partner[];
