@@ -1,7 +1,7 @@
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
-import { type Partner, Partners } from '@/components/partners.tsx';
+import { Partners } from '@/components/partners.tsx';
 import { Venue } from '@/components/venue.tsx';
 
 import { Hero } from './components/hero.tsx';
@@ -11,6 +11,8 @@ import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
 import SocketDevLogo from '/src/assets/partners/socket.png';
+
+import type { Partner } from '@/types/partner.ts';
 
 const partners: Partner[] = [
 	{
