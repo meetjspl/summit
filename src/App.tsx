@@ -1,3 +1,4 @@
+import PlanbyLogo from '@/assets/partners/planby-pro-logo.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
@@ -57,6 +58,12 @@ const partners: Partner[] = [
 		name: 'slido',
 		logoUrl: SlidoLogo,
 		websiteUrl: 'https://www.slido.com/',
+	},
+	{
+		name: 'plabny',
+		logoUrl: PlanbyLogo,
+		websiteUrl: 'https://planby.app/',
+		type: 'hello',
 	},
 ];
 
