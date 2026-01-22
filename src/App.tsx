@@ -42,6 +42,7 @@ const partners: Partner[] = [
 		name: 'JetBrains',
 		logoUrl: JetBrainsLogo,
 		websiteUrl: 'https://www.jetbrains.com',
+		type: 'silver',
 	},
 	{
 		name: 'Crossweb',
