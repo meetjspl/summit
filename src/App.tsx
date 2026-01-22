@@ -1,7 +1,8 @@
-import PlanbyLogo from '@/assets/partners/planby-pro-logo.svg';
+import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
+import { CoOrganizer } from '@/components/co-organizer.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
 import { Partners } from '@/components/partners.tsx';
 import { Venue } from '@/components/venue.tsx';
@@ -12,7 +13,7 @@ import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
-import SocketDevLogo from '/src/assets/partners/socket.png';
+import SocketDevLogo from '@/assets/partners/gold/socket.png';
 
 import type { Partner } from '@/types/partner.ts';
 
@@ -78,6 +79,7 @@ export const App = () => {
 			<Venue />
 			<Tickets />
 			<Charity />
+			<CoOrganizer />
 		</>
 	);
 };
