@@ -1,7 +1,7 @@
 import { Wrapper } from '@/components/wrapper.tsx';
 
-import LogoAiDevs from '../assets/ai_devs_logo.svg?react';
 import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
+import LogoBrave from '../assets/partners/BRAVE-light.png';
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -25,7 +25,7 @@ export const Footer = () => {
 								<span className="text-sm text-white-2">
 									In partnership with
 								</span>
-								<LogoAiDevs className="h-8 w-auto" />
+								<img src={LogoBrave} className="h-8 w-auto" alt="BRAVE" />
 							</div>
 						</div>
 
@@ -171,6 +171,22 @@ export const Footer = () => {
 								className="text-white-2 transition-colors hover:text-meetjs-green"
 							>
 								Code of Conduct
+							</a>
+							<a
+								href="https://app.easy.tools/policies/201346d68fdc45508ee9ddc5828d97dc"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-white-2 transition-colors hover:text-meetjs-green"
+							>
+								Privacy policy
+							</a>
+							<a
+								href="https://app.easy.tools/terms/201346d68fdc45508ee9ddc5828d97dc"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-white-2 transition-colors hover:text-meetjs-green"
+							>
+								Terms & Conditions
 							</a>
 
 							<a
