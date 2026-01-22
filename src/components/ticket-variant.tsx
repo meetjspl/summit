@@ -28,7 +28,7 @@ export const TicketVariant = ({
 			<ul className="mb-8 flex-1 space-y-3">
 				{pack.map((item, index) => (
 					<li key={index} className="flex items-start gap-3">
-						<span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded bg-meetjs-green text-xs font-bold text-black">
+						<span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-meetjs-green text-xs font-bold text-black">
 							✓
 						</span>
 						<span className="text-sm text-white/90">{item}</span>
@@ -47,7 +47,7 @@ export const TicketVariant = ({
 				href={link}
 				className="block rounded-lg bg-gray py-4 text-center font-semibold text-white transition-all hover:bg-gray/80"
 			>
-				coming soon
+				Sign me up now!
 			</a>
 		</div>
 	);
