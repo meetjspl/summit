@@ -26,7 +26,6 @@ export const Footer = () => {
 									In partnership with
 								</span>
 								<img src={LogoBrave} className="h-8 w-auto" alt="BRAVE" />
-								{/*<LogoAiDevs />*/}
 							</div>
 						</div>
 
@@ -172,6 +171,22 @@ export const Footer = () => {
 								className="text-white-2 transition-colors hover:text-meetjs-green"
 							>
 								Code of Conduct
+							</a>
+							<a
+								href="https://app.easy.tools/policies/201346d68fdc45508ee9ddc5828d97dc"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-white-2 transition-colors hover:text-meetjs-green"
+							>
+								Privacy policy
+							</a>
+							<a
+								href="https://app.easy.tools/terms/201346d68fdc45508ee9ddc5828d97dc"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-white-2 transition-colors hover:text-meetjs-green"
+							>
+								Terms & Conditions
 							</a>
 
 							<a
