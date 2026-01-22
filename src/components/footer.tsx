@@ -1,7 +1,7 @@
 import { Wrapper } from '@/components/wrapper.tsx';
 
 import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
-import LogoBrave from '../assets/partners/BRAVE.png';
+import LogoBrave from '../assets/partners/BRAVE-light.png';
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
