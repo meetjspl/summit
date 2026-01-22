@@ -1,7 +1,7 @@
 import { Wrapper } from '@/components/wrapper.tsx';
 
-import LogoAiDevs from '../assets/ai_devs_logo.svg?react';
 import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
+import LogoBrave from '../assets/partners/BRAVE.png';
 
 export const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -25,7 +25,8 @@ export const Footer = () => {
 								<span className="text-sm text-white-2">
 									In partnership with
 								</span>
-								<LogoAiDevs className="h-8 w-auto" />
+								<img src={LogoBrave} className="h-8 w-auto" alt="BRAVE" />
+								{/*<LogoAiDevs />*/}
 							</div>
 						</div>
 
