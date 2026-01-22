@@ -1,4 +1,5 @@
-import PlanbyLogo from '@/assets/partners/planby-pro-logo.svg';
+import SocketDevLogo from '@/assets/partners/gold/socket.png';
+import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
@@ -12,7 +13,6 @@ import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
-import SocketDevLogo from '/src/assets/partners/socket.png';
 
 import type { Partner } from '@/types/partner.ts';
 
@@ -42,6 +42,7 @@ const partners: Partner[] = [
 		name: 'JetBrains',
 		logoUrl: JetBrainsLogo,
 		websiteUrl: 'https://www.jetbrains.com',
+		type: 'silver',
 	},
 	{
 		name: 'Crossweb',
@@ -78,6 +79,7 @@ export const App = () => {
 			<Venue />
 			<Tickets />
 			<Charity />
+			{/*<CoOrganizer />*/}
 		</>
 	);
 };

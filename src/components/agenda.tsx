@@ -1,4 +1,4 @@
-import PlanByLogo from '@/assets/partners/planby-pro-logo.svg';
+import PlanByLogo from '@/assets/partners/hello/planby-pro.png';
 import { Schedule } from '@/components/schedule/schedule';
 import { Wrapper } from '@/components/wrapper.tsx';
 
