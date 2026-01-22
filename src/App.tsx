@@ -1,3 +1,5 @@
+import PlanbyLogo from '@/assets/partners/planby-pro-logo.svg';
+import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
@@ -9,9 +11,12 @@ import { Tickets } from './components/tickets.tsx';
 import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
+import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
 import SocketDevLogo from '/src/assets/partners/socket.png';
 
-const partners = [
+import type { Partner } from '@/types/partner.ts';
+
+const partners: Partner[] = [
 	{
 		name: 'SGH',
 		logoUrl: SGHLogo,
@@ -31,6 +36,35 @@ const partners = [
 		name: 'Socket.dev',
 		logoUrl: SocketDevLogo,
 		websiteUrl: 'https://socket.dev',
+		type: 'gold',
+	},
+	{
+		name: 'JetBrains',
+		logoUrl: JetBrainsLogo,
+		websiteUrl: 'https://www.jetbrains.com',
+	},
+	{
+		name: 'Crossweb',
+		logoUrl:
+			'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
+		websiteUrl: 'https://crossweb.pl',
+	},
+	{
+		name: 'Typesense',
+		logoUrl: 'https://typesense.org/typesense-logo-dark.svg',
+		websiteUrl: 'https://typesense.org',
+		type: 'gold',
+	},
+	{
+		name: 'slido',
+		logoUrl: SlidoLogo,
+		websiteUrl: 'https://www.slido.com/',
+	},
+	{
+		name: 'plabny',
+		logoUrl: PlanbyLogo,
+		websiteUrl: 'https://planby.app/',
+		type: 'hello',
 	},
 ];
 
