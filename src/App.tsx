@@ -14,7 +14,9 @@ import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
 import SocketDevLogo from '/src/assets/partners/socket.png';
 
-const partners = [
+import type { Partner } from '@/types/partner.ts';
+
+const partners: Partner[] = [
 	{
 		name: 'SGH',
 		logoUrl: SGHLogo,
@@ -45,6 +47,12 @@ const partners = [
 		logoUrl:
 			'https://crossweb.pl/upload/materialy/logo_podstawowe_mono_biale_JPG.jpg',
 		websiteUrl: 'https://crossweb.pl',
+	},
+	{
+		name: 'Typesense',
+		logoUrl: 'https://typesense.org/typesense-logo-dark.svg',
+		websiteUrl: 'https://typesense.org',
+		type: 'gold',
 	},
 	{
 		name: 'slido',
