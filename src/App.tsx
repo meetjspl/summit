@@ -36,6 +36,7 @@ const partners: Partner[] = [
 		name: 'Socket.dev',
 		logoUrl: SocketDevLogo,
 		websiteUrl: 'https://socket.dev',
+		type: 'gold',
 	},
 	{
 		name: 'JetBrains',
