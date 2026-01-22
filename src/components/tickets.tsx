@@ -1,5 +1,5 @@
-import { TicketVariant } from '@/components/ticket-variant.tsx';
-import { Wrapper } from '@/components/wrapper.tsx';
+import {TicketVariant} from '@/components/ticket-variant.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 
 export const Tickets = () => {
 	return (
@@ -26,6 +26,7 @@ export const Tickets = () => {
 							'Access to the gastro area',
 							'Seating in VIP rows (2-4)',
 							'Lunch at the bistro',
+							'More benefits soon...',
 						]}
 						price={512}
 						highlight={true}
