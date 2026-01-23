@@ -25,7 +25,9 @@ export const Footer = () => {
 								<span className="text-sm text-white-2">
 									In partnership with
 								</span>
-								<img src={LogoBrave} className="h-8 w-auto" alt="BRAVE" />
+								<a href="https://www.brave.courses/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026">
+									<img src={LogoBrave} className="h-8 w-auto" alt="BRAVE" />
+								</a>
 							</div>
 						</div>
 
@@ -34,10 +36,18 @@ export const Footer = () => {
 							<ul className="space-y-2">
 								<li>
 									<a
+										href="#cfp"
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										CFP
+									</a>
+								</li>
+								<li>
+									<a
 										href="#partners"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
-										Sponsor
+										Partners
 									</a>
 								</li>
 								<li>
@@ -49,14 +59,6 @@ export const Footer = () => {
 									</a>
 								</li>
 
-								<li>
-									<a
-										href="#partners"
-										className="text-white-2 transition-colors hover:text-meetjs-green"
-									>
-										Partners
-									</a>
-								</li>
 								<li>
 									<a
 										href="#tickets"
@@ -91,22 +93,23 @@ export const Footer = () => {
 
 							<div className="flex gap-4">
 								<a
-									href="https://twitter.com/meetjs"
+									href="https://x.com/meetjs?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
-									aria-label="Twitter"
+									aria-label="X"
 								>
 									<svg
 										className="h-6 w-6"
+										viewBox="0 0 1200 1227"
 										fill="currentColor"
-										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
 									>
-										<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+										<path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
 									</svg>
 								</a>
 								<a
-									href="https://github.com/meetjspl"
+									href="https://github.com/meetjspl?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -121,7 +124,30 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://linkedin.com/company/meetjs"
+									href="https://www.instagram.com/meet.js_poland/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-white-2 transition-colors hover:text-meetjs-blue"
+									aria-label="Instagram"
+								>
+									<svg
+										className="h-6 w-6"
+										fill="currentColor"
+										id="Layer_1"
+										data-name="Layer 1"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 1000 1000"
+									>
+										<defs></defs>
+										<path
+											className="cls-1"
+											d="M295.42,6c-53.2,2.51-89.53,11-121.29,23.48-32.87,12.81-60.73,30-88.45,57.82S40.89,143,28.17,175.92c-12.31,31.83-20.65,68.19-23,121.42S2.3,367.68,2.56,503.46,3.42,656.26,6,709.6c2.54,53.19,11,89.51,23.48,121.28,12.83,32.87,30,60.72,57.83,88.45S143,964.09,176,976.83c31.8,12.29,68.17,20.67,121.39,23s70.35,2.87,206.09,2.61,152.83-.86,206.16-3.39S799.1,988,830.88,975.58c32.87-12.86,60.74-30,88.45-57.84S964.1,862,976.81,829.06c12.32-31.8,20.69-68.17,23-121.35,2.33-53.37,2.88-70.41,2.62-206.17s-.87-152.78-3.4-206.1-11-89.53-23.47-121.32c-12.85-32.87-30-60.7-57.82-88.45S862,40.87,829.07,28.19c-31.82-12.31-68.17-20.7-121.39-23S637.33,2.3,501.54,2.56,348.75,3.4,295.42,6m5.84,903.88c-48.75-2.12-75.22-10.22-92.86-17-23.36-9-40-19.88-57.58-37.29s-28.38-34.11-37.5-57.42c-6.85-17.64-15.1-44.08-17.38-92.83-2.48-52.69-3-68.51-3.29-202s.22-149.29,2.53-202c2.08-48.71,10.23-75.21,17-92.84,9-23.39,19.84-40,37.29-57.57s34.1-28.39,57.43-37.51c17.62-6.88,44.06-15.06,92.79-17.38,52.73-2.5,68.53-3,202-3.29s149.31.21,202.06,2.53c48.71,2.12,75.22,10.19,92.83,17,23.37,9,40,19.81,57.57,37.29s28.4,34.07,37.52,57.45c6.89,17.57,15.07,44,17.37,92.76,2.51,52.73,3.08,68.54,3.32,202s-.23,149.31-2.54,202c-2.13,48.75-10.21,75.23-17,92.89-9,23.35-19.85,40-37.31,57.56s-34.09,28.38-57.43,37.5c-17.6,6.87-44.07,15.07-92.76,17.39-52.73,2.48-68.53,3-202.05,3.29s-149.27-.25-202-2.53m407.6-674.61a60,60,0,1,0,59.88-60.1,60,60,0,0,0-59.88,60.1M245.77,503c.28,141.8,115.44,256.49,257.21,256.22S759.52,643.8,759.25,502,643.79,245.48,502,245.76,245.5,361.22,245.77,503m90.06-.18a166.67,166.67,0,1,1,167,166.34,166.65,166.65,0,0,1-167-166.34"
+											transform="translate(-2.5 -2.5)"
+										/>
+									</svg>
+								</a>
+								<a
+									href="https://linkedin.com/company/meetjs?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -129,15 +155,17 @@ export const Footer = () => {
 								>
 									<svg
 										className="h-6 w-6"
+										viewBox="0 0 76.624 65.326"
 										fill="currentColor"
-										viewBox="0 0 24 24"
 									>
-										<path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-										<circle cx="4" cy="4" r="2" />
+										<path
+											d="M958.98,112.559h-9.6V97.525c0-3.585-.064-8.2-4.993-8.2-5,0-5.765,3.906-5.765,7.939v15.294h-9.6V81.642h9.216v4.225h.129a10.1,10.1,0,0,1,9.093-4.994c9.73,0,11.524,6.4,11.524,14.726ZM918.19,77.416a5.571,5.571,0,1,1,5.57-5.572,5.571,5.571,0,0,1-5.57,5.572m4.8,35.143h-9.61V81.642h9.61Zm40.776-55.2h-55.21a4.728,4.728,0,0,0-4.781,4.67v55.439a4.731,4.731,0,0,0,4.781,4.675h55.21a4.741,4.741,0,0,0,4.8-4.675V62.025a4.738,4.738,0,0,0-4.8-4.67"
+											transform="translate(-903.776 -57.355)"
+										/>
 									</svg>
 								</a>
 								<a
-									href="https://discord.gg/UycCSpRh6j"
+									href="https://discord.gg/UycCSpRh6j?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -190,7 +218,7 @@ export const Footer = () => {
 							</a>
 
 							<a
-								href="https://summit.meetjs.pl/2023/"
+								href="https://summit.meetjs.pl/2023/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-green"
