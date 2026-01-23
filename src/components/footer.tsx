@@ -25,7 +25,9 @@ export const Footer = () => {
 								<span className="text-sm text-white-2">
 									In partnership with
 								</span>
-								<img src={LogoBrave} className="h-8 w-auto" alt="BRAVE" />
+								<a href="https://www.brave.courses/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026">
+									<img src={LogoBrave} className="h-8 w-auto" alt="BRAVE" />
+								</a>
 							</div>
 						</div>
 
