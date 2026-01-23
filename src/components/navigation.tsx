@@ -21,7 +21,6 @@ export const Navigation = () => {
 		{ label: 'CFP', id: 'cfp' },
 		{ label: 'Sponsor', id: 'partners' },
 		{ label: 'Venue', id: 'venue' },
-		{ label: 'Tickets', id: 'tickets' },
 		{ label: 'Contact', id: 'contact' },
 	];
 
@@ -60,6 +59,12 @@ export const Navigation = () => {
 								{item.label}
 							</a>
 						))}
+						<a
+							href="#tickets"
+							className="rounded-lg bg-meetjs-green px-6 py-2.5 text-sm font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
+						>
+							Get your ticket
+						</a>
 					</div>
 
 					<button
@@ -98,6 +103,12 @@ export const Navigation = () => {
 									{item.label}
 								</a>
 							))}
+							<a
+								href="#tickets"
+								className="mt-2 rounded-lg bg-meetjs-green px-6 py-3 text-center text-base font-bold text-black transition-all hover:bg-meetjs-green/90"
+							>
+								Get your ticket
+							</a>
 						</div>
 					</div>
 				)}

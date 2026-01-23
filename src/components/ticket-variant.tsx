@@ -45,9 +45,9 @@ export const TicketVariant = ({
 
 			<a
 				href={link}
-				className="block rounded-lg bg-gray py-4 text-center font-semibold text-white transition-all hover:bg-gray/80"
+				className="block rounded-lg bg-meetjs-green py-4 text-center font-semibold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
 			>
-				Sign me up now!
+				Get your ticket!
 			</a>
 		</div>
 	);

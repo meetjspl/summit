@@ -4,9 +4,9 @@ export const HeroBottomSection = () => {
 			<div className="flex flex-col items-center gap-3 md:flex-row md:items-center md:gap-8">
 				<a
 					href="#tickets"
-					className="inline-block w-fit rounded-lg bg-white px-8 py-4 text-base font-bold text-black transition-all hover:bg-meetjs-green"
+					className="inline-block w-fit rounded-lg bg-meetjs-green px-8 py-4 text-base font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
 				>
-					Sign me up now!
+					Get your ticket!
 				</a>
 
 				<div className="flex flex-col gap-1">
