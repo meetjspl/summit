@@ -13,6 +13,7 @@ import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
+import WindsurfLogo from '/src/assets/partners/windsurf.svg';
 
 import type { Partner } from '@/types/partner.ts';
 
@@ -37,6 +38,12 @@ const partners: Partner[] = [
 		logoUrl: SocketDevLogo,
 		websiteUrl: 'https://socket.dev',
 		type: 'gold',
+	},
+	{
+		name: 'Windsurf',
+		logoUrl: WindsurfLogo,
+		websiteUrl: 'https://windsurf.com',
+		type: 'silver',
 	},
 	{
 		name: 'JetBrains',
