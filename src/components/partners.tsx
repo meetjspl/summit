@@ -1,50 +1,53 @@
+import { PartnersLogos } from '@/components/partners-logos.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
-interface Partner {
-	name: string;
-	logoUrl: string;
-	websiteUrl: string;
-}
+import type { Partner } from '@/types/partner.ts';
 
 interface PartnersProps {
 	partners: Partner[];
 }
 
 export const Partners = ({ partners }: PartnersProps) => {
-	const realPartners = partners.filter(p => p.name !== 'Your logo here');
+	const realPartners = partners.filter(p => !p.type);
+	const mainSponsor = partners.filter(p => p.type === 'main');
+	const goldSponsors = partners.filter(p => p.type === 'gold');
+	const silverSponsors = partners.filter(p => p.type === 'silver');
+	const helloSponsors = partners.filter(p => p.type === 'hello');
 
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
-				<div className="text-center">
-					<h2 className="mb-3 text-sm font-semibold text-meetjs-green uppercase">
-						15th Anniversary partners
-					</h2>
-
-					<div className="mt-12 flex flex-wrap items-center justify-center gap-8 md:gap-12">
-						{realPartners.map(partner => (
-							<a
-								key={partner.name}
-								href={
-									partner.websiteUrl
-										? `${partner.websiteUrl}?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"`
-										: '#'
-								}
-								target={partner.websiteUrl ? '_blank' : undefined}
-								rel={partner.websiteUrl ? 'noopener noreferrer' : undefined}
-								className="group transition-opacity hover:opacity-80"
-								aria-label={partner.name}
-							>
-								<img
-									src={partner.logoUrl}
-									alt={partner.name}
-									className="h-auto w-32 object-contain grayscale transition-all group-hover:grayscale-0 md:w-40"
-								/>
-							</a>
-						))}
-					</div>
-				</div>
-
+				{mainSponsor.length !== 0 && (
+					<PartnersLogos
+						title="Main sponsor of 15th Anniversary"
+						partners={mainSponsor}
+						type="main"
+					/>
+				)}
+				{goldSponsors.length !== 0 && (
+					<PartnersLogos
+						title="Gold sponsors"
+						partners={goldSponsors}
+						type="gold"
+					/>
+				)}
+				{silverSponsors.length !== 0 && (
+					<PartnersLogos
+						title="Silver sponsors"
+						partners={silverSponsors}
+						type="silver"
+					/>
+				)}
+				{helloSponsors.length !== 0 && (
+					<PartnersLogos
+						title="Hello sponsors"
+						partners={helloSponsors}
+						type="hello"
+					/>
+				)}
+				{realPartners.length !== 0 && (
+					<PartnersLogos title="Partners" partners={realPartners} />
+				)}
 				<div className="mt-24 border-t border-white/10 pt-24 pb-24 text-left">
 					<div className="grid gap-12 md:grid-cols-2 md:items-center">
 						<div className="flex flex-col gap-6">
