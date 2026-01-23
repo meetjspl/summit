@@ -1,7 +1,7 @@
 interface TicketVariantProps {
 	title: string;
 	subtitle: string;
-	pack: string[];
+	pack: (string | React.ReactNode)[];
 	price: number;
 	link: string;
 	highlight?: boolean;

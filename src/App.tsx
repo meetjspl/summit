@@ -75,6 +75,11 @@ const partners: Partner[] = [
 		websiteUrl: 'https://planby.app/',
 		type: 'hello',
 	},
+	{
+		name: 'Instytut Fullstack',
+		logoUrl: 'https://instytutfullstack.pl/assets/newLogoVector.svg',
+		websiteUrl: 'https://instytutfullstack.pl',
+	},
 ];
 
 export const App = () => {
