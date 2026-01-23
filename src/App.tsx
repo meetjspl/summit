@@ -1,5 +1,6 @@
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
+import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
@@ -72,6 +73,12 @@ const partners: Partner[] = [
 		name: 'plabny',
 		logoUrl: PlanbyLogo,
 		websiteUrl: 'https://planby.app/',
+		type: 'hello',
+	},
+	{
+		name: 'cyber_Folks',
+		logoUrl: CyberfolksLogo,
+		websiteUrl: 'https://cyberfolks.pl/',
 		type: 'hello',
 	},
 ];
