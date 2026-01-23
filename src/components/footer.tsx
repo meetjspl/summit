@@ -93,7 +93,7 @@ export const Footer = () => {
 
 							<div className="flex gap-4">
 								<a
-									href="https://x.com/meetjs"
+									href="https://x.com/meetjs?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -109,7 +109,7 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://github.com/meetjspl"
+									href="https://github.com/meetjspl?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -124,7 +124,7 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://www.instagram.com/meet.js_poland/"
+									href="https://www.instagram.com/meet.js_poland/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -147,7 +147,7 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://linkedin.com/company/meetjs"
+									href="https://linkedin.com/company/meetjs?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -165,7 +165,7 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://discord.gg/UycCSpRh6j"
+									href="https://discord.gg/UycCSpRh6j?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
@@ -218,7 +218,7 @@ export const Footer = () => {
 							</a>
 
 							<a
-								href="https://summit.meetjs.pl/2023/"
+								href="https://summit.meetjs.pl/2023/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-green"
