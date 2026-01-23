@@ -91,18 +91,19 @@ export const Footer = () => {
 
 							<div className="flex gap-4">
 								<a
-									href="https://twitter.com/meetjs"
+									href="https://x.com/meetjs"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
-									aria-label="Twitter"
+									aria-label="X"
 								>
 									<svg
 										className="h-6 w-6"
+										viewBox="0 0 1200 1227"
 										fill="currentColor"
-										viewBox="0 0 24 24"
+										xmlns="http://www.w3.org/2000/svg"
 									>
-										<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+										<path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" />
 									</svg>
 								</a>
 								<a
