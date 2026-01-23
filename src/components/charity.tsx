@@ -1,7 +1,7 @@
 import charitySymbol from '@/assets/charity_symbol.png';
-import { Wrapper } from '@/components/wrapper.tsx';
 import hakersiLogo from '@/assets/hakersi-logo.png';
 import kopdLogo from '@/assets/kopd-logo.svg';
+import { Wrapper } from '@/components/wrapper.tsx';
 
 export const Charity = () => {
 	return (
@@ -36,7 +36,7 @@ export const Charity = () => {
 
 					<div className="flex shrink-0 flex-col items-center gap-4 sm:flex-row">
 						<a
-							href="https://kopd.pl"
+							href="https://kopd.pl?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="flex h-24 w-48 items-center justify-center rounded bg-gray-100 p-2"
@@ -48,7 +48,7 @@ export const Charity = () => {
 							/>
 						</a>
 						<a
-							href="https://hakersi.pl"
+							href="https://hakersi.pl?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="flex h-24 w-48 items-center justify-center rounded bg-gray-100 p-2"
