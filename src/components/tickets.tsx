@@ -26,6 +26,7 @@ export const Tickets = () => {
 							'Access to the gastro area',
 							'Seating in VIP rows (2-4)',
 							'Lunch at the bistro',
+							<a href="https://instytutfullstack.pl/typescript-boost-cards" className="text-meetjs-green underline">TypeScript Boost Cards from Instytut Fullstack</a>,
 							'More benefits soon...',
 						]}
 						price={512}

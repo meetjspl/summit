@@ -45,7 +45,7 @@ export const PartnersLogos = ({
 						<img
 							src={partner.logoUrl}
 							alt={partner.name}
-							className={`h-auto object-contain grayscale transition-all group-hover:grayscale-0 ${logoSizeClass}`}
+							className={`h-auto ${!type ? 'max-h-12' : ''} object-contain grayscale transition-all group-hover:grayscale-0 ${logoSizeClass}`}
 						/>
 					</a>
 				))}
