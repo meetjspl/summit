@@ -42,6 +42,14 @@ export const Footer = () => {
 								</li>
 								<li>
 									<a
+										href="#partners"
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										Partners
+									</a>
+								</li>
+								<li>
+									<a
 										href="#venue"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
@@ -49,14 +57,6 @@ export const Footer = () => {
 									</a>
 								</li>
 
-								<li>
-									<a
-										href="#partners"
-										className="text-white-2 transition-colors hover:text-meetjs-green"
-									>
-										Partners
-									</a>
-								</li>
 								<li>
 									<a
 										href="#tickets"
