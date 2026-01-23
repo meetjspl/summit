@@ -34,10 +34,10 @@ export const Footer = () => {
 							<ul className="space-y-2">
 								<li>
 									<a
-										href="#partners"
+										href="#cfp"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
-										Sponsor
+										CFP
 									</a>
 								</li>
 								<li>
