@@ -12,9 +12,8 @@ import { Tickets } from './components/tickets.tsx';
 import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
-import SocketDevLogo from '/src/assets/partners/socket.png';
-import WindsurfLogo from '/src/assets/partners/windsurf.svg';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
+import WindsurfLogo from '/src/assets/partners/windsurf.svg';
 
 import type { Partner } from '@/types/partner.ts';
 
@@ -44,9 +43,9 @@ const partners: Partner[] = [
 		name: 'Windsurf',
 		logoUrl: WindsurfLogo,
 		websiteUrl: 'https://windsurf.com',
-    type: 'silver',
-  },
-  {
+		type: 'silver',
+	},
+	{
 		name: 'JetBrains',
 		logoUrl: JetBrainsLogo,
 		websiteUrl: 'https://www.jetbrains.com',
