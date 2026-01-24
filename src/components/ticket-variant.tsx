@@ -1,3 +1,5 @@
+import * as gtag from '@/utils/gtag';
+
 interface TicketVariantProps {
 	title: string;
 	subtitle: string;
@@ -15,6 +17,22 @@ export const TicketVariant = ({
 	link,
 	highlight = false,
 }: TicketVariantProps) => {
+	const handleBuyClick = () => {
+		gtag.event({
+			action: 'begin_checkout',
+			category: 'ecommerce',
+			label: title,
+			value: price,
+			items: [
+				{
+					item_name: title,
+					price: price,
+					currency: 'PLN',
+				},
+			],
+		});
+	};
+
 	return (
 		<div
 			className={`flex w-full flex-col rounded-2xl border-2 bg-black p-8 transition-all hover:scale-105 md:w-96 ${
@@ -45,6 +63,7 @@ export const TicketVariant = ({
 
 			<a
 				href={link}
+				onClick={handleBuyClick}
 				className="block rounded-lg bg-meetjs-green py-4 text-center font-semibold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
 			>
 				Get your ticket!
