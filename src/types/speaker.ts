@@ -1,7 +1,7 @@
 export interface Speaker {
 	name: string;
 	role: string;
-	company: string;
+	company: string | { name: string; url: string };
 	talkTitle: string;
 	bio: string;
 	imageUrl?: string;

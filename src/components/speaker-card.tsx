@@ -22,7 +22,21 @@ export const SpeakerCard = ({
 			<div className="flex flex-col gap-2 p-6">
 				<h3 className="text-xl font-semibold">{name}</h3>
 				<p className="text-sm text-meetjs-green">
-					{role} @ {company}
+					{role}{' '}
+					{typeof company === 'string' ? (
+						company !== '' ? (
+							`@ ${company}`
+						) : (
+							''
+						)
+					) : (
+						<>
+							<span>@</span>{' '}
+							<a href={company.url} className="underline underline-offset-3">
+								{company.name}
+							</a>
+						</>
+					)}
 				</p>
 				<p className="mt-2 text-sm font-medium text-white-2">{talkTitle}</p>
 				<p className="mt-2 text-sm text-white-2/80">{bio}</p>
