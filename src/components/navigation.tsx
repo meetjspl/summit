@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Wrapper } from '@/components/wrapper.tsx';
+import * as gtag from '@/utils/gtag';
 
 import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
 
@@ -25,6 +26,11 @@ export const Navigation = () => {
 		{ label: 'Contact', id: 'contact' },
 	];
 
+	const handleNavClick = (label: string) => {
+		gtag.trackNavigation(label);
+		setIsMobileMenuOpen(false);
+	};
+
 	return (
 		<nav
 			className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
@@ -35,6 +41,7 @@ export const Navigation = () => {
 				<div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
 					<a
 						href="#"
+						onClick={() => handleNavClick('Logo - Scroll to top')}
 						className={`flex items-center gap-2 transition-all duration-300 ${
 							isScrolled
 								? 'translate-x-0 opacity-100'
@@ -55,6 +62,7 @@ export const Navigation = () => {
 							<a
 								key={item.id}
 								href={`#${item.id}`}
+								onClick={() => handleNavClick(item.label)}
 								className="text-sm font-medium text-white transition-colors hover:text-meetjs-green"
 							>
 								{item.label}
@@ -62,6 +70,7 @@ export const Navigation = () => {
 						))}
 						<a
 							href="#tickets"
+							onClick={() => handleNavClick('Get your ticket')}
 							className="rounded-lg bg-meetjs-green px-6 py-2.5 text-sm font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
 						>
 							Get your ticket
@@ -99,6 +108,7 @@ export const Navigation = () => {
 								<a
 									key={item.id}
 									href={`#${item.id}`}
+									onClick={() => handleNavClick(item.label)}
 									className="text-left text-lg font-medium text-white transition-colors hover:text-meetjs-green"
 								>
 									{item.label}
@@ -106,6 +116,7 @@ export const Navigation = () => {
 							))}
 							<a
 								href="#tickets"
+								onClick={() => handleNavClick('Get your ticket')}
 								className="mt-2 rounded-lg bg-meetjs-green px-6 py-3 text-center text-base font-bold text-black transition-all hover:bg-meetjs-green/90"
 							>
 								Get your ticket
@@ -117,3 +128,4 @@ export const Navigation = () => {
 		</nav>
 	);
 };
+
