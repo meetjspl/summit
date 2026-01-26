@@ -1,5 +1,6 @@
 import { PartnersLogos } from '@/components/partners-logos.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
+import * as gtag from '@/utils/gtag';
 
 import type { Partner } from '@/types/partner.ts';
 
@@ -13,6 +14,22 @@ export const Partners = ({ partners }: PartnersProps) => {
 	const goldSponsors = partners.filter(p => p.type === 'gold');
 	const silverSponsors = partners.filter(p => p.type === 'silver');
 	const helloSponsors = partners.filter(p => p.type === 'hello');
+
+	const handleSponsorOfferDownload = () => {
+		gtag.event({
+			action: 'download',
+			category: 'sponsorship',
+			label: 'Sponsor Offer PDF',
+		});
+	};
+
+	const handleContactClick = () => {
+		gtag.event({
+			action: 'click',
+			category: 'sponsorship',
+			label: 'Contact Email',
+		});
+	};
 
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
@@ -85,12 +102,14 @@ export const Partners = ({ partners }: PartnersProps) => {
 									href="/2026/pdf/sponsor-offer-meetjs-2026.pdf"
 									target="_blank"
 									rel="noopener noreferrer"
+									onClick={handleSponsorOfferDownload}
 									className="rounded bg-meetjs-green px-8 py-4 font-bold text-black transition-transform hover:scale-105 active:scale-95"
 								>
 									Download Offer (PDF)
 								</a>
 								<a
 									href="mailto:contact@meetjs.pl"
+									onClick={handleContactClick}
 									className="rounded border-2 border-white px-8 py-4 font-bold text-white transition-colors hover:bg-white hover:text-black"
 								>
 									Contact Us
@@ -103,3 +122,4 @@ export const Partners = ({ partners }: PartnersProps) => {
 		</section>
 	);
 };
+
