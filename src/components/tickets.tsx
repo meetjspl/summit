@@ -32,6 +32,7 @@ export const Tickets = () => {
 							>
 								TypeScript Boost Cards from Instytut Fullstack
 							</a>,
+							'-10% for BRAVE courses (AI_devs 4, 10xDEVS, AI_product Heroes 2)',
 							'More benefits soon...',
 						]}
 						price={512}
