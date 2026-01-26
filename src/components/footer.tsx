@@ -44,6 +44,14 @@ export const Footer = () => {
 								</li>
 								<li>
 									<a
+										href="#speakers"
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										Speakers
+									</a>
+								</li>
+								<li>
+									<a
 										href="#partners"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
@@ -165,7 +173,7 @@ export const Footer = () => {
 									</svg>
 								</a>
 								<a
-									href="https://discord.gg/UycCSpRh6j?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
+									href="https://discord.gg/UycCSpRh6j"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-white-2 transition-colors hover:text-meetjs-blue"
