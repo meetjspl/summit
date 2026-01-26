@@ -1,11 +1,17 @@
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
+import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
 import { Partners } from '@/components/partners.tsx';
+import { Speakers } from '@/components/speakers.tsx';
+import { PhotosSlider } from '@/components/photos-slider.tsx';
 import { Venue } from '@/components/venue.tsx';
+import { useScrollDepthTracking } from '@/hooks/useScrollDepthTracking';
+import { useTimeOnPageTracking } from '@/hooks/useTimeOnPageTracking';
+import { useErrorTracking } from '@/hooks/useErrorTracking';
 
 import { Hero } from './components/hero.tsx';
 import { Tickets } from './components/tickets.tsx';
@@ -74,19 +80,38 @@ const partners: Partner[] = [
 		websiteUrl: 'https://planby.app/',
 		type: 'hello',
 	},
+	{
+		name: 'cyber_Folks',
+		logoUrl: CyberfolksLogo,
+		websiteUrl: 'https://cyberfolks.pl/',
+		type: 'hello',
+  },
+  {
+		name: 'Instytut Fullstack',
+		logoUrl: 'https://instytutfullstack.pl/assets/newLogoVector.svg',
+		websiteUrl: 'https://instytutfullstack.pl',
+	},
 ];
 
 export const App = () => {
+	// Enable analytics tracking
+	useScrollDepthTracking();
+	useTimeOnPageTracking();
+	useErrorTracking();
+
 	return (
 		<>
 			<Hero />
 			<InfoCards />
 			<CFP />
 			<Partners partners={partners} />
+			<Speakers />
 			<Venue />
 			<Tickets />
+			<PhotosSlider />
 			<Charity />
 			{/*<CoOrganizer />*/}
 		</>
 	);
 };
+

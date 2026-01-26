@@ -1,7 +1,10 @@
+import { useEffect, useRef } from 'react';
+import * as gtag from '@/utils/gtag';
+
 interface TicketVariantProps {
 	title: string;
 	subtitle: string;
-	pack: string[];
+	pack: (string | React.ReactNode)[];
 	price: number;
 	link: string;
 	highlight?: boolean;
@@ -15,8 +18,57 @@ export const TicketVariant = ({
 	link,
 	highlight = false,
 }: TicketVariantProps) => {
+	const cardRef = useRef<HTMLDivElement>(null);
+	const hasTrackedView = useRef(false);
+
+	// Track when ticket card becomes visible
+	useEffect(() => {
+		const currentCard = cardRef.current;
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting && !hasTrackedView.current) {
+						hasTrackedView.current = true;
+						gtag.trackViewItem({
+							itemName: title,
+							price: price,
+						});
+					}
+				});
+			},
+			{ threshold: 0.5 } // Trigger when 50% visible
+		);
+
+		if (currentCard) {
+			observer.observe(currentCard);
+		}
+
+		return () => {
+			if (currentCard) {
+				observer.unobserve(currentCard);
+			}
+		};
+	}, [title, price]);
+
+	const handleBuyClick = () => {
+		gtag.event({
+			action: 'begin_checkout',
+			category: 'ecommerce',
+			label: title,
+			value: price,
+			items: [
+				{
+					item_name: title,
+					price: price,
+					currency: 'PLN',
+				},
+			],
+		});
+	};
+
 	return (
 		<div
+			ref={cardRef}
 			className={`flex w-full flex-col rounded-2xl border-2 bg-black p-8 transition-all hover:scale-105 md:w-96 ${
 				highlight
 					? 'border-meetjs-green shadow-xl shadow-meetjs-green/20'
@@ -45,10 +97,12 @@ export const TicketVariant = ({
 
 			<a
 				href={link}
-				className="block rounded-lg bg-gray py-4 text-center font-semibold text-white transition-all hover:bg-gray/80"
+				onClick={handleBuyClick}
+				className="block rounded-lg bg-meetjs-green py-4 text-center font-semibold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
 			>
-				Sign me up now!
+				Get your ticket!
 			</a>
 		</div>
 	);
 };
+
