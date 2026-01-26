@@ -24,6 +24,7 @@ export const Navigation = () => {
 		{ label: 'Speakers', id: 'speakers' },
 		{ label: 'Venue', id: 'venue' },
 		{ label: 'CFP', id: 'cfp' },
+		{ label: 'Videos', id: 'videos' },
 		{ label: 'Contact', id: 'contact' },
 	];
 
