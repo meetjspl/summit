@@ -1,10 +1,13 @@
-import PlanbyLogo from '@/assets/partners/planby-pro-logo.svg';
+import SocketDevLogo from '@/assets/partners/gold/socket.png';
+import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
+import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { InfoCards } from '@/components/info-cards.tsx';
 import { Partners } from '@/components/partners.tsx';
 import { Speakers } from '@/components/speakers.tsx';
+import { PhotosSlider } from '@/components/photos-slider.tsx';
 import { Venue } from '@/components/venue.tsx';
 
 import { Hero } from './components/hero.tsx';
@@ -13,7 +16,7 @@ import BRAVELogo from '/src/assets/partners/BRAVE.png';
 import SGHLogo from '/src/assets/partners/SGH.png';
 import AI_DevsLogo from '/src/assets/partners/ai_devs.png';
 import JetBrainsLogo from '/src/assets/partners/jetbrains-mono-white.svg';
-import SocketDevLogo from '/src/assets/partners/socket.png';
+import WindsurfLogo from '/src/assets/partners/windsurf.svg';
 
 import type { Partner } from '@/types/partner.ts';
 
@@ -40,9 +43,16 @@ const partners: Partner[] = [
 		type: 'gold',
 	},
 	{
+		name: 'Windsurf',
+		logoUrl: WindsurfLogo,
+		websiteUrl: 'https://windsurf.com',
+		type: 'silver',
+	},
+	{
 		name: 'JetBrains',
 		logoUrl: JetBrainsLogo,
 		websiteUrl: 'https://www.jetbrains.com',
+		type: 'silver',
 	},
 	{
 		name: 'Crossweb',
@@ -67,6 +77,17 @@ const partners: Partner[] = [
 		websiteUrl: 'https://planby.app/',
 		type: 'hello',
 	},
+	{
+		name: 'cyber_Folks',
+		logoUrl: CyberfolksLogo,
+		websiteUrl: 'https://cyberfolks.pl/',
+		type: 'hello',
+  },
+  {
+		name: 'Instytut Fullstack',
+		logoUrl: 'https://instytutfullstack.pl/assets/newLogoVector.svg',
+		websiteUrl: 'https://instytutfullstack.pl',
+	},
 ];
 
 export const App = () => {
@@ -79,7 +100,9 @@ export const App = () => {
 			<Speakers />
 			<Venue />
 			<Tickets />
+			<PhotosSlider />
 			<Charity />
+			{/*<CoOrganizer />*/}
 		</>
 	);
 };

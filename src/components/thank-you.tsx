@@ -1,12 +1,41 @@
+import { useEffect } from 'react';
 import AnniversaryLogo from '@/assets/anniversary-logo.svg?react';
 import { Organizers } from '@/components/organizers.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 import { Route } from '@/routes/thank-you.tsx';
+import * as gtag from '@/utils/gtag';
 
 import heroBg from '@/assets/SGH_ASCI.png';
 
 export const ThankYou = () => {
-	const { ec_order_id } = Route.useSearch();
+	const search = Route.useSearch();
+	const {
+		ec_order_id,
+		ec_product,
+		ec_price,
+		ec_currency,
+		ec_amount,
+	} = search;
+
+	useEffect(() => {
+		if (ec_order_id) {
+			gtag.event({
+				action: 'purchase',
+				category: 'ecommerce',
+				transaction_id: ec_order_id,
+				value: parseFloat(ec_price),
+				currency: ec_currency,
+				items: [
+					{
+						item_name: ec_product,
+						price: parseFloat(ec_price),
+						quantity: parseInt(ec_amount, 10),
+						currency: ec_currency,
+					},
+				],
+			});
+		}
+	}, [ec_order_id, ec_product, ec_price, ec_currency, ec_amount]);
 
 	return (
 		<header

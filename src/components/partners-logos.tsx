@@ -34,7 +34,7 @@ export const PartnersLogos = ({
 						key={partner.name}
 						href={
 							partner.websiteUrl
-								? `${partner.websiteUrl}?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"`
+								? `${partner.websiteUrl}?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026`
 								: '#'
 						}
 						target={partner.websiteUrl ? '_blank' : undefined}
@@ -45,7 +45,7 @@ export const PartnersLogos = ({
 						<img
 							src={partner.logoUrl}
 							alt={partner.name}
-							className={`h-auto object-contain grayscale transition-all group-hover:grayscale-0 ${logoSizeClass}`}
+							className={`h-auto ${!type ? 'max-h-12' : ''} object-contain grayscale transition-all group-hover:grayscale-0 ${logoSizeClass}`}
 						/>
 					</a>
 				))}
