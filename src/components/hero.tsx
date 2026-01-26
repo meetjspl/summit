@@ -10,7 +10,7 @@ import { Wrapper } from '@/components/wrapper.tsx';
 export const Hero = () => {
 	return (
 		<header
-			className="hero relative flex min-h-svh flex-col overflow-x-hidden bg-cover bg-center md:h-svh md:overflow-hidden md:bg-contain"
+			className="hero relative flex min-h-svh flex-col overflow-x-hidden bg-cover bg-center md:overflow-hidden md:bg-contain"
 			style={{ backgroundImage: `url(${heroBg})` }}
 		>
 			<div className="absolute top-0 left-0 h-full w-full bg-black opacity-25" />

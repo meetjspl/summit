@@ -1,10 +1,42 @@
-import AnniversaryLogo from '@/assets/Anniversary-logo.svg?react';
+import { useEffect } from 'react';
+import AnniversaryLogo from '@/assets/anniversary-logo.svg?react';
 import { Organizers } from '@/components/organizers.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
+import { Route } from '@/routes/thank-you.tsx';
+import * as gtag from '@/utils/gtag';
 
 import heroBg from '@/assets/SGH_ASCI.png';
 
 export const ThankYou = () => {
+	const search = Route.useSearch();
+	const {
+		ec_order_id,
+		ec_product,
+		ec_price,
+		ec_currency,
+		ec_amount,
+	} = search;
+
+	useEffect(() => {
+		if (ec_order_id) {
+			gtag.event({
+				action: 'purchase',
+				category: 'ecommerce',
+				transaction_id: ec_order_id,
+				value: parseFloat(ec_price),
+				currency: ec_currency,
+				items: [
+					{
+						item_name: ec_product,
+						price: parseFloat(ec_price),
+						quantity: parseInt(ec_amount, 10),
+						currency: ec_currency,
+					},
+				],
+			});
+		}
+	}, [ec_order_id, ec_product, ec_price, ec_currency, ec_amount]);
+
 	return (
 		<header
 			className="hero relative flex min-h-screen flex-col overflow-hidden bg-cover bg-center md:bg-contain"
@@ -30,6 +62,9 @@ export const ThankYou = () => {
 				</Wrapper>
 			</div>
 			<Wrapper>
+				<p className="text-white">
+					Your order ID: <span className="font-bold">{ec_order_id}</span>*
+				</p>
 				<p className="py-4 text-center font-semibold text-white">
 					We're preparing something special for you, and we can't wait to meet
 					you on March 4th in Warsaw. Your ticket, in the form of a QR code,
@@ -47,6 +82,10 @@ export const ThankYou = () => {
 				>
 					Back to the main page
 				</a>
+				<p className="py-4 text-sm text-white">
+					* if you have any problem with this order use this order ID with
+					communication with us.
+				</p>
 			</Wrapper>
 		</header>
 	);
