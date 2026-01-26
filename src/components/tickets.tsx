@@ -1,5 +1,5 @@
-import {TicketVariant} from '@/components/ticket-variant.tsx';
-import {Wrapper} from '@/components/wrapper.tsx';
+import { TicketVariant } from '@/components/ticket-variant.tsx';
+import { Wrapper } from '@/components/wrapper.tsx';
 
 export const Tickets = () => {
 	return (
@@ -14,7 +14,7 @@ export const Tickets = () => {
 					<TicketVariant
 						title="Regular"
 						subtitle="With a Standard ticket, you receive:"
-						pack={['Welcome Pack', 'Access to the gastro area']}
+						pack={['Welcome Pack', 'Access to the coffee area']}
 						price={256}
 						link="https://cart.easy.tools/checkout/brave/meet-js-summit?plan=price_1Sq8OSLfdutmLA8HuTjzDvMo&lang=en"
 					/>
@@ -23,9 +23,15 @@ export const Tickets = () => {
 						subtitle="With a Premium ticket, you receive:"
 						pack={[
 							'Welcome Pack+',
-							'Access to the gastro area',
+							'Access to the coffee area',
 							'Seating in VIP rows (2-4)',
 							'Lunch at the bistro',
+							<a
+								href="https://instytutfullstack.pl/typescript-boost-cards"
+								className="text-meetjs-green underline"
+							>
+								TypeScript Boost Cards from Instytut Fullstack
+							</a>,
 							'More benefits soon...',
 						]}
 						price={512}
