@@ -1,3 +1,4 @@
+import CarolaKeskula from '@/assets/speakers/carola-keskula.jpeg';
 import JakubMrugalski from '@/assets/speakers/jakub-mrugalski.png';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import { SpeakerCard } from '@/components/speaker-card.tsx';
@@ -9,9 +10,11 @@ const speakers: Speaker[] = [
 	{
 		name: 'Jakub Mrugalski',
 		role: 'Trainer',
-		company: 'AI_devs',
+		company: { name: 'AI_devs', url: 'https://www.aidevs.pl/' },
 		talkTitle: 'Talk title to be announced',
-		bio: 'BIO',
+		bio:
+			'Jakub “Unknow” Mrugalski is a tech entrepreneur and AI (LLM) integration trainer, focused on building practical, real-world applications of artificial intelligence. He is the creator of projects such as AI_Devs, where he teaches developers how to effectively use AI in software products, and the weekly #unknowNews newsletter, followed by a growing community of tech professionals.\n' +
+			'He actively shares knowledge about automation, cybersecurity, experimental business models, and modern web tools.',
 		imageUrl: JakubMrugalski,
 		social: {
 			twitter: 'https://x.com/uwteam',
@@ -24,15 +27,26 @@ const speakers: Speaker[] = [
 	{
 		name: 'Mateusz Chrobok',
 		role: 'Trainer / Co-Founder',
-		company: 'AI_devs',
+		company: { name: 'AI_devs', url: 'https://www.aidevs.pl/' },
 		talkTitle: 'Talk title to be announced',
-		bio: 'BIO',
+		bio: 'Mateusz Chrobok is a cybersecurity expert, startup consultant, and tech educator with deep experience in digital security, innovation, and AI. He’s co-founded multiple startups and helps organisations navigate the evolving landscape of online threats and secure digital transformation. As a creator and communicator, Mateusz builds communities around technology through his popular YouTube channel and educational platform, where he explains complex cybersecurity and tech topics in a clear and engaging way.',
 		imageUrl: MateuszChrobok,
 		social: {
 			twitter: 'https://x.com/MateuszChrobok',
 			linkedin: 'https://www.linkedin.com/in/mateuszchrobok/',
 			instagram: 'https://www.instagram.com/mateuszemsi/',
 			youtube: 'https://www.youtube.com/@MateuszChrobok',
+		},
+	},
+	{
+		name: 'Carola Kesküla',
+		role: 'Senior Front-end Developer & Capability Lead',
+		company: '',
+		talkTitle: 'Don’t Rush It, Refactor It: Building Better Front-Ends with AI',
+		bio: 'Front-end engineer building scalable and accessible experiences. Grounded in full-stack fundamentals and obsessed with real-world impact. At Nortal, has taken the lead on front-end efforts across a wide range of domains: from government systems around the globe to some of the major players in the US tech scene. Currently focused on building interfaces for AI-driven solutions and helping fellow developers level up. Built her first website at 11 and what it was about remains a conversation starter.',
+		imageUrl: CarolaKeskula,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/carolakeskyla/',
 		},
 	},
 ];
@@ -76,7 +90,7 @@ export const Speakers = () => {
 					</div>
 				) : (
 					<>
-						<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+						<div className="grid justify-center gap-8 md:grid-cols-2 lg:grid-cols-3">
 							{speakers.map(speaker => (
 								<SpeakerCard {...speaker} key={speaker.name} />
 							))}
