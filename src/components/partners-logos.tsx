@@ -1,3 +1,4 @@
+import * as gtag from '@/utils/gtag';
 import type { Partner } from '@/types/partner.ts';
 
 interface PartnersLogosProps {
@@ -22,6 +23,10 @@ export const PartnersLogos = ({
 						? 'w-28 md:w-48'
 						: 'w-22 md:w-40';
 
+	const handlePartnerClick = (partnerName: string, url: string) => {
+		gtag.trackOutboundLink(url, `Partner: ${partnerName}`);
+	};
+
 	return (
 		<div className="text-center">
 			<h2 className="text-xl font-semibold text-meetjs-green uppercase">
@@ -39,6 +44,10 @@ export const PartnersLogos = ({
 						}
 						target={partner.websiteUrl ? '_blank' : undefined}
 						rel={partner.websiteUrl ? 'noopener noreferrer' : undefined}
+						onClick={() =>
+							partner.websiteUrl &&
+							handlePartnerClick(partner.name, partner.websiteUrl)
+						}
 						className="group transition-opacity hover:opacity-80"
 						aria-label={partner.name}
 					>
@@ -53,3 +62,4 @@ export const PartnersLogos = ({
 		</div>
 	);
 };
+

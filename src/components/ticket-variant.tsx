@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import * as gtag from '@/utils/gtag';
 
 interface TicketVariantProps {
@@ -17,6 +18,38 @@ export const TicketVariant = ({
 	link,
 	highlight = false,
 }: TicketVariantProps) => {
+	const cardRef = useRef<HTMLDivElement>(null);
+	const hasTrackedView = useRef(false);
+
+	// Track when ticket card becomes visible
+	useEffect(() => {
+		const currentCard = cardRef.current;
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting && !hasTrackedView.current) {
+						hasTrackedView.current = true;
+						gtag.trackViewItem({
+							itemName: title,
+							price: price,
+						});
+					}
+				});
+			},
+			{ threshold: 0.5 } // Trigger when 50% visible
+		);
+
+		if (currentCard) {
+			observer.observe(currentCard);
+		}
+
+		return () => {
+			if (currentCard) {
+				observer.unobserve(currentCard);
+			}
+		};
+	}, [title, price]);
+
 	const handleBuyClick = () => {
 		gtag.event({
 			action: 'begin_checkout',
@@ -35,6 +68,7 @@ export const TicketVariant = ({
 
 	return (
 		<div
+			ref={cardRef}
 			className={`flex w-full flex-col rounded-2xl border-2 bg-black p-8 transition-all hover:scale-105 md:w-96 ${
 				highlight
 					? 'border-meetjs-green shadow-xl shadow-meetjs-green/20'
@@ -71,3 +105,4 @@ export const TicketVariant = ({
 		</div>
 	);
 };
+

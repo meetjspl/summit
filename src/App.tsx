@@ -4,11 +4,14 @@ import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
-import { InfoCards } from '@/components/info-cards.tsx';
+import { LoveLetter } from '@/components/love-letter.tsx';
 import { Partners } from '@/components/partners.tsx';
 import { Speakers } from '@/components/speakers.tsx';
 import { PhotosSlider } from '@/components/photos-slider.tsx';
 import { Venue } from '@/components/venue.tsx';
+import { useScrollDepthTracking } from '@/hooks/useScrollDepthTracking';
+import { useTimeOnPageTracking } from '@/hooks/useTimeOnPageTracking';
+import { useErrorTracking } from '@/hooks/useErrorTracking';
 
 import { Hero } from './components/hero.tsx';
 import { Tickets } from './components/tickets.tsx';
@@ -96,10 +99,15 @@ const partners: Partner[] = [
 ];
 
 export const App = () => {
+	// Enable analytics tracking
+	useScrollDepthTracking();
+	useTimeOnPageTracking();
+	useErrorTracking();
+
 	return (
 		<>
 			<Hero />
-			<InfoCards />
+			<LoveLetter />
 			<CFP />
 			<Partners partners={partners} />
 			<Speakers />
@@ -111,3 +119,4 @@ export const App = () => {
 		</>
 	);
 };
+
