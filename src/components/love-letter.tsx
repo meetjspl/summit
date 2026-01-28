@@ -86,6 +86,18 @@ export const LoveLetter = () => {
 					{/* Right Column: Visuals & Interactive */}
 					<div className="flex flex-col space-y-8">
 						{/* Video Placeholder */}
+						{/* TODO: When video is ready, replace this div with:
+							<iframe 
+								width="100%" 
+								height="100%" 
+								src="YOUR_YOUTUBE_EMBED_LINK" 
+								title="meet.js 15th Birthday" 
+								frameBorder="0" 
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowFullScreen 
+								className="absolute inset-0 h-full w-full rounded-2xl"
+							/>
+						*/}
 						<div className="group relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-gray-900 shadow-2xl transition-all hover:border-meetjs-blue/50">
 							<div className="absolute inset-0 flex items-center justify-center">
 								<div className="rounded-full bg-white/10 p-4 backdrop-blur-sm transition-all group-hover:bg-meetjs-blue group-hover:text-black">
