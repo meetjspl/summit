@@ -36,18 +36,10 @@ export const Footer = () => {
 							<ul className="space-y-2">
 								<li>
 									<a
-										href="#cfp"
+										href="#tickets"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
-										CFP
-									</a>
-								</li>
-								<li>
-									<a
-										href="#speakers"
-										className="text-white-2 transition-colors hover:text-meetjs-green"
-									>
-										Speakers
+										Tickets
 									</a>
 								</li>
 								<li>
@@ -60,19 +52,26 @@ export const Footer = () => {
 								</li>
 								<li>
 									<a
+										href="#speakers"
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										Speakers
+									</a>
+								</li>
+								<li>
+									<a
 										href="#venue"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
 										Venue
 									</a>
 								</li>
-
 								<li>
 									<a
-										href="#tickets"
+										href="#cfp"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
-										Tickets
+										CFP
 									</a>
 								</li>
 							</ul>
