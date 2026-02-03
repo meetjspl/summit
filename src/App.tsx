@@ -1,17 +1,18 @@
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
-import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
+import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import SlidoLogo from '@/assets/partners/slido.svg';
+import { BecomeASponsor } from '@/components/become-a-sponsor.tsx';
 import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
-import { InfoCards } from '@/components/info-cards.tsx';
+import { LoveLetter } from '@/components/love-letter.tsx';
 import { Partners } from '@/components/partners.tsx';
-import { Speakers } from '@/components/speakers.tsx';
 import { PhotosSlider } from '@/components/photos-slider.tsx';
+import { Speakers } from '@/components/speakers.tsx';
 import { Venue } from '@/components/venue.tsx';
+import { useErrorTracking } from '@/hooks/useErrorTracking';
 import { useScrollDepthTracking } from '@/hooks/useScrollDepthTracking';
 import { useTimeOnPageTracking } from '@/hooks/useTimeOnPageTracking';
-import { useErrorTracking } from '@/hooks/useErrorTracking';
 
 import { Hero } from './components/hero.tsx';
 import { Tickets } from './components/tickets.tsx';
@@ -85,8 +86,8 @@ const partners: Partner[] = [
 		logoUrl: CyberfolksLogo,
 		websiteUrl: 'https://cyberfolks.pl/',
 		type: 'hello',
-  },
-  {
+	},
+	{
 		name: 'Instytut Fullstack',
 		logoUrl: 'https://instytutfullstack.pl/assets/newLogoVector.svg',
 		websiteUrl: 'https://instytutfullstack.pl',
@@ -102,16 +103,16 @@ export const App = () => {
 	return (
 		<>
 			<Hero />
-			<InfoCards />
-			<CFP />
+			<LoveLetter />
+			<Tickets />
 			<Partners partners={partners} />
 			<Speakers />
 			<Venue />
-			<Tickets />
 			<PhotosSlider />
 			<Charity />
+			<CFP />
+			<BecomeASponsor />
 			{/*<CoOrganizer />*/}
 		</>
 	);
 };
-
