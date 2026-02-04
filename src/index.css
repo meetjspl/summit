@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+/* stylelint-disable-next-line */
 @theme {
   --font-montserrat: 'Montserrat', sans-serif;
 
@@ -15,6 +16,8 @@
   --color-aidevs-white: #F6F6FF;
 
   --color-accent: #EE196E;
+
+  --animate-float: float 3s ease-in-out infinite;
 }
 
 html,
@@ -27,7 +30,7 @@ body {
   background-color: var(--color-black);
 }
 
-/* Floating animation for charity badge */
+/* Floating animation for monitor and charity badge */
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
