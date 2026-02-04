@@ -1,4 +1,5 @@
 import * as gtag from '@/utils/gtag';
+
 import type { Partner } from '@/types/partner.ts';
 
 interface PartnersLogosProps {
@@ -62,4 +63,3 @@ export const PartnersLogos = ({
 		</div>
 	);
 };
-
