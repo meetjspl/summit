@@ -12,7 +12,7 @@ export const Monitor = () => {
 			<img
 				src={monitorImage}
 				alt=""
-				className="relative z-30 hidden w-full md:absolute md:-top-48 md:right-12 md:block md:h-auto md:w-auto"
+				className="relative z-30 hidden w-full md:absolute md:-top-24 md:right-12 md:block md:h-auto md:w-auto"
 			/>
 		</>
 	);
