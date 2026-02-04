@@ -1,6 +1,10 @@
+import { Countdown } from '@/components/countdown.tsx';
+
 export const HeroBottomSection = () => {
 	return (
-		<div className="relative z-20 flex flex-col items-center gap-2 pt-2 pb-2 text-center text-white md:items-start md:gap-4 md:pb-4 md:text-left">
+		<div className="relative z-20 flex flex-col items-center gap-4 pt-2 pb-2 text-center text-white md:items-start md:gap-6 md:pb-4 md:text-left">
+			<Countdown />
+			
 			<div className="flex flex-col items-center gap-3 md:flex-row md:items-center md:gap-8">
 				<a
 					href="#tickets"
