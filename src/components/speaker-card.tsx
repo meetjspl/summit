@@ -1,3 +1,5 @@
+import { Popover } from '@/components/popover.tsx';
+
 import type { Speaker } from '@/types/speaker.ts';
 
 export const SpeakerCard = ({
@@ -7,6 +9,7 @@ export const SpeakerCard = ({
 	bio,
 	role,
 	talkTitle,
+	talkDescription,
 	imageUrl,
 }: Speaker) => {
 	return (
@@ -38,7 +41,12 @@ export const SpeakerCard = ({
 						</>
 					)}
 				</p>
-				<p className="mt-2 text-sm font-medium text-white-2">{talkTitle}</p>
+				{talkDescription && (
+					<Popover trigger={talkTitle} content={talkDescription} />
+				)}
+				{!talkDescription && (
+					<p className="mt-2 text-sm font-medium text-white-2">{talkTitle}</p>
+				)}
 				<p className="mt-2 text-sm text-white-2/80">{bio}</p>
 
 				{social && (

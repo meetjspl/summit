@@ -1,5 +1,4 @@
 import { BecomeASponsor } from '@/components/become-a-sponsor.tsx';
-import { CFP } from '@/components/cfp.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { LoveLetter } from '@/components/love-letter.tsx';
 import { Partners } from '@/components/partners.tsx';
@@ -28,7 +27,7 @@ export const App = () => {
 			<Venue />
 			<PhotosSlider />
 			<Charity />
-			<CFP />
+			{/*<CFP />*/}
 			<BecomeASponsor />
 		</>
 	);
