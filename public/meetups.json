@@ -1,0 +1,85 @@
+{
+  "1": {
+    "id": 64570,
+    "date_add": 1768395416,
+    "date": "5.02.2026",
+    "time": "17:30",
+    "name": "meet.js Gdansk TypeScript Meetup #18",
+    "type": "Spotkanie",
+    "url": "https://crossweb.pl/wydarzenia/meetjs-gdansk-typescript-meetup-18/",
+    "rsvp": "https://www.meetup.com/gdansk-typescript/events/312877678/?eventOrigin=group_upcoming_events",
+    "city": "Trójmiasto",
+    "address": "aleja Grunwaldzka 411",
+    "image": "https://crossweb.pl/upload/gallery/event/64570/840x320/-1768997061.png",
+    "serie": "meet.js",
+    "topic": [
+      "JavaScript",
+      "Open Source",
+      "TypeScript"
+    ]
+  },
+  "2": {
+    "id": 64387,
+    "date_add": 1766409023,
+    "date": "12.02.2026",
+    "time": "18:00",
+    "name": "meet.js Wrocław 2026-02-12 (15th anniversary!)",
+    "type": "Spotkanie",
+    "url": "https://crossweb.pl/wydarzenia/meet-js-wroclaw-2026-02-12-15th-anniversary/",
+    "rsvp": "https://www.meetup.com/meet-js-wroclaw/events/312499657/",
+    "city": "Wrocław",
+    "address": "Włodkowica 5",
+    "image": "https://crossweb.pl/upload/gallery/event/64387/840x320/meet-js-wroclaw-2026-02-12-15th-anniversary-1766409024.avif",
+    "serie": "meet.js",
+    "topic": [
+      "JavaScript",
+      "Open Source",
+      "TypeScript",
+      "programowanie",
+      "design"
+    ]
+  },
+  "3": {
+    "id": 72477,
+    "date_add": 1769515758,
+    "date": "19.02.2026",
+    "time": "17:30",
+    "name": "meet.js Lublin #15",
+    "type": "Spotkanie",
+    "url": "https://crossweb.pl/wydarzenia/meetjs-lublin-15/",
+    "rsvp": "https://luma.com/564kxhiw",
+    "city": "Lublin",
+    "address": "Prezydenta Gabriela Narutowicza 55B",
+    "serie": "meet.js",
+    "topic": [
+      "JavaScript",
+      "Open Source",
+      "TypeScript",
+      "programowanie",
+      "design"
+    ]
+  },
+  "4": {
+    "id": 64736,
+    "date_add": 1769074026,
+    "date": "4.03.2026",
+    "time": "09:00",
+    "name": "meet.js Summit 2026",
+    "type": "Konferencja",
+    "url": "https://crossweb.pl/wydarzenia/meetjs-summit-2026/",
+    "rsvp": "https://summit.meetjs.pl/2026/",
+    "city": "Warszawa",
+    "address": "Aleja Niepodległości 162",
+    "image": "https://crossweb.pl/upload/gallery/event/64736/840x320/-1769074507.png",
+    "serie": "meet.js",
+    "topic": [
+      "JavaScript",
+      "Open Source",
+      "TypeScript",
+      "programowanie",
+      "design",
+      "AI/ML",
+      "Call For Papers"
+    ]
+  }
+}

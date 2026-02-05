@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ '2026' ]
+    branches: ['2026']
 
 permissions:
   contents: write
@@ -29,6 +29,12 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - run: pnpm install --frozen-lockfile
+
+      - name: Fetch meetups data
+        run: node scripts/fetch-meetups.js
+        env:
+          MEETUPS_API_URL: ${{ secrets.MEETUPS_API_URL }}
+
       - run: pnpm build
 
       - uses: peaceiris/actions-gh-pages@v4
