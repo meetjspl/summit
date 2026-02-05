@@ -1,10 +1,10 @@
 import CarolaKeskula from '@/assets/speakers/carola-keskula.jpeg';
+import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
 import MichalGolebiewskiOwczarek from '@/assets/speakers/michał-golebiowski-owczarek.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
-import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
 import { SpeakerCard } from '@/components/speaker-card.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
@@ -47,6 +47,10 @@ const speakers: Speaker[] = [
 		role: 'Senior Front-end Developer & Capability Lead',
 		company: '',
 		talkTitle: 'Don’t Rush It, Refactor It: Building Better Front-Ends with AI',
+		talkDescription:
+			'If you’ve ever juggled multiple front-end projects while still deeply caring about clean styles, accessible UIs and fast load times… hi, you’re in good company!\n' +
+			'Quality is a non-negotiable. Deadlines are often tight. I’ll be sharing how AI has supported my workflow. Not by letting it do all the work, but by accelerating and verifying parts that can get squeezed under pressure. From tidying up CSS to spotting accessibility issues and optimising performance, we’ll explore how to move fast without cutting corners.\n' +
+			'Whether you’re working on smaller features or scaling big systems, you’ll leave with ideas to adapt to your own pace and context. Also... hopefully with a little inspiration to keep pushing for quality, even when everything’s moving fast.',
 		bio: 'Front-end engineer building scalable and accessible experiences. Grounded in full-stack fundamentals and obsessed with real-world impact. At Nortal, has taken the lead on front-end efforts across a wide range of domains: from government systems around the globe to some of the major players in the US tech scene. Currently focused on building interfaces for AI-driven solutions and helping fellow developers level up. Built her first website at 11 and what it was about remains a conversation starter.',
 		imageUrl: CarolaKeskula,
 		social: {
@@ -58,10 +62,10 @@ const speakers: Speaker[] = [
 		role: 'Senior Software Engineer',
 		company: 'OpenSpace',
 		talkTitle: 'Shipping Offline Support on the Web',
-		bio:
+		talkDescription:
 			'Offline support is often seen as a hard boundary between web and native. If users need to work without a reliable network, many teams assume a native mobile app is the only serious option.\n' +
-			'\n In this talk, I’ll challenge this statement with a real-world case study from a production web' +
-			' application, where we delivered meaningful offline functionality—without building a native app.\n' +
+			'\n' +
+			'In this talk, I’ll challenge this statement with a real-world case study from a production web application, where we delivered meaningful offline functionality—without building a native app.\n' +
 			'\n' +
 			'I’ll walk through a practical, step-by-step approach to offline support on the web:\n' +
 			'- choosing the right offline model (foreground queues vs. background sync),\n' +
@@ -69,9 +73,10 @@ const speakers: Speaker[] = [
 			'- persisting the right data locally using IndexedDB,\n' +
 			'- and handling offline changes with a foreground queue.\n' +
 			'\n' +
-			'The focus is on what actually matters in practice: product requirements, browser constraints, trade-offs, and' +
-			' incremental wins that improve user experience long before full offline sync is in place.\n \n You’ll leave with a clear mental model for offline support in web applications and concrete steps you can' +
-			' apply before considering a native rewrite.',
+			'The focus is on what actually matters in practice: product requirements, browser constraints, trade-offs, and incremental wins that improve user experience long before full offline sync is in place.\n' +
+			'\n' +
+			'You’ll leave with a clear mental model for offline support in web applications and concrete steps you can apply before considering a native rewrite.',
+		bio: 'Senior Software Engineer at OpenSpace. I help product teams build quality software and lead engineering efforts.',
 		imageUrl: TomaszGil,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/tomasz-gil/',
@@ -83,13 +88,28 @@ const speakers: Speaker[] = [
 		company: 'Tektit Consulting',
 		talkTitle:
 			'Your AI Agent is just a while loop with an API call. Let me prove it.',
-		bio:
-			'AI agents are everywhere right now. Every week, there’s a new framework promising to make agents “easy” —' +
-			' Vercel AI SDK, LangChain, Claude SDK, Google ADK, you name it. And you can start playing with them in ~20 lines of code. What a time to be alive! But what actually happens when an agent “thinks”? \n' +
-			'What is behind that magical`generateText()`call? How and why are tools and MCP servers called, and how does the whole flow work? \n' +
+		talkDescription:
+			'AI agents are everywhere right now. Every week, there’s a new framework promising to make agents “easy” — Vercel AI SDK, LangChain, Claude SDK, Google ADK, you name it. And you can start playing with them in ~20 lines of code. What a time to be alive!\n' +
+			'\n' +
+			'But what actually happens when an agent “thinks”? \n' +
+			'What is behind that magical`generateText()`call? \n' +
+			'How and why are tools and MCP servers called, and how does the whole flow work? \n' +
 			"If you use it as a black box when things break, it's a matter of time before you’re guessing instead of understanding.\n" +
-			'I’ve been building an AI agent with Vercel AI SDK that helps professionals prepare for meetings by processing' +
-			" emails, chats, and calendars. At some point, debugging the system was like hitting the black box with a stick and wondering why it didn't work, so I decided to open up the box.",
+			'\n' +
+			"I’ve been building an AI agent with Vercel AI SDK that helps professionals prepare for meetings by processing emails, chats, and calendars. At some point, debugging the system was like hitting the black box with a stick and wondering why it didn't work, so I decided to open up the box.\n" +
+			'\n' +
+			'Spoiler: there’s no magic. It’s a loop, a few API calls, some tool invocations, a lot of prompt‑engineering glue, and even more glue.\n' +
+			'\n' +
+			'In this talk, I’ll show you:\n' +
+			'\n' +
+			'- How the agent loop works\n' +
+			'- How tool calling and MCP integration work under the hood\n' +
+			'- Why “multi‑agent systems” are often just nested loops with a buzzword sticker on it\n' +
+			'\n' +
+			'You’ll walk away knowing what your agent is doing when no one is watching. No more black boxes.',
+		bio:
+			+'Senior Software Engineer and consultant at Tektit Consulting. IT trainer at Infoshare Academy. Previously' +
+			' worked on Jira Cloud and Atlassian Forge. He talks and records content on front-end and web development topics. Co-organizer of Meet.js Gdańsk meetup. One of the talking heads on “Śniadanie z Programowaniem” and “Z Archiwum IT” JustJoin.it',
 		imageUrl: MichalMichalczuk,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/michalczukm/',
@@ -100,7 +120,9 @@ const speakers: Speaker[] = [
 		role: 'Creator of Rozenite, Harness and Voltra',
 		company: 'Callstack',
 		talkTitle: 'JSX to Live Activity: The Story of Voltra.',
-		bio: 'This is a story of the many gotchas we hit while building Voltra, a library that brings React to iOS Live Activities and the Dynamic Island. From discovering why the usual way of building a custom renderer doesn’t always work, to digging into how hooks function under the hood and supporting them by hand, to wrestling with the brutal 4 KB payload limit. It’s a tour through React internals, extreme platform constraints, and the unexpected decisions required to make React work where it was never designed to run.',
+		talkDescription:
+			'This is a story of the many gotchas we hit while building Voltra, a library that brings React to iOS Live Activities and the Dynamic Island. From discovering why the usual way of building a custom renderer doesn’t always work, to digging into how hooks function under the hood and supporting them by hand, to wrestling with the brutal 4 KB payload limit. It’s a tour through React internals, extreme platform constraints, and the unexpected decisions required to make React work where it was never designed to run.',
+		bio: 'Creator of Rozenite, Harness and Voltra. The kind of person who dives into code and somehow makes the "impossible" happen. Focused on building the next generation of developer tools so you can ship your apps even faster.',
 		imageUrl: SzymonChmal,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/szymon-chmal/',
@@ -111,15 +133,13 @@ const speakers: Speaker[] = [
 		role: 'Senior Software Engineer',
 		company: 'Qualtrics',
 		talkTitle: 'AI in non-perfect (brownfield/legacy) world',
-		bio:
-			'Many AI-related talks focus on new features and brand-new repositories. Adding a new feature or' +
-			' creating a new webpage is no longer a real technical challenge in 2026. But that’s not what our day-to-day' +
-			' work usually looks like. In reality, we work in brownfield and legacy codebases—imperfectly structured, with' +
-			' a bit of spaghetti sadly hiding between the lines. In this talk, I share lessons from experimenting with AI' +
-			' in a non-perfect world: using it to handle the work I hate—managing dependency upgrades, migrating' +
-			' deprecated libraries and frameworks, adding missing tests, debugging issues, removing stale feature flags,' +
-			' and more. Were all experiments successful? Of course not. But you can learn from what worked, what failed,' +
-			' and why. Join me on a journey where AI takes over the boring but necessary tasks—so we can focus on what programmers love most: solving problems, delivering value, and building solid architecture. Let AI take our jobs… just the parts we don’t like',
+		talkDescription:
+			'Many AI-related talks focus on new features and brand-new repositories. Adding a new feature or creating a' +
+			' new webpage is no longer a real technical challenge in 2026. But that’s not what our day-to-day work usually' +
+			' looks like. In reality, we work in brownfield and legacy codebases—imperfectly structured, with a bit of' +
+			' spaghetti sadly hiding between the lines. In this talk, I share lessons from experimenting with AI in a' +
+			' non-perfect world: using it to handle the work I hate—managing dependency upgrades, migrating deprecated libraries and frameworks, adding missing tests, debugging issues, removing stale feature flags, and more. Were all experiments successful? Of course not. But you can learn from what worked, what failed, and why. Join me on a journey where AI takes over the boring but necessary tasks—so we can focus on what programmers love most: solving problems, delivering value, and building solid architecture. Let AI take our jobs… just the parts we don’t like',
+		bio: 'Full-stack developer who loves sharing their knowledge and singing. Google Developer Expert for Web Technologies, Microsoft Most Valuable Professional in Web technologies, senior software engineer at Qualtrics, public speaker, trainer and blogger. Talking and writing about Web, a11y, teaching others how to code and code best practices.',
 		imageUrl: DominikaZajac,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/dominikazajac/',
@@ -130,7 +150,9 @@ const speakers: Speaker[] = [
 		role: 'Active member of the jQuery Core team ',
 		company: '',
 		talkTitle: 'From “Write Less” to v4: Why jQuery Still Matters (in 2026).',
-		bio: "We'll have a look at the 20-year history of jQuery, what was its role in the past and why is it still actively supported & relevant, even getting a new major version in 2026.",
+		talkDescription:
+			"We'll have a look at the 20-year history of jQuery, what was its role in the past and why is it still actively supported & relevant, even getting a new major version in 2026.",
+		bio: 'An active member of the jQuery Core team for the past 13 years, a former member of the AngularJS core team. A TypeScript enthusiast. Likes diving deep into technical details and working with browser vendors or spec authors. Frontend-focused, but also a fan of automations & small shell scripts.',
 		imageUrl: MichalGolebiewskiOwczarek,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/mzgol/',
