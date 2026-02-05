@@ -5,6 +5,7 @@ import { Partners } from '@/components/partners.tsx';
 import { PhotosSlider } from '@/components/photos-slider.tsx';
 import { Speakers } from '@/components/speakers.tsx';
 import { Venue } from '@/components/venue.tsx';
+import { VideoPlaylists } from '@/components/video-playlists.tsx';
 import { useErrorTracking } from '@/hooks/useErrorTracking';
 import { useScrollDepthTracking } from '@/hooks/useScrollDepthTracking';
 import { useTimeOnPageTracking } from '@/hooks/useTimeOnPageTracking';
@@ -26,6 +27,7 @@ export const App = () => {
 			<Speakers />
 			<Venue />
 			<PhotosSlider />
+			<VideoPlaylists />
 			<Charity />
 			{/*<CFP />*/}
 			<BecomeASponsor />
