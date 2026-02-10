@@ -5,6 +5,7 @@ import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
+import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import WindsurfLogo from '@/assets/partners/windsurf.svg';
 import { PartnersLogos } from '@/components/partners-logos.tsx';
@@ -87,6 +88,11 @@ const partners: Partner[] = [
 		logoUrl: PlanbyLogo,
 		websiteUrl: 'https://planby.app/',
 		type: 'hello',
+	},
+	{
+		name: 'Gamedev.js',
+		logoUrl: GamedevjsLogo,
+		websiteUrl: 'https://gamedevjs.com',
 	},
 ];
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { type ReactNode, useEffect, useRef, useState } from 'react';
+import { type ReactNode, useLayoutEffect, useRef, useState } from 'react';
 
 import { cn } from '@/utils/cn';
 
@@ -24,7 +24,7 @@ export const Popover = ({
 	const triggerRef = useRef<HTMLSpanElement>(null);
 	const contentRef = useRef<HTMLDivElement>(null);
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		if (isOpen && triggerRef.current && contentRef.current) {
 			const triggerRect = triggerRef.current.getBoundingClientRect();
 			const contentRect = contentRef.current.getBoundingClientRect();
@@ -56,13 +56,6 @@ export const Popover = ({
 		}
 	}, [isOpen, position]);
 
-	const positionClasses = {
-		top: 'bottom-full mb-2',
-		bottom: 'top-full mt-2',
-		left: 'right-full mr-2',
-		right: 'left-full ml-2',
-	};
-
 	const arrowClasses = {
 		top: 'bottom-0 left-1/2 -translate-x-1/2 translate-y-full border-t-black border-x-transparent border-b-transparent',
 		bottom:
@@ -91,12 +84,12 @@ export const Popover = ({
 					isOpen
 						? 'visible scale-100 opacity-100'
 						: 'invisible scale-95 opacity-0',
-					position === 'top' && 'bottom-full left-1/2 mb-2 -translate-x-1/2',
-					position === 'bottom' && 'top-full left-1/2 mt-2 -translate-x-1/2',
-					position === 'left' && 'top-1/2 right-full mr-2 -translate-y-1/2',
-					position === 'right' && 'top-1/2 left-full ml-2 -translate-y-1/2',
 					contentClassName,
 				)}
+				style={{
+					top: `${coords.top}px`,
+					left: `${coords.left}px`,
+				}}
 			>
 				{content}
 				{/* Arrow */}

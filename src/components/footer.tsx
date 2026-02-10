@@ -68,10 +68,10 @@ export const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="#cfp"
+										href="#videos"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>
-										CFP
+										Videos
 									</a>
 								</li>
 							</ul>

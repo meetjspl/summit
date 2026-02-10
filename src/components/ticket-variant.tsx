@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+
 import * as gtag from '@/utils/gtag';
 
 interface TicketVariantProps {
@@ -25,8 +26,8 @@ export const TicketVariant = ({
 	useEffect(() => {
 		const currentCard = cardRef.current;
 		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
+			entries => {
+				entries.forEach(entry => {
 					if (entry.isIntersecting && !hasTrackedView.current) {
 						hasTrackedView.current = true;
 						gtag.trackViewItem({
@@ -36,7 +37,7 @@ export const TicketVariant = ({
 					}
 				});
 			},
-			{ threshold: 0.5 } // Trigger when 50% visible
+			{ threshold: 0.5 }, // Trigger when 50% visible
 		);
 
 		if (currentCard) {
@@ -91,7 +92,7 @@ export const TicketVariant = ({
 			<div className="mb-6 border-t border-white/10 pt-6">
 				<p className="text-left">
 					<span className="text-4xl font-bold text-white">{price} PLN</span>
-					<span className="ml-2 text-sm text-white/60">netto</span>
+					<span className="ml-2 text-sm text-white/60">brutto</span>
 				</p>
 			</div>
 
@@ -105,4 +106,3 @@ export const TicketVariant = ({
 		</div>
 	);
 };
-

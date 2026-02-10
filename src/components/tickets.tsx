@@ -37,7 +37,7 @@ export const Tickets = () => {
 								<ul className="list-disc pl-6">
 									<li>
 										<a
-											href="https://aidevs.pl"
+											href="https://aidevs.pl/?utm_source=website&utm_medium=vip_link&utm_campaign=meetjs_summit_2026"
 											className="text-aidevs-green underline"
 										>
 											AI_devs 4
@@ -45,16 +45,16 @@ export const Tickets = () => {
 									</li>
 									<li>
 										<a
-											href="https://aidevs.pl"
-											className="text-meetjs-green underline"
+											href="https://www.10xdevs.pl/?utm_source=website&utm_medium=vip_link&utm_campaign=meetjs_summit_2026"
+											className="text-[#FFA100] underline"
 										>
 											10xDevs 3.0
 										</a>
 									</li>
 									<li>
 										<a
-											href="https://aidevs.pl"
-											className="text-meetjs-green underline"
+											href="https://www.aiproductheroes.pl/?utm_source=website&utm_medium=vip_link&utm_campaign=meetjs_summit_2026"
+											className="text-[#4855CB] underline"
 										>
 											AI Product Heroes 2
 										</a>

@@ -32,7 +32,7 @@ const speakers: Speaker[] = [
 		name: 'Mateusz Chrobok',
 		role: 'Trainer / Co-Founder',
 		company: { name: 'AI_devs', url: 'https://www.aidevs.pl/' },
-		talkTitle: 'When AI does what whatever it wants. AI alignment.',
+		talkTitle: 'When AI does whatever it wants. AI alignment.',
 		bio: 'Mateusz Chrobok is a cybersecurity expert, startup consultant, and tech educator with deep experience in digital security, innovation, and AI. He’s co-founded multiple startups and helps organisations navigate the evolving landscape of online threats and secure digital transformation. As a creator and communicator, Mateusz builds communities around technology through his popular YouTube channel and educational platform, where he explains complex cybersecurity and tech topics in a clear and engaging way.',
 		imageUrl: MateuszChrobok,
 		social: {
@@ -84,7 +84,7 @@ const speakers: Speaker[] = [
 	},
 	{
 		name: 'Michał Michalczuk',
-		role: 'Senior Software Engineer and consultant',
+		role: 'Senior Software Engineer and consultant. IT trainer.',
 		company: 'Tektit Consulting',
 		talkTitle:
 			'Your AI Agent is just a while loop with an API call. Let me prove it.',
@@ -107,9 +107,7 @@ const speakers: Speaker[] = [
 			'- Why “multi‑agent systems” are often just nested loops with a buzzword sticker on it\n' +
 			'\n' +
 			'You’ll walk away knowing what your agent is doing when no one is watching. No more black boxes.',
-		bio:
-			+'Senior Software Engineer and consultant at Tektit Consulting. IT trainer at Infoshare Academy. Previously' +
-			' worked on Jira Cloud and Atlassian Forge. He talks and records content on front-end and web development topics. Co-organizer of Meet.js Gdańsk meetup. One of the talking heads on “Śniadanie z Programowaniem” and “Z Archiwum IT” JustJoin.it',
+		bio: 'He talks and records content on front-end, node.js and web development topics. Co-organizer of meet.js Gdańsk meetup. One of the talking heads on “Śniadanie z Programowaniem” and other video formats by JustJoin.it',
 		imageUrl: MichalMichalczuk,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/michalczukm/',
