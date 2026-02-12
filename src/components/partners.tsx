@@ -1,6 +1,7 @@
+import AIDevsLogo from '@/assets/ai_devs_logo.svg';
+import MeetJSLogo from '@/assets/meetjs_logo_white_light.svg';
 import BRAVELogo from '@/assets/partners/BRAVE.png';
 import SGHLogo from '@/assets/partners/SGH.png';
-import AI_DevsLogo from '@/assets/partners/ai_devs.png';
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
@@ -13,15 +14,15 @@ import { Wrapper } from '@/components/wrapper.tsx';
 
 import type { Partner } from '@/types/partner.ts';
 
-const partners: Partner[] = [
+const organizers: Partner[] = [
 	{
-		name: 'SGH',
-		logoUrl: SGHLogo,
-		websiteUrl: 'https://www.sgh.waw.pl',
+		name: 'meet.js',
+		logoUrl: MeetJSLogo,
+		websiteUrl: 'https://meetjs.pl',
 	},
 	{
-		name: 'AI_devs',
-		logoUrl: AI_DevsLogo,
+		name: 'AI devs',
+		logoUrl: AIDevsLogo,
 		websiteUrl: 'https://aidevs.pl',
 	},
 	{
@@ -29,6 +30,15 @@ const partners: Partner[] = [
 		logoUrl: BRAVELogo,
 		websiteUrl: 'https://brave.courses',
 	},
+];
+
+const partners: Partner[] = [
+	{
+		name: 'SGH',
+		logoUrl: SGHLogo,
+		websiteUrl: 'https://www.sgh.waw.pl',
+	},
+
 	{
 		name: 'Socket.dev',
 		logoUrl: SocketDevLogo,
@@ -106,6 +116,7 @@ export const Partners = () => {
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
+				<PartnersLogos title="Organizers" partners={organizers} type="main" />
 				{mainSponsor.length !== 0 && (
 					<PartnersLogos
 						title="Main sponsor of 15th Anniversary"
