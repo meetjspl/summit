@@ -72,7 +72,7 @@ export const Debate = () => {
 			id="debate"
 			className="flex min-h-screen items-center bg-black py-12 text-white"
 		>
-			<Wrapper className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
+			<Wrapper className="flex flex-col gap-12 lg:flex-row-reverse lg:items-center lg:gap-16">
 				<div className="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left">
 					<h2 className="mb-4 text-5xl font-semibold">Debate</h2>
 					<h3 className="mb-8 text-2xl font-medium text-meetjs-green md:text-3xl">
@@ -80,16 +80,30 @@ export const Debate = () => {
 					</h3>
 					<div className="space-y-4 text-lg text-white-2">
 						<p>
-							A panel discussion with experts on AI ranging from academics to
-							hackers, about the future of programming and agents.
+							A panel discussion with{' '}
+							<span className="font-semibold text-white">
+								experts on AI ranging from academics to hackers
+							</span>
+							, about the{' '}
+							<span className="font-semibold text-white">
+								future of programming and agents
+							</span>
+							.
 						</p>
 						<p>
 							A unique conversation that doesn’t start from the basics of what a
-							token is to reach more advanced ideas faster.
+							token is to{' '}
+							<span className="font-semibold text-white">
+								reach more advanced ideas faster
+							</span>
+							.
 						</p>
 						<p>
-							With follow-up questions sourced from the audience - you get to
-							suggest and upvote the questions.
+							With follow-up questions sourced from the audience - you get to{' '}
+							<span className="font-semibold text-white">
+								suggest and upvote the questions
+							</span>
+							.
 						</p>
 					</div>
 				</div>
