@@ -8,7 +8,8 @@ import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
 import SlidoLogo from '@/assets/partners/slido.svg';
-import WindsurfLogo from '@/assets/partners/windsurf.svg';
+import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
+import HardparseLogo from '@/assets/partners/hello/hardparse.svg';
 import { PartnersLogos } from '@/components/partners-logos.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
@@ -97,6 +98,12 @@ const partners: Partner[] = [
 		name: 'plabny',
 		logoUrl: PlanbyLogo,
 		websiteUrl: 'https://planby.app/',
+		type: 'hello',
+	},
+	{
+		name: 'Hardparse',
+		logoUrl: HardparseLogo,
+		websiteUrl: 'https://hardparse.com',
 		type: 'hello',
 	},
 	{
