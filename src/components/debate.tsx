@@ -1,3 +1,5 @@
+import BartoszPampuch from '@/assets/speakers/bartosz-pampuch.jpeg';
+import MarcinCzarkowski from '@/assets/speakers/marcin-czarkowski.jpeg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import ZbyszekTenerowicz from '@/assets/speakers/zbyszek-tenerowicz.jpg';
 import { SpeakerCard } from '@/components/speaker-card.tsx';
@@ -12,6 +14,9 @@ const host: Speaker = {
 	talkTitle: '',
 	bio: 'Host of the panel discussion.',
 	imageUrl: ZbyszekTenerowicz,
+	social: {
+		linkedin: 'https://www.linkedin.com/in/zbigniew-tenerowicz-288175165/',
+	},
 };
 
 const panelists: Speaker[] = [
@@ -21,7 +26,10 @@ const panelists: Speaker[] = [
 		company: '',
 		talkTitle: '',
 		bio: '',
-		imageUrl: '',
+		imageUrl: BartoszPampuch,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/bartoszpampuch/',
+		},
 	},
 	{
 		name: 'Mateusz Chrobok',
@@ -43,7 +51,10 @@ const panelists: Speaker[] = [
 		company: '',
 		talkTitle: '',
 		bio: '',
-		imageUrl: '',
+		imageUrl: MarcinCzarkowski,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/mkczarkowski/',
+		},
 	},
 	{
 		name: 'TBA',
