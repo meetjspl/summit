@@ -5,7 +5,7 @@ import type { Partner } from '@/types/partner.ts';
 interface PartnersLogosProps {
 	title: string;
 	partners: Partner[];
-	type?: Partner['type'];
+	type?: Partner['type'] | 'organizers';
 }
 
 export const PartnersLogos = ({
@@ -16,13 +16,15 @@ export const PartnersLogos = ({
 	const logoSizeClass =
 		type === 'main'
 			? 'w-48 md:w-96'
-			: type === 'gold'
-				? 'w-40 md:w-72'
-				: type === 'silver'
-					? 'w-32 md:w-60'
-					: type === 'hello'
-						? 'w-28 md:w-48'
-						: 'w-22 md:w-40';
+			: type === 'organizers'
+				? 'w-32 md:w-64'
+				: type === 'gold'
+					? 'w-40 md:w-72'
+					: type === 'silver'
+						? 'w-32 md:w-60'
+						: type === 'hello'
+							? 'w-28 md:w-48'
+							: 'w-22 md:w-40';
 
 	const handlePartnerClick = (partnerName: string, url: string) => {
 		gtag.trackOutboundLink(url, `Partner: ${partnerName}`);

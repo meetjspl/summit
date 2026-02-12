@@ -8,7 +8,8 @@ import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
 import SlidoLogo from '@/assets/partners/slido.svg';
-import WindsurfLogo from '@/assets/partners/windsurf.svg';
+import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
+import HardparseLogo from '@/assets/partners/hello/hardparse.svg';
 import { PartnersLogos } from '@/components/partners-logos.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
@@ -100,6 +101,12 @@ const partners: Partner[] = [
 		type: 'hello',
 	},
 	{
+		name: 'Hardparse',
+		logoUrl: HardparseLogo,
+		websiteUrl: 'https://hardparse.com',
+		type: 'hello',
+	},
+	{
 		name: 'Gamedev.js',
 		logoUrl: GamedevjsLogo,
 		websiteUrl: 'https://gamedevjs.com',
@@ -116,7 +123,7 @@ export const Partners = () => {
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
-				<PartnersLogos title="Organizers" partners={organizers} type="main" />
+				<PartnersLogos title="Organizers" partners={organizers} type="organizers" />
 				{mainSponsor.length !== 0 && (
 					<PartnersLogos
 						title="Main sponsor of 15th Anniversary"
