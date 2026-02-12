@@ -15,6 +15,7 @@ const host: Speaker = {
 	bio: 'Host of the panel discussion.',
 	imageUrl: ZbyszekTenerowicz,
 	social: {
+		bluesky: 'https://bsky.app/profile/naugtur.pl',
 		linkedin: 'https://www.linkedin.com/in/zbigniew-tenerowicz-288175165/',
 	},
 };
@@ -39,7 +40,7 @@ const panelists: Speaker[] = [
 		bio: '',
 		imageUrl: MateuszChrobok,
 		social: {
-			twitter: 'https://x.com/MateuszChrobok',
+			x: 'https://x.com/MateuszChrobok',
 			linkedin: 'https://www.linkedin.com/in/mateuszchrobok/',
 			instagram: 'https://www.instagram.com/mateuszemsi/',
 			youtube: 'https://www.youtube.com/@MateuszChrobok',
@@ -76,7 +77,7 @@ const panelists: Speaker[] = [
 
 export const Debate = () => {
 	// Combine host and panelists for the grid, but keep host first
-	const participants = [host, ...panelists];
+	const participants = [...panelists, host];
 
 	return (
 		<section
@@ -122,7 +123,7 @@ export const Debate = () => {
 				<div className="w-full flex-[1.5]">
 					<div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6">
 						{participants.map((participant, index) => (
-							<SpeakerCard {...participant} key={index} />
+							<SpeakerCard {...participant} variant="debate" key={index} />
 						))}
 					</div>
 				</div>
