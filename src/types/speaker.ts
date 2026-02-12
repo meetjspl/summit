@@ -7,10 +7,11 @@ export interface Speaker {
 	bio: string;
 	imageUrl?: string;
 	social?: {
-		twitter?: string;
+		x?: string;
 		linkedin?: string;
 		github?: string;
 		instagram?: string;
 		youtube?: string;
+		bluesky?: string;
 	};
 }
