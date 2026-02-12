@@ -19,10 +19,12 @@ export const Navigation = () => {
 	}, []);
 
 	const navItems = [
-		{ label: 'CFP', id: 'cfp' },
-		{ label: 'Sponsor', id: 'partners' },
+		{ label: 'Tickets', id: 'tickets' },
+		{ label: 'Partners', id: 'partners' },
 		{ label: 'Speakers', id: 'speakers' },
+		{ label: 'Debate', id: 'debate' },
 		{ label: 'Venue', id: 'venue' },
+		{ label: 'Videos', id: 'videos' },
 		{ label: 'Contact', id: 'contact' },
 	];
 
@@ -68,13 +70,6 @@ export const Navigation = () => {
 								{item.label}
 							</a>
 						))}
-						<a
-							href="#tickets"
-							onClick={() => handleNavClick('Get your ticket')}
-							className="rounded-lg bg-meetjs-green px-6 py-2.5 text-sm font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
-						>
-							Get your ticket
-						</a>
 					</div>
 
 					<button
@@ -114,13 +109,6 @@ export const Navigation = () => {
 									{item.label}
 								</a>
 							))}
-							<a
-								href="#tickets"
-								onClick={() => handleNavClick('Get your ticket')}
-								className="mt-2 rounded-lg bg-meetjs-green px-6 py-3 text-center text-base font-bold text-black transition-all hover:bg-meetjs-green/90"
-							>
-								Get your ticket
-							</a>
 						</div>
 					</div>
 				)}
@@ -128,4 +116,3 @@ export const Navigation = () => {
 		</nav>
 	);
 };
-

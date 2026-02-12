@@ -3,13 +3,15 @@ export interface Speaker {
 	role: string;
 	company: string | { name: string; url: string };
 	talkTitle: string;
+	talkDescription?: string;
 	bio: string;
 	imageUrl?: string;
 	social?: {
-		twitter?: string;
+		x?: string;
 		linkedin?: string;
 		github?: string;
 		instagram?: string;
 		youtube?: string;
+		bluesky?: string;
 	};
 }
