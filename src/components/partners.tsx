@@ -123,7 +123,7 @@ export const Partners = () => {
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
-				<PartnersLogos title="Organizers" partners={organizers} type="main" />
+				<PartnersLogos title="Organizers" partners={organizers} type="organizers" />
 				{mainSponsor.length !== 0 && (
 					<PartnersLogos
 						title="Main sponsor of 15th Anniversary"
