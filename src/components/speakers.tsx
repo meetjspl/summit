@@ -23,7 +23,7 @@ const speakers: Speaker[] = [
 	// 		'He actively shares knowledge about automation, cybersecurity, experimental business models, and modern web tools.',
 	// 	imageUrl: JakubMrugalski,
 	// 	social: {
-	// 		twitter: 'https://x.com/uwteam',
+	// 		x: 'https://x.com/uwteam',
 	// 		linkedin: 'https://www.linkedin.com/in/unknow/',
 	// 		github: 'https://github.com/unkn0w',
 	// 		instagram: 'https://www.instagram.com/uwteam_org/',
@@ -38,7 +38,7 @@ const speakers: Speaker[] = [
 		bio: 'Mateusz Chrobok is a cybersecurity expert, startup consultant, and tech educator with deep experience in digital security, innovation, and AI. He’s co-founded multiple startups and helps organisations navigate the evolving landscape of online threats and secure digital transformation. As a creator and communicator, Mateusz builds communities around technology through his popular YouTube channel and educational platform, where he explains complex cybersecurity and tech topics in a clear and engaging way.',
 		imageUrl: MateuszChrobok,
 		social: {
-			twitter: 'https://x.com/MateuszChrobok',
+			x: 'https://x.com/MateuszChrobok',
 			linkedin: 'https://www.linkedin.com/in/mateuszchrobok/',
 			instagram: 'https://www.instagram.com/mateuszemsi/',
 			youtube: 'https://www.youtube.com/@MateuszChrobok',

@@ -22,6 +22,7 @@ export const Navigation = () => {
 		{ label: 'Tickets', id: 'tickets' },
 		{ label: 'Partners', id: 'partners' },
 		{ label: 'Speakers', id: 'speakers' },
+		{ label: 'Debate', id: 'debate' },
 		{ label: 'Venue', id: 'venue' },
 		{ label: 'Videos', id: 'videos' },
 		{ label: 'Contact', id: 'contact' },
