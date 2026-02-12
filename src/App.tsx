@@ -1,5 +1,6 @@
 import { BecomeASponsor } from '@/components/become-a-sponsor.tsx';
 import { Charity } from '@/components/charity.tsx';
+import { Debate } from '@/components/debate.tsx';
 import { LoveLetter } from '@/components/love-letter.tsx';
 import { Partners } from '@/components/partners.tsx';
 import { PhotosSlider } from '@/components/photos-slider.tsx';
@@ -25,6 +26,7 @@ export const App = () => {
 			<Tickets />
 			<Partners />
 			<Speakers />
+			<Debate />
 			<Venue />
 			<PhotosSlider />
 			<VideoPlaylists />

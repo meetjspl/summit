@@ -60,6 +60,14 @@ export const Footer = () => {
 								</li>
 								<li>
 									<a
+										href="#debate"
+										className="text-white-2 transition-colors hover:text-meetjs-green"
+									>
+										Debate
+									</a>
+								</li>
+								<li>
+									<a
 										href="#venue"
 										className="text-white-2 transition-colors hover:text-meetjs-green"
 									>

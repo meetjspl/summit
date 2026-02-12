@@ -1,3 +1,4 @@
+import SpeakerPlaceholder from '@/assets/speakers/speaker-placeholder.png';
 import { Popover } from '@/components/popover.tsx';
 
 import type { Speaker } from '@/types/speaker.ts';
@@ -16,7 +17,7 @@ export const SpeakerCard = ({
 		<div className="group flex flex-col overflow-hidden rounded-2xl bg-gray/20 transition-all hover:bg-gray/30 hover:shadow-xl">
 			<div className="aspect-square overflow-hidden bg-gray">
 				<img
-					src={imageUrl || '/speaker-placeholder.png'}
+					src={imageUrl || SpeakerPlaceholder}
 					alt={name}
 					className="h-full w-full object-cover transition-transform group-hover:scale-105"
 				/>
