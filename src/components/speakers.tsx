@@ -3,12 +3,14 @@ import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
 import MichalGolebiewskiOwczarek from '@/assets/speakers/michał-golebiowski-owczarek.jpeg';
+import MichalHadrysiak from '@/assets/speakers/michał-hadrysiak.jpg';
+import PiotrKacala from '@/assets/speakers/piotr-kacala.png';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
-import { SpeakerCard } from '@/components/speaker-card.tsx';
-import { Wrapper } from '@/components/wrapper.tsx';
+import {SpeakerCard} from '@/components/speaker-card.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 
-import type { Speaker } from '@/types/speaker.ts';
+import type {Speaker} from '@/types/speaker.ts';
 
 const speakers: Speaker[] = [
 	// {
@@ -154,6 +156,38 @@ const speakers: Speaker[] = [
 		imageUrl: MichalGolebiewskiOwczarek,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/mzgol/',
+		},
+	},
+	{
+		name: 'Michał Hadrysiak',
+		role: 'Senior Full Stack Engineer',
+		company: 'IndieBI',
+		talkTitle: '(AuDH)DX - How to cope with attention deficit as developer.',
+		talkDescription:
+			"Productivity of neurodivergent people is weird: you have a mix of hyperfocus moments when you are almost unstoppable with executive paralysis moments when you'll avoid even a simple task. I've been in IT for over 10 years. During this time, I was looking for tools and strategies that would help me to reduce the effort of starting things and maximize the chance of finishing them without distraction. This talk will be a summary of my thoughts about Developer Experience from neurodivergent perspective.",
+		bio: 'Curious full-stack developer with AuDHD. Focused not only about code but whole Software Development Life Cycle. Big fan of simple solutions that "just work". Member of Mensa.',
+		imageUrl: MichalHadrysiak,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/michal-hadrysiak',
+		},
+	},
+	{
+		name: 'Piotr Kacała',
+		role: 'Co-founder ',
+		company: {
+			name: 'AI Product Heroes',
+			url: 'https://www.aiproductheroes.pl/',
+		},
+		talkTitle:
+			'Engineer → Product Engineer → Product Builder Why? Why now? How?',
+		talkDescription: '',
+		bio:
+			'Piotr Kacała is a Chief Technology & Product Officer with over 20 years of experience building' +
+			' high-performing teams and globally recognized digital products. Throughout his career, Piotr has contributed to the growth of companies such as Displate (scaling from startup to global brand), CD Projekt (including flagship titles like Cyberpunk 2077 and The Witcher), and GOG.com.' +
+			'In addition, he co-founded AI Products Heroes, a program and community dedicated to helping product leaders successfully design, build, and scale AI-powered products. Through this initiative, he supports teams in navigating the unique strategic, technical, and organizational challenges that come with AI.',
+		imageUrl: PiotrKacala,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/piotr-kacala/',
 		},
 	},
 ];
