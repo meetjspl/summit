@@ -1,4 +1,5 @@
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
+import ZbyszekTenerowicz from '@/assets/speakers/zbyszek-tenerowicz.jpg';
 import { SpeakerCard } from '@/components/speaker-card.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
@@ -10,7 +11,7 @@ const host: Speaker = {
 	company: '',
 	talkTitle: '',
 	bio: 'Host of the panel discussion.',
-	imageUrl: '',
+	imageUrl: ZbyszekTenerowicz,
 };
 
 const panelists: Speaker[] = [
