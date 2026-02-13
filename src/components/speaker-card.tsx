@@ -81,6 +81,8 @@ export const SpeakerCard = ({
 						{social.bluesky && (
 							<a
 								href={social.bluesky}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s Bluesky`}
 							>
@@ -90,6 +92,8 @@ export const SpeakerCard = ({
 						{social.x && (
 							<a
 								href={social.x}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s X`}
 							>
@@ -99,6 +103,8 @@ export const SpeakerCard = ({
 						{social.linkedin && (
 							<a
 								href={social.linkedin}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s LinkedIn`}
 							>
@@ -108,6 +114,8 @@ export const SpeakerCard = ({
 						{social.github && (
 							<a
 								href={social.github}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s GitHub`}
 							>
@@ -117,6 +125,8 @@ export const SpeakerCard = ({
 						{social.instagram && (
 							<a
 								href={social.instagram}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s Instagram`}
 							>
@@ -126,6 +136,8 @@ export const SpeakerCard = ({
 						{social.youtube && (
 							<a
 								href={social.youtube}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s YouTube`}
 							>
