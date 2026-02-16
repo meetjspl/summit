@@ -1,7 +1,7 @@
 import {toPng} from 'html-to-image';
 import {useRef} from 'react';
 
-import Frame from '@/assets/test.svg?react';
+import Frame from '@/assets/frame.png';
 import {DndImage} from '@/components/dnd-image.tsx';
 import {Wrapper} from '@/components/wrapper.tsx';
 
@@ -29,7 +29,11 @@ export const Avatar = () => {
 				<div className="mx-auto w-full md:w-1/3">
 					<div className="relative" ref={ref}>
 						<DndImage />
-						<Frame className="pointer-events-none absolute top-0 left-0 h-full w-full" />
+						<img
+							src={Frame}
+							className="pointer-events-none absolute top-0 left-0 h-full w-full"
+						/>
+						{/*<Frame className="pointer-events-none absolute top-0 left-0 h-full w-full" />*/}
 					</div>
 					<button className="bg-white" onClick={exportPng}>
 						Pobierz grafikę

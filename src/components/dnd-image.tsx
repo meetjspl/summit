@@ -1,5 +1,5 @@
-import { useCallback, useState } from 'react';
-import { useDropzone } from 'react-dropzone';
+import {useCallback, useState} from 'react';
+import {useDropzone} from 'react-dropzone';
 
 type Props = { onChange?: (file: File) => void };
 
@@ -25,7 +25,7 @@ export const DndImage = ({ onChange }: Props) => {
 	return (
 		<div
 			{...getRootProps()}
-			className={`flex aspect-square w-full max-w-sm cursor-pointer items-center justify-center rounded-xl border-2 border-dashed transition ${isDragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'}`}
+			className={`flex aspect-square w-full max-w-sm cursor-pointer items-center justify-center rounded-xl transition ${isDragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'}`}
 		>
 			<input {...getInputProps()} />
 			{preview ? (
