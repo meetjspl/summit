@@ -41,45 +41,45 @@ export const ProgramMobileLayout = ({
 				{title}
 			</h3>
 
-		<div className="relative w-full flex-1 overflow-hidden">
-			{!showDescription && description && (
-				<>
-					<p
-						className={`m-0 overflow-y-auto pr-1.5 leading-[1.45] wrap-break-word whitespace-normal text-white/72 ${isMinWidth ? 'text-[15px]' : 'text-sm'}`}
-						style={
-							isLargeSlot
-								? {
-										// Large slots: show full description
-									}
-								: isMediumSlot
+			<div className="relative w-full flex-1 overflow-hidden">
+				{!showDescription && description && (
+					<>
+						<p
+							className={`m-0 overflow-y-auto pr-1.5 leading-[1.45] wrap-break-word whitespace-normal text-white/72 ${isMinWidth ? 'text-[15px]' : 'text-sm'}`}
+							style={
+								isLargeSlot
 									? {
-											// Medium slots: show 5 lines
-											maxHeight: '7.25em',
-											lineHeight: '1.45',
-											display: '-webkit-box',
-											WebkitLineClamp: 3,
-											WebkitBoxOrient: 'vertical',
-											overflow: 'hidden',
+											// Large slots: show full description
 										}
-									: {
-											// Small slots: show 3 lines
-											maxHeight: '4.5em',
-											lineHeight: '1.45',
-											display: '-webkit-box',
-											WebkitLineClamp: 2,
-											WebkitBoxOrient: 'vertical',
-											overflow: 'hidden',
-										}
-						}
-					>
-						{description}
-					</p>
-				</>
-			)}
-			<div className="pointer-events-none absolute right-0 bottom-0 text-[13px] font-bold text-meetjs-green/95">
-				See more
+									: isMediumSlot
+										? {
+												// Medium slots: show 5 lines
+												maxHeight: '7.25em',
+												lineHeight: '1.45',
+												display: '-webkit-box',
+												WebkitLineClamp: 3,
+												WebkitBoxOrient: 'vertical',
+												overflow: 'hidden',
+											}
+										: {
+												// Small slots: show 3 lines
+												maxHeight: '4.5em',
+												lineHeight: '1.45',
+												display: '-webkit-box',
+												WebkitLineClamp: 2,
+												WebkitBoxOrient: 'vertical',
+												overflow: 'hidden',
+											}
+							}
+						>
+							{description}
+						</p>
+					</>
+				)}
+				<div className="pointer-events-none absolute right-0 bottom-0 text-[13px] font-bold text-meetjs-green/95 opacity-70">
+					See more
+				</div>
 			</div>
-		</div>
 		</div>
 	);
 };

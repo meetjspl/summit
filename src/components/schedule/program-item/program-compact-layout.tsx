@@ -32,7 +32,7 @@ export const ProgramCompactLayout = ({
 				<p className="m-0 shrink-0 font-mono text-[13px] font-bold tracking-[0.02em] text-meetjs-green/95">
 					{sinceTime} - {tillTime}
 				</p>
-				<p className="m-0 shrink-0 text-right text-[13px] font-bold text-meetjs-green/95">
+				<p className="m-0 shrink-0 text-right text-[13px] font-bold text-meetjs-green/95 opacity-70">
 					See More
 				</p>
 			</div>
