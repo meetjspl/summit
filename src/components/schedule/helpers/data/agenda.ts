@@ -233,7 +233,7 @@ export const AGENDA_CONF = [
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d2f',
 		title: 'Panel discussion',
 		description:
-			'A panel discussion with experts on AI ranging from academics to hackers, about the future of programming and agents.',
+			'A panel discussion with experts on AI ranging from academics to hackers, about the future of programming and agents and the human in the loop.',
 		since: '2026-03-04T16:30:00',
 		till: '2026-03-04T17:50:00',
 		image:
