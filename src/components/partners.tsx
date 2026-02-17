@@ -1,5 +1,6 @@
 import SGHLogo from '@/assets/partners/SGH.png';
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
+import ApolloLogo from '@/assets/partners/hello/Apollo_Core_White.png';
 import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import HardparseLogo from '@/assets/partners/hello/hardparse.svg';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
@@ -83,6 +84,12 @@ const partners: Partner[] = [
 		name: 'Hardparse',
 		logoUrl: HardparseLogo,
 		websiteUrl: 'https://hardparse.com',
+		type: 'hello',
+	},
+	{
+		name: 'Apollo',
+		logoUrl: ApolloLogo,
+		websiteUrl: 'https://www.apollo.io/',
 		type: 'hello',
 	},
 	{
