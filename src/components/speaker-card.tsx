@@ -45,20 +45,28 @@ export const SpeakerCard = ({
 				</h3>
 				<p className={`text-meetjs-green ${isDebate ? 'text-xs' : 'text-sm'}`}>
 					{role}{' '}
-					{typeof company === 'string' ? (
-						company !== '' ? (
-							`@ ${company}`
-						) : (
-							''
-						)
-					) : (
-						<>
-							<span>@</span>{' '}
-							<a href={company.url} className="underline underline-offset-3">
-								{company.name}
-							</a>
-						</>
-					)}
+					{typeof company === 'string'
+						? company !== '' && `@ ${company}`
+						: company.length > 0 && (
+								<>
+									<span>@</span>{' '}
+									{company.map((comp, index) => (
+										<span key={index}>
+											{comp.url ? (
+												<a
+													href={comp.url}
+													className="underline underline-offset-3"
+												>
+													{comp.name}
+												</a>
+											) : (
+												comp.name
+											)}
+											{index < company.length - 1 && ', '}
+										</span>
+									))}
+								</>
+							)}
 				</p>
 				{talkDescription && (
 					<Popover trigger={talkTitle} content={talkDescription} />
@@ -81,6 +89,8 @@ export const SpeakerCard = ({
 						{social.bluesky && (
 							<a
 								href={social.bluesky}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s Bluesky`}
 							>
@@ -90,6 +100,8 @@ export const SpeakerCard = ({
 						{social.x && (
 							<a
 								href={social.x}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s X`}
 							>
@@ -99,6 +111,8 @@ export const SpeakerCard = ({
 						{social.linkedin && (
 							<a
 								href={social.linkedin}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s LinkedIn`}
 							>
@@ -108,6 +122,8 @@ export const SpeakerCard = ({
 						{social.github && (
 							<a
 								href={social.github}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s GitHub`}
 							>
@@ -117,6 +133,8 @@ export const SpeakerCard = ({
 						{social.instagram && (
 							<a
 								href={social.instagram}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s Instagram`}
 							>
@@ -126,6 +144,8 @@ export const SpeakerCard = ({
 						{social.youtube && (
 							<a
 								href={social.youtube}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="text-white-2 transition-colors hover:text-meetjs-blue"
 								aria-label={`${name}'s YouTube`}
 							>
