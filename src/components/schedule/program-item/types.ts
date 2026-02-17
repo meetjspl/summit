@@ -1,4 +1,5 @@
 export interface ProgramLayoutCommonProps {
+	showDescription?: boolean;
 	image?: string;
 	title: string;
 	speaker?: string;
@@ -10,16 +11,18 @@ export interface ProgramLayoutCommonProps {
 	isMinWidth: boolean;
 	isMobile: boolean;
 	isSmallSlot: boolean;
-	isCompactSlot: boolean;
+	showDescriptionSlot: boolean;
 	linkedinUrl?: string;
 	githubUrl?: string;
 }
 
 export interface ProgramDesktopLayoutProps extends ProgramLayoutCommonProps {
+	showDescription?: boolean;
 	stackPadding: string;
 }
 
 export interface ProgramCompactLayoutProps {
+	showDescription?: boolean;
 	title: string;
 	description?: string;
 	sinceTime: string;

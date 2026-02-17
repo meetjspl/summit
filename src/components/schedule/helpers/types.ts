@@ -19,4 +19,7 @@ export type ProgramData = {
 	githubUrl?: string;
 };
 
-export type ProgramProps = UseProgramInput & { isMobile?: boolean };
+export type ProgramProps = UseProgramInput & {
+	isMobile?: boolean;
+	onProgramClick?: (programData: ProgramData) => void;
+};
