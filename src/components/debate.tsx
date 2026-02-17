@@ -1,11 +1,12 @@
 import BartoszPampuch from '@/assets/speakers/bartosz-pampuch.jpeg';
 import MarcinCzarkowski from '@/assets/speakers/marcin-czarkowski.jpeg';
+import MariuszRafalo from '@/assets/speakers/mariusz-rafalo.jpg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import ZbyszekTenerowicz from '@/assets/speakers/zbyszek-tenerowicz.jpg';
-import { SpeakerCard } from '@/components/speaker-card.tsx';
-import { Wrapper } from '@/components/wrapper.tsx';
+import {SpeakerCard} from '@/components/speaker-card.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 
-import type { Speaker } from '@/types/speaker.ts';
+import type {Speaker} from '@/types/speaker.ts';
 
 const host: Speaker = {
 	name: 'Zbyszek Tenerowicz',
@@ -67,12 +68,20 @@ const panelists: Speaker[] = [
 		},
 	},
 	{
-		name: 'TBA',
+		name: 'dr Mariusz Rafało',
 		role: 'Panelist',
-		company: '',
+		company: [
+			{
+				name: 'SGH Warsaw School of Economics',
+				url: 'https://www.sgh.waw.pl/en',
+			},
+		],
 		talkTitle: '',
 		bio: '',
-		imageUrl: '',
+		imageUrl: MariuszRafalo,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/mrafalo/',
+		},
 	},
 	{
 		name: 'TBA',
