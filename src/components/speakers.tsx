@@ -5,6 +5,8 @@ import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
 import MichalGolebiewskiOwczarek from '@/assets/speakers/michał-golebiowski-owczarek.jpeg';
 import MichalHadrysiak from '@/assets/speakers/michał-hadrysiak.jpg';
 import PiotrKacala from '@/assets/speakers/piotr-kacala.png';
+import PrzemekSuchodolski from '@/assets/speakers/przemek-suchodolski.jpg';
+import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
 import {SpeakerCard} from '@/components/speaker-card.tsx';
@@ -188,6 +190,53 @@ const speakers: Speaker[] = [
 			' high-performing teams and globally recognized digital products. Throughout his career, Piotr has contributed to the growth of companies such as Displate (scaling from startup to global brand), CD Projekt (including flagship titles like Cyberpunk 2077 and The Witcher), and GOG.com.' +
 			'In addition, he co-founded AI Products Heroes, a program and community dedicated to helping product leaders successfully design, build, and scale AI-powered products. Through this initiative, he supports teams in navigating the unique strategic, technical, and organizational challenges that come with AI.',
 		imageUrl: PiotrKacala,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/piotr-kacala/',
+		},
+	},
+	{
+		name: 'Przemek Suchodolski',
+		role: 'Senior Software Engineer',
+		company: [
+			{
+				name: 'Apollo',
+				url: 'https://www.aiproductheroes.pl/',
+			},
+		],
+		talkTitle: 'Did AI really make us faster?',
+		talkDescription:
+			'Everyone says AI makes developers more productive. Someone even claims that we can become 10x devs ;) So we decided to prove it.\n' +
+			'\n' +
+			'At Apollo.io, we introduced AI tooling to 250+ engineers and quickly realized that measuring "productivity" is harder than shipping the tools themselves. Metrics lied. Assumptions broke. Some teams sped up (spoiler alert: frontend-oriented :)), others didn’t. And the biggest insights weren’t where we expected them.\n' +
+			'\n' +
+			'This talk is the story of that experiment:\n' +
+			'\n' +
+			'- Why our first productivity metrics failed\n' +
+			'- What actually changed in developers’ daily work\n' +
+			'- Where AI helped less than the hype suggested\n' +
+			'- How we eventually learned to measure impact without fooling ourselves\n' +
+			'\n' +
+			'This isn’t a success story or an AI sales pitch. It’s a behind-the-scenes look at a real engineering organization trying to answer a deceptively simple question: Did AI really make us faster?',
+		bio: 'Senior Software Engineer with 10+ year of experience in building JavaScript applications.',
+		imageUrl: PrzemekSuchodolski,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/przemyslaw-suchodolski/',
+		},
+	},
+	{
+		name: 'Radek Wojtysiak',
+		role: 'Co-founder ',
+		company: [
+			{
+				name: 'Allegro',
+				url: 'https://www.aiproductheroes.pl/',
+			},
+		],
+		talkTitle: 'The end of the "Hand-crafted UI" era? Case study',
+		talkDescription:
+			'Skeptical about AI-generated websites? Until recently, so was I—having spent over a decade building front-end components by hand. But I recently conducted an experiment: I created the "Developer\'s Christmas Career Calendar" landing page entirely using an AI agent. The results are incredible, and I’d love to share the exact details of this project with you.',
+		bio: 'A software engineer with over 10 years of commercial front-end experience. JavaScript trainer, speaker, and creator of the "Kariera Developera" (Developer\'s Career) newsletter. He is also the organizer of the Developer\'s Christmas Career Calendar.',
+		imageUrl: RadekWojtysiak,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/piotr-kacala/',
 		},
