@@ -144,7 +144,7 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1c',
 		title: 'lightning talk 1',
-		showDescription: true,
+		showDescription: false,
 		description:
 			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
 		since: '2026-03-04T13:40:00',
@@ -157,7 +157,7 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1d',
 		title: 'lightning talk 2',
-		showDescription: true,
+		showDescription: false,
 		description:
 			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
 		since: '2026-03-04T13:50:00',
@@ -170,7 +170,7 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1e',
 		title: 'lightning talk 3',
-		showDescription: true,
+		showDescription: false,
 		description:
 			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
 		since: '2026-03-04T14:00:00',
@@ -254,7 +254,7 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d3f',
 		title: 'Good bye',
-		showDescription: true,
+		showDescription: false,
 		speaker: 'Zbigniew Tenerowicz',
 		since: '2026-03-04T17:50:00',
 		till: '2026-03-04T18:00:00',

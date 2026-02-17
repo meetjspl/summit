@@ -14,6 +14,7 @@ export interface ProgramLayoutCommonProps {
 	showDescriptionSlot: boolean;
 	linkedinUrl?: string;
 	githubUrl?: string;
+	slotHeight: number | null;
 }
 
 export interface ProgramDesktopLayoutProps extends ProgramLayoutCommonProps {
@@ -28,4 +29,5 @@ export interface ProgramCompactLayoutProps {
 	sinceTime: string;
 	tillTime: string;
 	isMinWidth: boolean;
+	slotHeight: number | null;
 }

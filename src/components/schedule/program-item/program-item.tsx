@@ -78,6 +78,7 @@ export const Program = (props: ProgramProps) => {
 		showDescriptionSlot,
 		linkedinUrl,
 		githubUrl,
+		slotHeight,
 	};
 
 	const renderLayout = () => {
@@ -90,6 +91,7 @@ export const Program = (props: ProgramProps) => {
 					sinceTime={sinceTime}
 					tillTime={tillTime}
 					isMinWidth={isMinWidth}
+					slotHeight={slotHeight}
 				/>
 			);
 		}

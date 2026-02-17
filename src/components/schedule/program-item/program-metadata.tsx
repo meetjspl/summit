@@ -10,7 +10,7 @@ interface ProgramMetadataProps {
 	linkedinUrl?: string;
 	githubUrl?: string;
 }
-
+const SHOW_SOCIAL_ICONS = false;
 export const ProgramMetadata = ({
 	sinceTime,
 	tillTime,
@@ -22,7 +22,7 @@ export const ProgramMetadata = ({
 	githubUrl,
 }: ProgramMetadataProps) => {
 	return (
-		<div className="flex min-w-0 flex-wrap items-center justify-start gap-2.5">
+		<div className="flex min-w-0 flex-nowrap items-center justify-start gap-2">
 			<span className="inline-flex shrink-0 items-center rounded-full border border-meetjs-green bg-meetjs-green/[0.14] px-2.5 py-1.5 font-mono text-xs font-extrabold tracking-[0.06em] text-white/92">
 				{sinceTime} - {tillTime}
 			</span>
@@ -31,12 +31,15 @@ export const ProgramMetadata = ({
 					LIVE
 				</span>
 			)}
-			<SocialIcons
-				isMobile={isMobile}
-				isHidden={isSmallSlot || showDescriptionSlot}
-				linkedinUrl={linkedinUrl}
-				githubUrl={githubUrl}
-			/>
+
+			{SHOW_SOCIAL_ICONS && (
+				<SocialIcons
+					isMobile={isMobile}
+					isHidden={isSmallSlot || showDescriptionSlot}
+					linkedinUrl={linkedinUrl}
+					githubUrl={githubUrl}
+				/>
+			)}
 		</div>
 	);
 };

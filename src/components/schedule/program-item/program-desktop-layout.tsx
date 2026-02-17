@@ -5,7 +5,7 @@ import type { ProgramDesktopLayoutProps } from './types';
 
 export const ProgramDesktopLayout = (props: ProgramDesktopLayoutProps) => {
 	const {
-		showDescription = false,
+		showDescription = true,
 		isVertical,
 		isMinWidth,
 		isMobile,
@@ -50,13 +50,21 @@ export const ProgramDesktopLayout = (props: ProgramDesktopLayoutProps) => {
 				</h3>
 				<h4>{speaker}</h4>
 
-				{!showDescription && description && (
-					<p
-						className={`m-0 flex-1 overflow-y-auto pr-1.5 leading-[1.45] wrap-break-word whitespace-normal text-white/72 ${isMinWidth ? 'text-[15px]' : 'text-sm'}`}
-					>
-						{description}
-					</p>
-				)}
+			{showDescription && description && (
+				<p
+					className={`m-0 pr-1.5 text-white/72 ${isMinWidth ? 'text-[15px]' : 'text-sm'}`}
+					style={{
+						display: '-webkit-box',
+						WebkitLineClamp: 3,
+						WebkitBoxOrient: 'vertical' as const,
+						overflow: 'hidden',
+						textOverflow: 'ellipsis',
+						lineHeight: '1.45',
+					}}
+				>
+					{description}
+				</p>
+			)}
 			</div>
 		</div>
 	);
