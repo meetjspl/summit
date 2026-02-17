@@ -31,7 +31,7 @@ const speakers: Speaker[] = [
 	{
 		name: 'Mateusz Chrobok',
 		role: 'Trainer / Co-Founder',
-		company: { name: 'AI_devs', url: 'https://www.aidevs.pl/' },
+		company: [{ name: 'AI_devs', url: 'https://www.aidevs.pl/' }],
 		talkTitle: 'When AI does whatever it wants. AI alignment.',
 		bio: 'Mateusz Chrobok is a cybersecurity expert, startup consultant, and tech educator with deep experience in digital security, innovation, and AI. He’s co-founded multiple startups and helps organisations navigate the evolving landscape of online threats and secure digital transformation. As a creator and communicator, Mateusz builds communities around technology through his popular YouTube channel and educational platform, where he explains complex cybersecurity and tech topics in a clear and engaging way.',
 		imageUrl: MateuszChrobok,

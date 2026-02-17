@@ -35,7 +35,7 @@ const panelists: Speaker[] = [
 	{
 		name: 'Mateusz Chrobok',
 		role: 'Panelist / Trainer / Co-Founder',
-		company: { name: 'AI_devs', url: 'https://www.aidevs.pl/' },
+		company: [{ name: 'AI_devs', url: 'https://www.aidevs.pl/' }],
 		talkTitle: '',
 		bio: '',
 		imageUrl: MateuszChrobok,
@@ -48,8 +48,17 @@ const panelists: Speaker[] = [
 	},
 	{
 		name: 'Marcin Czarkowski',
-		role: 'Panelist',
-		company: '',
+		role: 'Panelist / Co-Founder',
+		company: [
+			{
+				name: 'Przeprogramowani',
+				url: 'https://przeprogramowani.pl/',
+			},
+			{
+				name: '10xDevs',
+				url: 'https://www.10xdevs.pl/',
+			},
+		],
 		talkTitle: '',
 		bio: '',
 		imageUrl: MarcinCzarkowski,
