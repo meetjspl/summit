@@ -10,10 +10,10 @@ import PrzemekSuchodolski from '@/assets/speakers/przemek-suchodolski.jpg';
 import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
-import {SpeakerCard} from '@/components/speaker-card.tsx';
-import {Wrapper} from '@/components/wrapper.tsx';
+import { SpeakerCard } from '@/components/speaker-card.tsx';
+import { Wrapper } from '@/components/wrapper.tsx';
 
-import type {Speaker} from '@/types/speaker.ts';
+import type { Speaker } from '@/types/speaker.ts';
 
 const speakers: Speaker[] = [
 	// {
