@@ -3,7 +3,7 @@ import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
 import PiotrKacala from '@/assets/speakers/piotr-kacala.png';
-import PrzemyslawSuchodolski from '@/assets/speakers/przemyslaw-suchodolski.jpg';
+import PrzemyslawSuchodolski from '@/assets/speakers/przemek-suchodolski.jpg';
 import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
