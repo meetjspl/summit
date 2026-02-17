@@ -17,6 +17,10 @@ export type ProgramData = {
 	description?: string;
 	linkedinUrl?: string;
 	githubUrl?: string;
+	showDescription?: boolean;
 };
 
-export type ProgramProps = UseProgramInput & { isMobile?: boolean };
+export type ProgramProps = UseProgramInput & {
+	isMobile?: boolean;
+	onProgramClick?: (programData: ProgramData) => void;
+};

@@ -9,10 +9,12 @@ export const AGENDA_CONF = [
 	{
 		id: '67a54ea8-40f1-4ed0-ada2-3c985b75b901',
 		title: 'Registration',
-		description: '',
+		description:
+			'Registration starts at 8:00 AM and ends at 9:30 AM on the first day of the summit. Please arrive on time to avoid missing the start of the event.',
 		since: '2026-03-04T08:00:00',
 		till: '2026-03-04T09:30:00',
-		image: '',
+		image:
+			'https://summit.meetjs.pl/2026/assets/meetjs-organizers-XM_zsAH4.webp',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: '',
 		githubUrl: '',
@@ -21,11 +23,12 @@ export const AGENDA_CONF = [
 		id: '2eeeeed5-21ad-4039-8afd-4a3fc0be9f45',
 		title: 'Intro',
 		speaker: 'Zbigniew Tenerowicz',
-		description: '',
+		description:
+			'The intro session is a brief overview of the summit agenda and the schedule. It is a great opportunity to meet the speakers and the organizers.',
 		since: '2026-03-04T09:30:00',
 		till: '2026-03-04T10:00:00',
 		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+			'https://summit.meetjs.pl/2026/assets/zbyszek-tenerowicz-C_pqvgoT.jpg',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/in/zbigniew-tenerowicz-288175165/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -37,8 +40,7 @@ export const AGENDA_CONF = [
 		description: '',
 		since: '2026-03-04T10:00:00',
 		till: '2026-03-04T10:30:00',
-		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		image: '',
 
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -134,8 +136,7 @@ export const AGENDA_CONF = [
 			'Skeptical about AI-generated websites? Until recently, so was I—having spent over a decade building front-end components by hand. But I recently conducted an experiment: I created the "Developer\'s Christmas Career Calendar" landing page entirely using an AI agent. The results are incredible, and I’d love to share the exact details of this project with you.',
 		since: '2026-03-04T13:10:00',
 		till: '2026-03-04T13:40:00',
-		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		image: '',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -143,12 +144,12 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1c',
 		title: 'lightning talk 1',
+		showDescription: false,
 		description:
 			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
 		since: '2026-03-04T13:40:00',
 		till: '2026-03-04T13:50:00',
-		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		image: '',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -156,12 +157,12 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1d',
 		title: 'lightning talk 2',
+		showDescription: false,
 		description:
 			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
 		since: '2026-03-04T13:50:00',
 		till: '2026-03-04T14:00:00',
-		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		image: '',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -169,12 +170,12 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1e',
 		title: 'lightning talk 3',
+		showDescription: false,
 		description:
 			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
 		since: '2026-03-04T14:00:00',
 		till: '2026-03-04T14:10:00',
-		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		image: '',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -198,8 +199,7 @@ export const AGENDA_CONF = [
 			'This isn’t a success story or an AI sales pitch. It’s a behind-the-scenes look at a real engineering organization trying to answer a deceptively simple question: Did AI really make us faster?',
 		since: '2026-03-04T14:40:00',
 		till: '2026-03-04T15:10:00',
-		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+		image: '',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -242,10 +242,11 @@ export const AGENDA_CONF = [
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d2f',
 		title: 'Panel discussion',
 		description:
-			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
+			'A panel discussion with experts on AI ranging from academics to hackers, about the future of programming and agents.',
 		since: '2026-03-04T16:30:00',
 		till: '2026-03-04T17:50:00',
-		image: '',
+		image:
+			'https://summit.meetjs.pl/2026/assets/meetjs-networking-BjUS3EdE.webp',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: '',
 		githubUrl: '',
@@ -253,11 +254,14 @@ export const AGENDA_CONF = [
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d3f',
 		title: 'Good bye',
+		showDescription: false,
 		speaker: 'Zbigniew Tenerowicz',
 		since: '2026-03-04T17:50:00',
 		till: '2026-03-04T18:00:00',
+		description:
+			'Goodbye session. Thank you for attending the summit. We hope to see you next year.',
 		image:
-			'https://images.unsplash.com/photo-1602531597402-405d5cace652?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+			'https://summit.meetjs.pl/2026/assets/zbyszek-tenerowicz-C_pqvgoT.jpg',
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/in/zbigniew-tenerowicz-288175165/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
