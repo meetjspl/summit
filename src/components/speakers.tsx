@@ -201,7 +201,7 @@ const speakers: Speaker[] = [
 		company: [
 			{
 				name: 'Apollo',
-				url: 'https://www.aiproductheroes.pl/',
+				url: 'https://www.apollo.io/',
 			},
 		],
 		talkTitle: 'Did AI really make us faster?',
