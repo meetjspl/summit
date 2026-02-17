@@ -2,6 +2,7 @@ import { createRootRoute, Outlet, useLocation } from '@tanstack/react-router';
 
 import { Footer } from '@/components/footer.tsx';
 import { Navigation } from '@/components/navigation.tsx';
+import { NotFound } from '@/components/not-found.tsx';
 
 const RootLayout = () => {
 	const location = useLocation();
@@ -16,4 +17,7 @@ const RootLayout = () => {
 	);
 };
 
-export const Route = createRootRoute({ component: RootLayout });
+export const Route = createRootRoute({
+	component: RootLayout,
+	notFoundComponent: NotFound,
+});
