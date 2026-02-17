@@ -226,7 +226,7 @@ const speakers: Speaker[] = [
 	},
 	{
 		name: 'Radek Wojtysiak',
-		role: 'Software engineer ',
+		role: 'Senior Front-End Software Engineer',
 		company: [
 			{
 				name: 'Allegro',
