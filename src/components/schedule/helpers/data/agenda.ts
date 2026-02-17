@@ -14,7 +14,7 @@ export const AGENDA_CONF = [
 		id: '67a54ea8-40f1-4ed0-ada2-3c985b75b901',
 		title: 'Registration',
 		description:
-			'Registration starts at 8:00 AM and ends at 9:30 AM on the first day of the summit. Please arrive on time to avoid missing the start of the event.',
+			'Registration starts at 8:30 AM and ends at 9:30 AM on the first day of the summit. Please arrive on time to avoid missing the start of the event.',
 		since: '2026-03-04T08:30:00',
 		till: '2026-03-04T09:30:00',
 		image:
