@@ -2,8 +2,12 @@ import CarolaK from '@/assets/speakers/carola-keskula.jpeg';
 import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
+import PiotrKacala from '@/assets/speakers/piotr-kacala.png';
+import PrzemyslawSuchodolski from '@/assets/speakers/przemyslaw-suchodolski.jpg';
+import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
+import ZbyszekTenerowicz from '@/assets/speakers/zbyszek-tenerowicz.jpg';
 
 export const AGENDA_CONF = [
 	{
@@ -27,8 +31,7 @@ export const AGENDA_CONF = [
 			'The intro session is a brief overview of the summit agenda and the schedule. It is a great opportunity to meet the speakers and the organizers.',
 		since: '2026-03-04T09:30:00',
 		till: '2026-03-04T10:00:00',
-		image:
-			'https://summit.meetjs.pl/2026/assets/zbyszek-tenerowicz-C_pqvgoT.jpg',
+		image: ZbyszekTenerowicz,
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/in/zbigniew-tenerowicz-288175165/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -40,8 +43,7 @@ export const AGENDA_CONF = [
 		description: '',
 		since: '2026-03-04T10:00:00',
 		till: '2026-03-04T10:30:00',
-		image: '',
-
+		image: PiotrKacala,
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -136,7 +138,7 @@ export const AGENDA_CONF = [
 			'Skeptical about AI-generated websites? Until recently, so was I—having spent over a decade building front-end components by hand. But I recently conducted an experiment: I created the "Developer\'s Christmas Career Calendar" landing page entirely using an AI agent. The results are incredible, and I’d love to share the exact details of this project with you.',
 		since: '2026-03-04T13:10:00',
 		till: '2026-03-04T13:40:00',
-		image: '',
+		image: RadekWojtysiak,
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -199,7 +201,7 @@ export const AGENDA_CONF = [
 			'This isn’t a success story or an AI sales pitch. It’s a behind-the-scenes look at a real engineering organization trying to answer a deceptively simple question: Did AI really make us faster?',
 		since: '2026-03-04T14:40:00',
 		till: '2026-03-04T15:10:00',
-		image: '',
+		image: PrzemyslawSuchodolski,
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/company/meetjs/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
@@ -260,8 +262,7 @@ export const AGENDA_CONF = [
 		till: '2026-03-04T18:00:00',
 		description:
 			'Goodbye session. Thank you for attending the summit. We hope to see you next year.',
-		image:
-			'https://summit.meetjs.pl/2026/assets/zbyszek-tenerowicz-C_pqvgoT.jpg',
+		image: ZbyszekTenerowicz,
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/in/zbigniew-tenerowicz-288175165/',
 		githubUrl: 'https://www.linkedin.com/company/meetjs/',
