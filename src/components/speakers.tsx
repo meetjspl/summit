@@ -174,10 +174,12 @@ const speakers: Speaker[] = [
 	{
 		name: 'Piotr Kacała',
 		role: 'Co-founder ',
-		company: {
-			name: 'AI Product Heroes',
-			url: 'https://www.aiproductheroes.pl/',
-		},
+		company: [
+			{
+				name: 'AI Product Heroes',
+				url: 'https://www.aiproductheroes.pl/',
+			},
+		],
 		talkTitle:
 			'Engineer → Product Engineer → Product Builder Why? Why now? How?',
 		talkDescription: '',
