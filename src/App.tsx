@@ -2,6 +2,7 @@ import { BecomeASponsor } from '@/components/become-a-sponsor.tsx';
 import { Charity } from '@/components/charity.tsx';
 import { Debate } from '@/components/debate.tsx';
 import { LoveLetter } from '@/components/love-letter.tsx';
+import { OrganizersSection } from '@/components/organizers-section.tsx';
 import { Partners } from '@/components/partners.tsx';
 import { PhotosSlider } from '@/components/photos-slider.tsx';
 import { Speakers } from '@/components/speakers.tsx';
@@ -32,6 +33,7 @@ export const App = () => {
 			<VideoPlaylists />
 			<Charity />
 			{/*<CFP />*/}
+			<OrganizersSection />
 			<BecomeASponsor />
 		</>
 	);

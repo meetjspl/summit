@@ -1,11 +1,12 @@
 import BartoszPampuch from '@/assets/speakers/bartosz-pampuch.jpeg';
 import MarcinCzarkowski from '@/assets/speakers/marcin-czarkowski.jpeg';
+import MariuszRafalo from '@/assets/speakers/mariusz-rafalo.jpg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import ZbyszekTenerowicz from '@/assets/speakers/zbyszek-tenerowicz.jpg';
-import { SpeakerCard } from '@/components/speaker-card.tsx';
-import { Wrapper } from '@/components/wrapper.tsx';
+import {SpeakerCard} from '@/components/speaker-card.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 
-import type { Speaker } from '@/types/speaker.ts';
+import type {Speaker} from '@/types/speaker.ts';
 
 const host: Speaker = {
 	name: 'Zbyszek Tenerowicz',
@@ -35,7 +36,7 @@ const panelists: Speaker[] = [
 	{
 		name: 'Mateusz Chrobok',
 		role: 'Panelist / Trainer / Co-Founder',
-		company: { name: 'AI_devs', url: 'https://www.aidevs.pl/' },
+		company: [{ name: 'AI_devs', url: 'https://www.aidevs.pl/' }],
 		talkTitle: '',
 		bio: '',
 		imageUrl: MateuszChrobok,
@@ -48,8 +49,17 @@ const panelists: Speaker[] = [
 	},
 	{
 		name: 'Marcin Czarkowski',
-		role: 'Panelist',
-		company: '',
+		role: 'Panelist / Co-Founder',
+		company: [
+			{
+				name: 'Przeprogramowani',
+				url: 'https://przeprogramowani.pl/',
+			},
+			{
+				name: '10xDevs',
+				url: 'https://www.10xdevs.pl/',
+			},
+		],
 		talkTitle: '',
 		bio: '',
 		imageUrl: MarcinCzarkowski,
@@ -58,12 +68,20 @@ const panelists: Speaker[] = [
 		},
 	},
 	{
-		name: 'TBA',
+		name: 'dr Mariusz Rafało',
 		role: 'Panelist',
-		company: '',
+		company: [
+			{
+				name: 'SGH Warsaw School of Economics',
+				url: 'https://www.sgh.waw.pl/en',
+			},
+		],
 		talkTitle: '',
 		bio: '',
-		imageUrl: '',
+		imageUrl: MariuszRafalo,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/mrafalo/',
+		},
 	},
 	{
 		name: 'TBA',
