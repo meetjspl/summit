@@ -1,7 +1,10 @@
 import CarolaK from '@/assets/speakers/carola-keskula.jpeg';
 import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
+import MartinTorp from '@/assets/speakers/martin-torp.jpeg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
+import MichalGolebiowskiOwczarek from '@/assets/speakers/michał-golebiowski-owczarek.jpeg';
+import MichalHadrysiak from '@/assets/speakers/michał-hadrysiak.jpg';
 import PiotrKacala from '@/assets/speakers/piotr-kacala.png';
 import PrzemyslawSuchodolski from '@/assets/speakers/przemek-suchodolski.jpg';
 import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
@@ -140,38 +143,44 @@ export const AGENDA_CONF = [
 	},
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1c',
-		title: 'Lightning talk 1',
+		title: '(AuDH)DX - How to cope with attention deficit as developer',
+		speaker: 'Michał (Hans) Hadrysiak',
 		showDescription: false,
-		description: '',
+		description:
+			"Productivity of neurodivergent people is weird: you have a mix of hyperfocus moments when you are almost unstoppable with executive paralysis moments when you'll avoid even a simple task. I've been in IT for over 10 years. During this time, I was looking for tools and strategies that would help me to reduce the effort of starting things and maximize the chance of finishing them without distraction. This talk will be a summary of my thoughts about Developer Experience from neurodivergent perspective.",
 		since: '2026-03-04T13:40:00',
 		till: '2026-03-04T13:50:00',
-		image: '',
+		image: MichalHadrysiak,
 		channelUuid: 'summit-03-04-2026-stage',
-		linkedinUrl: '',
+		linkedinUrl: 'https://www.linkedin.com/in/michal-hadrysiak',
 		githubUrl: '',
 	},
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1d',
-		title: 'Lightning talk 2',
+		title: 'From “Write Less” to v4: Why jQuery Still Matters (in 2026)',
+		speaker: 'Michał Gołębiowski-Owczarek',
 		showDescription: false,
-		description: '',
+		description:
+			"We'll have a look at the 20-year history of jQuery, what was its role in the past and why is it still actively supported & relevant, even getting a new major version in 2026.",
 		since: '2026-03-04T13:50:00',
 		till: '2026-03-04T14:00:00',
-		image: '',
+		image: MichalGolebiowskiOwczarek,
 		channelUuid: 'summit-03-04-2026-stage',
-		linkedinUrl: '',
+		linkedinUrl: 'https://www.linkedin.com/in/mzgol/',
 		githubUrl: '',
 	},
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1e',
-		title: 'Lightning talk 3',
+		title:
+			'Suggested title: Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
+		speaker: 'Martin Torp',
 		showDescription: false,
 		description: '',
 		since: '2026-03-04T14:00:00',
 		till: '2026-03-04T14:10:00',
-		image: '',
+		image: MartinTorp,
 		channelUuid: 'summit-03-04-2026-stage',
-		linkedinUrl: '',
+		linkedinUrl: 'https://www.linkedin.com/in/martin-torp/',
 		githubUrl: '',
 	},
 	{
