@@ -28,7 +28,7 @@ export const AGENDA_CONF = [
 		title: 'Intro',
 		speaker: 'Zbigniew Tenerowicz',
 		description:
-			'The intro session is a brief overview of the summit agenda and the schedule. It is a great opportunity to meet the speakers and the organizers.',
+			'Welcome to the event, get an introduction to navigating our conference, celebrate our 15th anniversary and learn some history of meet.js.',
 		since: '2026-03-04T09:30:00',
 		till: '2026-03-04T10:00:00',
 		image: ZbyszekTenerowicz,
