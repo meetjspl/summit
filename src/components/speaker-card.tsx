@@ -45,20 +45,28 @@ export const SpeakerCard = ({
 				</h3>
 				<p className={`text-meetjs-green ${isDebate ? 'text-xs' : 'text-sm'}`}>
 					{role}{' '}
-					{typeof company === 'string' ? (
-						company !== '' ? (
-							`@ ${company}`
-						) : (
-							''
-						)
-					) : (
-						<>
-							<span>@</span>{' '}
-							<a href={company.url} className="underline underline-offset-3">
-								{company.name}
-							</a>
-						</>
-					)}
+					{typeof company === 'string'
+						? company !== '' && `@ ${company}`
+						: company.length > 0 && (
+								<>
+									<span>@</span>{' '}
+									{company.map((comp, index) => (
+										<span key={index}>
+											{comp.url ? (
+												<a
+													href={comp.url}
+													className="underline underline-offset-3"
+												>
+													{comp.name}
+												</a>
+											) : (
+												comp.name
+											)}
+											{index < company.length - 1 && ', '}
+										</span>
+									))}
+								</>
+							)}
 				</p>
 				{talkDescription && (
 					<Popover trigger={talkTitle} content={talkDescription} />
