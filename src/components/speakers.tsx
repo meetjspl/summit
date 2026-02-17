@@ -1,5 +1,6 @@
 import CarolaKeskula from '@/assets/speakers/carola-keskula.jpeg';
 import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
+import MartinTorp from '@/assets/speakers/martin-torp.jpeg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
 import MichalGolebiewskiOwczarek from '@/assets/speakers/michał-golebiowski-owczarek.jpeg';
@@ -225,11 +226,11 @@ const speakers: Speaker[] = [
 	},
 	{
 		name: 'Radek Wojtysiak',
-		role: 'Co-founder ',
+		role: 'Software engineer ',
 		company: [
 			{
 				name: 'Allegro',
-				url: 'https://www.aiproductheroes.pl/',
+				url: 'https://allegro.pl/',
 			},
 		],
 		talkTitle: 'The end of the "Hand-crafted UI" era? Case study',
@@ -238,7 +239,24 @@ const speakers: Speaker[] = [
 		bio: 'A software engineer with over 10 years of commercial front-end experience. JavaScript trainer, speaker, and creator of the "Kariera Developera" (Developer\'s Career) newsletter. He is also the organizer of the Developer\'s Christmas Career Calendar.',
 		imageUrl: RadekWojtysiak,
 		social: {
-			linkedin: 'https://www.linkedin.com/in/piotr-kacala/',
+			linkedin: 'https://www.linkedin.com/in/radekwojtysiak/',
+		},
+	},
+	{
+		name: 'Martin Torp',
+		role: 'Co-founder of Coana ',
+		company: [
+			{
+				name: 'Socket',
+				url: 'https://socket.dev/',
+			},
+		],
+		talkTitle: 'Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
+		talkDescription: '',
+		bio: 'Martin holds a PhD with a focus on static analysis and software maintenance for JavaScript projects using npm. He co-founded Coana, a startup based in Aarhus, Denmark, that developed reachability analysis technology to help security teams cut through the noise and prioritize the CVEs that actually matter. In 2025, Coana was acquired by Socket, a software security company, where Martin now serves as a tech lead on the team responsible for reachability analysis and automated dependency upgrades.',
+		imageUrl: MartinTorp,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/martin-torp/',
 		},
 	},
 ];
