@@ -15,7 +15,7 @@ export const AGENDA_CONF = [
 		title: 'Registration',
 		description:
 			'Registration starts at 8:00 AM and ends at 9:30 AM on the first day of the summit. Please arrive on time to avoid missing the start of the event.',
-		since: '2026-03-04T08:00:00',
+		since: '2026-03-04T08:30:00',
 		till: '2026-03-04T09:30:00',
 		image:
 			'https://summit.meetjs.pl/2026/assets/meetjs-organizers-XM_zsAH4.webp',
