@@ -1,27 +1,28 @@
 export interface ProgramLayoutCommonProps {
-  image?: string;
-  title: string;
-  description?: string;
-  sinceTime: string;
-  tillTime: string;
-  showLiveBadge: boolean;
-  isVertical: boolean;
-  isMinWidth: boolean;
-  isMobile: boolean;
-  isSmallSlot: boolean;
-  isCompactSlot: boolean;
-  linkedinUrl?: string;
-  githubUrl?: string;
+	image?: string;
+	title: string;
+	speaker?: string;
+	description?: string;
+	sinceTime: string;
+	tillTime: string;
+	showLiveBadge: boolean;
+	isVertical: boolean;
+	isMinWidth: boolean;
+	isMobile: boolean;
+	isSmallSlot: boolean;
+	isCompactSlot: boolean;
+	linkedinUrl?: string;
+	githubUrl?: string;
 }
 
 export interface ProgramDesktopLayoutProps extends ProgramLayoutCommonProps {
-  stackPadding: string;
+	stackPadding: string;
 }
 
 export interface ProgramCompactLayoutProps {
-  title: string;
-  description?: string;
-  sinceTime: string;
-  tillTime: string;
-  isMinWidth: boolean;
+	title: string;
+	description?: string;
+	sinceTime: string;
+	tillTime: string;
+	isMinWidth: boolean;
 }

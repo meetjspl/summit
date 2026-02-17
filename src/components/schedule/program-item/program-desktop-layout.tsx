@@ -1,53 +1,62 @@
-import { ProgramImage } from "./program-image";
-import { ProgramMetadata } from "./program-metadata";
-import type { ProgramDesktopLayoutProps } from "./types";
+import { ProgramImage } from './program-image';
+import { ProgramMetadata } from './program-metadata';
+
+import type { ProgramDesktopLayoutProps } from './types';
 
 export const ProgramDesktopLayout = (props: ProgramDesktopLayoutProps) => {
-  const {
-    isVertical,
-    isMinWidth,
-    isMobile,
-    isSmallSlot,
-    isCompactSlot,
-    ...programProps
-  } = props;
-  const {
-    image,
-    title,
-    description,
-    sinceTime,
-    tillTime,
-    showLiveBadge,
-    stackPadding,
-    linkedinUrl,
-    githubUrl,
-  } = programProps;
-  return (
-    <div className={`h-full gap-3.5 flex flex-row ${isVertical ? "items-stretch" : "items-center"}`}>
-      <ProgramImage image={image} title={title} isVertical={isVertical} />
+	const {
+		isVertical,
+		isMinWidth,
+		isMobile,
+		isSmallSlot,
+		isCompactSlot,
+		...programProps
+	} = props;
+	const {
+		image,
+		title,
+		speaker,
+		description,
+		sinceTime,
+		tillTime,
+		showLiveBadge,
+		stackPadding,
+		linkedinUrl,
+		githubUrl,
+	} = programProps;
+	return (
+		<div
+			className={`flex h-full flex-row gap-3.5 ${isVertical ? 'items-stretch' : 'items-center'}`}
+		>
+			<ProgramImage image={image} title={title} isVertical={isVertical} />
 
-      <div className={`min-w-0 flex flex-col gap-2.5 h-full ${stackPadding}`}>
-        <ProgramMetadata
-          sinceTime={sinceTime}
-          tillTime={tillTime}
-          showLiveBadge={showLiveBadge}
-          isMobile={isMobile}
-          isSmallSlot={isSmallSlot}
-          isCompactSlot={isCompactSlot}
-          linkedinUrl={linkedinUrl}
-          githubUrl={githubUrl}
-        />
+			<div className={`flex h-full min-w-0 flex-col gap-2.5 ${stackPadding}`}>
+				<ProgramMetadata
+					sinceTime={sinceTime}
+					tillTime={tillTime}
+					showLiveBadge={showLiveBadge}
+					isMobile={isMobile}
+					isSmallSlot={isSmallSlot}
+					isCompactSlot={isCompactSlot}
+					linkedinUrl={linkedinUrl}
+					githubUrl={githubUrl}
+				/>
 
-        <h3 className={`mb-0 text-white/96 font-extrabold tracking-[-0.01em] leading-[1.15] whitespace-normal wrap-break-word ${isMinWidth ? "text-xl" : "text-lg"}`}>
-          {title}
-        </h3>
+				<h3
+					className={`mb-0 leading-[1.15] font-extrabold tracking-[-0.01em] wrap-break-word whitespace-normal text-white/96 ${isMinWidth ? 'text-xl' : 'text-lg'}`}
+				>
+					{title}
+				</h3>
+				<h4>{speaker}</h4>
 
-        {description && (
-          <p className={`m-0 text-white/72 leading-[1.45] whitespace-normal wrap-break-word flex-1 overflow-y-auto pr-1.5 ${isMinWidth ? "text-[15px]" : "text-sm"}`}>
-            {description}
-          </p>
-        )}
-      </div>
-    </div>
-  );
+				{description && (
+					<p
+						className={`m-0 flex-1 overflow-y-auto pr-1.5 leading-[1.45] wrap-break-word whitespace-normal text-white/72 ${isMinWidth ? 'text-[15px]' : 'text-sm'}`}
+					>
+						{description}
+					</p>
+				)}
+			</div>
+		</div>
+	);
 };
