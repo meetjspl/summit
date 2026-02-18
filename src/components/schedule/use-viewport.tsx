@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const TIMELINE_WIDTH = 70;
+const TIMELINE_WIDTH = 60;
 const AGENDA_WIDTH = 600;
 
 const getViewportWidth = () =>
