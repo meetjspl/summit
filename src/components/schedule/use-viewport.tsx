@@ -28,7 +28,7 @@ export function useViewport() {
 				setItemHeight(AGENDA_WIDTH);
 				return;
 			}
-			setItemHeight(w - TIMELINE_WIDTH - 50);
+			setItemHeight(w - TIMELINE_WIDTH);
 		};
 
 		update();

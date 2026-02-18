@@ -1,10 +1,14 @@
-import {ProgramBox, ProgramContent, useProgram} from '@nessprim/planby-pro';
-import {useState} from 'react';
+import { ProgramBox, ProgramContent, useProgram } from '@nessprim/planby-pro';
+import { useState } from 'react';
 
-import {ProgramDesktopLayout} from './program-desktop-layout';
-import {ProgramMobileLayout} from './program-mobile-layout';
+import { ProgramDesktopLayout } from './program-desktop-layout';
+import { ProgramMobileLayout } from './program-mobile-layout';
 
-import type {ProgramData, ProgramProps, UseProgramInput,} from '@/components/schedule/helpers/types';
+import type {
+	ProgramData,
+	ProgramProps,
+	UseProgramInput,
+} from '@/components/schedule/helpers/types';
 
 export const Program = (props: ProgramProps) => {
 	const { isMobile: isMobileProp, onProgramClick, ...planbyProps } = props;
@@ -94,6 +98,8 @@ export const Program = (props: ProgramProps) => {
 		// }
 
 		if (isMobile) {
+			console.log('isMobile', isMobile);
+			console.log('commonProps', commonProps);
 			return (
 				<ProgramMobileLayout
 					{...commonProps}
