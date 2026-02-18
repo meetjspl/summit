@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from '@tanstack/react-router';
+import {Link, useLocation} from '@tanstack/react-router';
+import {useEffect, useState} from 'react';
 
-import { Wrapper } from '@/components/wrapper.tsx';
+import {TopBar} from '@/components/top-bar.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 import * as gtag from '@/utils/gtag';
 
 import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
@@ -44,9 +45,12 @@ export const Navigation = () => {
 			className={`${
 				isMainPage ? 'fixed' : 'relative'
 			} top-0 right-0 left-0 z-50 transition-all duration-300 ${
-				isScrolled || !isMainPage ? 'bg-black/95 shadow-lg backdrop-blur-sm' : 'bg-transparent'
+				isScrolled || !isMainPage
+					? 'bg-black/95 shadow-lg backdrop-blur-sm'
+					: 'bg-transparent'
 			}`}
 		>
+			<TopBar />
 			<Wrapper>
 				<div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
 					{isMainPage ? (
