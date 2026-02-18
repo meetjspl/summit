@@ -35,6 +35,11 @@ export const ProgramDesktopLayout = (props: ProgramDesktopLayoutProps) => {
 					<span className="inline-flex shrink-0 items-center rounded-full border border-meetjs-green bg-meetjs-green/[0.14] px-2.5 py-1.5 font-mono text-xs font-extrabold tracking-[0.06em] text-white/92">
 						{sinceTime} - {tillTime}
 					</span>
+					{showLiveBadge && (
+						<span className="inline-flex shrink-0 items-center justify-center rounded-full border border-black/12 bg-meetjs-green/95 px-2.5 py-[0.3] text-xs font-extrabold tracking-[0.08em] text-[rgba(19,20,24,0.98)]">
+							LIVE
+						</span>
+					)}
 					<h3 className="mb-0 text-sm leading-[1.15] font-extrabold tracking-[-0.01em] text-white/96">
 						{title}
 					</h3>
