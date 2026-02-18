@@ -22,7 +22,7 @@ export const Avatar = () => {
 	};
 
 	return (
-		<section>
+		<section className="py-12" id="avatar">
 			<Wrapper>
 				<h1 className="text-center text-4xl font-semibold text-white">
 					Generate your avatar and share on social media
