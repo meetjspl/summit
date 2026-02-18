@@ -1,21 +1,21 @@
-import { Epg, Layout, useEpg } from '@nessprim/planby-pro';
-import { useState } from 'react';
+import {Epg, Layout, useEpg} from '@nessprim/planby-pro';
+import {useState} from 'react';
 
-import { Stage } from './channel-item';
-import { AGENDA_CONF } from './helpers/data/agenda';
-import { STAGES_CONF } from './helpers/data/stages';
-import { theme } from './helpers/theme';
-import { Program } from './program-item/program-item';
-import { ProgramModal } from './program-modal';
-import { useViewport } from './use-viewport';
+import {Stage} from './channel-item';
+import {AGENDA_CONF} from './helpers/data/agenda';
+import {STAGES_CONF} from './helpers/data/stages';
+import {theme} from './helpers/theme';
+import {Program} from './program-item/program-item';
+import {ProgramModal} from './program-modal';
+import {useViewport} from './use-viewport';
 
-import type { ProgramData, ProgramProps } from './helpers/types';
+import type {ProgramData, ProgramProps} from './helpers/types';
 
 const SCHEDULE_CONTENT_SIZE = 4000;
 
 export function Schedule() {
 	const { isMobile, itemHeight, agendaSize, containerRef } = useViewport();
-	const confStartDate = '2026-03-04T08:00:00';
+	const confStartDate = '2026-03-04T08:30:00';
 	const confEndDate = '2026-03-04T18:00:00';
 	const [selectedProgram, setSelectedProgram] = useState<ProgramData | null>(
 		null,
