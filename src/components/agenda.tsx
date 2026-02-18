@@ -1,11 +1,11 @@
 import PlanByLogo from '@/assets/partners/hello/planby-pro.png';
-import {Schedule} from '@/components/schedule/schedule';
-import {Wrapper} from '@/components/wrapper.tsx';
+import { Schedule } from '@/components/schedule/schedule';
+import { Wrapper } from '@/components/wrapper.tsx';
 
 export const Agenda = () => {
 	return (
 		<section id="agenda" className="px-0 py-20 md:px-6">
-			<Wrapper>
+			<Wrapper className="xs:px-0 px-0! sm:px-0">
 				<h2 className="pb-8 text-center text-5xl font-semibold text-white">
 					Agenda
 				</h2>
