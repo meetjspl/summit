@@ -8,9 +8,12 @@ export const ProgramCompactLayout = ({
 	tillTime,
 	isMinWidth,
 }: ProgramCompactLayoutProps) => {
+	const isLongTitle = title.length > 50;
+	const shouldUseSmallerFont = !showDescription && isLongTitle;
+
 	return (
 		<div className="flex h-full w-full min-w-0 flex-col justify-center gap-2">
-			<h3 className="mb-0 text-base leading-[1.15] font-extrabold tracking-[-0.01em] wrap-break-word whitespace-normal text-white/96">
+			<h3 className={`mb-0 leading-[1.15] font-extrabold tracking-[-0.01em] wrap-break-word whitespace-normal text-white/96 ${shouldUseSmallerFont ? 'text-sm' : 'text-base'}`}>
 				{title}
 			</h3>
 			{showDescription && description && (
