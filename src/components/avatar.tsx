@@ -24,19 +24,22 @@ export const Avatar = () => {
 	return (
 		<section>
 			<Wrapper>
-				<h1>Avatar Component</h1>
-				<div className="h-30" />
-				<div className="mx-auto w-full md:w-1/3">
+				<h1 className="text-center text-4xl font-semibold text-white">
+					Generate your avatar and share on social media
+				</h1>
+				<div className="mx-auto flex w-full flex-col gap-4 md:w-1/3">
 					<div className="relative" ref={ref}>
 						<DndImage />
 						<img
 							src={Frame}
 							className="pointer-events-none absolute top-0 left-0 h-full w-full"
 						/>
-						{/*<Frame className="pointer-events-none absolute top-0 left-0 h-full w-full" />*/}
 					</div>
-					<button className="bg-white" onClick={exportPng}>
-						Pobierz grafikę
+					<button
+						onClick={exportPng}
+						className="mx-auto inline-block w-fit rounded-lg bg-meetjs-green px-8 py-4 text-base font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
+					>
+						Download graphic
 					</button>
 				</div>
 			</Wrapper>
