@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
-import { createPortal } from 'react-dom';
-import { FaGithub, FaLinkedin, FaTimes } from 'react-icons/fa';
+import {useEffect} from 'react';
+import {createPortal} from 'react-dom';
+import {FaGithub, FaLinkedin, FaTimes} from 'react-icons/fa';
 
-import type { ProgramData } from './helpers/types';
+import type {ProgramData} from './helpers/types';
 
 interface ProgramModalProps {
 	isOpen: boolean;
@@ -46,7 +46,7 @@ export function ProgramModal({ isOpen, onClose, program }: ProgramModalProps) {
 		return date.toLocaleTimeString('en-US', {
 			hour: '2-digit',
 			minute: '2-digit',
-			hour12: true,
+			hour12: false,
 		});
 	};
 

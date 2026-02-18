@@ -1,15 +1,10 @@
-import { ProgramBox, ProgramContent, useProgram } from '@nessprim/planby-pro';
-import { useState } from 'react';
+import {ProgramBox, ProgramContent, useProgram} from '@nessprim/planby-pro';
+import {useState} from 'react';
 
-import { ProgramCompactLayout } from './program-compact-layout';
-import { ProgramDesktopLayout } from './program-desktop-layout';
-import { ProgramMobileLayout } from './program-mobile-layout';
+import {ProgramDesktopLayout} from './program-desktop-layout';
+import {ProgramMobileLayout} from './program-mobile-layout';
 
-import type {
-	ProgramData,
-	ProgramProps,
-	UseProgramInput,
-} from '@/components/schedule/helpers/types';
+import type {ProgramData, ProgramProps, UseProgramInput,} from '@/components/schedule/helpers/types';
 
 export const Program = (props: ProgramProps) => {
 	const { isMobile: isMobileProp, onProgramClick, ...planbyProps } = props;
@@ -82,19 +77,21 @@ export const Program = (props: ProgramProps) => {
 	};
 
 	const renderLayout = () => {
-		if (isSmallSlot || showDescriptionSlot) {
-			return (
-				<ProgramCompactLayout
-					showDescription={showDescription}
-					title={title}
-					description={description}
-					sinceTime={sinceTime}
-					tillTime={tillTime}
-					isMinWidth={isMinWidth}
-					slotHeight={slotHeight}
-				/>
-			);
-		}
+		// if (isSmallSlot || showDescriptionSlot) {
+		// 	return (
+		// 		<ProgramCompactLayout
+		// 			showDescription={showDescription}
+		// 			title={title}
+		// 			speaker={speaker}
+		// 			image={image}
+		// 			description={description}
+		// 			sinceTime={sinceTime}
+		// 			tillTime={tillTime}
+		// 			isMinWidth={isMinWidth}
+		// 			slotHeight={slotHeight}
+		// 		/>
+		// 	);
+		// }
 
 		if (isMobile) {
 			return (

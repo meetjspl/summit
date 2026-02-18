@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Link, useLocation } from '@tanstack/react-router';
+import {Link, useLocation} from '@tanstack/react-router';
+import {useEffect, useState} from 'react';
 
-import { Wrapper } from '@/components/wrapper.tsx';
+import {TopBar} from '@/components/top-bar.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 import * as gtag from '@/utils/gtag';
 
 import Logomeetjs from '../assets/meetjs_logo_white_light.svg?react';
@@ -23,7 +24,6 @@ export const Navigation = () => {
 	}, []);
 
 	const navItems = [
-		{ label: 'Tickets', id: 'tickets' },
 		{ label: 'Partners', id: 'partners' },
 		{ label: 'Speakers', id: 'speakers' },
 		{ label: 'Debate', id: 'debate' },
@@ -44,9 +44,12 @@ export const Navigation = () => {
 			className={`${
 				isMainPage ? 'fixed' : 'relative'
 			} top-0 right-0 left-0 z-50 transition-all duration-300 ${
-				isScrolled || !isMainPage ? 'bg-black/95 shadow-lg backdrop-blur-sm' : 'bg-transparent'
+				isScrolled || !isMainPage
+					? 'bg-black/95 shadow-lg backdrop-blur-sm'
+					: 'bg-transparent'
 			}`}
 		>
+			<TopBar />
 			<Wrapper>
 				<div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
 					{isMainPage ? (
@@ -82,8 +85,14 @@ export const Navigation = () => {
 					{isMainPage && (
 						<>
 							<div
-								className={`hidden items-center gap-8 md:flex ${!isScrolled ? 'ml-auto' : ''}`}
+								className={`hidden items-center gap-4 md:flex ${!isScrolled ? 'ml-auto' : ''}`}
 							>
+								<a
+									href="#tickets"
+									className="inline-block w-fit rounded-lg bg-meetjs-green px-4 py-2 text-base font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
+								>
+									TICKETS
+								</a>
 								{navItems.map(item => (
 									<a
 										key={item.id}

@@ -18,7 +18,7 @@ export const AGENDA_CONF = [
 		title: 'Registration',
 		description:
 			'Registration starts at 8:30 AM and ends at 9:30 AM on the first day of the summit. Please arrive on time to avoid missing the start of the event.',
-		since: '2026-03-04T08:30:00',
+		since: '2026-03-04T08:00:00',
 		till: '2026-03-04T09:30:00',
 		image:
 			'https://summit.meetjs.pl/2026/assets/meetjs-organizers-XM_zsAH4.webp',
@@ -62,6 +62,16 @@ export const AGENDA_CONF = [
 		image: CarolaK,
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/in/carolakeskyla/',
+	},
+	{
+		id: 'be41a453-18a8-4245-98bb-fc3472850d33',
+		title: '☕ Coffee break',
+		speaker: '',
+		description: '',
+		since: '2026-03-04T11:00:00',
+		till: '2026-03-04T11:20:00',
+		image: '',
+		channelUuid: 'summit-03-04-2026-stage',
 	},
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1a',
@@ -130,6 +140,16 @@ export const AGENDA_CONF = [
 		linkedinUrl: 'https://www.linkedin.com/in/michalczukm/',
 	},
 	{
+		id: 'be41a453-18a8-4245-98bb-fc3472850d33',
+		title: '☕ Coffee break',
+		speaker: '',
+		description: '',
+		since: '2026-03-04T12:50:00',
+		till: '2026-03-04T13:10:00',
+		image: '',
+		channelUuid: 'summit-03-04-2026-stage',
+	},
+	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1b',
 		title: 'The end of the "Hand-crafted UI" era? Case study.',
 		speaker: 'Radek Wojtysiak',
@@ -182,6 +202,16 @@ export const AGENDA_CONF = [
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/in/martin-torp/',
 		githubUrl: '',
+	},
+	{
+		id: 'be42a453-18a8-4245-98bb-fc3472850d33',
+		title: '🍝 Lunch break',
+		speaker: '',
+		description: '',
+		since: '2026-03-04T14:10:00',
+		till: '2026-03-04T14:40:00',
+		image: '',
+		channelUuid: 'summit-03-04-2026-stage',
 	},
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1q',
@@ -237,6 +267,16 @@ export const AGENDA_CONF = [
 		image: MateuszChrobok,
 		channelUuid: 'summit-03-04-2026-stage',
 		linkedinUrl: 'https://www.linkedin.com/in/mateuszchrobok/',
+	},
+	{
+		id: 'be41a453-18a8-4245-98bb-fc3472850d33',
+		title: '☕ Coffee break',
+		speaker: '',
+		description: '',
+		since: '2026-03-04T16:10:00',
+		till: '2026-03-04T16:30:00',
+		image: '',
+		channelUuid: 'summit-03-04-2026-stage',
 	},
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d2f',

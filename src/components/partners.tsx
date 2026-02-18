@@ -1,3 +1,5 @@
+import Logo10xDevs from '@/assets/partners/10xDevs.svg';
+import AI_ProductHeroes from '@/assets/partners/AI_product-heroes.svg';
 import SGHLogo from '@/assets/partners/SGH.png';
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import ApolloLogo from '@/assets/partners/hello/Apollo_Core_White.png';
@@ -8,10 +10,10 @@ import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
 import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
-import { PartnersLogos } from '@/components/partners-logos.tsx';
-import { Wrapper } from '@/components/wrapper.tsx';
+import {PartnersLogos} from '@/components/partners-logos.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 
-import type { Partner } from '@/types/partner.ts';
+import type {Partner} from '@/types/partner.ts';
 
 const partners: Partner[] = [
 	{
@@ -19,7 +21,16 @@ const partners: Partner[] = [
 		logoUrl: SGHLogo,
 		websiteUrl: 'https://www.sgh.waw.pl',
 	},
-
+	{
+		name: '10xDevs',
+		logoUrl: Logo10xDevs,
+		websiteUrl: 'https://www.10xdevs.pl/',
+	},
+	{
+		name: 'AI Product Heroes 2',
+		logoUrl: AI_ProductHeroes,
+		websiteUrl: 'https://www.aiproductheroes.pl/',
+	},
 	{
 		name: 'Socket.dev',
 		logoUrl: SocketDevLogo,

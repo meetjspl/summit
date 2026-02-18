@@ -1,7 +1,7 @@
-import { ProgramImage } from './program-image';
-import { ProgramMetadata } from './program-metadata';
+import {ProgramImage} from './program-image';
+import {ProgramMetadata} from './program-metadata';
 
-import type { ProgramDesktopLayoutProps } from './types';
+import type {ProgramDesktopLayoutProps} from './types';
 
 export const ProgramDesktopLayout = (props: ProgramDesktopLayoutProps) => {
 	const {
@@ -48,23 +48,23 @@ export const ProgramDesktopLayout = (props: ProgramDesktopLayoutProps) => {
 				>
 					{title}
 				</h3>
-				<h4>{speaker}</h4>
+				{speaker && <h4 className="text-lg text-white">🎤 {speaker}</h4>}
 
-			{showDescription && description && (
-				<p
-					className={`m-0 pr-1.5 text-white/72 ${isMinWidth ? 'text-[15px]' : 'text-sm'}`}
-					style={{
-						display: '-webkit-box',
-						WebkitLineClamp: 3,
-						WebkitBoxOrient: 'vertical' as const,
-						overflow: 'hidden',
-						textOverflow: 'ellipsis',
-						lineHeight: '1.45',
-					}}
-				>
-					{description}
-				</p>
-			)}
+				{showDescription && description && (
+					<p
+						className={`m-0 pr-1.5 text-white/72 ${isMinWidth ? 'text-[15px]' : 'text-sm'}`}
+						style={{
+							display: '-webkit-box',
+							WebkitLineClamp: 3,
+							WebkitBoxOrient: 'vertical' as const,
+							overflow: 'hidden',
+							textOverflow: 'ellipsis',
+							lineHeight: '1.45',
+						}}
+					>
+						{description}
+					</p>
+				)}
 			</div>
 		</div>
 	);
