@@ -172,7 +172,7 @@ export const Footer = () => {
 						<p className="text-sm text-white-2">
 							© {currentYear} meet.js Summit. All rights reserved.
 						</p>
-						<div className="flex gap-6 text-sm">
+						<div className="flex flex-wrap gap-6 text-sm">
 							<a
 								href="https://berlincodeofconduct.org/"
 								target="_blank"
@@ -197,16 +197,23 @@ export const Footer = () => {
 							>
 								Terms & Conditions
 							</a>
-
-							<a
-								href="https://summit.meetjs.pl/2023/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-white-2 transition-colors hover:text-meetjs-green"
-							>
-								Previous Events
-							</a>
 						</div>
+					</div>
+					<div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 pb-6 text-sm">
+						<span className="text-white-2">Previous Summits:</span>
+						{[2012, 2013, 2014, 2016, 2017, 2018, 2019, 2022, 2023, 2024].map(
+							year => (
+								<a
+									key={year}
+									href={`https://summit.meetjs.pl/${year}/?utm_source=website&utm_medium=logo&utm_campaign=meetjs_summit_2026`}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-white-2 transition-colors hover:text-meetjs-green"
+								>
+									{year}
+								</a>
+							),
+						)}
 					</div>
 				</Wrapper>
 			</div>

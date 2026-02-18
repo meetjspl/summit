@@ -1,8 +1,13 @@
 import CarolaKeskula from '@/assets/speakers/carola-keskula.jpeg';
 import DominikaZajac from '@/assets/speakers/dominika-zajac.jpg';
+import MartinTorp from '@/assets/speakers/martin-torp.jpeg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
 import MichalMichalczuk from '@/assets/speakers/michal-michalczuk.webp';
 import MichalGolebiewskiOwczarek from '@/assets/speakers/michał-golebiowski-owczarek.jpeg';
+import MichalHadrysiak from '@/assets/speakers/michał-hadrysiak.jpg';
+import PiotrKacala from '@/assets/speakers/piotr-kacala.png';
+import PrzemekSuchodolski from '@/assets/speakers/przemek-suchodolski.jpg';
+import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
 import { SpeakerCard } from '@/components/speaker-card.tsx';
@@ -31,7 +36,7 @@ const speakers: Speaker[] = [
 	{
 		name: 'Mateusz Chrobok',
 		role: 'Trainer / Co-Founder',
-		company: { name: 'AI_devs', url: 'https://www.aidevs.pl/' },
+		company: [{ name: 'AI_devs', url: 'https://www.aidevs.pl/' }],
 		talkTitle: 'When AI does whatever it wants. AI alignment.',
 		bio: 'Mateusz Chrobok is a cybersecurity expert, startup consultant, and tech educator with deep experience in digital security, innovation, and AI. He’s co-founded multiple startups and helps organisations navigate the evolving landscape of online threats and secure digital transformation. As a creator and communicator, Mateusz builds communities around technology through his popular YouTube channel and educational platform, where he explains complex cybersecurity and tech topics in a clear and engaging way.',
 		imageUrl: MateuszChrobok,
@@ -154,6 +159,104 @@ const speakers: Speaker[] = [
 		imageUrl: MichalGolebiewskiOwczarek,
 		social: {
 			linkedin: 'https://www.linkedin.com/in/mzgol/',
+		},
+	},
+	{
+		name: 'Michał Hadrysiak',
+		role: 'Senior Full Stack Engineer',
+		company: 'IndieBI',
+		talkTitle: '(AuDH)DX - How to cope with attention deficit as developer.',
+		talkDescription:
+			"Productivity of neurodivergent people is weird: you have a mix of hyperfocus moments when you are almost unstoppable with executive paralysis moments when you'll avoid even a simple task. I've been in IT for over 10 years. During this time, I was looking for tools and strategies that would help me to reduce the effort of starting things and maximize the chance of finishing them without distraction. This talk will be a summary of my thoughts about Developer Experience from neurodivergent perspective.",
+		bio: 'Curious full-stack developer with AuDHD. Focused not only about code but whole Software Development Life Cycle. Big fan of simple solutions that "just work". Member of Mensa.',
+		imageUrl: MichalHadrysiak,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/michal-hadrysiak',
+		},
+	},
+	{
+		name: 'Piotr Kacała',
+		role: 'Co-founder ',
+		company: [
+			{
+				name: 'AI Product Heroes',
+				url: 'https://www.aiproductheroes.pl/',
+			},
+		],
+		talkTitle:
+			'Engineer → Product Engineer → Product Builder Why? Why now? How?',
+		talkDescription: '',
+		bio:
+			'Piotr Kacała is a Chief Technology & Product Officer with over 20 years of experience building' +
+			' high-performing teams and globally recognized digital products. Throughout his career, Piotr has contributed to the growth of companies such as Displate (scaling from startup to global brand), CD Projekt (including flagship titles like Cyberpunk 2077 and The Witcher), and GOG.com.' +
+			'In addition, he co-founded AI Products Heroes, a program and community dedicated to helping product leaders successfully design, build, and scale AI-powered products. Through this initiative, he supports teams in navigating the unique strategic, technical, and organizational challenges that come with AI.',
+		imageUrl: PiotrKacala,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/piotr-kacala/',
+		},
+	},
+	{
+		name: 'Przemek Suchodolski',
+		role: 'Senior Software Engineer',
+		company: [
+			{
+				name: 'Apollo',
+				url: 'https://www.apollo.io/',
+			},
+		],
+		talkTitle: 'Did AI really make us faster?',
+		talkDescription:
+			'Everyone says AI makes developers more productive. Someone even claims that we can become 10x devs ;) So we decided to prove it.\n' +
+			'\n' +
+			'At Apollo.io, we introduced AI tooling to 250+ engineers and quickly realized that measuring "productivity" is harder than shipping the tools themselves. Metrics lied. Assumptions broke. Some teams sped up (spoiler alert: frontend-oriented :)), others didn’t. And the biggest insights weren’t where we expected them.\n' +
+			'\n' +
+			'This talk is the story of that experiment:\n' +
+			'\n' +
+			'- Why our first productivity metrics failed\n' +
+			'- What actually changed in developers’ daily work\n' +
+			'- Where AI helped less than the hype suggested\n' +
+			'- How we eventually learned to measure impact without fooling ourselves\n' +
+			'\n' +
+			'This isn’t a success story or an AI sales pitch. It’s a behind-the-scenes look at a real engineering organization trying to answer a deceptively simple question: Did AI really make us faster?',
+		bio: 'Senior Software Engineer with 10+ year of experience in building JavaScript applications.',
+		imageUrl: PrzemekSuchodolski,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/przemyslaw-suchodolski/',
+		},
+	},
+	{
+		name: 'Radek Wojtysiak',
+		role: 'Senior Front-End Software Engineer',
+		company: [
+			{
+				name: 'Allegro',
+				url: 'https://allegro.pl/',
+			},
+		],
+		talkTitle: 'The end of the "Hand-crafted UI" era? Case study',
+		talkDescription:
+			'Skeptical about AI-generated websites? Until recently, so was I—having spent over a decade building front-end components by hand. But I recently conducted an experiment: I created the "Developer\'s Christmas Career Calendar" landing page entirely using an AI agent. The results are incredible, and I’d love to share the exact details of this project with you.',
+		bio: 'A software engineer with over 10 years of commercial front-end experience. JavaScript trainer, speaker, and creator of the "Kariera Developera" (Developer\'s Career) newsletter. He is also the organizer of the Developer\'s Christmas Career Calendar.',
+		imageUrl: RadekWojtysiak,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/radekwojtysiak/',
+		},
+	},
+	{
+		name: 'Martin Torp',
+		role: 'Co-founder of Coana ',
+		company: [
+			{
+				name: 'Socket',
+				url: 'https://socket.dev/',
+			},
+		],
+		talkTitle: 'Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
+		talkDescription: '',
+		bio: 'Martin holds a PhD with a focus on static analysis and software maintenance for JavaScript projects using npm. He co-founded Coana, a startup based in Aarhus, Denmark, that developed reachability analysis technology to help security teams cut through the noise and prioritize the CVEs that actually matter. In 2025, Coana was acquired by Socket, a software security company, where Martin now serves as a tech lead on the team responsible for reachability analysis and automated dependency upgrades.',
+		imageUrl: MartinTorp,
+		social: {
+			linkedin: 'https://www.linkedin.com/in/martin-torp/',
 		},
 	},
 ];
