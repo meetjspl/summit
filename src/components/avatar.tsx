@@ -33,6 +33,7 @@ export const Avatar = () => {
 						<img
 							src={Frame}
 							className="pointer-events-none absolute top-0 left-0 h-full w-full"
+							alt=""
 						/>
 					</div>
 					<button
