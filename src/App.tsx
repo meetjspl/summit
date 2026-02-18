@@ -25,18 +25,18 @@ export const App = () => {
 		<>
 			<Hero />
 			<LoveLetter />
-			<Tickets />
-			<Partners />
 			<Agenda />
 			<Speakers />
 			<Debate />
+			<Tickets />
+			<Charity />
+			<Partners />
+			<BecomeASponsor />
+			<OrganizersSection />
 			<Venue />
 			<PhotosSlider />
 			<VideoPlaylists />
-			<Charity />
 			{/*<CFP />*/}
-			<OrganizersSection />
-			<BecomeASponsor />
 		</>
 	);
 };
