@@ -24,7 +24,6 @@ export const Navigation = () => {
 	}, []);
 
 	const navItems = [
-		{ label: 'Tickets', id: 'tickets' },
 		{ label: 'Partners', id: 'partners' },
 		{ label: 'Speakers', id: 'speakers' },
 		{ label: 'Debate', id: 'debate' },
@@ -86,8 +85,14 @@ export const Navigation = () => {
 					{isMainPage && (
 						<>
 							<div
-								className={`hidden items-center gap-8 md:flex ${!isScrolled ? 'ml-auto' : ''}`}
+								className={`hidden items-center gap-4 md:flex ${!isScrolled ? 'ml-auto' : ''}`}
 							>
+								<a
+									href="#tickets"
+									className="inline-block w-fit rounded-lg bg-meetjs-green px-4 py-2 text-base font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
+								>
+									TICKETS
+								</a>
 								{navItems.map(item => (
 									<a
 										key={item.id}
