@@ -71,10 +71,10 @@ export function ProgramModal({ isOpen, onClose, program }: ProgramModalProps) {
 				{/* Close Button */}
 				<button
 					onClick={onClose}
-					className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full text-white/80 transition-all hover:text-white"
+					className="absolute top-4 right-4 z-10 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full text-white transition-all hover:bg-white/20"
 					style={{
-						background: 'rgba(255, 255, 255, 0.06)',
-						border: '1px solid rgba(255, 255, 255, 0.12)',
+						background: 'rgba(0, 0, 0, 0.4)',
+						border: '1px solid rgba(255, 255, 255, 0.2)',
 						backdropFilter: 'blur(10px)',
 						WebkitBackdropFilter: 'blur(10px)',
 					}}
