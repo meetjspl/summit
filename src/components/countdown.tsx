@@ -1,52 +1,12 @@
-import { useEffect, useState } from 'react';
+import {useCountdown} from '@/hooks/useCountdown.ts';
 
-interface TimeLeft {
-	days: number;
-	hours: number;
-	minutes: number;
-	seconds: number;
-}
 
 export const Countdown = () => {
-	const eventDate = new Date('2026-03-04T08:00:00+01:00');
-	const eventEndDate = new Date('2026-03-04T18:00:00+01:00');
-
-	const calculateTimeLeft = (): TimeLeft | null => {
-		const now = new Date();
-		const difference = eventDate.getTime() - now.getTime();
-
-		if (difference > 0) {
-			return {
-				days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-				hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-				minutes: Math.floor((difference / 1000 / 60) % 60),
-				seconds: Math.floor((difference / 1000) % 60),
-			};
-		}
-
-		return null;
-	};
-
-	const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(calculateTimeLeft());
-	const [isLive, setIsLive] = useState(false);
-	const [isEnded, setIsEnded] = useState(false);
-
-	useEffect(() => {
-		const timer = setInterval(() => {
-			const newTimeLeft = calculateTimeLeft();
-			setTimeLeft(newTimeLeft);
-
-			const now = new Date();
-			setIsLive(now >= eventDate && now < eventEndDate);
-			setIsEnded(now >= eventEndDate);
-		}, 1000);
-
-		return () => clearInterval(timer);
-	}, []);
+	const { isEnded, timeLeft, isLive } = useCountdown();
 
 	if (isEnded) {
 		return (
-			<div className="flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-3">
+			<div className="flex items-center justify-center gap-2 rounded-lg bg-linear-to-r from-purple-600 to-blue-600 px-6 py-3">
 				<span className="text-lg font-bold text-white md:text-xl">
 					🎉 Event ended, see you next year!
 				</span>
@@ -56,8 +16,8 @@ export const Countdown = () => {
 
 	if (isLive) {
 		return (
-			<div className="flex items-center justify-center gap-2 rounded-lg bg-red-600 px-6 py-3 animate-pulse">
-				<div className="h-3 w-3 rounded-full bg-white animate-pulse" />
+			<div className="flex animate-pulse items-center justify-center gap-2 rounded-lg bg-red-600 px-6 py-3">
+				<div className="h-3 w-3 animate-pulse rounded-full bg-white" />
 				<span className="text-lg font-bold text-white md:text-xl">
 					EVENT IS LIVE NOW!
 				</span>
