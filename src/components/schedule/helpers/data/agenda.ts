@@ -260,8 +260,7 @@ export const AGENDA_CONF = [
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1f',
 		title: 'When AI does whatever it wants. AI alignment.',
 		speaker: 'Mateusz Chrobok',
-		description:
-			"Stand-alone eco-centric conglomeration. generating the bus won't do anything, we need to compress the 1080p HDD microchip!.Stabilis demens capto anser verecundia victus repellendus quam supplanto ex. Trucido sum nesciunt decet sonitus valens quibusdam. Spiculum aeneus quidem demonstro.",
+		description: '',
 		since: '2026-03-04T15:40:00',
 		till: '2026-03-04T16:10:00',
 		image: MateuszChrobok,
