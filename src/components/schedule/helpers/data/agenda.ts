@@ -191,8 +191,7 @@ export const AGENDA_CONF = [
 	},
 	{
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d1e',
-		title:
-			'Suggested title: Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
+		title: 'Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
 		speaker: 'Martin Torp',
 		showDescription: false,
 		description: '',
