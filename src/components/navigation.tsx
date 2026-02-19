@@ -25,7 +25,7 @@ export const Navigation = () => {
 
 	const navItems = [
 		{ label: 'Partners', id: 'partners' },
-		{ label: 'Speakers', id: 'speakers' },
+		{ label: 'Agenda', id: 'agenda' },
 		{ label: 'Debate', id: 'debate' },
 		{ label: 'Venue', id: 'venue' },
 		{ label: 'Videos', id: 'videos' },

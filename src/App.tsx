@@ -24,6 +24,7 @@ export const App = () => {
 	return (
 		<>
 			<Hero />
+			<PhotosSlider />
 			<LoveLetter />
 			<Agenda />
 			<Speakers />
@@ -34,7 +35,6 @@ export const App = () => {
 			<BecomeASponsor />
 			<OrganizersSection />
 			<Venue />
-			<PhotosSlider />
 			<VideoPlaylists />
 			{/*<CFP />*/}
 		</>

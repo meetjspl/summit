@@ -194,7 +194,8 @@ export const AGENDA_CONF = [
 		title: 'Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
 		speaker: 'Martin Torp',
 		showDescription: false,
-		description: '',
+		description:
+			"Are you getting too many warnings about vulnerabilities in dependencies? Many of those are not reachable from your code so they don't matter. In this talk, I'll show how we can tackle this for JavaScript using points-to and control-flow analysis, as implemented in the open-source static analysis tool Jelly.",
 		since: '2026-03-04T14:00:00',
 		till: '2026-03-04T14:10:00',
 		image: MartinTorp,
@@ -281,7 +282,7 @@ export const AGENDA_CONF = [
 		id: 'b5d01eed-9f84-4b9b-8a13-8052e7811d2f',
 		title: 'Panel discussion',
 		description:
-			'A panel discussion with experts on AI ranging from academics to hackers, about the future of programming and agents and the human in the loop.',
+			'A panel discussion with experts on AI ranging from academics to hackers, about the future of programming and agents and the human in the loop.\n\n Panelists:\n🎤 Bartosz Pampuch\n 🎤 Mateusz Chrobok\n 🎤 Marcin Czarkowski\n 🎤 dr Mariusz Rafało\n\n Host:\n Zbigniew Tenerowicz',
 		since: '2026-03-04T16:30:00',
 		till: '2026-03-04T17:50:00',
 		image:

@@ -1,27 +1,32 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 
+import Conference1Alt from '@/assets/previous-events/conference1.6427bba2aafbd5c49482.jpg';
+import Conference2Alt from '@/assets/previous-events/conference2 (1).jpg';
 import Conference2 from '@/assets/previous-events/conference2.jpg';
 import Conference3 from '@/assets/previous-events/conference3.jpg';
+import C17_1 from '@/assets/previous-events/conference17_1.jpg';
+import C17_2 from '@/assets/previous-events/conference17_2.jpg';
 import ConferenceWebp from '@/assets/previous-events/conference (1).webp';
+import C2019 from '@/assets/previous-events/conference-2019.jpg';
 import MeetjsNetworking from '@/assets/previous-events/meetjs-networking.webp';
 import MeetjsOrganizers from '@/assets/previous-events/meetjs-organizers.webp';
 import MeetjsSummit from '@/assets/previous-events/meetjs-summit.webp';
-import Conference1Alt from '@/assets/previous-events/conference1.6427bba2aafbd5c49482.jpg';
-import Conference2Alt from '@/assets/previous-events/conference2 (1).jpg';
+import S2019 from '@/assets/previous-events/speaker-2019.jpg';
 
 const PREVIOUS_EVENT_PHOTOS = [
 	{
 		id: 1,
 		url: Conference1Alt,
 		alt: 'meet.js Summit - Conference Hall',
-		span: 'col-span-1 row-span-1', // Standard size
+		span: 'col-span-1 row-span-1',
 	},
 	{
 		id: 2,
-		url: Conference2,
+		url: C17_1,
 		alt: 'meet.js Summit - Attendees',
-		span: 'col-span-1 row-span-1',
+		span: 'col-span-2 row-span-1',
 	},
+
 	{
 		id: 3,
 		url: Conference3,
@@ -55,19 +60,88 @@ const PREVIOUS_EVENT_PHOTOS = [
 	{
 		id: 8,
 		url: Conference1Alt,
-		alt: 'meet.js Summit - Conference Hall (Alt)',
+		alt: 'meet.js Summit - Conference Hall',
 		span: 'col-span-1 row-span-1',
 	},
 	{
 		id: 9,
+		url: S2019,
+		alt: 'meet.js Summit - Attendees',
+		span: 'col-span-1 row-span-2',
+	},
+	{
+		id: 10,
 		url: Conference2Alt,
-		alt: 'meet.js Summit - Attendees (Alt)',
+		alt: 'meet.js Summit - Attendees',
+		span: 'col-span-2 row-span-1',
+	},
+
+	{
+		id: 11,
+		url: Conference2,
+		alt: 'meet.js Summit - Attendees',
+		span: 'col-span-1 row-span-1',
+	},
+	{
+		id: 12,
+		url: C17_2,
+		alt: 'meet.js Summit 2017 - Attendees',
+		span: 'col-span-2 row-span-1',
+	},
+	{
+		id: 13,
+		url: C2019,
+		alt: 'meet.js Summit 2019 - Attendees',
 		span: 'col-span-2 row-span-1',
 	},
 ];
 
 export const PhotosSlider = () => {
 	const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+	const closeLightbox = () => {
+		setSelectedImage(null);
+	};
+
+	const nextImage = () => {
+		console.log(
+			'selectedImage',
+			selectedImage,
+			PREVIOUS_EVENT_PHOTOS.length - 1,
+		);
+		if (selectedImage === PREVIOUS_EVENT_PHOTOS.length) {
+			setSelectedImage(1);
+		} else {
+			setSelectedImage(prevState => prevState && (prevState += 1));
+		}
+	};
+
+	const prevImage = () => {
+		if (selectedImage === 1) {
+			setSelectedImage(PREVIOUS_EVENT_PHOTOS.length);
+		} else {
+			setSelectedImage(prevState => prevState && (prevState -= 1));
+		}
+	};
+
+	useEffect(() => {
+		const handleKeyDown = (e: KeyboardEvent) => {
+			switch (e.key) {
+				case 'Escape':
+					closeLightbox();
+					break;
+				case 'ArrowLeft':
+					prevImage();
+					break;
+				case 'ArrowRight':
+					nextImage();
+					break;
+			}
+		};
+
+		window.addEventListener('keydown', handleKeyDown);
+		return () => window.removeEventListener('keydown', handleKeyDown);
+	}, [selectedImage]);
 
 	if (PREVIOUS_EVENT_PHOTOS.length === 0) {
 		return null;
@@ -77,12 +151,8 @@ export const PhotosSlider = () => {
 		setSelectedImage(id);
 	};
 
-	const closeLightbox = () => {
-		setSelectedImage(null);
-	};
-
 	const selectedPhoto = PREVIOUS_EVENT_PHOTOS.find(
-		(photo) => photo.id === selectedImage,
+		photo => photo.id === selectedImage,
 	);
 
 	return (
@@ -104,7 +174,7 @@ export const PhotosSlider = () => {
 						<button
 							key={photo.id}
 							onClick={() => openLightbox(photo.id)}
-							className={`group relative overflow-hidden rounded-xl ${photo.span} transform transition-all duration-300 hover:scale-[1.02] hover:z-10 focus:outline-none focus:ring-2 focus:ring-meetjs-green focus:ring-offset-2 focus:ring-offset-black`}
+							className={`group relative overflow-hidden rounded-xl ${photo.span} transform transition-all duration-300 hover:z-10 hover:scale-[1.02] focus:ring-2 focus:ring-meetjs-green focus:ring-offset-2 focus:ring-offset-black focus:outline-none`}
 							style={{
 								animationDelay: `${index * 100}ms`,
 								animation: 'fadeInUp 0.6s ease-out forwards',
@@ -152,7 +222,7 @@ export const PhotosSlider = () => {
 				>
 					<button
 						onClick={closeLightbox}
-						className="absolute right-4 top-4 rounded-full bg-white/10 p-3 text-white transition-colors hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-meetjs-green"
+						className="absolute top-4 right-4 rounded-full bg-white/10 p-3 text-white transition-colors hover:bg-white/20 focus:ring-2 focus:ring-meetjs-green focus:outline-none"
 						aria-label="Close lightbox"
 					>
 						<svg
@@ -172,7 +242,7 @@ export const PhotosSlider = () => {
 
 					<div
 						className="max-h-[90vh] max-w-5xl"
-						onClick={(e) => e.stopPropagation()}
+						onClick={e => e.stopPropagation()}
 					>
 						<img
 							src={selectedPhoto.url}

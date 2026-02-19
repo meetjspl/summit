@@ -10,10 +10,10 @@ import PrzemekSuchodolski from '@/assets/speakers/przemek-suchodolski.jpg';
 import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
-import { SpeakerCard } from '@/components/speaker-card.tsx';
-import { Wrapper } from '@/components/wrapper.tsx';
+import {SpeakerCard} from '@/components/speaker-card.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 
-import type { Speaker } from '@/types/speaker.ts';
+import type {Speaker} from '@/types/speaker.ts';
 
 const speakers: Speaker[] = [
 	// {
@@ -252,7 +252,8 @@ const speakers: Speaker[] = [
 			},
 		],
 		talkTitle: 'Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
-		talkDescription: '',
+		talkDescription:
+			"Are you getting too many warnings about vulnerabilities in dependencies? Many of those are not reachable from your code so they don't matter. In this talk, I'll show how we can tackle this for JavaScript using points-to and control-flow analysis, as implemented in the open-source static analysis tool Jelly.",
 		bio: 'Martin holds a PhD with a focus on static analysis and software maintenance for JavaScript projects using npm. He co-founded Coana, a startup based in Aarhus, Denmark, that developed reachability analysis technology to help security teams cut through the noise and prioritize the CVEs that actually matter. In 2025, Coana was acquired by Socket, a software security company, where Martin now serves as a tech lead on the team responsible for reachability analysis and automated dependency upgrades.',
 		imageUrl: MartinTorp,
 		social: {
