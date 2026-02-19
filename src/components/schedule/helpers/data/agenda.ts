@@ -194,7 +194,8 @@ export const AGENDA_CONF = [
 		title: 'Using a 30-Year-Old Algorithm to Battle CVE Fatigue',
 		speaker: 'Martin Torp',
 		showDescription: false,
-		description: '',
+		description:
+			"Are you getting too many warnings about vulnerabilities in dependencies? Many of those are not reachable from your code so they don't matter. In this talk, I'll show how we can tackle this for JavaScript using points-to and control-flow analysis, as implemented in the open-source static analysis tool Jelly.",
 		since: '2026-03-04T14:00:00',
 		till: '2026-03-04T14:10:00',
 		image: MartinTorp,
