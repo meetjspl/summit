@@ -42,7 +42,10 @@ export const AGENDA_CONF = [
 		id: 'cb166ed0-837e-4661-aee1-9904bec33dae',
 		title: 'Engineer → Product Engineer → Product Builder Why? Why now? How?',
 		speaker: 'Piotr Kacała',
-		description: '',
+		description:
+			"If you were skeptical about AI hype - you were right. AI won't replace engineers. It won't magically turn bad ideas into good products. You ship code faster, sure, but if you're building the wrong thing, you're just shipping garbage at scale.\n" +
+			'But something IS changing. LinkedIn introduced a "Full Stack Builder" title. Linear hit $1.25B with one PM. Market favors engineers who decide WHAT gets built, not just HOW. That\'s the Product Builder: someone who owns the full picture, from user problem to shipped solution.\n' +
+			"In this talk, I'll walk you through the evolution: Engineer → Product Engineer → Product Builder. What changes at each stage, which skills to stack, and how AI accelerates the leap without replacing your judgment. A concrete roadmap for engineers ready to stop implementing someone else's ideas - whether you want to own product decisions, go technical founder, or build something of your own.",
 		since: '2026-03-04T10:00:00',
 		till: '2026-03-04T10:30:00',
 		image: PiotrKacala,
