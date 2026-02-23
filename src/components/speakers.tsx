@@ -185,7 +185,10 @@ const speakers: Speaker[] = [
 		],
 		talkTitle:
 			'Engineer → Product Engineer → Product Builder Why? Why now? How?',
-		talkDescription: '',
+		talkDescription:
+			"If you were skeptical about AI hype - you were right. AI won't replace engineers. It won't magically turn bad ideas into good products. You ship code faster, sure, but if you're building the wrong thing, you're just shipping garbage at scale.\n" +
+			'But something IS changing. LinkedIn introduced a "Full Stack Builder" title. Linear hit $1.25B with one PM. Market favors engineers who decide WHAT gets built, not just HOW. That\'s the Product Builder: someone who owns the full picture, from user problem to shipped solution.\n' +
+			"In this talk, I'll walk you through the evolution: Engineer → Product Engineer → Product Builder. What changes at each stage, which skills to stack, and how AI accelerates the leap without replacing your judgment. A concrete roadmap for engineers ready to stop implementing someone else's ideas - whether you want to own product decisions, go technical founder, or build something of your own.",
 		bio:
 			'Piotr Kacała is a Chief Technology & Product Officer with over 20 years of experience building' +
 			' high-performing teams and globally recognized digital products. Throughout his career, Piotr has contributed to the growth of companies such as Displate (scaling from startup to global brand), CD Projekt (including flagship titles like Cyberpunk 2077 and The Witcher), and GOG.com.' +
