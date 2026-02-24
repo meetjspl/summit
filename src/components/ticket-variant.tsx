@@ -9,6 +9,8 @@ interface TicketVariantProps {
 	price: number;
 	link: string;
 	highlight?: boolean;
+	image?: string;
+	imageAlt?: string;
 }
 
 export const TicketVariant = ({
@@ -18,6 +20,8 @@ export const TicketVariant = ({
 	price,
 	link,
 	highlight = false,
+	image,
+	imageAlt,
 }: TicketVariantProps) => {
 	const cardRef = useRef<HTMLDivElement>(null);
 	const hasTrackedView = useRef(false);
@@ -70,39 +74,55 @@ export const TicketVariant = ({
 	return (
 		<div
 			ref={cardRef}
-			className={`flex w-full flex-col rounded-2xl border-2 bg-black p-8 transition-all hover:scale-105 md:w-96 ${
+			className={`flex w-full flex-col rounded-2xl border-2 bg-black transition-[transform,border-color,box-shadow] hover:scale-105 md:w-96 ${
 				highlight
 					? 'border-meetjs-green shadow-xl shadow-meetjs-green/20'
 					: 'border-white/20 hover:border-white/40'
 			}`}
 		>
-			<h3 className="mb-2 text-3xl font-bold text-white">{title}</h3>
-			<p className="mb-6 text-sm text-white/70">{subtitle}</p>
-			<ul className="mb-8 flex-1 space-y-3">
-				{pack.map((item, index) => (
-					<li key={index} className="flex items-start gap-3">
-						<span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-meetjs-green text-xs font-bold text-black">
-							✓
+			{image && (
+				<div className="overflow-hidden rounded-t-2xl">
+					<img
+						src={image}
+						alt={imageAlt ?? title}
+						width={1024}
+						height={341}
+						loading="lazy"
+						className="w-full object-cover"
+					/>
+				</div>
+			)}
+			<div className="p-8">
+				<h3 className="mb-2 text-3xl font-bold text-white">{title}</h3>
+				<p className="mb-6 text-sm text-white/70">{subtitle}</p>
+				<ul className="mb-8 flex-1 space-y-3">
+					{pack.map((item, index) => (
+						<li key={index} className="flex items-start gap-3">
+							<span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-meetjs-green text-xs font-bold text-black">
+								✓
+							</span>
+							<span className="text-sm text-white/90">{item}</span>
+						</li>
+					))}
+				</ul>
+
+				<div className="mb-6 border-t border-white/10 pt-6">
+					<p className="text-left">
+						<span className="text-4xl font-bold text-white tabular-nums">
+							{price} PLN
 						</span>
-						<span className="text-sm text-white/90">{item}</span>
-					</li>
-				))}
-			</ul>
+						<span className="ml-2 text-sm text-white/60">brutto</span>
+					</p>
+				</div>
 
-			<div className="mb-6 border-t border-white/10 pt-6">
-				<p className="text-left">
-					<span className="text-4xl font-bold text-white">{price} PLN</span>
-					<span className="ml-2 text-sm text-white/60">brutto</span>
-				</p>
+				<a
+					href={link}
+					onClick={handleBuyClick}
+					className="block rounded-lg bg-meetjs-green py-4 text-center font-semibold text-black transition-[background-color,box-shadow] hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
+				>
+					Get Your Ticket
+				</a>
 			</div>
-
-			<a
-				href={link}
-				onClick={handleBuyClick}
-				className="block rounded-lg bg-meetjs-green py-4 text-center font-semibold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20"
-			>
-				Get your ticket!
-			</a>
 		</div>
 	);
 };
