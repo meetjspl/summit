@@ -2,40 +2,50 @@
 
 /* stylelint-disable-next-line */
 @theme {
-  --font-montserrat: 'Montserrat', sans-serif;
+	--font-montserrat: 'Montserrat', sans-serif;
 
-  --color-black: #131418;
-  --color-gray: #424242;
-  --color-white-2: #E0E0E0;
+	--color-black: #131418;
+	--color-gray: #424242;
+	--color-white-2: #e0e0e0;
 
-  --color-meetjs-purple: #2B1932;
-  --color-meetjs-green: #BCD35D;
-  --color-meetjs-blue: #219EAB;
+	--color-meetjs-purple: #2b1932;
+	--color-meetjs-green: #bcd35d;
+	--color-meetjs-blue: #219eab;
 
-  --color-aidevs-green: #75F66D;
-  --color-aidevs-white: #F6F6FF;
+	--color-aidevs-green: #75f66d;
+	--color-aidevs-white: #f6f6ff;
 
-  --color-accent: #EE196E;
+	--color-accent: #ee196e;
 
-  --animate-float: float 3s ease-in-out infinite;
+	--animate-float: float 3s ease-in-out infinite;
 }
 
 html,
 body {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 body {
-  font-family: var(--font-montserrat), sans-serif;
-  background-color: var(--color-black);
+	font-family: var(--font-montserrat), sans-serif;
+	background-color: var(--color-black);
+}
+
+/* Disable hover effects on page elements when lightbox is open */
+body.lightbox-open *:not([class*='lightbox']) {
+	pointer-events: none;
+}
+
+body.lightbox-open .lightbox-overlay {
+	pointer-events: auto;
 }
 
 /* Floating animation for monitor and charity badge */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
 }
