@@ -115,6 +115,7 @@ const speakers: Speaker[] = [
 			'You’ll walk away knowing what your agent is doing when no one is watching. No more black boxes.',
 		bio: 'He talks and records content on front-end, node.js and web development topics. Co-organizer of meet.js Gdańsk meetup. One of the talking heads on “Śniadanie z Programowaniem” and other video formats by JustJoin.it',
 		imageUrl: MichalMichalczuk,
+		youtubeShort: 'https://youtube.com/shorts/9cGMeEruL1o',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/michalczukm/',
 		},
