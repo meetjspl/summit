@@ -15,10 +15,10 @@ export const Route = createFileRoute('/thank-you')({
 		ec_order_id: string;
 		ec_promo_code: string;
 	}) => ({
-		ec_product: search.ec_product,
-		ec_price: search.ec_price,
-		ec_amount: search.ec_amount,
-		ec_currency: search.ec_currency,
+		ec_product: search.ec_product ?? '',
+		ec_price: search.ec_price ?? '',
+		ec_amount: search.ec_amount ?? '1',
+		ec_currency: search.ec_currency ?? '',
 		ec_product_id: search.ec_product_id,
 		ec_product_uuid: search.ec_product_uuid,
 		ec_price_id: search.ec_price_id,
