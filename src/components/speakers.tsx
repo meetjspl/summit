@@ -10,10 +10,10 @@ import PrzemekSuchodolski from '@/assets/speakers/przemek-suchodolski.jpg';
 import RadekWojtysiak from '@/assets/speakers/radek-wojtysiak.jpeg';
 import SzymonChmal from '@/assets/speakers/szymon-chmal.png';
 import TomaszGil from '@/assets/speakers/tomasz-gil.jpeg';
-import {SpeakerCard} from '@/components/speaker-card.tsx';
-import {Wrapper} from '@/components/wrapper.tsx';
+import { SpeakerCard } from '@/components/speaker-card.tsx';
+import { Wrapper } from '@/components/wrapper.tsx';
 
-import type {Speaker} from '@/types/speaker.ts';
+import type { Speaker } from '@/types/speaker.ts';
 
 const speakers: Speaker[] = [
 	// {
@@ -40,6 +40,7 @@ const speakers: Speaker[] = [
 		talkTitle: 'When AI does whatever it wants. AI alignment.',
 		bio: 'Mateusz Chrobok is a cybersecurity expert, startup consultant, and tech educator with deep experience in digital security, innovation, and AI. He’s co-founded multiple startups and helps organisations navigate the evolving landscape of online threats and secure digital transformation. As a creator and communicator, Mateusz builds communities around technology through his popular YouTube channel and educational platform, where he explains complex cybersecurity and tech topics in a clear and engaging way.',
 		imageUrl: MateuszChrobok,
+		youtubeShort: 'https://www.youtube.com/shorts/Ai9KDYleSsQ',
 		social: {
 			x: 'https://x.com/MateuszChrobok',
 			linkedin: 'https://www.linkedin.com/in/mateuszchrobok/',

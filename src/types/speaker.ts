@@ -6,6 +6,7 @@ export interface Speaker {
 	talkDescription?: string;
 	bio: string;
 	imageUrl?: string;
+	youtubeShort?: string;
 	social?: {
 		x?: string;
 		linkedin?: string;
