@@ -1,11 +1,11 @@
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 import heroBg from '@/assets/SGH_ASCI.png';
 import AnniversaryLogo from '@/assets/anniversary-logo.svg?react';
-import {Avatar} from '@/components/avatar.tsx';
-import {Organizers} from '@/components/organizers.tsx';
-import {Wrapper} from '@/components/wrapper.tsx';
-import {Route} from '@/routes/thank-you.tsx';
+import { Avatar } from '@/components/avatar.tsx';
+import { Organizers } from '@/components/organizers.tsx';
+import { Wrapper } from '@/components/wrapper.tsx';
+import { Route } from '@/routes/thank-you.tsx';
 import * as gtag from '@/utils/gtag';
 
 export const ThankYou = () => {
@@ -28,6 +28,11 @@ export const ThankYou = () => {
 						currency: ec_currency,
 					},
 				],
+			});
+			gtag.trackMetaPurchase({
+				value: parseFloat(ec_price),
+				currency: ec_currency,
+				contentName: ec_product,
 			});
 		}
 	}, [ec_order_id, ec_product, ec_price, ec_currency, ec_amount]);
