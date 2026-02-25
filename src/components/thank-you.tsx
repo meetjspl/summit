@@ -13,7 +13,9 @@ export const ThankYou = () => {
 	const { ec_order_id, ec_product, ec_price, ec_currency, ec_amount } = search;
 
 	useEffect(() => {
-		if (ec_order_id) {
+		const sessionKey = `tracked_order_${ec_order_id}`;
+		if (ec_order_id && !sessionStorage.getItem(sessionKey)) {
+			sessionStorage.setItem(sessionKey, '1');
 			gtag.event({
 				action: 'purchase',
 				category: 'ecommerce',
@@ -24,7 +26,7 @@ export const ThankYou = () => {
 					{
 						item_name: ec_product,
 						price: parseFloat(ec_price),
-						quantity: parseInt(ec_amount, 10),
+						quantity: parseInt(ec_amount || '1', 10),
 						currency: ec_currency,
 					},
 				],
