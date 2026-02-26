@@ -10,16 +10,17 @@ import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
 import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
-import {PartnersLogos} from '@/components/partners-logos.tsx';
-import {Wrapper} from '@/components/wrapper.tsx';
+import { PartnersLogos } from '@/components/partners-logos.tsx';
+import { Wrapper } from '@/components/wrapper.tsx';
 
-import type {Partner} from '@/types/partner.ts';
+import type { Partner } from '@/types/partner.ts';
 
 const partners: Partner[] = [
 	{
 		name: 'SGH',
 		logoUrl: SGHLogo,
 		websiteUrl: 'https://www.sgh.waw.pl',
+		type: 'strategic',
 	},
 	{
 		name: '10xDevs',
@@ -112,6 +113,7 @@ const partners: Partner[] = [
 
 export const Partners = () => {
 	const realPartners = partners.filter(p => !p.type);
+	const strategicPartners = partners.filter(p => p.type === 'strategic');
 	const mainSponsor = partners.filter(p => p.type === 'main');
 	const goldSponsors = partners.filter(p => p.type === 'gold');
 	const silverSponsors = partners.filter(p => p.type === 'silver');
@@ -120,6 +122,12 @@ export const Partners = () => {
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
+				{strategicPartners.length !== 0 && (
+					<PartnersLogos
+						title="Strategic partner"
+						partners={strategicPartners}
+					/>
+				)}
 				{mainSponsor.length !== 0 && (
 					<PartnersLogos
 						title="Main sponsor of 15th Anniversary"
