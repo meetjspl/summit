@@ -7,9 +7,13 @@ export const Tickets = () => {
 			<div className="absolute top-1/2 h-32 w-full -translate-y-1/2 -rotate-2 bg-meetjs-green md:h-40" />
 
 			<Wrapper>
-				<h2 className="relative z-10 mb-16 text-center text-4xl font-bold md:text-5xl">
+				<h2 className="relative z-10 mb-4 text-center text-4xl font-bold md:text-5xl">
 					Get Your Summit Ticket
 				</h2>
+				<p className="relative z-10 mb-12 text-center text-white/80">
+					Event held in{' '}
+					<span className="font-semibold text-white">🇬🇧 English</span>
+				</p>
 				<div className="relative z-20 flex flex-col justify-center gap-8 md:flex-row">
 					<TicketVariant
 						title="Regular"
