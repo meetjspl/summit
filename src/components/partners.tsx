@@ -21,6 +21,7 @@ const partners: Partner[] = [
 		name: 'SGH',
 		logoUrl: SGHLogo,
 		websiteUrl: 'https://www.sgh.waw.pl',
+		type: 'strategic',
 	},
 	{
 		name: '10xDevs',
@@ -118,6 +119,7 @@ const partners: Partner[] = [
 
 export const Partners = () => {
 	const realPartners = partners.filter(p => !p.type);
+	const strategicPartners = partners.filter(p => p.type === 'strategic');
 	const mainSponsor = partners.filter(p => p.type === 'main');
 	const goldSponsors = partners.filter(p => p.type === 'gold');
 	const silverSponsors = partners.filter(p => p.type === 'silver');
@@ -126,6 +128,12 @@ export const Partners = () => {
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
+				{strategicPartners.length !== 0 && (
+					<PartnersLogos
+						title="Strategic partner"
+						partners={strategicPartners}
+					/>
+				)}
 				{mainSponsor.length !== 0 && (
 					<PartnersLogos
 						title="Main sponsor of 15th Anniversary"
