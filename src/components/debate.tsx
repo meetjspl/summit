@@ -1,4 +1,5 @@
 import BartoszPampuch from '@/assets/speakers/bartosz-pampuch.jpeg';
+import JerzySurma from '@/assets/speakers/jerzy-surma.jpg';
 import MarcinCzarkowski from '@/assets/speakers/marcin-czarkowski.jpeg';
 import MariuszRafalo from '@/assets/speakers/mariusz-rafalo.jpg';
 import MateuszChrobok from '@/assets/speakers/mateusz-chrobok.png';
@@ -84,12 +85,17 @@ const panelists: Speaker[] = [
 		},
 	},
 	{
-		name: 'TBA',
+		name: 'prof Jerzy Surma',
 		role: 'Panelist',
-		company: '',
+		company: [
+			{
+				name: 'SGH Warsaw School of Economics',
+				url: 'https://www.sgh.waw.pl/en',
+			},
+		],
 		talkTitle: '',
 		bio: '',
-		imageUrl: '',
+		imageUrl: JerzySurma,
 	},
 ];
 
