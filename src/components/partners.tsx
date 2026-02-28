@@ -1,6 +1,7 @@
 import Logo10xDevs from '@/assets/partners/10xDevs.svg';
 import AI_ProductHeroes from '@/assets/partners/AI_product-heroes.svg';
 import SGHLogo from '@/assets/partners/SGH.png';
+import CueTimer from '@/assets/partners/cuetimer.png';
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import ApolloLogo from '@/assets/partners/hello/Apollo_Core_White.png';
 import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
@@ -10,10 +11,10 @@ import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
 import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
-import { PartnersLogos } from '@/components/partners-logos.tsx';
-import { Wrapper } from '@/components/wrapper.tsx';
+import {PartnersLogos} from '@/components/partners-logos.tsx';
+import {Wrapper} from '@/components/wrapper.tsx';
 
-import type { Partner } from '@/types/partner.ts';
+import type {Partner} from '@/types/partner.ts';
 
 const partners: Partner[] = [
 	{
@@ -108,6 +109,11 @@ const partners: Partner[] = [
 		name: 'Gamedev.js',
 		logoUrl: GamedevjsLogo,
 		websiteUrl: 'https://gamedevjs.com',
+	},
+	{
+		name: 'CueTimer - presentation tools',
+		logoUrl: CueTimer,
+		websiteUrl: 'https://www.presentationtools.com/cuetimer/',
 	},
 ];
 
