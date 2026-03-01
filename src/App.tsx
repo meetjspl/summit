@@ -9,6 +9,7 @@ import { PhotosSlider } from '@/components/photos-slider.tsx';
 import { Speakers } from '@/components/speakers.tsx';
 import { Venue } from '@/components/venue.tsx';
 import { VideoPlaylists } from '@/components/video-playlists.tsx';
+import { YoutubeShorts } from '@/components/youtube-shorts.tsx';
 import { useErrorTracking } from '@/hooks/useErrorTracking';
 import { useScrollDepthTracking } from '@/hooks/useScrollDepthTracking';
 import { useTimeOnPageTracking } from '@/hooks/useTimeOnPageTracking';
@@ -24,6 +25,7 @@ export const App = () => {
 	return (
 		<>
 			<Hero />
+			<YoutubeShorts />
 			<LoveLetter />
 			<Agenda />
 			<Speakers />
