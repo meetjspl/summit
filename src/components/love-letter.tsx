@@ -1,34 +1,31 @@
-import { Wrapper } from '@/components/wrapper.tsx';
-import OrganizersImg from '@/assets/previous-events/meetjs-organizers.webp';
-import FirstMeetupImg from '@/assets/previous-events/first-meetup.jpg';
-import ConferenceImg from '@/assets/previous-events/meetjs-summit.webp';
-import NetworkingImg from '@/assets/previous-events/meetjs-networking.webp';
 import IconCommunity from '@/assets/icon-community.svg?react';
+import FirstMeetupImg from '@/assets/previous-events/first-meetup.jpg';
+import NetworkingImg from '@/assets/previous-events/meetjs-networking.webp';
+import OrganizersImg from '@/assets/previous-events/meetjs-organizers.webp';
+import ConferenceImg from '@/assets/previous-events/meetjs-summit.webp';
+import {Wrapper} from '@/components/wrapper.tsx';
 
 export const LoveLetter = () => {
-	const handleScrollToTickets = () => {
-		const ticketsSection = document.getElementById('tickets');
-		ticketsSection?.scrollIntoView({ behavior: 'smooth' });
-	};
-
 	return (
-		<section className="relative overflow-hidden bg-black py-16 text-white md:py-24">
+		<section
+			className={`relative overflow-hidden bg-black bg-[url(./assets/bg.png)] bg-cover bg-center bg-no-repeat py-16 md:py-24 lg:py-32`}
+		>
 			{/* Decorative background elements */}
-			<div className="absolute top-0 right-0 -mr-20 -mt-20 h-64 w-64 rounded-full bg-meetjs-blue/5 blur-[100px]" />
-			<div className="absolute bottom-0 left-0 -ml-20 -mb-20 h-64 w-64 rounded-full bg-meetjs-green/5 blur-[100px]" />
+			<div className="absolute top-0 right-0 -mt-20 -mr-20 h-64 w-64 rounded-full bg-meetjs-blue/5 blur-[100px]" />
+			<div className="absolute bottom-0 left-0 -mb-20 -ml-20 h-64 w-64 rounded-full bg-meetjs-green/5 blur-[100px]" />
 
 			<Wrapper>
-				<div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
+				<div className="flex flex-col gap-8 rounded-2xl bg-black/85 p-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-16">
 					{/* Left Column: The Letter */}
 					<div className="flex flex-col justify-center space-y-6">
 						<div className="space-y-3">
-							<div className="inline-flex items-center gap-2 rounded-full border border-meetjs-green/20 bg-meetjs-green/5 px-3 py-1 text-xs md:text-sm text-meetjs-green font-medium">
+							<div className="inline-flex items-center gap-2 rounded-full border border-meetjs-green/20 bg-meetjs-green/5 px-3 py-1 text-xs font-medium text-meetjs-green md:text-sm">
 								<IconCommunity className="h-3.5 w-3.5" />
 								<span>Celebrating 15 Years</span>
 							</div>
-							<h2 className="text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+							<h2 className="text-3xl leading-tight font-bold text-white md:text-4xl lg:text-5xl">
 								A Love Letter to <br />
-								<span className="text-transparent bg-clip-text bg-gradient-to-r from-meetjs-blue to-meetjs-green">
+								<span className="bg-linear-to-r from-meetjs-blue to-meetjs-green bg-clip-text text-transparent">
 									Our Community
 								</span>
 							</h2>
@@ -36,41 +33,52 @@ export const LoveLetter = () => {
 
 						<div className="space-y-4 text-base leading-relaxed text-gray-300 md:text-lg">
 							<p>
-								It all started on a valentine's eve in <strong>2011</strong>. A small group of
-								us gathered at <em>Klub ZAK</em> in Poznań, united by a shared passion for JavaScript. 
-								We talked about jQuery Mobile and HTML5 audio, unaware that we were
-								planting the seeds for Poland's largest developer community.
+								It all started on a valentine's eve in <strong>2011</strong>. A
+								small group of us gathered at <em>Klub ZAK</em> in Poznań,
+								united by a shared passion for JavaScript. We talked about
+								jQuery Mobile and HTML5 audio, unaware that we were planting the
+								seeds for Poland's largest developer community.
 							</p>
 							<p>
-								15 years later, meet.js is a movement. Thousands of lines of code, hundreds of speakers, 
-								and countless friendships forged over pizza and beer. We remain{' '}
-								<span className="text-white font-semibold">100% non-commercial</span>, 
-								community-driven, and powered by you.
+								15 years later, meet.js is a movement. Thousands of lines of
+								code, hundreds of speakers, and countless friendships forged
+								over pizza and beer. We remain{' '}
+								<span className="font-semibold text-white">
+									100% non-commercial
+								</span>
+								, community-driven, and powered by you.
 							</p>
 							<p>
-								This Summit is our tribute to you. Thank you for showing up, for sharing your knowledge, and for
-								making this ecosystem vibrant and alive.
+								This Summit is our tribute to you. Thank you for showing up, for
+								sharing your knowledge, and for making this ecosystem vibrant
+								and alive.
 							</p>
 						</div>
 
-						<div className="flex flex-wrap gap-8 border-y border-white/10 py-6">
+						<div className="flex flex-wrap justify-center gap-8 border-y border-white/10 py-6">
 							<div>
 								<p className="text-3xl font-bold text-white">15</p>
-								<p className="text-xs uppercase tracking-wider text-gray-400">Years</p>
+								<p className="text-xs tracking-wider text-gray-400 uppercase">
+									Years
+								</p>
 							</div>
 							<div>
 								<p className="text-3xl font-bold text-white">12</p>
-								<p className="text-xs uppercase tracking-wider text-gray-400">Cities</p>
+								<p className="text-xs tracking-wider text-gray-400 uppercase">
+									Cities
+								</p>
 							</div>
 							<div>
 								<p className="text-3xl font-bold text-white">800+</p>
-								<p className="text-xs uppercase tracking-wider text-gray-400">Events</p>
+								<p className="text-xs tracking-wider text-gray-400 uppercase">
+									Events
+								</p>
 							</div>
 						</div>
 
-						<div className="pt-2">
-							<button
-								onClick={handleScrollToTickets}
+						<div className="flex justify-center pt-2">
+							<a
+								href="#tickets"
 								className="group inline-flex items-center justify-center gap-2 rounded-lg bg-meetjs-green px-6 py-3 text-sm font-bold text-black transition-all hover:bg-meetjs-green/90 hover:shadow-lg hover:shadow-meetjs-green/20 md:text-base"
 							>
 								<span>Join the Celebration</span>
@@ -89,7 +97,7 @@ export const LoveLetter = () => {
 									<path d="M5 12h14" />
 									<path d="m12 5 7 7-7 7" />
 								</svg>
-							</button>
+							</a>
 						</div>
 					</div>
 
@@ -109,7 +117,9 @@ export const LoveLetter = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
 								<div className="absolute bottom-2 left-3">
-									<p className="font-mono text-[10px] text-meetjs-green">2011</p>
+									<p className="font-mono text-[10px] text-meetjs-green">
+										2011
+									</p>
 									<p className="text-xs font-bold text-white">The Start</p>
 								</div>
 							</div>
@@ -123,7 +133,9 @@ export const LoveLetter = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
 								<div className="absolute bottom-2 left-3">
-									<p className="font-mono text-[10px] text-meetjs-blue">Community</p>
+									<p className="font-mono text-[10px] text-meetjs-blue">
+										Community
+									</p>
 									<p className="text-xs font-bold text-white">Networking</p>
 								</div>
 							</div>
@@ -137,7 +149,9 @@ export const LoveLetter = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
 								<div className="absolute bottom-2 left-3">
-									<p className="font-mono text-[10px] text-meetjs-green">Summit</p>
+									<p className="font-mono text-[10px] text-meetjs-green">
+										Summit
+									</p>
 									<p className="text-xs font-bold text-white">Scale</p>
 								</div>
 							</div>
@@ -149,9 +163,11 @@ export const LoveLetter = () => {
 									alt="Organizers"
 									className="h-full w-full object-cover opacity-80 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100"
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
+								<div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-80" />
 								<div className="absolute bottom-2 left-3">
-									<p className="font-mono text-[10px] text-meetjs-blue">People</p>
+									<p className="font-mono text-[10px] text-meetjs-blue">
+										People
+									</p>
 									<p className="text-xs font-bold text-white">Passion</p>
 								</div>
 							</div>
@@ -178,19 +194,22 @@ export const LoveLetter = () => {
 									</svg>
 								</div>
 								<div className="flex-1">
-									<h3 className="text-sm font-bold text-white">Share Your Memory</h3>
+									<h3 className="text-sm font-bold text-white">
+										Share Your Memory
+									</h3>
 									<p className="text-xs text-gray-400">
-										Tweet your favorite moment with <span className="text-meetjs-blue">#meetjs15</span>.
+										Tweet your favorite moment with{' '}
+										<span className="text-meetjs-blue">#meetjs15</span>.
 									</p>
 								</div>
-                                <a
-                                    href="https://twitter.com/intent/tweet?text=My%20favorite%20meet.js%20memory%20is...%20%23meetjs15%20%23meetjsSummit"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="rounded bg-white/10 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-white/20"
-                                >
-                                    Write &rarr;
-                                </a>
+								<a
+									href="https://twitter.com/intent/tweet?text=My%20favorite%20meet.js%20memory%20is...%20%23meetjs15%20%23meetjsSummit"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="rounded bg-white/10 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-white/20"
+								>
+									Write &rarr;
+								</a>
 							</div>
 						</div>
 					</div>

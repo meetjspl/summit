@@ -1,6 +1,7 @@
 import Logo10xDevs from '@/assets/partners/10xDevs.svg';
 import AI_ProductHeroes from '@/assets/partners/AI_product-heroes.svg';
 import SGHLogo from '@/assets/partners/SGH.png';
+import CueTimer from '@/assets/partners/cuetimer.png';
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import ApolloLogo from '@/assets/partners/hello/Apollo_Core_White.png';
 import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
@@ -20,6 +21,7 @@ const partners: Partner[] = [
 		name: 'SGH',
 		logoUrl: SGHLogo,
 		websiteUrl: 'https://www.sgh.waw.pl',
+		type: 'strategic',
 	},
 	{
 		name: '10xDevs',
@@ -108,10 +110,16 @@ const partners: Partner[] = [
 		logoUrl: GamedevjsLogo,
 		websiteUrl: 'https://gamedevjs.com',
 	},
+	{
+		name: 'CueTimer - presentation tools',
+		logoUrl: CueTimer,
+		websiteUrl: 'https://www.presentationtools.com/cuetimer/',
+	},
 ];
 
 export const Partners = () => {
 	const realPartners = partners.filter(p => !p.type);
+	const strategicPartners = partners.filter(p => p.type === 'strategic');
 	const mainSponsor = partners.filter(p => p.type === 'main');
 	const goldSponsors = partners.filter(p => p.type === 'gold');
 	const silverSponsors = partners.filter(p => p.type === 'silver');
@@ -120,6 +128,12 @@ export const Partners = () => {
 	return (
 		<section id="partners" className="bg-black py-16 text-white">
 			<Wrapper>
+				{strategicPartners.length !== 0 && (
+					<PartnersLogos
+						title="Strategic partner"
+						partners={strategicPartners}
+					/>
+				)}
 				{mainSponsor.length !== 0 && (
 					<PartnersLogos
 						title="Main sponsor of 15th Anniversary"

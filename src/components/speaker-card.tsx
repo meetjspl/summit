@@ -25,18 +25,31 @@ export const SpeakerCard = ({
 	talkTitle,
 	talkDescription,
 	imageUrl,
+	youtubeShort,
 	variant = 'speaker',
 }: SpeakerCardProps) => {
 	const isDebate = variant === 'debate';
 
 	return (
 		<div className="group flex flex-col overflow-hidden rounded-2xl bg-gray/20 transition-all hover:bg-gray/30 hover:shadow-xl">
-			<div className="aspect-square overflow-hidden bg-gray">
+			<div className="relative aspect-square overflow-hidden bg-gray">
 				<img
 					src={imageUrl || SpeakerPlaceholder}
 					alt={name}
 					className="h-full w-full object-cover transition-transform group-hover:scale-105"
 				/>
+				{youtubeShort && (
+					<a
+						href={youtubeShort}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label={`Watch ${name}'s YouTube Short`}
+						className="absolute right-3 bottom-3 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-sm transition-colors hover:bg-red-600"
+					>
+						<FaYoutube className="h-4 w-4" />
+						<span>Short 🇵🇱</span>
+					</a>
+				)}
 			</div>
 
 			<div className={`flex flex-col ${isDebate ? 'gap-1 p-3' : 'gap-2 p-6'}`}>

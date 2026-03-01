@@ -8,7 +8,7 @@ export const Venue = () => {
 			<Wrapper>
 				<div className="flex flex-col items-start gap-12 text-white md:flex-row md:items-center">
 					<div className="flex w-full flex-col gap-6 md:w-1/2">
-						<h2 className="text-4xl font-semibold leading-[140%] tracking-tight text-meetjs-green md:text-[40px]">
+						<h2 className="text-4xl leading-[140%] font-semibold tracking-tight text-meetjs-green md:text-[40px]">
 							Venue
 						</h2>
 
@@ -28,6 +28,11 @@ export const Venue = () => {
 								scientific research, new ideas and initiatives created by the
 								academic community, alumni, as well as representatives from
 								business, social organizations, and public administration.
+							</p>
+
+							<p>
+								The event will take place in{' '}
+								<span className="font-semibold">Building G</span>.
 							</p>
 						</div>
 					</div>

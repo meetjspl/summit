@@ -5,8 +5,9 @@ declare global {
 		gtag: (
 			command: 'config' | 'event' | 'js',
 			targetId: string,
-			config?: Record<string, unknown>
+			config?: Record<string, unknown>,
 		) => void;
+		fbq: (...args: unknown[]) => void;
 	}
 }
 
@@ -152,6 +153,25 @@ export const trackSocialShare = (platform: string, url?: string) => {
 		label: platform,
 		share_url: url || window.location.href,
 	});
+};
+
+// Meta Pixel Purchase event
+export const trackMetaPurchase = ({
+	value,
+	currency = 'PLN',
+	contentName,
+}: {
+	value: number;
+	currency?: string;
+	contentName?: string;
+}) => {
+	if (typeof window !== 'undefined' && window.fbq) {
+		window.fbq('track', 'Purchase', {
+			value: value,
+			currency: currency,
+			content_name: contentName,
+		});
+	}
 };
 
 // Section view tracking
