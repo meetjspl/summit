@@ -1,4 +1,5 @@
 import { TicketVariant } from '@/components/ticket-variant.tsx';
+import { TypescriptBoostCards } from '@/components/typescript-boost-cards.tsx';
 import { Wrapper } from '@/components/wrapper.tsx';
 
 export const Tickets = () => {
@@ -30,12 +31,7 @@ export const Tickets = () => {
 							'Access to the coffee area',
 							'Seating in VIP rows (2-4)',
 							'Lunch at the bistro',
-							<a
-								href="https://instytutfullstack.pl/typescript-boost-cards"
-								className="text-meetjs-green underline"
-							>
-								TypeScript Boost Cards from Instytut Fullstack
-							</a>,
+							<TypescriptBoostCards />,
 							<p>
 								-10% for BRAVE courses:{' '}
 								<ul className="list-disc pl-6">
@@ -65,7 +61,6 @@ export const Tickets = () => {
 									</li>
 								</ul>
 							</p>,
-							'More benefits soon...',
 						]}
 						price={512}
 						highlight={true}
