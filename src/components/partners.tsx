@@ -1,6 +1,7 @@
 import Logo10xDevs from '@/assets/partners/10xDevs.svg';
 import AI_ProductHeroes from '@/assets/partners/AI_product-heroes.svg';
 import SGHLogo from '@/assets/partners/SGH.png';
+import SuperteamPLLogo from '@/assets/partners/SuperteamPL sign white.png';
 import CueTimer from '@/assets/partners/cuetimer.png';
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import ApolloLogo from '@/assets/partners/hello/Apollo_Core_White.png';
@@ -111,6 +112,11 @@ const partners: Partner[] = [
 		websiteUrl: 'https://gamedevjs.com',
 	},
 	{
+		name: 'Superteam Poland',
+		logoUrl: SuperteamPLLogo,
+		websiteUrl: 'https://pl.superteam.fun/',
+  },
+  {
 		name: 'CueTimer - presentation tools',
 		logoUrl: CueTimer,
 		websiteUrl: 'https://www.presentationtools.com/cuetimer/',
