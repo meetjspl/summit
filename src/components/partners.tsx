@@ -10,6 +10,7 @@ import HardparseLogo from '@/assets/partners/hello/hardparse.svg';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
+import GDGWarsawLogo from '@/assets/partners/organizer-logo.svg';
 import QXM from '@/assets/partners/qxm.png';
 import TextLogo from '@/assets/partners/silver/Text-Logo-White.png';
 import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
@@ -114,6 +115,11 @@ const partners: Partner[] = [
 		logoUrl: ApolloLogo,
 		websiteUrl: 'https://www.apollo.io/',
 		type: 'hello',
+	},
+	{
+		name: 'GDG Warszawa',
+		logoUrl: GDGWarsawLogo,
+		websiteUrl: 'https://gdg.community.dev/gdg-warszawa/',
 	},
 	{
 		name: 'Gamedev.js',
