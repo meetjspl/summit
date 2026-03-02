@@ -1,8 +1,8 @@
-import {useEffect} from 'react';
-import {createPortal} from 'react-dom';
-import {FaGithub, FaLinkedin, FaTimes} from 'react-icons/fa';
+import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import { FaGithub, FaLinkedin, FaTimes } from 'react-icons/fa';
 
-import type {ProgramData} from './helpers/types';
+import type { ProgramData } from './helpers/types';
 
 interface ProgramModalProps {
 	isOpen: boolean;
@@ -102,18 +102,18 @@ export function ProgramModal({ isOpen, onClose, program }: ProgramModalProps) {
 
 					{/* Content on Right */}
 					<div className="flex min-w-0 flex-1 flex-col gap-3 md:gap-4">
-					{/* Time Badge */}
-					<div
-						className="inline-flex items-center gap-2 self-center rounded-full px-3 py-1.5 font-mono text-xs font-bold text-meetjs-green md:self-start md:px-4 md:py-2 md:text-sm"
-						style={{
-							background: 'rgba(188, 211, 93, 0.1)',
-							border: '1px solid rgba(188, 211, 93, 0.2)',
-						}}
-					>
-						<span>{sinceTime}</span>
-						<span className="text-meetjs-green/50">→</span>
-						<span>{tillTime}</span>
-					</div>
+						{/* Time Badge */}
+						<div
+							className="inline-flex items-center gap-2 self-center rounded-full px-3 py-1.5 font-mono text-xs font-bold text-meetjs-green md:self-start md:px-4 md:py-2 md:text-sm"
+							style={{
+								background: 'rgba(188, 211, 93, 0.1)',
+								border: '1px solid rgba(188, 211, 93, 0.2)',
+							}}
+						>
+							<span>{sinceTime}</span>
+							<span className="text-meetjs-green/50">→</span>
+							<span>{tillTime}</span>
+						</div>
 
 						{/* Title */}
 						<h2 className="text-xl leading-tight font-extrabold tracking-tight text-white md:text-3xl">
@@ -134,7 +134,24 @@ export function ProgramModal({ isOpen, onClose, program }: ProgramModalProps) {
 						{program.description && (
 							<div>
 								<p className="text-sm leading-relaxed whitespace-pre-wrap text-white/75 md:text-base">
-									{program.description}
+									{program.description
+										.split(/(https?:\/\/[^\s]+)/g)
+										.map((part, i) =>
+											/^https?:\/\//.test(part) ? (
+												<a
+													key={i}
+													href={part}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-meetjs-green underline hover:opacity-80"
+													onClick={e => e.stopPropagation()}
+												>
+													{part}
+												</a>
+											) : (
+												part
+											),
+										)}
 								</p>
 							</div>
 						)}

@@ -208,12 +208,14 @@ export const AGENDA_CONF = [
 	},
 	{
 		id: 'be42a453-18a8-4245-98bb-fc3472850d33',
-		title: '🍝 Lunch break',
+		title: '🍽 Lunch break',
 		speaker: '',
-		description: '',
+		description:
+			'Lunch break. The SGH cafeteria is available on site. More info: https://www.sgh.waw.pl/kantyny-i-kuchnie-pracownicze',
 		since: '2026-03-04T14:10:00',
 		till: '2026-03-04T14:40:00',
-		image: '',
+		image:
+			'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text y=".9em" font-size="90">🍽</text></svg>',
 		channelUuid: 'summit-03-04-2026-stage',
 	},
 	{
