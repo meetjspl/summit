@@ -3,4 +3,5 @@ export interface Partner {
 	logoUrl: string;
 	websiteUrl: string;
 	type?: 'main' | 'gold' | 'silver' | 'hello' | 'strategic';
+	className?: string;
 }
