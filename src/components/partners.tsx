@@ -10,12 +10,13 @@ import HardparseLogo from '@/assets/partners/hello/hardparse.svg';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
+import QXM from '@/assets/partners/qxm.png';
 import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
-import {PartnersLogos} from '@/components/partners-logos.tsx';
-import {Wrapper} from '@/components/wrapper.tsx';
+import { PartnersLogos } from '@/components/partners-logos.tsx';
+import { Wrapper } from '@/components/wrapper.tsx';
 
-import type {Partner} from '@/types/partner.ts';
+import type { Partner } from '@/types/partner.ts';
 
 const partners: Partner[] = [
 	{
@@ -115,11 +116,16 @@ const partners: Partner[] = [
 		name: 'Superteam Poland',
 		logoUrl: SuperteamPLLogo,
 		websiteUrl: 'https://pl.superteam.fun/',
-  },
-  {
+	},
+	{
 		name: 'CueTimer - presentation tools',
 		logoUrl: CueTimer,
 		websiteUrl: 'https://www.presentationtools.com/cuetimer/',
+	},
+	{
+		name: 'Qualtrics',
+		logoUrl: QXM,
+		websiteUrl: 'https://www.qualtrics.com/',
 	},
 ];
 
