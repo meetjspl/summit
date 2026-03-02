@@ -11,6 +11,7 @@ import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
 import QXM from '@/assets/partners/qxm.png';
+import TextLogo from '@/assets/partners/silver/Text-Logo-White.png';
 import WindsurfLogo from '@/assets/partners/silver/windsurf.svg';
 import SlidoLogo from '@/assets/partners/slido.svg';
 import { PartnersLogos } from '@/components/partners-logos.tsx';
@@ -52,6 +53,13 @@ const partners: Partner[] = [
 		logoUrl: JetBrainsLogo,
 		websiteUrl: 'https://www.jetbrains.com',
 		type: 'silver',
+	},
+	{
+		name: 'Text',
+		logoUrl: TextLogo,
+		websiteUrl: 'https://www.text.com/',
+		type: 'silver',
+		className: 'px-4 py-2',
 	},
 	{
 		name: 'Crossweb',
