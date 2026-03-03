@@ -196,6 +196,7 @@ const speakers: Speaker[] = [
 			' high-performing teams and globally recognized digital products. Throughout his career, Piotr has contributed to the growth of companies such as Displate (scaling from startup to global brand), CD Projekt (including flagship titles like Cyberpunk 2077 and The Witcher), and GOG.com.' +
 			'In addition, he co-founded AI Products Heroes, a program and community dedicated to helping product leaders successfully design, build, and scale AI-powered products. Through this initiative, he supports teams in navigating the unique strategic, technical, and organizational challenges that come with AI.',
 		imageUrl: PiotrKacala,
+		youtubeShort: 'https://youtube.com/shorts/1Rb1gxCNENg',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/piotr-kacala/',
 		},
@@ -225,6 +226,7 @@ const speakers: Speaker[] = [
 			'This isn’t a success story or an AI sales pitch. It’s a behind-the-scenes look at a real engineering organization trying to answer a deceptively simple question: Did AI really make us faster?',
 		bio: 'Senior Software Engineer with 10+ year of experience in building JavaScript applications.',
 		imageUrl: PrzemekSuchodolski,
+		youtubeShort: 'https://youtube.com/shorts/BSIDD2O080E',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/przemyslaw-suchodolski/',
 		},
@@ -243,6 +245,7 @@ const speakers: Speaker[] = [
 			'Skeptical about AI-generated websites? Until recently, so was I—having spent over a decade building front-end components by hand. But I recently conducted an experiment: I created the "Developer\'s Christmas Career Calendar" landing page entirely using an AI agent. The results are incredible, and I’d love to share the exact details of this project with you.',
 		bio: 'A software engineer with over 10 years of commercial front-end experience. JavaScript trainer, speaker, and creator of the "Kariera Developera" (Developer\'s Career) newsletter. He is also the organizer of the Developer\'s Christmas Career Calendar.',
 		imageUrl: RadekWojtysiak,
+		youtubeShort: 'https://youtube.com/shorts/m2hQ6CAlzc4',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/radekwojtysiak/',
 		},
