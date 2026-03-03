@@ -6,16 +6,28 @@ const SHORTS = [
 		embedId: 'Ai9KDYleSsQ',
 	},
 	{
-		id: '2',
-		title: 'Jak naprawdę pracować z AI? Mateusz Chrobok na meet.js 2026',
-		url: 'https://youtube.com/shorts/d7fr-qfX3vk',
-		embedId: 'd7fr-qfX3vk',
-	},
-	{
 		id: '3',
 		title: 'AI Agent to tylko while loop z API? 👀',
 		url: 'https://youtube.com/shorts/9cGMeEruL1o',
 		embedId: '9cGMeEruL1o',
+	},
+	{
+		id: '4',
+		title: 'Radek Wojtysiak — meet.js Summit',
+		url: 'https://youtube.com/shorts/m2hQ6CAlzc4',
+		embedId: 'm2hQ6CAlzc4',
+	},
+	{
+		id: '5',
+		title: 'Przemek Suchodolski — meet.js Summit',
+		url: 'https://youtube.com/shorts/BSIDD2O080E',
+		embedId: 'BSIDD2O080E',
+	},
+	{
+		id: '6',
+		title: 'Piotr Kacała — meet.js Summit',
+		url: 'https://youtube.com/shorts/1Rb1gxCNENg',
+		embedId: '1Rb1gxCNENg',
 	},
 ];
 
