@@ -59,6 +59,7 @@ const speakers: Speaker[] = [
 			'Whether you’re working on smaller features or scaling big systems, you’ll leave with ideas to adapt to your own pace and context. Also... hopefully with a little inspiration to keep pushing for quality, even when everything’s moving fast.',
 		bio: 'Front-end engineer building scalable and accessible experiences. Grounded in full-stack fundamentals and obsessed with real-world impact. At Nortal, has taken the lead on front-end efforts across a wide range of domains: from government systems around the globe to some of the major players in the US tech scene. Currently focused on building interfaces for AI-driven solutions and helping fellow developers level up. Built her first website at 11 and what it was about remains a conversation starter.',
 		imageUrl: CarolaKeskula,
+		teaserUrl: 'https://youtu.be/LPpz8jarQlc',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/carolakeskyla/',
 		},
@@ -115,6 +116,7 @@ const speakers: Speaker[] = [
 			'You’ll walk away knowing what your agent is doing when no one is watching. No more black boxes.',
 		bio: 'He talks and records content on front-end, node.js and web development topics. Co-organizer of meet.js Gdańsk meetup. One of the talking heads on “Śniadanie z Programowaniem” and other video formats by JustJoin.it',
 		imageUrl: MichalMichalczuk,
+		teaserUrl: 'https://youtu.be/LuaQfN4XiTM',
 		youtubeShort: 'https://youtube.com/shorts/9cGMeEruL1o',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/michalczukm/',
@@ -146,6 +148,7 @@ const speakers: Speaker[] = [
 			' non-perfect world: using it to handle the work I hate—managing dependency upgrades, migrating deprecated libraries and frameworks, adding missing tests, debugging issues, removing stale feature flags, and more. Were all experiments successful? Of course not. But you can learn from what worked, what failed, and why. Join me on a journey where AI takes over the boring but necessary tasks—so we can focus on what programmers love most: solving problems, delivering value, and building solid architecture. Let AI take our jobs… just the parts we don’t like',
 		bio: 'Full-stack developer who loves sharing their knowledge and singing. Google Developer Expert for Web Technologies, Microsoft Most Valuable Professional in Web technologies, senior software engineer at Qualtrics, public speaker, trainer and blogger. Talking and writing about Web, a11y, teaching others how to code and code best practices.',
 		imageUrl: DominikaZajac,
+		teaserUrl: 'https://youtu.be/Y-w3To2EVeA',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/dominikazajac/',
 		},
@@ -264,6 +267,7 @@ const speakers: Speaker[] = [
 			"Are you getting too many warnings about vulnerabilities in dependencies? Many of those are not reachable from your code so they don't matter. In this talk, I'll show how we can tackle this for JavaScript using points-to and control-flow analysis, as implemented in the open-source static analysis tool Jelly.",
 		bio: 'Martin holds a PhD with a focus on static analysis and software maintenance for JavaScript projects using npm. He co-founded Coana, a startup based in Aarhus, Denmark, that developed reachability analysis technology to help security teams cut through the noise and prioritize the CVEs that actually matter. In 2025, Coana was acquired by Socket, a software security company, where Martin now serves as a tech lead on the team responsible for reachability analysis and automated dependency upgrades.',
 		imageUrl: MartinTorp,
+		teaserUrl: 'https://youtu.be/rB6i0VVuNdI',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/martin-torp/',
 		},
