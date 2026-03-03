@@ -32,8 +32,8 @@ export const Tickets = () => {
 							'Seating in VIP rows (2-4)',
 							'Lunch at the bistro',
 							<TypescriptBoostCards />,
-							<p>
-								-10% for BRAVE courses:{' '}
+							<div>
+								<p>-10% for BRAVE courses:</p>
 								<ul className="list-disc pl-6">
 									<li>
 										<a
@@ -60,7 +60,7 @@ export const Tickets = () => {
 										</a>
 									</li>
 								</ul>
-							</p>,
+							</div>,
 						]}
 						price={512}
 						highlight={true}

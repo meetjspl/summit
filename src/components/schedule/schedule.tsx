@@ -64,7 +64,12 @@ export function Schedule() {
 								isMobile,
 								onProgramClick: handleProgramClick,
 							} as ProgramProps;
-							return <Program key={program.data.id} {...programProps} />;
+							return (
+								<Program
+									key={`${program.data.id}-${program.data.since}-${program.data.till}`}
+									{...programProps}
+								/>
+							);
 						}}
 					/>
 				</Epg>
