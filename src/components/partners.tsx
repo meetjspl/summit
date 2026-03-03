@@ -140,6 +140,7 @@ const partners: Partner[] = [
 		name: 'Qualtrics',
 		logoUrl: QXM,
 		websiteUrl: 'https://www.qualtrics.com/',
+		type: 'hello',
 	},
 ];
 
