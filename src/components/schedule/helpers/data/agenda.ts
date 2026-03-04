@@ -70,7 +70,8 @@ export const AGENDA_CONF = [
 		id: 'be41a453-18a8-4245-98bb-fc3472850d33',
 		title: '☕ Coffee break',
 		speaker: '',
-		description: '',
+		description:
+			'The food area where sandwiches are served is located in Hades on floor -1.',
 		since: '2026-03-04T11:00:00',
 		till: '2026-03-04T11:20:00',
 		image: '',
@@ -146,7 +147,8 @@ export const AGENDA_CONF = [
 		id: 'be41a453-18a8-4245-98bb-fc3472850d33',
 		title: '☕ Coffee break',
 		speaker: '',
-		description: '',
+		description:
+			'The food area where sandwiches are served is located in Hades on floor -1.',
 		since: '2026-03-04T12:50:00',
 		till: '2026-03-04T13:10:00',
 		image: '',
@@ -276,7 +278,8 @@ export const AGENDA_CONF = [
 		id: 'be41a453-18a8-4245-98bb-fc3472850d33',
 		title: '☕ Coffee break',
 		speaker: '',
-		description: '',
+		description:
+			'The food area where sandwiches are served is located in Hades on floor -1.',
 		since: '2026-03-04T16:10:00',
 		till: '2026-03-04T16:30:00',
 		image: '',
