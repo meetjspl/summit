@@ -22,6 +22,8 @@ export const App = () => {
 		}
 	};
 
+	// @ts-ignore
+	// @ts-ignore
 	return (
 		<section>
 			<Wrapper>
@@ -43,6 +45,30 @@ export const App = () => {
 						alt="TypeSense"
 						className="w-1/2"
 					/>
+				</div>
+				<div className="mx-8" />
+				<div
+					style={{
+						position: 'relative',
+						width: '100%',
+						height: '80px',
+						overflow: 'hidden',
+					}}
+				>
+					<iframe
+						style={{
+							position: 'absolute',
+							top: 0,
+							left: 0,
+							bottom: 0,
+							right: 0,
+							width: '100%',
+							height: '100%',
+						}}
+						src="https://zrzutka.pl/award/fufsjw/widget/button"
+						frameBorder="0"
+						scrolling="no"
+					></iframe>
 				</div>
 				<img src={Mission} alt="mission" className="mt-8 rounded-lg" />
 				<a
