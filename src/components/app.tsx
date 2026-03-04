@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaCheck, FaRegCopy, FaWifi } from 'react-icons/fa6';
 
 import AiDevs from '@/assets/ai_devs_logo.svg';
+import hakersiLogo from '@/assets/hakersi-logo.png';
 import Mission from '@/assets/mission.png';
 import Slido from '@/assets/partners/slido.svg';
 import { Agenda } from '@/components/agenda.tsx';
@@ -67,6 +68,10 @@ export const App = () => {
 						frameBorder="0"
 						scrolling="no"
 					></iframe>
+				</div>
+				<div className="mb-8 flex items-center justify-center gap-4 p-4 text-white">
+					<p>powered by:</p>
+					<img src={hakersiLogo} alt="Ai_Devs 4" className="w-1/8" />
 				</div>
 				<img src={Mission} alt="mission" className="mt-8 rounded-lg" />
 				<a
