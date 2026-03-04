@@ -66,7 +66,7 @@ export const App = () => {
 					<img src={Slido} alt="Slido" className="w-1/4" />
 				</div>
 				<iframe
-					href="https://www.mappedin.com/"
+					// href="https://www.mappedin.com/"
 					title="Mappedin Map"
 					name="Mappedin Map"
 					allow="clipboard-write 'self' https://app.mappedin.com; web-share 'self' https://app.mappedin.com"
