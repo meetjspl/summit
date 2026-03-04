@@ -4,6 +4,7 @@ import {FaCheck, FaRegCopy, FaWifi} from 'react-icons/fa6';
 import AiDevs from '@/assets/ai_devs_logo.svg';
 import Mission from '@/assets/mission.png';
 import Slido from '@/assets/partners/slido.svg';
+import {Agenda} from '@/components/agenda.tsx';
 import {Wrapper} from '@/components/wrapper.tsx';
 
 export const App = () => {
@@ -65,6 +66,7 @@ export const App = () => {
 					<p>powered by:</p>
 					<img src={Slido} alt="Slido" className="w-1/4" />
 				</div>
+				<Agenda />
 				<iframe
 					// href="https://www.mappedin.com/"
 					title="Mappedin Map"
