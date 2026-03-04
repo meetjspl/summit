@@ -1,11 +1,11 @@
-import {useState} from 'react';
-import {FaCheck, FaRegCopy, FaWifi} from 'react-icons/fa6';
+import { useState } from 'react';
+import { FaCheck, FaRegCopy, FaWifi } from 'react-icons/fa6';
 
 import AiDevs from '@/assets/ai_devs_logo.svg';
 import Mission from '@/assets/mission.png';
 import Slido from '@/assets/partners/slido.svg';
-import {Agenda} from '@/components/agenda.tsx';
-import {Wrapper} from '@/components/wrapper.tsx';
+import { Agenda } from '@/components/agenda.tsx';
+import { Wrapper } from '@/components/wrapper.tsx';
 
 export const App = () => {
 	const [copied, setCopied] = useState(false);
@@ -22,8 +22,6 @@ export const App = () => {
 		}
 	};
 
-	// @ts-ignore
-	// @ts-ignore
 	return (
 		<section>
 			<Wrapper>
@@ -72,7 +70,7 @@ export const App = () => {
 				</div>
 				<img src={Mission} alt="mission" className="mt-8 rounded-lg" />
 				<a
-					href="https://app.sli.do/event/auUgyrPJBYWmAwWtjLPD9e"
+					href="https://ag3nts.org/meetjs/"
 					className="block w-full rounded-lg bg-aidevs-green p-4 text-center"
 				>
 					join to special Agent V mission
