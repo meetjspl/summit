@@ -5,6 +5,7 @@ import SuperteamPLLogo from '@/assets/partners/SuperteamPL sign white.png';
 import CueTimer from '@/assets/partners/cuetimer.png';
 import SocketDevLogo from '@/assets/partners/gold/socket.png';
 import ApolloLogo from '@/assets/partners/hello/Apollo_Core_White.png';
+import CKSourceLogo from '@/assets/partners/hello/cksource.svg';
 import CyberfolksLogo from '@/assets/partners/hello/cyberfolks.svg';
 import HardparseLogo from '@/assets/partners/hello/hardparse.svg';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
@@ -114,6 +115,12 @@ const partners: Partner[] = [
 		name: 'Apollo',
 		logoUrl: ApolloLogo,
 		websiteUrl: 'https://www.apollo.io/',
+		type: 'hello',
+	},
+	{
+		name: 'CKSource',
+		logoUrl: CKSourceLogo,
+		websiteUrl: 'https://cksource.com/',
 		type: 'hello',
 	},
 	{
