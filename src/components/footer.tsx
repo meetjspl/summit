@@ -104,14 +104,6 @@ export const Footer = () => {
 										contact@meetjs.pl
 									</a>
 								</li>
-								<li className="text-white-2">
-									<a
-										href="tel:+48725999744"
-										className="hover:text-meetjs-green"
-									>
-										+48 725 999 744
-									</a>
-								</li>
 							</ul>
 
 							<div className="flex gap-4">
