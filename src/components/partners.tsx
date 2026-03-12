@@ -11,6 +11,7 @@ import HardparseLogo from '@/assets/partners/hello/hardparse.svg';
 import PlanbyLogo from '@/assets/partners/hello/planby-pro.png';
 import JetBrainsLogo from '@/assets/partners/jetbrains-mono-white.svg';
 import GamedevjsLogo from '@/assets/partners/main-logo-light.png';
+import NextJSWeeklyLogo from '@/assets/partners/nextjsweekly-logo.svg';
 import GDGWarsawLogo from '@/assets/partners/organizer-logo.svg';
 import QXM from '@/assets/partners/qxm.png';
 import TextLogo from '@/assets/partners/silver/Text-Logo-White.png';
@@ -148,6 +149,12 @@ const partners: Partner[] = [
 		logoUrl: QXM,
 		websiteUrl: 'https://www.qualtrics.com/',
 		type: 'hello',
+	},
+	{
+		name: 'Next.js Weekly',
+		logoUrl: NextJSWeeklyLogo,
+		websiteUrl: 'https://nextjsweekly.com/?utm_source=conf&utm_medium=meetjs',
+		className: 'invert',
 	},
 ];
 
