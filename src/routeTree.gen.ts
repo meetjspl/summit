@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
+import { Route as SummaryRouteImport } from './routes/summary'
 import { Route as AgendaRouteImport } from './routes/agenda'
 import { Route as R404RouteImport } from './routes/404'
 import { Route as IndexRouteImport } from './routes/index'
@@ -17,6 +18,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const ThankYouRoute = ThankYouRouteImport.update({
   id: '/thank-you',
   path: '/thank-you',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SummaryRoute = SummaryRouteImport.update({
+  id: '/summary',
+  path: '/summary',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AgendaRoute = AgendaRouteImport.update({
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/404': typeof R404Route
   '/agenda': typeof AgendaRoute
+  '/summary': typeof SummaryRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/404': typeof R404Route
   '/agenda': typeof AgendaRoute
+  '/summary': typeof SummaryRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/404': typeof R404Route
   '/agenda': typeof AgendaRoute
+  '/summary': typeof SummaryRoute
   '/thank-you': typeof ThankYouRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/404' | '/agenda' | '/thank-you'
+  fullPaths: '/' | '/404' | '/agenda' | '/summary' | '/thank-you'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/404' | '/agenda' | '/thank-you'
-  id: '__root__' | '/' | '/404' | '/agenda' | '/thank-you'
+  to: '/' | '/404' | '/agenda' | '/summary' | '/thank-you'
+  id: '__root__' | '/' | '/404' | '/agenda' | '/summary' | '/thank-you'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R404Route: typeof R404Route
   AgendaRoute: typeof AgendaRoute
+  SummaryRoute: typeof SummaryRoute
   ThankYouRoute: typeof ThankYouRoute
 }
 
@@ -76,6 +86,13 @@ declare module '@tanstack/react-router' {
       path: '/thank-you'
       fullPath: '/thank-you'
       preLoaderRoute: typeof ThankYouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/summary': {
+      id: '/summary'
+      path: '/summary'
+      fullPath: '/summary'
+      preLoaderRoute: typeof SummaryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agenda': {
@@ -106,6 +123,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   R404Route: R404Route,
   AgendaRoute: AgendaRoute,
+  SummaryRoute: SummaryRoute,
   ThankYouRoute: ThankYouRoute,
 }
 export const routeTree = rootRouteImport
