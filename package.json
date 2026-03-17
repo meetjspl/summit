@@ -14,15 +14,15 @@
 	},
 	"dependencies": {
 		"@nessprim/planby-pro": "3.14.3",
-		"@tailwindcss/vite": "^4.1.18",
+		"@tailwindcss/vite": "^4.2.1",
 		"@tanstack/react-router": "^1.151.6",
-		"html-to-image": "^1.11.13",
 		"clsx": "^2.1.1",
+		"html-to-image": "^1.11.13",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
 		"react-icons": "^5.5.0",
 		"tailwind-merge": "^3.4.0",
-		"tailwindcss": "^4.1.18"
+		"tailwindcss": "^4.2.1"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.39.1",
@@ -32,7 +32,7 @@
 		"@types/node": "^24.10.1",
 		"@types/react": "^19.2.5",
 		"@types/react-dom": "^19.2.3",
-		"@vitejs/plugin-react": "^5.1.1",
+		"@vitejs/plugin-react": "^5.2.0",
 		"babel-plugin-react-compiler": "^1.0.0",
 		"eslint": "^9.39.1",
 		"eslint-plugin-react-hooks": "^7.0.1",
@@ -44,8 +44,8 @@
 		"react-dropzone": "^14.3.8",
 		"typescript": "~5.9.3",
 		"typescript-eslint": "^8.46.4",
-		"vite": "^7.2.4",
-		"vite-plugin-static-copy": "^3.1.5",
+		"vite": "^7.3.1",
+		"vite-plugin-static-copy": "^3.2.0",
 		"vite-plugin-svgr": "^4.5.0"
 	},
 	"packageManager": "pnpm@10.29.3+sha512.498e1fb4cca5aa06c1dcf2611e6fafc50972ffe7189998c409e90de74566444298ffe43e6cd2acdc775ba1aa7cc5e092a8b7054c811ba8c5770f84693d33d2dc"
